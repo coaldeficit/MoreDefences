@@ -38,8 +38,8 @@ weapon: {
     splashDamage: 55
     homingPower: 0.2
     incendChance: 10
-    incendSpread: 6
-    incendAmount: 0.5
+    incendSpread: 8
+    incendAmount: 1
     backColor: ff9e42
     frontColor: ffbc7d
   }
