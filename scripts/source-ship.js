@@ -2,7 +2,7 @@ const sourceTrail = newEffect(35, e => {
    // var offset = 0.3 + e.fin() * 0.4;
  //   var angle = Mathf.randomSeed(e.id, 360);
     Draw.alpha(Mathf.random(0.1, 0.2));
-    Draw.color(Color.valueOf('e270ff'));
+    Draw.color(Color.valueOf('a387ea'));
     Lines.square(e.x, e.y, e.fout() * 1);
   //  Lines.circle(e.x + Angles.trnsx(angle, offset), e.y + Angles.trnsy(angle, offset), e.rotation - 90);
 });
@@ -56,7 +56,7 @@ sourceShip.hitsize = 5;
 sourceShip.mass = 0.25;
 sourceShip.flying = true;
 sourceShip.health = 100;
-sourceShip.engineColor = Color.valueOf('e270ff');
+sourceShip.engineColor = Color.valueOf('a387ea');
 sourceShip.range = 160;
 sourceShip.engineSize = 1.5;
 sourceShip.drillPower = 1;
