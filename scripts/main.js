@@ -1,5 +1,5 @@
 require("more-defences-ivyx/vanadium-extractor")
 require("more-defences-ivyx/vanadium-megaextractor")
 // require("more-defences-ivyx/polonium-wall")
-require("more-defences-ivyx/tefium-wall")
-requre("more-defences-ivyx/source-ship.js")
+// require("more-defences-ivyx/tefium-wall")
+requre("more-defences-ivyx/source-ship")
