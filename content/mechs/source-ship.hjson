@@ -33,6 +33,7 @@ weapon: {
     bulletHeight: 8
     collidesTiles: false
     collides: false
+    collidesAir: true
   }
 }
 range: 160
