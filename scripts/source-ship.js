@@ -3,7 +3,7 @@ const sourceTrail = newEffect(35, e => {
  //   var angle = Mathf.randomSeed(e.id, 360);
     Draw.alpha(Mathf.random(0.2, 0.1));
     Draw.color(Pal.plastaniumFront);
-    Lines.tri(e.x, e.y, e.fout() * 1);
+    Lines.circle(e.x, e.y, e.fout() * 1);
   //  Lines.circle(e.x + Angles.trnsx(angle, offset), e.y + Angles.trnsy(angle, offset), e.rotation - 90);
 });
 
