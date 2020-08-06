@@ -1,6 +1,6 @@
 const elib = require("more-defences-ivyx/effectlib");
 
-const sourceS = extendContent(Mech, "source-ship", {
+const sourceS = extendContent(HoverUnit, "source-ship", {
 	load(){
 		this.weapon.load();
 		this.region = Core.atlas.find(this.name);
