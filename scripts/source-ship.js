@@ -42,7 +42,7 @@ const sourceShip = extendContent(Mech, "source-ship", {
   },
 
   updateAlt(player){
-    if (!Vars.state.isPaused()) Effects.effect(sourceTrail, player.x, player.y /*- 5*/, player.rotation);
+    if (!Vars.state.isPaused()) Effects.effect(sourceTrail, Mathf.random(player.drawx()-5, player.drawx()+5), Mathf.random(player.drawy()-5, player.drawy()+5) );
   }
 });
 
