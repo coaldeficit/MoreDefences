@@ -1,0 +1,42 @@
+type: HoverUnit
+name: Source
+flying: true
+description: A basic Interceptor ship. Fires bursts of 2 fast bullets at enemy air units.
+speed: 1
+maxVelocity: 15
+drag: 0.09
+mass: 0.25
+flying: true
+health: 100
+engineColor: ffa665
+ejectEffect: shellEjectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+hitsize: 5
+weapon: {
+  name: generic-bomber-weapon
+  length: 0
+  shots: 2
+  shotDelay: 6
+  width: 0
+  inaccuracy: 0
+  spacing: 0
+  reload: 120
+  alternate: true
+  shootSound: shootSnap
+  bullet: {
+    speed: 8
+    damage: 50
+    knockback: 0.2
+    lifetime: 80
+    bulletWidth: 4
+    bulletHeight: 8
+    collidesTiles: false
+    collides: false
+  }
+}
+range: 160
+drillPower: 1
+mineSpeed: 1
+buildPower: 1.5
+itemCapacity: 10
