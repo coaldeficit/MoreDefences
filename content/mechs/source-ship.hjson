@@ -24,16 +24,18 @@ weapon: {
   spacing: 0
   reload: 120
   alternate: true
-  shootSound: shootSnap
+  shootSound: pew
   bullet: {
-    speed: 8
+    speed: 7
     damage: 50
     knockback: 0.2
     lifetime: 80
-    bulletWidth: 4
-    bulletHeight: 8
+    bulletWidth: 12
+    bulletHeight: 6
     collidesTiles: false
     collidesAir: true
+    backColor: 8214ff
+    frontColor: f5cfff
   }
 }
 range: 160
