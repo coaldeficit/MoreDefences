@@ -65,4 +65,4 @@ sourceShip.buildPower = 1.5;
 sourceShip.itemCapacity = 10;
 sourceShip.weaponOffsetY = 0;
 sourceShip.weaponOffsetX = 0;
-sourceShip.ejectEffect = shellEjectSmall;
+sourceShip.ejectEffect = Fx.shellEjectSmall;
