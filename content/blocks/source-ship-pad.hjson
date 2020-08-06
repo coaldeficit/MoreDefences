@@ -1,9 +1,9 @@
 name: Source Ship Pad
 description: Provides transformation into a basic Interceptor ship.
 type: MechPad
-health: 40
+health: 175
 mech: source-ship
-size: 1
+size: 2
 hasItems: true
 consumes: {
   power: 2
