@@ -39,7 +39,7 @@ weapon: {
     homingPower: 0.2
     incendChance: 10
     incendSpread: 10
-    incendAmount: 6
+    incendAmount: 4
     backColor: ff9e42
     frontColor: ffbc7d
   }
