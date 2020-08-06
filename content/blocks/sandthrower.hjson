@@ -1,0 +1,30 @@
+type: ItemTurret
+name: Sand Thrower
+description: Fires 5 weak bullets that spread out.
+health: 200
+size: 1
+reload: 60
+range: 80
+ammoUseEffect: shellEjectSmall
+inaccuracy: 3
+rotatespeed: 5
+spread: 2
+shots: 5
+ammo: {
+  sand: {
+    speed: 3
+    damage: 8
+    ammoMultiplier: 1
+  }
+  titaniumsand: {
+    speed: 3
+    damage: 24
+    ammoMultiplier: 1
+    reloadMultiplier: 0.8
+  }
+}
+requirements: [
+  copper/30
+]
+category: turret
+research: duo

@@ -1,0 +1,101 @@
+type: ArtilleryTurret
+name: Cluster
+description: An upgraded Ripple. Fires large amounts of bullets at once.
+health: 1600
+size: 4
+range: 360
+ammoUseEffect: shellEjectBig
+inaccuracy: 10
+velocityInaccuracy: 0.1
+shots: 8
+reload: 60
+recoil: 6
+ammoEjectBack: 5
+cooldown: 0.03
+shootshake: 2
+shootsound: artillery
+ammo: {
+  graphite: {
+    type: ArtilleryBulletType
+    speed: 4
+    hitEffect: flakExplosion
+    knockback: 0.8
+    lifetime: 80
+    bulletWidth: 11
+    bulletHeight: 11
+    collidesTiles: false
+    splashDamageRadius: 25
+    splashDamage: 29.7
+  }
+  pyratite: {
+    type: ArtilleryBulletType
+    speed: 4
+    hitEffect: blastExplosion
+    knockback: 0.8
+    lifetime: 80
+    bulletWidth: 13
+    bulletHeight: 13
+    collidesTiles: false
+    splashDamageRadius: 25
+    splashDamage: 31.5
+    status: burning
+    backColor: e89c46
+    frontColor: ff8700
+    trailEffect: incendTrail
+  }
+  blast-compound: {
+    type: ArtilleryBulletType
+    speed: 4
+    hitEffect: blastExplosion
+    knockback: 0.8
+    lifetime: 70
+    bulletWidth: 14
+    bulletHeight: 14
+    collidesTiles: false
+    ammoMultiplier: 4
+    splashDamageRadius: 45
+    splashDamage: 45
+    backColor: e85e46
+    frontColor: ffdfd1
+  }
+  plastanium: {
+    type: ArtilleryBulletType
+    speed: 4
+    hitEffect: plasticExplosion
+    knockback: 1
+    lifetime: 80
+    bulletWidth: 13
+    bulletHeight: 13
+    collidesTiles: false
+    splashDamageRadius: 35
+    splashDamage: 40.5
+    frontColor: ffffff
+    backColor: plastaniumBack
+    fragBullet: artilleryPlasticFrag
+    fragBullets: 10
+  }
+  polonium: {
+    type: ArtilleryBulletType
+    speed: 6
+    hitEffect: flakExplosion
+    knockback: 0.8
+    ammoMultiplier: 1.5
+    lifetime: 80
+    bulletWidth: 11
+    bulletHeight: 11
+    collidesTiles: false
+    splashDamageRadius: 95
+    splashDamage: 200
+    frontColor: e8a982
+    backColor: e68e57
+  }
+}
+requirements: [
+  copper/250
+  titanium/240
+  lead/230
+  graphite/200
+  thorium/150
+]
+category: turret
+research: ripple

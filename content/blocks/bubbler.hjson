@@ -1,0 +1,57 @@
+type: LiquidTurret
+name: Bubbler
+description: A piercing turret that creates hundreds of bubbles from liquids which deal low damage.
+health: 600
+size: 2
+reload: 6
+range: 200
+inaccuracy: 5
+rotatespeed: 5
+spread: 45
+shots: 8
+ammo: {
+ water: {
+    type: LiquidBulletType
+    liquid: water
+    damage: 0.25
+    status: wet
+    pierce: true
+    lifetime: 420
+    drag: 0.025
+  }
+  slag: {
+    type: LiquidBulletType
+    liquid: slag
+    damage: 0.375
+    status: melting
+    pierce: true
+    lifetime: 300
+    drag: 0.025
+  }
+  oil: {
+    type: LiquidBulletType
+    liquid: oil
+    damage: 0.375
+    status: tarred
+    pierce: true
+    lifetime: 300
+    drag: 0.025
+  }
+  cryofluid: {
+    type: LiquidBulletType
+    liquid: cryofluid
+    damage: 0.125
+    status: freezing
+    pierce: true
+    lifetime: 300
+    drag: 0.025
+    reloadMultiplier: 0.125
+  }
+}
+requirements: [
+  lead/125
+  titanium/15
+  metaglass/75
+]
+category: turret
+research: wave

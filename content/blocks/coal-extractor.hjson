@@ -1,0 +1,19 @@
+type: GenericCrafter
+name: Coal Extractor
+description: Drills into the ground and mines Coal.
+size: 2
+hasPower: true
+craftTime: 120
+consumes: {
+  power: 0.25
+}
+requirements: [
+  copper/30
+  lead/40
+  graphite/30
+]
+category: production
+research: graphite-press
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: coal/1

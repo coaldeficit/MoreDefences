@@ -1,0 +1,37 @@
+type: GenericSmelter
+name: Polonium Megacompressor
+description: Compresses large amounts of Thorium, Phase Fabric and slag to create large quantities of Polonium.
+health: 800
+size: 4
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 930
+consumes: {
+  power: 6
+  items: {
+    items: [
+      thorium/10
+      phase-fabric/4
+    ]
+  }
+  liquid: {
+    liquid: slag
+    amount: 0.1
+  }
+}
+requirements: [
+  polonium/25
+  vanadium/50
+  surge-alloy/100
+  thorium/300
+  titanium/360
+  graphite/480
+  silicon/480
+  copper/540
+]
+category: crafting
+research: polonium-compressor
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: polonium/3

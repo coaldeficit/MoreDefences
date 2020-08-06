@@ -1,0 +1,32 @@
+name: Titanium Extraction Site
+description: A former titanium extraction facility, reduced to ruins by the enemy. Learn how to extract titanium from titanium sand and the ground.	
+loadout: basicNucleus
+startingItems: [	
+  copper/100	
+  lead/100
+]	
+conditionWave: 11
+launchPeriod: 5
+requirements: [	
+  {	
+    type: ZoneWave	
+    zone: craters
+    wave: 20	
+  }	
+  {	
+    type: Unlock	
+    block: titanium-extractor
+  }	
+  {	
+    type: Unlock	
+    block: mechanical-pump
+  }	
+]	
+resources: [	
+  copper	
+  lead	
+  coal	
+  sand	
+  titaniumsand
+  scrap
+]

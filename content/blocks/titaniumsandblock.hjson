@@ -1,0 +1,5 @@
+type: Floor
+name: Titanium Sand
+itemDrop: titaniumsand
+variants: 3
+playerUnmineable: true

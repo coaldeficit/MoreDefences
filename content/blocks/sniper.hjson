@@ -1,0 +1,56 @@
+type: ItemTurret
+name: Sniper
+description: Fires powerful bullets at a very slow rate.
+health: 200
+size: 1
+reload: 240
+range: 432
+ammoUseEffect: shellEjectSmall
+inaccuracy: 0
+rotatespeed: 2
+shots: 1
+ammoPerShot: 6
+ammo: {
+  scrap: {
+    speed: 15
+    damage: 125
+    ammoMultiplier: 2
+    reloadMultiplier: 2
+  }
+  copper: {
+    speed: 15
+    damage: 250
+    ammoMultiplier: 1
+  }
+  titanium: {
+    speed: 15
+    damage: 500
+    ammoMultiplier: 1
+    reloadMultiplier: 0.6
+  }
+  virite: {
+    frontColor: f57f99
+    backColor: d61c45
+    speed: 12.5
+    damage: 125
+    ammoMultiplier: 1
+    incendChance: 100
+    incendSpread: 8.8
+    incendAmount: 10
+    splashDamage: 125
+    splashDamageRadius: 24
+  }
+  polonium: {
+    speed: 15
+    damage: 1500
+    ammoMultiplier: 4
+    reloadMultiplier: 0.4
+  }
+}
+requirements: [
+  thorium/30
+  titanium/150
+  vanadium/5
+]
+category: turret
+research: vanadium-extractor

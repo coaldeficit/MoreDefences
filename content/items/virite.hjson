@@ -1,0 +1,6 @@
+type: material
+name: Virite
+description: An alloy of Silicon Dioxide, Calcium Carbonate, Sodium Carbonate and Red Phosphorus extracted from Infected Spores.
+color: db7878
+explosiveness: 0.3
+flammability: 1.1

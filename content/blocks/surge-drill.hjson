@@ -1,0 +1,16 @@
+name: Surge Drill
+description: A good late-game drill.
+type: Drill
+size: 1
+tier: 6
+drillTime: 50
+consumes: {
+  power: 5
+}
+requirements: [
+  titanium/200
+  silicon/200
+  surge-alloy/100
+]
+category: production
+research: blast-drill

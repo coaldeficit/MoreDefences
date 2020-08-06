@@ -1,0 +1,8 @@
+  
+type: material
+name: Tefium
+description: Tefium is a rare and radioactive alloy.
+color: 00875A
+hardness: 6
+radioactivity: 0.8
+explosiveness: 0.35

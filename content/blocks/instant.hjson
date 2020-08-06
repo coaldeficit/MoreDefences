@@ -1,0 +1,63 @@
+type: ItemTurret
+name: Instant
+description: An upgraded Tearer. Fires fast bullets at an extremely fast rate.
+health: 800
+size: 2
+reload: 3
+range: 170
+ammoUseEffect: shellEjectSmall
+inaccuracy: 1
+rotatespeed: 10
+shots: 1
+targetGround: false
+ammoPerShot: 1
+ammo: {
+  scrap: {
+    speed: 20
+    damage: 12
+    ammoMultiplier: 6
+    drawSize: 4
+  }
+  lead: {
+    speed: 16
+    damage: 20
+    ammoMultiplier: 3
+    drawSize: 4
+  }
+  coal: {
+    speed: 16
+    damage: 16
+    ammoMultiplier: 3
+    drawSize: 4
+    incendAmount: 1
+    incendSpread: 16
+    incendChance: 6
+  }
+  silicon: {
+    speed: 16
+    damage: 20
+    ammoMultiplier: 3
+    drawSize: 4
+    homingPower: 12
+  }
+  titanium: {
+    speed: 13
+    damage: 40
+    ammoMultiplier: 3
+    drawSize: 4
+    reloadMultiplier: 0.6
+  }
+  polonium: {
+    speed: 13
+    damage: 80
+    ammoMultiplier: 1
+    drawSize: 4
+    reloadMultiplier: 0.4
+  }
+}
+requirements: [
+  titanium/50
+  thorium/25
+]
+category: turret
+research: tearer

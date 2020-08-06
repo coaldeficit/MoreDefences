@@ -1,0 +1,38 @@
+type: ItemTurret
+name: Chipgun
+description: A small turret that rapidly fires homing incendiary projectiles.
+health: 200
+size: 1
+reload: 15
+range: 138
+ammoUseEffect: shellEjectSmall
+inaccuracy: 1
+rotatespeed: 15
+spread: 0
+ammo: {
+  coal: {
+    speed: 5
+    damage: 60
+    ammoMultiplier: 1.5
+    homingPower: 0.05
+    incendAmount: 6
+    incendSpread: 10
+    incendChance: 25
+  }
+  silicon: {
+    speed: 5
+    damage: 60
+    ammoMultiplier: 1.5
+    homingPower: 0.2
+    incendAmount: 5
+    incendSpread: 10
+    incendChance: 12.5
+  }
+}
+requirements: [
+  vanadium/10
+  tefium/5
+  silicon/50
+]
+category: turret
+research: tefium-forge

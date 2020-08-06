@@ -1,0 +1,31 @@
+type: hoverUnit
+name: Slider
+description: A heavy bomber. 
+speed: 0.1
+flying: true
+health: 2500
+engineOffset: 0
+range: 160
+mass: 100
+maxVelocity: 0.3
+rotatespeed: 0.05
+weapon: {
+  name: nuke-launcher
+  length: 2
+  width: 4
+  reload: 30
+  alternate: true
+  bullet: {
+    speed: 2
+    damage: 60
+    ammoMultiplier: 1
+    fragBullets: 15
+    lifetime: 120
+    hitSize: 8
+    drawSize: 80
+    fragBullet: {
+      speed: 4
+      damage: 6
+    }
+  }
+}

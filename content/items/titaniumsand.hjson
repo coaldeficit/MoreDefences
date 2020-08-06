@@ -1,0 +1,5 @@
+type: resource
+name: Titanium Sand
+description: Sand contaminated with titanium particles.
+color: cca4e1
+hardness: 3

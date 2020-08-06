@@ -1,0 +1,40 @@
+type: ItemTurret
+name: Spammer
+description: An upgraded Sprayer. Fires lots of weak bullets.
+health: 200
+size: 1
+reload: 6
+range: 80
+ammoUseEffect: shellEjectSmall
+inaccuracy: 25
+rotatespeed: 5
+spread: 0
+shots: 1
+ammo: {
+  copper: {
+    speed: 5
+    damage: 7
+    ammoMultiplier: 1
+  }
+  coal: {
+    speed: 5
+    damage: 5
+    ammoMultiplier: 1
+    incendAmount: 2
+    incendChance: 12.5
+  }
+  pyratite: {
+    speed: 5
+    damage: 3
+    ammoMultiplier: 1
+    incendAmount: 4
+    incendChance: 12.5
+  }
+}
+requirements: [
+  copper/50
+  lead/30
+  titanium/10
+]
+category: turret
+research: sprayer

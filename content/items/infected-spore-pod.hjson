@@ -1,0 +1,6 @@
+type: resource
+name: Infected Spore Pod
+description: A Spore Pod infected with an unknown virus that causes spores to produce an unknown mix of Silicon Dioxide, Calcium Carbonate, Sodium Carbonate and Red Phosphorus.
+color: cc5757
+explosiveness: 0.2
+flammability: 0.9

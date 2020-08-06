@@ -1,0 +1,5 @@
+type: OreBlock
+name: Vanadium
+itemDrop: vanadium
+variants: 3
+playerUnmineable: true

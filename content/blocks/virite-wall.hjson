@@ -1,0 +1,10 @@
+name: Virite Wall
+description: A very durable defensive block.
+type: Wall
+health: 860
+size: 1
+requirements: [
+  virite/6
+]
+category: defense
+research: thorium-wall

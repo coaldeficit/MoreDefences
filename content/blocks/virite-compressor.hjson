@@ -1,0 +1,24 @@
+type: GenericCrafter
+name: Virite Compressor
+description: Compresses Infected Spore Pods and extracts Virite from them.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 120
+consumes: {
+  power: 0.2
+  items: {
+    items: [
+      infected-spore-pod/3
+    ]
+  }
+}
+requirements: [
+  thorium/20
+  silicon/25
+]
+category: crafting
+research: spore-infecter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: virite/1

@@ -1,0 +1,13 @@
+name: Plastanium Coated Vanadium Wall
+description: A vanadium wall coated with Plastanium. Absorbs Lighting.
+type: Wall
+health: 1500
+size: 1
+insulated: true
+requirements: [
+  vanadium/8
+  plastanium/5
+  metaglass/2
+]
+category: defense
+research: vanadium-wall

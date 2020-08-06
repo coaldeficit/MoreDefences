@@ -1,0 +1,27 @@
+name: Vanadium Extractor
+description: Digs down extremely deep into the ground and extracts Vanadium.
+size: 4
+health: 9000
+hasPower: true
+hasLiquids: true
+craftTime: 400
+consumes: {
+  power: 2
+  liquid: {
+    liquid: cryofluid
+    amount: 0.15
+  }
+}
+requirements: [
+  surge-alloy/25
+  thorium/75
+  titanium/90
+  graphite/120
+  silicon/120
+  copper/135
+]
+category: production
+research: thorium-extractor
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: vanadium/1

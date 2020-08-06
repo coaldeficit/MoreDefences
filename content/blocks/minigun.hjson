@@ -1,0 +1,41 @@
+type: ItemTurret
+name: Minigun
+description: An upgraded Spammer. Fires lots of weak bullets in a straight line.
+health: 200
+size: 1
+reload: 6
+range: 80
+ammoUseEffect: shellEjectSmall
+inaccuracy: 2.5
+rotatespeed: 5
+spread: 0
+shots: 1
+ammo: {
+  copper: {
+    speed: 5
+    damage: 6
+    ammoMultiplier: 1
+  }
+  coal: {
+    speed: 5
+    damage: 4
+    ammoMultiplier: 1
+    incendAmount: 2
+    incendChance: 12.5
+  }
+  pyratite: {
+    speed: 5
+    damage: 2
+    ammoMultiplier: 1
+    incendAmount: 4
+    incendChance: 12.5
+  }
+}
+requirements: [
+  copper/30
+  lead/30
+  titanium/20
+  silicon/10
+]
+category: turret
+research: spammer

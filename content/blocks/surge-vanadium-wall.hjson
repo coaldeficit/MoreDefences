@@ -1,0 +1,12 @@
+name: Surge Coated Vanadium Wall
+description: A vanadium wall coated with Surge Alloy. Builds up charge on bullet contact, releasing it randomly.
+type: SurgeWall
+health: 1500
+size: 1
+lightningDamage: 60
+requirements: [
+  vanadium/8
+  surge-alloy/6
+]
+category: defense
+research: phase-vanadium-wall

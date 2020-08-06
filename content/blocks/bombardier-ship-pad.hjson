@@ -1,0 +1,18 @@
+name: Bombardier Ship Pad
+description: Provides transformation into a basic Bomber ship.
+type: MechPad
+health: 175
+mech: bombardier-ship
+size: 2
+hasItems: true
+consumes: {
+  power: 0.65
+}
+category: upgrade
+research: arrow-ship-pad
+requirements: [
+  copper/200
+  lead/250
+  silicon/150
+  titanium/50
+]

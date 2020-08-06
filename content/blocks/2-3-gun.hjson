@@ -1,0 +1,39 @@
+type: DoubleTurret
+name: (2-3) Cannon
+description: A powerful turret that rapidly fires strong projectiles without using much ammo.
+health: 800
+size: 2
+reload: 6
+range: 160
+ammoUseEffect: shellEjectSmall
+inaccuracy: 0.5
+rotatespeed: 5
+spread: 0
+shotWidth: 4
+ammo: {
+  vanadium: {
+    speed: 8
+    damage: 60
+    ammoMultiplier: 6
+  }
+  polonium: {
+    speed: 7
+    damage: 120
+    ammoMultiplier: 6
+    reloadMultiplier: 0.6
+  }
+  tefium: {
+    speed: 8
+    damage: 30
+    ammoMultiplier: 6
+    splashDamage: 45
+    splashDamageRadius: 16
+  }
+}
+requirements: [
+  tefium/10
+  vanadium/35
+  silicon/200
+]
+category: turret
+research: tefium-forge

@@ -1,0 +1,25 @@
+type: GenericCrafter
+name: Peat Press
+description: Creates Coal by compressing and heating up Peat.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      biomatter/1
+    ]
+  }
+}
+requirements: [
+  lead/35
+  silicon/35
+  biomatter/15
+]
+category: crafting
+research: peat-cultivator
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: coal/1

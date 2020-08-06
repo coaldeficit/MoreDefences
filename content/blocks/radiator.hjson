@@ -1,0 +1,47 @@
+type: ItemTurret
+name: Radiator
+description: Fires powerful bullets at a fast rate.
+health: 1480
+size: 3
+reload: 30
+range: 200
+ammoUseEffect: shellEjectSmall
+inaccuracy: 1
+rotatespeed: 15
+shots: 1
+ammoPerShot: 1
+ammo: {
+  thorium: {
+    speed: 5
+    damage: 250
+    ammoMultiplier: 2
+  }
+  phase-fabric: {
+    speed: 5
+    damage: 50
+    ammoMultiplier: 2
+    pierce: true
+  }
+  polonium: {
+    speed: 5
+    damage: 300
+    ammoMultiplier: 4
+    reloadMultiplier: 0.9
+    homingPower: 0.05
+  }
+  tefium: {
+    speed: 5
+    damage: 150
+    ammoMultiplier: 3
+    splashDamage: 75
+    splashDamageRadius: 40
+  }
+}
+requirements: [
+  polonium/5
+  vanadium/25
+  lead/75
+  silicon/100
+]
+category: turret
+research: polonium-compressor

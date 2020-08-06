@@ -1,0 +1,24 @@
+type: GenericCrafter
+name: Titanium Extractor
+description: Digs down deep into the ground and extracts Titanium.
+size: 2
+hasPower: true
+hasLiquids: true
+craftTime: 220
+consumes: {
+  power: 0.55
+  liquid: {
+    liquid: water
+    amount: 0.06
+  }
+}
+requirements: [
+  graphite/10
+  silicon/20
+  copper/25
+]
+category: production
+research: pneumatic-drill
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: titanium/1
