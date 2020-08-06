@@ -9,7 +9,7 @@ mass: 0.25
 flying: true
 health: 100
 engineColor: e270ff
-engineSize: 0.5
+engineSize: 1.5
 ejectEffect: shellEjectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
