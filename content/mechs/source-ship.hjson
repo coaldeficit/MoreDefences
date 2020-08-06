@@ -1,4 +1,3 @@
-type: HoverUnit
 name: Source
 flying: true
 description: A basic Interceptor ship. Fires bursts of 2 fast bullets at enemy air units.
