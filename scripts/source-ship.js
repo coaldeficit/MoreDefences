@@ -9,8 +9,8 @@ const sourceTrail = newEffect(35, e => {
 
 const sourceBullet = extend(BasicBulletType, {});
 
-sourceBullet.bulletWidth = 12
-sourceBullet.bulletHeight = 6
+sourceBullet.bulletWidth = 8
+sourceBullet.bulletHeight = 4
 sourceBullet.lifetime = 80
 sourceBullet.speed = 7
 sourceBullet.damage = 50
