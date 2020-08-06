@@ -8,7 +8,8 @@ drag: 0.09
 mass: 0.25
 flying: true
 health: 100
-engineColor: ffa665
+engineColor: e270ff
+engineSize: 0.5
 ejectEffect: shellEjectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
@@ -32,7 +33,6 @@ weapon: {
     bulletWidth: 4
     bulletHeight: 8
     collidesTiles: false
-    collides: false
     collidesAir: true
   }
 }
