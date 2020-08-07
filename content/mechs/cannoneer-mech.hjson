@@ -16,16 +16,20 @@ weapon: {
   shots: 1
   width: 3
   inaccuracy: 2
-  reload: 40
+  reload: 20
   alternate: true
-  shootSound: shootSnap
+  shootSound: pew
   bullet: {
     speed: 5
-    damage: 15
+    damage: 14
+    bulletWidth: 15
+    bulletHeight: 21
+    frontColor: aeff00
+    backColor: 95db00
   }
 }
 range: 80
 drillPower: 1
-mineSpeed: 1
-buildPower: 1
-itemCapacity: 30
+mineSpeed: 0.1
+buildPower: 0.75
+itemCapacity: 10
