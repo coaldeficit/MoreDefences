@@ -4,9 +4,7 @@ flying: false
 description: A basic Gunner mech. Rapidly fires weak bullets at enemy units and structures.
 speed: 0.5
 maxVelocity: 10
-drag: 0.09
-mass: 1
-flying: true
+mass: 1.2
 health: 220
 engineColor: aeff00
 ejectEffect: shellEjectSmall
