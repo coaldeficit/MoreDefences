@@ -1,4 +1,4 @@
-const sourceTrail = newEffect(70, e => {
+const sourceTrail = newEffect(10, e => {
    // var offset = 0.3 + e.fin() * 0.4;
  //   var angle = Mathf.randomSeed(e.id, 360);
     Draw.alpha(Mathf.random(0.1, 0.2));
