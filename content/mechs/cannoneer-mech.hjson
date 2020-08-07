@@ -1,7 +1,7 @@
 type: groundUnit
 name: Cannoneer
 flying: false
-description: A basic Gunner mech. Rapidly fires weak bullets at enemy units and structures.
+description: A basic Gunner mech. Rapidly fires weak corroding bullets at enemy units and structures.
 speed: 0.5
 maxVelocity: 10
 mass: 1.2
@@ -26,6 +26,7 @@ weapon: {
     bulletHeight: 14
     frontColor: aeff00
     backColor: 95db00
+    status: corroded
   }
 }
 range: 80
