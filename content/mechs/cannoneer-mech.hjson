@@ -1,0 +1,33 @@
+type: groundUnit
+name: Cannoneer
+flying: false
+description: A basic Gunner mech. Rapidly fires weak bullets at enemy units and structures.
+speed: 0.5
+maxVelocity: 10
+drag: 0.09
+mass: 1
+flying: true
+health: 220
+engineColor: aeff00
+ejectEffect: shellEjectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+weapon: {
+  name: cannoneer-weapon
+  length: 0
+  shots: 1
+  width: 3
+  inaccuracy: 2
+  reload: 40
+  alternate: true
+  shootSound: shootSnap
+  bullet: {
+    speed: 5
+    damage: 14
+  }
+}
+range: 80
+drillPower: 1
+mineSpeed: 1
+buildPower: 1
+itemCapacity: 30
