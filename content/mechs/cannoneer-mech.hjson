@@ -21,7 +21,7 @@ weapon: {
   shootSound: pew
   bullet: {
     speed: 5
-    damage: 14
+    damage: 18
     bulletWidth: 10
     bulletHeight: 14
     frontColor: aeff00
