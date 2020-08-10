@@ -1,5 +1,5 @@
-name: Surge Drill
-description: A late game drill, capable of mining vanadium.
+name: Dynamic Drill
+description: A late game drill, capable of mining vanadium but in a small area.
 type: Drill
 health: 450
 size: 1
