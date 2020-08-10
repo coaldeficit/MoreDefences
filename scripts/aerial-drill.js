@@ -1,5 +1,6 @@
 const aerialdrill = extendContent(Drill, "aerial-drill", {
   load(){
+    this.super$load();
     this.region = Core.atlas.find(this.name);
     this.rimRegion = Core.atlas.find(this.name + '-rim');
     this.propellorRegion = Core.atlas.find(this.name + "-propellor");
