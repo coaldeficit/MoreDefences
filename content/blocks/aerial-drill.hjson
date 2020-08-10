@@ -1,0 +1,20 @@
+name: Aerial Drill
+description: A late game drill, capable of mining vanadium, spans multiple tiles.
+health: 450
+size: 5
+tier: 6
+drillTime: 70
+consumes: {
+  power: 8
+}
+requirements: [
+   lead/140
+   graphite/120
+   titanium/140
+   plastanium/115
+   thorium/125
+   surge-alloy/150
+   vanadium/90
+]
+category: production
+research: surge-drill
