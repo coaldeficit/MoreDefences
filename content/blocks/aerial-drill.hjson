@@ -3,7 +3,8 @@ description: A late game drill, capable of mining vanadium, spans multiple tiles
 health: 830
 size: 5
 tier: 6
-rotateSpeed: -7
+rotateSpeed: -6
+updateEffectChance: 0.06
 drillTime: 250
 consumes: {
   power: 12
