@@ -23,8 +23,8 @@ const aerialdrill = extendContent(Drill, "aerial-drill", {
     Draw.rect(this.rimRegion, tile.drawx(), tile.drawy());
     Draw.blend();
     Draw.color();
-    Draw.rect(this.propellorRegion, tile.drawx(), tile.drawy(), Time.time() * -3 * this.efficiency);    
-    Draw.rect(this.rotateRegion, tile.drawx(), tile.drawy(), Time.time() * -3 * this.efficiency);
+    Draw.rect(this.propellorRegion, tile.drawx(), tile.drawy(), Time.time() * -3);    
+    Draw.rect(this.rotateRegion, tile.drawx(), tile.drawy(), Time.time() * -3);
     Draw.rect(this.topRegion, tile.drawx(), tile.drawy());
   }
 });
