@@ -22,7 +22,7 @@ const aerialdrill = extendContent(Drill, "aerial-drill", {
     Draw.rect(this.region, tile.drawx(), tile.drawy());
     
     Draw.color(Color.valueOf('000000'), Color.valueOf('ffc2d6'), entity.getHeat() * (0.7 + Mathf.absin(Time.time(), 3, 0.3)));
-		Draw.blend(Blending.additive);
+    Draw.blend(Blending.additive);
     Draw.rect(this.rimRegion, tile.drawx(), tile.drawy());
     Draw.blend();
     Draw.color();
