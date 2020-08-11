@@ -3,14 +3,14 @@ description: A late game drill, capable of mining vanadium, spans multiple tiles
 health: 830
 size: 5
 tier: 6
-rotateSpeed: -6
-updateEffectChance: 0.06
-drillTime: 250
+updateEffect: pulverizeMedium
+updateEffectChance: 0.1
+drillTime: 200
 consumes: {
-  power: 12
+  power: 16.667
   liquid: {
     liquid: cryofluid
-    amount: 0.2
+    amount: 0.15
   }
 }
 requirements: [
