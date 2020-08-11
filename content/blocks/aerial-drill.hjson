@@ -4,6 +4,7 @@ health: 830
 size: 5
 tier: 6
 itemCapacity: 50
+drawRim: true
 updateEffect: pulverizeMedium
 updateEffectChance: 0.1
 drillTime: 250
