@@ -1,8 +1,9 @@
 name: Aerial Drill
-description: A late game drill, capable of mining vanadium, spans multiple tiles.
+description: An insanely powerful late game drill, capable of mining vanadium, spans multiple tiles.
 health: 830
 size: 5
 tier: 6
+itemCapacity: 50
 updateEffect: pulverizeMedium
 updateEffectChance: 0.1
 drillTime: 250
