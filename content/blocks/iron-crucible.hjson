@@ -11,7 +11,7 @@ consumes: {
   power: 1.5
   items: {
     items: [
-      ore-iron-resource/1
+      iron-rock/1
     ]
   }
 }
