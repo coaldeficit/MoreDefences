@@ -1,0 +1,5 @@
+type: OreBlock
+name: Iron Ore
+itemDrop: iron-ore-resource
+variants: 3
+playerUnmineable: true
