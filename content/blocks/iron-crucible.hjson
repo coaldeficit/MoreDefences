@@ -25,5 +25,5 @@ category: crafting
 research: melter
 outputLiquid: {
  liquid: slag
- amount: 8.5
+ amount: 4.5
 }
