@@ -1,0 +1,28 @@
+type: GenericSmelter
+name: Iron Crucible
+description: Smelts iron into slag.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 12
+updateEffect: smeltsmoke
+consumes: {
+  power: 1.5
+  items: {
+    items: [
+      iron-ore-resource/1
+    ]
+  }
+}
+requirements: [
+  copper/45
+  lead/50
+  graphite/55
+  thorium/45
+]
+category: crafting
+research: melter
+outputLiquid: {
+ liquid: slag
+ amount: 0.5
+ }
