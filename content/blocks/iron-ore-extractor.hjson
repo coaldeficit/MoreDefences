@@ -3,7 +3,7 @@ name: Iron Ore Extractor
 description: Drills into the ground and mines Iron Ore.
 size: 1
 hasPower: true
-craftTime: 60
+craftTime: 80
 consumes: {
   power: 0.5
 }
