@@ -8,10 +8,10 @@ consumes: {
   power: 0.5
 }
 requirements: [
-  copper/40
-  lead/30
-  graphite/20
-  biomatter/15
+  copper/100
+  lead/80
+  graphite/60
+  biomatter/50
 ]
 category: production
 research: peat-cultivator
