@@ -1,0 +1,30 @@
+type: GenericSmelter
+name: Iron Refinery
+description: Smelts iron ore into Iron.
+size: 2
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 45
+updateEffect: smeltsmoke
+consumes: {
+  power: 1
+  items: {
+    items: [
+      iron/2
+      coal/2
+    ]
+  }
+}
+requirements: [
+  copper/75
+  lead/60
+  graphite/40
+]
+category: crafting
+research: silicon-smelter
+outputLiquid: {
+ liquid: slag
+ amount: 0.5
+}
+outputItem: ferum/1
