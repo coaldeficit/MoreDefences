@@ -17,4 +17,4 @@ category: production
 research: peat-cultivator
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: iron-rock/1
+outputItem: iron/1
