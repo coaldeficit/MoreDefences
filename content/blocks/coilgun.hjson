@@ -15,14 +15,15 @@ ammo: {
     speed: 15
     damage: 300
     ammoMultiplier: 1
-    splashDamage: 100
+    splashDamage: 150
     splashDamageRadius: 16
     frontColor: ffffff
     backColor: e8f8ff
     collidesAir: false
     bulletWidth: 12
     bulletHeight: 12
-    bulletSprite: shell
+    hitSound: explosion
+    hitShake: 2
   }
 }
 requirements: [
