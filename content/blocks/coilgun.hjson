@@ -1,0 +1,26 @@
+type: ItemTurret
+name: Coilgun
+description: Fires powerful bullets at a somewhat slow rate. Requires large amounts of ammo to fire.
+health: 200
+size: 3
+reload: 100
+range: 360
+ammoUseEffect: shellEjectSmall
+inaccuracy: 0
+rotatespeed: 1
+shots: 1
+ammoPerShot: 20
+ammo: {
+  ferum: {
+    speed: 15
+    damage: 115
+    ammoMultiplier: 1
+  }
+}
+requirements: [
+  copper/120
+  lead/120
+  ferum/80
+]
+category: turret
+research: salvo
