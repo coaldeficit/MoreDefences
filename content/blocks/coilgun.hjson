@@ -10,6 +10,7 @@ inaccuracy: 0
 rotatespeed: 1
 shots: 1
 ammoPerShot: 20
+shootSound: bigshot
 ammo: {
   ferum: {
     speed: 15
@@ -22,7 +23,7 @@ ammo: {
     collidesAir: false
     bulletWidth: 12
     bulletHeight: 12
-    hitSound: explosion
+    hitSound: explosionbig
     hitShake: 2
   }
 }
