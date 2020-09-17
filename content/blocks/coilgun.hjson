@@ -13,7 +13,7 @@ ammoPerShot: 20
 ammo: {
   ferum: {
     speed: 15
-    damage: 115
+    damage: 300
     ammoMultiplier: 1
   }
 }
