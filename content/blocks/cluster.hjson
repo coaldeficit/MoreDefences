@@ -95,6 +95,7 @@ requirements: [
   titanium/240
   lead/230
   graphite/200
+  plastanium/120
   thorium/150
 ]
 category: turret
