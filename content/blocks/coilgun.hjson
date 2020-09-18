@@ -11,6 +11,7 @@ rotatespeed: 1
 shots: 1
 ammoPerShot: 20
 shootSound: bigshot
+targetAir: false
 ammo: {
   ferum: {
     speed: 15
