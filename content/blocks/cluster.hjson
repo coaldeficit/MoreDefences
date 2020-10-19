@@ -7,8 +7,8 @@ range: 360
 ammoUseEffect: shellEjectBig
 inaccuracy: 10
 velocityInaccuracy: 0.1
-shots: 8
-reload: 60
+shots: 9
+reload: 90
 recoil: 6
 ammoEjectBack: 5
 cooldown: 0.03
@@ -17,7 +17,7 @@ shootsound: artillery
 ammo: {
   graphite: {
     type: ArtilleryBulletType
-    speed: 4
+    speed: 2
     hitEffect: flakExplosion
     knockback: 0.8
     lifetime: 80
@@ -29,7 +29,7 @@ ammo: {
   }
   pyratite: {
     type: ArtilleryBulletType
-    speed: 4
+    speed: 2
     hitEffect: blastExplosion
     knockback: 0.8
     lifetime: 80
@@ -45,7 +45,7 @@ ammo: {
   }
   blast-compound: {
     type: ArtilleryBulletType
-    speed: 4
+    speed: 2
     hitEffect: blastExplosion
     knockback: 0.8
     lifetime: 70
@@ -60,7 +60,7 @@ ammo: {
   }
   plastanium: {
     type: ArtilleryBulletType
-    speed: 4
+    speed: 2
     hitEffect: plasticExplosion
     knockback: 1
     lifetime: 80
@@ -70,13 +70,13 @@ ammo: {
     splashDamageRadius: 35
     splashDamage: 40.5
     frontColor: ffffff
-    backColor: plastaniumBack
+    backColor: 8cff00
     fragBullet: artilleryPlasticFrag
     fragBullets: 10
   }
   polonium: {
     type: ArtilleryBulletType
-    speed: 6
+    speed: 4
     hitEffect: flakExplosion
     knockback: 0.8
     ammoMultiplier: 1.5
