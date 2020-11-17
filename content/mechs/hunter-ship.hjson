@@ -21,7 +21,7 @@ weapon: {
   spacing: 3
   width: 4
   inaccuracy: 1
-  reload: 10
+  reload: 120
   alternate: true
   shootSound: missile
   bullet: {
@@ -30,12 +30,12 @@ weapon: {
     bulletHeight: 10.5
     weaveScale: 2
     weaveMag: 0.5
-    speed: 8
+    speed: 6
     hitEffect: flakExplosion
     knockback: 0.8
     lifetime: 80
-    splashDamageRadius: 450
-    splashDamage: 300
+    splashDamageRadius: 20
+    splashDamage: 35
     homingPower: 0.2
     incendChance: 10
     incendSpread: 8
