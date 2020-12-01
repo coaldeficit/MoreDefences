@@ -11,7 +11,7 @@ rotatespeed: 10
 shots: 1
 targetGround: false
 ammoPerShot: 1
-ammo: {
+ammoTypes: {
   scrap: {
     speed: 20
     damage: 12
