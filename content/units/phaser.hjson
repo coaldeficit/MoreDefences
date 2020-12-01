@@ -1,4 +1,4 @@
-type: flyingUnit
+type: flying
 name: Phaser
 description: A heavy gunship. 
 speed: 0.05
