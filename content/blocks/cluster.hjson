@@ -1,4 +1,4 @@
-type: ArtilleryTurret
+type: ItemTurret
 name: Cluster
 description: An upgraded Ripple. Fires large amounts of bullets at once.
 health: 1600
@@ -14,7 +14,7 @@ ammoEjectBack: 5
 cooldown: 0.03
 shootshake: 2
 shootsound: artillery
-ammo: {
+ammoTypes: {
   graphite: {
     type: ArtilleryBulletType
     speed: 2
