@@ -11,7 +11,7 @@ rotatespeed: 2
 shots: 1
 ammoPerShot: 10
 targetAir: false
-ammo: {
+ammoTypes: {
   lead: {
     speed: 2
     damage: 150
