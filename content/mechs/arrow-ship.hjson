@@ -1,4 +1,4 @@
-type: HoverUnit
+type: flyingUnit
 name: Arrow
 flying: true
 description: An upgraded Dart. Fires powerful artillery shells from above at enemy ground units and structures.
