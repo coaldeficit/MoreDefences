@@ -9,7 +9,7 @@ consumes: {
   power: 0.65
 }
 category: units
-research: dart-mech-pad
+research: air-factory
 requirements: [
   copper/100
   lead/125
