@@ -1,4 +1,4 @@
-type: groundUnit
+type: mech
 name: Cannoneer
 flying: false
 description: A basic Gunner mech. Rapidly fires weak corroding bullets at enemy units and structures.
