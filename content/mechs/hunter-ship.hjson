@@ -1,4 +1,4 @@
-type: HoverUnit
+type: flying
 name: Hunter
 flying: true
 description: A basic Missiler ship. Fires bursts of 3 homing incendiary missiles.
