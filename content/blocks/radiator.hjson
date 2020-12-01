@@ -5,7 +5,6 @@ health: 1480
 size: 3
 reload: 30
 range: 200
-ammoUseEffect: shellEjectSmall
 inaccuracy: 1
 rotatespeed: 15
 shots: 1
