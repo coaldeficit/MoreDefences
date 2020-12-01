@@ -1,6 +1,6 @@
 name: Arrow Ship Pad
 description: Provides transformation into an upgraded Dart.
-type: MechPad
+type: LegacyMechPad
 health: 175
 mech: arrow-ship
 size: 2
@@ -8,7 +8,7 @@ hasItems: true
 consumes: {
   power: 0.65
 }
-category: upgrade
+category: units
 research: dart-mech-pad
 requirements: [
   copper/100
