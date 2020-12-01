@@ -35,7 +35,7 @@ sourceWeapon.inaccuracy = 0;
 sourceWeapon.spacing = 0;
 sourceWeapon.bullet = sourceBullet;
 
-const sourceShip = extendContent(Mech, "source-ship", {
+const sourceShip = extendContent(HoverUnit, "source-ship", {
   load(){
     this.weapon.load();
     this.region = Core.atlas.find(this.name);
