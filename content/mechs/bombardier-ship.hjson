@@ -1,4 +1,4 @@
-type: flyingUnit
+type: flying
 name: Bombardier
 flying: true
 description: A basic Bomber ship. Drops groups of 3 bombs on enemy structures and units.
