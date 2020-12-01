@@ -11,7 +11,7 @@ rotatespeed: 2.5
 spread: 15
 shots: 3
 targetAir: false
-ammo: {
+ammoTypes: {
   lead: {
     speed: 4.5
     damage: 2
