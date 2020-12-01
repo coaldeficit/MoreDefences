@@ -10,7 +10,7 @@ inaccuracy: 1
 rotatespeed: 15
 shots: 1
 ammoPerShot: 1
-ammo: {
+ammoTypes: {
   thorium: {
     speed: 5
     damage: 250
