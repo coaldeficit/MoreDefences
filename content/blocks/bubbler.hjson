@@ -9,7 +9,7 @@ inaccuracy: 5
 rotatespeed: 5
 spread: 45
 shots: 8
-ammo: {
+ammoTypes: {
  water: {
     type: LiquidBulletType
     liquid: water
