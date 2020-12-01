@@ -1,4 +1,4 @@
-type: DoubleTurret
+type: ItemTurret
 name: (2-3) Cannon
 description: A powerful turret that rapidly fires strong projectiles without using much ammo.
 health: 800
@@ -8,9 +8,9 @@ range: 160
 ammoUseEffect: shellEjectSmall
 inaccuracy: 0.5
 rotatespeed: 5
-spread: 0
-shotWidth: 4
-ammo: {
+alternate: true
+spread: 4
+ammoTypes: {
   vanadium: {
     speed: 8
     damage: 60
