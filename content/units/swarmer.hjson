@@ -1,4 +1,4 @@
-type: flyingUnit
+type: flying
 name: Swarmer
 description: A weak swarming unit designed to distract enemy defences. 
 speed: 1
