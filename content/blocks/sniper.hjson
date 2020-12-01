@@ -10,21 +10,21 @@ inaccuracy: 0
 rotatespeed: 2
 shots: 1
 ammoPerShot: 6
-ammo: {
+ammoTypes: {
   scrap: {
     speed: 15
-    damage: 125
+    damage: 250
     ammoMultiplier: 2
     reloadMultiplier: 2
   }
   copper: {
     speed: 15
-    damage: 250
+    damage: 500
     ammoMultiplier: 1
   }
   titanium: {
     speed: 15
-    damage: 500
+    damage: 1000
     ammoMultiplier: 1
     reloadMultiplier: 0.6
   }
