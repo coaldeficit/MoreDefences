@@ -10,7 +10,7 @@ inaccuracy: 2.5
 rotatespeed: 5
 spread: 0
 shots: 1
-ammo: {
+ammoTypes: {
   copper: {
     speed: 5
     damage: 6
