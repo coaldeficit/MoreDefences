@@ -10,7 +10,7 @@ inaccuracy: 3
 rotatespeed: 5
 spread: 1
 shots: 10
-ammo: {
+ammoTypes: {
   lead: {
     speed: 3
     damage: 7
