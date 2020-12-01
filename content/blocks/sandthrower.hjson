@@ -10,7 +10,7 @@ inaccuracy: 3
 rotatespeed: 5
 spread: 2
 shots: 5
-ammo: {
+ammoTypes: {
   sand: {
     speed: 3
     damage: 8
