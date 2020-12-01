@@ -1,4 +1,4 @@
-type: flyingUnit
+type: flying
 name: Slider
 description: A heavy bomber. 
 speed: 0.1
