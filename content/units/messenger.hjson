@@ -1,4 +1,4 @@
-type: flyingUnit
+type: flying
 name: Messenger
 description: A heavy gunship capable of communication. 
 speed: 0.15
