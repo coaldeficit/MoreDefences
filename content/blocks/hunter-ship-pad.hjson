@@ -1,6 +1,6 @@
 name: Hunter Ship Pad
 description: Provides transformation into a basic Missiler ship.
-type: MechPad
+type: LegacyMechPad
 health: 360
 mech: hunter-ship
 size: 3
@@ -8,7 +8,7 @@ hasItems: true
 consumes: {
   power: 2
 }
-category: upgrade
+category: units
 research: arrow-ship-pad
 requirements: [
   copper/200
