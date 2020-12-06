@@ -1,0 +1,36 @@
+type: mech
+name: Cannoneer
+flying: false
+description: A basic Gunner mech. Rapidly fires weak corroding bullets at enemy units and structures.
+speed: 0.5
+maxVelocity: 10
+mass: 1.2
+health: 300
+engineColor: aeff00
+ejectEffect: shellEjectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+weapon: {
+  name: cannoneer-weapon
+  length: 0
+  shots: 1
+  width: 3
+  inaccuracy: 2
+  reload: 20
+  alternate: true
+  shootSound: pew
+  bullet: {
+    speed: 5
+    damage: 18
+    bulletWidth: 10
+    bulletHeight: 14
+    frontColor: aeff00
+    backColor: 95db00
+    status: corroded
+  }
+}
+range: 80
+drillPower: 1
+mineSpeed: 0.1
+buildPower: 0.75
+itemCapacity: 10
