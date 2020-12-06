@@ -9,7 +9,7 @@ health: 280
 engineOffset: 5
 ejectEffect: none
 hitsize: 9
-research: arrow-ship
+research: poly
 weapons: [{
   name: hunter-weapon
   y: 0
