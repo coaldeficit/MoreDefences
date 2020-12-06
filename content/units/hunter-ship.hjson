@@ -14,7 +14,7 @@ ejectEffect: none
 weaponOffsetY: 0
 weaponOffsetX: 0
 hitsize: 9
-research: arrow-ship
+research: more-defences-ivyx-arrow-ship
 weapon: {
   name: hunter-weapon
   length: 0
