@@ -3,24 +3,19 @@ name: Hunter
 flying: true
 description: A basic Missiler ship. Fires bursts of 3 homing incendiary missiles.
 speed: 0.5
-maxVelocity: 9
 drag: 0.09
-mass: 2
 flying: true
 health: 280
-engineColor: ffa68c
 engineOffset: 5
 ejectEffect: none
-weaponOffsetY: 0
-weaponOffsetX: 0
 hitsize: 9
-research: more-defences-ivyx-arrow-ship
-weapon: {
+research: arrow-ship
+weapons: [{
   name: hunter-weapon
-  length: 0
+  y: 0
   shots: 3
   spacing: 3
-  width: 4
+  x: 7
   inaccuracy: 1
   reload: 120
   alternate: true
@@ -44,7 +39,7 @@ weapon: {
     backColor: ff9e42
     frontColor: ffbc7d
   }
-}
+}]
 range: 230
 drillPower: 1
 mineSpeed: 2.5
