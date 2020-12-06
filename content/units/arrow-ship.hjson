@@ -9,7 +9,7 @@ mass: 1
 flying: true
 health: 220
 engineColor: ffa665
-ejectEffect: shellEjectSmall
+ejectEffect: ejectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
 research: flare
