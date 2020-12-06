@@ -2,10 +2,8 @@ type: flying
 name: Arrow	
 flying: true	
 description: An upgraded Dart. Fires powerful artillery shells from above at enemy ground units and structures.	
-speed: 0.5	
-maxVelocity: 10	
+speed: 1	
 drag: 0.09	
-mass: 1	
 flying: true	
 health: 220	
 engineColor: ffa665	
