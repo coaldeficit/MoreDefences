@@ -9,6 +9,7 @@ range: 60
 mass: 1
 maxVelocity: 1.7
 rotatespeed: 0.8
+research: flare
 weapon: {
   name: swarming-gun
   length: 2
