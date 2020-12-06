@@ -10,6 +10,7 @@ engineColor: aeff00
 ejectEffect: shellEjectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
+research: dagger
 weapon: {
   name: cannoneer-weapon
   length: 0
