@@ -1,0 +1,42 @@
+type: flying
+name: Bombardier
+flying: true
+description: A basic Bomber ship. Drops groups of 3 bombs on enemy structures and units.
+speed: 0.35
+maxVelocity: 10
+drag: 0.09
+mass: 2
+turnCursor: false
+flying: true
+health: 220
+engineColor: 4ceaff
+ejectEffect: shellEjectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+weapon: {
+  name: generic-bomber-weapon
+  length: 0
+  shots: 3
+  shotDelay: 3
+  width: 2
+  inaccuracy: 20
+  reload: 120
+  alternate: true
+  shootSound: artillery
+  ignoreRotation: true
+  velocityRnd: 1
+  bullet: {
+    type: BombBulletType
+    hitEffect: flakExplosion
+    lifetime: 30
+    bulletWidth: 10
+    bulletHeight: 14
+    splashDamageRadius: 20
+    splashDamage: 90
+  }
+}
+range: 16
+drillPower: 2
+mineSpeed: 2.75
+buildPower: 1.2
+itemCapacity: 30
