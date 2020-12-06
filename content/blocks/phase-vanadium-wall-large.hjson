@@ -2,7 +2,7 @@ name: Large Phase Coated Vanadium Wall
 description: A large vanadium wall coated with Phase Fabric. Deflects most projectiles.
 type: DeflectorWall
 health: 6000
-maxDamageDeflect: 100
+chanceDeflect: 75,
 size: 2
 requirements: [
   vanadium/32
