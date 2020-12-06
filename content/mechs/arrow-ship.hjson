@@ -10,13 +10,11 @@ flying: true
 health: 220
 engineColor: ffa665
 ejectEffect: shellEjectSmall
-weaponOffsetY: 0
-weaponOffsetX: 0
-weapon: {
+weapons: [{
   name: arrow-weapon
-  length: 0
+  x: 8
   shots: 1
-  width: 2
+  y: 3
   inaccuracy: 0
   reload: 50
   alternate: false
@@ -27,14 +25,14 @@ weapon: {
     hitEffect: flakExplosion
     knockback: 0.8
     lifetime: 80
-    bulletWidth: 8
-    bulletHeight: 8
+    width: 8
+    length: 8
     collidesTiles: true
     collides: true
     splashDamageRadius: 25
     splashDamage: 35
   }
-}
+}]
 range: 260
 drillPower: 1
 mineSpeed: 2.75
