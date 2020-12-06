@@ -1,0 +1,43 @@
+type: flying
+name: Arrow
+flying: true
+description: An upgraded Dart. Fires powerful artillery shells from above at enemy ground units and structures.
+speed: 0.5
+maxVelocity: 10
+drag: 0.09
+mass: 1
+flying: true
+health: 220
+engineColor: ffa665
+ejectEffect: shellEjectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+weapon: {
+  name: arrow-weapon
+  length: 0
+  shots: 1
+  width: 2
+  inaccuracy: 0
+  reload: 50
+  alternate: false
+  shootSound: shootSnap
+  bullet: {
+    type: ArtilleryBulletType
+    speed: 5
+    hitEffect: flakExplosion
+    knockback: 0.8
+    lifetime: 80
+    bulletWidth: 8
+    bulletHeight: 8
+    collidesTiles: true
+    collides: true
+    splashDamageRadius: 25
+    splashDamage: 35
+  }
+}
+range: 260
+drillPower: 1
+mineSpeed: 2.75
+buildPower: 1
+itemCapacity: 30
+targetAir: false
