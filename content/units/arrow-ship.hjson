@@ -13,29 +13,28 @@ ejectEffect: shellEjectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
 research: flare
-weapon: {
-  name: arrow-weapon
-  length: 0
-  shots: 1
-  width: 2
-  inaccuracy: 0
-  reload: 50
-  alternate: false
-  shootSound: shootSnap
-  bullet: {
-    type: ArtilleryBulletType
-    speed: 5
-    hitEffect: flakExplosion
-    knockback: 0.8
-    lifetime: 80
-    bulletWidth: 8
-    bulletHeight: 8
-    collidesTiles: true
-    collides: true
-    splashDamageRadius: 25
-    splashDamage: 35
-  }
-}
+weapons: [{
+weaponOffsetX: 0	
+weapon: {	
+  name: arrow-weapon	  name: arrow-weapon
+  length: 0	  x: 8
+  shots: 1	  shots: 1
+  width: 2	  y: 3
+  inaccuracy: 0	  inaccuracy: 0
+  reload: 50	  reload: 50
+  alternate: false	  alternate: false
+@@ -27,14 +25,14 @@ weapon: {
+    hitEffect: flakExplosion	    hitEffect: flakExplosion
+    knockback: 0.8	    knockback: 0.8
+    lifetime: 80	    lifetime: 80
+    bulletWidth: 8	    width: 8
+    bulletHeight: 8	    length: 8
+    collidesTiles: true	    collidesTiles: true
+    collides: true	    collides: true
+    splashDamageRadius: 25	    splashDamageRadius: 25
+    splashDamage: 35	    splashDamage: 35
+  }	  }
+}	}]
 range: 260
 drillPower: 1
 mineSpeed: 2.75
