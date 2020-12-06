@@ -13,6 +13,7 @@ engineColor: 4ceaff
 ejectEffect: shellEjectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
+research: flare
 weapon: {
   name: generic-bomber-weapon
   length: 0
