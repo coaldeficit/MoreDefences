@@ -12,6 +12,7 @@ engineColor: ffa665
 ejectEffect: shellEjectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
+research: flare
 weapon: {
   name: arrow-weapon
   length: 0
