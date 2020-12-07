@@ -48,9 +48,9 @@ ammoTypes: {
   }
 }
 requirements: [
-  thorium/30
-  titanium/150
-  vanadium/5
+  titanium/670
+  thorium/475
+  vanadium/50
 ]
 category: turret
 research: vanadium-extractor
