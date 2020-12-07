@@ -3,53 +3,53 @@ name: Instant
 description: An upgraded Tearer. Fires fast bullets at an extremely fast rate.
 health: 800
 size: 2
-reload: 3
+reloadTime: 3
 range: 170
 ejectEffect: shellEjectSmall
 inaccuracy: 1
-rotatespeed: 10
+rotatespeed: 100
 shots: 1
 targetGround: false
 ammoPerShot: 1
 ammoTypes: {
   scrap: {
     speed: 20
-    damage: 12
+    damage: 10
     ammoMultiplier: 6
     drawSize: 4
   }
   lead: {
     speed: 16
-    damage: 20
+    damage: 15
     ammoMultiplier: 3
     drawSize: 4
   }
   coal: {
     speed: 16
-    damage: 16
+    damage: 10
     ammoMultiplier: 3
     drawSize: 4
-    incendAmount: 1
-    incendSpread: 16
-    incendChance: 6
+    incendAmount: 0.5
+    incendSpread: 0.1
+    incendChance: 0.5
   }
   silicon: {
     speed: 16
-    damage: 20
+    damage: 18
     ammoMultiplier: 3
     drawSize: 4
     homingPower: 12
   }
   titanium: {
     speed: 13
-    damage: 40
+    damage: 45
     ammoMultiplier: 3
     drawSize: 4
     reloadMultiplier: 0.6
   }
   polonium: {
     speed: 13
-    damage: 80
+    damage: 85
     ammoMultiplier: 1
     drawSize: 4
     reloadMultiplier: 0.4
