@@ -7,7 +7,7 @@ drag: 0.05
 rotateSpeed: 1
 hitsize: 82
 flying: true
-health: 4500
+health: 7000
 engineOffset: 0
 rotateWeapon: true
 shootCone: 45
