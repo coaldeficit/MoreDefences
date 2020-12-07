@@ -16,9 +16,9 @@ mass: 100
 weapons: [
   {
   name: messenger-gun
-  y: -2
+  y: 3
   shots: 3
-  x: 10
+  x: 4
   inaccuracy: 2
   spread: 8
   reload: 5
@@ -38,11 +38,11 @@ weapons: [
   }
 }
 {
-  name: messenger-gun
+  name: artillery-mount
   top: true
-  y: 1
+  y: -2
   shots: 3
-  x: 4
+  x: 10
   inaccuracy: 3
   spread: 8
   reload: 60
