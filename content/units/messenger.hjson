@@ -19,7 +19,7 @@ weapons: [
   y: 0
   shots: 3
   x: 6
-  inaccuracy: 3
+  inaccuracy: 12
   spread: 8
   reload: 30
   recoil: 5
@@ -27,7 +27,7 @@ weapons: [
   shootSound: pew
   bullet: {
     speed: 5
-    damage: 13
+    damage: 29
     incendAmount: 1
     incendChance: 0.9
     incendSpread: 1
@@ -36,4 +36,4 @@ weapons: [
     backColor: ff9900
     frontColor: fcffa8
   }
-}
+}]
