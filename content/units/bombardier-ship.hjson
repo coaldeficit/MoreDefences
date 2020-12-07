@@ -10,11 +10,8 @@ turnCursor: false
 flying: true
 health: 220
 engineColor: 4ceaff
-ejectEffect: shellEjectSmall
-weaponOffsetY: 0
-weaponOffsetX: 0
 research: flare
-weapon: {
+weapons: [{
   name: generic-bomber-weapon
   length: 0
   shots: 3
@@ -23,19 +20,18 @@ weapon: {
   inaccuracy: 20
   reload: 120
   alternate: true
-  shootSound: artillery
   ignoreRotation: true
   velocityRnd: 1
   bullet: {
     type: BombBulletType
     hitEffect: flakExplosion
     lifetime: 30
-    bulletWidth: 10
-    bulletHeight: 14
+    width: 10
+    length: 14
     splashDamageRadius: 20
     splashDamage: 90
   }
-}
+}]
 range: 16
 drillPower: 2
 mineSpeed: 2.75
