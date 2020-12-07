@@ -14,7 +14,7 @@ targetAir: false
 ammoTypes: {
   lead: {
     speed: 4.5
-    damage: 1
+    damage: 4
     ammoMultiplier: 2
     pierce: true
     lifetime: 120
