@@ -1,11 +1,11 @@
 type: flying
 name: Messenger
 description: A heavy gunship capable of communication. 
-speed: 0.15
-maxVelocity: 0.15
-rotatespeed: 0.05
+speed: 1
+accel: 0.02
+drag: 0.05
+rotateSpeed: 1
 hitsize: 82
-hitsizeTile: 8
 flying: true
 health: 4500
 engineOffset: 0
@@ -13,24 +13,26 @@ rotateWeapon: true
 shootCone: 45
 range: 250
 mass: 100
-weapon: {
+weapons: [
+  {
   name: messenger-gun
-  length: 0
+  y: 0
   shots: 3
-  width: 6
+  x: 6
   inaccuracy: 3
   spread: 8
-  reload: 12
+  reload: 30
+  recoil: 5
   alternate: true
-  shootSound: shootSnap
+  shootSound: pew
   bullet: {
     speed: 5
-    damage: 10
-    incendAmount: 5
-    incendChance: 2
-    incendSpread: 6
-    bulletWidth: 9
-    bulletHeight: 12
+    damage: 13
+    incendAmount: 1
+    incendChance: 0.9
+    incendSpread: 1
+    width: 9
+    length: 12
     backColor: ff9900
     frontColor: fcffa8
   }
