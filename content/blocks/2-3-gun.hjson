@@ -3,7 +3,7 @@ name: (2-3) Cannon
 description: A powerful turret that rapidly fires strong projectiles without using much ammo.
 health: 800
 size: 2
-reload: 6
+reloadTime: 20
 range: 160
 ejectEffect: shellEjectSmall
 inaccuracy: 0.5
@@ -13,18 +13,18 @@ spread: 4
 ammoTypes: {
   vanadium: {
     speed: 8
-    damage: 60
+    damage: 80
     ammoMultiplier: 6
   }
   polonium: {
     speed: 7
-    damage: 120
+    damage: 140
     ammoMultiplier: 6
     reloadMultiplier: 0.6
   }
   tefium: {
     speed: 8
-    damage: 30
+    damage: 50
     ammoMultiplier: 6
     splashDamage: 45
     splashDamageRadius: 16
@@ -35,5 +35,6 @@ requirements: [
   vanadium/35
   silicon/200
 ]
+shootSound: shootSnap
 category: turret
 research: tefium-forge
