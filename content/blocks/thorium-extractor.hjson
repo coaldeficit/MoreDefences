@@ -4,7 +4,7 @@ description: Digs down deep into the ground and extracts Thorium.
 size: 3
 hasPower: true
 hasLiquids: true
-craftTime: 300
+craftTime: 240
 consumes: {
   power: 2
   liquid: {
