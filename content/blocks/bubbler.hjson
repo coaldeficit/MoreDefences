@@ -3,7 +3,7 @@ name: Bubbler
 description: A piercing turret that creates hundreds of bubbles from liquids which deal low damage.
 health: 600
 size: 2
-reload: 3
+reloadTime: 3
 range: 200
 inaccuracy: 45
 rotatespeed: 5
