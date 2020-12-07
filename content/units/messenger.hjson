@@ -16,7 +16,7 @@ mass: 100
 weapons: [
   {
   name: messenger-gun
-  y: 3
+  y: 10
   shots: 3
   x: 4
   inaccuracy: 2
@@ -27,7 +27,7 @@ weapons: [
   shootSound: pew
   bullet: {
     speed: 5
-    damage: 25
+    damage: 45
     incendAmount: 1
     incendChance: 0.9
     incendSpread: 1
@@ -45,15 +45,16 @@ weapons: [
   x: 10
   inaccuracy: 3
   spread: 8
-  reload: 60
+  reload: 120
   recoil: 12
   alternate: false
   shootSound: artillery
   bullet: {
     type: ArtilleryBulletType
-    damage: 25
-    splashDamage: 15
+    damage: 80
+    splashDamage: 5
     splashDamageRadius: 12
-    length: 18
-    width: 18}
+    length: 22
+    width: 22
+    }
 }]
