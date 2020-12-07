@@ -38,7 +38,7 @@ weapons: [
   }
 }
 {
-  name: mount-weapon
+  name: messenger-gun
   top: true
   y: 1
   shots: 3
