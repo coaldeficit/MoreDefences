@@ -1,13 +1,13 @@
 type: ItemTurret
 name: Coilgun
 description: Fires powerful bullets at a somewhat slow rate. Requires large amounts of ammo to fire.
-health: 200
+health: 1120
 size: 3
-reload: 100
+reloadTime: 100
 range: 360
 ejectEffect: shellEjectSmall
 inaccuracy: 0
-rotatespeed: 1
+rotatespeed: 10
 shots: 1
 ammoPerShot: 20
 shootSound: bigshot
@@ -15,7 +15,7 @@ targetAir: false
 ammoTypes: {
   ferum: {
     speed: 15
-    damage: 300
+    damage: 301
     ammoMultiplier: 1
     splashDamage: 150
     splashDamageRadius: 16
