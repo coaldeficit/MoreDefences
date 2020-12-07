@@ -4,7 +4,7 @@ description: Creates Coal by compressing and heating up Peat.
 size: 2
 hasPower: true
 hasItems: true
-craftTime: 60
+craftTime: 100
 consumes: {
   power: 0.5
   items: {
