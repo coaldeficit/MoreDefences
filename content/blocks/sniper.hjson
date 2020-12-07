@@ -3,7 +3,7 @@ name: Sniper
 description: Takedown.
 health: 1120
 size: 1
-reload: 360
+reloadTime: 360
 range: 432
 ejectEffect: shellEjectSmall
 inaccuracy: 0
