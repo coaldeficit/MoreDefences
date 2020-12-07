@@ -4,7 +4,7 @@ description: Digs down deep into the ground and extracts Titanium.
 size: 2
 hasPower: true
 hasLiquids: true
-craftTime: 220
+craftTime: 240
 consumes: {
   power: 0.55
   liquid: {
