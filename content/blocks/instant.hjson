@@ -7,8 +7,9 @@ reloadTime: 3
 range: 170
 shootSound: shootSnap
 inaccuracy: 1
-rotatespeed: 50
-shots: 1
+rotatespeed: 100
+spread: 3
+shots: 2
 targetGround: false
 ammoPerShot: 1
 ammoTypes: {
