@@ -19,15 +19,15 @@ weapons: [
   y: -2
   shots: 3
   x: 10
-  inaccuracy: 12
+  inaccuracy: 2
   spread: 8
-  reload: 15
+  reload: 5
   recoil: 5
   alternate: true
   shootSound: pew
   bullet: {
     speed: 5
-    damage: 29
+    damage: 25
     incendAmount: 1
     incendChance: 0.9
     incendSpread: 1
