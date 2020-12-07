@@ -3,9 +3,9 @@ name: Bubbler
 description: A piercing turret that creates hundreds of bubbles from liquids which deal low damage.
 health: 600
 size: 2
-reload: 6
+reload: 3
 range: 200
-inaccuracy: 5
+inaccuracy: 45
 rotatespeed: 5
 spread: 45
 shots: 8
@@ -25,7 +25,7 @@ ammoTypes: {
     damage: 0.375
     status: melting
     pierce: true
-    lifetime: 300
+    lifetime: 180
     drag: 0.025
   }
   oil: {
@@ -34,7 +34,7 @@ ammoTypes: {
     damage: 0.375
     status: tarred
     pierce: true
-    lifetime: 300
+    lifetime: 240
     drag: 0.025
   }
   cryofluid: {
@@ -43,14 +43,14 @@ ammoTypes: {
     damage: 0.125
     status: freezing
     pierce: true
-    lifetime: 300
+    lifetime: 60
     drag: 0.025
     reloadMultiplier: 0.125
   }
 }
 requirements: [
   lead/125
-  titanium/15
+  titanium/25
   metaglass/75
 ]
 category: turret
