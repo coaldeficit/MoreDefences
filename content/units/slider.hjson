@@ -9,7 +9,7 @@ range: 160
 mass: 100
 maxVelocity: 0.3
 rotatespeed: 0.05
-weapon: {
+weapons: [{
   name: nuke-launcher
   length: 2
   width: 4
@@ -28,4 +28,4 @@ weapon: {
       damage: 6
     }
   }
-}
+}]
