@@ -3,13 +3,14 @@ name: Instant
 description: An upgraded Tearer. Fires fast bullets at an extremely fast rate.
 health: 800
 size: 2
-reloadTime: 3
+reloadTime: 6
 range: 170
 shootSound: shootSnap
 inaccuracy: 1
-rotatespeed: 100
-spread: 3
+rotatespeed: 50
+spread: 5
 shots: 2
+alternate: true
 targetGround: false
 ammoPerShot: 1
 ammoTypes: {
