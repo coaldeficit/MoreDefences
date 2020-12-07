@@ -1,13 +1,11 @@
 type: flying
 name: Slider
 description: A heavy bomber. 
-speed: 0.1
+speed: 0.2
 flying: true
 health: 2500
 engineOffset: 0
 range: 160
-mass: 100
-maxVelocity: 0.3
 rotatespeed: 0.05
 weapons: [{
   name: nuke-launcher
