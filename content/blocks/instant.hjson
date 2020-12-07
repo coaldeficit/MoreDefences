@@ -5,9 +5,9 @@ health: 800
 size: 2
 reloadTime: 3
 range: 170
-ejectEffect: shellEjectSmall
+shootSound: shootSnap
 inaccuracy: 1
-rotatespeed: 100
+rotatespeed: 50
 shots: 1
 targetGround: false
 ammoPerShot: 1
