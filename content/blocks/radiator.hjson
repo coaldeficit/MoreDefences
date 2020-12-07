@@ -3,7 +3,7 @@ name: Radiator
 description: Fires powerful bullets at a fast rate.
 health: 1480
 size: 3
-reload: 30
+reloadTime: 30
 range: 200
 inaccuracy: 1
 rotatespeed: 15
