@@ -16,9 +16,9 @@ mass: 100
 weapons: [
   {
   name: messenger-gun
-  y: 0
+  y: -3
   shots: 3
-  x: 6
+  x: 10
   inaccuracy: 12
   spread: 8
   reload: 30
@@ -35,5 +35,20 @@ weapons: [
     length: 12
     backColor: ff9900
     frontColor: fcffa8
+  }
+}
+{
+  name: artillery
+  y: 0
+  shots: 3
+  x: 6
+  inaccuracy: 3
+  spread: 8
+  reload: 60
+  recoil: 12
+  alternate: false
+  shootSound: artillery
+  bullet: {
+    type: ArtilleryBulletType
   }
 }]
