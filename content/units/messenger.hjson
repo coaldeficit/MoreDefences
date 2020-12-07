@@ -1,13 +1,13 @@
 type: flying
 name: Messenger
-description: A heavy gunship capable of communication. 
+description: Fires a stack of artillery and incendiary bullets at all nearby enemies.
 speed: 1
 accel: 0.02
 drag: 0.05
 rotateSpeed: 1
 hitsize: 82
 flying: true
-health: 7000
+health: 10000
 engineOffset: 0
 rotateWeapon: true
 shootCone: 45
