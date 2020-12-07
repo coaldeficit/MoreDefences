@@ -9,6 +9,7 @@ health: 220
 engineColor: ffa665	
 ejectEffect: ejectSmall	
 research: poly
+hovering: true
 weapons: [{	
   name: arrow-weapon	
   x: 0
