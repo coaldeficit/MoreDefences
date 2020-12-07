@@ -38,7 +38,7 @@ weapons: [
   }
 }
 {
-  name: scepter-weapon
+  name: mount-weapon
   top: true
   y: 1
   shots: 3
