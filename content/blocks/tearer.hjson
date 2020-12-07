@@ -3,9 +3,8 @@ name: Tearer
 description: Fires weak bullets at an extremely fast rate.
 health: 200
 size: 1
-reload: 2
+reload: 1
 range: 170
-ejectEffect: shellEjectSmall
 inaccuracy: 3
 rotatespeed: 15
 shots: 1
@@ -14,35 +13,35 @@ ammoPerShot: 1
 ammoTypes: {
   scrap: {
     speed: 7
-    damage: 6
+    damage: 2
     ammoMultiplier: 6
     drawSize: 4
   }
   lead: {
     speed: 7
-    damage: 10
+    damage: 4
     ammoMultiplier: 3
     drawSize: 4
   }
   coal: {
     speed: 7
-    damage: 8
+    damage: 3
     ammoMultiplier: 3
     drawSize: 4
-    incendAmount: 1
-    incendSpread: 16
-    incendChance: 6
+    incendAmount: 0.2
+    incendSpread: 0.1
+    incendChance: 0.2
   }
   silicon: {
     speed: 7
-    damage: 10
+    damage: 3
     ammoMultiplier: 3
     drawSize: 4
     homingPower: 6
   }
   titanium: {
     speed: 7
-    damage: 20
+    damage: 8
     ammoMultiplier: 3
     drawSize: 4
     reloadMultiplier: 0.6
