@@ -3,12 +3,12 @@ name: Multishot
 description: An upgraded Sand Thrower. Fires 10 weak bullets that spread out.
 health: 200
 size: 1
-reloadTime: 120
+reloadTime: 60
 range: 100
 inaccuracy: 3
 rotatespeed: 5
 spread: 1
-shots: 10
+shots: 8
 ammoTypes: {
   lead: {
     speed: 3
@@ -19,9 +19,9 @@ ammoTypes: {
     speed: 3
     damage: 6
     ammoMultiplier: 1
-    incendAmount: 1
-    incendSpread: 16
-    incendChance: 33
+    incendAmount: 0.3
+    incendSpread: 0.5
+    incendChance: 0.9
   }
   silicon: {
     speed: 3
