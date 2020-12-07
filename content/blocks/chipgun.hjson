@@ -1,9 +1,9 @@
 type: ItemTurret
-name: Chipgun
+name: Melter
 description: A small turret that rapidly fires homing incendiary projectiles.
 health: 200
 size: 1
-reload: 15
+reloadTime: 35
 range: 138
 ejectEffect: shellEjectSmall
 inaccuracy: 1
