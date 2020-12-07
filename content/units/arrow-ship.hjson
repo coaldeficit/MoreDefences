@@ -30,7 +30,7 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 25	
-    splashDamage: 35	
+    splashDamage: 90
   }	
 }]	
 range: 260	
