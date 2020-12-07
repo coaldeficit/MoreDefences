@@ -3,7 +3,7 @@ name: Beehive
 description: A turret that fires a powerful swarm of homing piercing projectiles. Uses lead as ammo.
 health: 75
 size: 2
-reload: 6
+reload: 12
 range: 160
 ejectEffect: shellEjectSmall
 inaccuracy: 0.5
@@ -14,8 +14,8 @@ targetAir: false
 ammoTypes: {
   lead: {
     speed: 4.5
-    damage: 2
-    ammoMultiplier: 6
+    damage: 1
+    ammoMultiplier: 2
     pierce: true
     lifetime: 120
     homingPower: 0.05
@@ -28,10 +28,10 @@ ammoTypes: {
   }
 }
 requirements: [
-  copper/200
-  lead/200
-  graphite/175
-  titanium/120
+  copper/95
+  lead/110
+  graphite/45
+  titanium/50
 ]
 category: turret
-research: ripple
+research: multishot
