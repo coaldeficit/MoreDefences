@@ -8,7 +8,7 @@ ejectEffect: casing3Double
 inaccuracy: 10
 velocityInaccuracy: 0.3
 shots: 10
-reloadTime: 90
+reloadTime: 120
 recoil: 6
 ammoEjectBack: 5
 cooldown: 0.03
@@ -21,8 +21,8 @@ ammoTypes: {
     hitEffect: flakExplosion
     knockback: 0.8
     lifetime: 120
-    bulletWidth: 11
-    bulletHeight: 11
+    width: 11
+    length: 11
     collidesTiles: false
     splashDamageRadius: 25
     splashDamage: 29.7
@@ -33,8 +33,8 @@ ammoTypes: {
     hitEffect: blastExplosion
     knockback: 0.8
     lifetime: 120
-    bulletWidth: 13
-    bulletHeight: 13
+    width: 13
+    length: 13
     collidesTiles: false
     splashDamageRadius: 25
     splashDamage: 31.5
@@ -49,8 +49,8 @@ ammoTypes: {
     hitEffect: blastExplosion
     knockback: 0.8
     lifetime: 110
-    bulletWidth: 14
-    bulletHeight: 14
+    width: 14
+    length: 14
     collidesTiles: false
     ammoMultiplier: 4
     splashDamageRadius: 45
@@ -64,8 +64,8 @@ ammoTypes: {
     hitEffect: plasticExplosion
     knockback: 1
     lifetime: 120
-    bulletWidth: 13
-    bulletHeight: 13
+    width: 13
+    length: 13
     collidesTiles: false
     splashDamageRadius: 35
     splashDamage: 40.5
@@ -81,8 +81,8 @@ ammoTypes: {
     knockback: 0.8
     ammoMultiplier: 1.5
     lifetime: 120
-    bulletWidth: 11
-    bulletHeight: 11
+    width: 11
+    length: 11
     collidesTiles: false
     splashDamageRadius: 95
     splashDamage: 200
