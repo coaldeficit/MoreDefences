@@ -49,7 +49,5 @@ weapons: [
   recoil: 12
   alternate: false
   shootSound: artillery
-  bullet: {
-    type: ArtilleryBulletType
-  }
+  bullet: artilleryDense
 }]
