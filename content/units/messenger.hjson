@@ -38,7 +38,7 @@ weapons: [
   }
 }
 {
-  name: artillery-mount
+  name: heavy-mount
   top: true
   y: -2
   shots: 3
