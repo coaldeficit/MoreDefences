@@ -6,7 +6,7 @@ hasPower: true
 hasItems: true
 craftTime: 100
 consumes: {
-  power: 0.5
+  power: 1.25
   items: {
     items: [
       biomatter/1
