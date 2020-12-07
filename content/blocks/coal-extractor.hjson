@@ -3,7 +3,7 @@ name: Coal Extractor
 description: Drills into the ground and mines Coal.
 size: 2
 hasPower: true
-craftTime: 120
+craftTime: 180
 consumes: {
   power: 0.25
 }
