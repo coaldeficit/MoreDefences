@@ -49,5 +49,11 @@ weapons: [
   recoil: 12
   alternate: false
   shootSound: artillery
-  bullet: artilleryDense
+  bullet: {
+    type: ArtilleryBulletType
+    damage: 25
+    splashDamage: 15
+    splashDamageRadius: 12
+    length: 18
+    width: 18}
 }]
