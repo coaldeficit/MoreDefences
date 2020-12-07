@@ -1,12 +1,12 @@
 name: Phase Coated Vanadium Wall
 description: A vanadium wall coated with Phase Fabric. Deflects most projectiles.
 type: Wall
-health: 1500
+health: 1150
 chanceDeflect: 75,
 size: 1
 requirements: [
   vanadium/8
-  phase-fabric/6
+  phase-fabric/12
 ]
 category: defense
 research: plast-vanadium-wall
