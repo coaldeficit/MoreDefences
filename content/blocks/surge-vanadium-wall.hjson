@@ -6,7 +6,7 @@ size: 1
 lightningDamage: 100
 requirements: [
   vanadium/8
-  surge-alloy/6
+  surge-alloy/12
 ]
 category: defense
 research: phase-vanadium-wall
