@@ -1,9 +1,9 @@
 type: ItemTurret
 name: Shrapnel
 description: An upgraded Multishot. Fires strong bullets at a slow rate that split into multiple weak bullets.
-health: 800
+health: 450
 size: 2
-reload: 180
+reloadTime: 180
 range: 125
 ejectEffect: shellEjectSmall
 inaccuracy: 2
@@ -14,9 +14,9 @@ targetAir: false
 ammoTypes: {
   lead: {
     speed: 2
-    damage: 150
+    damage: 99
     ammoMultiplier: 1
-    fragBullets: 15
+    fragBullets: 4
     lifetime: 120
     hitSize: 8
     drawSize: 80
@@ -28,7 +28,7 @@ ammoTypes: {
   }
   metaglass: {
     speed: 2
-    damage: 120
+    damage: 88
     ammoMultiplier: 1
     fragBullets: 30
     lifetime: 120
@@ -37,41 +37,41 @@ ammoTypes: {
     collidesAir: false
     fragBullet: {
       speed: 4
-      damage: 15
+      damage: 3
     }
   }
   coal: {
     speed: 2
-    damage: 120
+    damage: 66
     ammoMultiplier: 1
-    fragBullets: 15
+    fragBullets: 10
     lifetime: 120
     hitSize: 8
     drawSize: 80
     collidesAir: false
-    incendAmount: 3
-    incendSpread: 20
-    incendChance: 100
+    incendAmount: 0.1
+    incendSpread: 0.4
+    incendChance: 0.7
     fragBullet: {
-      speed: 4
-      damage: 15
-      incendAmount: 1
-      incendSpread: 8
-      incendChance: 33
+      speed: 2
+      damage: 2
+      incendAmount: 0.1
+      incendSpread: 0.1
+      incendChance: 0.1
     }
   }
   polonium: {
     speed: 1
-    damage: 300
-    ammoMultiplier: 1
-    fragBullets: 15
+    damage: 151
+    ammoMultiplier: 2
+    fragBullets: 4
     lifetime: 120
     hitSize: 8
     drawSize: 80
     collidesAir: false
     fragBullet: {
       speed: 4
-      damage: 50
+      damage: 35
     }
   }
 }
