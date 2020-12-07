@@ -3,11 +3,13 @@ name: Tearer
 description: Fires weak bullets at an extremely fast rate.
 health: 200
 size: 1
-reloadTime: 1
+reloadTime: 2
 range: 170
 inaccuracy: 3
 rotatespeed: 15
-shots: 1
+shots: 2
+alternate: true
+spread: 3
 targetGround: false
 ammoPerShot: 1
 ammoTypes: {
