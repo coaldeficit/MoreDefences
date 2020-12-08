@@ -6,7 +6,7 @@ speed: 0.5
 mass: 1.2
 health: 150
 engineColor: aeff00
-ejectEffect: shellEjectSmall
+ejectEffect: ejectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
 research: dagger
