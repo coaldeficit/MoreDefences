@@ -15,13 +15,11 @@ const aerial = extendContent(Drill, "aerial-drill", {
     ];
   }
 });
-aerial.buildType = () => extend(Drill.DrillBuild, pure, {
-  draw(){
-    aerial = arl
-    
-    Draw.rect(arl.region, this.x, this.y);
-    Draw.rect(arl.propellorRegion, this.x, this.y, Time.time() * 3.5 * arl.efficiency() * arl.liquids.total());    
-    Draw.rect(arl.rotateRegion, this.x, this.y, Time.time() * -3 * arl.efficiency() * arl.liquids.total());
-    Draw.rect(arl.topRegion, this.x, this.y);
+aerial.buildType = () => extend(Drill.DrillBuild, aerial, {
+  draw(){    
+    Draw.rect(aerial.region, this.x, this.y);
+    Draw.rect(aerial.propellorRegion, this.x, this.y, Time.time() * 3.5 * aerial.efficiency() * aerial.liquids.total());    
+    Draw.rect(aerial.rotateRegion, this.x, this.y, Time.time() * -3 * aerial.efficiency() * aerial.liquids.total());
+    Draw.rect(aerial.topRegion, this.x, this.y);
   }
 });
