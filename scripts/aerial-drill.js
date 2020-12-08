@@ -1,27 +1,27 @@
-const aerialdrill = extendContent(Drill, "aerial-drill", {
+const aerial = extendContent(Drill, "aerial-drill", {
   load(){
-    this.super$load();
     this.region = Core.atlas.find(this.name);
- //   this.rimRegion = Core.atlas.find(this.name + '-rim');
     this.propellorRegion = Core.atlas.find(this.name + "-propellor");
     this.rotateRegion = Core.atlas.find(this.name + "-rotator");
     this.topRegion = Core.atlas.find(this.name + "-top");
   },
   
-  generateIcons(){
-  return [
-    Core.atlas.find(this.name),
-    Core.atlas.find(this.name + "-propellor"),
-    Core.atlas.find(this.name + "-rotator"),
-    Core.atlas.find(this.name + "-top")
-  ];},
-   
-  draw(tile){
-    entity = tile.ent();
+  icons(){
+    return [
+      this.region,
+      this.propellorReigon,
+      this.rotateRegion,
+      this.topRegion
+    ];
+  }
+});
+aerial.buildType = () => extend(Drill.DrillBuild, pure, {
+  draw(){
+    aerial = arl
     
-    Draw.rect(this.region, tile.drawx(), tile.drawy());
-    Draw.rect(this.propellorRegion, tile.drawx(), tile.drawy(), Time.time() * 3.5 * entity.efficiency() * entity.liquids.total());    
-    Draw.rect(this.rotateRegion, tile.drawx(), tile.drawy(), Time.time() * -3 * entity.efficiency() * entity.liquids.total());
-    Draw.rect(this.topRegion, tile.drawx(), tile.drawy());
+    Draw.rect(arl.region, this.x, this.y);
+    Draw.rect(arl.propellorRegion, this.x, this.y, Time.time() * 3.5 * arl.efficiency() * arl.liquids.total());    
+    Draw.rect(arl.rotateRegion, this.x, this.y, Time.time() * -3 * arl.efficiency() * arl.liquids.total());
+    Draw.rect(arl.topRegion, this.x, this.y);
   }
 });
