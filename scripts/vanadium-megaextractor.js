@@ -5,18 +5,18 @@ const vanadium = extendContent(GenericCrafter, "vanadium-megaextractor", {
     this.topRegion = Core.atlas.find(this.name + "-top");
   },
   
-  generateIcons(){
-  return [
-    Core.atlas.find(this.name),
-    Core.atlas.find(this.name + "-rotator"),
-    Core.atlas.find(this.name + "-top")
-  ];},
-   
-  draw(tile){
-    entity = tile.ent();
-    
-    Draw.rect(this.region, tile.drawx(), tile.drawy());
-    Draw.rect(this.rotateRegion, tile.drawx(), tile.drawy(), entity.totalProgress * -2.75);
-    Draw.rect(this.topRegion, tile.drawx(), tile.drawy());
+  icons(){
+    return [
+      this.region,
+      this.rotateRegion,
+      this.topRegion
+    ];
+  }
+});
+vanadium.buildType = () => extend(GenericCrafter.GenericCrafterBuild, vanadium, {
+  draw(){
+    Draw.rect(vanadium.region, this.x, this.y);
+    Draw.rect(vanadium.rotateRegion, this.x, this.y, this.totalProgress * -2.75);
+    Draw.rect(vanadium.topRegion, this.x, this.y);
   }
 });
