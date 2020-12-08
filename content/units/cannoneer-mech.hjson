@@ -4,7 +4,7 @@ flying: false
 description: Rapidly fires weak corroding bullets at enemy units and structures.
 speed: 0.5
 mass: 1.2
-health: 300
+health: 150
 engineColor: aeff00
 ejectEffect: shellEjectSmall
 weaponOffsetY: 0
