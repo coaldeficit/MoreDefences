@@ -2,7 +2,7 @@ type: mech
 name: Artilleryman
 flying: false
 description: Fires bursts of 3 artillery shells at enemy structures and units.
-speed: 0.5
+speed: 0.3
 mass: 1.2
 health: 500
 engineColor: aeff00
@@ -16,18 +16,22 @@ weapons: [{
   shots: 3
   x: 3
   inaccuracy: 4
-  reload: 120
+  reload: 60
   alternate: true
   shootSound: pew
-  bullet: {
-    type: BasicBulletType
-    speed: 5
-    damage: 0
-    width: 10
-    length: 10
-    frontColor: aeff00
-    backColor: 95db00
-  }
+  bullet: {	
+    type: ArtilleryBulletType	
+    speed: 5	
+    hitEffect: flakExplosion	
+    knockback: 0.8	
+    lifetime: 80	
+    width: 8	
+    length: 8	
+    collidesTiles: true	
+    collides: true	
+    splashDamageRadius: 25	
+    splashDamage: 60
+  }	
 }]
 range: 80
 drillPower: 1
