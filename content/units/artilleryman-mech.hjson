@@ -1,0 +1,36 @@
+type: mech
+name: Artilleryman
+flying: false
+description: Fires bursts of 3 artillery shells at enemy structures and units.
+speed: 0.5
+mass: 1.2
+health: 500
+engineColor: aeff00
+ejectEffect: shellEjectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+research: cannoneer-mech
+weapons: [{
+  name: artilleryman-weapon
+  y: 0
+  shots: 3
+  x: 3
+  inaccuracy: 4
+  reload: 120
+  alternate: true
+  shootSound: pew
+  bullet: {
+    type: BasicBulletType
+    speed: 5
+    damage: 0
+    width: 10
+    length: 10
+    frontColor: aeff00
+    backColor: 95db00
+  }
+}]
+range: 80
+drillPower: 1
+mineSpeed: 0.1
+buildPower: 0.75
+itemCapacity: 10
