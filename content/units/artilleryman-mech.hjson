@@ -14,7 +14,7 @@ weapons: [{
   name: artilleryman-weapon
   y: 0
   shots: 3
-  x: 0
+  x: 3
   inaccuracy: 4
   reload: 60
   alternate: true
