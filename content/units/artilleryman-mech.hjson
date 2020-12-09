@@ -6,7 +6,7 @@ speed: 0.3
 mass: 1.2
 health: 500
 engineColor: aeff00
-ejectEffect: shellEjectSmall
+ejectEffect: ejectSmall
 weaponOffsetY: 0
 weaponOffsetX: 0
 research: cannoneer-mech
@@ -14,7 +14,7 @@ weapons: [{
   name: artilleryman-weapon
   y: 0
   shots: 3
-  x: 3
+  x: 6
   inaccuracy: 4
   reload: 60
   alternate: true
