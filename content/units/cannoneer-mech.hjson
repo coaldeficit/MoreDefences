@@ -3,12 +3,7 @@ name: Cannoneer
 flying: false
 description: Rapidly fires weak corroding bullets at enemy units and structures.
 speed: 0.5
-mass: 1.2
 health: 150
-engineColor: aeff00
-ejectEffect: ejectSmall
-weaponOffsetY: 0
-weaponOffsetX: 0
 research: dagger
 weapons: [{
   name: cannoneer-weapon
@@ -33,5 +28,4 @@ weapons: [{
 range: 80
 drillPower: 1
 mineSpeed: 0.1
-buildPower: 0.75
 itemCapacity: 10
