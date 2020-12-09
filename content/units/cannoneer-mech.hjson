@@ -14,7 +14,7 @@ weapons: [{
   name: cannoneer-weapon
   y: 0
   shots: 1
-  x: 3
+  x: 6
   inaccuracy: 2
   reload: 20
   alternate: true
