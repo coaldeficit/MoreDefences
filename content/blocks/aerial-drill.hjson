@@ -9,7 +9,7 @@ updateEffect: pulverizeMedium
 updateEffectChance: 0.1
 drillTime: 250
 consumes: {
-  power: 16.667
+  power: 7
   liquid: {
     liquid: cryofluid
     amount: 0.15
