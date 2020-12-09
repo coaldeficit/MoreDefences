@@ -38,3 +38,4 @@ drillPower: 1
 mineSpeed: 0.1
 buildPower: 0.75
 itemCapacity: 10
+targetAir: false
