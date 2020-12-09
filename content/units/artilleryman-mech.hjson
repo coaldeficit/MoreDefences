@@ -15,7 +15,7 @@ weapons: [{
   y: 0
   shots: 3
   x: -6
-  inaccuracy: 4
+  inaccuracy: 10
   reload: 60
   alternate: true
   shootSound: pew
