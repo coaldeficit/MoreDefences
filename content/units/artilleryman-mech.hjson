@@ -33,7 +33,7 @@ weapons: [{
     splashDamage: 60
   }	
 }]
-range: 80
+range: 260
 drillPower: 1
 mineSpeed: 0.1
 buildPower: 0.75
