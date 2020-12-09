@@ -18,8 +18,8 @@ const aerial = extendContent(Drill, "aerial-drill", {
 aerial.buildType = () => extend(Drill.DrillBuild, aerial, {
   draw(){    
     Draw.rect(aerial.region, this.x, this.y);
-    Draw.rect(aerial.propellorRegion, this.x, this.y, Time.time * 3.5 * this.efficiency() * this.liquids.total());    
-    Draw.rect(aerial.rotateRegion, this.x, this.y, Time.time * -3 * this.efficiency() * this.liquids.total());
+    Draw.rect(aerial.propellorRegion, this.x, this.y, Time.time * 3.5 * this.progress() * this.liquids.total());    
+    Draw.rect(aerial.rotateRegion, this.x, this.y, Time.time * -3 * this.progress() * this.liquids.total());
     Draw.rect(aerial.topRegion, this.x, this.y);
   }
 });
