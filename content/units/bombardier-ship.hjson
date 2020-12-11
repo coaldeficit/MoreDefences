@@ -13,10 +13,10 @@ engineColor: 4ceaff
 research: flare
 weapons: [{
   name: generic-bomber-weapon
-  length: 0
+  x: 0
   shots: 3
   shotDelay: 3
-  width: 2
+  x: 2
   inaccuracy: 20
   reload: 120
   alternate: true
@@ -33,7 +33,6 @@ weapons: [{
   }
 }]
 range: 16
-drillPower: 2
 mineSpeed: 2.75
-buildPower: 1.2
+buildSpeed: 1.2
 itemCapacity: 30
