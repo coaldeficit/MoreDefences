@@ -10,8 +10,8 @@ rotatespeed: 0.8
 research: flare
 weapons: [{
   name: sub-mount
-  y: 2
-  x: 2
+  y: -4
+  x: -2
   reload: 20
   alternate: true
   bullet: {
