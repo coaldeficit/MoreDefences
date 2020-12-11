@@ -9,8 +9,8 @@ range: 160
 rotatespeed: 0.05
 weapons: [{
   name: nuke-launcher
-  length: 2
-  width: 4
+  y: 2
+  x: 4
   reload: 30
   alternate: true
   bullet: {
