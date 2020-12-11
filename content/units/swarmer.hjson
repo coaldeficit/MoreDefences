@@ -8,7 +8,7 @@ engineOffset: 6
 range: 60
 rotatespeed: 0.8
 research: flare
-weapon: {
+weapons: [{
   name: sub-mount
   y: 2
   x: 2
@@ -20,4 +20,4 @@ weapon: {
     ammoMultiplier: 1
     lifetime: 60
   }
-}
+}]
