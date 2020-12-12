@@ -10,7 +10,7 @@ weapons: [{
   shots: 1
   x: -4.5
   inaccuracy: 2
-  reload: 20
+  reload: 60
   alternate: true
   shootSound: pew
   bullet: {
