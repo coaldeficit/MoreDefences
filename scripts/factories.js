@@ -9,5 +9,5 @@ Blocks.groundFactory.plans.add(new UnitFactory.UnitPlan(CannonT1, 60 * 25, ItemS
 
 // Swarmer
 const SwarmT1 = extendContent(UnitType, "swarmer-ship", {});
-CannonT1.constructor = () => extend(UnitEntity, {});
+SwarmT1.constructor = () => extend(UnitEntity, {});
 Blocks.groundFactory.plans.add(new UnitFactory.UnitPlan(SwarmT1, 60 * 25, ItemStack.with(Items.silicon, 15, Items.graphite, 30)));
