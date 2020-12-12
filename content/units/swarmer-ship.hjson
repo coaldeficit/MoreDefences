@@ -5,13 +5,14 @@ speed: 2.5
 flying: true
 health: 150
 engineOffset: 6
-drag: 0.09
+drag: 0.01
+accel: 0.08
 range: 60
-rotatespeed: 0.8
+rotatespeed: 5.0
 research: flare
 weapons: [{
   name: sub-mount
-  y: -4
+  y: 0
   x: -2
   reload: 20
   alternate: true
@@ -20,6 +21,6 @@ weapons: [{
     speed: 5
     damage: 2
     ammoMultiplier: 1
-    lifetime: 60
+    lifetime: 30
   }
 }]
