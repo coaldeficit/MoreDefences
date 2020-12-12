@@ -8,7 +8,7 @@ weapons: [{
   name: cannoneer-weapon
   y: 2
   shots: 1
-  x: 3
+  x: -4.5
   inaccuracy: 2
   reload: 20
   alternate: true
