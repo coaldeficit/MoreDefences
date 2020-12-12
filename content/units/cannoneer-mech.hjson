@@ -6,9 +6,9 @@ health: 150
 research: dagger
 weapons: [{
   name: cannoneer-weapon
-  y: 0
+  y: 2
   shots: 1
-  x: 0
+  x: 3
   inaccuracy: 2
   reload: 20
   alternate: true
