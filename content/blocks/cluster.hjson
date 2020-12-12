@@ -14,6 +14,7 @@ ammoEjectBack: 5
 cooldown: 0.03
 shootshake: 2
 shootsound: artillery
+targetAir: false
 ammoTypes: {
   graphite: {
     type: ArtilleryBulletType
