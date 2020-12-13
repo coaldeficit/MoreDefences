@@ -6,14 +6,13 @@ flying: true
 health: 150
 engineOffset: 6
 drag: 0.01
-accel: 0.08
+accel: 0.2
 range: 60
 rotatespeed: 5.0
 research: flare
 weapons: [{
   name: small-weapon
   top: false
-  rotate: true
   y: -1
   x: -5.5
   reload: 30
