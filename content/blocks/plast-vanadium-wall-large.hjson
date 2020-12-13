@@ -4,6 +4,7 @@ type: Wall
 health: 5400
 size: 2
 insulated: true
+absorbLasers: true
 requirements: [
   vanadium/32
   plastanium/40
