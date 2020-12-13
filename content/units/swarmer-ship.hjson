@@ -12,8 +12,9 @@ rotatespeed: 5.0
 research: flare
 weapons: [{
   name: small-weapon
+  top: false
   y: 0
-  x: -5
+  x: -6.5
   reload: 30
   alternate: true
   shootSound: pew
