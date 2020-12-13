@@ -11,10 +11,10 @@ range: 60
 rotatespeed: 5.0
 research: flare
 weapons: [{
-  name: sub-mount
+  name: small-weapon
   y: 0
   x: -2
-  reload: 20
+  reload: 30
   alternate: true
   shootSound: pew
   bullet: {
