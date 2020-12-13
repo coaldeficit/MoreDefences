@@ -13,6 +13,7 @@ research: flare
 weapons: [{
   name: small-weapon
   top: false
+  rotate: true
   y: -1
   x: -5.5
   reload: 30
