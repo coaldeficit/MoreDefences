@@ -30,7 +30,10 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 25	
-    splashDamage: 60
+    splashDamage: 50
+    frontColor: aeff00
+    backColor: 95db00
+    status: corroded
   }	
 }]
 range: 260
