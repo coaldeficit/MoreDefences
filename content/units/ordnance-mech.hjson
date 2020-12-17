@@ -1,0 +1,44 @@
+type: leg
+name: Ordnance
+flying: false
+description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
+speed: 0.3
+mass: 1.2
+health: 800
+engineColor: aeff00
+ejectEffect: ejectSmall
+weaponOffsetY: 0
+weaponOffsetX: 0
+research: artilleryman-mech
+weapons: [{
+  name: generic-bomber-weapon
+  y: 0
+  shots: 1
+  x: -6
+  inaccuracy: 0
+  reload: 120
+  alternate: true
+  shootSound: pew
+  bullet: {	
+    type: ArtilleryBulletType	
+    speed: 5	
+    hitEffect: flakExplosion	
+    knockback: 0.8	
+    lifetime: 80	
+    width: 8	
+    length: 8	
+    collidesTiles: true	
+    collides: true	
+    splashDamageRadius: 50
+    splashDamage: 260
+    frontColor: aeff00
+    backColor: 95db00
+    status: corroded
+  }	
+}]
+range: 260
+drillPower: 1
+mineSpeed: 0.1
+buildPower: 0.75
+itemCapacity: 10
+targetAir: false
