@@ -3,8 +3,7 @@ description: A large vanadium wall coated with Surge Alloy. Builds up charge on 
 type: Wall
 health: 7000
 size: 2
-lightningDamage: 100
-lightningChance: 0.2
+lightningChance: 0.02
 requirements: [
   vanadium/32
   surge-alloy/48
