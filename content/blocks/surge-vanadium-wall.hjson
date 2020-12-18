@@ -3,7 +3,7 @@ description: A vanadium wall coated with Surge Alloy. Builds up charge on bullet
 type: Wall
 health: 1750
 size: 1
-lightningDamage: 100
+lightningChance: 0.02
 requirements: [
   vanadium/8
   surge-alloy/12
