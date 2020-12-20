@@ -1,7 +1,7 @@
 type: ItemTurret
 name: Instant
 description: An upgraded Tearer. Fires fast bullets at an extremely fast rate.
-health: 800
+health: 1250
 size: 2
 reloadTime: 6
 range: 170
@@ -16,19 +16,19 @@ ammoPerShot: 1
 ammoTypes: {
   scrap: {
     speed: 20
-    damage: 10
+    damage: 18
     ammoMultiplier: 6
     drawSize: 4
   }
   lead: {
     speed: 16
-    damage: 15
+    damage: 22
     ammoMultiplier: 3
     drawSize: 4
   }
   coal: {
     speed: 16
-    damage: 10
+    damage: 19
     ammoMultiplier: 3
     drawSize: 4
     incendAmount: 0.5
@@ -37,21 +37,21 @@ ammoTypes: {
   }
   silicon: {
     speed: 16
-    damage: 18
+    damage: 22
     ammoMultiplier: 3
     drawSize: 4
     homingPower: 12
   }
   titanium: {
     speed: 13
-    damage: 45
+    damage: 65
     ammoMultiplier: 3
     drawSize: 4
     reloadMultiplier: 0.6
   }
   polonium: {
     speed: 13
-    damage: 85
+    damage: 100
     ammoMultiplier: 1
     drawSize: 4
     reloadMultiplier: 0.4
