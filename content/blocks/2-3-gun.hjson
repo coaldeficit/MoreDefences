@@ -1,11 +1,10 @@
 type: ItemTurret
 name: (2-3) Cannon
 description: A powerful turret that rapidly fires strong projectiles without using much ammo.
-health: 800
+health: 3250
 size: 2
-reloadTime: 20
+reloadTime: 6
 range: 160
-ejectEffect: shellEjectSmall
 inaccuracy: 0.5
 rotatespeed: 5
 alternate: true
@@ -13,20 +12,20 @@ spread: 4
 ammoTypes: {
   vanadium: {
     speed: 8
-    damage: 80
+    damage: 90
     ammoMultiplier: 6
   }
   polonium: {
     speed: 7
-    damage: 140
+    damage: 220
     ammoMultiplier: 6
     reloadMultiplier: 0.6
   }
   tefium: {
     speed: 8
-    damage: 50
+    damage: 70
     ammoMultiplier: 6
-    splashDamage: 45
+    splashDamage: 66
     splashDamageRadius: 16
   }
 }
