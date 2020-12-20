@@ -7,6 +7,7 @@ reloadTime: 2
 range: 170
 inaccuracy: 3
 rotatespeed: 15
+maxAmmo: 50
 shots: 2
 alternate: true
 spread: 3
@@ -15,20 +16,20 @@ ammoPerShot: 1
 ammoTypes: {
   scrap: {
     speed: 7
-    damage: 2
-    ammoMultiplier: 6
+    damage: 5
+    ammoMultiplier: 10
     drawSize: 4
   }
   lead: {
     speed: 7
-    damage: 4
-    ammoMultiplier: 3
+    damage: 7
+    ammoMultiplier: 10
     drawSize: 4
   }
   coal: {
     speed: 7
-    damage: 3
-    ammoMultiplier: 3
+    damage: 6
+    ammoMultiplier: 10
     drawSize: 4
     incendAmount: 0.2
     incendSpread: 0.1
@@ -36,15 +37,15 @@ ammoTypes: {
   }
   silicon: {
     speed: 7
-    damage: 3
-    ammoMultiplier: 3
+    damage: 8
+    ammoMultiplier: 25
     drawSize: 4
     homingPower: 6
   }
   titanium: {
     speed: 7
-    damage: 8
-    ammoMultiplier: 3
+    damage: 14
+    ammoMultiplier: 25
     drawSize: 4
     reloadMultiplier: 0.6
   }
