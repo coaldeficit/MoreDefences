@@ -9,8 +9,8 @@ Blocks.groundFactory.plans.add(new UnitFactory.UnitPlan(CannonT1, 60 * 25, ItemS
 // Artilleryman
 const CannonT2 = extendContent(UnitType, "artilleryman-mech")
 CannonT2.constructor = () => extend(UnitEntity, {});
-var CannonT2upgrade = new Seq([Vars.content.getByName(ContentType.unit, "more-defences-ivyx-cannoneer-mech"), Vars.content.getByName(ContentType.unit, "more-defences-ivyx-artilleryman-mech")]);
-Blocks.additiveReconstructor.upgrades.add(CannonT2upgrade.toArray(UnitType));
+var cannont2upgrade = new Seq([Vars.content.getByName(ContentType.unit, "more-defences-ivyx-cannoneer-mech"), Vars.content.getByName(ContentType.unit, "more-defences-ivyx-artilleryman-mech")]);
+Blocks.additiveReconstructor.upgrades.add(cannont2upgrade.toArray(UnitType));
 
 
 // Air Units
