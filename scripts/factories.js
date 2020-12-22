@@ -7,8 +7,6 @@ CannonT1.constructor = () => extend(UnitEntity, {});
 Blocks.groundFactory.plans.add(new UnitFactory.UnitPlan(CannonT1, 60 * 25, ItemStack.with(Items.silicon, 15, Items.graphite, 30)));
 
 // Artilleryman
-const CannonT2 = extendContent(UnitType, "artilleryman-mech")
-CannonT2.constructor = () => extend(UnitEntity, {});
 var cannont2upgrade = new Seq([Vars.content.getByName(ContentType.unit, "more-defences-ivyx-cannoneer-mech"), Vars.content.getByName(ContentType.unit, "more-defences-ivyx-artilleryman-mech")]);
 Blocks.additiveReconstructor.upgrades.add(cannont2upgrade.toArray(UnitType));
 
