@@ -1,3 +1,4 @@
+type: mech
 name: Artilleryman
 flying: false
 description: Fires bursts of 3 artillery shells at enemy structures and units.
