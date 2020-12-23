@@ -6,7 +6,7 @@ require("more-defences-ivyx/vanadium-megaextractor")
 require("more-defences-ivyx/aerial-drill")
 
 // unit stuff
-// cannoner line
+// cannoneer line
 require("more-defences-ivyx/units/ground/cannoneer/cannoneer")
 require("more-defences-ivyx/units/ground/cannoneer/artilleryman")
 // swarmer line
