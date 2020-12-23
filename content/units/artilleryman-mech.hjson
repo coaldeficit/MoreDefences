@@ -1,14 +1,8 @@
-type: mech
 name: Artilleryman
 flying: false
 description: Fires bursts of 3 artillery shells at enemy structures and units.
 speed: 0.3
-mass: 1.2
 health: 500
-engineColor: aeff00
-ejectEffect: ejectSmall
-weaponOffsetY: 0
-weaponOffsetX: 0
 research: cannoneer-mech
 weapons: [{
   name: artilleryman-weapon
