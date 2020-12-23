@@ -1,4 +1,4 @@
-const CannonT1 = extendContent(UnitType, "canoneer-mech", {});
+const CannonT1 = extendContent(UnitType, "cannoneer-mech", {});
 
 CannonT1.constructor = () => extend(UnitType, {});
 
