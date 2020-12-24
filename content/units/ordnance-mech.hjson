@@ -1,4 +1,3 @@
-type: legs
 name: Ordnance
 flying: false
 description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
