@@ -9,5 +9,6 @@ require("more-defences-ivyx/aerial-drill")
 // cannoneer line
 require("more-defences-ivyx/units/ground/cannoneer/cannoneer")
 require("more-defences-ivyx/units/ground/cannoneer/artilleryman")
+require("more-defences-ivyx/units/ground/cannoneer/ordnance")
 // swarmer line
 require("more-defences-ivyx/units/air/swarmer/swarmer")
