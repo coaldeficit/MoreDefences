@@ -10,6 +10,7 @@ rotatespeed: 5
 alternate: true
 shots: 2
 spread: 5
+targetAir: false
 ammoTypes: {
   copper: {
     speed: 7
