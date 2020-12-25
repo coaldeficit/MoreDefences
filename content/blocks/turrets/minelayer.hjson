@@ -4,16 +4,16 @@ description: A turret that fires mines that detonate when an enemy ground unit t
 health: 800
 size: 2
 reloadTime: 60
-range: 272
+range: 120
 inaccuracy: 5
 rotatespeed: 5
 alternate: true
 shots: 2
-spread: 4
+spread: 5
 ammoTypes: {
   copper: {
     speed: 7
-    damage: 100
+    damage: 50
     lifetime: 600
     bulletWidth: 5
     bulletHeight: 4
@@ -22,7 +22,7 @@ ammoTypes: {
   },
   lead: {
     speed: 6
-    damage: 60
+    damage: 90
     lifetime: 1200
     reloadMultiplier: 0.6
     bulletWidth: 5
@@ -32,13 +32,13 @@ ammoTypes: {
   },
   silicon: {
     speed: 5
-    damage: 80
+    damage: 30
     lifetime: 600
     bulletWidth: 5
     bulletHeight: 4
     collidesAir: false
     drag: 0.05
-    splashDamage: 40
+    splashDamage: 30
     splashDamageRadius: 30
   }
   blast-compound: {
@@ -49,9 +49,9 @@ ammoTypes: {
     bulletHeight: 4
     collidesAir: false
     drag: 0.065
-    splashDamage: 100
+    splashDamage: 60
     splashDamageRadius: 60,
-    reloadMultiplier: 0.9,
+    reloadMultiplier: 0.7,
   }
 }
 requirements: [
