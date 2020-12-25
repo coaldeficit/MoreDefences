@@ -13,8 +13,8 @@ spread: 4
 ammoTypes: {
   copper: {
     speed: 7
-    damage: 50
-    lifespan: 600
+    damage: 100
+    lifetime: 600
     bulletWidth: 5
     bulletHeight: 4
     collidesAir: false
@@ -22,8 +22,8 @@ ammoTypes: {
   },
   lead: {
     speed: 6
-    damage: 40
-    lifespan: 1200
+    damage: 60
+    lifetime: 1200
     reloadMultiplier: 0.6
     bulletWidth: 5
     bulletHeight: 4
@@ -32,25 +32,26 @@ ammoTypes: {
   },
   silicon: {
     speed: 5
-    damage: 40
-    lifespan: 600
+    damage: 80
+    lifetime: 600
     bulletWidth: 5
     bulletHeight: 4
     collidesAir: false
     drag: 0.05
-    splashDamage: 30
-    splashDamageRadius: 20
+    splashDamage: 60
+    splashDamageRadius: 30
   }
   blast-compound: {
     speed: 7
-    damage: 10
+    damage: 20
     lifespan: 600
     bulletWidth: 5
     bulletHeight: 4
     collidesAir: false
     drag: 0.065
-    splashDamage: 100
-    splashDamageRadius: 60
+    splashDamage: 200
+    splashDamageRadius: 90,
+    reloadMultiplier: 0.9,
   }
 }
 requirements: [
