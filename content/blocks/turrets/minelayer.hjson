@@ -44,7 +44,7 @@ ammoTypes: {
   blast-compound: {
     speed: 7
     damage: 20
-    lifespan: 600
+    lifetime: 600
     bulletWidth: 5
     bulletHeight: 4
     collidesAir: false
