@@ -42,7 +42,7 @@ ammoTypes: {
     splashDamageRadius: 30
   }
   blast-compound: {
-    speed: 7
+    speed: 6
     damage: 20
     lifetime: 600
     bulletWidth: 5
