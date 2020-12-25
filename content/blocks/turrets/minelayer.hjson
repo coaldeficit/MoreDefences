@@ -4,7 +4,7 @@ description: A turret that fires mines that detonate when an enemy ground unit t
 health: 800
 size: 2
 reloadTime: 60
-range: 120
+range: 200
 inaccuracy: 5
 rotatespeed: 5
 alternate: true
