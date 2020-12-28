@@ -24,8 +24,8 @@ weapons: [{
     length: 12
     collidesTiles: true	
     collides: true	
-    splashDamageRadius: 75
-    splashDamage: 170
+    splashDamageRadius: 25
+    splashDamage: 160
     frontColor: aeff00
     backColor: 95db00
     status: corroded
