@@ -24,7 +24,7 @@ weapons: [{
     length: 12
     collidesTiles: true	
     collides: true	
-    splashDamageRadius: 25
+    splashDamageRadius: 50
     splashDamage: 160
     frontColor: aeff00
     backColor: 95db00
