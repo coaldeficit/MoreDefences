@@ -23,5 +23,5 @@ requirements: [
   plastanium/40
 ]
 category: crafting
-research: kiln
+research: silicon-crucible
 outputItem: metaglass/8
