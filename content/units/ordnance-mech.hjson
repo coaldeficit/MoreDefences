@@ -2,10 +2,7 @@ name: Ordnance
 flying: false
 description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
 speed: 0.3
-mass: 1.2
 health: 800
-engineColor: aeff00
-ejectEffect: ejectSmall
 hovering: true
 research: artilleryman-mech
 weapons: [{
@@ -28,7 +25,7 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 75
-    splashDamage: 170
+    splashDamage: 30
     frontColor: aeff00
     backColor: 95db00
     status: corroded
