@@ -1,6 +1,6 @@
 name: "more-defences-ivyx"
 displayName: "[cyan]More[blue]Defences" //what displays in the mod selection menu
 author: "IvyX"
-description: "A simple mod made by IvyX and 7rodo that adds new turrets and walls to defend your core.[]"
+description: "A mod made by [white]I[cyan]v[white]y[cyan]X[white] and [blue]7rodo[white] that adds new turrets and walls to defend your core.[]"
 version: "1.0"
 minGameVersion: "120"
