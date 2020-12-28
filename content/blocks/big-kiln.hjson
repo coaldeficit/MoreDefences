@@ -4,7 +4,7 @@ description: Smelts sand and lead into metaglass, using pyratite as an additiona
 size: 3
 hasPower: true
 hasItems: true
-craftTime: 30
+craftTime: 45
 itemCapacity: 20
 updateEffect: smeltsmoke
 consumes: {
