@@ -1,4 +1,3 @@
-type: flying
 name: Bee
 description: A stronger swarming unit designed to damage enemy defences. 
 speed: 2.5
