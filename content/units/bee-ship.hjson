@@ -20,7 +20,7 @@ weapons: [{
   inaccuracy: 6
   bullet: {
     speed: 5
-    damage: 9
+    damage: 4
     ammoMultiplier: 1
     lifetime: 50
   }
