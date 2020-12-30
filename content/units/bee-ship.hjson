@@ -14,9 +14,10 @@ weapons: [{
   top: false
   y: 0
   x: 3
-  reload: 15
+  reload: 6
   alternate: true
   shootSound: pew
+  inaccuracy: 6
   bullet: {
     speed: 5
     damage: 9
