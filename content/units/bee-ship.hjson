@@ -1,0 +1,27 @@
+type: flying
+name: Bee
+description: A stronger swarming unit designed to damage enemy defences. 
+speed: 2.5
+flying: true
+health: 550
+engineOffset: 8
+drag: 0.01
+accel: 0.2
+range: 120
+rotatespeed: 3
+research: swarmer
+weapons: [{
+  name: artillery-mount-2
+  top: false
+  y: 0
+  x: 3
+  reload: 15
+  alternate: true
+  shootSound: pew
+  bullet: {
+    speed: 5
+    damage: 9
+    ammoMultiplier: 1
+    lifetime: 50
+  }
+}]
