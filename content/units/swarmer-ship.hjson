@@ -2,7 +2,7 @@ type: flying
 name: Swarmer
 description: A tanky swarming unit designed to distract enemy defences. 
 speed: 4
-defaultController: SuicideAI
+//defaultController: SuicideAI
 flying: true
 health: 225
 engineOffset: 6
@@ -17,7 +17,7 @@ weapons: [{
   ejectEffect: none
   shootSound: explosion
   bullet: {
-  //sprite: clear
+  sprite: clear
   type: BombBulletType
   width: 0
   length: 0
