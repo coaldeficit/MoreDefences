@@ -8,10 +8,10 @@ drag: 0.1
 accel: 0.07
 range: 120
 rotatespeed: 3
-research: swarmer
+research: swarmer-ship
 weapons: [{
   name: artillery-mount-2
-  top: false
+  top: true
   y: 0
   x: 3
   reload: 8
