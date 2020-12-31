@@ -17,7 +17,7 @@ weapons: [{
   ejectEffect: none
   shootSound: explosion
   bullet: {
-  sprite: clear
+  //sprite: clear
   type: BombBulletType
   width: 0
   length: 0
