@@ -3,27 +3,33 @@ name: Slider
 description: A heavy bomber. 
 speed: 0.2
 flying: true
-health: 2500
-engineOffset: 0
-range: 160
-rotatespeed: 0.05
+health: 3000
+engineOffset: 6
+range: 200
+rotateSpeed: 1
 weapons: [{
-  name: nuke-launcher
+  name: sub-mount
+  top: true
   y: 2
   x: 4
-  reload: 30
+  reload: 66
   alternate: true
   bullet: {
-    speed: 2
-    damage: 60
+    type: ArtilleryBulletType
+    speed: 3
+    damage: 10
     ammoMultiplier: 1
-    fragBullets: 15
+    fragBullets: 5
     lifetime: 120
     hitSize: 8
     drawSize: 80
+    width: 10
+    length: 10
     fragBullet: {
       speed: 4
       damage: 6
+      width: 5
+      length: 5
     }
   }
 }]
