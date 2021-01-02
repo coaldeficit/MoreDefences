@@ -1,0 +1,27 @@
+type: GenericCrafter
+name: Sieve
+description: A more efficient version of the Sifter. Filters out trace amounts of metals found in Sand and outputs them as Scrap.
+size: 2
+health: 160
+hasItems: true
+hasPower: true
+craftTime: 2
+itemCapacity: 30
+updateEffect: smeltsmoke
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      sand/5
+    ]
+  }
+}
+requirements: [
+  copper/60
+  lead/45
+  graphite/10
+  silicon/10
+]
+category: crafting
+research: sifter
+outputItem: scrap/2
