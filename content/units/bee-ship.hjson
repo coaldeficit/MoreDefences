@@ -8,6 +8,7 @@ drag: 0.1
 accel: 0.07
 range: 120
 rotatespeed: 3
+circleTarget: true
 research: swarmer-ship
 weapons: [{
   name: artillery-mount-2
