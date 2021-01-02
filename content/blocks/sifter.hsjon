@@ -1,0 +1,24 @@
+type: GenericCrafter
+name: Sifter
+description: Filters out trace amounts of metals found in Sand and outputs them as Scrap.
+size: 1
+health: 40
+hasItems: true
+craftTime: 6
+itemCapacity: 20
+updateEffect: smeltsmoke
+consumes: {
+  power: 1
+  items: {
+    items: [
+      sand/7
+    ]
+  }
+}
+requirements: [
+  copper/40
+  lead/30
+]
+category: crafting
+research: pulverizer
+outputItem: scrap/2
