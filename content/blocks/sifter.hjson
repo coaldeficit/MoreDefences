@@ -8,7 +8,6 @@ craftTime: 6
 itemCapacity: 20
 updateEffect: smeltsmoke
 consumes: {
-  power: 1
   items: {
     items: [
       sand/7
