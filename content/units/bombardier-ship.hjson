@@ -26,7 +26,7 @@ weapons: [{
     width: 10
     length: 14
     splashDamageRadius: 20
-    splashDamage: 15
+    splashDamage: 12.5
   }
 }]
 range: 16
