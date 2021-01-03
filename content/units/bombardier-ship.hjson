@@ -8,6 +8,7 @@ turnCursor: false
 flying: true
 health: 100
 research: horizon
+circleTarget: true
 weapons: [{
   name: generic-bomber-weapon
   x: 0
