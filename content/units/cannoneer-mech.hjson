@@ -2,7 +2,7 @@ localizedName: Cannoneer
 flying: false
 description: Rapidly fires weak corroding bullets at enemy units and structures.
 speed: 0.5
-health: 150
+health: 140
 research: dagger
 weapons: [{
   name: cannoneer-weapon
@@ -16,7 +16,7 @@ weapons: [{
   bullet: {
     type: BasicBulletType
     speed: 5
-    damage: 14
+    damage: 13
     width: 10
     length: 14
     frontColor: aeff00

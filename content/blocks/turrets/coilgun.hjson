@@ -5,7 +5,7 @@ health: 1120
 size: 3
 reloadTime: 100
 range: 360
-ejectEffect: shellEjectSmall
+ejectEffect: ejectSmall
 inaccuracy: 0
 rotatespeed: 10
 shots: 1
@@ -15,9 +15,9 @@ targetAir: false
 ammoTypes: {
   ferum: {
     speed: 15
-    damage: 301
+    damage: 450
     ammoMultiplier: 1
-    splashDamage: 150
+    splashDamage: 175
     splashDamageRadius: 16
     frontColor: ffffff
     backColor: d1f1ff

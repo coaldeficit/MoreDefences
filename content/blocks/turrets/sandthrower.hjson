@@ -11,12 +11,12 @@ spread: 2
 shots: 5
 ammoTypes: {
   sand: {
-    speed: 3
+    speed: 2.75
     damage: 3
     ammoMultiplier: 1
   }
   titaniumsand: {
-    speed: 4
+    speed: 3.75
     damage: 12
     ammoMultiplier: 1
     reloadMultiplier: 0.8

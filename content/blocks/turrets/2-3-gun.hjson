@@ -12,20 +12,20 @@ spread: 4
 ammoTypes: {
   vanadium: {
     speed: 8
-    damage: 90
+    damage: 95
     ammoMultiplier: 6
   }
   polonium: {
     speed: 7
-    damage: 220
+    damage: 230
     ammoMultiplier: 6
     reloadMultiplier: 0.6
   }
   tefium: {
     speed: 8
-    damage: 70
+    damage: 75
     ammoMultiplier: 6
-    splashDamage: 66
+    splashDamage: 70
     splashDamageRadius: 16
   }
 }

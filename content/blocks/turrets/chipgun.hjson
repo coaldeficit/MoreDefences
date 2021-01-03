@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Melter
+name: Chipgun
 description: A small turret that rapidly fires homing incendiary projectiles.
 health: 200
 size: 1
@@ -12,10 +12,10 @@ spread: 0
 ammoTypes: {
   coal: {
     speed: 5
-    damage: 60
+    damage: 40
     ammoMultiplier: 1.5
     homingPower: 0.05
-    incendAmount: 6
+    incendAmount: 0.6
     incendSpread: 10
     incendChance: 25
   }
@@ -24,7 +24,7 @@ ammoTypes: {
     damage: 60
     ammoMultiplier: 1.5
     homingPower: 0.2
-    incendAmount: 5
+    incendAmount: 0.2
     incendSpread: 10
     incendChance: 12.5
   }

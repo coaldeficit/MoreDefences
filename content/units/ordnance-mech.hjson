@@ -25,7 +25,7 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 50
-    splashDamage: 160
+    splashDamage: 100
     frontColor: aeff00
     backColor: 95db00
     status: corroded
@@ -34,6 +34,5 @@ weapons: [{
 range: 260
 drillPower: 1
 mineSpeed: 0.1
-buildPower: 0.75
 itemCapacity: 10
 targetAir: false

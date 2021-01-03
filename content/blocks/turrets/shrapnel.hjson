@@ -14,7 +14,7 @@ targetAir: false
 ammoTypes: {
   lead: {
     speed: 2
-    damage: 99
+    damage: 80
     ammoMultiplier: 1
     fragBullets: 4
     lifetime: 120
@@ -23,12 +23,12 @@ ammoTypes: {
     collidesAir: false
     fragBullet: {
       speed: 4
-      damage: 20
+      damage: 10
     }
   }
   metaglass: {
     speed: 2
-    damage: 88
+    damage: 70
     ammoMultiplier: 1
     fragBullets: 30
     lifetime: 120
@@ -37,12 +37,12 @@ ammoTypes: {
     collidesAir: false
     fragBullet: {
       speed: 4
-      damage: 3
+      damage: 2
     }
   }
   coal: {
     speed: 2
-    damage: 66
+    damage: 80
     ammoMultiplier: 1
     fragBullets: 10
     lifetime: 120
@@ -62,7 +62,7 @@ ammoTypes: {
   }
   polonium: {
     speed: 1
-    damage: 151
+    damage: 150
     ammoMultiplier: 2
     fragBullets: 4
     lifetime: 120

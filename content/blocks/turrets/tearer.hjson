@@ -7,7 +7,6 @@ reloadTime: 2
 range: 170
 inaccuracy: 3
 rotatespeed: 15
-maxAmmo: 50
 shots: 2
 alternate: true
 spread: 3
@@ -15,43 +14,49 @@ targetGround: false
 ammoPerShot: 1
 ammoTypes: {
   scrap: {
-    speed: 7
-    damage: 5
-    ammoMultiplier: 10
-    drawSize: 4
+    speed: 10
+    damage: 4
+    ammoMultiplier: 4
+    width: 2
+    length: 3
   }
   lead: {
-    speed: 7
-    damage: 7
-    ammoMultiplier: 10
-    drawSize: 4
+    speed: 9
+    damage: 6
+    ammoMultiplier: 4
+    width: 2
+    length: 3
   }
   coal: {
-    speed: 7
+    speed: 9
     damage: 6
-    ammoMultiplier: 10
-    drawSize: 4
+    ammoMultiplier: 3
     incendAmount: 0.2
-    incendSpread: 0.1
-    incendChance: 0.2
+    incendSpread: 3
+    incendChance: 1
+    reloadMultiplier: 0.95
+    width: 2
+    length: 3
   }
   silicon: {
     speed: 7
-    damage: 8
-    ammoMultiplier: 25
-    drawSize: 4
+    damage: 6
+    ammoMultiplier: 4
     homingPower: 6
+    width: 2
+    length: 3
   }
   titanium: {
-    speed: 7
-    damage: 14
-    ammoMultiplier: 25
-    drawSize: 4
+    speed: 8
+    damage: 12
+    ammoMultiplier: 2
     reloadMultiplier: 0.6
+    width: 2
+    length: 3
   }
 }
 requirements: [
-  titanium/35
+  titanium/30
 ]
 category: turret
 research: scatter
