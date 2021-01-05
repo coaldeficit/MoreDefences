@@ -28,8 +28,8 @@ weapons: [{
   killShooter: true
   hittable: false
   collidesAir: true
-  incendChance: 10
-  incendSpread: 8
-  incendAmount: 0.5
+  incendChance: 0.5
+  incendSpread: 0.2
+  incendAmount: 0.2
   }
 }]
