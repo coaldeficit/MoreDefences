@@ -2,8 +2,10 @@ name: Hornet
 description: An artillery based unit designed to destroy enemy infrastructure behind walls. 
 speed: 2
 flying: true
-health: 1350
-engineOffset: 8
+health: 1000
+armor: 12
+hitSize: 20
+engineOffset: 12
 drag: 0.2
 accel: 0.04
 range: 200
