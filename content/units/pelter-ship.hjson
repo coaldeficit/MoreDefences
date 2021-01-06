@@ -28,6 +28,21 @@ weapons: [{
     splashDamage: 19.6
     status: blasted
   }
+}, {
+  name: artillery-mount-2
+  top: true
+  y: 0
+  x: 3
+  reload: 3
+  alternate: true
+  shootSound: pew
+  inaccuracy: 6
+  bullet: {
+    speed: 5
+    damage: 4
+    ammoMultiplier: 1
+    lifetime: 50
+  }
 }]
 range: 100
 mineSpeed: 2
