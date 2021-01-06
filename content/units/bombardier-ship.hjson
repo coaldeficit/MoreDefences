@@ -27,7 +27,7 @@ weapons: [{
     lifetime: 30
     width: 10
     length: 14
-    splashDamageRadius: 20
+    splashDamageRadius: 15
     splashDamage: 12.5
   }
 }]
