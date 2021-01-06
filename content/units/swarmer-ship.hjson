@@ -9,6 +9,7 @@ accel: 0.2
 range: 60
 rotatespeed: 5.0
 research: flare
+circleTarget: true
 weapons: [{
   reload: 24
   shootCone: 180
