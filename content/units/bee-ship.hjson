@@ -16,13 +16,13 @@ weapons: [{
   top: true
   y: 0
   x: 3
-  reload: 12
+  reload: 3
   alternate: true
   shootSound: pew
   inaccuracy: 6
   bullet: {
     speed: 5
-    damage: 4
+    damage: 5
     ammoMultiplier: 1
     lifetime: 50
   }
