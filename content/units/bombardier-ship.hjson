@@ -23,7 +23,7 @@ weapons: [{
   bullet: {
     type: BombBulletType
     hitEffect: flakExplosion
-    lifetime: 30
+    lifetime: 80
     width: 10
     length: 14
     splashDamageRadius: 15
