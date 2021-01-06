@@ -29,6 +29,7 @@ weapons: [{
     length: 14
     splashDamageRadius: 15
     splashDamage: 12.5
+    status: blasted
   }
 }]
 range: 16
