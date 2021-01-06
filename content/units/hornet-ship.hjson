@@ -25,9 +25,9 @@ weapons: [{
     width: 16
     length: 16
     speed: 3
-    damage: 5
-    splashDamage: 16
-    splashDamageRadius: 25
+    damage: 10
+    splashDamage: 27
+    splashDamageRadius: 33
     ammoMultiplier: 1
     lifetime: 80
     fragBullets: 3
