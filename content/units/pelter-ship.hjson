@@ -14,7 +14,7 @@ weapons: [{
   x: 0
   y: 0
   inaccuracy: 180
-  reload: 120
+  reload: 28
   alternate: true
   ignoreRotation: true
   velocityRnd: 1
@@ -27,7 +27,7 @@ weapons: [{
     splashDamageRadius: 25
     splashDamage: 19.6
     status: blasted
-    fragBullets: 10
+    fragBullets: 5
     fragBullet: {
       type: LiquidBulletType
       liquid: oil
