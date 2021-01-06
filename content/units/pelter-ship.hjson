@@ -27,6 +27,16 @@ weapons: [{
     splashDamageRadius: 25
     splashDamage: 19.6
     status: blasted
+    fragBullets: 10
+    fragBullet: {
+      type: LiquidBulletType
+      liquid: oil
+      damage: 0.375
+      status: tarred
+      pierce: true
+      lifetime: 240
+      drag: 0.075
+    }
   }
 }, {
   name: artillery-mount-2
