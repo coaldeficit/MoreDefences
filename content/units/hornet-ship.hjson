@@ -9,6 +9,7 @@ accel: 0.04
 range: 200
 rotatespeed: 1
 research: bee-ship
+targetAir: false
 weapons: [{
   name: hornet-cannon
   mirror: false
