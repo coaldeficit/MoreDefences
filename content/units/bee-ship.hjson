@@ -3,6 +3,7 @@ description: A stronger swarming unit designed to damage enemy defences.
 speed: 2.3
 flying: true
 health: 550
+armor: 4
 engineOffset: 8
 drag: 0.1
 accel: 0.07
