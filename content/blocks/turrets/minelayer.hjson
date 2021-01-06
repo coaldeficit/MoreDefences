@@ -21,6 +21,7 @@ ammoTypes: {
     collidesAir: false
     drag: 0.05
     status: blasted
+    statusDuration: 20
   },
   lead: {
     speed: 6
@@ -32,6 +33,7 @@ ammoTypes: {
     collidesAir: false
     drag: 0.05
     status: blasted
+    statusDuration: 20
   },
   silicon: {
     speed: 5
@@ -44,6 +46,7 @@ ammoTypes: {
     splashDamage: 30
     splashDamageRadius: 30
     status: blasted
+    statusDuration: 20
   }
   blast-compound: {
     speed: 6
@@ -57,6 +60,7 @@ ammoTypes: {
     splashDamageRadius: 60,
     reloadMultiplier: 0.7,
     status: blasted
+    statusDuration: 20
   }
 }
 requirements: [
