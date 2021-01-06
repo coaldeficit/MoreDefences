@@ -13,5 +13,6 @@ require("more-defences-ivyx/units/ground/cannoneer/ordnance")
 // swarmer line
 require("more-defences-ivyx/units/air/swarmer/swarmer")
 require("more-defences-ivyx/units/air/swarmer/bee")
+require("more-defences-ivyx/units/air/swarmer/hornet")
 // bombardier line
 require("more-defences-ivyx/units/air/bombardier/bombardier")
