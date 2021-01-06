@@ -11,17 +11,17 @@ research: bombardier-ship
 circleTarget: true
 weapons: [{
   name: generic-bomber-weapon
-  x: 0
+  x: 1
   y: 0
   inaccuracy: 180
-  reload: 28
+  reload: 24
   alternate: true
   ignoreRotation: true
   velocityRnd: 1
   bullet: {
     type: BombBulletType
     hitEffect: flakExplosion
-    lifetime: 30
+    lifetime: 60
     width: 10
     length: 14
     splashDamageRadius: 25
@@ -52,7 +52,7 @@ weapons: [{
     speed: 5
     damage: 4
     ammoMultiplier: 1
-    lifetime: 50
+    lifetime: 20
   }
 }]
 range: 100
