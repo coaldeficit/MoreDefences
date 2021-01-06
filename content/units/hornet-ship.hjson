@@ -3,7 +3,7 @@ description: An artillery based unit designed to destroy enemy infrastructure be
 speed: 2
 flying: true
 health: 1000
-armor: 12
+armor: 7
 hitSize: 20
 engineOffset: 13.5
 drag: 0.01
