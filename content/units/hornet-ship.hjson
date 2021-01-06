@@ -6,8 +6,8 @@ health: 1000
 armor: 12
 hitSize: 20
 engineOffset: 13.5
-drag: 0.2
-accel: 0.04
+drag: 0.01
+accel: 0.2
 range: 150
 rotatespeed: 1
 research: bee-ship
