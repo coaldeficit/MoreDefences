@@ -5,7 +5,7 @@ flying: true
 health: 1000
 armor: 12
 hitSize: 20
-engineOffset: 12
+engineOffset: 13.5
 drag: 0.2
 accel: 0.04
 range: 150
