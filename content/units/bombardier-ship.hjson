@@ -16,7 +16,7 @@ weapons: [{
   shotDelay: 3
   x: 0
   inaccuracy: 180
-  reload: 120
+  reload: 24
   alternate: true
   ignoreRotation: true
   velocityRnd: 1
