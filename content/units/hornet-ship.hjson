@@ -1,6 +1,6 @@
 name: Hornet
 description: An artillery based unit designed to destroy enemy infrastructure behind walls. 
-speed: 1.5
+speed: 2
 flying: true
 health: 1500
 engineOffset: 8
@@ -24,9 +24,9 @@ weapons: [{
     backColor: 6d56bf
     width: 16
     length: 16
-    speed: 4
+    speed: 3
     damage: 5
-    splashDamage: 15
+    splashDamage: 16
     splashDamageRadius: 25
     ammoMultiplier: 1
     lifetime: 80
@@ -35,17 +35,18 @@ weapons: [{
       type: ArtilleryBulletType
       frontColor: bf92f9
       backColor: 6d56bf
+      speed: 4
       width: 12
       length: 12
-      splashDamage: 7
-      splashDamageRadius: 10
+      splashDamage: 10
+      splashDamageRadius: 15
       lifetime: 50
-      fragbullets: 2
+      fragbullets: 1
       fragBullet: {
         type: MissileBulletType
         damage: 3
-        splashDamage: 2
-        splashDamageRadius: 7
+        splashDamage: 5
+        splashDamageRadius: 10
         }
       }
   }
