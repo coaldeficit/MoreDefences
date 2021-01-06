@@ -8,7 +8,7 @@ hitSize: 20
 engineOffset: 12
 drag: 0.2
 accel: 0.04
-range: 200
+range: 150
 rotatespeed: 1
 research: bee-ship
 targetAir: false
