@@ -16,7 +16,7 @@ weapons: [{
   y: -3
   x: 0
   reload: 120
-  shootSound: shotgun
+  shootSound: artillery
   inaccuracy: 2
   bullet: {
     type: ArtilleryBulletType
@@ -42,7 +42,10 @@ weapons: [{
       lifetime: 50
       fragbullets: 2
       fragBullet: {
-        bullet: missileExplosive
+        type: MissileBulletType
+        damage: 3
+        splashDamage: 2
+        splashDamageRadius: 7
         }
       }
   }
