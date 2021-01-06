@@ -4,7 +4,7 @@ speed: 2.3
 flying: true
 health: 550
 armor: 4
-engineOffset: 8
+engineOffset: 7.5
 drag: 0.1
 accel: 0.07
 range: 120
