@@ -58,6 +58,8 @@ ammoTypes: {
     splashDamage: 45
     backColor: e85e46
     frontColor: ffdfd1
+    status: blasted
+    statusDuration: 60
   }
   plastanium: {
     type: ArtilleryBulletType
@@ -74,6 +76,8 @@ ammoTypes: {
     backColor: 8cff00
     fragBullet: artilleryPlasticFrag
     fragBullets: 10
+    status: blasted
+    statusDuration: 60
   }
   polonium: {
     type: ArtilleryBulletType
@@ -89,6 +93,8 @@ ammoTypes: {
     splashDamage: 200
     frontColor: e8a982
     backColor: e68e57
+    status: blasted
+    statusDuration: 60
   }
 }
 requirements: [
