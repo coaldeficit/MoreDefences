@@ -23,5 +23,6 @@ aerial.buildType = () => extend(Drill.DrillBuild, aerial, {
     Draw.rect(aerial.propellorRegion, this.x, this.y, this.timeDrilled * aerial.rotateSpeed);
     Draw.rect(aerial.rotateRegion, this.x, this.y, this.timeDrilled * aerial.rotateSpeed);
     Draw.rect(aerial.topRegion, this.x, this.y);
+    Draw.rect(aerial.itemRegion, this.x, this.y);
   }
 });
