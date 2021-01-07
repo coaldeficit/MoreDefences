@@ -4,6 +4,8 @@ const aerial = extendContent(Drill, "aerial-drill", {
     this.propellorRegion = Core.atlas.find(this.name + "-propellor");
     this.rotateRegion = Core.atlas.find(this.name + "-rotator");
     this.topRegion = Core.atlas.find(this.name + "-top");
+    this.itemRegion = Core.atlas.find("clear");
+
   },
   
   icons(){
