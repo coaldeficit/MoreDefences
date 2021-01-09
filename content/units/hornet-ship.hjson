@@ -53,7 +53,7 @@ weapons: [{
         splashDamageRadius: 10
         frontColor: bf92f9
         backColor: 6d56bf
-        trailColor: 6d56bf
+        trailColor: 000000
         }
       }
   }
