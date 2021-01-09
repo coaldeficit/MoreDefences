@@ -20,6 +20,7 @@ weapons: [{
   x: 0
   reload: 120
   shootSound: artillery
+  ejectEffect: casing3Double
   inaccuracy: 2
   bullet: {
     type: ArtilleryBulletType
