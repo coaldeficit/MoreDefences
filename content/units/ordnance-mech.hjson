@@ -3,6 +3,7 @@ flying: false
 description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
 speed: 0.6
 health: 600
+armor: 6
 hovering: true
 research: artilleryman-mech
 weapons: [{
