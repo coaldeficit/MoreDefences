@@ -8,7 +8,7 @@ hovering: true
 research: artilleryman-mech
 weapons: [{
   name: ordnance-cannon
-  y: -5
+  y: -3
   shots: 1
   x: 0
   inaccuracy: 0
