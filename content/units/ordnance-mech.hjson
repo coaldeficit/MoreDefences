@@ -15,6 +15,7 @@ weapons: [{
   reload: 120
   alternate: true
   shootSound: pew
+  mirror: false
   bullet: {	
     type: ArtilleryBulletType	
     speed: 4
@@ -26,7 +27,7 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 50
-    splashDamage: 60
+    splashDamage: 75
     frontColor: aeff00
     backColor: 95db00
     status: corroded
