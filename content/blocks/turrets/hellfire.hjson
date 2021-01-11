@@ -7,9 +7,9 @@ reloadTime: 300
 range: 460
 ejectEffect: ejectSmall
 inaccuracy: 0
-rotatespeed: 1
+rotatespeed: 3
 shots: 1
-ammoPerShot: 33
+ammoPerShot: 30
 shootSound: bigshot
 targetAir: false
 ammoTypes: {
