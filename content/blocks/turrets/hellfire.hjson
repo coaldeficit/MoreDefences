@@ -1,0 +1,103 @@
+type: ItemTurret
+name: Hellfire
+description: Fires powerful missiles at a slow rate. Requires enormous amounts of ammo to fire.
+health: 1120
+size: 4
+reloadTime: 300
+range: 460
+ejectEffect: ejectSmall
+inaccuracy: 0
+rotatespeed: 1
+shots: 1
+ammoPerShot: 35
+shootSound: bigshot
+targetAir: false
+ammoTypes: {
+  coal: {
+    type: MissileBulletType
+    speed: 7.5
+    damage: 550
+    ammoMultiplier: 1
+    splashDamage: 250
+    splashDamageRadius: 32
+    frontColor: ffb357
+    backColor: a16a28
+    collidesAir: false
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSound: explosionbig
+    hitShake: 4
+    homingPower: 0.2
+    fragBullets: 20
+    fragBullet: {
+      speed: 12
+      damage: 2
+      incendChance: 20
+      incendSpread: 8
+      incendAmount: 1
+    }
+  }
+  pyratite: {
+    type: MissileBulletType
+    speed: 7.5
+    damage: 850
+    ammoMultiplier: 1
+    splashDamage: 350
+    splashDamageRadius: 32
+    frontColor: ff9c63
+    backColor: b3683d
+    collidesAir: false
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSound: explosionbig
+    hitShake: 4
+    homingPower: 0.2
+    fragBullets: 20
+    fragBullet: {
+      speed: 12
+      damage: 2
+      incendChance: 30
+      incendSpread: 14
+      incendAmount: 1.5
+    }
+  }
+  spore-pod: {
+    type: MissileBulletType
+    speed: 7
+    damage: 450
+    ammoMultiplier: 1
+    splashDamage: 200
+    splashDamageRadius: 32
+    frontColor: 9854ff
+    backColor: 5827a3
+    collidesAir: false
+    bulletWidth: 12
+    bulletHeight: 12
+    hitSound: explosionbig
+    hitShake: 3
+    homingPower: 0.2
+    fragBullets: 20
+    fragBullet: {
+      speed: 12
+      damage: 2
+      incendChance: 20
+      incendSpread: 6.5
+      incendAmount: 1.15
+      status: spore-slowed
+      statusDuration: 240
+    }
+  }
+}
+requirements: [
+  copper/240
+  lead/240
+  ferum/160
+  silicon/120
+  graphite/120
+  titanium/60
+  thorium/40
+  phase-fabric/20
+  surge-alloy/10
+]
+category: turret
+research: coilgun
