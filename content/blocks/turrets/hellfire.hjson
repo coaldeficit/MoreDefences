@@ -83,8 +83,8 @@ ammoTypes: {
       incendChance: 20
       incendSpread: 6.5
       incendAmount: 1.15
-      status: spore-slowed
-      statusDuration: 240
+      status: slow
+      statusDuration: 120
     }
   }
 }
