@@ -85,6 +85,7 @@ ammoTypes: {
       incendAmount: 1.15
       status: slow
       statusDuration: 120
+      homingPower: 0.2
     }
   }
 }
