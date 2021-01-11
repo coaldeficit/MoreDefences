@@ -9,7 +9,7 @@ ejectEffect: ejectSmall
 inaccuracy: 0
 rotatespeed: 1
 shots: 1
-ammoPerShot: 35
+ammoPerShot: 33
 shootSound: bigshot
 targetAir: false
 ammoTypes: {
