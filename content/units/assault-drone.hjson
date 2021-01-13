@@ -3,7 +3,7 @@ description: A weak drone. Designed to distract weak enemy defences.
 speed: 2.3
 flying: true
 health: 40
-engineOffset: 5
+engineOffset: 4.8
 drag: 0.1
 accel: 0.07
 range: 32
