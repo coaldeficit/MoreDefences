@@ -21,7 +21,7 @@ weapons: [{
   reload: 10
   alternate: true
   shootSound: pew
-  inaccuracy: 3
+  inaccuracy: 12
   bullet: {
     type: LaserBoltBulletType
     speed: 5.2
@@ -31,5 +31,6 @@ weapons: [{
     healPercent: 1.5
     backColor: 98ffa9
     frontColor: ffffff
+    collidesTeam: true
   }
 }]
