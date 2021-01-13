@@ -11,7 +11,7 @@ plans: [
     unit: assault-drone
     time: 180
     requirements: [
-      silicon/3
+      silicon/5
     ]
   }
 ]
