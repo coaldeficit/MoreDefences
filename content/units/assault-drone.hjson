@@ -4,6 +4,7 @@ speed: 2.3
 flying: true
 health: 40
 engineOffset: 3
+engineSize: 1.25
 drag: 0.1
 accel: 0.07
 range: 60
