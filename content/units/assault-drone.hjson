@@ -15,7 +15,7 @@ weapons: [{
   x: 1
   reload: 13
   alternate: true
-  shootSound: pew_
+  shootSound: pew
   inaccuracy: 0
   bullet: {
     speed: 4
