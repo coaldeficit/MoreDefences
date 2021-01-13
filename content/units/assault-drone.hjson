@@ -9,7 +9,6 @@ accel: 0.07
 range: 32
 rotatespeed: 360
 circleTarget: true
-research: flare
 weapons: [{
   name: generic-bomber-weapon
   y: 0
