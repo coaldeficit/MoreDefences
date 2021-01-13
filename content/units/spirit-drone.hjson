@@ -28,7 +28,7 @@ weapons: [{
     damage: 5
     ammoMultiplier: 1
     lifetime: 25
-    healPercent = 1.5
+    healPercent: 1.5
     backColor: 98ffa9
     frontColor: ffffff
   }
