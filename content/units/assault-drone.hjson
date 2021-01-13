@@ -1,0 +1,27 @@
+name: Assault Drone
+description: A weak drone. Designed to distract weak enemy defences.
+speed: 2.3
+flying: true
+health: 40
+engineOffset: 7.5
+drag: 0.1
+accel: 0.07
+range: 32
+rotatespeed: 360
+circleTarget: true
+research: flare
+weapons: [{
+  name: generic-bomber-weapon
+  y: 0
+  x: 1
+  reload: 13
+  alternate: true
+  shootSound: pew_
+  inaccuracy: 0
+  bullet: {
+    speed: 4
+    damage: 5
+    ammoMultiplier: 1
+    lifetime: 30
+  }
+}]
