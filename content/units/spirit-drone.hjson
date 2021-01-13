@@ -13,7 +13,7 @@ commandLimit: 0
 itemCapacity: 5
 isCounted: false
 hitSize: 6
-research: drone-factory
+research: assault-drone
 weapons: [{
   name: generic-bomber-weapon
   y: 0
