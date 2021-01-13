@@ -1,3 +1,4 @@
+type: UnitFactory
 name: Drone Factory
 description: Produces drones, weak air units made to do 1 or 2 specific tasks.
 health: 360
