@@ -6,9 +6,14 @@ health: 40
 engineOffset: 4.8
 drag: 0.1
 accel: 0.07
-range: 32
-rotatespeed: 360
+range: 60
+rotateSpeed: 19
 circleTarget: true
+commandLimit: 0
+targetAir: true
+itemCapacity: 5
+isCounted: false
+hitSize: 6
 research: drone-factory
 weapons: [{
   name: generic-bomber-weapon
@@ -22,6 +27,6 @@ weapons: [{
     speed: 4
     damage: 5
     ammoMultiplier: 1
-    lifetime: 30
+    lifetime: 15
   }
 }]
