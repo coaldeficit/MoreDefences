@@ -14,7 +14,7 @@ weapons: [{
   name: havoc-cluster
   top: false
   y: 0
-  x: 15.5
+  x: 16
   reload: 120
   shootSound: artillery
   ejectEffect: casing3Double
