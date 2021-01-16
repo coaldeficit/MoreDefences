@@ -53,5 +53,9 @@ weapons: [{
     lifetime: 25
     backColor: f25555
     frontColor: ffffff
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 7
+    pierceDamageFactor: 0.7
   }
 }]
