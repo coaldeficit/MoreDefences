@@ -5,7 +5,7 @@ health: 13000
 armor: 20
 hitSize: 40
 engineOffset: 13.5
-range: 150
+range: 320
 rotatespeed: 1
 targetAir: true
 speed: 1
@@ -36,5 +36,22 @@ weapons: [{
     frontColor: ffdfd1
     status: blasted
     statusDuration: 60
+  }
+}, {
+  name: havoc-anti-air
+  top: true
+  y: 2
+  x: 13
+  reload: 20
+  shootSound: lasershoot
+  inaccuracy: 0
+  rotate: true
+  bullet: {
+    type: LaserBoltBulletType
+    speed: 10.4
+    damage: 40
+    lifetime: 25
+    backColor: f25555
+    frontColor: ffffff
   }
 }]
