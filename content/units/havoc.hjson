@@ -1,0 +1,41 @@
+name: Havoc
+description: A high ranking crux robot. Fires powerful clusters of artillery shells at enemy structures and powerful lasers bolts at nearby enemy units and structures. 
+speed: 2
+flying: true
+health: 11000
+armor: 20
+hitSize: 80
+engineOffset: 13.5
+range: 150
+rotatespeed: 6
+targetAir: true
+speed: 1
+weapons: [{
+  name: havoc-cluster
+  top: false
+  y: 0
+  x: 5
+  reload: 120
+  shootSound: artillery
+  ejectEffect: casing3Double
+  velocityInaccuracy: 0.3
+  inaccuracy: 12
+  shots: 13
+  bullet: {
+    type: ArtilleryBulletType
+    speed: 2
+    hitEffect: blastExplosion
+    knockback: 0.8
+    lifetime: 110
+    width: 14
+    length: 14
+    collidesTiles: false
+    ammoMultiplier: 4
+    splashDamageRadius: 45
+    splashDamage: 45
+    backColor: e85e46
+    frontColor: ffdfd1
+    status: blasted
+    statusDuration: 60
+  }
+}]
