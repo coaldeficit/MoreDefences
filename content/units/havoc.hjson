@@ -42,7 +42,7 @@ weapons: [{
   top: true
   y: 2
   x: 13
-  reload: 20
+  reload: 10
   shootSound: lasershoot
   inaccuracy: 0
   rotate: true
