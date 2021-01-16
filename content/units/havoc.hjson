@@ -1,7 +1,7 @@
 name: Havoc
 description: A high ranking crux robot. Fires powerful clusters of artillery shells at enemy structures and powerful lasers bolts at nearby enemy units and structures. 
 flying: false
-health: 11000
+health: 13000
 armor: 20
 hitSize: 40
 engineOffset: 13.5
