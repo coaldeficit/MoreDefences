@@ -13,8 +13,8 @@ speed: 1
 weapons: [{
   name: havoc-cluster
   top: false
-  y: 0
-  x: 25
+  y: 3
+  x: 27
   reload: 120
   shootSound: artillery
   ejectEffect: casing3Double
