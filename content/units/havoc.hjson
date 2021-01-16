@@ -23,7 +23,7 @@ weapons: [{
   shots: 13
   bullet: {
     type: ArtilleryBulletType
-    speed: 2
+    speed: 3
     hitEffect: blastExplosion
     knockback: 0.8
     lifetime: 110
