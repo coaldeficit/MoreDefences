@@ -13,10 +13,10 @@ const ioe = extendContent(GenericCrafter, "iron-ore-extractor", {
     ];
   }
 });
-vanadium.buildType = () => extend(GenericCrafter.GenericCrafterBuild, ioe, {
+ioe.buildType = () => extend(GenericCrafter.GenericCrafterBuild, ioe, {
   draw(){
-    Draw.rect(vanadium.region, this.x, this.y);
-    Draw.rect(vanadium.rotateRegion, this.x, this.y, this.totalProgress * 3.91);
-    Draw.rect(vanadium.topRegion, this.x, this.y);
+    Draw.rect(ioe.region, this.x, this.y);
+    Draw.rect(ioe.rotateRegion, this.x, this.y, this.totalProgress * 3.91);
+    Draw.rect(ioe.topRegion, this.x, this.y);
   }
 });
