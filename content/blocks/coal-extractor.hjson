@@ -5,7 +5,7 @@ size: 2
 hasPower: true
 craftTime: 180
 consumes: {
-  power: 0.25
+  power: 0.35
 }
 requirements: [
   copper/30
