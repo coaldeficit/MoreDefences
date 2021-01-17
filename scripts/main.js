@@ -1,12 +1,7 @@
-// extractors
 require("more-defences-ivyx/iron-ore-extractor")
 require("more-defences-ivyx/vanadium-extractor")
 require("more-defences-ivyx/vanadium-megaextractor")
-
-// drills
 require("more-defences-ivyx/aerial-drill")
-
-// misc
 require("more-defences-ivyx/units/air/drones")
 
 // broken/unused
