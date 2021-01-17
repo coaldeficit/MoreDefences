@@ -1,11 +1,11 @@
 type: GenericCrafter
 name: Iron Ore Extractor
 description: Drills into the ground and mines Iron Ore.
-size: 1
+size: 2
 hasPower: true
-craftTime: 160
+craftTime: 240
 consumes: {
-  power: 0.5
+  power: 0.4
 }
 requirements: [
   copper/100
