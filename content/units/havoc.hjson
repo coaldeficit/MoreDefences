@@ -50,7 +50,9 @@ weapons: [{
   bullet: {
     type: LaserBoltBulletType
     speed: 10.4
-    damage: 40
+    damage: 65
+    splashDamageRadius: 15
+    splashDamage: 10
     lifetime: 25
     length: 25
     backColor: f25555
