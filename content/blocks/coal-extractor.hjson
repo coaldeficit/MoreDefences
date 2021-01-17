@@ -1,6 +1,6 @@
 type: GenericCrafter
 name: Coal Extractor
-description: Drills into the ground and mines Coal.
+description: Drills into the ground and mines Coal. Useful in situations where coal is scarce.
 size: 2
 hasPower: true
 craftTime: 180
@@ -13,7 +13,7 @@ requirements: [
   graphite/30
 ]
 category: production
-research: graphite-press
+research: iron-ore-extractor
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: coal/1
