@@ -18,7 +18,7 @@ requirements: [
   copper/25
 ]
 category: production
-research: pneumatic-drill
+research: iron-ore-extractor
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: titanium/1
