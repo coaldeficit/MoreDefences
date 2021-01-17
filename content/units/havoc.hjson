@@ -12,6 +12,7 @@ speed: 1
 weapons: [{
   name: havoc-cluster
   top: false
+  velocityInaccuracy: 0.5
   y: 3
   x: 27
   reload: 60
@@ -27,7 +28,7 @@ weapons: [{
     knockback: 0.8
     lifetime: 110
     width: 14
-    length: 14
+    length: 17
     collidesTiles: false
     ammoMultiplier: 4
     splashDamageRadius: 45
@@ -51,6 +52,7 @@ weapons: [{
     speed: 10.4
     damage: 40
     lifetime: 25
+    length: 18
     backColor: f25555
     frontColor: ffffff
     pierce: true
