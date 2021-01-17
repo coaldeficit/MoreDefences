@@ -10,7 +10,6 @@ requirements: [
   copper/100
   lead/80
   graphite/60
-  biomatter/50
 ]
 category: production
 research: peat-cultivator
