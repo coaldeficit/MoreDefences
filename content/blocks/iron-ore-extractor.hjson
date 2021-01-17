@@ -1,5 +1,5 @@
 name: Iron Ore Extractor
-description: Drills into the ground and mines Iron Ore.
+description: Drills into the ground and extracts Iron Ore.
 size: 2
 hasPower: true
 craftTime: 240
@@ -7,12 +7,12 @@ consumes: {
   power: 0.4
 }
 requirements: [
-  copper/100
-  lead/80
-  graphite/60
+  copper/20
+  lead/10
+  graphite/10
 ]
 category: production
-research: peat-cultivator
+research: pneumatic-drill
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: iron/1
