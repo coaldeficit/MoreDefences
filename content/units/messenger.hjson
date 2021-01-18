@@ -32,7 +32,7 @@ weapons: [
     incendChance: 0.9
     incendSpread: 1
     width: 9
-    length: 12
+    height: 12
     backColor: ff9900
     frontColor: fcffa8
   }
