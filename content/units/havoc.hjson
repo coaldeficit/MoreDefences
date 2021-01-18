@@ -13,7 +13,6 @@ speed: 1
 weapons: [{
   name: havoc-cluster
   top: false
-  velocityInaccuracy: 0.5
   y: 3
   x: 26.7
   reload: 60
