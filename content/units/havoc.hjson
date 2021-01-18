@@ -9,6 +9,7 @@ range: 320
 rotatespeed: 1
 targetAir: true
 speed: 1
+velocityInaccuracy: 0.4
 weapons: [{
   name: havoc-cluster
   top: false
@@ -54,7 +55,8 @@ weapons: [{
     splashDamageRadius: 15
     splashDamage: 10
     lifetime: 25
-    length: 25
+    width: 5
+    length: 30
     backColor: f25555
     frontColor: ffffff
     pierce: true
