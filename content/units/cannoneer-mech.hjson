@@ -18,7 +18,7 @@ weapons: [{
     speed: 5
     damage: 13
     width: 10
-    length: 14
+    height: 14
     frontColor: aeff00
     backColor: 95db00
     status: corroded
