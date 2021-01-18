@@ -51,7 +51,7 @@ weapons: [{
   bullet: {
     type: LaserBoltBulletType
     speed: 20
-    damage: 45
+    damage: 55
     splashDamageRadius: 15
     splashDamage: 10
     lifetime: 25
