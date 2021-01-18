@@ -22,8 +22,8 @@ weapons: [{
   shootSound: missile
   bullet: {
     type: MissileBulletType
-    bulletWidth: 7.5
-    bulletHeight: 10.5
+    width: 7.5
+    height: 10.5
     weaveScale: 2
     weaveMag: 0.5
     speed: 6
