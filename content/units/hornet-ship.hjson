@@ -26,8 +26,8 @@ weapons: [{
     type: ArtilleryBulletType
     frontColor: bf92f9
     backColor: 6d56bf
-    width: 16
-    height: 18
+    width: 22
+    height: 20
     speed: 3
     damage: 10
     splashDamage: 27
