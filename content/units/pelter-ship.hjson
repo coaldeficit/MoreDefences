@@ -23,7 +23,7 @@ weapons: [{
     hitEffect: flakExplosion
     lifetime: 60
     width: 10
-    length: 14
+    height: 14
     splashDamageRadius: 25
     splashDamage: 19.6
     status: blasted
