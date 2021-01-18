@@ -23,8 +23,8 @@ ammoTypes: {
     frontColor: ffb357
     backColor: a16a28
     collidesAir: false
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 3
+    height: 20
     hitSound: explosionbig
     hitShake: 4
     homingPower: 0.2
