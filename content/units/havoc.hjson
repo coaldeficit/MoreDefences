@@ -6,7 +6,7 @@ health: 13000
 armor: 20
 hitSize: 40
 engineOffset: 13.5
-range: 320
+range: 380
 rotatespeed: 1
 targetAir: true
 speed: 1
@@ -26,7 +26,7 @@ weapons: [{
     speed: 3
     hitEffect: blastExplosion
     knockback: 0.8
-    lifetime: 110
+    lifetime: 140
     width: 21
     height: 25
     collidesTiles: false
@@ -50,7 +50,7 @@ weapons: [{
   bullet: {
     type: LaserBoltBulletType
     speed: 20
-    damage: 55
+    damage: 70
     splashDamageRadius: 15
     splashDamage: 10
     lifetime: 25
