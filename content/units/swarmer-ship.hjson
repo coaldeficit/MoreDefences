@@ -3,10 +3,11 @@ description: A tanky swarming unit designed to distract enemy defences.
 speed: 4
 flying: true
 health: 225
+armor: 5
 engineOffset: 6
 drag: 0.01
 accel: 0.2
-range: 60
+range: 30
 rotatespeed: 5.0
 research: flare
 circleTarget: true
