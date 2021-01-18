@@ -22,8 +22,8 @@ ammoTypes: {
     frontColor: ffffff
     backColor: d1f1ff
     collidesAir: false
-    bulletWidth: 12
-    bulletHeight: 12
+    width: 2
+    height: 15
     hitSound: explosionbig
     hitShake: 2
   }
