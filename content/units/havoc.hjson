@@ -56,7 +56,7 @@ weapons: [{
     splashDamage: 10
     lifetime: 25
     width: 3
-    height: 19
+    height: 235
     backColor: f25555
     frontColor: ffffff
     pierce: true
