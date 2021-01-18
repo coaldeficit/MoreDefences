@@ -9,7 +9,6 @@ range: 320
 rotatespeed: 1
 targetAir: true
 speed: 1
-velocityInaccuracy: 0.4
 weapons: [{
   name: havoc-cluster
   top: false
@@ -19,7 +18,7 @@ weapons: [{
   reload: 60
   shootSound: artillery
   ejectEffect: casing3Double
-  velocityInaccuracy: 0.4
+  velocityRnd: 0.4
   inaccuracy: 12
   shots: 8
   bullet: {
