@@ -27,7 +27,7 @@ weapons: [{
     frontColor: bf92f9
     backColor: 6d56bf
     width: 16
-    length: 16
+    height: 18
     speed: 3
     damage: 10
     splashDamage: 27
