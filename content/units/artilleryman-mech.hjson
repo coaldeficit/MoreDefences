@@ -20,7 +20,7 @@ weapons: [{
     knockback: 0.8	
     lifetime: 80	
     width: 8	
-    length: 8	
+    height: 8	
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 25	
