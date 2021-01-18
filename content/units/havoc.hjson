@@ -21,19 +21,19 @@ weapons: [{
   ejectEffect: casing3Double
   velocityInaccuracy: 0.4
   inaccuracy: 12
-  shots: 13
+  shots: 8
   bullet: {
     type: ArtilleryBulletType
     speed: 3
     hitEffect: blastExplosion
     knockback: 0.8
     lifetime: 110
-    width: 14
-    height: 17
+    width: 21
+    height: 25
     collidesTiles: false
     ammoMultiplier: 4
-    splashDamageRadius: 45
-    splashDamage: 90
+    splashDamageRadius: 90
+    splashDamage: 85
     backColor: e85e46
     frontColor: ffdfd1
     status: blasted
