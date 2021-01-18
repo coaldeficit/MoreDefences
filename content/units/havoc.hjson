@@ -55,8 +55,8 @@ weapons: [{
     splashDamageRadius: 15
     splashDamage: 10
     lifetime: 25
-    width: 5
-    length: 30
+    width: 2
+    length: 70
     backColor: f25555
     frontColor: ffffff
     pierce: true
