@@ -50,18 +50,18 @@ weapons: [{
   rotate: true
   bullet: {
     type: LaserBoltBulletType
-    speed: 19
+    speed: 20
     damage: 45
     splashDamageRadius: 15
     splashDamage: 10
     lifetime: 25
-    width: 3
+    width: 2
     height: 45
     backColor: f25555
     frontColor: ffdddd
     pierce: true
     pierceBuilding: true
-    pierceCap: 12
+    pierceCap: 15
     pierceDamageFactor: 0.7
   }
 }]
