@@ -14,7 +14,7 @@ weapons: [{
   top: false
   velocityInaccuracy: 0.5
   y: 3
-  x: 27
+  x: 26.7
   reload: 60
   shootSound: artillery
   ejectEffect: casing3Double
