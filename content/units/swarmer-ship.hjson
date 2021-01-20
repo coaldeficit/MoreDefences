@@ -26,7 +26,7 @@ weapons: [{
   speed: 1
   splashDamageRadius: 70
   instantDisappear: true
-  splashDamage: 80
+  splashDamage: 160
   killShooter: true
   hittable: false
   collidesAir: true

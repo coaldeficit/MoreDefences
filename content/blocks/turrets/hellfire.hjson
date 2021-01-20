@@ -18,7 +18,7 @@ ammoTypes: {
     speed: 7.5
     damage: 550
     ammoMultiplier: 1
-    splashDamage: 250
+    splashDamage: 500
     splashDamageRadius: 32
     frontColor: ffb357
     backColor: a16a28
@@ -42,7 +42,7 @@ ammoTypes: {
     speed: 7.5
     damage: 850
     ammoMultiplier: 1
-    splashDamage: 350
+    splashDamage: 700
     splashDamageRadius: 32
     frontColor: ff9c63
     backColor: b3683d
@@ -66,7 +66,7 @@ ammoTypes: {
     speed: 7
     damage: 450
     ammoMultiplier: 1
-    splashDamage: 200
+    splashDamage: 400
     splashDamageRadius: 32
     frontColor: 9854ff
     backColor: 5827a3

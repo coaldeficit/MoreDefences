@@ -43,7 +43,7 @@ ammoTypes: {
     bulletHeight: 4
     collidesAir: false
     drag: 0.05
-    splashDamage: 30
+    splashDamage: 60
     splashDamageRadius: 30
     status: blasted
     statusDuration: 20
@@ -56,7 +56,7 @@ ammoTypes: {
     bulletHeight: 4
     collidesAir: false
     drag: 0.065
-    splashDamage: 60
+    splashDamage: 120
     splashDamageRadius: 60,
     reloadMultiplier: 0.7,
     status: blasted

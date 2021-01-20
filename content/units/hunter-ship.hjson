@@ -31,7 +31,7 @@ weapons: [{
     knockback: 0.8
     lifetime: 80
     splashDamageRadius: 20
-    splashDamage: 35
+    splashDamage: 70
     homingPower: 0.2
     incendChance: 10
     incendSpread: 8

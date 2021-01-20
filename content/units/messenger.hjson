@@ -51,8 +51,7 @@ weapons: [
   shootSound: artillery
   bullet: {
     type: ArtilleryBulletType
-    damage: 80
-    splashDamage: 5
+    splashDamage: 85
     splashDamageRadius: 12
     length: 22
     width: 22

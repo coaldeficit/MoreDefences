@@ -32,7 +32,7 @@ weapons: [{
     collidesTiles: false
     ammoMultiplier: 4
     splashDamageRadius: 90
-    splashDamage: 85
+    splashDamage: 170
     backColor: e85e46
     frontColor: ffdfd1
     status: blasted
@@ -52,7 +52,7 @@ weapons: [{
     speed: 20
     damage: 70
     splashDamageRadius: 15
-    splashDamage: 10
+    splashDamage: 20
     lifetime: 25
     width: 2
     height: 45

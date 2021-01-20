@@ -37,7 +37,7 @@ ammoTypes: {
     incendChance: 0.3
     incendSpread: 0.1
     incendAmount: 0.4
-    splashDamage: 120
+    splashDamage: 240
     splashDamageRadius: 60
   }
   polonium: {

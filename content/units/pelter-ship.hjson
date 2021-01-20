@@ -25,7 +25,7 @@ weapons: [{
     width: 10
     height: 14
     splashDamageRadius: 25
-    splashDamage: 19.6
+    splashDamage: 39.2
     status: blasted
     fragBullets: 5
     fragBullet: {

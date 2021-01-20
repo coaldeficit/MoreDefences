@@ -17,9 +17,10 @@ ammoTypes: {
   }
   phase-fabric: {
     speed: 5
-    damage: 50
+    damage: 100
     ammoMultiplier: 2
     pierce: true
+    pierceCap: 4
   }
   polonium: {
     speed: 5
@@ -32,7 +33,7 @@ ammoTypes: {
     speed: 5
     damage: 150
     ammoMultiplier: 3
-    splashDamage: 75
+    splashDamage: 150
     splashDamageRadius: 40
   }
 }

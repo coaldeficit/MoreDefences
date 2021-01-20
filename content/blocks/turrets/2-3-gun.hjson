@@ -29,7 +29,7 @@ ammoTypes: {
     speed: 8
     damage: 75
     ammoMultiplier: 6
-    splashDamage: 70
+    splashDamage: 140
     splashDamageRadius: 16
     pierceCap: 3
     pierceBuilding: true

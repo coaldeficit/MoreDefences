@@ -26,7 +26,7 @@ ammoTypes: {
     height: 11
     collidesTiles: false
     splashDamageRadius: 25
-    splashDamage: 29.7
+    splashDamage: 59.4
   }
   pyratite: {
     type: ArtilleryBulletType
@@ -38,7 +38,7 @@ ammoTypes: {
     height: 13
     collidesTiles: false
     splashDamageRadius: 25
-    splashDamage: 31.5
+    splashDamage: 63
     status: burning
     backColor: e89c46
     frontColor: ff8700
@@ -55,7 +55,7 @@ ammoTypes: {
     collidesTiles: false
     ammoMultiplier: 4
     splashDamageRadius: 45
-    splashDamage: 45
+    splashDamage: 90
     backColor: e85e46
     frontColor: ffdfd1
     status: blasted
@@ -71,7 +71,7 @@ ammoTypes: {
     height: 13
     collidesTiles: false
     splashDamageRadius: 35
-    splashDamage: 40.5
+    splashDamage: 81
     frontColor: ffffff
     backColor: 8cff00
     fragBullet: artilleryPlasticFrag
@@ -90,7 +90,7 @@ ammoTypes: {
     height: 11
     collidesTiles: false
     splashDamageRadius: 95
-    splashDamage: 200
+    splashDamage: 400
     frontColor: e8a982
     backColor: e68e57
     status: blasted

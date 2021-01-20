@@ -17,7 +17,7 @@ ammoTypes: {
     speed: 15
     damage: 450
     ammoMultiplier: 1
-    splashDamage: 175
+    splashDamage: 350
     splashDamageRadius: 16
     frontColor: ffffff
     backColor: d1f1ff
