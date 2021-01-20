@@ -10,13 +10,13 @@ weapons: [{
   shots: 1
   x: -4.5
   inaccuracy: 2
-  reload: 60
+  reload: 10
   alternate: true
   shootSound: pew
   bullet: {
     type: BasicBulletType
     speed: 5
-    damage: 13
+    damage: 5
     width: 10
     height: 14
     frontColor: aeff00
