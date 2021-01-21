@@ -9,6 +9,7 @@ flying: true
 health: 100
 research: horizon
 circleTarget: true
+commandLimit: 4
 weapons: [{
   name: generic-bomber-weapon
   x: 0
