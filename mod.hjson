@@ -3,4 +3,4 @@ displayName: "[cyan]More[blue]Defences" //what displays in the mod selection men
 author: "IvyX"
 description: "A mod made by IvyX and 7rodo that adds new turrets and walls to defend your core. Does not work on iOS.[]"
 version: "1.0"
-minGameVersion: "120"
+minGameVersion: "123"
