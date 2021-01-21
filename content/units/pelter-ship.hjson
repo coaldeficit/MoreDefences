@@ -9,6 +9,7 @@ flying: true
 health: 360
 research: bombardier-ship
 circleTarget: true
+commandLimit: 6
 weapons: [{
   name: generic-bomber-weapon
   x: 1
