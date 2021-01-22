@@ -8,7 +8,7 @@ weapons: [{
   name: cannoneer-weapon
   y: 3
   shots: 1
-  x: 4
+  x: 3.8
   top: false
   inaccuracy: 2
   reload: 10
@@ -16,14 +16,15 @@ weapons: [{
   shootSound: pew
   bullet: {
     type: BasicBulletType
-    speed: 5
-    damage: 5
+    speed: 7
+    damage: 7
     width: 10
     height: 14
     frontColor: aeff00
     backColor: 95db00
     status: corroded
+    lifetime: 32
   }
 }]
-range: 80
+range: 224
 itemCapacity: 10
