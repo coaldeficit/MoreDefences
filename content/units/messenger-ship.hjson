@@ -1,13 +1,14 @@
 type: flying
 name: Messenger
 description: Fires a stack of artillery and incendiary bullets at all nearby enemies.
-speed: 1
-accel: 0.02
-drag: 0.05
+speed: 1.7
+accel: 0.04
+drag: 0.06
 rotateSpeed: 1
 hitsize: 82
 flying: true
-health: 10000
+health: 5500
+armor: 5
 engineOffset: 0
 rotateWeapon: true
 shootCone: 45
