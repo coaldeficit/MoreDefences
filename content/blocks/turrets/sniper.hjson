@@ -28,7 +28,7 @@ ammoTypes: {
     ammoMultiplier: 1
     reloadMultiplier: 0.6
   }
-  virite: {
+  blast-compound: {
     frontColor: f57f99
     backColor: d61c45
     speed: 12.5
