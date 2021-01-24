@@ -37,6 +37,7 @@ weapons: [
     frontColor: bf92f9
     backColor: 6d56bf
   }
+ }
   {
   name: messenger-cannon
   top: true
@@ -71,5 +72,5 @@ weapons: [
       splashDamage: 17
       splashDamageRadius: 15
       lifetime: 30
-}
+}}
 }]
