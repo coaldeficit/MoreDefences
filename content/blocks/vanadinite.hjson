@@ -1,0 +1,4 @@
+type: DoubleOverlayFloor
+name: Vanadinite
+variants: 3
+playerUnmineable: true
