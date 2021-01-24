@@ -8,12 +8,13 @@ rotateSpeed: 1
 hitsize: 82
 flying: true
 health: 5500
-armor: 5
+armor: 13
 engineOffset: 0
 rotateWeapon: true
 shootCone: 45
 range: 250
 mass: 100
+lowAltitude: true
 weapons: [
   {
   name: gatling-gun
