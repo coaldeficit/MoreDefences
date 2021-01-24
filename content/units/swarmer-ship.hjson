@@ -7,7 +7,7 @@ armor: 5
 engineOffset: 6
 drag: 0.01
 accel: 0.2
-range: 30
+range: 45
 rotatespeed: 5.0
 research: flare
 circleTarget: true
@@ -24,9 +24,9 @@ weapons: [{
   hitEffect: pulverize
   lifetime: 10
   speed: 1
-  splashDamageRadius: 70
+  splashDamageRadius: 55
   instantDisappear: true
-  splashDamage: 160
+  splashDamage: 80
   killShooter: true
   hittable: false
   collidesAir: true
