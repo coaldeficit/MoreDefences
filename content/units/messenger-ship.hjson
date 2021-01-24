@@ -17,8 +17,9 @@ weapons: [
   {
   name: gatling-gun
   top: true
-  y: 3
+  y: 0
   shots: 3
+  burstSpacing: 2
   x: 7
   inaccuracy: 4
   spread: 2
