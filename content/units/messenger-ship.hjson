@@ -17,9 +17,9 @@ weapons: [
   {
   name: gatling-gun
   top: true
-  y: 10
+  y: 3
   shots: 3
-  x: 5
+  x: 7
   inaccuracy: 4
   spread: 2
   reload: 12
@@ -41,9 +41,9 @@ weapons: [
   {
   name: messenger-cannon
   top: true
-  y: 2
+  y: -1
   shots: 3
-  x: 15
+  x: 16
   reload: 75
   alternative: true
   shootSound: artillery
