@@ -1,0 +1,34 @@
+type: LiquidConverter
+name: Hydrogen Condensator
+description: Cools down hydrogen gas into Liquid Hydrogen using cryofluid. Requires Titanium and Iron to operate.
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 10
+consumes: {
+  power: 4
+  items: {
+    items: [
+      titanium/1
+      ferum/1
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.15
+  }
+}
+requirements: [
+  lead/130
+  silicon/80
+  titanium/120
+  ferum/120
+  plastanium/70
+]
+category: crafting
+research: cryofluid-mixer
+outputLiquid: {
+ liquid: liquid-hydrogen
+ amount: 0.05
+}
