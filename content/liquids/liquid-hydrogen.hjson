@@ -1,9 +1,9 @@
 name: Liquid Hydrogen
-description: Liquid state of Hydrogen. Extremely cold and volatile.
+description: Liquid state of Hydrogen. Very cold and volatile.
 heatCapacity: 1.3
 temperature: 0.05
 flammability: 0.099
-explosiveness: 1
+explosiveness: 0.6
 viscosity: 0.1
 effect: freezing
 color: 7a9a9B
