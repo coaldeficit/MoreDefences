@@ -3,4 +3,3 @@ name: Iron Ore
 description: A rock extracted from the ground containing Iron and other metals. Can be converted into slag or turned into Iron.
 color: DDBBAD
 hardness: 3
-research: graphite
