@@ -8,7 +8,7 @@ hasLiquids: true
 craftTime: 60
 drawer: DrawMixer
 consumes: {
-  power: 4
+  power: 3
   items: {
     items: [
       titanium/1
@@ -17,7 +17,7 @@ consumes: {
   }
   liquid: {
     liquid: cryofluid
-    amount: 0.15
+    amount: 0.1
   }
 }
 requirements: [
@@ -31,5 +31,5 @@ category: crafting
 research: cryofluid-mixer
 outputLiquid: {
  liquid: liquid-hydrogen
- amount: 1
+ amount: 2.35
 }
