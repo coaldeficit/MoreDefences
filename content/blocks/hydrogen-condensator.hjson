@@ -6,7 +6,7 @@ hasPower: true
 hasItems: true
 hasLiquids: true
 craftTime: 60
-drawer: new DrawMixer()
+drawer: DrawMixer()
 consumes: {
   power: 4
   items: {
