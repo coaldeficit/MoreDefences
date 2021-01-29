@@ -1,3 +1,4 @@
+type: GenericCrafter
 name: Hydrogen Condensator
 description: Cools down nearby hydrogen gas into liquid hydrogen.
 size: 3
@@ -5,6 +6,7 @@ hasPower: true
 hasItems: true
 hasLiquids: true
 craftTime: 60
+drawer: new DrawMixer()
 consumes: {
   power: 4
   items: {
