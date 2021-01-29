@@ -31,5 +31,5 @@ category: crafting
 research: cryofluid-mixer
 outputLiquid: {
  liquid: liquid-hydrogen
- amount: 0.05
+ amount: 1
 }
