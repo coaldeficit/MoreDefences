@@ -1,7 +1,7 @@
 name: Pelter
 flying: true
 description: Drops bombs which release some Tar when they explode on enemy units and structures. Has extra weapons to defend itself from air units.
-speed: 2.5
+speed: 1.7
 drag: 0.02
 accel: 0.08
 turnCursor: false
