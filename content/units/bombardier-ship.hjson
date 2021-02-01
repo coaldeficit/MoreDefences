@@ -1,7 +1,7 @@
 name: Bombardier
 flying: true
 description: A basic Bomber ship. Drops groups of 3 bombs on enemy structures and units.
-speed: 3.5
+speed: 2
 drag: 0.01
 accel: 0.08
 turnCursor: false
@@ -28,7 +28,7 @@ weapons: [{
     width: 10
     height: 14
     splashDamageRadius: 15
-    splashDamage: 125
+    splashDamage: 25
     status: blasted
   }
 }]
