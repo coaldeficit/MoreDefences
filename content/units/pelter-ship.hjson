@@ -1,40 +1,42 @@
 name: Pelter
 flying: true
-description: Drops bombs which release some Tar when they explode on enemy units and structures. Has extra weapons to defend itself from air units.
+description: A weak bomber ship. Drops bombs on enemy units and structures that release Tar when they explode. Has additional weapons to defend itself from air units.
 speed: 1.7
 drag: 0.02
 accel: 0.08
-turnCursor: false
 flying: true
-health: 360
+health: 435
 research: bombardier-ship
 circleTarget: true
 commandLimit: 6
 weapons: [{
   name: generic-bomber-weapon
-  x: 1
-  y: 0
-  inaccuracy: 180
+  minShootVelocity: 0.75
+  x: 3
+  shootY: 0
   reload: 24
-  alternate: true
-  ignoreRotation: true
   velocityRnd: 1
+  shootCone: 180
+  inaccuracy: 15
+  shootSound: none
   bullet: {
     type: BombBulletType
     hitEffect: flakExplosion
-    lifetime: 60
-    width: 10
-    height: 14
-    splashDamageRadius: 25
-    splashDamage: 39.2
+    shootEffect: none
+    smokeEffect: none
+    width: 7.5
+    height: 10.5
+    splashDamageRadius: 35
+    splashDamage: 20
     status: blasted
-    fragBullets: 5
+    fragBullets: 10
     fragBullet: {
       type: LiquidBulletType
       liquid: oil
       damage: 0.375
       status: tarred
       pierce: true
+      pierceCap: 10
       lifetime: 240
       drag: 0.075
     }
@@ -44,7 +46,7 @@ weapons: [{
   top: true
   y: 0
   x: 3
-  reload: 30
+  reload: 13
   alternate: true
   shootSound: pew
   inaccuracy: 2
@@ -56,6 +58,5 @@ weapons: [{
     lifetime: 20
   }
 }]
-range: 100
-mineSpeed: 2
-itemCapacity: 20
+range: 140
+itemCapacity: 30
