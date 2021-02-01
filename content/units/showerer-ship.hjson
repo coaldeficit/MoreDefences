@@ -1,0 +1,49 @@
+name: Showerer
+flying: true
+description: A bomber ship. Drops bombs on enemy units and structures that explode into more bombs.
+speed: 1.4
+drag: 0.03
+accel: 0.08
+hitSize: 15
+flying: true
+health: 800
+research: pelter-ship
+circleTarget: true
+commandLimit: 8
+weapons: [{
+  name: generic-bomber-weapon
+  minShootVelocity: 0.75
+  x: 0
+  shootY: 0
+  reload: 30
+  velocityRnd: 1
+  shootCone: 180
+  inaccuracy: 15
+  shootSound: none
+  bullet: {
+    type: BombBulletType
+    hitEffect: flakExplosion
+    shootEffect: none
+    smokeEffect: none
+    width: 10
+    height: 14
+    splashDamageRadius: 48
+    splashDamage: 50
+    status: blasted
+    fragBullets: 17
+    fragBullet: {
+      type: BombBulletType
+      speed: 3
+      hitEffect: flakExplosion
+      shootEffect: none
+      smokeEffect: none
+      width: 5
+      height: 7
+      splashDamageRadius: 15
+      splashDamage: 9
+      status: blasted
+    }
+  }
+}]
+range: 140
+itemCapacity: 50
