@@ -10,9 +10,11 @@ health: 800
 research: pelter-ship
 circleTarget: true
 commandLimit: 8
+engineOffset: -3.2
+engineSize: 3.25
 weapons: [{
   name: generic-bomber-weapon
-  minShootVelocity: 0.75
+  minShootVelocity: 0.35
   x: 0
   shootY: 0
   reload: 30
