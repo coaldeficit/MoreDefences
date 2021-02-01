@@ -1,37 +1,37 @@
 name: Bombardier
 flying: true
-description: A basic Bomber ship. Drops groups of 3 bombs on enemy structures and units.
+description: A weak bomber. Drops small clusters of weak bombs above enemy units and structures.
 speed: 2
 drag: 0.01
 accel: 0.08
-turnCursor: false
 flying: true
-health: 100
+health: 135
 research: horizon
 circleTarget: true
 commandLimit: 4
 weapons: [{
   name: generic-bomber-weapon
-  x: 0
-  shots: 3
-  shotDelay: 3
-  x: 0
-  inaccuracy: 180
+  minShootVelocity: 0.75
+  x: 2
+  shootY: 0
   reload: 24
-  alternate: true
-  ignoreRotation: true
+  shots: 3
+  shotDelay: 2
   velocityRnd: 1
+  shootCone: 180
+  inaccuracy: 15
+  shootSound: none
   bullet: {
     type: BombBulletType
     hitEffect: flakExplosion
-    lifetime: 80
-    width: 10
-    height: 14
+    shootEffect: none
+    smokeEffect: none
+    width: 5
+    height: 7
     splashDamageRadius: 15
-    splashDamage: 12
+    splashDamage: 7
     status: blasted
   }
 }]
-range: 80
-mineSpeed: 2.75
+range: 140
 itemCapacity: 20
