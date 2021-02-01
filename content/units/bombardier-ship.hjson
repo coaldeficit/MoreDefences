@@ -28,7 +28,7 @@ weapons: [{
     width: 10
     height: 14
     splashDamageRadius: 15
-    splashDamage: 25
+    splashDamage: 125
     status: blasted
   }
 }]
