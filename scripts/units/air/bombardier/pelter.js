@@ -1,4 +1,3 @@
-  
 const BomberT2 = extendContent(UnitType, "pelter-ship", {});
 BomberT2.constructor = () => extend(UnitEntity, {});
 
