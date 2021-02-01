@@ -27,7 +27,7 @@ weapons: [{
     width: 7.5
     height: 10.5
     splashDamageRadius: 35
-    splashDamage: 20
+    splashDamage: 17
     status: blasted
     fragBullets: 10
     fragBullet: {
@@ -36,7 +36,6 @@ weapons: [{
       damage: 0.375
       status: tarred
       pierce: true
-      pierceCap: 10
       lifetime: 240
       drag: 0.075
     }
