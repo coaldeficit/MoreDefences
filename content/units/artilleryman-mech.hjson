@@ -13,7 +13,7 @@ weapons: [{
   reload: 60
   alternate: true
   shootSound: pew
-  velocityRnd: 1
+  velocityRnd: 0.2
   bullet: {	
     type: ArtilleryBulletType	
     speed: 5	
