@@ -5,14 +5,15 @@ speed: 0.6
 health: 600
 armor: 6
 hovering: true
+allowLegStep: true
 research: artilleryman-mech
 weapons: [{
   name: generic-bomber-weapon
-  y: -3
+  y: 0
   shots: 1
   x: 0
   inaccuracy: 0
-  reload: 120
+  reload: 90
   alternate: true
   shootSound: pew
   mirror: false
