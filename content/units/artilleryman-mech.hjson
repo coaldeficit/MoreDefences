@@ -6,13 +6,14 @@ health: 500
 research: cannoneer-mech
 weapons: [{
   name: artilleryman-weapon
-  y: 0
+  y: 3
   shots: 3
-  x: -6
+  x: 6
   inaccuracy: 7
   reload: 60
   alternate: true
   shootSound: pew
+  velocityRnd: 1
   bullet: {	
     type: ArtilleryBulletType	
     speed: 5	
