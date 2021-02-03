@@ -6,9 +6,9 @@ health: 500
 research: cannoneer-mech
 weapons: [{
   name: artilleryman-weapon
-  y: 4.4
+  y: 0
   shots: 3
-  x: 5.6
+  x: 8
   inaccuracy: 7
   reload: 60
   alternate: true
@@ -32,8 +32,5 @@ weapons: [{
   }	
 }]
 range: 260
-drillPower: 1
-mineSpeed: 0.1
-buildPower: 0.75
 itemCapacity: 10
 targetAir: false
