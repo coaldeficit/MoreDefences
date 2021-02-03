@@ -4,7 +4,7 @@ description: Fires bursts of 3 artillery shells at enemy structures and units.
 speed: 0.3
 health: 500
 research: cannoneer-mech
-hitSize: 13
+hitSize: 11
 weapons: [{
   name: artilleryman-weapon
   top: true
