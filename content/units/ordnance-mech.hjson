@@ -43,7 +43,7 @@ weapons: [{
       frontColor: aeff00
       backColor: 95db00
       status: corroded
-      lifetime: 8
+      lifetime: 20
     }
   }	
 }]
