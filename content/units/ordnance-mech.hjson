@@ -28,14 +28,25 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 50
-    splashDamage: 140
+    splashDamage: 100
     frontColor: aeff00
     backColor: 95db00
     status: corroded
+    fragBullets: 7
+    fragCone: 60
+    fragBullet: {
+      type: BasicBulletType
+      speed: 5
+      damage: 4
+      width: 2
+      height: 2.8
+      frontColor: aeff00
+      backColor: 95db00
+      status: corroded
+      lifetime: 8
+    }
   }	
 }]
 range: 260
-minePower: 1
-mineSpeed: 0.1
 itemCapacity: 10
 targetAir: false
