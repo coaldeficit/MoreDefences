@@ -8,7 +8,7 @@ weapons: [{
   name: artilleryman-weapon
   y: 0
   shots: 3
-  x: 8
+  x: 6
   inaccuracy: 7
   reload: 60
   alternate: true
