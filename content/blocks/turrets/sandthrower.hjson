@@ -64,7 +64,7 @@ ammoTypes: {
       lifetime: 30
     }
   }
-  titanium-sand: {
+  titaniumsand: {
     speed: 2.75
     damage: 14
     ammoMultiplier: 5
