@@ -1,29 +1,97 @@
 type: ItemTurret
-name: Sand Thrower
-description: Fires 5 weak bullets that spread out.
+name: Granule Thrower
+description: Rapidly fires weak granules of materials at nearby enemy units and structures. Can use many resources as ammo.
 health: 200
 size: 1
-reloadTime: 60
-range: 80
-inaccuracy: 5
+reloadTime: 12
+range: 75
+inaccuracy: 10
 rotatespeed: 5
-spread: 2
-shots: 5
 ammoTypes: {
   sand: {
     speed: 2.75
-    damage: 3
-    ammoMultiplier: 1
+    damage: 4
+    ammoMultiplier: 5
+    width: 5
+    height: 8
+    frontColor: f7cba4
+    backColor: d3ae8d
+    lifetime: 26
   }
-  titaniumsand: {
-    speed: 3.75
-    damage: 12
-    ammoMultiplier: 1
-    reloadMultiplier: 0.8
+  scrap: {
+    speed: 2.75
+    damage: 6
+    ammoMultiplier: 5
+    reloadMultiplier: 0.85
+    width: 5
+    height: 8
+    frontColor: 9b928b
+    backColor: 666666
+    lifetime: 26
+  }
+  coal: {
+    speed: 2.75
+    damage: 6
+    ammoMultiplier: 5
+    incendAmount: 1
+    incendChance: 10
+    incendSpread: 8
+    width: 5
+    height: 8
+    frontColor: 404040
+    backColor: 2a2a2a
+    lifetime: 26
+  }
+  spore-pod: {
+    speed: 2.75
+    damage: 7
+    ammoMultiplier: 8
+    width: 5
+    height: 8
+    frontColor: 9e78dc
+    backColor: 7457ce
+    lifetime: 26
+    fragBullets: 3
+    fragBullet: {
+      type: BasicBulletType
+      speed: 2.25
+      damage: 2
+      width: 2
+      height: 2.8
+      frontColor: 9e78dc
+      backColor: 7457ce
+      status: slow
+      lifetime: 30
+    }
+  }
+  titanium-sand: {
+    speed: 2.75
+    damage: 14
+    ammoMultiplier: 5
+    width: 5
+    height: 8
+    reloadMultiplier: 0.85
+    frontColor: cca4e1
+    backColor: 9f80af
+    lifetime: 26
+  }
+  blast-compound: {
+    speed: 2.75
+    damage: 4.2
+    splashDamageRadius: 16
+    splashDamage: 9.8
+    ammoMultiplier: 5
+    width: 5
+    height: 8
+    reloadMultiplier: 0.85
+    frontColor: ff795e
+    backColor: c85c51
+    lifetime: 26
   }
 }
 requirements: [
-  copper/30
+  copper/40
+  lead/10
 ]
 category: turret
 research: duo
