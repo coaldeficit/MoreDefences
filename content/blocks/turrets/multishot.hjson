@@ -1,6 +1,6 @@
 type: ItemTurret
 name: Multishot
-description: An upgraded Sand Thrower. Fires 10 weak bullets that spread out.
+description: Fires 10 weak bullets that spread out.
 health: 200
 size: 1
 reloadTime: 60
@@ -31,8 +31,8 @@ ammoTypes: {
   }
 }
 requirements: [
-  copper/20
-  lead/80
+  copper/60
+  lead/20
 ]
 category: turret
 research: sandthrower
