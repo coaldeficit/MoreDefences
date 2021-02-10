@@ -2,4 +2,4 @@ type: OreBlock
 name: Iron Ore
 itemDrop: iron
 variants: 3
-playerUnmineable: true
+mapColor: DDBBAD
