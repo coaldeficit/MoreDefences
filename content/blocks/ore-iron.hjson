@@ -3,3 +3,4 @@ name: Iron Ore
 itemDrop: iron
 variants: 3
 mapColor: DDBBAD
+useColor: true
