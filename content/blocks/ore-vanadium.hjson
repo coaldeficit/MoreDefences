@@ -2,4 +2,4 @@ type: OreBlock
 name: Vanadium
 itemDrop: vanadium
 variants: 3
-playerUnmineable: true
+mapColor: 48474f
