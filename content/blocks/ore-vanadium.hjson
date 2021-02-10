@@ -3,3 +3,4 @@ name: Vanadium
 itemDrop: vanadium
 variants: 3
 mapColor: 48474f
+useColor: true
