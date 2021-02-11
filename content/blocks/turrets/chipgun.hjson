@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Chipgun
+localizedName: Chipgun
 description: A small turret that rapidly fires homing incendiary projectiles.
 health: 200
 size: 1

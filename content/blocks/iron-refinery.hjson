@@ -1,5 +1,5 @@
 type: GenericSmelter
-name: Iron Refinery
+localizedName: Iron Refinery
 description: Smelts iron ore into Iron.
 size: 2
 hasPower: true

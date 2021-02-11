@@ -1,4 +1,4 @@
-name: Pelter
+localizedName: Pelter
 flying: true
 description: A weak bomber ship. Drops bombs on enemy units and structures that release Tar when they explode. Has additional weapons to defend itself from air units.
 speed: 1.7

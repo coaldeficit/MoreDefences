@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Titanium Extractor
+localizedName: Titanium Extractor
 description: Digs down deep into the ground and extracts Titanium.
 size: 2
 hasPower: true

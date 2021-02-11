@@ -1,5 +1,5 @@
 type: mech
-name: Havoc
+localizedName: Havoc
 description: A high ranking crux robot. Fires powerful clusters of artillery shells at enemy structures and powerful lasers bolts at nearby enemy units and structures. 
 flying: false
 health: 13000

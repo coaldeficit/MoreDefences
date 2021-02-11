@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Hellfire
+localizedName: Hellfire
 description: Fires powerful missiles at a slow rate. Requires enormous amounts of ammo to fire.
 health: 1120
 size: 4

@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Cluster
+localizedName: Cluster
 description: An upgraded Ripple. Fires large amounts of bullets at once.
 health: 1600
 size: 4

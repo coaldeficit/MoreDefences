@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Hydrogen Condensator
+localizedName: Hydrogen Condensator
 description: Cools down nearby hydrogen gas into liquid hydrogen.
 size: 3
 hasPower: true

@@ -1,4 +1,4 @@
-name: Bee
+localizedName: Bee
 description: A stronger swarming unit designed to damage enemy defences. 
 speed: 2.3
 flying: true

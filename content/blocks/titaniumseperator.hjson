@@ -1,25 +1,28 @@
 type: GenericCrafter
-name: Titanium Seperator
-description: Seperates Titanium particles from Titanium sand, melts them together and freezes them into ingots.
-liquidCapacity: 50
+localizedName: Titanium Seperator
+description: Seperates Titanium particles from Titanium sand.
 size: 2
 hasPower: true
 hasItems: true
-craftTime: 120
+itemCapacity: 50
+craftTime: 6
 consumes: {
-  power: 0.7
+  power: 1
   items: {
     items: [
-      titaniumsand/1
+      titaniumsand/9
     ]
   }
 }
 requirements: [
-  titanium/30
-  silicon/30
+  copper/120
+  lead/90
+  graphite/20
+  silicon/20
+  titanium/20
 ]
 category: crafting
-research: silicon-smelter
+research: sifter
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: titanium/2

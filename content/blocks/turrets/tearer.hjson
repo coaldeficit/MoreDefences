@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Tearer
+localizedName: Tearer
 description: Fires weak bullets at an extremely fast rate.
 health: 200
 size: 1

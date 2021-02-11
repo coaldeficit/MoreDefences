@@ -1,4 +1,4 @@
-name: Iron Ore Extractor
+localizedName: Iron Ore Extractor
 description: Drills into the ground and extracts Iron Ore.
 size: 2
 hasPower: true

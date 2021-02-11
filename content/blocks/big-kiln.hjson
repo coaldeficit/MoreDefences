@@ -1,5 +1,5 @@
 type: AttributeSmelter
-name: Metaglass Furnace
+localizedName: Metaglass Furnace
 description: Smelts sand and lead into metaglass, using pyratite as an additional heat source.
 size: 3
 hasPower: true

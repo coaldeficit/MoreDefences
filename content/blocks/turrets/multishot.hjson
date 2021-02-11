@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Multishot
+localizedName: Multishot
 description: Fires 10 weak bullets that spread out.
 health: 200
 size: 1

@@ -1,4 +1,4 @@
-name: Dynamic Drill
+localizedName: Dynamic Drill
 description: A late game drill, capable of mining vanadium but in a small area.
 type: Drill
 health: 450

@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Tefium Forge
+localizedName: Tefium Forge
 description: Melts Thorium, Vanadium and Phase Fabric together to create Tefium.
 size: 3
 hasPower: true

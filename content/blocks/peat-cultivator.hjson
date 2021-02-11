@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Peat Cultivator
+localizedName: Peat Cultivator
 description: Cultivates grass and turns it into Peat.
 size: 2
 hasPower: true

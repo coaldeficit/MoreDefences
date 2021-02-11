@@ -1,4 +1,4 @@
-name: Spirit Drone
+localizedName: Spirit Drone
 description: A weak drone. Designed to heal ally defences.
 speed: 3.4
 flying: true

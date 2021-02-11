@@ -1,4 +1,4 @@
-name: Artilleryman
+localizedName: Artilleryman
 flying: false
 description: Fires bursts of 3 artillery shells at enemy structures and units.
 speed: 0.3

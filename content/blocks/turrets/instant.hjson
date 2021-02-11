@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Instant
+localizedName: Instant
 description: An upgraded Tearer. Fires fast bullets at an extremely fast rate.
 health: 1250
 size: 2

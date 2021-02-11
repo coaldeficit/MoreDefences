@@ -1,5 +1,5 @@
 type: material
-name: Peat
+localizedName: Peat
 description: Peat is an accumulation of partially decayed plant matter.
 color: 5fcc5b
 flammability: 0.6
