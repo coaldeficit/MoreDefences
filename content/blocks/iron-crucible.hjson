@@ -5,10 +5,10 @@ size: 2
 hasPower: true
 hasItems: true
 hasLiquids: true
-craftTime: 12
+craftTime: 10
 updateEffect: smeltsmoke
 consumes: {
-  power: 1.5
+  power: 3
   items: {
     items: [
       iron/1
@@ -16,14 +16,15 @@ consumes: {
   }
 }
 requirements: [
-  copper/45
-  lead/50
-  graphite/55
-  thorium/45
+  copper/60
+  lead/80
+  graphite/80
+  silicon/45
+  ferum/45
 ]
 category: crafting
 research: melter
 outputLiquid: {
  liquid: slag
- amount: 4.5
+ amount: 11.2
 }
