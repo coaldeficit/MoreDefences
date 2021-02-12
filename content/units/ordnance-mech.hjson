@@ -2,13 +2,15 @@ localizedName: Ordnance
 flying: false
 description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
 speed: 0.6
-health: 600
+health: 900
 armor: 6
 hovering: true
 allowLegStep: true
 research: artilleryman-mech
 weapons: [{
-  name: generic-bomber-weapon
+  name: ordnance-cannon
+  top: true
+  rotate: true
   y: 0
   shots: 1
   x: 0
@@ -27,7 +29,7 @@ weapons: [{
     height: 15
     collidesTiles: true	
     collides: true	
-    splashDamageRadius: 50
+    splashDamageRadius: 40
     splashDamage: 100
     frontColor: aeff00
     backColor: 95db00
