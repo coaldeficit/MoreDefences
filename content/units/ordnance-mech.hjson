@@ -7,6 +7,11 @@ armor: 6
 hovering: true
 allowLegStep: true
 research: artilleryman-mech
+legCount = 4;
+legLength = 13f;
+legTrns = 0.8f;
+legMoveSpace = 1.4f;
+legBaseOffset = 2f;
 weapons: [{
   name: ordnance-cannon
   top: true
