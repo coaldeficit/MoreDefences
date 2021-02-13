@@ -35,7 +35,7 @@ weapons: [{
     collidesTiles: true	
     collides: true	
     splashDamageRadius: 40
-    splashDamage: 100
+    splashDamage: 80
     frontColor: aeff00
     backColor: 95db00
     status: corroded
@@ -44,7 +44,7 @@ weapons: [{
     fragBullet: {
       type: BasicBulletType
       speed: 5
-      damage: 4
+      damage: 3
       width: 2
       height: 2.8
       frontColor: aeff00
