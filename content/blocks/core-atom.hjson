@@ -1,0 +1,19 @@
+type: CoreBlock
+localizedName: "Core: Atom"
+description: Core of the base. Exceptionally well armored. Stores enormous amounts of resources.
+details: The fourth and final iteration.
+size: 6
+unitType: gamma
+health: 8400
+itemCapacity: 15000
+unitCapModifier: 32
+researchCostMultiplier: 0.08
+requirements: [
+  copper/12000
+  lead/12000
+  silicon/9000
+  thorium/8000
+  phase-fabric/6000
+  surge-alloy/6000
+]
+category: effect
