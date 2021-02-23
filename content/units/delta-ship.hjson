@@ -15,6 +15,7 @@ engineOffset: 8
 hitSize: 13
 commandLimit: 6
 rotateShooting: false
+range: 304
 weapons: [{
   name: delta-lightning
   top: true
@@ -27,8 +28,8 @@ weapons: [{
   inaccuracy: 0
   bullet: {
     type: LightningBulletType
-    damage: 10
-    lightningLength: 10
+    damage: 20
+    lightningLength: 8
     lightningLengthRand: 2
     buildingDamageMultiplier: 0.01
     lightningType: {
