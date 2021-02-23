@@ -15,7 +15,7 @@ engineOffset: 6.5
 hitSize: 13
 commandLimit: 6
 rotateShooting: false
-payloadCapacity: 72
+//payloadCapacity: 72
 weapons: [{
   name: delta-lightning
   top: true
