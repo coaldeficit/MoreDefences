@@ -28,7 +28,7 @@ weapons: [{
   bullet: {
     type: LightningBulletType
     damage: 4
-    lightningLength: 7
+    lightningLength: 18
     lightningLengthRand: 2
     buildingDamageMultiplier: 0.01
     lightningType: {
@@ -55,13 +55,14 @@ weapons: [{
   bullet: {
     type: MissileBulletType
     damage: 6
+    speed: 3
     splashDamage: 4
     splashDamageRadius: 8
-    width: 4
-    height: 4
-    weaveScale: 3
-    weaveMag: 0.5
-    lifetime: 60
+    width: 8
+    height: 8
+    weaveScale: 6
+    weaveMag: 1
+    lifetime: 100
     homingRange: 60
     keepVelocity: false
     frontColor: FFD37F
