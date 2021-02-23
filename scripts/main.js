@@ -5,6 +5,7 @@ require("more-defences-ivyx/vanadium-megaextractor")
 // require("more-defences-ivyx/source-ship")
 require("more-defences-ivyx/aerial-drill")
 require("more-defences-ivyx/units/air/drones")
+require("more-defences-ivyx/units/air/core-units")
 require("more-defences-ivyx/iron-ore-extractor")
 // require("more-defences-ivyx/vanilla-changes")
 
