@@ -27,8 +27,8 @@ weapons: [{
   inaccuracy: 0
   bullet: {
     type: LightningBulletType
-    damage: 4
-    lightningLength: 18
+    damage: 10
+    lightningLength: 10
     lightningLengthRand: 2
     buildingDamageMultiplier: 0.01
     lightningType: {
@@ -56,7 +56,7 @@ weapons: [{
     type: MissileBulletType
     damage: 6
     speed: 3
-    splashDamage: 4
+    splashDamage: 8
     splashDamageRadius: 8
     width: 8
     height: 8
