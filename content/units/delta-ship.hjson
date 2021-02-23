@@ -2,7 +2,6 @@ type: payload
 localizedName: Delta
 description: Defends the Atom core from enemies. Builds structures.
 isCounted: false
-defaultController: BuilderAI
 flying: true
 mineSpeed: 9
 mineTier: 3
