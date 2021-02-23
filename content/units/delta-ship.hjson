@@ -11,7 +11,7 @@ rotateSpeed: 21
 accel: 0.12
 itemCapacity: 90
 health: 250
-engineOffset: 6.5
+engineOffset: 8
 hitSize: 13
 commandLimit: 6
 rotateShooting: false
