@@ -1,6 +1,6 @@
 type: payload
 localizedName: Delta
-description: A stronger swarming unit designed to damage enemy defences. 
+description: Defends the Atom core from enemies. Builds structures.
 isCounted: false
 defaultController: BuilderAI
 flying: true
@@ -16,6 +16,7 @@ health: 250
 engineOffset: 6.5
 hitSize: 13
 commandLimit: 6
+rotateShooting: false
 payloadCapacity: 1.5 * 1.5
 weapons: [{
   name: delta-lightning
