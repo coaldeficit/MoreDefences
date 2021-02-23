@@ -29,8 +29,8 @@ weapons: [{
   bullet: {
     type: LightningBulletType
     damage: 20
-    lightningLength: 14
-    lightningLengthRand: 2
+    lightningLength: 16
+    lightningLengthRand: 4
     buildingDamageMultiplier: 0.01
     lightningType: {
       speed: 0.0001
@@ -55,10 +55,10 @@ weapons: [{
   shootSound: missile
   bullet: {
     type: MissileBulletType
-    damage: 50
+    damage: 5
     speed: 3
-    splashDamage: 30
-    splashDamageRadius: 8
+    splashDamage: 25
+    splashDamageRadius: 32
     width: 8
     height: 8
     weaveScale: 6
