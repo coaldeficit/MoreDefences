@@ -3,7 +3,7 @@ localizedName: "Core: Atom"
 description: Core of the base. Exceptionally well armored. Stores enormous amounts of resources.
 details: The fourth and final iteration.
 size: 6
-unitType: gamma
+unitType: delta-ship
 health: 8400
 itemCapacity: 15000
 unitCapModifier: 32
