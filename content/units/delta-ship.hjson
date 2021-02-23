@@ -29,7 +29,7 @@ weapons: [{
   bullet: {
     type: LightningBulletType
     damage: 20
-    lightningLength: 8
+    lightningLength: 14
     lightningLengthRand: 2
     buildingDamageMultiplier: 0.01
     lightningType: {
@@ -39,7 +39,7 @@ weapons: [{
       despawnEffect: none
       hittable: false
       status: shocked
-      statusDuration: 5
+      statusDuration: 15
       hitEffect: hitLancer
     }
   }
@@ -55,9 +55,9 @@ weapons: [{
   shootSound: missile
   bullet: {
     type: MissileBulletType
-    damage: 6
+    damage: 50
     speed: 3
-    splashDamage: 8
+    splashDamage: 30
     splashDamageRadius: 8
     width: 8
     height: 8
