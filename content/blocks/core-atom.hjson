@@ -5,7 +5,7 @@ details: The fourth and final iteration.
 size: 6
 unitType: delta-ship
 health: 8400
-itemCapacity: 15000
+itemCapacity: 16000
 unitCapModifier: 32
 researchCostMultiplier: 0.08
 requirements: [
