@@ -13,3 +13,8 @@ Go to the Mods menu, click/tap on Import Mod, click/tap on Import From Github, e
 ## Other good mods
 Some other good mods that IvyX (the person who made this mod and wrote the entirety of this readme) recommends are:
 - 7rodo/Strawberry: A good utility mod made by 7rodo and IvyX. Adds a few quality of life blocks that make playing the game slightly less painful, as well as plenty of turrets, resources and production blocks.
+
+## Contributors
+This is a list of people who have contributed to developing this mod.
+- [7rodo](https://github.com/7rodo): Co-developer
+- AurumMighty#1679: Helped with respriting Pelter
