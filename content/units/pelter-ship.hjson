@@ -4,6 +4,7 @@ description: A weak bomber ship. Drops bombs on enemy units and structures that 
 speed: 1.7
 drag: 0.02
 accel: 0.08
+hitSize: 14
 flying: true
 health: 435
 research: bombardier-ship
