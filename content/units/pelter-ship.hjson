@@ -9,7 +9,7 @@ health: 435
 research: bombardier-ship
 circleTarget: true
 commandLimit: 6
-engineOffset: -2
+engineOffset: 4
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.75
@@ -44,7 +44,7 @@ weapons: [{
 }, {
   name: pelter-gun
   y: 7
-  x: 3
+  x: 2.8
   reload: 13
   alternate: true
   shootSound: pew
