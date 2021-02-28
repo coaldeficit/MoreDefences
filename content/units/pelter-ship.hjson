@@ -42,10 +42,9 @@ weapons: [{
     }
   }
 }, {
-  name: small-weapon
-  top: true
-  y: 0
-  x: 3
+  name: pelter-gun
+  y: 3
+  x: 1
   reload: 13
   alternate: true
   shootSound: pew
