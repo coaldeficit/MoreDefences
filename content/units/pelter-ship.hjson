@@ -10,6 +10,7 @@ research: bombardier-ship
 circleTarget: true
 commandLimit: 6
 engineOffset: 9
+engineSize: 4
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.75
