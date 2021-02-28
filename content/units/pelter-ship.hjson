@@ -43,8 +43,8 @@ weapons: [{
   }
 }, {
   name: pelter-gun
-  y: 3
-  x: 1
+  y: 7
+  x: 3
   reload: 13
   alternate: true
   shootSound: pew
