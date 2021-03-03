@@ -4,33 +4,31 @@ speed: 1
 accel: 0.04
 drag: 0.06
 rotateSpeed: 1
-hitsize: 82
+hitsize: 55
 flying: true
-health: 5700
-armor: 9
+health: 8500
+armor: 7
 engineOffset: 0
 rotateWeapon: true
 shootCone: 45
 range: 250
-mass: 100
 lowAltitude: true
 weapons: [
   {
   name: gatling-gun
   top: true
   y: 0
-  shots: 3
-  spacing: 2
+  shots: 1
   x: 7
-  inaccuracy: 4
+  inaccuracy: 10
   spread: 2
-  reload: 12
+  reload: 1
   recoil: 5
   alternate: true
   shootSound: pew
   bullet: {
     speed: 5
-    damage: 16
+    damage: 4
     incendAmount: 1
     incendChance: 0.9
     incendSpread: 1
