@@ -48,14 +48,14 @@ weapons: [
   alternative: true
   shootSound: artillery
   ejectEffect: casing3Double
-  inaccuracy: 2
+  inaccuracy: 1
   bullet: {
     type: ArtilleryBulletType
     frontColor: bf92f9
     backColor: 6d56bf
     width: 19
     height: 17
-    speed: 5
+    speed: 7
     damage: 6
     splashDamage: 34
     splashDamageRadius: 27
