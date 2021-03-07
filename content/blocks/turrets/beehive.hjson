@@ -1,6 +1,6 @@
 type: ItemTurret
 localizedName: Beehive
-description: A turret that fires a powerful swarm of homing piercing projectiles. Uses lead as ammo.
+description: A turret that fires a powerful swarm of homing piercing projectiles.
 health: 75
 size: 2
 reload: 12
@@ -14,7 +14,7 @@ targetAir: false
 ammoTypes: {
   lead: {
     speed: 4.5
-    damage: 9
+    damage: 8
     ammoMultiplier: 6
     pierce: true
     lifetime: 120
@@ -25,6 +25,21 @@ ammoTypes: {
     bulletWidth: 3
     bulletHeight: 4
     collidesAir: false
+  }
+  zinc: {
+    speed: 4.5
+    damage: 16
+    ammoMultiplier: 7
+    pierce: true
+    lifetime: 120
+    homingPower: 0.05
+    homingRange: 80
+    backColor: D0D8DF
+    frontColor: 000000
+    bulletWidth: 6
+    bulletHeight: 8
+    collidesAir: false
+    reloadMultiplier: 0.6
   }
 }
 requirements: [

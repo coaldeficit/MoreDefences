@@ -92,7 +92,7 @@ ammoTypes: {
 requirements: [
   copper/240
   lead/240
-  ferum/160
+  zinc/160
   silicon/120
   graphite/120
   titanium/60

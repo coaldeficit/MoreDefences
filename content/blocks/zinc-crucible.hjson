@@ -1,6 +1,6 @@
 type: GenericSmelter
-localizedName: Iron Crucible
-description: Smelts iron ore into slag.
+localizedName: Zincite Crucible
+description: Melts zincite into slag.
 size: 2
 hasPower: true
 hasItems: true
@@ -11,7 +11,7 @@ consumes: {
   power: 3
   items: {
     items: [
-      iron/1
+      zincite/1
     ]
   }
 }
@@ -20,7 +20,7 @@ requirements: [
   lead/80
   graphite/80
   silicon/45
-  ferum/45
+  zinc/45
 ]
 category: crafting
 research: melter

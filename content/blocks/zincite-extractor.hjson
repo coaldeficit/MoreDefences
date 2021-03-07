@@ -1,5 +1,5 @@
-localizedName: Iron Ore Extractor
-description: Drills into the ground and extracts Iron Ore.
+localizedName: Zincite Extractor
+description: Drills into the ground and extracts Zincite.
 size: 2
 hasPower: true
 craftTime: 240
@@ -15,4 +15,4 @@ category: production
 research: pneumatic-drill
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: iron/1
+outputItem: zincite/1

@@ -1,18 +1,18 @@
 type: GenericSmelter
-localizedName: Iron Refinery
-description: Smelts iron ore into Iron.
+localizedName: Zinc Refinery
+description: Smelts zincite into Zinc.
 size: 2
 hasPower: true
 hasItems: true
 hasLiquids: true
-craftTime: 45
+craftTime: 60
 updateEffect: smeltsmoke
 consumes: {
   power: 1
   items: {
     items: [
-      iron/2
-      coal/2
+      zincite/3
+      coal/1
     ]
   }
 }
@@ -25,6 +25,6 @@ category: crafting
 research: silicon-smelter
 outputLiquid: {
  liquid: slag
- amount: 0.5
+ amount: 0.65
 }
-outputItem: ferum/1
+outputItem: zinc/1

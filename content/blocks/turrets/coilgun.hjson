@@ -13,7 +13,7 @@ ammoPerShot: 20
 shootSound: bigshot
 targetAir: false
 ammoTypes: {
-  ferum: {
+  zinc: {
     speed: 15
     damage: 450
     ammoMultiplier: 1
@@ -31,7 +31,7 @@ ammoTypes: {
 requirements: [
   copper/120
   lead/120
-  ferum/80
+  zinc/80
 ]
 category: turret
 research: salvo

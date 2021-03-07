@@ -12,7 +12,7 @@ consumes: {
   items: {
     items: [
       titanium/1
-      ferum/1
+      zinc/1
     ]
   }
   liquid: {
@@ -24,7 +24,7 @@ requirements: [
   lead/130
   silicon/80
   titanium/120
-  ferum/120
+  zinc/120
   plastanium/70
 ]
 category: crafting
