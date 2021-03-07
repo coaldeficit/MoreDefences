@@ -13,7 +13,7 @@ requirements: [
   graphite/30
 ]
 category: production
-research: iron-ore-extractor
+research: zincite-extractor
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: coal/1
