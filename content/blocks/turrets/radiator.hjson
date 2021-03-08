@@ -23,18 +23,18 @@ ammoTypes: {
     pierceCap: 4
   }
   polonium: {
-    speed: 5
+    speed: 4
     damage: 600
-    ammoMultiplier: 5
+    ammoMultiplier: 3
     reloadMultiplier: 0.9
     homingPower: 0.05
   }
   tefium: {
     speed: 5
-    damage: 250
-    ammoMultiplier: 3
-    splashDamage: 300
-    splashDamageRadius: 60
+    damage: 100
+    ammoMultiplier: 2
+    splashDamage: 150
+    splashDamageRadius: 35
   }
 }
 requirements: [
