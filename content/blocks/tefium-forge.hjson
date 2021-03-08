@@ -6,7 +6,7 @@ hasPower: true
 hasItems: true
 craftTime: 120
 consumes: {
-  power: 2
+  power: 5
   items: {
     items: [
       thorium/4
@@ -16,13 +16,13 @@ consumes: {
   }
 }
 requirements: [
-  vanadium/25
-  surge-alloy/50
-  thorium/150
-  titanium/180
-  graphite/240
-  silicon/240
-  lead/270
+  vanadium/10
+  surge-alloy/30
+  thorium/100
+  titanium/130
+  graphite/180
+  silicon/180
+  lead/200
 ]
 category: crafting
 research: alloy-smelter
