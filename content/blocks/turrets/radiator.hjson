@@ -1,6 +1,6 @@
 type: ItemTurret
 localizedName: Radiator
-description: Fires powerful bullets at a fast rate.
+description: Fires powerful bullets at a fast rate. Uses large amounts of ammo.
 health: 1480
 size: 3
 reloadTime: 30
@@ -8,7 +8,7 @@ range: 200
 inaccuracy: 1
 rotatespeed: 15
 shots: 1
-ammoPerShot: 1
+ammoPerShot: 4
 ammoTypes: {
   thorium: {
     speed: 5
