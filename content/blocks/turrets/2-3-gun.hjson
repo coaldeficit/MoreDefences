@@ -8,6 +8,7 @@ range: 160
 inaccuracy: 0.5
 rotatespeed: 5
 alternate: true
+shots: 2
 spread: 4
 ammoTypes: {
   vanadium: {
@@ -19,7 +20,7 @@ ammoTypes: {
   }
   polonium: {
     speed: 7
-    damage: 230
+    damage: 280
     ammoMultiplier: 6
     reloadMultiplier: 0.6
     pierceCap: 5
@@ -38,8 +39,10 @@ ammoTypes: {
 requirements: [
   tefium/10
   vanadium/35
-  silicon/200
+  lead/120
+  silicon/170
+  surge-alloy/200
 ]
 shootSound: shootSnap
 category: turret
-research: tefium-forge
+research: chipgun

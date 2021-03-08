@@ -33,6 +33,7 @@ requirements: [
   vanadium/10
   tefium/5
   silicon/50
+  surge-alloy/65
 ]
 category: turret
-research: tefium-forge
+research: cyclone

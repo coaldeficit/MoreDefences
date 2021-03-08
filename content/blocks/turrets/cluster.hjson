@@ -95,7 +95,7 @@ ammoTypes: {
     width: 11
     height: 11
     collidesTiles: false
-    splashDamageRadius: 95
+    splashDamageRadius: 105
     splashDamage: 400
     frontColor: e8a982
     backColor: e68e57

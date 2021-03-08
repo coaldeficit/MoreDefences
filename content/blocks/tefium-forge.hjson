@@ -16,12 +16,16 @@ consumes: {
   }
 }
 requirements: [
-  vanadium/30
-  lead/100
-  silicon/300
+  vanadium/25
+  surge-alloy/50
+  thorium/150
+  titanium/180
+  graphite/240
+  silicon/240
+  lead/270
 ]
 category: crafting
-research: vanadium-extractor
+research: alloy-smelter
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: tefium/1

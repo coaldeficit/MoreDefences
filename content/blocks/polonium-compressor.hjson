@@ -30,7 +30,7 @@ requirements: [
   copper/270
 ]
 category: crafting
-research: vanadium-extractor
+research: alloy-smelter
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: polonium/1

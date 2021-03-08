@@ -12,29 +12,29 @@ ammoPerShot: 1
 ammoTypes: {
   thorium: {
     speed: 5
-    damage: 250
+    damage: 350
     ammoMultiplier: 2
   }
   phase-fabric: {
     speed: 5
-    damage: 100
+    damage: 200
     ammoMultiplier: 2
     pierce: true
     pierceCap: 4
   }
   polonium: {
     speed: 5
-    damage: 300
-    ammoMultiplier: 4
+    damage: 600
+    ammoMultiplier: 5
     reloadMultiplier: 0.9
     homingPower: 0.05
   }
   tefium: {
     speed: 5
-    damage: 150
+    damage: 250
     ammoMultiplier: 3
-    splashDamage: 150
-    splashDamageRadius: 40
+    splashDamage: 300
+    splashDamageRadius: 60
   }
 }
 requirements: [
@@ -42,6 +42,7 @@ requirements: [
   vanadium/25
   lead/75
   silicon/100
+  surge-alloy/200
 ]
 category: turret
-research: polonium-compressor
+research: cyclone

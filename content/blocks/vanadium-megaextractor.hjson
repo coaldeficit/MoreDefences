@@ -31,7 +31,7 @@ requirements: [
   copper/540
 ]
 category: production
-research: polonium-compressor
+research: vanadium-extractor
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: vanadium/3
