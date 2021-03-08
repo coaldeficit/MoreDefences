@@ -17,7 +17,7 @@ weapons: [{
   bullet: {
     type: BasicBulletType
     speed: 7
-    damage: 5
+    damage: 6
     width: 10
     height: 14
     frontColor: aeff00
