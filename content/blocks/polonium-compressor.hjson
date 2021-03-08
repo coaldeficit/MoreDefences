@@ -8,7 +8,7 @@ hasItems: true
 hasLiquids: true
 craftTime: 480
 consumes: {
-  power: 4
+  power: 6.6666667
   items: {
     items: [
       thorium/5
