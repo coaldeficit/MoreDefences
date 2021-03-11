@@ -38,11 +38,11 @@ ammoTypes: {
   }
 }
 requirements: [
-  polonium/5
-  vanadium/25
-  lead/75
-  silicon/100
-  surge-alloy/200
+  polonium/35
+  vanadium/80
+  lead/150
+  silicon/330
+  surge-alloy/400
 ]
 category: turret
 research: cyclone
