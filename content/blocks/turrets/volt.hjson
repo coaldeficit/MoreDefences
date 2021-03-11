@@ -6,8 +6,8 @@ size: 2
 shootType: {
   type: LightningBulletType
   damage: 25
-  lightningLength: 50
-  lightningLengthRand: 6
+  lightningLength: 45
+  lightningLengthRand: 10
   collidesAir: false
 }
 shots: 3
