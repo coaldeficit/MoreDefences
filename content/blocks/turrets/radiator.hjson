@@ -14,6 +14,8 @@ ammoTypes: {
     speed: 5
     damage: 350
     ammoMultiplier: 2
+    frontColor: ffffff
+    backColor: f9a3c7
   }
   phase-fabric: {
     speed: 5
@@ -21,6 +23,8 @@ ammoTypes: {
     ammoMultiplier: 2
     pierce: true
     pierceCap: 4
+    frontColor: ffffff
+    backColor: f4ba6e
   }
   polonium: {
     speed: 4
@@ -28,6 +32,8 @@ ammoTypes: {
     ammoMultiplier: 3
     reloadMultiplier: 0.9
     homingPower: 0.05
+    frontColor: ffffff
+    backColor: 6E5B49
   }
   tefium: {
     speed: 5
@@ -35,6 +41,8 @@ ammoTypes: {
     ammoMultiplier: 2
     splashDamage: 150
     splashDamageRadius: 35
+    frontColor: ffffff
+    backColor: 00875A
   }
 }
 requirements: [
