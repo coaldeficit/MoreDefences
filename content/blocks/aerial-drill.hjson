@@ -23,6 +23,7 @@ requirements: [
    thorium/125
    surge-alloy/150
    vanadium/90
+   tefium/40
 ]
 category: production
 research: surge-drill
