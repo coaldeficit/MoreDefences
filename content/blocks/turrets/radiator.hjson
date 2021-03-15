@@ -6,7 +6,7 @@ size: 3
 reloadTime: 30
 range: 200
 inaccuracy: 1
-rotatespeed: 15
+rotateSpeed: 15
 shots: 1
 maxAmmo: 28
 ammoPerShot: 4
