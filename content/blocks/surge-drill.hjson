@@ -7,6 +7,12 @@ tier: 6
 drillTime: 50
 consumes: {
   power: 2
+  liquid: {
+  liquid: cryofluid
+	  amount: 0.1
+    optional: true
+	  booster: true
+  }
 }
 requirements: [
    graphite/60
