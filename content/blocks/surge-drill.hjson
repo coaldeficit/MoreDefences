@@ -14,6 +14,7 @@ consumes: {
 	  booster: true
   }
 }
+drawMineItem: false
 requirements: [
    graphite/60
    titanium/75
