@@ -7,7 +7,8 @@ itemCapacity: 50
 drawRim: true
 updateEffect: pulverizeMedium
 updateEffectChance: 0.1
-drillTime: 250
+drillTime: 98
+liquidBoostIntensity: 1
 consumes: {
   power: 7
   liquid: {
