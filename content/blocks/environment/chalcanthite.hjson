@@ -1,0 +1,6 @@
+type: DoubleOverlayFloor
+name: Chalcanthite
+variants: 3
+playerUnmineable: true
+mapColor: 24B6FC
+useColor: true
