@@ -1,13 +1,14 @@
 type: ItemTurret
 localizedName: Beehive
 description: A turret that fires a powerful swarm of homing piercing projectiles.
-health: 75
+health: 540
 size: 2
-reload: 12
+reload: 10
 range: 160
 ejectEffect: shellEjectSmall
 inaccuracy: 0.5
 rotatespeed: 2.5
+maxAmmo: 60
 spread: 15
 shots: 3
 targetAir: false
@@ -15,7 +16,7 @@ ammoTypes: {
   lead: {
     speed: 4.5
     damage: 8
-    ammoMultiplier: 6
+    ammoMultiplier: 2
     pierce: true
     lifetime: 120
     homingPower: 0.05
