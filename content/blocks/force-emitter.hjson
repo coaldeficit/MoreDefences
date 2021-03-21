@@ -1,0 +1,26 @@
+type: ForceProjector
+localizedName: Force Emitter
+description: An upgraded Force Projector. Generates a larger and more durable force field than the Force Projector.
+size: 4
+shieldHealth: 4500
+radius: 203.4
+phaseRadiusBoost: 120
+phaseShieldBoost: 1200
+consumes: {
+  items: {
+    items: [
+      phase-fabric/2
+    ]
+    optional: true
+    booster: true
+  }
+}
+requirements: [
+  lead/300
+  thorium/200
+  silicon/400
+  phase-fabric/100
+  vanadium/75
+]
+category: effect
+research: force-projector
