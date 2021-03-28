@@ -25,7 +25,6 @@ weapons: [
   spread: 2
   reload: 5
   recoil: 5
-  alternate: true
   shootSound: pew
   bullet: {
     speed: 6.5
