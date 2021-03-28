@@ -15,27 +15,28 @@ range: 250
 lowAltitude: true
 weapons: [
   {
-  name: gatling-gun
+  name: messenger-minigun
   top: true
-  y: 0
+  y: -7
   shots: 1
-  x: 7
+  mirror: false
+  x: 0
   inaccuracy: 10
   spread: 2
-  reload: 1
+  reload: 5
   recoil: 5
   alternate: true
   shootSound: pew
   bullet: {
-    speed: 5
-    damage: 4
-    incendAmount: 1
+    speed: 6.5
+    damage: 5
+    incendAmount: 0.5
     incendChance: 0.9
     incendSpread: 1
     width: 9
     height: 12
-    frontColor: bf92f9
-    backColor: 6d56bf
+    frontColor: ffffff
+    backColor: ffaa00
   }
  }
   {
