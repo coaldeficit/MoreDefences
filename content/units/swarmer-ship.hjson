@@ -33,5 +33,6 @@ weapons: [{
   collidesAir: true
   status: burning
   statusDuration: 240
+  makeFire: true
   }
 }]
