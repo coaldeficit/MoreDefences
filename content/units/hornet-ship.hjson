@@ -12,6 +12,7 @@ range: 150
 rotatespeed: 1
 research: bee-ship
 targetAir: false
+targetFlag: turret
 weapons: [{
   name: hornet-cannon
   mirror: false
