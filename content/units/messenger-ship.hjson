@@ -27,7 +27,7 @@ weapons: [
   x: 0
   inaccuracy: 15
   spread: 2
-  reload: 2
+  reload: 1
   recoil: 2
   shootSound: pew
   bullet: {
