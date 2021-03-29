@@ -25,4 +25,4 @@ require("more-defences-ivyx/units/air/bombardier/pelter")
 require("more-defences-ivyx/units/air/bombardier/showerer")
 
 // bosses
-require("more-defences-ivyx/units/ground/havoc")
+// require("more-defences-ivyx/units/ground/havoc")
