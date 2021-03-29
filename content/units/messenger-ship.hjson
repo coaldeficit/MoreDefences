@@ -25,13 +25,13 @@ weapons: [
   shots: 1
   mirror: false
   x: 0
-  inaccuracy: 15
+  inaccuracy: 5
   spread: 2
   reload: 1
   recoil: 2
   shootSound: pew
   bullet: {
-    speed: 6.5
+    speed: 7.5
     keepVelocity: false
     damage: 6
     status: burning
