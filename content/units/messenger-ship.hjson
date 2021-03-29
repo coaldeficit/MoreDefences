@@ -2,7 +2,7 @@ localizedName: Messenger
 description: Fires a stack of artillery and incendiary bullets at all nearby enemies.
 speed: 1
 accel: 0.04
-drag: 0.06
+drag: 0.017
 rotateSpeed: 2
 hitSize: 55
 flying: true
@@ -24,17 +24,17 @@ weapons: [
   shots: 2
   mirror: false
   x: 0
-  inaccuracy: 20
+  inaccuracy: 15
   spread: 2
   reload: 5
   recoil: 5
   shootSound: pew
   bullet: {
     speed: 6.5
+    keepVelocity: false
     damage: 6
-    incendAmount: 0.5
-    incendChance: 2
-    incendSpread: 1
+    status: burning
+    statusDuration: 200
     width: 9
     height: 12
     frontColor: ffffff
