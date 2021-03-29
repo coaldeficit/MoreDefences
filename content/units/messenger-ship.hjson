@@ -3,7 +3,7 @@ description: Fires a stack of artillery and incendiary bullets at all nearby ene
 speed: 1
 accel: 0.04
 drag: 0.06
-rotateSpeed: 1
+rotateSpeed: 2
 hitSize: 55
 flying: true
 health: 8500
@@ -13,24 +13,27 @@ rotateWeapon: true
 shootCone: 45
 range: 250
 lowAltitude: true
+targetFlag: turret
 weapons: [
   {
   name: messenger-minigun
   top: true
+  rotate: true
+  rotateSpeed: 4
   y: -7
-  shots: 1
+  shots: 2
   mirror: false
   x: 0
-  inaccuracy: 10
+  inaccuracy: 20
   spread: 2
   reload: 5
   recoil: 5
   shootSound: pew
   bullet: {
     speed: 6.5
-    damage: 5
+    damage: 6
     incendAmount: 0.5
-    incendChance: 0.9
+    incendChance: 2
     incendSpread: 1
     width: 9
     height: 12
