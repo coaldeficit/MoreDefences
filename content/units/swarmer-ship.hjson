@@ -6,11 +6,12 @@ health: 225
 armor: 5
 engineOffset: 6
 drag: 0.01
-accel: 0.2
+accel: 0.075
 range: 45
 rotatespeed: 5.0
 research: flare
 circleTarget: true
+targetFlag: turret
 weapons: [{
   reload: 24
   shootCone: 180
@@ -26,12 +27,11 @@ weapons: [{
   speed: 1
   splashDamageRadius: 55
   instantDisappear: true
-  splashDamage: 80
+  splashDamage: 65
   killShooter: true
   hittable: false
   collidesAir: true
-  incendChance: 0.5
-  incendSpread: 0.2
-  incendAmount: 0.2
+  status: burning
+  statusDuration: 240
   }
 }]
