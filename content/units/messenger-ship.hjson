@@ -22,13 +22,13 @@ weapons: [
   rotate: true
   rotateSpeed: 4
   y: -7
-  shots: 2
+  shots: 1
   mirror: false
   x: 0
   inaccuracy: 15
   spread: 2
-  reload: 5
-  recoil: 5
+  reload: 2
+  recoil: 2
   shootSound: pew
   bullet: {
     speed: 6.5
