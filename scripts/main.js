@@ -23,3 +23,6 @@ require("more-defences-ivyx/units/air/swarmer/messenger")
 require("more-defences-ivyx/units/air/bombardier/bombardier")
 require("more-defences-ivyx/units/air/bombardier/pelter")
 require("more-defences-ivyx/units/air/bombardier/showerer")
+
+// bosses
+require("more-defences-ivyx/units/ground/havoc")
