@@ -15,6 +15,7 @@ targetFlag: turret
 weapons: [{
   name: artillery-mount-2
   top: true
+  rotate: true
   y: 0
   x: 3
   reload: 7
