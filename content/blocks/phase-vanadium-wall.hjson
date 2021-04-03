@@ -2,7 +2,7 @@ localizedName: Phase Coated Vanadium Wall
 description: A vanadium wall coated with Phase Fabric. Deflects most projectiles.
 type: Wall
 health: 1150
-chanceDeflect: 75,
+chanceDeflect: 35,
 size: 1
 requirements: [
   vanadium/8
