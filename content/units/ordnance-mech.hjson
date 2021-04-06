@@ -55,5 +55,5 @@ weapons: [{
   }	
 }]
 range: 260
-itemCapacity: 10
+itemCapacity: 40
 targetAir: false
