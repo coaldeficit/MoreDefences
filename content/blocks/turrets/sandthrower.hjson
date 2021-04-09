@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Granule Thrower
+localizedName: Sand Thrower
 description: Rapidly fires weak granules of materials at nearby enemy units and structures. Can use many resources as ammo.
 health: 200
 size: 1
@@ -90,8 +90,7 @@ ammoTypes: {
   }
 }
 requirements: [
-  copper/40
-  lead/10
+  copper/50
 ]
 category: turret
 research: duo
