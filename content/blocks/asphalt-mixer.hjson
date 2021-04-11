@@ -1,0 +1,30 @@
+localizedName: Asphalt Mixer
+description: Mixes Crude Oil with Scrap and Sand to create Asphalt.
+size: 2
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftTime: 120
+consumes: {
+  power: 0.75
+  items: {
+    items: [
+      scrap/2
+      sand/1
+    ]
+  }
+  liquid: {
+    liquid: oil
+    amount: 0.05
+  }
+}
+requirements: [
+  lead/45
+  graphite/50
+  zinc/25
+]
+category: crafting
+research: coal-centrifuge
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: asphalt/3
