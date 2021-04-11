@@ -29,12 +29,12 @@ mixer.buildType = () => extend(GenericCrafter.GenericCrafterBuild, mixer, {
     Draw.rect(mixer.oilRegion, this.x, this.y);
     
     Draw.alpha(this.items.get(Items.scrap) / mixer.itemCapacity);
-    Draw.rect(mixer.rockRegion, this.x, this.y, this.totalProgress * -6);
+    Draw.rect(mixer.rockRegion, this.x, this.y, this.totalProgress * 20);
     
     Draw.alpha(1)
     
     Draw.rect(mixer.region, this.x, this.y);
-    Draw.rect(mixer.rotateRegion, this.x, this.y, this.totalProgress * 1.7);
+    Draw.rect(mixer.rotateRegion, this.x, this.y, this.totalProgress * -6);
     Draw.rect(mixer.topRegion, this.x, this.y);
   }
 });
