@@ -1,0 +1,7 @@
+type: material
+localizedName: Asphalt
+description: A sticky semi-solid used for construction of pavements. Deforms on impact.
+color: 4A4B53
+hardness: 4
+flammability: 0.05
+explosiveness: 0.05
