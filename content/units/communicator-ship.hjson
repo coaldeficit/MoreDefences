@@ -1,0 +1,94 @@
+localizedName: Communitor
+description: Has a machine gun capable of tearing through defences, barrage of missiles able to stop smaller objects and extra units for assistance.
+speed: 0.5
+accel: 0.02
+drag: 0.005
+rotateSpeed: 0.5
+hitSize: 100
+flying: true
+health: 24000
+armor: 7
+engineOffset: 7
+rotateWeapon: true
+shootCone: 60
+range: 300
+lowAltitude: false
+targetFlag: turret
+research: messenger-ship
+weapons: [
+  {
+  name: transmitter
+  top: true
+  rotate: true
+  rotateSpeed: 6
+  y: 1
+  shots: 4
+  spacing: 3
+  mirror: false
+  x: 0
+  inaccuracy: 5
+  spread: 2
+  reload: 14
+  recoil: 1.5
+  shootSound: shootBig
+  ejectEffect: casing3Double
+  bullet: {
+    speed: 8.5
+    damage: 25
+    status: burning
+    statusDuration: 240
+    width: 12
+    height: 22
+    frontColor: ffffff
+    backColor: ffaa00
+  }
+ }
+  {
+  name: gatling-gun
+  top: true
+  y: 6
+  shots: 3
+  x: 16
+  reload: 40
+  alternative: false
+  shootSound: missile
+  ejectEffect: casing3Double
+  inaccuracy: 1
+  bullet: {
+    type: MissileBulletType
+    frontColor: bf92f9
+    backColor: 6d56bf
+    width: 7
+    height: 8
+    speed: 5
+    damage: 15
+    splashDamage: 25
+    splashDamageRadius: 12
+    ammoMultiplier: 1
+    lifetime: 60
+    }
+    {
+  name: gatling-gun
+  top: true
+  y: -1
+  shots: 3
+  x: 20
+  reload: 40
+  alternative: false
+  shootSound: missile
+  ejectEffect: casing3Double
+  inaccuracy: 1
+  bullet: {
+    type: MissileBulletType
+    frontColor: bf92f9
+    backColor: 6d56bf
+    width: 7
+    height: 8
+    speed: 5
+    damage: 15
+    splashDamage: 25
+    splashDamageRadius: 12
+    ammoMultiplier: 1
+    lifetime: 60
+    }
+}]
