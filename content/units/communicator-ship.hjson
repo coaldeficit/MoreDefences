@@ -23,18 +23,21 @@ weapons: [
   rotateSpeed: 6
   y: 1
   shots: 4
-  spacing: 3
+  spacing: 6
   mirror: false
   x: 0
-  inaccuracy: 5
+  inaccuracy: 2
+  xRand: 10
+  shotDelay: 2
   spread: 2
-  reload: 14
+  reload: 9
+  shootY: 3
   recoil: 1.5
   shootSound: shootBig
   ejectEffect: casing3Double
   bullet: {
     speed: 8.5
-    damage: 25
+    damage: 35
     status: burning
     statusDuration: 240
     width: 12
@@ -46,9 +49,9 @@ weapons: [
   {
   name: gatling-gun
   top: true
-  y: 6
+  y: 11
   shots: 3
-  x: 16
+  x: 20
   reload: 40
   alternative: false
   shootSound: missile
@@ -71,9 +74,9 @@ weapons: [
     {
   name: gatling-gun
   top: true
-  y: -1
+  y: -5
   shots: 3
-  x: 20
+  x: 26
   reload: 40
   alternative: false
   shootSound: missile
