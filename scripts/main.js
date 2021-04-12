@@ -20,6 +20,7 @@ require("more-defences-ivyx/units/air/swarmer/swarmer")
 require("more-defences-ivyx/units/air/swarmer/bee")
 require("more-defences-ivyx/units/air/swarmer/hornet")
 require("more-defences-ivyx/units/air/swarmer/messenger")
+require("more-defences-ivyx/units/air/swarmer/communicator")
 // bombardier line
 require("more-defences-ivyx/units/air/bombardier/bombardier")
 require("more-defences-ivyx/units/air/bombardier/pelter")
