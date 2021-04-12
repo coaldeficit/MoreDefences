@@ -1,7 +1,7 @@
 localizedName: Asphalt Wall
 description: A wall that starts off extremely weak but becomes more durable over time.
 type: Wall
-health: 80
+health: 120
 size: 1
 requirements: [
   asphalt/6
