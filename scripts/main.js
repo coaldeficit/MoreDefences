@@ -8,7 +8,6 @@ require("more-defences-ivyx/units/air/drones")
 require("more-defences-ivyx/units/air/core-units")
 require("more-defences-ivyx/zincite-extractor")
 require("more-defences-ivyx/asphalt-mixer")
-// require("more-defences-ivyx/asphalt-wall") to-do: actually make this script work
 
 // unit stuff
 // cannoneer line
@@ -28,3 +27,6 @@ require("more-defences-ivyx/units/air/bombardier/showerer")
 
 // bosses
 // require("more-defences-ivyx/units/ground/havoc")
+
+// experimental stuff that will probably never be finished
+require("more-defences-ivyx/asphalt-wall") // to-do: actually make this script work
