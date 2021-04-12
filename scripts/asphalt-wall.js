@@ -18,3 +18,5 @@ const wall = extendContent(Wall, "asphalt-wall", {
     };
   }
 });
+wall.buildType = () => extend(Wall.WallBuild, wall, {
+});
