@@ -18,7 +18,7 @@ wall.buildType = () => extend(Wall.WallBuild, wall, {
      if (timer.get(0, 180)) {
          if (this.maxHealth < (wall.health*5)) {
              this.maxHealth += ((wall.health*5)-wall.health)/160;
-             this.health += ((wall.health*5)-wall.health)/160;
+             heal(((wall.health*5)-wall.health)/160);
          };
      };
   }
