@@ -33,7 +33,8 @@ weapons: [
   bullet: {
     speed: 7.5
     keepVelocity: false
-    damage: 6
+    damage: 7
+    pierceCap: 2
     status: burning
     statusDuration: 200
     width: 9
