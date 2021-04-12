@@ -1,3 +1,5 @@
+// to-do: actually make this code work
+
 const wall = extendContent(Wall, "asphalt-wall", {
   load(){
     this.region = Core.atlas.find(this.name);
