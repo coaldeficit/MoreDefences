@@ -7,9 +7,11 @@ const wall = extendContent(Wall, "asphalt-wall", {
     return [
       this.region
     ];
-  },
-  
-  update(tile){
+  }
+});
+
+wall.buildType = () => extend(Wall.WallBuild, wall, {
+   updateTile(tile){
     if (tile.entity.timer.get(0, 180)) {
         if (tile.entity.maxHealth < (wall.health*5)) {
             tile.entity.maxHealth += ((wall.health*5)-wall.health)/160;
@@ -18,5 +20,3 @@ const wall = extendContent(Wall, "asphalt-wall", {
     };
   }
 });
-
-wall.buildType = () => extend(Wall.WallBuild, wall, {});
