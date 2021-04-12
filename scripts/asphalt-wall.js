@@ -13,10 +13,10 @@ const wall = extendContent(Wall, "asphalt-wall", {
 wall.buildType = () => extend(Wall.WallBuild, wall, {
    updateTile(){
      this.super$updateTile();
-     if (this.entity.timer.get(0, 180)) {
-         if (this.entity.maxHealth < (wall.health*5)) {
-             this.entity.maxHealth += ((wall.health*5)-wall.health)/160;
-             this.entity.health += ((wall.health*5)-wall.health)/160;
+     if (this.timer.get(0, 180)) {
+         if (this.maxHealth < (wall.health*5)) {
+             this.maxHealth += ((wall.health*5)-wall.health)/160;
+             this.health += ((wall.health*5)-wall.health)/160;
          };
      };
   }
