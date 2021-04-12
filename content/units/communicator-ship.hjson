@@ -1,4 +1,4 @@
-localizedName: Communitor
+localizedName: Communicator
 description: Has a machine gun capable of tearing through defences, barrage of missiles able to stop smaller objects and extra units for assistance.
 speed: 0.5
 accel: 0.02
@@ -66,6 +66,7 @@ weapons: [
     splashDamageRadius: 12
     ammoMultiplier: 1
     lifetime: 60
+    }
     }
     {
   name: gatling-gun
