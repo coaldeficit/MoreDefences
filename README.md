@@ -1,5 +1,5 @@
 # MoreDefences
-A mod made by IvyX and 7rodo that adds new turrets and walls to defend your core. Contains 16 new turrets, many new production blocks, 7 new resources and 13 new units including 1 boss unit. Discord server invite: [Invite.](https://discord.gg/eEtw5GF2dk)
+A mod made by IvyX and 7rodo that adds new turrets and walls to defend your core. Contains 16 new turrets, 13 new production blocks, 9 new walls and misc defence blocks, 8 new resources, 3 new drills, 5 new extractors, a fourth core tier, 10 new environmental tiles and 13 new units including 1 boss unit. Discord server invite: [Invite.](https://discord.gg/eEtw5GF2dk)
 
 ## Contributing
 ### Suggesting new Content
