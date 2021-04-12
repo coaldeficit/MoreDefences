@@ -1,4 +1,4 @@
-// to-do: actually make this code work
+// to-do: actually make this code work (probably wont happen anytime in the next 300 irl days)
 
 const wall = extendContent(Wall, "asphalt-wall", {
   load(){
