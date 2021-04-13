@@ -21,9 +21,9 @@ weapons: [
   top: true
   rotate: true
   rotateSpeed: 6
-  y: 18
+  y: 22
   shots: 4
-  spacing: 6
+  spacing: 2
   mirror: false
   x: 0
   inaccuracy: 2
@@ -37,13 +37,14 @@ weapons: [
   ejectEffect: casing3Double
   bullet: {
     speed: 8.5
-    damage: 35
+    damage: 60
     status: burning
     statusDuration: 240
     width: 12
     height: 22
     frontColor: ffffff
     backColor: ffaa00
+    lifetime: 150
   }
  }
   {
