@@ -9,6 +9,9 @@ health: 135
 research: horizon
 circleTarget: true
 commandLimit: 4
+targetAir: false
+faceTarget: false
+rotateShooting: false
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.75

@@ -12,6 +12,9 @@ circleTarget: true
 commandLimit: 8
 engineOffset: -3.2
 engineSize: 3.25
+targetAir: false
+faceTarget: false
+rotateShooting: false
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.35

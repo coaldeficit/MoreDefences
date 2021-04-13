@@ -12,6 +12,7 @@ rotatespeed: 3
 circleTarget: true
 research: swarmer-ship
 targetFlag: turret
+rotateShooting: false
 weapons: [{
   name: artillery-mount-2
   top: true
