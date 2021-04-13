@@ -21,7 +21,7 @@ weapons: [
   top: true
   rotate: true
   rotateSpeed: 6
-  y: 1
+  y: 18
   shots: 4
   spacing: 6
   mirror: false
@@ -49,9 +49,9 @@ weapons: [
   {
   name: gatling-gun
   top: true
-  y: 11
+  y: 15
   shots: 3
-  x: 20
+  x: 24
   reload: 40
   alternative: false
   shootSound: missile
@@ -76,7 +76,7 @@ weapons: [
   top: true
   y: -5
   shots: 3
-  x: 26
+  x: 30
   reload: 40
   alternative: false
   shootSound: missile
