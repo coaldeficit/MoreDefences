@@ -37,7 +37,7 @@ weapons: [
     ejectEffect: casing3Double
     bullet: {
       speed: 8.5
-      damage: 20
+      damage: 16
       pierceCap: 4
       makeFire: true
       status: burning
