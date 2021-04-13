@@ -27,6 +27,3 @@ require("more-defences-ivyx/units/air/bombardier/showerer")
 
 // bosses
 // require("more-defences-ivyx/units/ground/havoc")
-
-// experimental stuff that will probably never be finished
-require("more-defences-ivyx/asphalt-wall") // to-do: actually make this script work
