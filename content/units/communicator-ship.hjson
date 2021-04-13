@@ -31,7 +31,7 @@ weapons: [
   shotDelay: 2
   spread: 2
   reload: 9
-  shootY: 3
+  //shootY: 3
   recoil: 1.5
   shootSound: shootBig
   ejectEffect: casing3Double
@@ -51,10 +51,11 @@ weapons: [
   {
   name: gatling-gun
   top: true
+rotate: true
   y: 15
   shots: 3
   x: 24
-  reload: 40
+  reload: 30
   alternative: false
   shootSound: missile
   ejectEffect: casing3Double
@@ -76,10 +77,11 @@ weapons: [
     {
   name: gatling-gun
   top: true
+rotate: true
   y: -5
   shots: 3
   x: 30
-  reload: 40
+  reload: 35
   alternative: false
   shootSound: missile
   ejectEffect: casing3Double
