@@ -21,7 +21,7 @@ weapons: [
     top: true
     rotate: true
     rotateSpeed: 6
-    y: 5
+    y: 8
     shots: 4
     spacing: 2
     mirror: false
