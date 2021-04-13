@@ -57,6 +57,7 @@ weapons: [
     shots: 3
     x: 24
     reload: 30
+    shotDelay: 5
     alternate: true
     shootSound: missile
     ejectEffect: casing3Double
@@ -83,6 +84,7 @@ weapons: [
     shots: 3
     x: 35
     reload: 35
+    shotDelay: 7
     alternate: true
     shootSound: missile
     ejectEffect: casing3Double
