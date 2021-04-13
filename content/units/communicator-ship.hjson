@@ -39,6 +39,8 @@ weapons: [
       speed: 8.5
       damage: 16
       pierceCap: 4
+      pierce: true
+      pierceBuildings: true
       makeFire: true
       status: burning
       statusDuration: 240
