@@ -11,7 +11,7 @@ armor: 7
 engineOffset: 7
 rotateWeapon: true
 shootCone: 60
-range: 300
+range: 560
 lowAltitude: false
 targetFlag: turret
 research: messenger-ship
