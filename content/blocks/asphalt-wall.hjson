@@ -1,8 +1,0 @@
-localizedName: Asphalt Wall
-description: A weak defensive block that hardens over time.
-health: 120
-size: 1
-requirements: [
-  asphalt/6
-]
-category: defense
