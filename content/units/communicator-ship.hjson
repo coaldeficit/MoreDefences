@@ -42,8 +42,8 @@ weapons: [
       makeFire: true
       status: burning
       statusDuration: 240
-      width: 12
-      height: 22
+      width: 10
+      height: 20
       frontColor: ffffff
       backColor: ffaa00
       lifetime: 60
@@ -68,8 +68,8 @@ weapons: [
       backColor: 6d56bf
       width: 7
       height: 8
-      speed: 5
-      damage: 23
+      speed: 6.5
+      damage: 25
       splashDamage: 44
       splashDamageRadius: 12
       ammoMultiplier: 1
@@ -95,8 +95,8 @@ weapons: [
       backColor: 6d56bf
       width: 7
       height: 8
-      speed: 5
-      damage: 23
+      speed: 7.25
+      damage: 30
       splashDamage: 44
       splashDamageRadius: 12
       ammoMultiplier: 1
