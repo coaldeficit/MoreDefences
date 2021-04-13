@@ -12,7 +12,7 @@ engineOffset: 7
 rotateWeapon: true
 shootCone: 60
 range: 560
-lowAltitude: false
+lowAltitude: true
 targetFlag: turret
 research: messenger-ship
 weapons: [
