@@ -81,7 +81,7 @@ weapons: [
     rotate: true
     y: -5
     shots: 3
-    x: 30
+    x: 35
     reload: 35
     alternate: true
     shootSound: missile
