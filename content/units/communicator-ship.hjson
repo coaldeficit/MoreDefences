@@ -39,13 +39,14 @@ weapons: [
       speed: 8.5
       damage: 45
       pierceCap: 4
+      makeFire: true
       status: burning
       statusDuration: 240
       width: 12
       height: 22
       frontColor: ffffff
       backColor: ffaa00
-      lifetime: 150
+      lifetime: 60
     }
   }
   {
