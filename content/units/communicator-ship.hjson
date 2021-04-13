@@ -37,7 +37,8 @@ weapons: [
   ejectEffect: casing3Double
   bullet: {
     speed: 8.5
-    damage: 60
+    damage: 45
+    pierceCap: 4
     status: burning
     statusDuration: 240
     width: 12
@@ -65,8 +66,8 @@ weapons: [
     width: 7
     height: 8
     speed: 5
-    damage: 15
-    splashDamage: 25
+    damage: 23
+    splashDamage: 44
     splashDamageRadius: 12
     ammoMultiplier: 1
     lifetime: 60
@@ -89,9 +90,9 @@ weapons: [
     backColor: 6d56bf
     width: 7
     height: 8
-    speed: 5
-    damage: 15
-    splashDamage: 25
+    speed: 6.5
+    damage: 23
+    splashDamage: 44
     splashDamageRadius: 12
     ammoMultiplier: 1
     lifetime: 60
