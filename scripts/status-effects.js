@@ -1,6 +1,6 @@
 // LH2 effect
 let liquidHydrogenEffect = extend(StatusEffect, "liquidHydrogenEffect", {
-    let transitionDamage = 18
+    transitionDamage = 18
     isHidden(){
       return false
     },
