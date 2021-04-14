@@ -27,3 +27,6 @@ require("more-defences-ivyx/units/air/bombardier/showerer")
 
 // bosses
 // require("more-defences-ivyx/units/ground/havoc")
+
+// experimental
+require("more-defences-ivyx/status-effects")
