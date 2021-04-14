@@ -5,7 +5,7 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquidHydrogenEffect", {
     },
 });
 liquidHydrogenEffect.speedMultiplier = 0.6;
-liquidHydrogenEffect.armorMultiplier = 0.8;
+liquidHydrogenEffect.healthMultiplier = 0.7;
 liquidHydrogenEffect.localizedName = 'Hydrogenated';
 liquidHydrogenEffect.effect = Fx.freezing;
 liquidHydrogenEffect.color  = '#7a9a9B';
