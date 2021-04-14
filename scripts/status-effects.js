@@ -18,8 +18,8 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquidHydrogenEffect", {
         unit.damagePierce(transitionDamage / 1.5);
         result.set(liquidHydrogenEffect, time);
         result.set(StatusEffects.melting, time + newTime);
-      }));
-    });*/
+      }));*/
+    });
 });
 liquidHydrogenEffect.speedMultiplier = 0.6;
 liquidHydrogenEffect.healthMultiplier = 0.7;
