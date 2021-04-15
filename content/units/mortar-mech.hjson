@@ -35,23 +35,24 @@ weapons: [{
     hitEffect: flakExplosion	
     knockback: 1.5	
     lifetime: 80	
-    width: 35
-    height: 35
+    width: 20
+    height: 20
     collidesTiles: false	
     collides: true	
     splashDamageRadius: 90
     splashDamage: 125
-    frontColor: aeff00
+    frontColor: ffffff
     backColor: 95db00
     status: corroded
     fragBullets: 15
+    lifetime: 120
     fragBullet: {
       type: ArtilleryBulletType
       speed: 7
       damage: 20
       width: 6
       height: 9
-      frontColor: aeff00
+      frontColor: ffffff
       backColor: 95db00
       status: corroded
       lifetime: 30
