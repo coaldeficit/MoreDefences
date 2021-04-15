@@ -13,3 +13,11 @@ liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, time, newTime, resu
     unit.damagePierce(18);
     result.set(liquidHydrogenEffect, time);
 }));
+liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, time, newTime, result) => {
+    unit.damagePierce(8);
+    result.set(StatusEffects.burning, newTime + time);
+}));
+liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, time, newTime, result) => {
+    unit.damagePierce(8);
+    result.set(StatusEffects.melting, newTime + time);
+}));
