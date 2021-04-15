@@ -19,13 +19,14 @@ weapons: [{
   rotate: true
   y: 0
   x: 3
-  reload: 7
+  reload: 2
   alternate: true
   shootSound: pew
   inaccuracy: 6
   bullet: {
-    speed: 5
-    damage: 5
+    speed: 6
+    damage: 6
+    pierceCap: 2
     ammoMultiplier: 1
     lifetime: 50
   }
