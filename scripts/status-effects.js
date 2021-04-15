@@ -1,5 +1,5 @@
 // LH2 effect
-let liquidHydrogenEffect = extend(StatusEffect, "liquidHydrogenEffect", {
+let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect", {
     isHidden(){
       return false
     },
@@ -7,7 +7,7 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquidHydrogenEffect", {
     healthMultiplier: 0.7,
     localizedName: 'Hydrogenated',
     effect: Fx.freezing,
-    color: Color.valueOf("#7a9a98"),
+    color: Color.valueOf("#7a9a9B"),
 });
 liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, time, newTime, result) => {
     unit.damagePierce(18);
@@ -21,3 +21,7 @@ liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, time, newTime, resu
     unit.damagePierce(8);
     result.set(StatusEffects.melting, newTime + time);
 }));
+
+module.exports = {
+    liquidHydrogenEffect: liquidHydrogenEffect
+};
