@@ -1,0 +1,66 @@
+localizedName: Mortar
+flying: false
+description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
+speed: 0.4
+health: 8000
+armor: 9
+hovering: true
+allowLegStep: true
+research: ordnance-mech
+legCount: 5
+legLength: 30
+legTrns: 0.8
+legMoveSpace: 1
+legPairOffset: 3
+legExtension: -15
+landShake: 3
+legSpeed: 0.1
+visualEvelation: 0.5
+legBaseOffset: 10
+weapons: [{
+  name: mortar-cannon
+  top: true
+  rotate: true
+  y: 0
+  shots: 1
+  x: 0
+  inaccuracy: 0
+  reload: 240
+  alternate: true
+  shootSound: pew
+  mirror: false
+  bullet: {	
+    type: ArtilleryBulletType	
+    speed: 3
+    hitEffect: flakExplosion	
+    knockback: 1.5	
+    lifetime: 80	
+    width: 35
+    height: 35
+    collidesTiles: false	
+    collides: true	
+    splashDamageRadius: 90
+    splashDamage: 125
+    frontColor: aeff00
+    backColor: 95db00
+    status: corroded
+    fragBullets: 15
+    fragBullet: {
+      type: ArtilleryBulletType
+      speed: 7
+      damage: 20
+      width: 6
+      height: 9
+      frontColor: aeff00
+      backColor: 95db00
+      status: corroded
+      lifetime: 30
+      splashDamage: 30
+      collidesTiles: false
+      collides: true
+    }
+  }	
+}]
+range: 300
+itemCapacity: 90
+targetAir: false
