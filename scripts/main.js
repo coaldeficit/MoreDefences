@@ -17,6 +17,7 @@ require("more-defences-ivyx/asphalt-mixer")
 require("more-defences-ivyx/units/ground/cannoneer/cannoneer")
 require("more-defences-ivyx/units/ground/cannoneer/artilleryman")
 require("more-defences-ivyx/units/ground/cannoneer/ordnance")
+require("more-defences-ivyx/units/ground/cannoneer/mortar")
 // swarmer line
 require("more-defences-ivyx/units/air/swarmer/swarmer")
 require("more-defences-ivyx/units/air/swarmer/bee")
