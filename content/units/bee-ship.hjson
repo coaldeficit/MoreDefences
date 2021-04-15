@@ -25,7 +25,7 @@ weapons: [{
   inaccuracy: 6
   bullet: {
     speed: 6
-    damage: 6
+    damage: 7
     pierceCap: 2
     ammoMultiplier: 1
     lifetime: 50
