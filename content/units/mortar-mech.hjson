@@ -21,7 +21,7 @@ weapons: [{
   name: mortar-cannon
   top: true
   rotate: true
-  y: 0
+  y: -5
   shots: 1
   x: 0
   inaccuracy: 0
