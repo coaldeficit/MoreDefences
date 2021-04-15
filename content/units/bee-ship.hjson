@@ -27,6 +27,7 @@ weapons: [{
     speed: 6
     damage: 7
     pierceCap: 2
+    pierceBuilding: true
     ammoMultiplier: 1
     lifetime: 50
   }
