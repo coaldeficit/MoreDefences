@@ -30,17 +30,17 @@ weapons: [{
     width: 22
     height: 20
     speed: 3
-    damage: 10
+    damage: 30
     splashDamage: 54
     splashDamageRadius: 33
     ammoMultiplier: 1
     lifetime: 80
-    fragBullets: 3
+    fragBullets: 8
     fragBullet: {
       type: ArtilleryBulletType
       frontColor: bf92f9
       backColor: 6d56bf
-      speed: 4
+      speed: 6
       width: 14
       length: 15
       splashDamage: 20
