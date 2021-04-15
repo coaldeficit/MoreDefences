@@ -1,1 +1,1 @@
-require("more-defences-ivyx/experimental/status-effects")
+require("more-defences-ivyx/experimental/exp-status-effects")
