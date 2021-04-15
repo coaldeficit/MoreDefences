@@ -1,4 +1,4 @@
-// LH2 effect
+/*// LH2 effect code for reference for making new status effects
 let liquidHydrogenEffect = extend(StatusEffect, "liquidHydrogenEffect", {
     isHidden(){
       return false
@@ -21,3 +21,4 @@ liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, time, newTime, resu
     unit.damagePierce(8);
     result.set(StatusEffects.melting, newTime + time);
 }));
+*/
