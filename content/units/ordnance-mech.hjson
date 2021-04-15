@@ -4,6 +4,7 @@ description: Fires powerful artillery shells at enemy units and structures. Can 
 speed: 0.6
 health: 900
 armor: 6
+hitSize: 9
 hovering: true
 allowLegStep: true
 research: artilleryman-mech
