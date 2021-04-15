@@ -25,7 +25,7 @@ weapons: [{
   shots: 1
   x: 0
   inaccuracy: 0
-  reload: 240
+  reload: 260
   alternate: true
   shootSound: pew
   mirror: false
@@ -40,7 +40,7 @@ weapons: [{
     collidesTiles: false	
     collides: true	
     splashDamageRadius: 90
-    splashDamage: 125
+    splashDamage: 100
     frontColor: ffffff
     backColor: 95db00
     status: corroded
@@ -49,7 +49,7 @@ weapons: [{
     fragBullet: {
       type: ArtilleryBulletType
       speed: 7
-      damage: 20
+      damage: 23
       width: 6
       height: 9
       frontColor: ffffff
