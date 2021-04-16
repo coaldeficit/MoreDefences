@@ -4,7 +4,7 @@ description: Fires powerful artillery shells at enemy units and structures. Can 
 speed: 0.4
 health: 8000
 armor: 9
-hitSize: 14
+hitSize: 21
 hovering: true
 allowLegStep: true
 research: ordnance-mech
