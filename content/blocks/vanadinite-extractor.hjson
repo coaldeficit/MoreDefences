@@ -1,0 +1,22 @@
+localizedName: Vanadinite Extractor
+description: Extracts Vanadium from Vanadinite. Uses Cryofluid as coolant
+size: 3
+health: 2000
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 60
+consumes: {
+  power: 2
+  liquid: {
+    liquid: cryofluid
+    amount: 0.25
+  }
+}
+requirements: [
+  polonium/99999999
+]
+category: production
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: vanadium/1
