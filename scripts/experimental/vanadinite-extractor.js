@@ -11,7 +11,12 @@ const vanadiniteExtract = extendContent(GenericCrafter, "vanadinite-extractor", 
       //this.rotateRegion,
       //this.topRegion
     ];
-  }
+  },
+
+  canPlaceOn(tile, team){
+       let sum = tile.getLinkedTilesAs(this, tempTiles).sumf(t -> (name == "Vanadinite"));
+       return sum > 0.00001;
+   }
 });
 vanadiniteExtract.buildType = () => extend(GenericCrafter.GenericCrafterBuild, vanadiniteExtract, {
   draw(){
