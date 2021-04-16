@@ -1,0 +1,6 @@
+type: DoubleOverlayFloor
+name: Adamite
+variants: 4
+playerUnmineable: true
+mapColor: A7BC40
+useColor: true
