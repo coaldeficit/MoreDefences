@@ -14,7 +14,7 @@ legTrns: 0.8
 legMoveSpace: 1
 legPairOffset: 3
 legExtension: -15
-landShake: 3
+landShake: 0.5
 legSpeed: 0.1
 visualEvelation: 0.5
 legBaseOffset: 10
