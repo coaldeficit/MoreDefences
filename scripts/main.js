@@ -1,5 +1,6 @@
 require("more-defences-ivyx/status-effects")
 require("more-defences-ivyx/liquids")
+require("more-defences-ivyx/unmineable-ores")
 
 require("more-defences-ivyx/vanadium-extractor")
 require("more-defences-ivyx/vanadium-megaextractor")
