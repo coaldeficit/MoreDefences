@@ -22,11 +22,11 @@ weapons: [{
   name: howitzer-cannon
   top: true
   rotate: true
-  y: -10
+  y: -15
   shots: 3
   x: 0
-  spread: 30
-  inaccuracy: 0
+  spread: 15
+  inaccuracy: 9
   reload: 300
   alternate: true
   shootSound: artillery
@@ -66,9 +66,9 @@ weapons: [{
     name: cannoneer-weapon
     top: true
     rotate: true
-    y: 5
+    y: 7
     shots: 1
-    x: 20
+    x: 12
     reload: 20
     alternate: true
     shootSound: snap
@@ -90,9 +90,9 @@ weapons: [{
     name: artilleryman-weapon
     top: true
     rotate: true
-    y: -1
+    y: -5
     shots: 1
-    x: 25
+    x: 18
     reload: 20
     alternate: true
     shootSound: snap
