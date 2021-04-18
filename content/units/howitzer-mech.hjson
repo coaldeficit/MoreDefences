@@ -62,8 +62,8 @@ weapons: [{
       collidesTiles: false
       collides: true
     }
-  } {
-    name: artilleryman-weapon
+  } }{
+    name: cannoneer-weapon
     top: true
     rotate: true
     y: 5
@@ -105,8 +105,8 @@ weapons: [{
       width: 7
       height: 8
       status: corroded
-      speed: 6
-      damage: 30
+      speed: 2.5
+      damage: 66
       ammoMultiplier: 1
       lifetime: 60
     }	
