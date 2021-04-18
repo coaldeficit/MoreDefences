@@ -40,7 +40,6 @@ weapons: [{
     width: 18
     height: 18
     collidesTiles: false	
-    collides: true	
     splashDamageRadius: 120
     splashDamage: 150
     frontColor: ffffff
@@ -61,7 +60,6 @@ weapons: [{
       splashDamage: 20
       splashDamageRadius: 44
       collidesTiles: false
-      collides: true
       homingPower: 0.2
       homingRange: 96
     }
@@ -85,7 +83,7 @@ weapons: [{
       height: 8
       status: corroded
       speed: 6
-      damage: 30
+      damage: 45
       ammoMultiplier: 1
       lifetime: 60
     }	
@@ -109,7 +107,7 @@ weapons: [{
       height: 8
       status: corroded
       speed: 2.5
-      damage: 66
+      damage: 99
       ammoMultiplier: 1
       lifetime: 60
     }	
