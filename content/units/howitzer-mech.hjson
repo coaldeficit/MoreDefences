@@ -26,7 +26,7 @@ weapons: [{
   shots: 3
   x: 0
   spread: 15
-  inaccuracy: 9
+  inaccuracy: 3
   reload: 300
   alternate: true
   shootSound: artillery
@@ -47,6 +47,7 @@ weapons: [{
     backColor: 95db00
     status: corroded
     fragBullets: 17
+    fragCone: 120
     fragBullet: {
       type: ArtilleryBulletType
       speed: 6
@@ -61,6 +62,8 @@ weapons: [{
       splashDamageRadius: 44
       collidesTiles: false
       collides: true
+      homingPower: 0.2
+      homingRange: 96
     }
   } }{
     name: cannoneer-weapon
@@ -111,5 +114,5 @@ weapons: [{
       lifetime: 60
     }	
 }]
-range: 340
+range: 480
 itemCapacity: 140
