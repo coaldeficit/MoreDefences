@@ -29,6 +29,6 @@ weapons: [{
     pierceCap: 2
     pierceBuilding: true
     ammoMultiplier: 1
-    lifetime: 50
+    lifetime: 20
   }
 }]
