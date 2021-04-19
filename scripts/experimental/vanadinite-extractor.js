@@ -1,4 +1,6 @@
-let placeables = [Vars.content.getByName(ContentType.block, "more-defences-ivyx-vanadinite")]
+const mineralMD = require("more-defences-ivyx/unmineable-ores")
+
+let placeables = [mineralMD.vanadinite]
 const vanadiniteExtract = extend(GenericCrafter, "vanadinite-extractor", {
   load(){
     this.region = Core.atlas.find(this.name);
@@ -15,7 +17,7 @@ const vanadiniteExtract = extend(GenericCrafter, "vanadinite-extractor", {
   },
 
   canPlaceOn(tile, team){
-    return placeables.includes(tile.floor());
+    return placeables.includes(tile.floor()) || placeables.includes(tile.overlay());
   }
 });
 vanadiniteExtract.buildType = () => extend(GenericCrafter.GenericCrafterBuild, vanadiniteExtract, {
