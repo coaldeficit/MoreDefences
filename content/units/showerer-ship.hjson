@@ -10,7 +10,7 @@ health: 800
 research: pelter-ship
 circleTarget: true
 commandLimit: 8
-engineOffset: -3.2
+engineOffset: 10
 engineSize: 3.25
 targetAir: false
 faceTarget: false
