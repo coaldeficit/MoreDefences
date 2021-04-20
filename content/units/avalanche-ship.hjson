@@ -1,0 +1,92 @@
+localizedName: Avalanche
+flying: true
+description: A heavy bomber ship. Drops highly destructive bombs on enemy units and structures that freeze any units they hit.
+speed: 1
+drag: 0.03
+accel: 0.08
+hitSize: 22
+flying: true
+health: 4000
+armor: 5
+circleTarget: true
+commandLimit: 6
+engineOffset: 17
+engineSize: 6.5
+targetAir: true
+rotateShooting: false
+weapons: [{
+  name: generic-bomber-weapon
+  minShootVelocity: 0.35
+  mirror: false
+  x: 0
+  shootY: 0
+  reload: 70
+  velocityRnd: 1
+  shootCone: 180
+  inaccuracy: 15
+  shootSound: none
+  bullet: {
+    type: BombBulletType
+    hitEffect: flakExplosion
+    shootEffect: none
+    smokeEffect: none
+    width: 15
+    height: 20
+    frontColor: def7ff
+    backColor: a5e5fa
+    splashDamageRadius: 100
+    splashDamage: 195
+    status: freezing
+    statusDuration: 360
+  }
+}, {
+  name: avalanche-weapon
+  y: -3
+  shots: 1
+  x: 3.5
+  top: true
+  rotate: true
+  inaccuracy: 2
+  reload: 10
+  alternate: true
+  shootSound: pew
+  bullet: {
+    type: BasicBulletType
+    speed: 12
+    damage: 15
+    width: 10
+    height: 14
+    frontColor: 6ecdec
+    backColor: 5091a6
+    status: freezing
+    lifetime: 24
+    buildingDamageMultiplier: 0.3
+    keepVelocity: false
+  }
+}, {
+  name: avalanche-weapon
+  y: -9
+  shots: 1
+  x: 3.5
+  top: true
+  rotate: true
+  inaccuracy: 2
+  reload: 33
+  alternate: true
+  shootSound: pew
+  bullet: {
+    type: BasicBulletType
+    speed: 16
+    damage: 50
+    width: 10
+    height: 14
+    frontColor: 6ecdec
+    backColor: 5091a6
+    status: freezing
+    lifetime: 24
+    buildingDamageMultiplier: 0.3
+    keepVelocity: false
+  }
+}]
+range: 288
+itemCapacity: 90
