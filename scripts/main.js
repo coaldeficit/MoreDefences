@@ -31,6 +31,7 @@ require("more-defences-ivyx/units/air/swarmer/communicator")
 require("more-defences-ivyx/units/air/bombardier/bombardier")
 require("more-defences-ivyx/units/air/bombardier/pelter")
 require("more-defences-ivyx/units/air/bombardier/showerer")
+require("more-defences-ivyx/units/air/bombardier/avalanche")
 
 // bosses
 // require("more-defences-ivyx/units/ground/havoc")
