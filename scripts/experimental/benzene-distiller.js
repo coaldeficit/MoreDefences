@@ -1,4 +1,4 @@
-const distiller = extendContent(GenericCrafter, "benzene-distiller", {
+const distiller = extendContent(LiquidConverter, "benzene-distiller", {
   load(){
     this.bottomRegion = Core.atlas.find(this.name + "-bottom");
     this.benzeneRegion = Core.atlas.find(this.name + "-benzene");
@@ -17,7 +17,7 @@ const distiller = extendContent(GenericCrafter, "benzene-distiller", {
     ];
   }
 });
-distiller.buildType = () => extend(GenericCrafter.GenericCrafterBuild, distiller, {
+distiller.buildType = () => extend(LiquidConverter.LiquidConverterBuild, distiller, {
   draw(){
     Draw.rect(distiller.bottomRegion, this.x, this.y);
 
