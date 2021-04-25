@@ -1,0 +1,8 @@
+localizedName: Benzene
+description: Colorless, highly flammable liquid. Constituent of Crude Oil.
+heatCapacity: 0.7
+flammability: 1.7
+explosiveness: 0.2
+viscosity: 0.7
+color: 808080
+effect: tarred
