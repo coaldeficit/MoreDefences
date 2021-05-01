@@ -2,3 +2,4 @@ type: Floor
 name: Diorite
 variants: 3
 mapColor: CCCCCC
+useColor: true

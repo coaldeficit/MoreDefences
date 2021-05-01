@@ -2,3 +2,4 @@ type: Floor
 name: Limestone
 variants: 3
 mapColor: C1B993
+useColor: true

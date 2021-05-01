@@ -2,3 +2,4 @@ type: StaticWall
 name: Diorite Wall
 variants: 2
 mapColor: A5A5A5
+useColor: true

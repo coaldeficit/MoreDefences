@@ -2,3 +2,4 @@ type: Floor
 name: Granite
 variants: 3
 mapColor: EFA79E
+useColor: true
