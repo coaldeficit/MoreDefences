@@ -1,13 +1,12 @@
 type: Floor
-name: Cryo lake
+localizedName: Cryofluid
 status: freezing
 drownTime: 600
 speedMultiplier: 0.09
 variants: 0
 liquidDrop: cryofluid
 isLiquid: true
-cacheLayer: slag
+cacheLayer: cryofluid
 emitLight: true
 lightRadius: 20
-attributes: water
 lightColor: 08efff
