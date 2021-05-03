@@ -6,11 +6,11 @@ size: 2
 shootType: {
   type: LightningBulletType
   damage: 6
-  lightningLength: 45
+  lightningLength: 27
   lightningLengthRand: 10
   collidesAir: true
 }
-shots: 3
+shots: 1
 reloadTime: 2
 shootCone: 40
 rotateSpeed: 12
