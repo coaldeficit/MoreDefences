@@ -1,0 +1,7 @@
+type: ShallowLiquid
+localizedName: Titanium Sand Water
+speedMultiplier: 0.8
+variants: 0
+liquidDrop: water
+cacheLayer: water
+albedo: 0.5
