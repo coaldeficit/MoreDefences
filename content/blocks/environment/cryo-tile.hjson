@@ -10,3 +10,4 @@ cacheLayer: water
 emitLight: true
 lightRadius: 20
 lightColor: 08efff
+liquidMultiplier: 0.2
