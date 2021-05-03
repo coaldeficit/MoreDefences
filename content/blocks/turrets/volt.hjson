@@ -1,17 +1,17 @@
 type: PowerTurret
 localizedName: Volt
-description: An upgraded Arc. Has longer range and fires stronger lightning but uses more power and takes longer to fire.
+description: An upgraded Arc. Has longer range and fires rapidly.
 health: 360
 size: 2
 shootType: {
   type: LightningBulletType
-  damage: 25
+  damage: 3
   lightningLength: 45
   lightningLengthRand: 10
   collidesAir: false
 }
 shots: 3
-reloadTime: 40
+reloadTime: 2
 shootCone: 40
 rotateSpeed: 12
 powerUse: 8.5
