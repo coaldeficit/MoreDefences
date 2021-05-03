@@ -2,7 +2,7 @@ type: ShallowLiquid
 localizedName: Titanium Sand Cryofluid
 speedMultiplier: 0.2
 variants: 0
-stats: freezing
+status: freezing
 statusDuration: 150
 liquidDrop: cryofluid
 cacheLayer: water
