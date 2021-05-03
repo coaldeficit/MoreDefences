@@ -5,3 +5,4 @@ variants: 0
 liquidDrop: water
 cacheLayer: water
 albedo: 0.5
+isLiquid: true
