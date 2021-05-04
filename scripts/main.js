@@ -12,6 +12,7 @@ require("more-defences-ivyx/units/air/drones")
 require("more-defences-ivyx/units/air/core-units")
 require("more-defences-ivyx/zincite-extractor")
 require("more-defences-ivyx/asphalt-mixer")
+require("more-defences-ivyx/titaniumseperator")
 
 // unit stuff
 // cannoneer line

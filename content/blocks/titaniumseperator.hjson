@@ -1,19 +1,28 @@
-type: GenericCrafter
-localizedName: Titanium Seperator
-description: Seperates Titanium particles from Titanium sand.
+localizedName: "Titanium Seperator [sprite in development]"
+description: Seperates Sand, Titanium and trace amounts of other metals from Titanium sand. 
 size: 2
 hasPower: true
 hasItems: true
+hasLiquids: false
 itemCapacity: 50
 craftTime: 6
 consumes: {
   power: 1
   items: {
     items: [
-      titaniumsand/9
+      titaniumsand/2
     ]
   }
 }
+results: [
+  sand/56
+  titanium/24
+  zinc/6
+  lead/2
+  copper/2
+  graphite/1
+  silicon/1
+]
 requirements: [
   copper/120
   lead/90
@@ -25,4 +34,3 @@ category: crafting
 research: sifter
 idleSound: respawning
 idleSoundVolume: 0.5
-outputItem: titanium/2
