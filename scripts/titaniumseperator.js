@@ -1,7 +1,7 @@
 const ts = extend(Separator, "titaniumseperator", {
   load(){
     this.region = Core.atlas.find(this.name);
-    this.spinnerRegion = Core.atlas.find(`${this.name}-spinner`);
+    this.spinnerRegion = Core.atlas.find(this.name + "-spinner");
   },
   
   icons(){
