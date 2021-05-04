@@ -14,7 +14,7 @@ const ts = extend(Separator, "titaniumseperator", {
 ts.buildType = () => extend(Separator.SeparatorBuild, ts, {
   draw(){
     Draw.rect(ts.region, this.x, this.y);
-    Draw.rect(ts.spinnerRegion, this.x, this.y, this.totalProgress * this.spinnerSpeed);
+    Draw.rect(ts.spinnerRegion, this.x, this.y, this.totalProgress * 6);
 
   }
 });
