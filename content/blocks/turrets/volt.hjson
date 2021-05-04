@@ -5,7 +5,7 @@ health: 560
 size: 2
 shootType: {
   type: LightningBulletType
-  damage: 6
+  damage: 9
   lightningLength: 27
   lightningLengthRand: 10
   collidesAir: true
@@ -27,3 +27,4 @@ requirements: [
 ]
 category: turret
 research: arc
+coolantMultiplier: 0.9
