@@ -19,18 +19,21 @@ ammoTypes: {
     damage: 18
     ammoMultiplier: 6
     drawSize: 4
+    lifetime: 12
   }
   lead: {
     speed: 16
     damage: 22
     ammoMultiplier: 3
     drawSize: 4
+    lifetime: 12
   }
   coal: {
     speed: 16
     damage: 19
     ammoMultiplier: 3
     drawSize: 4
+    lifetime: 12
     incendAmount: 0.5
     incendSpread: 0.1
     incendChance: 0.5
@@ -40,6 +43,7 @@ ammoTypes: {
     damage: 22
     ammoMultiplier: 3
     drawSize: 4
+    lifetime: 12
     homingPower: 12
   }
   titanium: {
@@ -47,6 +51,7 @@ ammoTypes: {
     damage: 65
     ammoMultiplier: 3
     drawSize: 4
+    lifetime: 12
     reloadMultiplier: 0.6
   }
   polonium: {
@@ -54,6 +59,7 @@ ammoTypes: {
     damage: 100
     ammoMultiplier: 1
     drawSize: 4
+    lifetime: 12
     reloadMultiplier: 0.4
   }
 }
