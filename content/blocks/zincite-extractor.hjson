@@ -2,7 +2,7 @@ localizedName: Zincite Extractor
 description: Drills into the ground and extracts Zincite.
 size: 2
 hasPower: true
-craftTime: 240
+craftTime: 230
 consumes: {
   power: 0.4
 }
