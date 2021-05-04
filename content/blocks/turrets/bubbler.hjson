@@ -5,10 +5,10 @@ health: 600
 size: 2
 reloadTime: 3
 range: 200
-inaccuracy: 45
+inaccuracy: 20
 rotatespeed: 5
-spread: 45
-shots: 8
+spread: 20
+shots: 18
 ammoTypes: {
  water: {
     type: LiquidBulletType
