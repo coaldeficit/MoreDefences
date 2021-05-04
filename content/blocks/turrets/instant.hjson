@@ -19,7 +19,7 @@ ammoTypes: {
     damage: 18
     ammoMultiplier: 6
     drawSize: 4
-    lifetime: 12
+    lifetime: 9
   }
   lead: {
     speed: 16
