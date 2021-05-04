@@ -8,3 +8,4 @@ liquidDrop: cryofluid
 cacheLayer: water
 albedo: 0.5
 liquidMultiplier: 0.07
+isLiquid: true
