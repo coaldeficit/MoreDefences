@@ -1,6 +1,6 @@
 type: Separator
 localizedName: Titanium Seperator [sprite in development]
-description: Seperates Titanium particles from Titanium sand. 
+description: Seperates Sand, Titanium and trace amounts of other metals from Titanium sand. 
 size: 2
 hasPower: true
 hasItems: true
@@ -26,6 +26,9 @@ research: sifter
 idleSound: respawning
 idleSoundVolume: 0.5
 results: [
-	sand/4
-  titanium/1
+  sand/28
+  titanium/12
+  zinc/3
+  lead/1
+  copper/1
 ]
