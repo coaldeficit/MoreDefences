@@ -5,7 +5,7 @@ health: 560
 size: 2
 shootType: {
   type: LightningBulletType
-  damage: 9
+  damage: 5
   lightningLength: 27
   lightningLengthRand: 10
   collidesAir: true
