@@ -1,6 +1,6 @@
 localizedName: Howitzer
 flying: false
-description: Fires powerful artillery shells at enemy units and structures. Can walk over most terrain.
+description: Fires extremely powerful fragging artillery shells and homing missiles at enemy units and structures. Can walk over most terrain.
 speed: 0.2
 health: 18000
 armor: 10
