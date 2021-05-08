@@ -43,9 +43,8 @@ ammoTypes: {
     damage: 0.125
     status: freezing
     pierce: true
-    lifetime: 60
+    lifetime: 240
     drag: 0.025
-    reloadMultiplier: 0.125
   }
 }
 requirements: [
