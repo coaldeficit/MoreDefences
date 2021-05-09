@@ -1,0 +1,37 @@
+localizedName: Lucifrons
+description: Fires hot water bubbles at enemy units and structures. Highly manoeuvrable.
+speed: 1
+accel: 0.6
+drag: 0.2
+rotateSpeed: 6
+buildSpeed: 0.35
+hitSize: 9
+health: 270
+armor: 1
+rotateShooting: false
+shootCone: 45
+range: 120
+lowAltitude: true
+research: risso
+weapons: [
+  {
+  name: lucifrons-turret
+  top: true
+  rotate: true
+  rotateSpeed: 18
+  y: -2
+  shots: 3
+  mirror: false
+  x: 0
+  inaccuracy: 15
+  spread: 30
+  reload: 5
+  loopSound: spray
+  shootSound: none
+  bullet: {
+    type: LiquidBulletType
+    liquid: water
+    damage: 4
+    status: wet
+  }
+}]
