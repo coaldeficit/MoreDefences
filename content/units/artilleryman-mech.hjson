@@ -21,7 +21,7 @@ weapons: [{
     speed: 5	
     hitEffect: flakExplosion	
     knockback: 0.8	
-    lifetime: 80	
+    lifetime: 56	
     width: 8	
     height: 8	
     collidesTiles: true	
@@ -33,6 +33,6 @@ weapons: [{
     status: corroded
   }	
 }]
-range: 260
+range: 280
 itemCapacity: 25
 targetAir: false
