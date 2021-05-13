@@ -63,6 +63,6 @@ weapons: [{
     }
   }	
 }]
-range: 300
+range: 360
 itemCapacity: 90
 targetAir: false
