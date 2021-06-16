@@ -18,4 +18,4 @@ Some other good mods that IvyX (the person who made this mod and wrote the entir
 This is a list of people who have contributed to developing this mod.
 - [7rodo](https://github.com/7rodo): Co-developer
 - AurumMighty#1679: Helped with respriting Pelter
-- [Awesomespore](https://github.com/Awesomespore): Making a pull request that nerfed instant's bullet range
+- [Awesomespore](https://github.com/Awesomespore): Made a pull request that nerfed instant's bullet range
