@@ -13,7 +13,7 @@ research: flare
 circleTarget: true
 targetFlag: turret
 weapons: [{
-  reload: 60
+  reload: 35
   shootCone: 180
   ejectEffect: none
   shootSound: explosion
