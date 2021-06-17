@@ -2,12 +2,12 @@ localizedName: Swarmer
 description: A tanky swarming unit designed to distract enemy defences. 
 speed: 2
 flying: true
-health: 175
+health: 200
 armor: 5
 engineOffset: 6
 drag: 0.01
 accel: 0.075
-range: 35
+range: 45
 rotatespeed: 5.0
 research: flare
 circleTarget: true
@@ -25,7 +25,7 @@ weapons: [{
   hitEffect: pulverize
   lifetime: 10
   speed: 1
-  splashDamageRadius: 45
+  splashDamageRadius: 50
   instantDisappear: true
   splashDamage: 60
   killShooter: true
