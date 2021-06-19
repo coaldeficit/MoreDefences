@@ -11,6 +11,7 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
 });
 liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, time, newTime, result) => {
     unit.damage(18);
+    result.set(StatusEffects.blasted, newTime + time);
     result.set(liquidHydrogenEffect, time);
 }));
 liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, time, newTime, result) => {
