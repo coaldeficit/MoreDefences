@@ -1,7 +1,7 @@
 // LH2 effect
 let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect", {
     isHidden(){
-      return false
+      return true
     },
     speedMultiplier: 0.6,
     healthMultiplier: 0.7,
