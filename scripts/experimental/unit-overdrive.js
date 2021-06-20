@@ -31,7 +31,7 @@ boostT1.buildType = () => extend(Building, {
   update(){
     this.super$update();
     if (this.overdrivetimer == undefined) this.overdrivetimer = 0;
-    if (this.overdrivetargetcount == undefined) this.overdrivetargetcount = 5;
+    if (this.overdrivetargetcount == undefined) this.overdrivetargetcount = 10;
     if (this.overdrivetimer > 0) this.overdrivetimer--;
     Groups.unit.each(unit => {
       if(unit.team == this.team && this.overdrivetimer <= 0 && this.overdrivetargetcount > 0){
@@ -41,8 +41,8 @@ boostT1.buildType = () => extend(Building, {
            unit.apply(StatusEffects.overdrive, 9999999);
            this.overdrivetargetcount--;
            if (this.overdrivetargetcount == 0) {
-             this.overdrivetimer = 180;
-             this.overdrivetargetcount = 5
+             this.overdrivetimer = 60 * 35;
+             this.overdrivetargetcount = 10
            };
          };
       };
