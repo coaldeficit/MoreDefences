@@ -41,7 +41,7 @@ boostT1.buildType = () => extend(Building, {
            unit.apply(StatusEffects.overdrive, 9999999);
            this.overdrivetargetcount--;
            if (this.overdrivetargetcount == 0) {
-             this.overdrivetimer = 60;
+             this.overdrivetimer = 180;
              this.overdrivetargetcount = 5
            };
          };
