@@ -39,8 +39,8 @@ boostT1.buildType = () => extend(Building, {
            beam.at(this.x, this.y, 0, unit);
            beamendthing.at(unit.x, unit.y, 0, unit);
            unit.apply(StatusEffects.overdrive, 9999999);
-           overdrivetargetcount--;
-           if (overdrivetargetcount == 0) {
+           this.overdrivetargetcount--;
+           if (this.overdrivetargetcount == 0) {
              this.overdrivetimer = 60;
              this.overdrivetargetcount = 5
            };
