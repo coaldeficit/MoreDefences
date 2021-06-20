@@ -30,20 +30,25 @@ const boostT1 = extend(Block, "unit-overdrive", {
 boostT1.buildType = () => extend(Building, {
   update(){
     this.super$update();
-    if (this.overdrivetimer == undefined) this.overdrivetimer = 0;
+    if (this.overdrivetimer == undefined) this.overdrivetimer = 60 * 35;
     if (this.overdrivetargetcount == undefined) this.overdrivetargetcount = 10;
-    if (this.overdrivetimer > 0) this.overdrivetimer--;
+    if (this.overdrivetimer > 0 && this.unitsdetected == true) this.overdrivetimer--;
+    if (this.overdrivetimer < 60 * 35 && this.unitsdetected == false) this.overdrivetimer++;
+    this.unitsdetected = false
     Groups.unit.each(unit => {
-      if(unit.team == this.team && this.overdrivetimer <= 0 && this.overdrivetargetcount > 0){
+      if(unit.team == this.team){
          if(dst(this.x, unit.x, this.y, unit.y) < 7 * 10 ){
-           beam.at(this.x, this.y, 0, unit);
-           beamendthing.at(unit.x, unit.y, 0, unit);
-           unit.apply(StatusEffects.overdrive, 9999999);
-           this.overdrivetargetcount--;
-           if (this.overdrivetargetcount == 0) {
-             this.overdrivetimer = 60 * 35;
-             this.overdrivetargetcount = 10
-           };
+           this.unitsdetected = true
+           if (this.overdrivetimer <= 0 && this.overdrivetargetcount > 0) {
+             beam.at(this.x, this.y, 0, unit);
+             beamendthing.at(unit.x, unit.y, 0, unit);
+             unit.apply(StatusEffects.overdrive, 9999999);
+             this.overdrivetargetcount--;
+             if (this.overdrivetargetcount == 0) {
+               this.overdrivetimer = 60 * 35;
+               this.overdrivetargetcount = 10
+             };
+	         };
          };
       };
     });
