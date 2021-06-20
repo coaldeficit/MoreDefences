@@ -48,7 +48,7 @@ boostT1.buildType = () => extend(Building, {
                this.overdrivetimer = 60 * 35;
                this.overdrivetargetcount = 10
              };
-	         };
+	   };
          };
       };
     });
