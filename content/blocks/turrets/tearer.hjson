@@ -45,8 +45,8 @@ ammoTypes: {
   }
   silicon: {
     speed: 7
-    damage: 8.5
-    ammoMultiplier: 2
+    damage: 8
+    ammoMultiplier: 3
     homingPower: 0.1
     width: 2
     height: 3
