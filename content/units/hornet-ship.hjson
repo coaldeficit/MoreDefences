@@ -36,6 +36,7 @@ weapons: [{
     ammoMultiplier: 1
     lifetime: 80
     fragBullets: 8
+    keepVelocity: false
     fragBullet: {
       type: ArtilleryBulletType
       frontColor: bf92f9
@@ -47,6 +48,7 @@ weapons: [{
       splashDamageRadius: 15
       lifetime: 50
       fragBullets: 3
+      keepVelocity: false
       fragBullet: {
         type: MissileBulletType
         damage: 4
@@ -55,6 +57,7 @@ weapons: [{
         frontColor: bf92f9
         backColor: 6d56bf
         trailColor: 000000
+        keepVelocity: false
         }
       }
   }

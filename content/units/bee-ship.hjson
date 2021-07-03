@@ -25,7 +25,7 @@ weapons: [{
   inaccuracy: 6
   bullet: {
     speed: 6
-    damage: 7
+    damage: 8
     pierceCap: 2
     pierceBuilding: true
     ammoMultiplier: 1
