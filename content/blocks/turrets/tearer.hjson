@@ -19,6 +19,8 @@ ammoTypes: {
     ammoMultiplier: 4
     width: 2
     height: 3
+    lifetime: 17
+    collidesGround: false
   }
   lead: {
     speed: 9
@@ -26,25 +28,30 @@ ammoTypes: {
     ammoMultiplier: 4
     width: 2
     height: 3
+    lifetime: 19
+    collidesGround: false
   }
   coal: {
     speed: 9
-    damage: 6
+    damage: 5
     ammoMultiplier: 3
-    incendAmount: 0.2
-    incendSpread: 3
-    incendChance: 1
+    status: burning
+    makeFire: true
     reloadMultiplier: 0.95
     width: 2
     height: 3
+    lifetime: 19
+    collidesGround: false
   }
   silicon: {
     speed: 7
-    damage: 6
-    ammoMultiplier: 4
-    homingPower: 6
+    damage: 8.5
+    ammoMultiplier: 2
+    homingPower: 0.1
     width: 2
     height: 3
+    lifetime: 25
+    collidesGround: false
   }
   titanium: {
     speed: 8
@@ -53,6 +60,8 @@ ammoTypes: {
     reloadMultiplier: 0.6
     width: 2
     height: 3
+    lifetime: 22
+    collidesGround: false
   }
 }
 requirements: [
