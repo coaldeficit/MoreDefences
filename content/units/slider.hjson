@@ -1,5 +1,5 @@
 type: flying
-localizedName: Slider
+name: Slider
 description: A heavy bomber. 
 speed: 0.2
 flying: true

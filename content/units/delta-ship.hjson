@@ -1,4 +1,4 @@
-localizedName: Delta
+name: Delta
 description: Defends the Atom core from enemies. Builds structures.
 isCounted: false
 flying: true

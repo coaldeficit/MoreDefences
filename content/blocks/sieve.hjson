@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Sieve
+name: Sieve
 description: A more efficient version of the Sifter. Filters out trace amounts of metals found in Sand and outputs them as Scrap.
 size: 2
 health: 160

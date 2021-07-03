@@ -1,4 +1,4 @@
-localizedName: Communicator
+name: Communicator
 description: Has a machine gun capable of tearing through defences, barrage of missiles able to stop smaller objects and extra units for assistance.
 speed: 0.5
 accel: 0.02

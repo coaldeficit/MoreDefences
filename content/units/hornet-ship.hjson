@@ -1,4 +1,4 @@
-localizedName: Hornet
+name: Hornet
 description: An artillery based unit designed to destroy enemy infrastructure behind walls. 
 speed: 2
 flying: true

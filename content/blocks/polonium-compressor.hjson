@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Polonium Compressor
+name: Polonium Compressor
 description: Compresses Thorium, Phase Fabric and slag to create Polonium.
 health: 800
 size: 2

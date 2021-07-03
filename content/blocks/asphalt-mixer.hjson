@@ -1,4 +1,4 @@
-localizedName: Asphalt Mixer
+name: Asphalt Mixer
 description: Mixes Crude Oil with Scrap and Sand to create Asphalt.
 size: 2
 hasPower: true

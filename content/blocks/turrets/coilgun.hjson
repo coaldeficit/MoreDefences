@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Coilgun
+name: Coilgun
 description: Fires powerful bullets at a somewhat slow rate. Requires large amounts of ammo to fire.
 health: 1120
 size: 3

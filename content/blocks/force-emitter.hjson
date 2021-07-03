@@ -1,5 +1,5 @@
 type: ForceProjector
-localizedName: Force Emitter
+name: Force Emitter
 description: An upgraded Force Projector. Generates a larger and more durable force field than the Force Projector.
 size: 4
 shieldHealth: 4500

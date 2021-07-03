@@ -1,4 +1,4 @@
-localizedName: Messenger
+name: Messenger
 description: Fires a stack of artillery and incendiary bullets at all nearby enemies.
 speed: 1
 accel: 0.04

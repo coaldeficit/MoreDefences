@@ -1,4 +1,4 @@
-localizedName: Assault Drone
+name: Assault Drone
 description: A weak drone. Designed to distract weak enemy defences.
 speed: 2.3
 flying: true

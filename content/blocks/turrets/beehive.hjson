@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Beehive
+name: Beehive
 description: A turret that fires a powerful swarm of homing piercing projectiles.
 health: 540
 size: 2

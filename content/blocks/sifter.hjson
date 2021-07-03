@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Sifter
+name: Sifter
 description: Filters out trace amounts of metals found in Sand and outputs them as Scrap.
 size: 1
 health: 40

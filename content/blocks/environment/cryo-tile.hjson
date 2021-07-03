@@ -1,5 +1,5 @@
 type: Floor
-localizedName: Cryofluid
+name: Cryofluid
 status: freezing
 drownTime: 600
 speedMultiplier: 0.09

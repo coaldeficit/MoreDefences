@@ -1,5 +1,5 @@
 type: GenericSmelter
-localizedName: Zinc Refinery
+name: Zinc Refinery
 description: Smelts zincite into Zinc.
 size: 2
 hasPower: true

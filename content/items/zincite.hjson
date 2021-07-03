@@ -1,5 +1,5 @@
 type: resource
-localizedName: Zincite
+name: Zincite
 description: An ore of Zinc. Can be refined into Zinc or melted into Slag.
 color: F36B33
 hardness: 3

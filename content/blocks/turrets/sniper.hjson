@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Sniper
+name: Sniper
 description: Takedown.
 health: 1120
 size: 1

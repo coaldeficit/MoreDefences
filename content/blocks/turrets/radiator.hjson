@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Radiator
+name: Radiator
 description: Fires powerful bullets at a fast rate. Uses large amounts of ammo.
 health: 1480
 size: 3

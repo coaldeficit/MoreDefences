@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Shrapnel
+name: Shrapnel
 description: An upgraded Multishot. Fires strong bullets at a slow rate that split into multiple weak bullets.
 health: 450
 size: 2

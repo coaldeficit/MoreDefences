@@ -1,4 +1,4 @@
-localizedName: Bombardier
+name: Bombardier
 flying: true
 description: A weak bomber. Drops small clusters of weak bombs above enemy units and structures.
 speed: 2

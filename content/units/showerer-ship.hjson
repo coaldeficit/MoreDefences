@@ -1,4 +1,4 @@
-localizedName: Showerer
+name: Showerer
 flying: true
 description: A bomber ship. Drops bombs on enemy units and structures that explode into more bombs.
 speed: 1.4

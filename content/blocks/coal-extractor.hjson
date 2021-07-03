@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Coal Extractor
+name: Coal Extractor
 description: Drills into the ground and mines Coal. Useful in situations where coal is scarce.
 size: 2
 hasPower: true

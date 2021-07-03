@@ -1,4 +1,4 @@
-localizedName: Liquid Hydrogen
+name: Liquid Hydrogen
 description: Liquid state of Hydrogen. Very cold and volatile.
 heatCapacity: 1.3
 temperature: 0.05

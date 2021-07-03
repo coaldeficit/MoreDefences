@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Minelayer
+name: Minelayer
 description: A turret that fires mines that detonate when an enemy ground unit touches them.
 health: 800
 size: 2

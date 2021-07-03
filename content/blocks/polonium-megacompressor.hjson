@@ -1,5 +1,5 @@
 type: GenericSmelter
-localizedName: Polonium Megacompressor
+name: Polonium Megacompressor
 description: Compresses large amounts of Thorium, Phase Fabric and slag to create large quantities of Polonium.
 health: 800
 size: 4

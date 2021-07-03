@@ -1,5 +1,5 @@
 type: GenericSmelter
-localizedName: Zincite Crucible
+name: Zincite Crucible
 description: Melts zincite into slag.
 size: 2
 hasPower: true

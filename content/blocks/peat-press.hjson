@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Peat Press
+name: Peat Press
 description: Creates Coal by compressing and heating up Peat.
 size: 2
 hasPower: true

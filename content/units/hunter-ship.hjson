@@ -1,5 +1,5 @@
 type: flying
-localizedName: Hunter
+name: Hunter
 flying: true
 description: A basic Missiler ship. Fires bursts of 3 homing incendiary missiles.
 speed: 0.5

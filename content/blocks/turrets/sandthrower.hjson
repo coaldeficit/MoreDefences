@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Sand Thrower
+name: Sand Thrower
 description: Rapidly fires weak granules of materials at nearby enemy units and structures. Can use many resources as ammo.
 health: 200
 size: 1

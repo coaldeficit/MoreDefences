@@ -1,4 +1,4 @@
-localizedName: Cannoneer
+name: Cannoneer
 flying: false
 description: Rapidly fires weak corroding bullets at enemy units and structures.
 speed: 0.5

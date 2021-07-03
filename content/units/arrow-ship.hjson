@@ -1,5 +1,5 @@
 type: flying	
-localizedName: Arrow	
+name: Arrow	
 flying: true	
 description: An upgraded Dart. Fires powerful artillery shells from above at enemy ground units and structures.	
 speed: 1	

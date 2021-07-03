@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Thorium Extractor
+name: Thorium Extractor
 description: Digs down deep into the ground and extracts Thorium.
 size: 3
 hasPower: true

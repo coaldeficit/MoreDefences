@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: (2-3) Cannon
+name: (2-3) Cannon
 description: A powerful turret that rapidly fires strong projectiles without using much ammo.
 health: 3250
 size: 2

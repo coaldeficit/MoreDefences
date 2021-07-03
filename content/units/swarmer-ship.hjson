@@ -1,4 +1,4 @@
-localizedName: Swarmer
+name: Swarmer
 description: A tanky swarming unit designed to distract enemy defences. 
 speed: 2
 flying: true
