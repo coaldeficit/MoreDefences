@@ -38,5 +38,8 @@ require("more-defences-ivyx/units/air/bombardier/avalanche")
 // lucifrons line
 require("more-defences-ivyx/units/naval/lucifrons/lucifrons")
 
+// bosses
+require("more-defences-ivyx/units/bosses/havoc")
+
 // experimental
 // require("more-defences-ivyx/experimental/experimental")
