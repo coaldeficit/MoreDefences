@@ -27,11 +27,11 @@ let decoLightning = extend(BasicBulletType, {
 });
 
 function dst(x1, x2, y1, y2) {
-  let dx = x2 - x1;
-  let dy = y2 - y1;
+  let dx = (x2 - x1)*(x2 - x1);
+  let dy = (y2 - y1)*(y2 - y1);
   if (dx < 0) dx *= -1;
   if (dy < 0) dy *= -1;
-  return dx + dy;
+  return Math.sqrt(dx + dy);
 };
 
 let boostT1 = extend(Block, "unit-overdriver", {
@@ -81,7 +81,7 @@ boostT1.buildType = () => extend(Building, {
     if (this.power.status === 1) {
     Groups.unit.each(unit => {
       if(unit.team == this.team){
-         if(dst(this.x, unit.x, this.y, unit.y) < 14 * 8 ){
+         if(dst(this.x, unit.x, this.y, unit.y) < 14 * 8){
            this.unitsdetected = true
            if (this.overdrivetimer <= 0 && this.overdrivetargetcount > 0) {
              beam.at(unit.x, unit.y, 0, this);
