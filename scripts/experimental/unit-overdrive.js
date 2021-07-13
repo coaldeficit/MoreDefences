@@ -53,6 +53,11 @@ let boostT1 = extend(Block, "unit-overdriver", {
       ))
     )
   },
+  setStats(){
+    this.super$setStats();
+    this.stats.add(Stat.range, 13, StatUnit.blocks);
+    this.stats.add(Stat.cooldownTime, 35, StatUnit.seconds);
+  },
   load(){
     this.region = Core.atlas.find(this.name);
     this.chargeRegion = Core.atlas.find(this.name + "-charge");
