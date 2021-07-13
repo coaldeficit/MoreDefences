@@ -3,3 +3,5 @@ name: Regolith
 itemDrop: sand
 variants: 3
 playerUnmineable: true
+wall: regolithrocks
+decoration: regolith-boulder

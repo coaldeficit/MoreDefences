@@ -3,3 +3,5 @@ name: Diorite
 variants: 3
 mapColor: CCCCCC
 useColor: true
+wall: diorite-wall
+decoration: diorite-boulder
