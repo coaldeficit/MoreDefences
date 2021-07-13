@@ -34,7 +34,7 @@ function dst(x1, x2, y1, y2) {
   return dx + dy;
 };
 
-let boostT1 = extend(Block, "unit-overdrive", {
+let boostT1 = extend(Block, "unit-overdriver", {
   health: 120,
   size: 2,
   solid: true,
@@ -43,9 +43,6 @@ let boostT1 = extend(Block, "unit-overdrive", {
   buildVisibility: BuildVisibility.shown,
   hasPower: true,
   consumesPower: true,
-  /*getOverdriveTimer(){
-    return this.overdrivetimer; // thanks to QmelZ for helping with the bar thing (or well, trying to help with the bar thing since it ended up not working anyway)
-  },
   setBars(){
     this.super$setBars();
     this.bars.add("charge", func(e =>
@@ -55,7 +52,16 @@ let boostT1 = extend(Block, "unit-overdrive", {
         floatp(() => 1 - (e.getOverdriveTimer() / (60*35)))
       ))
     )
-  }*/
+  },
+  load(){
+    this.region = Core.atlas.find(this.name);
+    this.chargeRegion = Core.atlas.find(this.name + "-charge");
+  },
+  icons(){
+    return [
+      this.region
+    ];
+  }
 });
 boostT1.consumes.power(1850 / 60);
 
@@ -70,7 +76,7 @@ boostT1.buildType = () => extend(Building, {
     if (this.power.status === 1) {
     Groups.unit.each(unit => {
       if(unit.team == this.team){
-         if(dst(this.x, unit.x, this.y, unit.y) < 7 * 10 ){
+         if(dst(this.x, unit.x, this.y, unit.y) < 14 * 8 ){
            this.unitsdetected = true
            if (this.overdrivetimer <= 0 && this.overdrivetargetcount > 0) {
              beam.at(unit.x, unit.y, 0, this);
@@ -87,5 +93,17 @@ boostT1.buildType = () => extend(Building, {
       };
     });
     }
+  },
+  getOverdriveTimer(){
+    return this.overdrivetimer // thanks to QmelZ for helping with the bar thing
+  },
+  drawSelect(){
+    Drawf.dashCircle(this.x, this.y, 13 * 8, Pal.accent);
+  },
+  draw(){
+    Draw.rect(boostT1.region, this.x, this.y);
+    
+    Draw.alpha(1 - (this.getOverdriveTimer() / (60*35)));
+    Draw.rect(boostT1.chargeRegion, this.x, this.y);
   }
 });
