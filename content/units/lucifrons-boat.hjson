@@ -26,8 +26,7 @@ weapons: [
   inaccuracy: 15
   spread: 30
   reload: 5
-  loopSound: spray
-  shootSound: none
+  shootSound: splash
   bullet: {
     type: LiquidBulletType
     liquid: water
