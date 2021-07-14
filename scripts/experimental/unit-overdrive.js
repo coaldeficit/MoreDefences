@@ -53,6 +53,9 @@ let boostT1 = extend(Block, "unit-overdriver", {
       ))
     )
   },
+  drawPlace(x, y, rot, val){
+    Drawf.dashCircle(x * Vars.tilesize + this.offset, (y * Vars.tilesize) + this.offset, 13 * 8, Pal.accent);
+  },
   setStats(){
     this.super$setStats();
     this.stats.add(Stat.range, 13, StatUnit.blocks);
@@ -79,7 +82,7 @@ boostT1.buildType = () => extend(Building, {
     if (this.overdrivetimer > 0 && this.unitsdetected == true) this.overdrivetimer--;
     this.unitsdetected = false
     if (this.power.status === 1) {
-    Units.nearby(this.team, this.x - 20, this.y - 20, 170, 170, cons(unit => {
+    Units.nearby(this.team, this.x, this.y, 170, cons(unit => {
          if(dst(this.x, unit.x, this.y, unit.y) < 14 * 8){
            this.unitsdetected = true
            if (this.overdrivetimer <= 0 && this.overdrivetargetcount > 0) {
