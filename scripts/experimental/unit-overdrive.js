@@ -79,8 +79,7 @@ boostT1.buildType = () => extend(Building, {
     if (this.overdrivetimer > 0 && this.unitsdetected == true) this.overdrivetimer--;
     this.unitsdetected = false
     if (this.power.status === 1) {
-    Groups.unit.each(unit => {
-      if(unit.team == this.team){
+    Units.nearby(this.team, this.x - 20, this.y - 20, 170, 170, cons(unit => {
          if(dst(this.x, unit.x, this.y, unit.y) < 14 * 8){
            this.unitsdetected = true
            if (this.overdrivetimer <= 0 && this.overdrivetargetcount > 0) {
@@ -95,9 +94,8 @@ boostT1.buildType = () => extend(Building, {
              };
 	   };
          };
-      };
-    });
-    }
+      }));
+    };
   },
   getOverdriveTimer(){
     return this.overdrivetimer // thanks to QmelZ for helping with the bar thing
