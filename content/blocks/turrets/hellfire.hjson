@@ -23,8 +23,8 @@ ammoTypes: {
     frontColor: ffb357
     backColor: a16a28
     collidesAir: false
-    width: 3
-    height: 20
+    bulletWidth: 12
+    bulletHeight: 12
     hitSound: explosionbig
     hitShake: 8
     homingPower: 0.2
@@ -47,8 +47,8 @@ ammoTypes: {
     frontColor: ff9c63
     backColor: b3683d
     collidesAir: false
-    bulletWidth: 12
-    bulletHeight: 12
+    bulletWidth: 15
+    bulletHeight: 15
     hitSound: explosionbig
     hitShake: 16
     homingPower: 0.2
@@ -71,8 +71,8 @@ ammoTypes: {
     frontColor: 9854ff
     backColor: 5827a3
     collidesAir: false
-    bulletWidth: 12
-    bulletHeight: 12
+    bulletWidth: 15
+    bulletHeight: 15
     hitSound: explosionbig
     hitShake: 6
     homingPower: 0.2
