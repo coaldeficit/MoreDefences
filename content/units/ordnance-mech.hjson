@@ -23,7 +23,7 @@ weapons: [{
   inaccuracy: 0
   reload: 90
   alternate: true
-  shootSound: pew
+  shootSound: artillery
   mirror: false
   bullet: {	
     type: ArtilleryBulletType	
@@ -40,6 +40,7 @@ weapons: [{
     frontColor: aeff00
     backColor: 95db00
     status: corroded
+    hitShake: 1
     fragBullets: 7
     fragCone: 60
     fragBullet: {

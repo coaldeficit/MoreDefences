@@ -14,8 +14,9 @@ weapons: [{
   inaccuracy: 7
   reload: 60
   alternate: true
-  shootSound: pew
+  shootSound: artillery
   velocityRnd: 0.2
+  shake: 1
   bullet: {	
     type: ArtilleryBulletType	
     speed: 5	

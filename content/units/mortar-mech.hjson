@@ -18,6 +18,7 @@ landShake: 0.5
 legSpeed: 0.1
 visualEvelation: 0.5
 legBaseOffset: 10
+rotateSPeed: 7
 weapons: [{
   name: mortar-cannon
   top: true
@@ -28,8 +29,10 @@ weapons: [{
   inaccuracy: 0
   reload: 260
   alternate: true
-  shootSound: pew
+  shootSound: artillery
   mirror: false
+  shake: 5
+  rotateSpeed: 5
   bullet: {	
     type: ArtilleryBulletType	
     speed: 3
@@ -46,20 +49,33 @@ weapons: [{
     backColor: 95db00
     status: corroded
     fragBullets: 15
+    fragCone: 160
     lifetime: 120
+    hitShake: 5
     fragBullet: {
       type: ArtilleryBulletType
       speed: 7
-      damage: 23
       width: 6
       height: 9
       frontColor: ffffff
       backColor: 95db00
       status: corroded
       lifetime: 30
-      splashDamage: 30
-      collidesTiles: false
-      collides: true
+      splashDamage: 50
+      splashDamageRadius: 16
+      hitShake: 1
+      fragBullets: 3
+      fragBullet: {
+        type: BasicBulletType
+        speed: 5
+        damage: 2
+        width: 2
+        height: 2.8
+        frontColor: aeff00
+        backColor: 95db00
+        status: corroded
+        lifetime: 10
+      }
     }
   }	
 }]

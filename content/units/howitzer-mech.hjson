@@ -8,6 +8,7 @@ hitSize: 30
 hovering: true
 allowLegStep: true
 research: mortar-mech
+rotateSpeed: 3
 legCount: 7
 legLength: 75
 legTrns: 0.8
@@ -31,6 +32,8 @@ weapons: [{
   alternate: true
   shootSound: artillery
   mirror: false
+  rotateSpeed: 1
+  shake: 15
   bullet: {	
     type: ArtilleryBulletType	
     speed: 4
@@ -45,6 +48,7 @@ weapons: [{
     frontColor: ffffff
     backColor: 95db00
     status: corroded
+    hitShake: 12
     fragBullets: 17
     fragCone: 120
     fragBullet: {
@@ -62,6 +66,7 @@ weapons: [{
       collidesTiles: false
       homingPower: 0.2
       homingRange: 96
+      hitShake: 5
     }
   } }{
     name: cannoneer-weapon
@@ -86,6 +91,7 @@ weapons: [{
       damage: 45
       ammoMultiplier: 1
       lifetime: 60
+      trailColor: 95db00
     }	
 } {
     name: artilleryman-weapon
@@ -110,6 +116,8 @@ weapons: [{
       damage: 99
       ammoMultiplier: 1
       lifetime: 60
+      hitShake: 1
+      trailColor: 95db00
     }	
 }]
 range: 480
