@@ -26,7 +26,7 @@ ammoTypes: {
     width: 3
     height: 20
     hitSound: explosionbig
-    hitShake: 4
+    hitShake: 8
     homingPower: 0.2
     fragBullets: 20
     fragBullet: {
@@ -50,7 +50,7 @@ ammoTypes: {
     bulletWidth: 12
     bulletHeight: 12
     hitSound: explosionbig
-    hitShake: 4
+    hitShake: 16
     homingPower: 0.2
     fragBullets: 20
     fragBullet: {
@@ -74,7 +74,7 @@ ammoTypes: {
     bulletWidth: 12
     bulletHeight: 12
     hitSound: explosionbig
-    hitShake: 3
+    hitShake: 6
     homingPower: 0.2
     fragBullets: 20
     fragBullet: {
