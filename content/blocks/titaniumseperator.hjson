@@ -26,9 +26,8 @@ results: [
 requirements: [
   copper/120
   lead/90
-  graphite/20
-  silicon/20
-  titanium/20
+  graphite/25
+  silicon/25
 ]
 category: crafting
 research: sifter
