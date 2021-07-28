@@ -12,8 +12,8 @@ reloadTime: 120
 recoil: 6
 ammoEjectBack: 5
 cooldown: 0.03
-shootshake: 2
-shootsound: artillery
+shake: 2
+shootSound: artillery
 targetAir: false
 ammoTypes: {
   pyratite: {
