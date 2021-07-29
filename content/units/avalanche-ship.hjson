@@ -4,7 +4,7 @@ description: A heavy bomber ship. Drops highly destructive bombs on enemy units 
 speed: 1
 drag: 0.03
 accel: 0.08
-hitSize: 22
+hitSize: 34
 flying: true
 health: 4000
 armor: 5
@@ -24,26 +24,38 @@ weapons: [{
   velocityRnd: 1
   shootCone: 180
   inaccuracy: 15
-  shootSound: none
+  shootSound: plasmadrop
   bullet: {
-    type: BombBulletType
-    hitEffect: flakExplosion
+    type: BasicBulletType
+    hitSound: plasmaboom
+    hitEffect: massiveExplosion
     shootEffect: none
     smokeEffect: none
-    width: 15
-    height: 20
-    frontColor: def7ff
-    backColor: a5e5fa
+    width: 30
+    height: 30
+    frontColor: ffffff
+    backColor: 6ecdec
+    mixColorTo: ffffff
+    sprite: "more-defences-ivyx-i-bomb"
+    spin: 4
+    shrinkX: 0.7
+    shrinkY: 0.7
+    hitShake: 5
     splashDamageRadius: 100
     splashDamage: 195
     status: freezing
     statusDuration: 360
+    speed: 0
+    collides: 0
+    collidesAir: false
+    lifetime: 70
+    keepVelocity: false
   }
 }, {
   name: avalanche-weapon
-  y: -3
+  y: 5
   shots: 1
-  x: 3.5
+  x: 5
   top: true
   rotate: true
   inaccuracy: 2
@@ -65,9 +77,9 @@ weapons: [{
   }
 }, {
   name: avalanche-weapon
-  y: -9
+  y: -5
   shots: 1
-  x: 3.5
+  x: 5
   top: true
   rotate: true
   inaccuracy: 2
