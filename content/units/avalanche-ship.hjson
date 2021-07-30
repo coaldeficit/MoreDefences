@@ -30,7 +30,7 @@ weapons: [{
     type: BasicBulletType
     hitSound: plasmaboom
     hitEffect: massiveExplosion
-    despawnEffect: bigShockwave
+    despawnEffect: nuclearShockwave 
     shootEffect: none
     smokeEffect: none
     width: 30
