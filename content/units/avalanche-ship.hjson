@@ -52,6 +52,23 @@ weapons: [{
     collidesAir: false
     lifetime: 70
     keepVelocity: false
+    fragBullets: 2
+    fragCone: 360
+    fragBullet: {
+      bulletType: ArtilleryBulletType
+      speed: 4
+      spin: 6
+      damage: 10
+      splashDamage: 33
+      splashDamageRadium: 24
+      hitEffect: flakExplosion
+      despawnEffect: shockwave
+      frontColor: ffffff
+      backColor: 6ecdec
+      sprite: "more-defences-ivyx-d-bomb"
+      hitShake: 2
+      }
+    
   }
 }, {
   name: avalanche-weapon
