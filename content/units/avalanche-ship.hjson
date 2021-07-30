@@ -58,8 +58,10 @@ weapons: [{
       bulletType: ArtilleryBulletType
       speed: 4
       spin: 6
+      width: 15
+      height: 15
       damage: 10
-      splashDamage: 33
+      splashDamage: 65
       splashDamageRadium: 24
       hitEffect: flakExplosion
       despawnEffect: shockwave
