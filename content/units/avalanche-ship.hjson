@@ -2,7 +2,7 @@ name: Avalanche
 flying: true
 description: A heavy bomber ship. Drops highly destructive bombs on enemy units and structures that freeze any units they hit.
 speed: 1.5
-drag: 0.1
+drag: 2
 accel: 0.1
 hitSize: 34
 flying: true
@@ -33,8 +33,8 @@ weapons: [{
     despawnEffect: bigShockwave
     shootEffect: none
     smokeEffect: none
-    width: 35
-    height: 35
+    width: 30
+    height: 30
     frontColor: ffffff
     backColor: 6ecdec
     mixColorTo: ffffff
@@ -66,14 +66,14 @@ weapons: [{
   shootSound: pew
   bullet: {
     type: BasicBulletType
-    speed: 12
+    speed: 8
     damage: 15
     width: 7
     height: 9
     frontColor: 6ecdec
     backColor: 5091a6
     status: freezing
-    lifetime: 24
+    lifetime: 32
     buildingDamageMultiplier: 0.3
     keepVelocity: false
   }
@@ -90,14 +90,14 @@ weapons: [{
   shootSound: pew
   bullet: {
     type: BasicBulletType
-    speed: 16
+    speed: 10
     damage: 50
     width: 7
     height: 9
     frontColor: 6ecdec
     backColor: 5091a6
     status: freezing
-    lifetime: 24
+    lifetime: 30
     buildingDamageMultiplier: 0.3
     keepVelocity: false
   }
