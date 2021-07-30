@@ -56,7 +56,7 @@ weapons: [{
     fragCone: 360
     fragBullet: {
       bulletType: ArtilleryBulletType
-      speed: 4
+      speed: 2
       spin: 6
       width: 10
       height: 10
