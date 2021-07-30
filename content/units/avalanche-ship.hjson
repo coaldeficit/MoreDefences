@@ -58,15 +58,16 @@ weapons: [{
       bulletType: ArtilleryBulletType
       speed: 4
       spin: 6
-      width: 15
-      height: 15
+      width: 10
+      height: 10
       damage: 10
       splashDamage: 65
-      splashDamageRadium: 24
+      splashDamageRadius: 24
       hitEffect: flakExplosion
       despawnEffect: shockwave
       frontColor: ffffff
       backColor: 6ecdec
+      collide: false
       sprite: "more-defences-ivyx-d-bomb"
       hitShake: 2
       }
