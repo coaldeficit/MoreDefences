@@ -1,4 +1,4 @@
-type: AttributeSmelter
+type: AttributeCrafter
 name: Metaglass Furnace
 description: Smelts sand and lead into metaglass, using pyratite as an additional heat source.
 size: 3
@@ -7,6 +7,7 @@ hasItems: true
 craftTime: 45
 itemCapacity: 20
 updateEffect: smeltsmoke
+drawer: DrawSmelter
 consumes: {
   power: 5
   items: {

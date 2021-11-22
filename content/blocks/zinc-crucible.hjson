@@ -1,4 +1,4 @@
-type: GenericSmelter
+type: GenericCrafter
 name: Zincite Crucible
 description: Melts zincite into slag.
 size: 2
@@ -8,6 +8,7 @@ hasLiquids: true
 craftTime: 10
 updateEffect: smeltsmoke
 liquidCapacity: 180
+drawer: DrawSmelter
 consumes: {
   power: 3
   items: {

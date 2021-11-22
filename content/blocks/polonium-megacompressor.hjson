@@ -1,4 +1,4 @@
-type: GenericSmelter
+type: GenericCrafter
 name: Polonium Megacompressor
 description: Compresses large amounts of Thorium, Phase Fabric and slag to create large quantities of Polonium.
 health: 800
@@ -8,6 +8,7 @@ hasItems: true
 hasLiquids: true
 craftTime: 480
 itemCapacity: 20
+drawer: DrawSmelter
 consumes: {
   power: 8.6666667
   items: {

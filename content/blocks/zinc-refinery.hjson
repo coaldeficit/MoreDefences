@@ -1,4 +1,4 @@
-type: GenericSmelter
+type: GenericCrafter
 name: Zinc Refinery
 description: Smelts zincite into Zinc.
 size: 2
@@ -7,6 +7,7 @@ hasItems: true
 hasLiquids: true
 craftTime: 60
 updateEffect: smeltsmoke
+drawer: DrawSmelter
 consumes: {
   power: 1
   items: {
