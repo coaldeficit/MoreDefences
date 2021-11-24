@@ -13,6 +13,7 @@ Go to the Mods menu, click/tap on Import Mod, click/tap on Import From Github, e
 ## Other good mods
 Some other good mods that IvyX (the person who made this mod and wrote the entirety of this readme) recommends are:
 - 7rodo/Strawberry: A great mod made by 7rodo and IvyX. Adds a few quality of life blocks that make playing the game slightly less painful, as well as plenty of turrets, resources and production blocks.
+- sk7725/BetaMindy: A great java mod made by sk7725. Adds many unique and interesting features, notable examples include: Pistons which together with several other blocks from this mod can be used to create moving ships, a Payload Cannon that can use literally any block as ammo as long as it fits, a Bumper that causes any units that touch it to bounce off, a planet that actually works in V7 and much more.
 
 ## Contributors
 This is a list of people who have contributed to developing this mod.
