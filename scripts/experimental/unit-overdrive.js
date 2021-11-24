@@ -35,6 +35,7 @@ function dst(x1, x2, y1, y2) {
 };
 
 let boostT1 = extend(Block, "unit-overdriver", {
+  description: "Slowly charges up when ally units are nearby. Overdrives nearby ally units upon reaching 100% charge. Uses very high amounts of power.",
   health: 120,
   size: 2,
   solid: true,
@@ -54,6 +55,7 @@ let boostT1 = extend(Block, "unit-overdriver", {
     )
   },
   drawPlace(x, y, rot, val){
+    this.super$drawPlace(x, y, rot, val);
     Drawf.dashCircle(x * Vars.tilesize + this.offset, (y * Vars.tilesize) + this.offset, 13 * 8, Pal.accent);
   },
   setStats(){
@@ -77,27 +79,33 @@ boostT1.buildType = () => extend(Building, {
   update(){
     this.super$update();
     if (this.overdrivetimer == undefined) this.overdrivetimer = 60 * 35;
-    if (this.overdrivetargetcount == undefined) this.overdrivetargetcount = 10;
-    if (this.overdrivetimer < 60 * 35 && this.unitsdetected == false) this.overdrivetimer++;
-    if (this.overdrivetimer > 0 && this.unitsdetected == true) this.overdrivetimer--;
+    if (this.overdrivetargetcount == undefined) this.overdrivetargetcount = 15;
+    if (this.overdrivetimer < 60 * 35 && this.unitsdetected == false) this.overdrivetimer += (1*this.timeScale);
+    if (this.overdrivetimer > 0 && this.unitsdetected == true) this.overdrivetimer -= (1*this.timeScale);
+    if (this.overdrivetimer > 60 * 35) this.overdrivetimer = 60 * 35;
     this.unitsdetected = false
     if (this.power.status === 1) {
-    Units.nearby(this.team, this.x, this.y, 170, cons(unit => {
+      Units.nearby(this.team, this.x, this.y, 170, cons(unit => {
          if(dst(this.x, unit.x, this.y, unit.y) < 14 * 8){
            this.unitsdetected = true
            if (this.overdrivetimer <= 0 && this.overdrivetargetcount > 0) {
              beam.at(unit.x, unit.y, 0, this);
              beamendthing.at(unit.x, unit.y, 0, this);
              unit.apply(StatusEffects.overdrive, 9999999);
-             this.overdrivetargetcount--;
-             if (this.overdrivetargetcount == 0) {
+             //this.overdrivetargetcount--;
+             /*if (this.overdrivetargetcount == 0) {
                this.overdrivetimer = 60 * 35;
-               this.overdrivetargetcount = 10
+               this.overdrivetargetcount = 15
 	       decoLightning.create(unit, this.team, this.x, this.y, 0)
-             };
+             };*/
 	   };
          };
       }));
+      if (this.overdrivetimer <= 0) {
+        this.overdrivetimer = 60 * 35;
+        this.overdrivetargetcount = 15
+        decoLightning.create(this, this.team, this.x, this.y, 0)
+      }
     };
   },
   getOverdriveTimer(){
