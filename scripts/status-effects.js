@@ -1,8 +1,5 @@
 // LH2 effect
 let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect", {
-    isHidden(){
-      return true
-    },
     speedMultiplier: 0.6,
     healthMultiplier: 0.7,
     localizedName: 'Hydrogenated',
@@ -11,15 +8,17 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
 });
 liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, time, newTime, result) => {
     unit.damagePierce(18);
-    unit.apply(liquidHydrogenEffect, newTime + time)
+    unit.apply(liquidHydrogenEffect, newTime + time);
 }));
-liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, time, newTime, result) => {
+liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, time, newTime, result) => 
     unit.damagePierce(8);
-    result.set(StatusEffects.burning, newTime + time);
+    unit.apply(StatusEffects.burning, newTime + time);
+    unit.apply(liquidHydrogenEffect, time/2);
 }));
 liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, time, newTime, result) => {
-    unit.damagePierce(8);
-    result.set(StatusEffects.melting, newTime + time);
+    unit.damagePierce(12);
+    unit.apply(StatusEffects.melting, newTime + time);
+    unit.apply(liquidHydrogenEffect, time/2);
 }));
 
 module.exports = {
