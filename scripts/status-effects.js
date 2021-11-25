@@ -11,17 +11,15 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
 });
 liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, time, newTime, result) => {
     unit.damagePierce(18);
-    unit.apply(liquidHydrogenEffect, newTime + time);
+    unit.apply(liquidHydrogenEffect, newTime + time)
 }));
-liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, time, newTime, result) => 
+liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, time, newTime, result) => {
     unit.damagePierce(8);
-    unit.apply(StatusEffects.burning, newTime + time);
-    unit.apply(liquidHydrogenEffect, time/2);
+    result.set(StatusEffects.burning, newTime + time);
 }));
 liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, time, newTime, result) => {
-    unit.damagePierce(12);
-    unit.apply(StatusEffects.melting, newTime + time);
-    unit.apply(liquidHydrogenEffect, time/2);
+    unit.damagePierce(8);
+    result.set(StatusEffects.melting, newTime + time);
 }));
 
 module.exports = {
