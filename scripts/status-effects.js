@@ -19,7 +19,7 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
     color: Color.valueOf("#7a9a9B"),
     update(unit,time){
       this.super$update
-      /*if (checkstatus(unit, StatusEffects.burning) != false) {
+      if (checkstatus(unit, StatusEffects.burning) != false) {
         unit.damagePierce(8)
         checkstatus(unit, StatusEffects.burning).time = Math.max(300, checkstatus(unit, StatusEffects.burning).time)
         unit.unapply(liquidHydrogenEffect)
@@ -28,7 +28,7 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
         unit.damagePierce(8)
         checkstatus(unit, StatusEffects.melting).time = Math.max(300, checkstatus(unit, StatusEffects.melting).time)
         unit.unapply(liquidHydrogenEffect)
-      }*/
+      }
     }
 });
 liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, result, time) => {
