@@ -8,7 +8,7 @@ hitSize: 34
 flying: true
 health: 4000
 armor: 5
-rotateSpeed: 2
+rotateSpeed: 3
 circleTarget: true
 commandLimit: 6
 engineOffset: 11
@@ -44,11 +44,11 @@ weapons: [{
     shrinkY: 0.7
     hitShake: 5
     splashDamageRadius: 100
-    splashDamage: 195
+    splashDamage: 200
     status: freezing
     statusDuration: 360
-    speed: 2
-    drag: 2
+    speed: 4
+    drag: 4
     collides: 0
     collidesAir: false
     lifetime: 70
