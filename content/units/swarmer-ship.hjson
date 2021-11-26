@@ -11,8 +11,8 @@ range: 45
 rotatespeed: 5.0
 research: flare
 circleTarget: true
-targetFlags: [turret, null]
-playerTargetFlags: [null]
+targetFlags: [turret, battery, null]
+playerTargetFlags: [turret, battery, null]
 weapons: [{
   reload: 35
   shootCone: 180

@@ -13,8 +13,8 @@ rotateWeapon: true
 shootCone: 60
 range: 560
 lowAltitude: true
-targetFlags: [turret, null]
-playerTargetFlags: [null]
+targetFlags: [turret, battery, null]
+playerTargetFlags: [turret, battery, null]
 research: messenger-ship
 weapons: [
   {

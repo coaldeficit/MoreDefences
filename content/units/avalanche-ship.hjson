@@ -15,8 +15,8 @@ engineOffset: 11
 engineSize: 6.5
 targetAir: true
 rotateShooting: false
-targetFlags: [generator, null]
-playerTargetFlags: [null]
+targetFlags: [generator, turret, null]
+playerTargetFlags: [generator, turret, null]
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.25

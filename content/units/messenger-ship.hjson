@@ -13,8 +13,8 @@ rotateWeapon: true
 shootCone: 45
 range: 250
 lowAltitude: true
-targetFlags: [turret, null]
-playerTargetFlags: [null]
+targetFlags: [turret, battery, null]
+playerTargetFlags: [turret, battery, null]
 research: hornet-ship
 weapons: [
   {
