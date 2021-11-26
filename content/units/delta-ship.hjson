@@ -16,6 +16,8 @@ hitSize: 13
 commandLimit: 6
 rotateShooting: false
 range: 304
+targetFlags: [null]
+playerTargetFlags: [null]
 weapons: [{
   name: delta-lightning
   top: true

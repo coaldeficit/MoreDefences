@@ -11,7 +11,8 @@ range: 120
 rotatespeed: 3
 circleTarget: true
 research: swarmer-ship
-targetFlag: turret
+targetFlags: [turret, null]
+playerTargetFlags: [null]
 rotateShooting: false
 weapons: [{
   name: artillery-mount-2

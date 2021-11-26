@@ -12,6 +12,8 @@ circleTarget: true
 commandLimit: 6
 engineOffset: 9
 engineSize: 4
+targetFlags: [generator, null]
+playerTargetFlags: [null]
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.75

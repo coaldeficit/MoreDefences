@@ -10,6 +10,8 @@ engineOffset: 5
 ejectEffect: none
 hitsize: 9
 research: poly
+targetFlags: [null]
+playerTargetFlags: [null]
 weapons: [{
   name: hunter-weapon
   y: 0

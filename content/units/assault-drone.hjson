@@ -16,6 +16,8 @@ itemCapacity: 5
 isCounted: false
 hitSize: 6
 research: drone-factory
+targetFlags: [null]
+playerTargetFlags: [null]
 weapons: [{
   name: generic-bomber-weapon
   y: 0

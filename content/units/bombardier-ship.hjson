@@ -12,6 +12,8 @@ commandLimit: 4
 targetAir: false
 faceTarget: false
 rotateShooting: false
+targetFlags: [generator, null]
+playerTargetFlags: [null]
 weapons: [{
   name: generic-bomber-weapon
   minShootVelocity: 0.75

@@ -10,6 +10,8 @@ engineColor: ffa665
 ejectEffect: ejectSmall	
 research: poly
 hovering: true
+targetFlags: [null]
+playerTargetFlags: [null]
 weapons: [{	
   name: arrow-weapon	
   x: 0
