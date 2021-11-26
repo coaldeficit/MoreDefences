@@ -17,7 +17,7 @@ targetAir: true
 rotateShooting: false
 weapons: [{
   name: generic-bomber-weapon
-  minShootVelocity: 0.35
+  minShootVelocity: 0.25
   mirror: false
   x: 0
   shootY: 0
