@@ -8,7 +8,7 @@ hitSize: 34
 flying: true
 health: 4000
 armor: 5
-rotateSpeed: 1
+rotateSpeed: 2
 circleTarget: true
 commandLimit: 6
 engineOffset: 11
