@@ -36,12 +36,12 @@ liquidHydrogenEffect.affinity(StatusEffects.blasted, ((unit, result, time) => {
 }));
 liquidHydrogenEffect.affinity(StatusEffects.burning, ((unit, result, time) => {
     unit.damagePierce(8)
-    result.set(StatusEffects.burning, result.time)
+    result.set(StatusEffects.burning, Math.min(result.time, 300))
     unit.unapply(liquidHydrogenEffect)
 }));
 liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, result, time) => {
     unit.damagePierce(12)
-    result.set(StatusEffects.melting, result.time)
+    result.set(StatusEffects.melting, Math.min(result.time, 300))
     unit.unapply(liquidHydrogenEffect)
 }));
 
