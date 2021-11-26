@@ -47,7 +47,8 @@ weapons: [{
     splashDamage: 195
     status: freezing
     statusDuration: 360
-    speed: 0
+    speed: 2
+    drag: 2
     collides: 0
     collidesAir: false
     lifetime: 70
