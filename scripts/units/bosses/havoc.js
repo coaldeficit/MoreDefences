@@ -2,7 +2,7 @@ const Boss1 = extend(UnitType, "havoc", {
 	update(unit){
 		this.super$update(unit);
 		if (unit.health < 4333) {
-			unit.health += 9
+			unit.health += 18
 		}
 	},
 });
