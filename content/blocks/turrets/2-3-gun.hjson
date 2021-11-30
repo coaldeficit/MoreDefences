@@ -45,4 +45,4 @@ requirements: [
 ]
 shootSound: shootSnap
 category: turret
-research: chipgun
+research: cyclone
