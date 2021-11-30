@@ -1,5 +1,5 @@
 name: Havoc
-description: A high ranking crux robot. Fires powerful clusters of artillery shells at enemy structures and powerful lasers bolts at nearby enemy units and structures. 
+description: Fires powerful clusters of artillery shells at enemy structures and powerful lasers bolts at nearby enemy units and structures. 
 flying: false
 health: 13000
 armor: 30
@@ -9,6 +9,7 @@ range: 380
 rotatespeed: 1
 targetAir: true
 speed: 1
+details: A high ranking crux general sent to defend Plt-1 from sharded forces. The first boss of MoreDefences.
 weapons: [{
   name: havoc-cluster
   top: false
@@ -51,7 +52,7 @@ weapons: [{
     speed: 20
     damage: 70
     splashDamageRadius: 15
-    splashDamage: 20
+    splashDamage: 40
     lifetime: 25
     width: 2
     height: 45
