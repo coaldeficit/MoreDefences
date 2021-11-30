@@ -14,7 +14,7 @@ xRand: 6
 ammoTypes: {
   thorium: {
     speed: 8
-    damage: 60
+    damage: 40
     ammoMultiplier: 1
     homingPower: 0.2
     lifetime: 17
