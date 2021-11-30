@@ -9,7 +9,7 @@ ejectEffect: shellEjectSmall
 inaccuracy: 1
 rotatespeed: 15
 spread: 0
-ammoPerShot: 3
+ammoPerShot: 4
 xRand: 6
 ammoTypes: {
   thorium: {
