@@ -1,7 +1,7 @@
 name: Large Surge Coated Vanadium Wall
 description: A large vanadium wall coated with Surge Alloy. Builds up charge on bullet contact, releasing it randomly.
 type: Wall
-health: 7000
+health: 5600
 size: 2
 lightningChance: 0.02
 requirements: [
