@@ -11,6 +11,7 @@ require("more-defences-ivyx/units/air/core-units")
 require("more-defences-ivyx/zincite-extractor")
 require("more-defences-ivyx/asphalt-mixer")
 require("more-defences-ivyx/titaniumseperator")
+require("more-defences-ivyx/units/refreshconstruct")
 
 // unit stuff
 // ground
@@ -40,6 +41,7 @@ require("more-defences-ivyx/units/naval/lucifrons/lucifrons")
 
 // bosses
 require("more-defences-ivyx/units/bosses/havoc")
+require("more-defences-ivyx/units/bosses/crusher")
 
 // experimental
 // require("more-defences-ivyx/experimental/experimental")

@@ -1,3 +1,4 @@
+const refresh = require("more-defences-ivyx/units/refreshconstruct")
 const Boss1 = extend(UnitType, "havoc", {
 	update(unit){
 		this.super$update(unit);
@@ -10,7 +11,7 @@ const Boss1 = extend(UnitType, "havoc", {
 
 Boss1.constructor = () => extend(MechUnit, {
 	update(){
-		this.super$update();
+		this.super$update()
 		if (this.antispawnkillTimer == null) {
 			this.antispawnkillTimer = 0;
 		}
@@ -19,6 +20,11 @@ Boss1.constructor = () => extend(MechUnit, {
 			this.health = 13000;
 		}
 	},
+	classId: () => Boss1.classId
 });
+refresh(Boss1)
+
 Boss1.immunities.add(StatusEffects.unmoving);
 Boss1.immunities.add(StatusEffects.disarmed);
+Boss1.immunities.add(StatusEffects.shocked);
+Boss1.immunities.add(StatusEffects.blasted);
