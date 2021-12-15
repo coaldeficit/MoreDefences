@@ -1,5 +1,5 @@
 name: Lucifrons
-description: Fires hot water bubbles at enemy units and structures. Highly manoeuvrable.
+description: Fires hot water bubbles at enemy units and structures. Highly manoeuvrable and can carry large amounts of items.
 speed: 1
 accel: 0.6
 drag: 0.2
@@ -12,6 +12,7 @@ rotateShooting: false
 shootCone: 45
 range: 120
 lowAltitude: true
+itemCapacity: 80
 research: risso
 weapons: [
   {
