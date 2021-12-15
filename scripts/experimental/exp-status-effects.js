@@ -11,7 +11,7 @@ let radiationEffect = extend(StatusEffect, "irradiated-status", {
     damage: 0.25,
     localizedName: 'Irradiated',
     effect: Fx.freezing,
-    color: Color.valueOf("#7a9a9B"),
+    color: Color.valueOf("#826B57"),
     update(unit,time){
       this.super$update(unit,time);
       if (j.checkstatus(unit, StatusEffects.electrified) != false) {
