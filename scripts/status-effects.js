@@ -18,7 +18,7 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
     effect: Fx.freezing,
     color: Color.valueOf("#7a9a9B"),
     update(unit,time){
-      this.super$update
+      this.super$update(unit,time);
       if (checkstatus(unit, StatusEffects.burning) != false) {
         unit.damagePierce(8)
         checkstatus(unit, StatusEffects.burning).time = Math.max(300, checkstatus(unit, StatusEffects.burning).time)
