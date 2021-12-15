@@ -46,5 +46,6 @@ liquidHydrogenEffect.affinity(StatusEffects.melting, ((unit, result, time) => {
 }));
 
 module.exports = {
+    checkstatus: checkstatus,
     liquidHydrogenEffect: liquidHydrogenEffect
 };
