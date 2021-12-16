@@ -45,6 +45,8 @@ ammoTypes: {
     damage: 2000
     ammoMultiplier: 4
     reloadMultiplier: 0.4
+    status: more-defences-ivyx-irradiated-status
+    statusDuration: 240
   }
 }
 requirements: [

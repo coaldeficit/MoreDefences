@@ -62,7 +62,7 @@ ammoTypes: {
   }
   polonium: {
     speed: 1
-    damage: 150
+    damage: 130
     ammoMultiplier: 2
     fragBullets: 4
     lifetime: 120
@@ -71,8 +71,12 @@ ammoTypes: {
     collidesAir: false
     fragBullet: {
       speed: 4
-      damage: 35
+      damage: 30
+      status: more-defences-ivyx-irradiated-status
+      statusDuration: 120
     }
+    status: more-defences-ivyx-irradiated-status
+    statusDuration: 240
   }
 }
 requirements: [

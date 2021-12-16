@@ -96,11 +96,11 @@ ammoTypes: {
     height: 11
     collidesTiles: false
     splashDamageRadius: 105
-    splashDamage: 400
+    splashDamage: 370
     frontColor: e8a982
     backColor: e68e57
-    status: blasted
-    statusDuration: 60
+    status: more-defences-ivyx-irradiated-status
+    statusDuration: 240
   }
 }
 requirements: [

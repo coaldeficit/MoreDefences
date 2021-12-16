@@ -50,11 +50,13 @@ ammoTypes: {
   }
   polonium: {
     speed: 8
-    damage: 200
+    damage: 170
     ammoMultiplier: 1
     homingPower: 0.2
     lifetime: 17
     reloadMultiplier: 0.65
+    status: more-defences-ivyx-irradiated-status
+    statusDuration: 240
   }
 }
 requirements: [
