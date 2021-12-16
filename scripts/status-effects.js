@@ -15,12 +15,12 @@ let liquidHydrogenEffect = extend(StatusEffect, "liquid-hydrogen-status-effect",
       this.super$update(unit,time);
       if (statusFunc.checkstatus(unit, StatusEffects.burning) != false) {
         unit.damagePierce(8)
-        statusFunc.checkstatus(unit, StatusEffects.burning).time = Math.max(300, checkstatus(unit, StatusEffects.burning).time)
+        statusFunc.checkstatus(unit, StatusEffects.burning).time = Math.max(300, statusFunc.checkstatus(unit, StatusEffects.burning).time)
         unit.unapply(liquidHydrogenEffect)
       }
       if (statusFunc.checkstatus(unit, StatusEffects.melting) != false) {
         unit.damagePierce(8)
-        statusFunc.checkstatus(unit, StatusEffects.melting).time = Math.max(300, checkstatus(unit, StatusEffects.melting).time)
+        statusFunc.checkstatus(unit, StatusEffects.melting).time = Math.max(300, statusFunc.checkstatus(unit, StatusEffects.melting).time)
         unit.unapply(liquidHydrogenEffect)
       }
     }
