@@ -82,7 +82,8 @@ const bombCannon = extend(Weapon, {
   shootCone: 180,
   inaccuracy: 15,
   shootSound: Sounds.plasmadrop,
-  bullet: avalancheBomb
+  bullet: avalancheBomb,
+  autoTarget: true
 });
 const gun1 = extend(Weapon, {
   name: "more-defences-ivyx-avalanche-weapon",
