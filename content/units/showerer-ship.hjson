@@ -17,40 +17,5 @@ faceTarget: false
 targetFlags: [generator, turret, null]
 playerTargetFlags: [generator, turret, null]
 rotateShooting: false
-weapons: [{
-  name: generic-bomber-weapon
-  minShootVelocity: 0.35
-  x: 0
-  shootY: 0
-  reload: 30
-  velocityRnd: 1
-  shootCone: 180
-  inaccuracy: 15
-  shootSound: none
-  bullet: {
-    type: BombBulletType
-    hitEffect: flakExplosion
-    shootEffect: none
-    smokeEffect: none
-    width: 10
-    height: 14
-    splashDamageRadius: 48
-    splashDamage: 50
-    status: blasted
-    fragBullets: 17
-    fragBullet: {
-      type: BombBulletType
-      speed: 3
-      hitEffect: flakExplosion
-      shootEffect: none
-      smokeEffect: none
-      width: 5
-      height: 7
-      splashDamageRadius: 15
-      splashDamage: 9
-      status: blasted
-    }
-  }
-}]
 range: 140
 itemCapacity: 50

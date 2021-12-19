@@ -44,7 +44,10 @@ const avalancheBomb = extend(BasicBulletType, {
   lifetime: 70,
   keepVelocity: false,
   fragBullets: 2,
-  fragBullet: avalancheBombFrag
+  fragBullet: avalancheBombFrag,
+  range(){ // note to anyone reading: always override the range function for any bomb-type projectiles so that the unit ai actually uses them
+    return 4*70
+  }
 });
 const avalancheBullet = extend(BasicBulletType, {
   speed: 10,

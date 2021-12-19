@@ -14,52 +14,5 @@ engineOffset: 9
 engineSize: 4
 targetFlags: [generator, turret, null]
 playerTargetFlags: [generator, turret, null]
-weapons: [{
-  name: generic-bomber-weapon
-  minShootVelocity: 0.75
-  x: 3
-  shootY: 0
-  reload: 24
-  velocityRnd: 1
-  shootCone: 180
-  inaccuracy: 15
-  shootSound: none
-  bullet: {
-    type: BombBulletType
-    hitEffect: flakExplosion
-    shootEffect: none
-    smokeEffect: none
-    width: 7.5
-    height: 10.5
-    splashDamageRadius: 35
-    splashDamage: 17
-    status: blasted
-    fragBullets: 10
-    fragBullet: {
-      type: LiquidBulletType
-      liquid: oil
-      damage: 0.375
-      status: tarred
-      pierce: true
-      lifetime: 240
-      drag: 0.075
-    }
-  }
-}, {
-  name: pelter-gun
-  y: 7
-  x: 2.8
-  reload: 13
-  alternate: true
-  shootSound: pew
-  inaccuracy: 2
-  collidesTiles: false
-  bullet: {
-    speed: 5
-    damage: 4
-    ammoMultiplier: 1
-    lifetime: 20
-  }
-}]
 range: 140
 itemCapacity: 30
