@@ -1,0 +1,7 @@
+type: Floor
+name: Cinnabar
+variants: 3
+mapColor: E34234
+useColor: true
+wall: cinnabar-wall
+decoration: cinnabar-boulder

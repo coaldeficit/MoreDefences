@@ -1,0 +1,5 @@
+type: StaticWall
+name: Cinnabar Wall
+variants: 2
+mapColor: BA342A
+useColor: true
