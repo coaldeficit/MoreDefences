@@ -1,0 +1,49 @@
+localizedName: Micro
+description: Strikes the enemies. Mines ores.
+isCounted: false
+flying: true
+mineSpeed: 15
+mineTier: 5
+lowAltitude: true
+buildSpeed: 0.5
+drag: 0.01
+speed: 5
+rotateSpeed: 10
+accel: 0.07
+itemCapacity: 30
+health: 225
+engineOffset: 7
+hitSize: 12
+commandLimit: 10
+rotateShooting: false
+range: 80
+weapons: [{
+  name: nanogun
+  rotate: true
+  y: -3
+  x: 0
+  shootY: 4
+  rotateSpeed: 8
+  mirror: false
+  reload: 60
+  shadow: 12
+  shots: 1
+  shootCone: 300
+  inaccuracy: 0
+  shootSound: shotgun
+  bullet: {
+    type: ShrapnelBulletType
+    length: 180
+    width: 7
+    serrationLenScl: 10
+    serrationSpaceOffset: 60
+    serrationFadeOffset: 0
+    serrations: 8
+    serrartionWidth: 4
+    fromColor: ffffff
+    toColour: feed69
+    shootEffect: sparkShoot
+    damage: 80
+    buildingDamageMultiplier: 0.01
+  }
+}]

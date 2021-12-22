@@ -1,0 +1,26 @@
+name: Cobalt Twister
+description: Twists copper and aluminium to produce cobalt.
+health: 250
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 45
+updateEffect: pulverizeMedium
+consumes: {
+  power: 2
+  items: {
+    items: [
+      copper/2
+      aluminium/1
+    ]
+  }
+}
+requirements: [
+  bronze/45
+  aluminium/50
+  titanium/50
+]
+category: crafting
+research: tin-refurbish
+idleSound: respawning
+outputItem: cobalt/1

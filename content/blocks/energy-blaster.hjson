@@ -1,0 +1,39 @@
+type: GenericCrafter
+name: Energy Blaster
+description: Smelts Pyratite, Blast Compound, Silicon and Radium, forged together with slag to produce a dangerous resource, Rage.
+size: 3
+health: 1680
+hasPower: true
+hasItems: true
+craftTime: 200
+updateEffect: blastsmoke
+drawer: DrawSmelter
+consumes: {
+  power: 5.5
+  items: {
+    items: [
+      radium/5
+      pyratite/1
+      blast-compound/1
+      silicon/2
+    ]
+  }
+  liquid: {
+    liquid: slag
+    amount: 0.1
+    }
+}
+requirements: [
+  tin/240
+  lead/120
+  titanium/120
+  thorium/75
+  radiode/75
+  phase-fabric/50
+  surge-alloy/75
+]
+category: crafting
+research: blast-mixer
+idleSound: thruster
+idleSoundVolume: 0.75
+outputItem: rage/1

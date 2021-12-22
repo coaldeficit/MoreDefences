@@ -1,0 +1,40 @@
+name: Radium Valley
+description: A dangerous area that was formerly home to one of the strongest defences ever built. Unfortunately, 2 volcanos erupted here, causing massive amounts of ash to be released into the surrounding area and destroying alot of structures, only the most basic ones surviving.	
+loadout: basicFoundation
+startingItems: [	
+  copper/200	
+  lead/200
+  tin/200
+  silicon/40
+  titanium/40
+]	
+conditionWave: 6
+launchPeriod: 2
+requirements: [	
+  {	
+    type: ZoneWave	
+    zone: desertWastes
+    wave: 20
+  }	
+  {	
+    type: Unlock	
+    block: thermal-generator
+  }	
+  {	
+    type: Unlock	
+    block: launch-pad
+  }	
+  {	
+    type: Unlock	
+    block: vault
+  }	
+]	
+resources: [	
+  copper	
+  lead	
+  coal	
+  sand	
+  titanium
+  scrap
+  radium
+]

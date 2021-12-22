@@ -1,0 +1,21 @@
+health: 2160
+name: Buckshot
+size: 4
+reloadTime: 90
+shots: 25
+ejectEffect: casing3Double
+inaccuracy: 15
+spread: 0
+rotateSpeed: 4
+range: 240
+recoil: 3.5
+velocityInaccuracy: 0.3
+requirements: [
+  bronze/30
+  aluminium/55
+  cobalt/45
+  thorium/35
+]
+research: scoria
+category: turret
+shootSound: shotgun

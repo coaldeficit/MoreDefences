@@ -1,0 +1,157 @@
+type: ItemTurret
+shootSound: pew
+name: Reservation
+description: A far ranged turret that stores 350 ammo, can use various types of bullets. Useful in times of deficit.
+health: 1100
+itemCapacity: 350
+maxAmmo: 350
+range: 350
+xRand: 2
+reloadTime: 25
+recoil: 4
+inaccuracy: 8
+size: 3
+ammoTypes: {
+  tin: {
+    speed: 7
+    damage: 7
+    width: 5
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 10
+    lifetime: 240
+    backColor: ac7349
+    frontColor: dcd16b
+  }
+  copper: {
+    speed: 6
+    damage: 9
+    width: 9
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 10
+    backColor: ac7349
+    frontColor: dcd16b
+    lifetime: 240
+  }
+  sand: {
+    speed: 4
+    damage: 4
+    width: 5
+    height: 3
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 5
+    backColor: ac7349
+    frontColor: dcd16b
+    reloadMultiplier: 3
+    innacuracy: 15
+    lifetime: 240
+  }
+  silicon: {
+    speed: 7
+    damage: 18
+    width: 4
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 25
+    homingPower: 0.01
+    homingRange: 75
+    backColor: 6e6d6d
+    frontColor: ffffff
+    bulletType: MissileBulletType
+    reloadMultiplier: 0.8
+    lifetime: 240
+  }
+  metaglass: {
+    speed: 5
+    damage: 16
+    width: 8
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 25
+    backColor: bfbfbf
+    frontColor: ffffff
+    bulletType: FlakBulletType
+    reloadMultiplier: 0.7
+    lifetime: 240
+  }
+  plastanium: {
+    speed: 8
+    damage: 25
+    width: 8
+    height: 6
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 50
+    backColor: 26ff55
+    frontColor: ffffff
+    reloadMultiplier: 0.6
+    splashDamage:	5
+    splashDamageRadius:	20
+    hitEffect: flakExplosionBig
+    lifetime: 240
+  }
+  pyratite: {
+    speed: 4
+    damage: 20
+    width: 12
+    height: 9
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 25
+    backColor: c78500
+    frontColor: f3ff52
+    reloadMultiplier: 0.6
+    lifetime: 240
+    incendAmount: 2
+  }
+  blast-compound: {
+    speed: 4
+    damage: 31
+    width: 12
+    height: 9
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 35
+    backColor: ff3333
+    frontColor: ffaaaa
+    lifetime: 240
+    fragBullets: 7
+    fragBullet: {
+       speed: 3
+       damage: 12
+      }
+     reloadMultiplier: 0.6
+   }
+   surge-alloy: {
+    speed: 9
+    damage: 28
+    width: 12
+    height: 9
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 50
+    lightning: 2
+    lightningLength: 12
+    splashDamage: 22
+    backColor: ffff00
+    frontColor: ffffff
+    reloadMultiplier: 0.5
+    lifetime: 240
+    }
+}
+
+requirements: [
+  tin/100
+  graphite/45
+  titanium/75
+  bronze/80
+  ]
+  
+research: cyclone
+category: turret

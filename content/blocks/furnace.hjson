@@ -1,0 +1,28 @@
+type: GenericCrafter
+name: Furnace
+description: Combines tin and copper to produce bronze.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 45
+updateEffect: smeltsmoke
+drawer: DrawSmelter
+consumes: {
+  power: 0.75
+  items: {
+    items: [
+      tin/1
+      copper/3
+    ]
+  }
+}
+requirements: [
+  tin/80
+  copper/60
+  lead/45
+]
+category: crafting
+research: silicon-smelter
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: bronze/1

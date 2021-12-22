@@ -1,0 +1,75 @@
+type: ItemTurret
+name: Stinger
+description: A medium-sized 3 way turret.
+health: 800
+size: 2
+reloadTime: 30
+range: 125
+shots: 3
+inaccuracy: 10
+rotatespeed: 12
+spread: 12
+targetAir: false
+ammoTypes: {
+  titanium: {
+    speed: 6
+    damage: 35
+    bulletWidth: 10
+    bulletHeight: 20
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 1
+    reloadMultiplier: 1
+    frontColor: ffffff
+    backColor: 00ffff
+  }
+plastanium: {
+    speed: 6
+    damage: 25
+    bulletWidth: 5
+    bulletHeight: 16
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 3
+    reloadMultiplier: 3
+    frontColor: ffffff
+    backColor: 2cff00
+    splashDamage: 12
+    splashDamageRadius: 16
+    }
+silicon: {
+    speed: 7
+    damage: 28
+    bulletWidth: 10
+    bulletHeight: 10
+    shootEffect: shootSmall
+    shootSmallSmoke: shootSmallSmoke
+    ammoMultiplier: 2
+    reloadMultiplier: 2
+    frontColor: ffffff
+    backColor: 222222
+    homingPower: 0.1
+}
+pyratite: {
+    speed: 4
+    damage: 66
+    bulletWidth: 20
+    bulletHeight: 14
+    shootEffect: shootSmall
+    shootSmallSmoke: shootSmallSmoke
+    ammoMultiplier: 2
+    reloadMultiplier: 0.4
+    frontColor: ffffab
+    backColor: de5c00
+    incendAmount: 8
+}
+}
+requirements: [
+  bronze/55
+  titanium/95
+  thorium/35
+  radiode/25
+]
+category: turret
+research: salvo
+ 

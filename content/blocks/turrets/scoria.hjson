@@ -1,0 +1,42 @@
+type: LiquidTurret
+name: Scoria
+description: A larged-sized liquid turret.Throws hot slag on the enemies. Transferes water to oil to punish the enemy.
+size: 3
+health: 840
+range: 190
+maxAmmo: 45
+recoil: 3
+shots: 30
+velocityInaccuracy: 0.5
+spread: 3
+reloadTime: 60
+inaccuracy: 10
+shootCone: 60
+shootSound: splash
+shootEffect: shootLiquid
+liquidCapacity: 45
+ammoPerShot: 9
+activeSound: splash
+
+ammoTypes: {
+	slag: {
+		type: LiquidBulletType
+		liquid: slag
+		damage: 8
+		speed: 6
+		knockback: 1.5
+		ammoMultiplier: 1
+		status: melting
+		statusDuration: 120
+		puddleSize: 8
+	}
+}
+requirements: [
+	lead/85
+	bronze/55
+	metaglass/60
+	titanium/80
+]
+
+category: turret
+research: wave

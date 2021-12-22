@@ -1,0 +1,12 @@
+type: Router
+name: Dispenser
+description: An advanced distributor. Splits items up into 11 other directions equally.
+size: 3
+health: 360
+requirements: [
+  copper/7
+  lead/7
+  graphite/7
+  ]
+research: distributor
+category: distribution

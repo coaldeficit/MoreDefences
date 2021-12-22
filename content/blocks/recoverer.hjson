@@ -1,0 +1,34 @@
+name: Recoverer
+description: An upgraded Mend Projector. Mends more frequently and efficiently.
+health: 800
+size: 3
+range: 125
+reload: 240
+healPercent: 25
+liquidCapacity: 20
+color: 10ff00
+phase: c3ff0f
+consumes: {
+  power: 3
+  items: {
+    items:[
+      phase-fabric/2
+]
+booster: true
+optional: true
+}
+  liquid: {
+    liquid: water
+    amount: 0.1
+  }
+}
+requirements: [
+  lead/150
+  titanium/75
+  silicon/40
+  thorium/25
+  surge-alloy/15
+  phase-fabric/10
+]
+category: effect
+research: mend-projector

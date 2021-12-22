@@ -1,0 +1,27 @@
+type: OverdriveProjector
+ name: Overdriver
+ description: Speeds up the process of nearby buildings within its range. Useful for front-line.
+ health: 40
+  consumes: {
+  power: 0.6
+  items: {
+    items:[
+      silicon/1
+]
+booster: true
+optional: true
+}
+}
+  speedBoost: 1.15
+  speedBoostPhase: 0.40
+  useTime: 375
+  phaseRangeBoost: 10
+  range: 32
+  size: 1
+  requirements: [
+    silicon/10
+    lead/50
+    copper/35
+  ]
+  category: effect
+  research: mender

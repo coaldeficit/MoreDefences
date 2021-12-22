@@ -1,0 +1,35 @@
+ammoTypes: {
+  graphite: artilleryDense
+  silicon: artilleryHoming
+  pyratite: artilleryIncendiary
+  blast-compound: artilleryExplosive
+  plastanium: artilleryPlastic
+
+rage: {
+    type: ArtilleryBulletType
+    reloadMultiplier: 0.6
+    width: 14
+    height: 14
+    ammoMultiplier: 15
+    backColor: 00aeff
+    frontColor: d1f0ff
+    hitEffect: fireballsmoke
+    incendAmount: 4
+    incendSpread: 0.5
+    incendChance: 2
+    homingPower: 0.02
+    homingRange: 75
+    splashDamage: 95
+    splashDamageRadius: 80
+    fragBullets: 2
+    fragBullet: {
+       speed: 3
+       damage: 33
+       type: MissileBulletType
+       bulletWidth: 16
+       bulletHeight: 18
+      }
+    lifetime: 55
+    speed: 5
+  }
+}

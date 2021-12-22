@@ -1,0 +1,51 @@
+type: ItemTurret
+name: Shatter
+size: 3
+health: 1480
+shots: 5
+range: 235
+burstSpacing: 3 
+targetGround: false
+recoil: 4
+reloadTime: 22
+rotateSpeed: 10
+inaccuracy: 12
+shootcone: 17
+shootSound: shootSnap
+ammoTypes: {
+  scrap: flakScrap
+  lead: flakLead
+  metaglass: flakGlass
+  plastanium: fragPlastic
+  blast-compound: fragExplosive
+  
+  rage: {
+    damage: 16
+    splashDamage: 30
+    speed: 4
+    reloadMultiplier: 0.4
+    bulletWidth: 10
+    bulletHeight: 10
+    splashDamageRadius: 90
+    ammoMultiplier: 20
+    backColor: 00aeff
+    frontColor: ffffff
+    homingRange: 50
+    homingPower: 0.002
+    fragBullets: 6
+    fragBullet: {
+       speed: 11
+       damage: 9
+       type: MissileBulletType
+      }
+  }
+}
+requirements: [
+  copper/120
+  lead/180
+  metaglass/80
+  plastanium/60
+  radiode/45
+  ]
+research: scatter
+category: turret

@@ -45,3 +45,16 @@ require("more-defences-ivyx/units/bosses/crusher")
 
 // experimental
 // require("more-defences-ivyx/experimental/experimental")
+
+// Crafting
+require('more-defences-ivyx/blocks/crafting/purifier');
+require('more-defences-ivyx/blocks/crafting/sterilizer');
+require('more-defences-ivyx/blocks/crafting/cobalt-twister');
+require('more-defences-ivyx/blocks/crafting/ionizer');
+
+// Defensive
+require('more-defences-ivyx/blocks/defense/overtower');
+require('more-defences-ivyx/blocks/defense/recoverer');
+
+// Turrets
+require('more-defences-ivyx/blocks/turrets/buckshot');

@@ -1,0 +1,24 @@
+type: SolidPump
+name: Large Water Extractor
+description: An upgraded Water Extractor.
+size: 3
+health: 360
+pumpAmount: 0.3
+liquidCapacity: 120
+rotateSpeed: 1.2
+hasPower: true
+consumes: {
+  power: 1.4
+ }
+ result: water
+requirements: [
+  lead/60
+  graphite/60
+  silicon/50
+  titanium/45
+  plastanium/30
+  thorium/30
+]
+attribute: water
+category: production
+research: water-extractor

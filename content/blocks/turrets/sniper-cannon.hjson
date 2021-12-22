@@ -1,0 +1,58 @@
+type: ItemTurret
+name: Sniper Cannon
+description: A long range cannon. Can peirce through enemies.
+health: 250
+size: 1
+reloadTime: 80
+range: 250
+inaccuracy: 0
+rotatespeed: 40
+shots: 1
+spread: 0
+ammoTypes: {
+  copper: {
+    speed: 7
+    damage: 50
+    width: 8
+    bulletHeight: 20
+    ammoMultiplier: 1
+    pierce: true
+  }
+  coal: {
+    speed: 6
+    damage: 40
+    width: 8
+    height: 18
+    incendAmount: 0.05
+    pierce: true
+  }
+  graphite: {
+    speed: 9
+    damage: 98
+    width: 8
+    height: 30
+    ammoMultiplier: 3
+    reloadMultiplier: 0.6
+    frontColor: ffffff
+    backColor: 56a7c4
+    pierce: true
+  }
+  pyratite: {
+    speed: 6
+    damage: 60
+    width: 8
+    height: 22
+    incendAmount: 0.25
+    ammoMultiplier: 5
+    frontColor: ffffff
+    backColor: e8b52a
+    pierce: true
+  }
+}
+requirements: [
+  tin/25
+  lead/45
+]
+category: turret
+research: hail
+ 

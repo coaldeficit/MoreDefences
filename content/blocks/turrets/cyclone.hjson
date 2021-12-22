@@ -1,0 +1,32 @@
+ammoTypes: {
+  metaglass: fragGlass
+  blast-compound: fragExplosive
+  plastanium: fragPlastic
+  surge-alloy: fragSurge
+  
+  rage: {
+    damage: 20
+    reloadMultiplier: 0.7
+    width: 8
+    height: 8
+    ammoMultiplier: 15
+    backColor: 00aeff
+    frontColor: ffffff
+    hitEffect: explosion
+    incendAmount: 1
+    incendSpread: 10
+    incendChance: 2
+    homingPower: 0.02
+    homingRange: 75
+    splashDamage: 45
+    splashDamageRadius: 64
+    fragBullets: 3
+    fragBullet: {
+       speed: 12
+       damage: 10
+       type: MissileBulletType
+      }
+    lifetime: 200
+    speed: 6
+  }
+}

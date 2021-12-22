@@ -1,0 +1,6 @@
+type: material
+name: Bronze
+description: An alloy of tin and copper
+cost: 1.5
+hardness: 2
+color: c4572f

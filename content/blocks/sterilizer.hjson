@@ -1,0 +1,37 @@
+name: Steriliser
+description: Purifies Oxidised Radium to make Radiode in a faster rate.
+size: 3
+health: 720
+hasPower: true
+hasItems: true
+craftTime: 40 
+effect: fuelburn
+itemCapacity: 60
+updateEffect: fuelburn
+consumes: {
+  power: 2.5
+  items: {
+    items: [
+      radium/8
+      metaglass/3
+    ]
+  }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.15
+  }
+}
+requirements: [
+  tin/200
+  lead/120
+  bronze/80
+  silicon/75
+  titanium/80
+  thorium/90
+  radiode/55
+]
+category: crafting
+research: purifier
+idleSound: respawning
+idleSoundVolume: 2
+outputItem: radiode/3

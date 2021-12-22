@@ -1,0 +1,31 @@
+ammoTypes: {
+  blast-compound: missileExplosive
+  pyratite: missileIncendiary
+  surge-alloy: missileSurge
+  
+  rage: {
+    type: MissileBulletType
+    damage: 35
+    width: 9
+    height: 10
+    reloadMultiplier: 0.5
+    ammoMultiplier: 10
+    backColor: 00aeff
+    frontColor: ffffff
+    splashDamage: 45
+    splashDamageRadius: 70
+    incendAmount: 4
+    incendSpread: 2
+    incendChance: 4
+    homingPower: 0.05
+    homingRange: 75
+    fragBullets: 4
+    fragBullet: {
+       speed: 3
+       damage: 12
+       type: MissileBulletType
+      }
+    lifetime: 200
+    speed: 6
+  }
+}

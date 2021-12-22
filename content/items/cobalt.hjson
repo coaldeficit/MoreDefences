@@ -1,0 +1,6 @@
+type: material
+name: Cobalt
+description: Can be found in bundles of Aluminium and Copper or can be formed with both.
+cost: 1.1
+hardness: 4
+color: a8b0e6
