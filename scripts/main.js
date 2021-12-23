@@ -12,6 +12,13 @@ require("more-defences-ivyx/zincite-extractor")
 require("more-defences-ivyx/asphalt-mixer")
 require("more-defences-ivyx/titaniumseperator")
 require("more-defences-ivyx/units/refreshconstruct")
+require('more-defences-ivyx/purifier');
+require('more-defences-ivyx/sterilizer');
+require('more-defences-ivyx/cobalt-twister');
+require('more-defences-ivyx/ionizer');
+require('more-defences-ivyx/overtower');
+require('more-defences-ivyx/recoverer');
+require('more-defences-ivyx/buckshot');
 
 // unit stuff
 // ground
@@ -45,16 +52,3 @@ require("more-defences-ivyx/units/bosses/crusher")
 
 // experimental
 // require("more-defences-ivyx/experimental/experimental")
-
-// Crafting
-require('more-defences-ivyx/blocks/crafting/purifier');
-require('more-defences-ivyx/blocks/crafting/sterilizer');
-require('more-defences-ivyx/blocks/crafting/cobalt-twister');
-require('more-defences-ivyx/blocks/crafting/ionizer');
-
-// Defensive
-require('more-defences-ivyx/blocks/defense/overtower');
-require('more-defences-ivyx/blocks/defense/recoverer');
-
-// Turrets
-require('more-defences-ivyx/blocks/turrets/buckshot');
