@@ -23,7 +23,6 @@ consumes: {
   }
 }
 requirements: [
-  polonium/25
   vanadium/50
   surge-alloy/100
   thorium/300
