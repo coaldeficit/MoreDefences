@@ -27,11 +27,11 @@ requirements: [
   bronze/80
   silicon/75
   titanium/80
-  thorium/90
-  radiode/55
+  radium/90
+  thorium/55
 ]
 category: crafting
-research: purifier
+research: ionizer
 idleSound: respawning
 idleSoundVolume: 2
 outputItem: radiode/3

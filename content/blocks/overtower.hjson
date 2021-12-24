@@ -9,7 +9,6 @@ consumes: {
     items: {
       items:[
         silicon/3
-        phase-fabric/2
         fusion/1
       ]
   }

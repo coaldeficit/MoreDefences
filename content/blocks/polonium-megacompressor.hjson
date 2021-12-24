@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Polonium Megacompressor
+name: Polonium Compressor
 description: Compresses large amounts of Thorium, Phase Fabric and slag to create large quantities of Polonium.
 health: 800
 size: 4
@@ -23,8 +23,7 @@ consumes: {
   }
 }
 requirements: [
-  polonium/25
-  vanadium/50
+  vanadium/150
   surge-alloy/100
   thorium/300
   titanium/360
@@ -33,7 +32,7 @@ requirements: [
   copper/540
 ]
 category: crafting
-research: polonium-compressor
+research: alloy-smelter
 idleSound: respawning
 idleSoundVolume: 0.5
 outputItem: polonium/3
