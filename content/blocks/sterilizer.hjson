@@ -25,10 +25,7 @@ requirements: [
   tin/200
   lead/120
   bronze/80
-  silicon/75
-  titanium/80
-  radium/90
-  thorium/55
+  plastanium/90
 ]
 category: crafting
 research: ionizer
