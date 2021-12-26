@@ -1,3 +1,5 @@
+let breaksound = loadSound("icebreak")
+let hitsound = loadSound("icehit")
 let frozenWall = extend(Block, "frozen-wall", {
   description: "Frozen wall.",
   health: 25,
@@ -5,7 +7,8 @@ let frozenWall = extend(Block, "frozen-wall", {
   solid: true,
   destructible: true,
   update: true,
-  rebuildable: false
+  rebuildable: false,
+  destroySound: Sounds.none
 });
 let frozenWallL = extend(Block, "frozen-wall-large", {
   description: "Frozen wall. Spans multiple tiles.",
@@ -14,7 +17,8 @@ let frozenWallL = extend(Block, "frozen-wall-large", {
   solid: true,
   destructible: true,
   update: true,
-  rebuildable: false
+  rebuildable: false,
+  destroySound: Sounds.none
 });
 
 frozenWall.buildType = () => extend(Building, {
@@ -33,8 +37,12 @@ frozenWall.buildType = () => extend(Building, {
   },
   afterDestroyed(){
     this.super$afterDestroyed();
-    
+    breaksound.at(this.x, this.y, Mathf.random(0.9,1.1))
   },
+  handleDamage(amount){
+    if (this.health-amount > 0) hitsound.at(this.x, this.y, Mathf.random(0.9,1.1))
+    return amount
+  }
 });
 frozenWallL.buildType = () => extend(Building, {
   update(){
@@ -52,8 +60,12 @@ frozenWallL.buildType = () => extend(Building, {
   },
   afterDestroyed(){
     this.super$afterDestroyed();
-    
+    breaksound.at(this.x, this.y, Mathf.random(0.9,1.1))
   },
+  handleDamage(amount){
+    if (this.health-amount > 0) hitsound.at(this.x, this.y, Mathf.random(0.9,1.1))
+    return amount
+  }
 });
 
 module.exports = {
