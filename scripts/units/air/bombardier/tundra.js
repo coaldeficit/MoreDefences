@@ -112,14 +112,15 @@ const railgun = extend(Weapon, {
     type: BasicBulletType,
     speed: 15,
     hitSound: Sounds.explosionbig,
-    width: 5,
-    height: 7,
-    damage: 300,
-    splashDamage: 250,
-    splashDamageRadius: 16,
+    width: 8,
+    height: 20,
+    damage: 400,
+    splashDamage: 350,
+    splashDamageRadius: 8,
     status: StatusEffects.disarmed,
-    statusDuration: 30,
-    lifetime: 40
+    statusDuration: 60,
+    lifetime: 35,
+    backColor: #00aaff
   }),
 });
 
