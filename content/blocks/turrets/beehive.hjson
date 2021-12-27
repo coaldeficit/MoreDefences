@@ -21,11 +21,12 @@ ammoTypes: {
     lifetime: 120
     homingPower: 0.05
     homingRange: 80
-    backColor: ffff00
-    frontColor: 000000
+    backColor: 000000
+    frontColor: ffff00
     bulletWidth: 3
     bulletHeight: 4
     collidesAir: false
+    sprite: striped-bullet
   }
   zinc: {
     speed: 4.5
@@ -35,12 +36,13 @@ ammoTypes: {
     lifetime: 120
     homingPower: 0.05
     homingRange: 80
-    backColor: D0D8DF
-    frontColor: 000000
+    backColor: 000000
+    frontColor: D0D8DF
     bulletWidth: 6
     bulletHeight: 8
     collidesAir: false
     reloadMultiplier: 0.6
+    sprite: striped-bullet
   }
 }
 requirements: [
