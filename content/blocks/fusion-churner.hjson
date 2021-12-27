@@ -8,7 +8,7 @@ craftTime: 120
 drawer: DrawSmelter
 flameColor: dddddd
 consumes: {
-  power: 15
+  power: 9
   items: {
     items: [
       cobalt/3
