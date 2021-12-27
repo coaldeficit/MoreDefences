@@ -4,7 +4,6 @@ type: Drill
 size: 1
 tier: 1
 drillTime: 200
-consumes: {
 drawMineItem: false
 requirements: [
   tin/10
