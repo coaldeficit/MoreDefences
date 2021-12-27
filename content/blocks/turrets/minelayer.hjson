@@ -3,7 +3,7 @@ name: Minelayer
 description: A turret that fires mines that detonate when an enemy ground unit touches them.
 health: 800
 size: 2
-reloadTime: 180
+reloadTime: 300
 range: 200
 inaccuracy: 15
 rotatespeed: 5
@@ -13,10 +13,10 @@ velocityInaccuracy: 0.3
 ammoTypes: {
   copper: {
     speed: 7
-    damage: 50
-    lifetime: 600
-    bulletWidth: 15
-    bulletHeight: 15
+    damage: 20
+    lifetime: 1800
+    bulletWidth: 20
+    bulletHeight: 20
     collidesAir: false
     drag: 0.05
     status: blasted
@@ -25,11 +25,11 @@ ammoTypes: {
   },
   lead: {
     speed: 6
-    damage: 90
-    lifetime: 1200
+    damage: 40
+    lifetime: 2400
     reloadMultiplier: 0.6
-    bulletWidth: 15
-    bulletHeight: 15
+    bulletWidth: 20
+    bulletHeight: 20
     collidesAir: false
     drag: 0.05
     status: blasted
@@ -38,10 +38,10 @@ ammoTypes: {
   },
   silicon: {
     speed: 5
-    damage: 30
-    lifetime: 600
-    bulletWidth: 15
-    bulletHeight: 15
+    damage: 15
+    lifetime: 1200
+    bulletWidth: 20
+    bulletHeight: 20
     collidesAir: false
     drag: 0.05
     splashDamage: 60
@@ -52,10 +52,10 @@ ammoTypes: {
   }
   blast-compound: {
     speed: 6
-    damage: 20
-    lifetime: 600
-    bulletWidth: 15
-    bulletHeight: 15
+    damage: 25
+    lifetime: 1200
+    bulletWidth: 20
+    bulletHeight: 20
     collidesAir: false
     drag: 0.065
     splashDamage: 120
