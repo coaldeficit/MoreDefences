@@ -34,7 +34,7 @@ const avalancheBomb = extend(BasicBulletType, {
   shrinkY: 0.7,
   hitShake: 5,
   splashDamageRadius: 100,
-  splashDamage: 150,
+  splashDamage: 175,
   status: StatusEffects.freezing,
   statusDuration: 360,
   speed: 4,
