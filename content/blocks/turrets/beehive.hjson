@@ -42,7 +42,7 @@ ammoTypes: {
     bulletHeight: 8
     collidesAir: false
     reloadMultiplier: 0.6
-    sprite: striped-bullet
+    sprite: more-defences-ivyx-striped-bullet
   }
 }
 requirements: [
