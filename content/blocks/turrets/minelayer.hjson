@@ -7,7 +7,6 @@ reloadTime: 180
 range: 200
 inaccuracy: 15
 rotatespeed: 5
-alternate: true
 shots: 6
 targetAir: false
 velocityInaccuracy: 0.3
