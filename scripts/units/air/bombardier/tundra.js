@@ -120,7 +120,7 @@ const railgun = extend(Weapon, {
     status: StatusEffects.disarmed,
     statusDuration: 60,
     lifetime: 35,
-    backColor: #00aaff
+    backColor: Color.valueOf("#00aaff"),
   }),
 });
 
