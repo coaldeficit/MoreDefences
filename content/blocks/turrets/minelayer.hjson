@@ -44,7 +44,21 @@ ammoTypes: {
     bulletHeight: 20
     collidesAir: false
     drag: 0.05
-    splashDamage: 60
+    splashDamage: 20
+    splashDamageRadius: 30
+    status: blasted
+    statusDuration: 20
+    sprite: more-defences-ivyx-mine
+  }
+  pyratite: {
+    speed: 4
+    damage: 10
+    lifetime: 600
+    bulletWidth: 20
+    bulletHeight: 20
+    collidesAir: false
+    drag: 0.05
+    splashDamage: 20
     splashDamageRadius: 30
     status: blasted
     statusDuration: 20
@@ -58,7 +72,7 @@ ammoTypes: {
     bulletHeight: 20
     collidesAir: false
     drag: 0.065
-    splashDamage: 120
+    splashDamage: 45
     splashDamageRadius: 60,
     reloadMultiplier: 0.7,
     status: blasted
@@ -67,9 +81,8 @@ ammoTypes: {
   }
 }
 requirements: [
-  copper/160
-  graphite/130
-  titanium/100
+  graphite/45
+  titanium/30
   silicon/60
 ]
 shootSound: shootSnap
