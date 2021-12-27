@@ -21,7 +21,6 @@ ammoTypes: {
     drag: 0.05
     status: blasted
     statusDuration: 20
-    sprite: moredefences-ivyx-mine
   },
   lead: {
     speed: 6
@@ -34,7 +33,6 @@ ammoTypes: {
     drag: 0.05
     status: blasted
     statusDuration: 20
-    sprite: moredefences-ivyx-mine
   },
   silicon: {
     speed: 5
@@ -48,7 +46,6 @@ ammoTypes: {
     splashDamageRadius: 30
     status: blasted
     statusDuration: 20
-    sprite: moredefences-ivyx-mine
   }
   blast-compound: {
     speed: 6
@@ -63,7 +60,6 @@ ammoTypes: {
     reloadMultiplier: 0.7,
     status: blasted
     statusDuration: 20
-    sprite: moredefences-ivyx-mine
   }
 }
 requirements: [
