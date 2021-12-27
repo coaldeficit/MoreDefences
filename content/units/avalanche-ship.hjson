@@ -1,7 +1,7 @@
 name: Avalanche
 flying: true
 description: A heavy bomber ship. Drops highly destructive bombs on enemy units and structures that freeze any units they hit.
-speed: 1.5
+speed: 1
 drag: 0.01
 accel: 0.1
 hitSize: 34

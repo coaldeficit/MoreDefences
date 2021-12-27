@@ -1,5 +1,5 @@
 name: Ionizer
-description: Ionizes titanium and thorium to produce radium.
+description: Fires beams of graphite particles at a lead target to produce Radium.
 size: 2
 hasPower: true
 hasItems: true
@@ -9,8 +9,8 @@ consumes: {
   power: 1
   items: {
     items: [
-      titanium/1
-      thorium/3
+      graphite/1
+      lead/3
     ]
   }
 }
@@ -24,4 +24,4 @@ category: crafting
 research: plastanium-compressor
 idleSound: respawning
 idleSoundVolume: 2
-outputItem: radium/5
+outputItem: radium/3

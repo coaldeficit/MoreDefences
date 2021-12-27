@@ -34,7 +34,7 @@ const avalancheBomb = extend(BasicBulletType, {
   shrinkY: 0.7,
   hitShake: 5,
   splashDamageRadius: 100,
-  splashDamage: 200,
+  splashDamage: 175,
   status: StatusEffects.freezing,
   statusDuration: 360,
   speed: 4,
@@ -51,7 +51,7 @@ const avalancheBomb = extend(BasicBulletType, {
 });
 const avalancheBullet = extend(BasicBulletType, {
   speed: 10,
-  damage: 50,
+  damage: 20,
   width: 7,
   height: 9,
   frontColor: Color.valueOf("#6ecdec"),
@@ -80,7 +80,7 @@ const bombCannon = extend(Weapon, {
   mirror: false,
   x: 0,
   shootY: 0,
-  reload: 70,
+  reload: 120,
   velocityRnd: 1,
   shootCone: 180,
   inaccuracy: 15,
