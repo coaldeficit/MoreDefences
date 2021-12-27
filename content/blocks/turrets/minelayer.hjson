@@ -15,8 +15,8 @@ ammoTypes: {
     speed: 7
     damage: 50
     lifetime: 600
-    bulletWidth: 5
-    bulletHeight: 4
+    bulletWidth: 15
+    bulletHeight: 15
     collidesAir: false
     drag: 0.05
     status: blasted
@@ -28,8 +28,8 @@ ammoTypes: {
     damage: 90
     lifetime: 1200
     reloadMultiplier: 0.6
-    bulletWidth: 5
-    bulletHeight: 4
+    bulletWidth: 15
+    bulletHeight: 15
     collidesAir: false
     drag: 0.05
     status: blasted
@@ -40,8 +40,8 @@ ammoTypes: {
     speed: 5
     damage: 30
     lifetime: 600
-    bulletWidth: 5
-    bulletHeight: 4
+    bulletWidth: 15
+    bulletHeight: 15
     collidesAir: false
     drag: 0.05
     splashDamage: 60
@@ -54,8 +54,8 @@ ammoTypes: {
     speed: 6
     damage: 20
     lifetime: 600
-    bulletWidth: 5
-    bulletHeight: 4
+    bulletWidth: 15
+    bulletHeight: 15
     collidesAir: false
     drag: 0.065
     splashDamage: 120
