@@ -1,7 +1,7 @@
 type: resource
 name: Radium
 description: A highly explosive radioactive resource. Can be used for upgrading ammo and can be purified.
-hardness: 5
+hardness: 4
 radioactivity: 1.05
 flammability: 0
 explosiveness: 1

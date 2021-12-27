@@ -1,5 +1,5 @@
 name: Ionizer
-description: Ionizes graphite and lead to make radium.
+description: Ionizes titanium and thorium to produce radium.
 size: 2
 hasPower: true
 hasItems: true
@@ -9,19 +9,19 @@ consumes: {
   power: 1
   items: {
     items: [
-      graphite/1
-      lead/3
+      titanium/1
+      thorium/3
     ]
   }
 }
 requirements: [
-  copper/50
   lead/35
-  graphite/60
-  titanium/20
+  graphite/25
+  thorium/60
+  plastanium/20
 ]
 category: crafting
-research: silicon-smelter
+research: plastanium-compressor
 idleSound: respawning
 idleSoundVolume: 2
-outputItem: radium/3
+outputItem: radium/5

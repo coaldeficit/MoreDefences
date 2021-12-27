@@ -17,7 +17,7 @@ consumes: {
   }
 }
 requirements: [
-  tin/80
+  tin/45
   copper/60
   lead/45
 ]

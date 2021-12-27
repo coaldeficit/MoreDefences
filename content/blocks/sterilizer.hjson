@@ -1,5 +1,5 @@
-name: Steriliser
-description: Purifies Oxidised Radium to make Radiode in a faster rate.
+name: Sterilizer
+description: Purifies Radium to make Radiode.
 size: 3
 health: 720
 hasPower: true
@@ -12,18 +12,18 @@ consumes: {
   power: 2.5
   items: {
     items: [
-      radium/8
+      radium/4
       metaglass/3
     ]
   }
   liquid: {
-    liquid: cryofluid
+    liquid: oil
     amount: 0.15
   }
 }
 requirements: [
-  tin/200
-  lead/120
+  tin/80
+  graphite/120
   bronze/80
   plastanium/90
 ]
