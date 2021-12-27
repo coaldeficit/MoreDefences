@@ -36,7 +36,7 @@ const tundraBomb = extend(BasicBulletType, {
   shrinkY: 0.45,
   hitShake: 9,
   splashDamageRadius: 150,
-  splashDamage: 360,
+  splashDamage: 400,
   status: StatusEffects.freezing,
   statusDuration: 720,
   speed: 4,
