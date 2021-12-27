@@ -10,12 +10,12 @@ inaccuracy: 0.5
 rotatespeed: 2.5
 maxAmmo: 60
 spread: 15
-shots: 3
+shots: 2
 targetAir: false
 ammoTypes: {
   lead: {
     speed: 4.5
-    damage: 8
+    damage: 13
     ammoMultiplier: 2
     pierce: true
     lifetime: 120
@@ -30,7 +30,7 @@ ammoTypes: {
   }
   zinc: {
     speed: 4.5
-    damage: 16
+    damage: 20
     ammoMultiplier: 7
     pierce: true
     lifetime: 120
