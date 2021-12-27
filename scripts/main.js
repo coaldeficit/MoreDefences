@@ -19,6 +19,7 @@ require('more-defences-ivyx/ionizer');
 require('more-defences-ivyx/overtower');
 require('more-defences-ivyx/recoverer');
 require('more-defences-ivyx/buckshot');
+require('more-defences-ivyx/frozen-wall');
 
 // unit stuff
 // ground
@@ -41,6 +42,7 @@ require("more-defences-ivyx/units/air/bombardier/bombardier")
 require("more-defences-ivyx/units/air/bombardier/pelter")
 require("more-defences-ivyx/units/air/bombardier/showerer")
 require("more-defences-ivyx/units/air/bombardier/avalanche")
+require("more-defences-ivyx/units/air/bombardier/tundra")
 
 // naval
 // lucifrons line

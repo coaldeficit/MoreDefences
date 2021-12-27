@@ -3,19 +3,20 @@ name: Frigid
 description: Slowly condenses cryofluid with high amounts of power and stores a high liquid capacity.
 size: 3
 health: 420
-pumpAmount: 0.1
+pumpAmount: 0.2
 liquidCapacity: 800
 rotateSpeed: 0
-hasPower: true
+updateEffect: shootBigSmoke 
+drillEffect: freezing
+hasPower: tru:
 consumes: {
-  power: 5
+  power: 3
  }
 result: cryofluid
 requirements: [
-  lead/40
   cobalt/35
   metaglass/62
-  titanium/44
+  plastanium/44
 ]
 attribute: water
 category: production
