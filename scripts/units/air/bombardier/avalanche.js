@@ -51,7 +51,7 @@ const avalancheBomb = extend(BasicBulletType, {
 });
 const avalancheBullet = extend(BasicBulletType, {
   speed: 10,
-  damage: 50,
+  damage: 20,
   width: 7,
   height: 9,
   frontColor: Color.valueOf("#6ecdec"),
