@@ -3,14 +3,13 @@ name: Minelayer
 description: A turret that fires mines that detonate when an enemy ground unit touches them.
 health: 800
 size: 2
-reloadTime: 60
+reloadTime: 180
 range: 200
-inaccuracy: 5
+inaccuracy: 15
 rotatespeed: 5
-alternate: true
-shots: 2
-spread: 5
+shots: 6
 targetAir: false
+velocityInaccuracy: 0.3
 ammoTypes: {
   copper: {
     speed: 7
