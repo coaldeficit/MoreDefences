@@ -1,10 +1,10 @@
 type: ItemTurret
 name: Machine Gun
 description: Shoots spread bullets in a medium rate.
-health: 320
+health: 200
 reloadTime: 5
-size: 2
-range: 90
+size: 1
+range: 70
 inaccuracy: 20
 ammoTypes: {
   copper: {
