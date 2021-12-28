@@ -12,21 +12,20 @@ consumes: {
   power: 5.5
   items: {
     items: [
-      radium/5
+      copper/2
       pyratite/1
       blast-compound/1
-      silicon/2
+      radium/3
     ]
   }
   liquid: {
-    liquid: slag
-    amount: 0.1
+    liquid: liquid-hydrogen
+    amount: 1
     }
 }
 requirements: [
-  tin/240
-  lead/120
-  titanium/120
+  lead/85
+  cobalt/100
   thorium/75
   radiode/75
   phase-fabric/50
@@ -36,4 +35,4 @@ category: crafting
 research: blast-mixer
 idleSound: thruster
 idleSoundVolume: 0.75
-outputItem: rage/1
+outputItem: rage/2
