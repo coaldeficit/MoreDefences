@@ -2,32 +2,6 @@ ammoTypes: {
   graphite: standardDenseBig
   pyratite: standardIncendiaryBig
   thorium: standardThoriumBig
-
-  blast-compound: {
-    damage: 40
-    reloadMultiplier: 0.7
-    width: 16
-    height: 21
-    ammoMultiplier: 15
-    backColor: e3566b
-    frontColor: ffffff
-    hitEffect: explosion
-    splashDamageRadius: 30
-    splashDamage: 22
-    ammoMultiplier: 4
-    speed: 6
-  }
-  surge-alloy: {
-    damage: 33
-    reloadMultiplier: 0.9
-    width: 16
-    height: 21
-    ammoMultiplier: 15
-    backColor: e3566b
-    frontColor: ffffff
-    splashDamage: 35
-    speed: 6
-  }
   rage: {
     damage: 75
     reloadMultiplier: 0.4
@@ -44,14 +18,20 @@ ammoTypes: {
     homingRange: 90
     splashDamage: 90
     splashDamageRadius: 50
+    status: burning
     fragBullets: 1
+    pierceCap: 3,
+    pierceBuilding: true,
     fragBullet: {
        speed: 4
        damage: 40
        type: MissileBulletType
        bulletWidth: 18
        bulletHeight: 20
-      }
+       trailColor: 00aeff
+       backColor: 00aeff
+       frontColor: ffffff
+    }
     speed: 6
   }
 }

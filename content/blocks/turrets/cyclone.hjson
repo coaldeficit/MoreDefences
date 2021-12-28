@@ -20,13 +20,18 @@ ammoTypes: {
     homingRange: 75
     splashDamage: 45
     splashDamageRadius: 64
+    status: burning
     fragBullets: 3
     fragBullet: {
-       speed: 12
+       speed: 8
        damage: 10
        type: MissileBulletType
-      }
-    lifetime: 200
+       lifetime: 12
+       backColor: 00aeff
+       frontColor: ffffff
+       trailColor: 00aeff
+    }
+    lifetime: 40
     speed: 6
   }
 }
