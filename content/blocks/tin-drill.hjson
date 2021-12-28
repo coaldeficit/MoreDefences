@@ -5,6 +5,15 @@ size: 1
 tier: 1
 drillTime: 200
 drawMineItem: false
+consumes: {
+  liquid: {
+    liquid: water
+      amount: 0.05
+      optional: true
+      booster: true
+  }
+}
+liquidBoostIntensity: 1.5
 requirements: [
   tin/10
 ]
