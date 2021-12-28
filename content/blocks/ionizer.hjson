@@ -10,7 +10,7 @@ consumes: {
   items: {
     items: [
       graphite/1
-      lead/3
+      lead/2
     ]
   }
 }
