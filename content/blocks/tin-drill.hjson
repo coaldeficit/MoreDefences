@@ -8,7 +8,7 @@ drawMineItem: false
 consumes: {
   liquid: {
     liquid: water
-      amount: 0.05
+      amount: 0.025
       optional: true
       booster: true
   }
