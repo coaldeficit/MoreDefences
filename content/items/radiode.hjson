@@ -1,6 +1,6 @@
 type: material
 name: Radiode
-description: Purified form of Radium. More stable and has much more uses.
+description: Purified form of Radium. Used for light technology.
 color: 440000
 cost: 1.1
 radioactivity: 0.65
