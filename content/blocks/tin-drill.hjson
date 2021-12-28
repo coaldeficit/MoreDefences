@@ -13,7 +13,7 @@ consumes: {
       booster: true
   }
 }
-liquidBoostIntensity: 1.5
+liquidBoostIntensity: 1.22474487139
 requirements: [
   tin/10
 ]
