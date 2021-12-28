@@ -20,7 +20,7 @@ consumes: {
   }
   liquid: {
     liquid: liquid-hydrogen
-    amount: 0.1
+    amount: 0.025
     }
 }
 requirements: [
