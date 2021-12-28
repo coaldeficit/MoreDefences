@@ -4,7 +4,7 @@ size: 3
 health: 720
 hasPower: true
 hasItems: true
-craftTime: 40 
+craftTime: 60 
 effect: fuelburn
 itemCapacity: 60
 updateEffect: fuelburn
@@ -12,8 +12,8 @@ consumes: {
   power: 2.5
   items: {
     items: [
-      radium/4
-      metaglass/3
+      radium/3
+      metaglass/1
     ]
   }
   liquid: {
@@ -31,4 +31,4 @@ category: crafting
 research: ionizer
 idleSound: respawning
 idleSoundVolume: 2
-outputItem: radiode/3
+outputItem: radiode/2
