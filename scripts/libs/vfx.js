@@ -61,9 +61,23 @@ const freezeBombExplosion = new Effect(500, 30, e => {
     Fill.circle(e.x + x, e.y + y, size/2);
   });
 });
-const insulatedstatus = new Effect(30, e => {
-  Draw.color(Pal.gray) // #454545
+const tempbuffstatus = new Effect(30, e => {
+  Draw.color(e.color)
   Fill.square(e.x, e.y, e.fslope() * 2, 45)
+});
+const permabuffstatus = new Effect(30, e => {
+  Draw.color(e.color)
+  Angles.randLenVectors(e.id, 2, 1 + e.fin() * 2, (x, y) => {
+    Fill.square(e.x + x, e.y + y, e.fout() * 2.3 + 0.5);
+  });
+});
+const insulatedstatus = new Effect(30, e => {
+  Angles.randLenVectors(e.id, 2, 1 + e.fin() * 2, (x, y) => {
+    Draw.color(Pal.gray)
+    Fill.square(e.x + x, e.y + y, e.fout() * 2.3 + 0.5);
+    Draw.color(Pal.lightishGray)
+    Fill.square(e.x + x, e.y + y, (e.fout() * 2.3 + 0.5)*0.5);
+  });
 });
 
 module.exports = {
@@ -72,5 +86,7 @@ module.exports = {
     freezeBombWeak: freezeBombWeak,
     freezeBomb: freezeBomb,
     freezeBombExplosion: freezeBombExplosion,
+    tempbuffstatus: tempbuffstatus,
+    permabuffstatus: permabuffstatus,
     insulatedstatus: insulatedstatus,
 };

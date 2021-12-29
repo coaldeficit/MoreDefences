@@ -81,7 +81,7 @@ radiationEffect.affinity(StatusEffects.melting, ((unit, result, time) => {
 
 let insulatedEffect = extend(StatusEffect, "insulated-status", {
     isHidden(){
-      return true
+      return false
     },
     speedMultiplier: 0.92,
     localizedName: 'Insulated',
