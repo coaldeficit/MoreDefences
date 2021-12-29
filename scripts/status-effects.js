@@ -79,7 +79,25 @@ radiationEffect.affinity(StatusEffects.melting, ((unit, result, time) => {
     unit.apply(radiationEffect, h)
 }));
 
+let insulatedEffect = extend(StatusEffect, "insulated-status", {
+    isHidden(){
+      return true
+    },
+    speedMultiplier: 0.92,
+    localizedName: 'Insulated',
+    effect: vfx.insulatedstatus,
+    color: Color.valueOf("#826B57"),
+    permanent: true,
+    update(unit,time){
+      this.super$update(unit,time);
+      unit.apply(insulatedEffect, 9999999999999999999999999999999)
+    }
+});
+insulatedEffect.opposite(StatusEffects.shocked);
+insulatedEffect.opposite(StatusEffects.electrified);
+
 module.exports = {
     liquidHydrogenEffect: liquidHydrogenEffect,
     radiationEffect: radiationEffect,
+    insulatedEffect: insulatedEffect,
 };

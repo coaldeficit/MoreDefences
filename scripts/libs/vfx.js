@@ -61,6 +61,10 @@ const freezeBombExplosion = new Effect(500, 30, e => {
     Fill.circle(e.x + x, e.y + y, size/2);
   });
 });
+const insulatedstatus = new Effect(30, e => {
+  Draw.color(Pal.gray) // #454545
+  Fill.square(e.x, e.y, e.fslope() * 2, 45)
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -68,4 +72,5 @@ module.exports = {
     freezeBombWeak: freezeBombWeak,
     freezeBomb: freezeBomb,
     freezeBombExplosion: freezeBombExplosion,
+    insulatedstatus: insulatedstatus,
 };
