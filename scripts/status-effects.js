@@ -88,8 +88,13 @@ let insulatedEffect = extend(StatusEffect, "insulated-status", {
     effect: vfx.insulatedstatus,
     color: Pal.gray, // #454545
     permanent: true,
+    description: 'Protects units affected by it from electricity-based status effects.',
     update(unit,time){
       this.super$update(unit,time);
+      let electricEffects = [StatusEffects.shocked, StatusEffects.electrified]
+      electricEffects.forEach(function(effect){
+        if (statusFunc.checkstatus(unit, effect) != false) unit.unapply(effect)
+      })
       unit.apply(insulatedEffect, 9999999999999999999999999999999)
     }
 });
