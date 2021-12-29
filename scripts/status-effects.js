@@ -86,7 +86,7 @@ let insulatedEffect = extend(StatusEffect, "insulated-status", {
     speedMultiplier: 0.92,
     localizedName: 'Insulated',
     effect: vfx.insulatedstatus,
-    color: Color.valueOf("#826B57"),
+    color: Pal.gray, // #454545
     permanent: true,
     update(unit,time){
       this.super$update(unit,time);
