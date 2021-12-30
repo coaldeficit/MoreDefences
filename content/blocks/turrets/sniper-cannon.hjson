@@ -3,7 +3,7 @@ name: Sniper Cannon
 description: Takedown.
 health: 4520
 size: 5
-reloadTime: 720
+reloadTime: 540
 range: 1450
 ejectEffect: shellEjectSmall
 inaccuracy: 0
