@@ -1,7 +1,7 @@
 type: resource
 name: Rage
-description: The devils' food.
-radioactivity: 1.5
-flammability: 1.5
+description: A hellish substance.
+radioactivity: 1
+flammability: 2
 explosiveness: 2
 color: 009dff
