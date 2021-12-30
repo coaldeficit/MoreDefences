@@ -15,7 +15,7 @@ coolantMultiplier: 6
 ammoTypes: {
   tin: {
     type: LaserBoltBulletType
-    damage: 15
+    damage: 30
     speed: 6
     lifetime: 30
     width: 3
@@ -24,17 +24,6 @@ ammoTypes: {
     backColor: 333333
     frontColor: ffffff
     reloadMultiplier: 1.3
-    }
-  bronze: {
-    type: LaserBoltBulletType
-    damage: 30
-    speed: 6
-    lifetime: 30
-    width: 3
-    height: 13
-    ammoMultiplier: 2
-    backColor: deb768
-    frontColor: ffffff
     }
   aluminium: {
     type: LaserBoltBulletType
@@ -52,8 +41,8 @@ ammoTypes: {
 }
 requirements: [
   aluminium/20
-  silicon/45
   cobalt/85
+  silicon/45
   ]
-research: sniper-cannon
+research: sniper
 category: turret
