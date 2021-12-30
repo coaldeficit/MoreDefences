@@ -19,10 +19,8 @@ consumes: {
 requirements: [
    lead/140
    graphite/120
-   titanium/140
    plastanium/115
    thorium/125
-   surge-alloy/150
    vanadium/90
    tefium/40
 ]
