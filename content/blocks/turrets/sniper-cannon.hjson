@@ -15,7 +15,7 @@ ammoTypes: {
     frontColor: f57f99
     backColor: d61c45
     speed: 30
-    damage: 3500
+    damage: 1000
     ammoMultiplier: 1
     incendChance: 0.3
     incendSpread: 0.1
@@ -28,7 +28,7 @@ ammoTypes: {
   }
   polonium: {
     speed: 35
-    damage: 7500
+    damage: 3000
     ammoMultiplier: 4
     reloadMultiplier: 0.4
     status: more-defences-ivyx-irradiated-status
