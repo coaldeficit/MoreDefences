@@ -10,6 +10,7 @@ inaccuracy: 0
 rotatespeed: 2
 shots: 1
 shootSound: shotgun
+shootEffect: shockwave
 coolantMultiplier: 0.2
 ammoPerShot: 6
 ammoTypes: {
@@ -24,7 +25,7 @@ ammoTypes: {
     serrationSpacing: 0.1
     serrationSpaceOffset: 180
     lifetime: 60
-    toColor: 000033
+    toColor: 5555dd
   }
 }
 requirements: [
