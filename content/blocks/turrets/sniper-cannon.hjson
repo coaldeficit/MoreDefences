@@ -13,7 +13,7 @@ shootSound: shotgun
 shootEffect: lancerLaserShoot
 coolantMultiplier: 0.2
 ammoPerShot: 6
-hitEffect: impactsmoke
+hitEffect: impactcloud
 ammoTypes: {
   vanadium: {
     type: ShrapnelBulletType
