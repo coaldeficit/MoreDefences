@@ -17,13 +17,14 @@ ammoTypes: {
     type: ShrapnelBulletType
     damage: 2400
     length: 1090
-    width: 30
+    width: 12
     serrations: 40
     serrationLenScl: 3
     serrationWidth: 10
-    serrationSpacing: 8
+    serrationSpacing: 3
     serrationSpaceOffset: 180
     lifetime: 60
+    toColor: e043b6
   }
 }
 requirements: [
