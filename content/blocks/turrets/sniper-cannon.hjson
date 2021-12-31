@@ -5,12 +5,12 @@ health: 4520
 size: 5
 reloadTime: 360
 range: 720
-ejectEffect: impactcloud
+ejectEffect: casing4 
 inaccuracy: 0
 rotatespeed: 2
 shots: 1
 shootSound: shotgun
-shootEffect: bigShockwave
+shootEffect: nuclearcloud
 coolantMultiplier: 0.2
 ammoPerShot: 6
 ammoTypes: {
