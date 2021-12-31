@@ -24,13 +24,13 @@ ammoTypes: {
     serrationSpacing: 0.1
     serrationSpaceOffset: 180
     lifetime: 60
-    toColor: 000000
+    toColor: 000033
   }
 }
 requirements: [
-  titanium/1200
-  thorium/560
-  vanadium/230
+  titanium/430
+  thorium/370
+  vanadium/290
   tefium/180
 ]
 category: turret
