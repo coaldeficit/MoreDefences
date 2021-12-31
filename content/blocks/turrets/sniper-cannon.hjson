@@ -1,6 +1,6 @@
 type: ItemTurret
 name: Takedown
-description: A powerful sniper turret. Fires a long piercing blast at its target.
+description: The ultimate sniper turret. Fires a long piercing blast at its target.
 health: 4520
 size: 5
 reloadTime: 360
@@ -11,7 +11,7 @@ rotatespeed: 2
 shots: 1
 shootSound: shotgun
 shootEffect: impactcloud
-coolantMultiplier: 0.2
+coolantMultiplier: 0.7
 ammoPerShot: 6
 ammoTypes: {
   vanadium: {
