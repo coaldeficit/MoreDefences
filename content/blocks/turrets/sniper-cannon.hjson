@@ -18,11 +18,11 @@ ammoTypes: {
     type: ShrapnelBulletType
     damage: 2400
     length: 1090
-    width: 12
-    serrations: 10
+    width: 30
+    serrations: 40
     serrationLenScl: 3
-    serrationWidth: 5
-    serrationSpacing: 0.1
+    serrationWidth: 10
+    serrationSpacing: 8
     serrationSpaceOffset: 180
     lifetime: 60
     toColor: f0ffa6
