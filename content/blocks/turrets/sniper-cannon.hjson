@@ -18,13 +18,13 @@ ammoTypes: {
     damage: 2400
     length: 1090
     width: 12
-    serrations: 40
+    serrations: 10
     serrationLenScl: 3
-    serrationWidth: 10
-    serrationSpacing: 3
+    serrationWidth: 5
+    serrationSpacing: 0.1
     serrationSpaceOffset: 180
     lifetime: 60
-    toColor: e043b6
+    toColor: 000000
   }
 }
 requirements: [
