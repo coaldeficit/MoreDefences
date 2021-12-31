@@ -29,8 +29,8 @@ ammoTypes: {
   }
 }
 requirements: [
-  titanium/430
-  thorium/370
+  titanium/1200
+  thorium/560
   vanadium/290
   tefium/180
 ]
