@@ -5,7 +5,7 @@ health: 4520
 size: 5
 reloadTime: 360
 range: 720
-ejectEffect: shellEjectSmall
+ejectEffect: nuclearcloud
 inaccuracy: 0
 rotatespeed: 2
 shots: 1
