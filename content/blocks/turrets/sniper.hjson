@@ -1,5 +1,5 @@
 type: ItemTurret
-name: Sniper
+name: Sniper Cannon
 description: A long range cannon. Can pierce through enemies.
 health: 250
 size: 1

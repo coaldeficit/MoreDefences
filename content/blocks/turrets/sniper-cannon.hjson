@@ -1,47 +1,35 @@
 type: ItemTurret
-name: Sniper Cannon
-description: Takedown.
+name: Takedown
+description: A powerful sniper turret. Fires a long piercing blast at its target.
 health: 4520
 size: 5
-reloadTime: 540
-range: 1450
+reloadTime: 360
+range: 720
 ejectEffect: shellEjectSmall
 inaccuracy: 0
 rotatespeed: 2
 shots: 1
+shootSound: shotgun
+coolantMultiplier: 0.2
 ammoPerShot: 6
 ammoTypes: {
-  blast-compound: {
-    frontColor: f57f99
-    backColor: d61c45
-    speed: 30
-    damage: 1000
-    ammoMultiplier: 1
-    incendChance: 0.3
-    incendSpread: 0.1
-    incendAmount: 0.4
-    splashDamage: 300
-    splashDamageRadius: 32
-    lifetime: 150
-    width: 23
-    height: 30
-  }
-  polonium: {
-    speed: 35
-    damage: 3000
-    ammoMultiplier: 4
-    reloadMultiplier: 0.4
-    status: more-defences-ivyx-irradiated-status
-    statusDuration: 240
-    lifetime: 120
-    width: 27
-    height: 30
+  vanadium: {
+    type: ShrapnelBulletType
+    damage: 2400
+    length: 1090
+    width: 30
+    serrations: 40
+    serrationLenScl: 3
+    serrationWidth: 10
+    serrationSpacing: 8
+    serrationSpaceOffset: 180
+    lifetime: 60
   }
 }
 requirements: [
-  titanium/320
-  thorium/230
-  vanadium/150
+  titanium/1200
+  thorium/560
+  vanadium/230
   tefium/180
 ]
 category: turret

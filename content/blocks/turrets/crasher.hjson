@@ -1,0 +1,75 @@
+type: ItemTurret
+name: Crasher
+size: 5
+health: 4860
+description: A very powerful air turret. Fires slow but powerful bullets that explode into alot of weaker bullets that explode further into hundreds of missiles. Can destroy entire swarms of air units in one shot.
+shots: 1
+range: 400
+targetGround: false
+recoil: 8
+reloadTime: 420
+rotateSpeed: 2
+maxAmmo: 6
+ammoPerShot: 3
+inaccuracy: 5
+shootSound: artillery
+coolantMultiplier: 0.85
+shootCone: 270
+ammoTypes: {
+  rage: {
+    damage: 180
+    splashDamage: 280
+    speed: 3
+    lifetime: 130
+    width: 30
+    height: 30
+    splashDamageRadius: 230
+    hitEffect: flakExplosion
+    despawnEffect: greenBomb
+    ammoMultiplier: 1
+    backColor: fe69fe
+    frontColor: ffffff
+    homingRange: 60
+    homingPower: 0.2
+    fragBullets: 66
+    collidesGround: false
+    collidesTiles: false
+    fragBullet: {
+       type: BasicBulletType
+       speed: 11
+       damage: 40
+       fragBullets: 12
+       backColor: fe69fe
+       frontColor: ffffff
+       width: 18
+       height: 10
+       collidesGround: false
+       collidesTiles: false
+       fragBullet: {
+         type: MissileBulletType
+         speed: 12
+         damage: 10
+         splashDamage: 10
+         splashDamageRadius: 40
+         trailColor: fe69fe
+         frontColor: d1befe
+         backColor: fe69fe
+         width: 10
+         height: 10
+         collidesGround: false
+         collidesTiles: false
+        }
+      }
+  }
+}
+requirements: [
+  metaglass/400
+  silicon/355
+  plastanium/425
+  thorium/3500
+  radiode/300
+  phase-fabric/250
+  surge-alloy/350
+]
+research: firenado
+category: turret

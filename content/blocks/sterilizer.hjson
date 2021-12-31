@@ -1,19 +1,19 @@
 name: Sterilizer
-description: Purifies Radium to make Radiode.
+description: Melts Sand, Oil and Radium together to make Radiode.
 size: 3
 health: 720
 hasPower: true
 hasItems: true
 craftTime: 60 
 effect: fuelburn
-itemCapacity: 60
+itemCapacity: 30
 updateEffect: fuelburn
 consumes: {
-  power: 2.5
+  power: 3
   items: {
     items: [
       radium/3
-      metaglass/1
+      sand/12
     ]
   }
   liquid: {
@@ -31,4 +31,4 @@ category: crafting
 research: ionizer
 idleSound: respawning
 idleSoundVolume: 2
-outputItem: radiode/2
+outputItem: radiode/3
