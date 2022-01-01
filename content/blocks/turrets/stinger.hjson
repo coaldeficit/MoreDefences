@@ -1,28 +1,15 @@
 type: ItemTurret
 name: Stinger
-description: A medium-sized 3 way turret.
+description: Fires penetrating flak at enemies.
 health: 800
 size: 2
 reloadTime: 30
-range: 125
+range: 150
 shots: 3
-inaccuracy: 10
+burstSpacing: 6
 rotatespeed: 12
-spread: 12
 targetAir: false
 ammoTypes: {
-  titanium: {
-    speed: 6
-    damage: 35
-    bulletWidth: 10
-    bulletHeight: 20
-    shootEffect: shootSmall
-    smokeEffect: shootSmallSmoke
-    ammoMultiplier: 1
-    reloadMultiplier: 1
-    frontColor: ffffff
-    backColor: 00ffff
-  }
 plastanium: {
     speed: 6
     damage: 25
@@ -66,8 +53,7 @@ pyratite: {
 }
 requirements: [
   bronze/55
-  titanium/95
-  thorium/35
+  zinc/95
   radiode/25
 ]
 category: turret
