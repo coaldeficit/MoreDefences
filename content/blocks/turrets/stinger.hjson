@@ -23,6 +23,7 @@ plastanium: {
     backColor: 2cff00
     splashDamage: 12
     splashDamageRadius: 16
+    pierceCap: 3
     }
 silicon: {
     speed: 7
@@ -36,6 +37,7 @@ silicon: {
     frontColor: ffffff
     backColor: 222222
     homingPower: 0.1
+    pierceCap: 3
 }
 pyratite: {
     speed: 4
@@ -49,6 +51,7 @@ pyratite: {
     frontColor: ffffab
     backColor: de5c00
     incendAmount: 8
+    pierceCap: 3
 }
 }
 requirements: [
