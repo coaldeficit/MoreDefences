@@ -7,7 +7,7 @@ itemCapacity: 50
 drawRim: true
 updateEffect: pulverizeMedium
 updateEffectChance: 0.1
-drillTime: 98
+drillTime: 45
 liquidBoostIntensity: 1
 consumes: {
   power: 7
@@ -17,14 +17,11 @@ consumes: {
   }
 }
 requirements: [
-   lead/140
-   graphite/120
    titanium/140
-   plastanium/115
-   thorium/125
-   surge-alloy/150
-   vanadium/90
-   tefium/40
+   thorium/175
+   surge-alloy/90
+   vanadium/125
+   tefium/60
 ]
 category: production
 research: surge-drill
