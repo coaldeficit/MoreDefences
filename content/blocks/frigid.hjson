@@ -3,7 +3,7 @@ name: Frigid
 description: Slowly condenses cryofluid with high amounts of power and stores a high liquid capacity.
 size: 3
 health: 420
-pumpAmount: 0.2
+pumpAmount: 0.08
 liquidCapacity: 800
 rotateSpeed: 0
 updateEffect: shootBigSmoke 
