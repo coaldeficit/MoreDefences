@@ -16,7 +16,7 @@ ammoPerShot: 6
 ammoTypes: {
   vanadium: {
     type: ShrapnelBulletType
-    damage: 2400
+    damage: 1200
     length: 1090
     width: 30
     serrations: 40
@@ -29,10 +29,10 @@ ammoTypes: {
   }
 }
 requirements: [
-  titanium/1200
-  thorium/560
-  vanadium/290
-  tefium/180
+  titanium/840
+  thorium/720
+  vanadium/540
+  tefium/300
 ]
 category: turret
 research: foreshadow
