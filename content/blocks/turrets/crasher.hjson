@@ -17,13 +17,13 @@ coolantMultiplier: 0.85
 shootCone: 270
 ammoTypes: {
   rage: {
-    damage: 180
-    splashDamage: 280
+    damage: 500
+    splashDamage: 250
     speed: 3
     lifetime: 130
     width: 30
     height: 30
-    splashDamageRadius: 230
+    splashDamageRadius: 108
     hitEffect: flakExplosion
     despawnEffect: greenBomb
     ammoMultiplier: 1
@@ -31,25 +31,26 @@ ammoTypes: {
     frontColor: ffffff
     homingRange: 60
     homingPower: 0.2
-    fragBullets: 66
+    fragBullets: 6
     collidesGround: false
     collidesTiles: false
     fragBullet: {
        type: BasicBulletType
        speed: 11
-       damage: 40
-       fragBullets: 12
+       damage: 100
+       splashDamage: 150
+       fragBullets: 10
        backColor: fe69fe
        frontColor: ffffff
-       width: 18
-       height: 10
+       width: 25
+       height: 20
        collidesGround: false
        collidesTiles: false
        fragBullet: {
          type: MissileBulletType
          speed: 12
-         damage: 10
-         splashDamage: 10
+         damage: 120
+         splashDamage: 90
          splashDamageRadius: 40
          trailColor: fe69fe
          frontColor: d1befe
@@ -63,13 +64,12 @@ ammoTypes: {
   }
 }
 requirements: [
-  metaglass/400
-  silicon/355
-  plastanium/425
-  thorium/3500
-  radiode/300
-  phase-fabric/250
-  surge-alloy/350
+  metaglass/1500
+  plastanium/920
+  thorium/2000
+  phase-fabric/500
+  surge-alloy/750
+  tefium/300
 ]
 research: firenado
 category: turret
