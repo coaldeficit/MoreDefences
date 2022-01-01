@@ -29,9 +29,9 @@ ammoTypes: {
   }
 }
 requirements: [
-  titanium/840
-  thorium/720
-  vanadium/540
+  titanium/1600
+  thorium/1400
+  vanadium/720
   tefium/300
 ]
 category: turret
