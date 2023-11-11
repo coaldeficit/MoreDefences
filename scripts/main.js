@@ -4,7 +4,6 @@ require("more-defences-ivyx/unmineable-ores")
 
 require("more-defences-ivyx/vanadium-extractor")
 require("more-defences-ivyx/vanadium-megaextractor")
-// require("more-defences-ivyx/source-ship")
 require("more-defences-ivyx/aerial-drill")
 require("more-defences-ivyx/units/air/drones")
 require("more-defences-ivyx/units/air/core-units")
@@ -18,7 +17,6 @@ require('more-defences-ivyx/cobalt-twister');
 require('more-defences-ivyx/ionizer');
 require('more-defences-ivyx/overtower');
 require('more-defences-ivyx/recoverer');
-require('more-defences-ivyx/buckshot');
 require('more-defences-ivyx/frozen-wall');
 
 // unit stuff
