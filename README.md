@@ -1,5 +1,5 @@
 # MoreDefences
-A mod made by CD, meowkitty and 7rodo that features lots of new content, a new planet, various overhauls and more. [Discord Invite](https://discord.gg/9YHA3q8HHq)
+A mod made by CD, meowkitty and 7rodo that features lots of new content, a new planet, various overhauls and more. [Discord Invite.](https://discord.gg/9YHA3q8HHq)
 
 ## Contributing
 ### Suggesting new content/balance changes
