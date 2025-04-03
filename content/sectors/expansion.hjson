@@ -1,0 +1,15 @@
+description: "This sector contains deposits of [accent]Lithium[].\nDestroy the enemy outposts in the area and discover uses for lithium."
+planet: md3-fieros
+sector: 424
+difficulty: 1
+research: {
+  parent: inception
+  objectives: [
+    cinnabar-aqueduct-bridge
+    cobalt-wall-huge
+    {
+      type: SectorComplete
+      preset: inception
+    }
+  ]
+}

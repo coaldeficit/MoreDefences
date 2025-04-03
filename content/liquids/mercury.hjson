@@ -1,0 +1,21 @@
+type: Liquid
+name: Mercury
+description: A liquid metal that reacts strongly with most metals to form alloys. 
+color: 707070
+flammability: 0
+explosiveness: 0
+heatCapacity: 0.1
+temperature: 0.25
+viscosity: 0.35
+coolant: false
+moveThroughBlocks: true
+research: {
+  parent: cinnabar-item
+  planet: md3-fieros
+  objectives: [
+    {
+      type: Produce
+      content: mercury
+    }
+  ]
+}

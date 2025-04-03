@@ -1,0 +1,24 @@
+name: Suggestion/Feedback
+description: Suggest new content, mechanics or general changes for MoreDefences
+title: "Title"
+labels: [suggestion/feedback]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the content, mechanics or changes you are proposing."
+    validations:
+      required: true
+  - type: textarea
+    id: description2
+    attributes:
+      label: "Describe how you think this will improve the game. If you're proposing new content, mention how it may add more gameplay options or how it will fill a new niche."
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Before making this issue, check the boxes below to confirm that you have acknowledged them.
+      options:
+        - label: I am familiar with all the content already in the mod to make sure my suggestion doesn't exist in the game yet.
+          required: true

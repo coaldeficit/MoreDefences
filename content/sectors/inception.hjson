@@ -1,0 +1,8 @@
+description: "A small, isolated valley in the middle of an island with low enemy activity.\nTake out the enemy outpost here. Gather basic resources and technology. Begin your conquest of Fieros."
+planet: md3-fieros
+sector: 27
+difficulty: 1
+research: {
+  parent: core-monoquark
+}
+alwaysUnlocked: true

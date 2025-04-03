@@ -1,0 +1,43 @@
+name: Blade
+description: Fires highly damaging Blades and self destructs after 12 seconds.
+health: 7000
+size: 3
+reload: 16
+range: 130
+inaccuracy: 6
+rotateSpeed: 3
+shootSound: armillaria-blade
+shootCone: 361
+shoot: {
+  type: ShootMulti
+  source: ShootPattern
+  shots: 4
+  dest: [{
+    type: ShootSpread
+    shots: 2
+    spread: 15
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 30
+    firstShotDelay: 8
+  }]
+}
+shootType: {
+  type: BasicBulletType
+  speed: 5
+  lifetime: 26
+  damage: 92
+  status: burning
+  statusDuration: 180
+  frontColor: fccf03
+  backColor: fc5a03
+  sprite: md3-blade-bullet
+  height: 12
+  width: 12
+  shrinkX: 0
+  shrinkY: 0
+  spin: 14
+  shieldDamageMultiplier: 0.25
+}
+category: turret

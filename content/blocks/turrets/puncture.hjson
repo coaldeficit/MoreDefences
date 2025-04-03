@@ -1,0 +1,70 @@
+name: Puncture
+description: Fires powerful naval missiles that cannot stay on land for long. Deals massive critical damage to enemies near max health.
+health: 800
+size: 2
+reload: 45
+range: 240
+inaccuracy: 19
+rotateSpeed: 5
+shoot: {
+  type: ShootPattern
+  shots: 2
+  shotDelay: 6
+}
+shootSound: missile
+targetAir: false
+maxAmmo: 20
+unitSort: weakest
+hasLiquids: true
+consumes: {
+  coolant: {
+    amount: 0.5
+  }
+}
+coolantMultiplier: 2
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -gun
+      progress: recoil
+      moveY: -1.75
+    }
+    {
+      type: RegionPart
+      suffix: -cover-left
+      progress: warmup
+      moveX: -2.25
+    }
+    {
+      type: RegionPart
+      suffix: -cover-right
+      progress: warmup
+      moveX: 2.25
+    }
+    {
+      type: RegionPart
+      suffix: -segment-top
+      progress: warmup
+      moveY: -1.25
+    }
+  ]
+}
+requirements: [
+  titanium/80
+  graphite/80
+  silicon/50
+]
+category: turret
+research: {
+  parent: wave
+  planet: serpulo
+  # requiresUnlock: false
+  objectives: [
+    {
+      type: SectorComplete
+      preset: windsweptIslands
+    }
+  ]
+}

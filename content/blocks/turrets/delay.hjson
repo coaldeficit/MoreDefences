@@ -1,0 +1,80 @@
+name: Delay
+description: Fires a continuous slowing stream of condensed gas at enemy targets.
+health: 3360
+size: 4
+rotateSpeed: 2.5
+range: 240
+loopSound: pulse
+drawer: {
+  type: DrawTurret
+  basePrefix: reinforced-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -segment-big-l
+      x: -5.75
+      y: 4.25
+      progress: warmup
+      layerOffset: -0.001
+      moveRot: 30
+      moveX: -2.75
+      moveY: -1.75
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -segment-big-r
+      x: 5.75
+      y: 4.25
+      progress: warmup
+      layerOffset: -0.001
+      moveRot: -30
+      moveX: 2.75
+      moveY: -1.75
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -segment-small-l
+      x: -11
+      y: 7.375
+      progress: warmup
+      layerOffset: -0.002
+      moveRot: 60
+      moveX: -3
+      moveY: -8
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -segment-small-r
+      x: 11
+      y: 7.375
+      progress: warmup
+      layerOffset: -0.002
+      moveRot: -60
+      moveX: 3
+      moveY: -8
+      under: true
+    }
+  ]
+}
+requirements: [
+  silicon/1650
+  tungsten/1000
+  oxide/500
+  surge-alloy/350
+]
+researchCostMultiplier: 0.04
+category: turret
+research: {
+  parent: sublimate
+  planet: erekir
+  # requiresUnlock: false
+  objectives: [
+    {
+      type: SectorComplete
+      preset: fortification
+    }
+  ]
+}

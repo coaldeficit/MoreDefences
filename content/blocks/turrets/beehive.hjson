@@ -1,48 +1,139 @@
 type: ItemTurret
 name: Beehive
-description: A turret that fires a powerful swarm of homing piercing projectiles.
+description: A turret that fires large projectiles that fire a swarm of piercing homing bullets.
 health: 540
 size: 2
-reload: 10
+reload: 60
 range: 160
-ejectEffect: shellEjectSmall
+#ejectEffect: shellEjectSmall
 inaccuracy: 0.5
-rotatespeed: 2.5
-maxAmmo: 60
-spread: 15
-shots: 3
+rotateSpeed: 2.5
+maxAmmo: 42
+ammoPerShot: 2
+predictTarget: false
 targetAir: false
-ammoTypes: {
-  lead: {
-    speed: 4.5
-    damage: 8
-    ammoMultiplier: 2
-    pierce: true
-    lifetime: 120
-    homingPower: 0.05
-    homingRange: 80
-    backColor: 000000
-    frontColor: ffff00
-    bulletWidth: 3
-    bulletHeight: 4
-    collidesAir: false
-    sprite: more-defences-ivyx-striped-bullet
+shootSound: artillery
+hasLiquids: true
+consumes: {
+  coolant: {
+    amount: 0.2
   }
-  zinc: {
-    speed: 4.5
-    damage: 16
-    ammoMultiplier: 7
-    pierce: true
-    lifetime: 120
-    homingPower: 0.05
-    homingRange: 80
-    backColor: 000000
-    frontColor: D0D8DF
-    bulletWidth: 6
-    bulletHeight: 8
+}
+coolantMultiplier: 5
+ammoTypes: {
+  silicon: {
+    type: BasicBulletType
+    sprite: circle-bullet
+    damage: 0
+    speed: 1.6
+    width: 12
+    height: 12
+    shrinkY: 0
+    shrinkX: 0
+    collides: false
+    splashDamage: 60
+    splashDamageRadius: 32
+    lifetime: 100
+    ammoMultiplier: 2
     collidesAir: false
-    reloadMultiplier: 0.6
-    sprite: more-defences-ivyx-striped-bullet
+    bulletInterval: 7
+    intervalBullets: 3
+    intervalRandomSpread: 5
+    intervalSpread: 22
+    intervalAngle: 180
+    intervalBullet: {
+      type: BasicBulletType
+      sprite: md3-striped-bullet
+      damage: 7
+      speed: 4.5
+      pierce: true
+      lifetime: 34
+      homingPower: 0.07
+      homingRange: 160
+      backColor: 000000
+      frontColor: ffff00
+      collidesAir: false
+      layer: 111
+    }
+  }
+  pyratite: {
+    type: BasicBulletType
+    sprite: circle-bullet
+    damage: 0
+    speed: 1.6
+    width: 12
+    height: 12
+    shrinkY: 0
+    shrinkX: 0
+    collides: false
+    splashDamage: 60
+    splashDamageRadius: 32
+    lifetime: 100
+    ammoMultiplier: 4
+    collidesAir: false
+    bulletInterval: 9
+    intervalBullets: 3
+    intervalRandomSpread: 5
+    intervalSpread: 22
+    intervalAngle: 180
+    intervalBullet: {
+      type: BasicBulletType
+      sprite: md3-striped-bullet
+      damage: 10
+      speed: 4.5
+      pierce: true
+      lifetime: 34
+      homingPower: 0.04
+      homingRange: 160
+      backColor: 000000
+      frontColor: ff8000
+      collidesAir: false
+      layer: 111
+      status: burning
+      statusDuration: 120
+    }
+    frontColor: f6e096
+    backColor: f8ad42
+  }
+  blast-compound: {
+    type: BasicBulletType
+    sprite: circle-bullet
+    damage: 0
+    speed: 1.6
+    width: 12
+    height: 12
+    shrinkY: 0
+    shrinkX: 0
+    collides: false
+    splashDamage: 60
+    splashDamageRadius: 32
+    lifetime: 100
+    ammoMultiplier: 6
+    collidesAir: false
+    bulletInterval: 9
+    intervalBullets: 2
+    intervalRandomSpread: 5
+    intervalSpread: 22
+    intervalAngle: 180
+    intervalBullet: {
+      type: BasicBulletType
+      sprite: md3-striped-bullet
+      damage: 0
+      splashDamage: 15
+      splashDamageRadius: 24
+      speed: 4.5
+      pierce: true
+      lifetime: 34
+      homingPower: 0.07
+      homingRange: 160
+      backColor: 000000
+      frontColor: ff0000
+      collidesAir: false
+      layer: 111
+      status: blasted
+    }
+    frontColor: ed846d
+    backColor: f84242
   }
 }
 requirements: [
@@ -51,6 +142,5 @@ requirements: [
   graphite/45
   titanium/50
 ]
-coolantMultiplier: 0.8
 category: turret
 research: multishot

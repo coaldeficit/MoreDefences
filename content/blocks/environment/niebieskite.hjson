@@ -1,0 +1,6 @@
+name: Niebieskite
+variants: 4
+mapColor: 1A1941
+useColor: true
+wall: niebieskite-wall
+decoration: niebieskite-boulder

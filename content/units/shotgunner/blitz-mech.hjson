@@ -1,0 +1,77 @@
+type: legs
+name: Blitz
+flying: false
+description: temp
+speed: 0.3
+health: 18000
+armor: 10
+hitSize: 36
+rotateSpeed: 0.9
+
+// legs
+legSpeed: 0.1
+stepShake: 1
+legCount: 6
+legLength: 40
+lockLegBase: true
+legContinuousMove: true
+legExtension: -6
+legBaseOffset: 20
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: .96
+legForwardScl: 1.25
+legGroupSize: 3
+legStraightness: 0.3
+rippleScale: 2
+legMoveSpace: 1
+allowLegStep: true
+hovering: true
+legSplashDamage: 32
+legSplashRange: 30
+
+weapons: {
+  add: [
+    {
+      name: blitz-gun
+      top: true
+      rotate: true
+      y: -12
+      x: 17
+      inaccuracy: 45
+      reload: 150
+      shootSound: missile
+      mirror: true
+      rotateSpeed: 1
+      shake: 0
+      shootCone: 361
+      rotationLimit: 100
+      shootY: 11
+      controllable: false
+      autoTarget: true
+      shoot: {
+        type: ShootPattern
+        shots: 18
+        shotDelay: 2
+      }
+      bullet: {
+        type: BulletType
+        shootEffect: shootBig
+        smokeEffect: shootBigSmoke2
+        speed: 0
+        keepVelocity: false
+        collidesAir: false
+        rangeOverride: 232
+        spawnUnit: assault-drone
+      }
+    }
+  ]
+}
+
+itemCapacity: 120
+research: {
+  parent: rocketeer-mech
+  objectives: [
+    tetrative-reconstructor
+  ]
+}

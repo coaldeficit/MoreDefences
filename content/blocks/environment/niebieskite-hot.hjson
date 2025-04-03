@@ -1,0 +1,7 @@
+name: Hot Niebieskite
+variants: 3
+mapColor: 1A1941
+useColor: true
+wall: niebieskite-wall
+decoration: niebieskite-boulder
+blendGroup: niebieskite

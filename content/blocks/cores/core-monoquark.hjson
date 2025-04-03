@@ -1,0 +1,22 @@
+name: "Core: Monoquark"
+description: Core of the base. Once destroyed the sector is lost.
+details: "Core of the first tier.\nPoorly armored and lacks storage capacity.\n\nVery cheap and lightweight, can be launched into other sectors on Fieros with relative ease compared to more massive cores."
+size: 3
+unitType: protium-ship
+health: 800
+itemCapacity: 1500
+unitCapModifier: 10
+squareSprite: false
+isFirstTier: true
+requirements: [
+  cobalt/750
+  cinnabar-item/750
+]
+category: effect
+envDisabled: 24
+research: {
+  root: true
+  name: Fieros
+  planet: md3-fieros
+}
+alwaysUnlocked: true

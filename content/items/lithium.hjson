@@ -1,0 +1,10 @@
+name: Lithium
+description: A soft, reactive metal used for ammunition and synthesis.
+cost: 1
+hardness: 0
+color: B87DD8
+charge: 0.12
+research: {
+  parent: cobalt
+  planet: md3-fieros
+}

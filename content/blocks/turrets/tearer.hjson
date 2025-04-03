@@ -1,66 +1,32 @@
 type: ItemTurret
 name: Tearer
-description: Fires weak bullets at an extremely fast rate.
+description: Fires a torrent of weak bullets that shred weak aerial enemy targets.
 health: 200
 size: 1
-reloadTime: 2
+reload: 2
 range: 170
 inaccuracy: 3
-rotatespeed: 15
-shots: 2
-alternate: true
-spread: 3
+rotateSpeed: 15
+targetInterval: 1
+shootSound: swish
+shootEffect: none
+shoot: {
+  type: ShootAlternate
+  shots: 3
+  shotDelay: 1
+}
 targetGround: false
+maxAmmo: 45
 ammoPerShot: 1
 ammoTypes: {
-  scrap: {
-    speed: 10
-    damage: 4
-    ammoMultiplier: 4
-    width: 2
-    height: 3
-    lifetime: 17
-    collidesGround: false
-  }
   lead: {
-    speed: 9
-    damage: 6
-    ammoMultiplier: 4
-    width: 2
-    height: 3
-    lifetime: 19
-    collidesGround: false
-  }
-  coal: {
-    speed: 9
-    damage: 5
-    ammoMultiplier: 3
-    status: burning
-    makeFire: true
-    reloadMultiplier: 0.95
-    width: 2
-    height: 3
-    lifetime: 19
-    collidesGround: false
-  }
-  silicon: {
     speed: 7
-    damage: 8
-    ammoMultiplier: 3
+    damage: 6
+    ammoMultiplier: 5
     homingPower: 0.1
-    width: 2
-    height: 3
+    width: 4
+    height: 6
     lifetime: 25
-    collidesGround: false
-  }
-  titanium: {
-    speed: 8
-    damage: 12
-    ammoMultiplier: 2
-    reloadMultiplier: 0.6
-    width: 2
-    height: 3
-    lifetime: 22
     collidesGround: false
   }
 }

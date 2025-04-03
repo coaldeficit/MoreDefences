@@ -1,0 +1,27 @@
+name: Aerial Drill
+description: An insanely powerful late game drill, capable of mining vanadium, spans multiple tiles.
+health: 830
+size: 5
+tier: 7
+itemCapacity: 50
+drawRim: true
+updateEffect: pulverizeMedium
+updateEffectChance: 0.1
+drillTime: 45
+liquidBoostIntensity: 1
+consumes: {
+  power: 7
+  liquid: {
+    liquid: cryofluid
+    amount: 0.15
+  }
+}
+#requirements: [
+#   titanium/140
+#   thorium/175
+#   surge-alloy/300
+#   vanadium/125
+#]
+#category: production
+#research: surge-drill
+buildVisibility: hidden

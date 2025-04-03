@@ -1,0 +1,17 @@
+type: OverflowGate
+name: Overflow Channel
+description: Outputs items to the left and right of itself when the front is full.
+health: 25
+speed: 8
+squareSprite: false
+requirements: [
+  cobalt/10
+  cinnabar-item/10
+]
+category: distribution
+envDisabled: 24
+research: {
+  parent: cobalt-channel
+  planet: md3-fieros
+}
+alwaysUnlocked: true

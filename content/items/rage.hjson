@@ -1,7 +1,7 @@
-type: resource
 name: Rage
 description: An extremely powerful and shock sensitive explosive. Usable as ammunition for turrets.
 radioactivity: 0.8
 flammability: 2.3
 explosiveness: 2.65
 color: 009dff
+hidden: true

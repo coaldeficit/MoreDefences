@@ -1,0 +1,69 @@
+name: Havoc
+description: "A mobile bunker. Stationary and strong against buildings above 25% health, slowly moving and strong against units below 25% health."
+flying: false
+health: 13000
+armor: 30
+hitSize: 87
+engineOffset: 13.5
+range: 380
+rotateSpeed: 1
+targetAir: true
+speed: 0.6
+details: "Created as a desperate last resort by SPOILERS after the destruction of their main base in Hard Drive.\nInside it were the last remaining Serpulean SPOILERS, and its destruction marks their complete eradication from Serpulo.\n\nMany ancient Crux bases remain, however none of them can adapt to your tactics as well as the SPOILERS did.\nWipe them out, or move on to another planet."
+hidden: true
+weapons: [{
+  name: havoc-cluster
+  top: false
+  y: 3
+  x: 26.7
+  reload: 60
+  shootSound: artillery
+  ejectEffect: casing3Double
+  velocityRnd: 0.4
+  inaccuracy: 12
+  shoot: {
+    shots: 9
+  }
+  bullet: {
+    type: ArtilleryBulletType
+    speed: 3
+    hitEffect: blastExplosion
+    knockback: 0.8
+    lifetime: 140
+    width: 21
+    height: 25
+    collidesTiles: false
+    ammoMultiplier: 4
+    splashDamageRadius: 90
+    splashDamage: 170
+    backColor: e85e46
+    frontColor: ffdfd1
+    status: blasted
+    statusDuration: 60
+  }
+}, {
+  name: havoc-anti-air
+  top: true
+  y: 2
+  x: 13
+  reload: 10
+  shootSound: lasershoot
+  inaccuracy: 0
+  rotate: true
+  bullet: {
+    type: LaserBoltBulletType
+    speed: 20
+    damage: 70
+    splashDamageRadius: 15
+    splashDamage: 40
+    lifetime: 25
+    width: 2
+    height: 45
+    backColor: f25555
+    frontColor: ffdddd
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 15
+    pierceDamageFactor: 0.7
+  }
+}]

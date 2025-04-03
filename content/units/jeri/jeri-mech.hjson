@@ -1,0 +1,55 @@
+name: Jeri
+description: Fires salvos of bullets at enemy targets.
+hitSize: 12
+flying: false
+speed: 1
+rotateSpeed: 2.2
+squareShape: true
+omniMovement: false
+rotateMoveFirst: true
+health: 250
+treadPullOffset: 5
+treadFrames: 15
+treadRects: [
+  {
+    x: -16
+    y: -25
+    width: 14
+    height: 50
+  }
+]
+weapons: [{
+  name: jeri-weapon
+  top: true
+  rotate: true
+  y: 0
+  x: 4.5
+  shoot: {
+    type: ShootPattern
+    shots: 3
+    shotDelay: 5
+  }
+  inaccuracy: 2
+  reload: 60
+  shootSound: pew
+  mirror: true
+  rotateSpeed: 7
+  bullet: {	
+    speed: 5
+    damage: 10
+    lifetime: 32
+    width: 8
+    height: 12
+    pierce: true
+    pierceCap: 2
+    pierceBuilding: false
+  }
+}]
+itemCapacity: 0
+research: {
+  parent: protium-ship
+  objectives: [
+    basic-unit-factory
+  ]
+}
+researchCostMultiplier: 0

@@ -1,38 +1,70 @@
 type: ItemTurret
 name: Multishot
-description: Fires 10 weak bullets that spread out.
+description: Slowly fires powerful spreads of bullets at nearby enemies.
 health: 200
 size: 1
-reloadTime: 60
-range: 100
+reload: 60
+range: 80
 inaccuracy: 3
-rotatespeed: 5
-spread: 1
-shots: 8
+rotateSpeed: 5
+targetInterval: 3
+shoot: {
+  type: ShootSpread
+  spread: 6
+  shots: 13
+}
+hasLiquids: true
+consumes: {
+  coolant: {
+    amount: 0.1
+  }
+}
+coolantMultiplier: 5
 ammoTypes: {
   lead: {
     speed: 3
-    damage: 7
+    damage: 8
     ammoMultiplier: 1
+    lifetime: 27
   }
-  coal: {
+  pyratite: {
     speed: 3
-    damage: 6
-    ammoMultiplier: 1
-    incendAmount: 0.3
-    incendSpread: 0.5
-    incendChance: 0.9
+    damage: 18
+    reloadMultiplier: 0.8
+    ammoMultiplier: 2
+    lifetime: 27
+    status: burning
+    statusDuration: 960
+    incendAmount: 1
+    incendChance: 0.03
+    frontColor: f6e096
+    backColor: f8ad42
   }
-  silicon: {
-    speed: 3
-    damage: 7
-    ammoMultiplier: 1
-    homingPower: 1
+  metaglass: {
+    speed: 5
+    damage: 4
+    ammoMultiplier: 2
+    lifetime: 16
+    reloadMultiplier: 1.25
+    fragBullets: 7
+    fragSpread: 51.42
+    fragVelocityMin: 1
+    fragOffsetMax: 1
+    fragLifeMin: 0.2
+    fragBullet: {
+      speed: 3
+      lifetime: 15
+      damage: 3
+      frontColor: ffffff
+      backColor: 454545
+      width: 3
+      homingPower: 0.05
+    }
   }
 }
 requirements: [
   copper/60
-  lead/20
+  lead/30
 ]
 category: turret
-research: sandthrower
+research: scorch

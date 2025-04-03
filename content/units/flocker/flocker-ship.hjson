@@ -1,0 +1,52 @@
+name: Flocker
+description: A tanky swarming unit designed to distract enemy defences. 
+speed: 2.2
+flying: true
+health: 180
+armor: 5
+engineOffset: 6
+drag: 0.01
+accel: 0.09
+#rotatespeed: 5.0
+circleTarget: true
+targetFlags: [turret, battery, null]
+faceTarget: false
+physics: false
+itemCapacity: 0
+weapons: [{
+  name: flocker-weapon
+  top: true
+  rotate: true
+  y: -2
+  x: 0
+  mirror: false
+  reload: 10
+  shootSound: pew
+  inaccuracy: 13
+  bullet: {
+    speed: 4
+    damage: 5
+    ammoMultiplier: 1
+    lifetime: 30
+    sprite: circle-bullet
+    height: 2
+    width: 2
+    trailWidth: 1
+    trailLength: 5
+    shrinkY: 0
+    shrinkX: 0
+    collidesAir: false
+    keepVelocity: false
+    trailColor: ffe873
+    backColor: ffe873
+  }
+}]
+research: {
+  parent: flare
+  objectives: [
+    {
+      type: SectorComplete
+      preset: scourged-rivers
+    },
+  ]
+}

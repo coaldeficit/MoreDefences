@@ -1,0 +1,13 @@
+description: "A large enemy defensive structure has been detected in this sector, aswell as the development of a [accent]potent support turret[].\nDestroy the enemy cores. Investigate the turret and take it for yourself."
+planet: erekir
+sector: 63
+difficulty: 8
+research: {
+  parent: ravine
+  objectives: [
+    {
+      type: SectorComplete
+      preset: ravine
+    }
+  ]
+}

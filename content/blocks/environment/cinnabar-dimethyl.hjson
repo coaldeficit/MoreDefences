@@ -1,0 +1,9 @@
+name: Cinnabar Dimethyl
+variants: 3
+mapColor: a4002d
+useColor: true
+wall: cinnabar-dimethyl-wall
+decoration: cinnabar-boulder
+speedMultiplier: 0.7
+isLiquid: true
+liquidDrop: liquid-dimethyl

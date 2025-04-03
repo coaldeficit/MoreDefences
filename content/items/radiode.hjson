@@ -1,7 +1,0 @@
-type: material
-name: Radiode
-description: Glass doped with radium. Has useful optical properties. Used mainly in light-based technology such as Lasers.
-color: DD291C
-cost: 1.1
-radioactivity: 0.65
-explosiveness: 0.1

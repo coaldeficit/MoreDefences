@@ -1,0 +1,13 @@
+# technical liquid for exclusively internal shenanigans, do not include in normal gameplay
+type: Liquid
+name: Dimethyl
+description: A highly potent liquid neurotoxin. Can be refined into Mercury and Ethane.
+color: 7F1C56
+flammability: 0
+explosiveness: 0
+heatCapacity: 0.1
+temperature: 0.25
+viscosity: 0.35
+coolant: false
+moveThroughBlocks: true
+hidden: true

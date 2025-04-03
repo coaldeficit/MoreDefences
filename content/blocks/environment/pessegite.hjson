@@ -1,0 +1,6 @@
+name: Pessegite
+variants: 3
+mapColor: d8b266
+useColor: true
+wall: pessegite-wall
+decoration: diorite-boulder

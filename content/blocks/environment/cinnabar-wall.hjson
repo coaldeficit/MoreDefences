@@ -1,5 +1,3 @@
-type: StaticWall
 name: Cinnabar Wall
-variants: 2
-mapColor: BA342A
-useColor: true
+variants: 3
+itemDrop: cinnabar-item

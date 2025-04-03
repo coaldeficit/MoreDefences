@@ -1,0 +1,46 @@
+name: Donjon
+description: Generates damaging shockwaves.
+hitSize: 14
+flying: false
+speed: 0.6
+rotateSpeed: 9
+health: 350
+armor: 10
+weapons: [{
+  name: donjon-mech-weapon
+  top: true
+  rotate: false
+  y: 0
+  x: 0
+  inaccuracy: 0
+  reload: 25
+  shootSound: explosion
+  mirror: false
+  recoil: 0
+  parts: [
+    {
+      type: RegionPart
+      suffix: -top
+      growProgress: reload
+      growX: -0.3
+      growY: -0.3
+      under: false
+      layerOffset: 0.01
+    }
+  ]
+  bullet: {	
+    type: ExplosionBulletType
+    killShooter: false
+    splashDamage: 19
+    splashDamageRadius: 32
+    rangeOverride: 32
+  }
+}]
+itemCapacity: 0
+research: {
+  parent: jeri-mech
+  objectives: [
+    bulletum
+  ]
+}
+researchCostMultiplier: 0

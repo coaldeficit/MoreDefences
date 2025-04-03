@@ -1,0 +1,93 @@
+name: Cogwheel
+description: A lightweight unit designed to be thrown over enemy defences, where it'll damage vital infrastructure and eventually detonate.
+flying: false
+speed: 0.65
+health: 520
+mechSideSway: 0.4
+mechFrontSway: 0.1
+mechStride: 4
+itemCapacity: 0
+targetFlags: [storage,battery,null]
+allowChangeCommands: false
+stances: [pursuetarget]
+playerControllable: false
+logicControllable: false
+useUnitCap: false
+weapons: [{
+  name: cogwheel-weapon
+  top: true
+  rotate: false
+  y: 2.3
+  x: 3.5
+  inaccuracy: 2
+  reload: 13
+  mirror: true
+  rotateSpeed: 0
+  rotationLimit: 0
+  predictTarget: false
+  shootCone: 361
+  bullet: {	
+    speed: 8
+    damage: 27
+    lifetime: 13
+    width: 6
+    height: 7
+  }
+}
+{
+  name: cogwheel-weapon
+  top: true
+  rotate: false
+  y: -3
+  x: -4.8
+  baseRotation: 180
+  inaccuracy: 2
+  reload: 17
+  mirror: true
+  rotateSpeed: 0
+  rotationLimit: 0
+  predictTarget: false
+  shootCone: 361
+  bullet: {	
+    speed: 8
+    damage: 34
+    lifetime: 13
+    width: 6
+    height: 7
+  }
+}
+{
+  name: generic-bomber-weapon
+  top: true
+  rotate: false
+  mirror: false
+  y: 0
+  x: 0
+  baseRotation: 180
+  inaccuracy: 2
+  reload: 1
+  rotateSpeed: 0
+  rotationLimit: 0
+  predictTarget: false
+  shootCone: 361
+  useAttackRange: false
+  display: false
+  alwaysShooting: true
+  shoot: {
+    firstShotDelay: 360
+  }
+  bullet: {	
+    speed: 0
+    damage: 0
+    lifetime: 0
+    width: 6
+    height: 7
+    killShooter: true
+    instantDisappear: true
+    splashDamage: 45
+    splashDamageRadius: 32
+  }
+}]
+research: {
+  parent: rocketeer-mech
+}

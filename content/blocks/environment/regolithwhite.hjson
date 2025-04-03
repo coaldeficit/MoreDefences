@@ -1,7 +1,0 @@
-type: Floor
-name: White Regolith
-itemDrop: sand
-variants: 3
-playerUnmineable: true
-wall: regolithwhiterocks
-decoration: regolithwhite-boulder

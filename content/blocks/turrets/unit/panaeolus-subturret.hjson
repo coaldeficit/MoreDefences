@@ -1,0 +1,48 @@
+name: Sporangia
+description: Fires Spores and self-destructs after 6 seconds.
+health: 100
+size: 1
+reload: 40
+range: 144
+inaccuracy: 4
+rotateSpeed: 5
+shoot: {
+  type: ShootMulti
+  source: ShootPattern
+  shots: 10
+  dest: [{
+    type: ShootSpread
+    shots: 3
+    spread: 50
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 85
+    firstShotDelay: 10
+  }, {
+    type: ShootSpread
+    shots: 3
+    spread: 40
+    firstShotDelay: 20
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 85
+    firstShotDelay: 30
+  }]
+}
+shootType: {
+  type: BasicBulletType
+  speed: 6
+  lifetime: 24
+  damage: 14
+  status: spore-slowed
+  statusDuration: 180
+  frontColor: 7457CE
+  backColor: 7457CE
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: spore-
+}
+category: turret

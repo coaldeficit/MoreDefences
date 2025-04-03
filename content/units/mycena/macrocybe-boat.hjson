@@ -1,0 +1,21 @@
+name: Macrocybe
+description: Sprays a stream of spores that infest blocks they break. Self-regenerative.
+flying: false
+speed: 1
+drag: 0.21
+accel: 0.35
+health: 6000
+armor: 2
+hitSize: 39
+rotateSpeed: 2.2
+faceTarget: false
+waveTrailX: 24
+waveTrailY: 0
+trailScl: 3
+trailLength: 50
+research: {
+  parent: agaricus-boat
+  objectives: [
+    exponential-reconstructor
+  ]
+}

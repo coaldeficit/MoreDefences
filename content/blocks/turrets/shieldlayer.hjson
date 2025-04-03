@@ -1,0 +1,59 @@
+name: Shieldlayer
+description: Shoots mines that project shields and disrupt nearby enemy units.
+health: 360
+size: 3
+reload: 180
+range: 200
+inaccuracy: 7
+velocityRnd: 0.1
+rotateSpeed: 2
+consumeAmmoOnce: false
+maxAmmo: 12
+predictTarget: false
+shoot: {
+  type: ShootMulti
+  source: ShootPattern
+  shots: 6
+  dest: [{
+    type: ShootSpread
+    shots: 2
+    spread: 30
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 80
+    firstShotDelay: 30
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 130
+    firstShotDelay: 60
+  }]
+}
+shootCone: 180
+hasLiquids: true
+hasPower: true
+consumes: {
+  coolant: {
+    amount: 0.1
+  }
+  power: 4
+}
+coolantMultiplier: 7
+requirements: [
+  lead/170
+  titanium/120
+  silicon/225
+  thorium/80
+]
+shootSound: artillery
+category: turret
+research: {
+  parent: fuse
+  objectives: [
+    {
+      type: SectorComplete
+      preset: impact0078
+    },
+  ]
+}

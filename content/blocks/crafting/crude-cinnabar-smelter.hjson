@@ -1,0 +1,38 @@
+name: Crude Cinnabar Smelter
+description: A crude machine for smelting Cinnabar into Mercury. Inefficient and lacks a heat input, requiring placement on exposed heat sources.
+health: 70
+craftTime: 60
+size: 2
+itemCapacity: 10
+liquidCapacity: 72
+drawer: {
+  type: DrawMulti
+  drawers: [DrawDefault, DrawFlame]
+}
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 0.5
+maxBoost: 2
+consumes: {
+  items: {
+    items: [
+      cinnabar-item/1
+    ]
+  }
+}
+outputLiquids: [
+  mercury/0.4
+]
+requirements: [
+  cobalt/70
+  cinnabar-item/110
+]
+category: crafting
+research: {
+  parent: laser-bore
+  planet: md3-fieros
+}
+researchCost: [
+  cobalt/120
+  cinnabar-item/200
+]

@@ -1,0 +1,75 @@
+name: Slugger
+flying: false
+description: Rapidly fires powerful slug shells that pierce enemy units and structures. Suppresses enemy structure repair blocks. Can walk over most terrain.
+speed: 0.5
+health: 1400
+armor: 3
+hitSize: 17
+rotateSpeed: 3
+faceTarget: false
+#abilities: [
+#  {
+#    type: SuppressionFieldAbility
+#    range: 96
+#    orbRadius: 0
+#    particles: 0
+#    orbMidScl: 0
+#    orbSinScl: 0
+#    orbSinMag: 0
+#  }
+#]
+
+// legs
+legStraightness: .1
+baseLegStraightness: 0.5
+legSpeed: 2
+stepShake: 0
+legCount: 10
+legLength: 9
+lockLegBase: false
+legContinuousMove: true
+legExtension: -2
+legBaseOffset: 9
+legMaxLength: 1.3
+legMinLength: .9
+legLengthScl: .96
+legForwardScl: 1.5
+legGroupSize: 2
+rippleScale: 0.4
+legMoveSpace: 1
+allowLegStep: true
+hovering: true
+legPhysicsLayer: false
+
+weapons: [{
+  name: slugger-weapon
+  top: true
+  rotate: true
+  y: -3
+  x: 0
+  inaccuracy: 12.5
+  reload: 6
+  shootSound: slugger-bullet
+  velocityRnd: 0.5
+  mirror: false
+  rotateSpeed: 4
+  bullet: {	
+    speed: 3
+    damage: 10
+    splashDamageRadius: 16
+    splashDamage: 10
+    lifetime: 31
+    width: 9
+    height: 8
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 2
+  }
+}]
+itemCapacity: 40
+research: {
+  parent: pounder-mech
+  objectives: [
+    multiplicative-reconstructor
+  ]
+}

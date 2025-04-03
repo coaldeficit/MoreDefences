@@ -1,0 +1,16 @@
+type: Wall
+name: Large Cobalt Wall
+description: A simple wall made of cobalt. Protects structures from enemy fire.
+health: 1920
+size: 2
+requirements: [
+  cobalt/24
+]
+category: defense
+research: {
+  parent: cobalt-wall
+  planet: md3-fieros
+}
+researchCost: [
+  cobalt/70
+]

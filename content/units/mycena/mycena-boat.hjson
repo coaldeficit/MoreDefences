@@ -1,0 +1,59 @@
+name: Mycena
+description: Fires weak artillery from afar. Self-regenerative.
+details: "An experimental unit.\nCultivates a growth of spores on its back, which in turn provides it protection and healing.\nProjectiles are dry spore clusters that ignite on contact with targets.\n\nOrigins unknown, intricate design and recent creation date indicate non-crux origins."
+flying: false
+speed: 1.25
+drag: 0.12
+accel: 0.45
+health: 220
+hitSize: 10
+rotateSpeed: 8
+faceTarget: false
+waveTrailX: 3
+trailScl: 1.2
+trailLength: 22
+weapons: [{
+  name: generic-bomber-weapon
+  top: true
+  rotate: true
+  y: -3
+  x: 0
+  inaccuracy: 0
+  reload: 45
+  shootSound: artillery
+  mirror: false
+  rotateSpeed: 361
+  shake: 0.8
+  shootCone: 10
+  shootY: 0
+  bullet: {
+    type: ArtilleryBulletType
+    speed: 5
+    damage: 0
+    lifetime: 42
+    width: 5
+    height: 5
+    splashDamageRadius: 8
+    splashDamage: 45
+    makeFire: true
+    trailEffect: sporeSlowed
+    shrinkX: 0
+    shrinkY: 0
+    sprite: circle-bullet
+    frontColor: 7457CE
+    backColor: 7457CE
+    status: burning
+    statusDuration: 180
+    keepVelocity: false
+  }
+}]
+targetAir: false
+research: {
+  parent: risso
+  objectives: [
+    {
+      type: SectorComplete
+      preset: scourged-rivers
+    },
+  ]
+}

@@ -1,0 +1,25 @@
+name: Tundra
+flying: true
+description: A heavy cluster bomber ship. Drops destructive bombs that can freeze structures.
+speed: 0.75
+drag: 0.01
+accel: 0.1
+hitSize: 80
+flying: true
+health: 19000
+armor: 10
+rotateSpeed: 0.75
+circleTarget: true
+engineOffset: 11
+engineSize: 6.5
+targetAir: true
+faceTarget: false
+targetFlags: [reactor, generator, turret, null]
+range: 245
+itemCapacity: 90
+research: {
+  parent: messenger-ship
+  objectives: [
+    tetrative-reconstructor
+  ]
+}

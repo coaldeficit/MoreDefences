@@ -1,0 +1,69 @@
+name: Hornet
+description: An artillery based unit designed to destroy enemy infrastructure behind walls. 
+speed: 2
+flying: true
+health: 1000
+armor: 7
+hitSize: 20
+engineOffset: 13.5
+drag: 0.01
+accel: 0.2
+#rotatespeed: 1
+targetAir: false
+targetFlags: [turret, battery, null]
+itemCapacity: 0
+weapons: [{
+  name: hornet-cannon
+  mirror: false
+  top: true
+  y: -3
+  x: 0
+  reload: 120
+  shootSound: artillery
+  ejectEffect: casing3Double
+  inaccuracy: 2
+  bullet: {
+    type: ArtilleryBulletType
+    frontColor: bf92f9
+    backColor: 6d56bf
+    width: 22
+    height: 20
+    speed: 3
+    damage: 30
+    splashDamage: 54
+    splashDamageRadius: 33
+    ammoMultiplier: 1
+    lifetime: 64
+    fragBullets: 8
+    keepVelocity: false
+    fragBullet: {
+      type: ArtilleryBulletType
+      frontColor: bf92f9
+      backColor: 6d56bf
+      speed: 6
+      width: 14
+      height: 15
+      splashDamage: 20
+      splashDamageRadius: 15
+      lifetime: 50
+      fragBullets: 3
+      keepVelocity: false
+      fragBullet: {
+        type: MissileBulletType
+        damage: 4
+        splashDamage: 14
+        splashDamageRadius: 10
+        frontColor: bf92f9
+        backColor: 6d56bf
+        trailColor: 000000
+        keepVelocity: false
+        }
+      }
+  }
+}]
+research: {
+  parent: bee-ship
+  objectives: [
+    multiplicative-reconstructor
+  ]
+}

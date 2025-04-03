@@ -1,0 +1,6 @@
+name: Mercuric Rock
+variants: 3
+mapColor: 525252
+useColor: true
+wall: mercuric-wall
+decoration: mercuric-boulder

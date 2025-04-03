@@ -1,0 +1,66 @@
+name: Pounder
+description: Fires medium-range explosive shells at ground enemy targets.
+flying: false
+speed: 0.4
+health: 500
+hitSize: 9
+targetAir: false
+
+// legs
+legStraightness: .1
+legSpeed: 2
+stepShake: 0
+legCount: 4
+legLength: 9
+lockLegBase: false
+legContinuousMove: true
+legExtension: -2
+legBaseOffset: 5
+legMaxLength: 1
+legMinLength: .5
+legLengthScl: .96
+legForwardScl: 1.5
+legGroupSize: 6
+rippleScale: 0.4
+legMoveSpace: 1
+allowLegStep: true
+hovering: true
+legPhysicsLayer: false
+
+shadowElevation: 0.15
+groundLayer: 74
+
+weapons: [{
+  name: pounder-weapon
+  top: true
+  rotate: true
+  y: 0
+  x: 0
+  inaccuracy: 0
+  reload: 135
+  shootSound: artillery
+  mirror: false
+  rotateSpeed: 5
+  bullet: {	
+    #type: ExplosionBuletType # 7rodo.jpeg
+    type: BasicBulletType
+    speed: 7
+    damage: 50
+    lifetime: 23
+    width: 13
+    height: 12
+    splashDamageRadius: 16
+    splashDamage: 35
+    collidesAir: false
+    despawnEffect: flakExplosion 
+    smokeEffect: flakExplosion 
+    trailEffect: fireSmoke 
+    trailChance: 1
+  }
+}]
+research: {
+  parent: shotgunner-mech
+  objectives: [
+    additive-reconstructor
+  ]
+}

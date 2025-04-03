@@ -1,3 +1,3 @@
-//require("more-defences-ivyx/experimental/exp-status-effects")
-//require("more-defences-ivyx/experimental/vanadinite-extractor")
-require("more-defences-ivyx/experimental/unit-overdrive")
+//require("md3/experimental/exp-status-effects")
+//require("md3/experimental/vanadinite-extractor")
+require("md3/experimental/unit-overdrive")

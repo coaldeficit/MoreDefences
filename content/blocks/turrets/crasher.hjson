@@ -2,19 +2,17 @@ type: ItemTurret
 name: Crasher
 size: 5
 health: 4860
-description: A very powerful air turret. Fires slow but powerful bullets that explode into alot of weaker bullets that explode further into hundreds of missiles. Can destroy entire swarms of air units in one shot.
-shots: 1
+description: A very powerful air turret. Fires slow but powerful bullets that explode into several weaker bullets that explode further into hundreds of missiles. Can destroy entire swarms of air units in one shot.
 range: 400
 targetGround: false
 recoil: 8
-reloadTime: 420
+reload: 420
 rotateSpeed: 2
 maxAmmo: 6
 ammoPerShot: 3
 inaccuracy: 5
 shootSound: artillery
 coolantMultiplier: 0.85
-shootCone: 270
 ammoTypes: {
   rage: {
     damage: 500
@@ -63,13 +61,13 @@ ammoTypes: {
       }
   }
 }
-requirements: [
-  metaglass/1500
-  plastanium/920
-  thorium/2000
-  phase-fabric/500
-  surge-alloy/750
-  tefium/300
-]
-research: firenado
-category: turret
+#requirements: [
+#  metaglass/1500
+#  plastanium/920
+#  thorium/2000
+#  phase-fabric/500
+#  surge-alloy/750
+#]
+#research: firenado
+#category: turret
+buildVisibility: hidden

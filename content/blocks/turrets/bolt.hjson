@@ -1,0 +1,28 @@
+name: Bolt
+description: Fires beams at enemy targets.
+health: 200
+size: 2
+reload: 60
+range: 144
+rotateSpeed: 3
+shootSound: bolt
+predictTarget: false
+maxAmmo: 36
+ammoPerShot: 6
+shootCone: 0.2
+drawer: {
+  type: DrawTurret
+  basePrefix: md3-fieros-
+}
+requirements: [
+  cobalt/130
+  cinnabar-item/130
+  bulletum/70
+]
+category: turret
+research: pelt
+researchCost: [
+  cobalt/600
+  cinnabar-item/600
+  bulletum/100
+]

@@ -1,0 +1,128 @@
+parent: sun
+sectorSize: 4
+radius: 1
+generator: AsteroidGenerator
+accessible: true
+alwaysUnlocked: true
+bloom: false
+startSector: 27
+iconColor: 292A55
+hasAtmosphere: true
+atmosphereColor: 45351120
+atmosphereRadIn: 0.05
+atmosphereRadOut: 0.1
+rotateTime: 2076
+orbitRadius: 132
+landCloudColor: e6c25730
+
+defaultEnv: 129
+updateLighting: false
+allowLaunchToNumbered: false
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+allowWaveSimulation: false
+allowSectorInvasion: false
+clearSectorOnLose: true
+enemyBuildSpeedMultiplier: 0.6
+
+defaultCore: core-monoquark
+
+mesh: [
+  { # DMM
+    type: NoiseMesh
+    seed: 69
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 6
+    color: 690940
+    radius: 1.05
+    octaves: 1
+    persistence: 1
+    scale: 1
+    mag: 0
+  },
+  { # NIEBIESKITE, SULFURIC ROCK
+    type: NoiseMesh
+    seed: 5647267
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 6
+    color1: 292A55
+    color2: 998B15
+    radius: 0.9219
+    octaves: 3
+    persistence: 1
+    scale: 0.6
+    mag: 1.3
+    colorScale: 1.59
+    colorThreshold: 0.6
+  },
+  { # LITHIMENT, SHALLOW CINNABAR
+    type: NoiseMesh
+    seed: 5647267
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 6
+    color1: 968895
+    color2: CC392E
+    radius: 0.98805
+    octaves: 3
+    persistence: 1
+    scale: 0.6
+    mag: 0.6
+    colorScale: 1.59
+    colorThreshold: 0.6
+  },
+  { # METACINNABAR, MERCURIC ROCK
+    type: NoiseMesh
+    seed: 5647267
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 6
+    color1: 121212
+    color2: 444444
+    radius: 0.882
+    octaves: 4
+    persistence: 0.4
+    scale: 0.6
+    mag: 1.66
+    colorScale: 8
+    colorThreshold: 0.55
+  },
+  { # PESSEGITE
+    type: NoiseMesh
+    seed: 5647267
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 6
+    color: f2c66d
+    radius: 0.765
+    octaves: 4
+    persistence: 0.5
+    scale: 0.6
+    mag: 3.04
+  },
+]
+cloudMesh: [
+  {
+    type: HexSkyMesh
+	speed: 1
+    seed: 53645634
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 7
+    color: e6c25740
+    radius: 0.075
+    octaves: 1
+    persistence: 1
+    scale: 3
+    thresh: 0.3
+  },
+  {
+    type: HexSkyMesh
+	speed: 0.5
+    seed: 53645634
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 7
+    color: e6c25720
+    radius: 0.1
+    octaves: 1
+    persistence: 1
+    scale: 3
+    thresh: 0.15
+  },
+]

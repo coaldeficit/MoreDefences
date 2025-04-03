@@ -1,0 +1,24 @@
+type: MassDriver
+name: Launcher
+description: "Fires small amounts of items at another Launcher in range.\n\n[red]Capable of passing items from the output launcher back into the input launcher if placed incorrectly.[]"
+health: 25
+size: 1
+itemCapacity: 25
+squareSprite: false
+reload: 120
+range: 44
+minDistribute: 5
+shake: 0
+bulletSpeed: 4
+bulletLifetime: 12
+knockback: 2
+category: distribution
+research: {
+  parent: cobalt-channel
+  planet: md3-fieros
+}
+requirements: [
+  cobalt/5
+  cinnabar-item/5
+]
+alwaysUnlocked: true

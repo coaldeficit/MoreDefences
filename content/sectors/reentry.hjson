@@ -1,0 +1,17 @@
+description: "A fireball has been detected over this sector during your battle in Ruinous Shores, aswell as rapidly increasing enemy presence within.\n[accent]Unknown unit signatures[] have been identified among the enemy forces present here.\nTake out the enemy units. Investigate what is attracting their attention."
+planet: serpulo
+sector: 212
+difficulty: 5
+captureWave: 40
+research: {
+  parent: ruinousShores
+  objectives: [
+    {
+      type: SectorComplete
+      preset: ruinousShores
+    },
+    titanium-wall-large,
+    ripple,
+    lancer
+  ]
+}

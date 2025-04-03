@@ -1,0 +1,20 @@
+name: Panaeolus
+description: Shoots a barrage of oil-filled projectiles and large spores that develop into turrets on contact with land. Self-regenerative.
+flying: false
+speed: 1
+drag: 0.12
+accel: 0.45
+health: 490
+hitSize: 16
+rotateSpeed: 6.2
+faceTarget: false
+waveTrailX: 7
+trailScl: 1.2
+trailLength: 33
+targetAir: true
+research: {
+  parent: mycena-boat
+  objectives: [
+    additive-reconstructor
+  ]
+}

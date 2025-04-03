@@ -1,0 +1,21 @@
+name: Armillaria
+description: Shoots extremely powerful energy bombs that overwhelm enemy point defence systems. Self-regenerative.
+flying: false
+speed: 0.7
+drag: 0.12
+accel: 0.45
+health: 16000
+armor: 8
+hitSize: 58
+rotateSpeed: 1.6
+faceTarget: false
+waveTrailX: 15
+waveTrailY: -30
+trailScl: 4
+trailLength: 70
+research: {
+  parent: macrocybe-boat
+  objectives: [
+    tetrative-reconstructor
+  ]
+}

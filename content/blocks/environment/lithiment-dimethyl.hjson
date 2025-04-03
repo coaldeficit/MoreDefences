@@ -1,0 +1,8 @@
+name: Lithiment Dimethyl
+variants: 3
+mapColor: a47790
+useColor: true
+wall: lithiment-dimethyl-wall
+speedMultiplier: 0.7
+isLiquid: true
+liquidDrop: liquid-dimethyl

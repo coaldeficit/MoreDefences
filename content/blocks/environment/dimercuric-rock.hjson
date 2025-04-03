@@ -1,0 +1,9 @@
+type: Floor
+name: Dimercuric Rock
+variants: 2
+mapColor: 683241
+useColor: true
+wall: dimercuric-rock-wall
+speedMultiplier: 0.7
+isLiquid: true
+liquidDrop: liquid-dimethyl

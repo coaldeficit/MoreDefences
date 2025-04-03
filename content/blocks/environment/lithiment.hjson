@@ -1,0 +1,6 @@
+name: Lithiment
+variants: 3
+mapColor: 968895
+useColor: true
+wall: lithiment-wall
+decoration: lithiment-boulder

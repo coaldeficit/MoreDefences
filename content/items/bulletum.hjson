@@ -1,0 +1,10 @@
+name: Bulletum
+description: A tough alloy of Cobalt and Lithium used for ammunition and construction.
+cost: 1
+hardness: 0
+color: cb4a9b
+charge: 0.03
+research: {
+  parent: lithium
+  planet: md3-fieros
+}

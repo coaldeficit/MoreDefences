@@ -1,0 +1,5 @@
+name: Hot Metacinnabar
+variants: 3
+wall: metacinnabar-wall
+decoration: metacinnabar-boulder
+blendGroup: metacinnabar

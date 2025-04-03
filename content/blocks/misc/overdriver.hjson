@@ -1,0 +1,36 @@
+type: OverdriveProjector
+name: Overdriver
+description: Speeds up the process of nearby buildings within its range. Cheap, but rather inefficient.
+health: 40
+size: 1
+consumes: {
+  power: 0.5
+  items: {
+    items:[
+      silicon/1
+    ]
+    booster: true
+    optional: true
+  }
+}
+speedBoost: 1.2
+speedBoostPhase: 0.15
+useTime: 375
+phaseRangeBoost: 16
+range: 32
+requirements: [
+  copper/70
+  lead/90
+  silicon/40
+]
+category: effect
+research: {
+  parent: mender
+  planet: serpulo
+  objectives: [
+    {
+      type: SectorComplete
+      preset: ruinousShores
+    }
+  ]
+}

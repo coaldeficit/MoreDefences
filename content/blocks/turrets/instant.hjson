@@ -1,73 +1,126 @@
-type: ItemTurret
 name: Instant
-description: An upgraded Tearer. Fires fast bullets at an extremely fast rate.
-health: 1250
-size: 2
-reloadTime: 6
-range: 170
-shootSound: shootSnap
-inaccuracy: 1
-rotatespeed: 50
-spread: 5
-shots: 2
-alternate: true
-targetGround: false
-ammoPerShot: 1
-ammoTypes: {
-  scrap: {
-    speed: 20
-    damage: 18
-    ammoMultiplier: 6
-    drawSize: 4
-    lifetime: 9
-  }
-  lead: {
-    speed: 16
-    damage: 22
-    ammoMultiplier: 3
-    drawSize: 4
-    lifetime: 12
-  }
-  coal: {
-    speed: 16
-    damage: 19
-    ammoMultiplier: 3
-    drawSize: 4
-    lifetime: 12
-    incendAmount: 0.5
-    incendSpread: 0.1
-    incendChance: 0.5
-  }
-  silicon: {
-    speed: 16
-    damage: 22
-    ammoMultiplier: 3
-    drawSize: 4
-    lifetime: 12
-    homingPower: 12
-  }
-  titanium: {
-    speed: 13
-    damage: 65
-    ammoMultiplier: 3
-    drawSize: 4
-    lifetime: 12
-    reloadMultiplier: 0.6
-  }
-  polonium: {
-    speed: 13
-    damage: 70
-    ammoMultiplier: 1
-    drawSize: 4
-    lifetime: 12
-    reloadMultiplier: 0.4
-    status: more-defences-ivyx-irradiated-status
-    statusDuration: 240
-  }
+description: Fires fast, hard-hitting tungsten missiles at air units. Missiles redirect at enemies with the least max health and are highly effective against weak units, but have trouble penetrating the armor of higher tier air units.
+health: 1620
+size: 3
+reload: 45
+range: 200
+shootSound: missileSmall
+inaccuracy: 0
+rotateSpeed: 2.5
+shootCone: 135
+shoot: {
+  type: ShootAlternate
+  shots: 2
+  barrels: 2
+  shotDelay: 0
+  spread: 10
 }
+targetGround: false
+unitSort: weakest
+drawer: {
+  type: DrawTurret
+  basePrefix: reinforced-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -launcher-spike-l
+      x: -8
+      y: 6.25
+      progress: recoil
+      moveX: -5
+      moveY: -1.75
+      moveRot: 90
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-spike-l
+      x: -8
+      y: 2
+      progress: recoil
+      moveX: -5
+      moveY: -1.75
+      moveRot: 90
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-spike-l
+      x: -8
+      y: -2.25
+      progress: recoil
+      moveX: -5
+      moveY: -1.75
+      moveRot: 90
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-spike-r
+      x: 8
+      y: 6.25
+      progress: recoil
+      moveX: 5
+      moveY: -1.75
+      moveRot: -90
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-spike-r
+      x: 8
+      y: 2
+      progress: recoil
+      moveX: 5
+      moveY: -1.75
+      moveRot: -90
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-spike-r
+      x: 8
+      y: -2.25
+      progress: recoil
+      moveX: 5
+      moveY: -1.75
+      moveRot: -90
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-l
+      x: -5.75
+      progress: recoil
+      layerOffset: 0.001
+      moveX: -1.25
+      moveY: -1.75
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -launcher-r
+      x: 5.75
+      progress: recoil
+      layerOffset: 0.001
+      moveX: 1.25
+      moveY: -1.75
+      under: true
+    }
+  ]
+}
+ammoPerShot: 3
+maxAmmo: 15
 requirements: [
-  titanium/50
-  thorium/25
+  beryllium/200
+  silicon/250
+  graphite/250
+  oxide/60
 ]
 category: turret
-research: tearer
+research: {
+  parent: sublimate
+  planet: erekir
+  # requiresUnlock: false
+  objectives: [
+    {
+      type: SectorComplete
+      # \/ temporary, todo: replace with custom optional sector branching from marsh
+      preset: ravine
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+type: Wall
+name: Cobalt Wall
+description: A simple wall made of cobalt. Protects structures from enemy fire.
+health: 480
+size: 1
+requirements: [
+  cobalt/6
+]
+category: defense
+research: {
+  parent: core-monoquark
+  planet: md3-fieros
+}
+alwaysUnlocked: true

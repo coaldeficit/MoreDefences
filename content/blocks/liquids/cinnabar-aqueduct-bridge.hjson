@@ -1,0 +1,19 @@
+type: LiquidBridge
+name: Aqueduct Bridge
+description: "Transports liquids over terrain or buildings.\nOutputs to 3 sides at the end."
+health: 25
+size: 1
+moveArrows: true
+arrowSpacing: 6
+range: 4
+category: liquid
+requirements: [
+  cinnabar-item/6
+]
+research: {
+  parent: cinnabar-aqueduct
+  planet: md3-fieros
+}
+researchCost: [
+  cinnabar-item/25
+]

@@ -1,4 +1,4 @@
 type: OreBlock
 itemDrop: radium
-hardness: 3
+#hardness: 3
 playerUnmineable: true

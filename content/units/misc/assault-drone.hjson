@@ -1,0 +1,52 @@
+name: Assaulter
+description: A weak drone used as a source of extra firepower by some weapons systems. Self-destructs after a short period of time.
+speed: 2.5
+flying: true
+health: 60
+armor: 2
+engineOffset: 5
+engineSize: 2.5
+drag: 0.02
+accel: 0.03
+rotateSpeed: 3
+circleTarget: true
+faceTarget: false
+targetAir: true
+itemCapacity: 0
+useUnitCap: false
+hitSize: 6
+targetFlags: [null]
+lifetime: 135
+allowChangeCommands: false
+stances: [pursuetarget]
+playerControllable: false
+logicControllable: false
+physics: false
+crashDamageMultiplier: 0
+createWreck: false
+weapons: [{
+  name: generic-bomber-weapon
+  y: 0
+  x: 0
+  reload: 30
+  shootSound: lasershoot
+  inaccuracy: 0
+  mirror: false
+  shootCone: 361
+  useAttackRange: false
+  rotationLimit: 0
+  bullet: {
+    type: LaserBoltBulletType
+    speed: 5.2
+    damage: 15
+    lifetime: 30
+    collidesTeam: false
+    healPercent: -1
+    backColor: f68021
+    lightColor: f68021
+    smokeEffect: hitLaserColor
+    hitEffect: hitLaserColor
+    despawnEffect: hitLaserColor
+  }
+}]
+range: 280

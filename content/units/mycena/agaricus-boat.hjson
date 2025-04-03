@@ -1,0 +1,96 @@
+name: Agaricus
+description: Fires extremely powerful homing short range bursts of energy, aswell as drones to pick on farther away targets. Self-regenerative.
+flying: false
+speed: 0.8
+drag: 0.14
+accel: 0.37
+health: 720
+armor: 5
+hitSize: 30
+rotateSpeed: 3
+faceTarget: false
+waveTrailX: 12
+trailScl: 1.8
+trailLength: 43
+weapons: [{
+  name: agaricus-cannon
+  top: true
+  rotate: true
+  y: -3
+  x: 0
+  inaccuracy: 15
+  reload: 150
+  shootSound: shockBlast
+  mirror: false
+  rotateSpeed: 5
+  shake: 3
+  shootCone: 10
+  shootY: 7
+  shoot: {
+    type: ShootPattern
+    shots: 4
+    shotDelay: 6
+  }
+  bullet: {
+    type: BasicBulletType
+    speed: 9
+    damage: 50
+    lifetime: 15
+    width: 12
+    height: 12
+    shrinkX: 0
+    shrinkY: 0
+    sprite: circle-bullet
+    frontColor: FFFFFF
+    backColor: 7457CE
+    status: sapped
+    statusDuration: 180
+    keepVelocity: false
+    trailWidth: 7
+    trailLength: 5
+    trailColor: 7457CE
+    pierce: true
+    pierceBuilding: true
+    homingPower: 0.3
+    homingRange: 50
+    buildingDamageMultiplier: 2.3
+  }
+},{
+  name: agaricus-boat-gun
+  top: true
+  rotate: true
+  y: -12
+  x: 11
+  inaccuracy: 45
+  reload: 300
+  shootSound: missile
+  mirror: true
+  rotateSpeed: 2
+  shake: 0
+  shootCone: 361
+  rotationLimit: 100
+  shootY: 7
+  controllable: false
+  autoTarget: true
+  shoot: {
+    type: ShootPattern
+    shots: 2
+    shotDelay: 6
+  }
+  bullet: {
+    type: BulletType
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke2
+    speed: 0
+    keepVelocity: false
+    collidesAir: false
+    spawnUnit: assault-drone
+  }
+}]
+targetAir: false
+research: {
+  parent: panaeolus-boat
+  objectives: [
+    multiplicative-reconstructor
+  ]
+}

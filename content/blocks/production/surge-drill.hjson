@@ -1,0 +1,26 @@
+name: Dynamic Drill
+description: A late game drill, capable of mining vanadium but in a small area.
+type: Drill
+health: 450
+size: 1
+tier: 6
+drillTime: 50
+consumes: {
+  power: 2
+  liquid: {
+    liquid: cryofluid
+      amount: 0.1
+      optional: true
+      booster: true
+  }
+}
+drawMineItem: false
+#requirements: [
+#   graphite/60
+#   titanium/75
+#   thorium/80
+#   surge-alloy/55
+#]
+#category: production
+#research: blast-drill
+buildVisibility: hidden

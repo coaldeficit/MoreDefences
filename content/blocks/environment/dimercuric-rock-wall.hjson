@@ -1,0 +1,5 @@
+type: StaticWall
+name: Dimercuric Rock Wall
+variants: 3
+mapColor: 683241
+useColor: true

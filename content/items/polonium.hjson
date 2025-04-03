@@ -1,7 +1,0 @@
-type: material
-name: Polonium
-description: A rare and highly radioactive metal.
-color: 6E5B49
-hardness: 7
-radioactivity: 2.35
-explosiveness: 0.2

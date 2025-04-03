@@ -1,0 +1,6 @@
+name: Sandy Tholin
+itemDrop: sand
+variants: 3
+playerUnmineable: true
+wall: tholin-white-wall
+decoration: tholin-white-boulder

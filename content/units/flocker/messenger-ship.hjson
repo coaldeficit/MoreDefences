@@ -1,0 +1,103 @@
+name: Messenger
+description: Unleashes a barrage of powerful bullets on enemy targets while peppering them with artillery.
+speed: 1
+accel: 0.04
+drag: 0.017
+rotateSpeed: 1
+hitSize: 55
+flying: true
+health: 8500
+armor: 7
+engineOffset: 0
+#rotateWeapon: true
+#shootCone: 45
+lowAltitude: true
+targetFlags: [turret, battery, null]
+itemCapacity: 30
+weapons: [
+  {
+  name: messenger-minigun
+  top: true
+  rotate: true
+  rotateSpeed: 1.3
+  y: -7
+  mirror: false
+  x: 0
+  inaccuracy: 2
+  reload: 640
+  recoil: 2
+  shootSound: minigun-hit
+  chargeSound: lasercharge
+  # please replace these with custom chaingun sounds later
+  shoot: {
+    firstShotDelay: 100
+    shotDelay: 5
+    shots: 51
+  }
+  bullet: {
+    speed: 14
+    lifetime: 13
+    keepVelocity: false
+    damage: 45
+    pierceCap: 3
+    pierceBuilding: true
+    status: burning
+    statusDuration: 200
+    frontColor: f6e096
+    backColor: f8ad42
+    trailColor: f8ad42
+    trailLength: 4
+    trailWidth: 3
+    incendAmount: 1
+    incendChance: 0.5
+    height: 50
+    width: 12
+    lightColor: f6e096
+    lightOpacity: 0.6
+    lightRadius: 27
+    trailEffect: burning
+    trailChance: 0.333
+  }
+ }
+  {
+  name: messenger-cannon
+  top: true
+  y: -1
+  #shots: 3
+  x: 16
+  reload: 75
+  #alternative: true
+  shootSound: artillery
+  ejectEffect: casing3Double
+  inaccuracy: 1
+  bullet: {
+    type: ArtilleryBulletType
+    frontColor: bf92f9
+    backColor: 6d56bf
+    width: 19
+    height: 17
+    speed: 7
+    damage: 12
+    splashDamage: 42
+    splashDamageRadius: 18
+    ammoMultiplier: 1
+    lifetime: 30
+    fragBullets: 8
+    fragBullet: {
+      type: ArtilleryBulletType
+      frontColor: bf92f9
+      backColor: 6d56bf
+      speed: 2
+      width: 12
+      height: 13
+      splashDamage: 17
+      splashDamageRadius: 15
+      lifetime: 30
+}}
+}]
+research: {
+  parent: hornet-ship
+  objectives: [
+    exponential-reconstructor
+  ]
+}

@@ -1,6 +1,0 @@
-type: OreBlock
-name: Zincite
-itemDrop: zincite
-variants: 3
-mapColor: F36B33
-useColor: true

@@ -3,12 +3,15 @@ name: Bubbler
 description: A piercing turret that creates hundreds of bubbles from liquids which deal low damage.
 health: 600
 size: 2
-reloadTime: 3
+reload: 3
 range: 200
-inaccuracy: 45
-rotatespeed: 5
-spread: 45
-shots: 8
+inaccuracy: 25
+rotateSpeed: 5
+shoot:{
+  type: ShootSpread
+  spread: 45
+  shots: 8
+}
 ammoTypes: {
  water: {
     type: LiquidBulletType
@@ -47,10 +50,11 @@ ammoTypes: {
     drag: 0.025
   }
 }
-requirements: [
-  lead/125
-  titanium/25
-  metaglass/75
-]
-category: turret
-research: wave
+#requirements: [
+#  lead/125
+#  titanium/25
+#  metaglass/75
+#]
+#category: turret
+#research: tsunami
+buildVisibility: hidden

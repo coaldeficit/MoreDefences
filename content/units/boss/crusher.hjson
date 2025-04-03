@@ -1,0 +1,76 @@
+name: Crusher
+description: A highly durable war machine that crushes anything in its path. Has automatic salvo turrets to defend itself from air units.
+flying: false
+health: 26000
+armor: 50
+hitSize: 50
+engineOffset: 13.5
+range: 420
+rotateSpeed: 1
+targetAir: true
+speed: 0.2
+weapons: [{
+  name: crusher-salvo
+  top: true
+  y: 7
+  x: 9
+  reload: 80
+  shootSound: shootBig
+  inaccuracy: 0
+  rotate: true
+  controllable: false
+  autoTarget: true
+  shoot: {
+    shots: 12
+    shotDelay: 2
+  }
+  bullet: {
+    type: BasicBulletType
+    speed: 10
+    damage: 45
+    lifetime: 30
+    width: 10
+    height: 16
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 3
+    pierceDamageFactor: 0.5
+    homingPower: 0.2
+    homingRange: 150
+  }
+}, {
+  name: crusher-salvo
+  top: true
+  y: -5
+  x: 15
+  reload: 60
+  shootSound: shootBig
+  inaccuracy: 0
+  rotate: true
+  shoot: {
+    type: ShootMulti
+    source: ShootPattern
+    dest: [{
+      type: ShootSpread
+      shots: 3
+      spread: 2.5
+    }, {
+      type: ShootSpread
+      shots: 3
+      spread: 2.5
+      firstShotDelay: 6
+    }]
+  }
+  bullet: {
+    type: BasicBulletType
+    speed: 6
+    damage: 140
+    lifetime: 70
+    width: 16
+    height: 19
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+    pierceDamageFactor: 0.25
+  }
+}]

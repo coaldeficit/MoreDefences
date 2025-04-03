@@ -1,0 +1,15 @@
+name: Channel
+description: Transfers items forwards.
+health: 25
+speed: 8
+bridgeReplacement: cargo-launcher
+requirements: [
+  cobalt/1
+]
+category: distribution
+envDisabled: 24
+research: {
+  parent: core-monoquark
+  planet: md3-fieros
+}
+alwaysUnlocked: true

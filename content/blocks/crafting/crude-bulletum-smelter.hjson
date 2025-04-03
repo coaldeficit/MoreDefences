@@ -1,0 +1,36 @@
+name: Crude Bulletum Smelter
+description: A crude machine for smelting Cinnabar and Lithium. Inefficient and lacks a heat input, requiring placement on exposed heat sources.
+health: 70
+craftTime: 60
+size: 2
+itemCapacity: 10
+drawer: {
+  type: DrawMulti
+  drawers: [DrawDefault, DrawFlame]
+}
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 0.5
+maxBoost: 2
+consumes: {
+  items: {
+    items: [
+      cobalt/1
+      lithium/1
+    ]
+  }
+}
+requirements: [
+  cobalt/150
+  cinnabar-item/100
+]
+outputItem: bulletum/2
+category: crafting
+research: {
+  parent: crude-cinnabar-smelter
+  planet: md3-fieros
+}
+researchCost: [
+  cobalt/275
+  cinnabar-item/175
+]

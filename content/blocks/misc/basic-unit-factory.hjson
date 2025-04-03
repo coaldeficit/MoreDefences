@@ -1,0 +1,47 @@
+type: UnitFactory
+name: Basic Unit Factory
+description: Uses resources to construct basic, low tier units.
+details: Uses a turbine coated in cinnabar to convert the flow of Mercury into usable energy.
+health: 50
+size: 3
+hasPower: false
+hasLiquids: true
+consumes: {
+  liquids: [
+    {
+      liquid: mercury
+      amount: 0.4
+    }
+  ]
+}
+plans: [
+  {
+    unit: jeri-mech
+    time: 1200
+    requirements: [
+      cobalt/10
+      cinnabar-item/10
+    ]
+  },
+  {
+    unit: donjon-mech
+    time: 1200
+    requirements: [
+      cobalt/10
+      bulletum/10
+    ]
+  }
+]
+requirements: [
+  cobalt/150
+  cinnabar-item/150
+]
+category: units
+research: {
+  parent: crude-cinnabar-smelter
+  planet: md3-fieros
+}
+researchCost: [
+  cobalt/225
+  cinnabar-item/225
+]

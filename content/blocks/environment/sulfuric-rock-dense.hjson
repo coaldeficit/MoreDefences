@@ -1,0 +1,5 @@
+name: Dense Sulfuric Rock
+variants: 3
+wall: sulfuric-wall
+decoration: sulfuric-boulder
+blendGroup: sulfuric-rock

@@ -1,0 +1,47 @@
+type: AttributeCrafter
+name: Germinator
+description: An upgraded cultivator. Feeds spores nutritional supplements for faster growth.
+health: 600
+craftTime: 100
+size: 3
+itemCapacity: 30
+liquidCapacity: 150
+drawer: {
+  type: DrawMulti
+  drawers: [DrawDefault, DrawCultivator, {
+    type: DrawRegion
+    suffix: -top
+  }]
+}
+attribute: spores
+consumes: {
+  power: 2.75
+  liquid: {
+    liquid: water
+    amount: 0.8
+  }
+  items: {
+    items: [
+      copper/1
+      graphite/2
+    ]
+  }
+}
+outputItem: spore-pod/3
+requirements: [
+  copper/75
+  lead/75
+  graphite/20
+  silicon/30
+  titanium/50
+]
+category: production
+research: {
+  parent: cultivator
+  objectives: [
+    {
+      type: SectorComplete
+      preset: infestedCanyons
+    },
+  ]
+}

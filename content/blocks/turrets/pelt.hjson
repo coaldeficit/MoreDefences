@@ -1,0 +1,58 @@
+name: Pelt
+description: Fires groups of bullets at enemies.
+health: 150
+size: 2
+reload: 25
+range: 182
+inaccuracy: 2
+rotateSpeed: 10
+shoot: {
+  type: ShootMulti
+  source: ShootPattern
+  shots: 4
+  dest: [{
+    type: ShootBarrel
+    shots: 2
+    barrels: [
+      -3,0,0,
+      3,0,0
+    ]
+  }, {
+    type: ShootBarrel
+    shots: 2
+    barrels: [
+      -3,0,0,
+      3,0,0
+    ]
+    firstShotDelay: 3
+  }]
+}
+targetAir: false
+maxAmmo: 9
+ammoPerShot: 3
+drawer: {
+  type: DrawTurret
+  basePrefix: md3-fieros-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -cannon
+      progress: recoil
+      moveY: -1.75
+      layerOffset: 0.001
+    }
+  ]
+}
+requirements: [
+  cobalt/110
+  cinnabar-item/110
+]
+category: turret
+research: {
+  parent: cobalt-wall
+  planet: md3-fieros
+}
+researchCost: [
+  cobalt/200
+  cinnabar-item/200
+]
