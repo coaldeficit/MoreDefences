@@ -18,9 +18,9 @@ body:
   - type: input
     id: build
     attributes:
-      label: Build
-      description: The build number under the title in the main menu.
-      placeholder: LATEST IS NOT A VERSION, I NEED THE EXACT BUILD NUMBER OF YOUR GAME.
+      label: Version
+      description: The mod version as listed above the mod description in the mod menu.
+      placeholder: LATEST IS NOT A VERSION, I NEED THE EXACT VERSION NUMBER OF THE MOD.
     validations:
       required: true
   - type: textarea
