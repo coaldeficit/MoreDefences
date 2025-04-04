@@ -15,7 +15,7 @@ let plast = extend(RailBulletType, {
   damage: 180,
   maxDamageFraction: 0.2,
   pierceCap: 4,
-  length: 258,
+  length: 160,
   ammoMultiplier: 1,
   status: StatusEffects.electrified,
   statusDuration: 180,

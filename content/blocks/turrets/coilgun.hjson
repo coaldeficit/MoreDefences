@@ -3,7 +3,7 @@ description: Shoots disruptive piercing beams at enemies.
 health: 1700
 size: 3
 reload: 100
-range: 258
+range: 160
 inaccuracy: 0
 rotateSpeed: 2
 shootCone: 1
