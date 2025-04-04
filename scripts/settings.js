@@ -41,7 +41,7 @@ Events.on(ClientLoadEvent, () => {
         }
       }
       if (!Core.settings.getBool("md3-internal-betawarning")) {
-        Vars.ui.showCustomConfirm("MoreDefences Beta Install Warning", "Are you ABSOLUTELY SURE you want to install the beta version of MoreDefences?\nWhile it may contain new content, it may also contain new bugs, aswell as things that may run you the risk of corrupting or losing your save file.\n\nIf you proceed, you can return to the latest stable version by reinstalling the mod from the Mods menu, or via the Auto-update popup if its enabled and appears for you.","I know what im doing","NOPENOPENOPE",()=>{
+        Vars.ui.showCustomConfirm("MoreDefences Beta Install Warning", "Are you ABSOLUTELY SURE you want to install the beta version of MoreDefences?\nWhile it may contain new content, it may also contain new bugs, aswell as things that may run you the risk of corrupting or losing your save file.\n\nIf you proceed, you can return to the latest stable version by reinstalling the mod from the Mods menu, or via Auto-Update if its enabled and appears for you.","I know what im doing","NOPENOPENOPE",()=>{
           Core.settings.put("md3-internal-betawarning", true)
           reinstall()
         },()=>{})
