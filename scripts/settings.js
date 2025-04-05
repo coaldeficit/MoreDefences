@@ -76,9 +76,13 @@ Events.on(ClientLoadEvent, () => {
               })
             })
           })
-          Time.runTask(6*60, () => {
-            Vars.ui.showOkText("MoreDefences Beta Install Finished", "The game will now close to reload mods.",()=>Core.app.exit())
-          })
+          let shown = false;
+          Timer.schedule(() => {
+            if (Vars.mods.requiresReload() && !shown) {
+              shown = true;
+              Vars.ui.showInfoOnHidden("@mods.reloadexit",() => {Core.app.exit();})
+            }
+          }, 2, 2);
         }
       }
       if (!Core.settings.getBool("md3-internal-betawarning")) {
