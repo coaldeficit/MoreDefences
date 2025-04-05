@@ -35,7 +35,48 @@ Events.on(ClientLoadEvent, () => {
         if (canReinstall) {
           canReinstall = false
           Reflect.invoke(Vars.ui.mods,"githubImportBranch",["beta",Vars.mods.locateMod("md3").getRepo(),null], java.lang.String,java.lang.String,java.lang.String)
-          Time.runTask(3*60, () => {
+          Vars.ui.showOkText("MoreDefences Beta Install", "MoreDefences Beta is now installing, please wait and do not close the game or this message yet.",()=>{
+            Vars.ui.showOkText("MoreDefences Beta Install", "Uh, i told you not to close this message.",()=>{
+              Vars.ui.showOkText("MoreDefences Beta Install", "Powiedziałem aby nie zamykać tej wiadomości.",()=>{
+                Vars.ui.showOkText("MoreDefences Beta Install", "...",()=>{
+                  Vars.ui.showOkText("MoreDefences Beta Install", "Dude.",()=>{
+                    Vars.ui.showOkText("MoreDefences Beta Install", "Do you not understand what \"Don't close this message\" means?",()=>{
+                      Vars.ui.showOkText("MoreDefences Beta Install", "How are you even reading this right now? Shouldn't the message saying the game will now close to reload mods already have appeared?",()=>{
+                        Vars.ui.showOkText("MoreDefences Beta Install", "...",()=>{
+                          Vars.ui.showOkText("MoreDefences Beta Install", "Fine.",()=>{
+                            Vars.ui.showOkText("MoreDefences Beta Install", "I give up.",()=>{
+                              Vars.ui.showOkText("MoreDefences Beta Install", "You win.",()=>{
+                                Vars.ui.showOkText("MoreDefences Beta Install", "Gg.",()=>{
+                                  Vars.ui.showOkText("MoreDefences Beta Install", "Good game.",()=>{
+                                    Vars.ui.showOkText("MoreDefences Beta Install", "I take the L.",()=>{
+                                      Vars.ui.showOkText("MoreDefences Beta Install", "The victory is yours.",()=>{
+                                        Vars.ui.showOkText("MoreDefences Beta Install", "I lose.",()=>{
+                                          Vars.ui.showOkText("MoreDefences Beta Install", "...",()=>{
+                                            Vars.ui.showOkText("MoreDefences Beta Install", "......",()=>{
+                                              Vars.ui.showOkText("MoreDefences Beta Install", "Bro.",()=>{
+                                                Vars.ui.showOkText("MoreDefences Beta Install", "How the hell are you even reading this right now?",()=>{
+                                                  // Snooping in the source code are we? lol
+                                                })
+                                              })
+                                            })
+                                          })
+                                        })
+                                      })
+                                    })
+                                  })
+                                })
+                              })
+                            })
+                          })
+                        })
+                      })
+                    })
+                  })
+                })
+              })
+            })
+          })
+          Time.runTask(6*60, () => {
             Vars.ui.showOkText("MoreDefences Beta Install Finished", "The game will now close to reload mods.",()=>Core.app.exit())
           })
         }
