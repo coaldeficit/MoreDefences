@@ -147,6 +147,72 @@ const macrocybeSpores = new Effect(64, e => {
     Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
   });
 });
+const coilgunTrail = new Effect(30, e => {
+  for(let i = 0; i < 2; i++){
+    Draw.color(i == 0 ? Pal.heal : Color.white);
+    let m = i == 0 ? 1 : 0.5;
+    let rot = e.rotation + 180;
+    let w = 15 * e.fout() * m;
+    Drawf.tri(e.x, e.y, w, (15 + Mathf.randomSeedRange(e.id, 7.5)) * m, rot);
+    Drawf.tri(e.x, e.y, w, 5 * m, rot + 180);
+  }
+  Drawf.light(e.x, e.y, 30, Pal.heal, 0.6 * e.fout());
+});
+const coilgunBomb = new Effect(15, 100, e => {
+  Draw.color(Pal.heal);
+  Lines.stroke(e.fout() * 4);
+  Lines.circle(e.x, e.y, 4 + e.finpow() * 10);
+  for(let i = 0; i < 4; i++){
+    Drawf.tri(e.x, e.y, 6, 40 * e.fout(), i*90 + 45);
+  }
+  Draw.color();
+  for(let i = 0; i < 4; i++){
+    Drawf.tri(e.x, e.y, 3, 15 * e.fout(), i*90 + 45);
+  }
+  Drawf.light(e.x, e.y, 30, Pal.heal, 0.6 * e.fout());
+});
+const coilgunHit = new Effect(20, 200, e => {
+  Draw.color(Pal.heal);
+  for(let i = 0; i < 2; i++){
+    Draw.color(i == 0 ? Pal.heal : Color.white);
+    let m = i == 0 ? 1 : 0.5;
+    for(let j = 0; j < 4; j++){
+      let rot = e.rotation + Mathf.randomSeedRange(e.id + j, 50);
+      let w = 11.5 * e.fout() * m;
+      Drawf.tri(e.x, e.y, w, (40 + Mathf.randomSeedRange(e.id + j, 20)) * m, rot);
+      Drawf.tri(e.x, e.y, w, 10 * m, rot + 180);
+    }
+  }
+  e.scaled(10, c => {
+    Draw.color(Color.white);
+    Lines.stroke(c.fout() * 2 + 0.2);
+    Lines.circle(e.x, e.y, c.fin() * 10);
+  });
+  e.scaled(12, c => {
+    Draw.color(Pal.heal);
+    Angles.randLenVectors(e.id, 25, 5 + e.fin() * 20, e.rotation, 60, (x, y) => {
+      Fill.square(e.x + x, e.y + y, c.fout() * 3, 45);
+    });
+  });
+});
+const coilgunShoot = new Effect(24, e => {
+  e.scaled(10, b => {
+    Draw.color(Color.white, Pal.heal, b.fin());
+    Lines.stroke(b.fout() * 3 + 0.2);
+    Lines.circle(b.x, b.y, b.fin() * 25);
+  });
+  Draw.color(Pal.heal);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 6 * e.fout(), 42.5, e.rotation + 90 * i);
+    Drawf.tri(e.x, e.y, 6 * e.fout(), 25, e.rotation + 20 * i);
+  }
+});
+const coilgunHitB = new Effect(18,200, e => {
+  Draw.color(Pal.heal);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 10 * e.fout(), 30, e.rotation + 140 * i);
+  }
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -165,4 +231,9 @@ module.exports = {
     boltTrailBulletum: boltTrailBulletum,
     phaseForeshadowTrail: phaseForeshadowTrail,
     macrocybeSpores: macrocybeSpores,
+    coilgunTrail: coilgunTrail,
+    coilgunBomb: coilgunBomb,
+    coilgunHit: coilgunHit,
+    coilgunShoot: coilgunShoot,
+    coilgunHitB: coilgunHitB,
 };

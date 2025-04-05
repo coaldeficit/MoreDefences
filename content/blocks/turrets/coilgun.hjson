@@ -1,0 +1,38 @@
+name: Coilgun
+description: Shoots disruptive piercing beams at enemies.
+health: 1700
+size: 3
+reload: 100
+range: 160
+inaccuracy: 0
+rotateSpeed: 2
+shootCone: 1
+hasLiquids: true
+hasPower: true
+consumes: {
+  coolant: {
+    amount: 0.6
+  },
+  power: 20
+}
+coolantMultiplier: 1.1666667
+ammoPerShot: 3
+maxAmmo: 15
+shootSound: bigshot
+#requirements: [
+#  copper/1400
+#  silicon/1100
+#  thorium/600
+#  plastanium/450
+#]
+#category: turret
+#research: {
+#  parent: lancer
+#  objectives: [
+#    {
+#      type: SectorComplete
+#      preset: impact0078
+#    },
+#  ]
+#}
+buildVisibility: hidden
