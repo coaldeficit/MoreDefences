@@ -19,19 +19,20 @@ coolantMultiplier: 1.1666667
 ammoPerShot: 3
 maxAmmo: 15
 shootSound: bigshot
-requirements: [
-  copper/1400
-  silicon/1100
-  thorium/600
-  plastanium/450
-]
-category: turret
-research: {
-  parent: lancer
-  objectives: [
-    {
-      type: SectorComplete
-      preset: impact0078
-    },
-  ]
-}
+#requirements: [
+#  copper/1400
+#  silicon/1100
+#  thorium/600
+#  plastanium/450
+#]
+#category: turret
+#research: {
+#  parent: lancer
+#  objectives: [
+#    {
+#      type: SectorComplete
+#      preset: impact0078
+#    },
+#  ]
+#}
+buildVisibility: hidden
