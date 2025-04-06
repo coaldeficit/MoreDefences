@@ -25,7 +25,7 @@ drawer: {
 attribute: oil
 baseEfficiency: 0
 minEfficiency: 0.3
-boostScale: 0.1111111111
+boostScale: 0.0625
 maxBoost: 2
 liquidCapacity: 120
 hasLiquids: true
