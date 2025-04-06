@@ -1,4 +1,3 @@
-type: ItemTurret
 name: Emphasis
 description: Shoots very powerful barrages of homing projectiles at enemies. Fires slower the more blocks it has next to it.
 health: 20000
@@ -6,7 +5,7 @@ size: 5
 reload: 120
 range: 182
 inaccuracy: 0
-rotateSpeed: 2
+rotateSpeed: 1.5
 hasLiquids: true
 hasPower: true
 shoot: {
@@ -23,13 +22,45 @@ shoot: {
     spread: 50
     firstShotDelay: 20
   }, {
-    type: ShootSpread
+    type: ShootBarrel
     shots: 2
-    spread: 5
+    barrels: [
+      -7,0,0,
+      7,0,0
+    ]
     firstShotDelay: 40
   }]
 }
 shootCone: 90
+minWarmup: 0.99
+linearWarmup: true
+shootWarmupSpeed: 0.012
+unitSort: strongest
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -cover-l
+      x: -8.25
+      y: 5.25
+      progress: warmup
+      moveX: -5
+      moveY: 5
+      moveRot: 45
+    }
+    {
+      type: RegionPart
+      suffix: -cover-r
+      x: 8.25
+      y: 5.25
+      progress: warmup
+      moveX: 5
+      moveY: 5
+      moveRot: -45
+    }
+  ]
+}
 consumes: {
   power: 5
   coolant: {
@@ -37,6 +68,9 @@ consumes: {
   }
 }
 coolantMultiplier: 0.5
+consumeAmmoOnce: false
+ammoPerShot: 2
+maxAmmo: 18
 ammoTypes: {
   phase-fabric: {
     speed: 3.5
@@ -53,6 +87,7 @@ ammoTypes: {
     shrinkY: 0
     shrinkX: 0
     sprite: circle-bullet
+    ammoMultiplier: 2
   },
   vanadiphor: {
     speed: 3.5
@@ -70,6 +105,7 @@ ammoTypes: {
     shrinkY: 0
     shrinkX: 0
     sprite: circle-bullet
+    ammoMultiplier: 1
   },
 }
 requirements: [
