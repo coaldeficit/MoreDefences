@@ -32,6 +32,7 @@ require('md3/blocks/frozen-wall');
 require('md3/blocks/puncture');
 require('md3/blocks/shieldlayer');
 require('md3/blocks/coilgun');
+require('md3/blocks/emphasis');
 require('md3/blocks/instant');
 require('md3/blocks/delay');
 require('md3/blocks/subturrets');

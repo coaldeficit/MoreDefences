@@ -4,6 +4,7 @@ let lithium = extend(Item, "lithium", {})
 let bulletum = extend(Item, "bulletum", {})
 let radium = extend(Item, "radium", {})
 let rage = extend(Item, "rage", {})
+let vanadiphor = extend(Item, "vanadiphor", {})
 
 module.exports = {
   cobalt: cobalt,
@@ -12,4 +13,5 @@ module.exports = {
   bulletum: bulletum,
   radium: radium,
   rage: rage,
+  vanadiphor: vanadiphor,
 };
