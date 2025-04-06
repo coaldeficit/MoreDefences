@@ -3,9 +3,8 @@ description: An insanely durable defensive block.
 type: Wall
 health: 1500
 size: 1
-#requirements: [
-#  vanadiphor/6
-#]
-#category: defense
-#research: surge-wall
-buildVisibility: hidden
+requirements: [
+  vanadiphor/6
+]
+category: defense
+research: surge-wall

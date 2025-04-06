@@ -44,20 +44,20 @@ consumes: {
     ]
   }
 }
-#requirements: [
-#  lead/600
-#  silicon/400
-#  surge-alloy/200
-#  phase-fabric/200
-#]
+requirements: [
+  lead/600
+  silicon/400
+  surge-alloy/200
+  phase-fabric/200
+]
 outputItem: vanadiphor/4
-#category: crafting
-#research: {
-#  parent: surge-smelter
-#  objectives: [
-#    {
-#      type: SectorComplete
-#      preset: planetaryTerminal
-#    },
-#  ]
-#}
+category: crafting
+research: {
+  parent: surge-smelter
+  objectives: [
+    {
+      type: SectorComplete
+      preset: planetaryTerminal
+    },
+  ]
+}
