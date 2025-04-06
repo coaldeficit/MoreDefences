@@ -1,3 +1,4 @@
+type: AttributeCrafter
 name: Vanadiphor Extractor
 description: Extracts Vanadium from oil and oil-containing rocks, and fuses it with various materials to create Vanadiphor.
 health: 1000
@@ -6,7 +7,10 @@ size: 4
 itemCapacity: 32
 drawer: {
   type: DrawMulti
-  drawers: [DrawDefault,
+  drawers: [
+    {
+      type: DrawDefault
+    },
     {
       type: DrawRegion
       suffix: -rotator
@@ -53,7 +57,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: planetary-launch-terminal
+      preset: planetaryTerminal
     },
   ]
 }
