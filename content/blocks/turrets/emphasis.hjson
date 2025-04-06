@@ -1,0 +1,84 @@
+type: ItemTurret
+name: Emphasis
+description: Shoots very powerful barrages of homing projectiles at enemies. Fires slower the more blocks it has next to it.
+health: 20000
+size: 5
+reload: 120
+range: 182
+inaccuracy: 0
+rotateSpeed: 2
+hasLiquids: true
+hasPower: true
+shoot: {
+  type: ShootMulti
+  source: ShootPattern
+  shots: 6
+  dest: [{
+    type: ShootSpread
+    shots: 2
+    spread: 70
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 50
+    firstShotDelay: 20
+  }, {
+    type: ShootSpread
+    shots: 2
+    spread: 5
+    firstShotDelay: 40
+  }]
+}
+shootCone: 90
+consumes: {
+  power: 5
+  coolant: {
+    amount: 1
+  }
+}
+coolantMultiplier: 0.5
+ammoTypes: {
+  phase-fabric: {
+    speed: 3.5
+    damage: 440
+    lifetime: 52
+    pierce: true
+    width: 12
+    height: 12
+    weaveMag: 3
+    weaveScale: 5
+    homingPower: 0.1
+    homingRange: 360
+    homingDelay: 6
+    shrinkY: 0
+    shrinkX: 0
+    sprite: circle-bullet
+  },
+  vanadiphor: {
+    speed: 3.5
+    damage: 700
+    pierce: true
+    pierceCap: 2
+    lifetime: 52
+    width: 12
+    height: 12
+    weaveMag: 3
+    weaveScale: 5
+    homingPower: 0.1
+    homingRange: 360
+    homingDelay: 6
+    shrinkY: 0
+    shrinkX: 0
+    sprite: circle-bullet
+  },
+}
+requirements: [
+  copper/2500
+  silicon/1100
+  metaglass/1100
+  thorium/600
+  vanadiphor/400
+]
+shootSound: largeCannon
+category: turret
+research: spectre
