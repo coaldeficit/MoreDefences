@@ -1,0 +1,94 @@
+type: ItemTurret
+name: Juan
+description: Uses massive amounts of explosives to fire extremely powerful blasts at enemies in its range.
+health: 4000
+size: 5
+reload: 900
+range: 160
+inaccuracy: 0
+rotateSpeed: 1.5
+hasLiquids: true
+hasPower: true
+shoot: {
+  type: ShootBarrel
+  shots: 2
+  barrels: [
+    -5,-14,0,
+    5,-14,0
+  ]
+  firstShotDelay: 450
+}
+shootCone: 2
+minWarmup: 0.99
+linearWarmup: true
+shootWarmupSpeed: 0.007
+warmupMaintainTime: 450
+cooldownTime: 900
+heatColor: c99a00
+unitSort: strongest
+liquidCapacity: 120
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -cover-l
+      x: -9.375
+      y: 8.625
+      progress: warmup
+      moveX: -8
+      moveY: -7.5
+    }
+    {
+      type: RegionPart
+      suffix: -cover-r
+      x: 9.375
+      y: 8.625
+      progress: warmup
+      moveX: 8
+      moveY: -7.5
+    }
+    {
+      type: RegionPart
+      suffix: -guns
+      x: 0
+      y: 6.25
+      progress: recoil
+      moveY: -7
+      layerOffset: -0.00001
+      heatColor: c99a00
+    }
+  ]
+}
+consumes: {
+  power: 3
+  coolant: {
+    amount: 2
+  }
+}
+coolantMultiplier: 0.25
+consumeAmmoOnce: false
+ammoPerShot: 40
+maxAmmo: 80
+ammoTypes: {
+  blast-compound: {
+    type: RailBulletType
+    damage: 9000
+    length: 160
+    ammoMultiplier: 1
+    status: unmoving
+    statusDuration: 180
+    pierceArmor: true
+  },
+}
+requirements: [
+  copper/1800
+  graphite/900
+  plastanium/800
+  surge-alloy/400
+  vanadiphor/200
+]
+shootSound: corexplode
+chargeSound: release
+category: turret
+research: fuse
