@@ -8,6 +8,7 @@ inaccuracy: 0
 rotateSpeed: 1.5
 hasLiquids: true
 hasPower: true
+liquidCapacity: 60
 shoot: {
   type: ShootMulti
   source: ShootPattern

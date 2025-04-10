@@ -5,12 +5,13 @@ let blast = extend(RailBulletType, {
   shootEffect: vfx.juanBlast,
   smokeEffect: vfx.juanSmoke,
   hitSound: Sounds.bigshot,
-  damage: 9000,
+  damage: 7000,
   length: 160,
   ammoMultiplier: 1,
   status: StatusEffects.unmoving,
   statusDuration: 180,
   pierceArmor: true,
+  maxDamageFraction: 0.4375,
 })
 juan.ammoTypes.put(
   Items.blastCompound, blast
