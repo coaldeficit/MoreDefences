@@ -11,7 +11,6 @@ let blast = extend(RailBulletType, {
   status: StatusEffects.unmoving,
   statusDuration: 180,
   pierceArmor: true,
-  maxDamageFraction: 0.4375,
 })
 juan.ammoTypes.put(
   Items.blastCompound, blast
