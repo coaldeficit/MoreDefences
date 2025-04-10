@@ -1,6 +1,5 @@
-type: ItemTurret
 name: Juan
-description: Uses massive amounts of explosives to fire extremely powerful blasts at enemies in its range.
+description: Detonates a huge amount of explosives and funnels the resulting explosions through a shaped charge, creating an extremely powerful blast that pierces all enemy armor and inflicts massive damage.
 health: 4000
 size: 5
 reload: 900
@@ -67,20 +66,8 @@ consumes: {
   }
 }
 coolantMultiplier: 0.25
-consumeAmmoOnce: false
 ammoPerShot: 40
 maxAmmo: 80
-ammoTypes: {
-  blast-compound: {
-    type: RailBulletType
-    damage: 9000
-    length: 160
-    ammoMultiplier: 1
-    status: unmoving
-    statusDuration: 180
-    pierceArmor: true
-  },
-}
 requirements: [
   copper/1800
   graphite/900
