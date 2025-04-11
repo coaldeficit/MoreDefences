@@ -16,6 +16,7 @@ targetAir: false
 maxAmmo: 20
 unitSort: weakest
 hasLiquids: true
+liquidCapacity: 30
 consumes: {
   coolant: {
     amount: 0.5

@@ -9,6 +9,7 @@ rotateSpeed: 2
 shootCone: 1
 hasLiquids: true
 hasPower: true
+liquidCapacity: 36
 consumes: {
   coolant: {
     amount: 0.6

@@ -1,5 +1,5 @@
 name: Emphasis
-description: Shoots very powerful barrages of homing projectiles at enemies. Fires slower the more blocks it has next to it.
+description: Shoots very powerful barrages of homing projectiles at enemies. Fires slower the more blocks it has near it.
 health: 20000
 size: 5
 reload: 120
@@ -8,6 +8,7 @@ inaccuracy: 0
 rotateSpeed: 1.5
 hasLiquids: true
 hasPower: true
+liquidCapacity: 60
 shoot: {
   type: ShootMulti
   source: ShootPattern

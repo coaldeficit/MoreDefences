@@ -6,6 +6,7 @@ health: 50
 size: 3
 hasPower: false
 hasLiquids: true
+liquidCapacity: 24
 consumes: {
   liquids: [
     {

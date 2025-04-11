@@ -1,7 +1,7 @@
 type: legs
 name: Blitz
 flying: false
-description: temp
+description: Overwhelms enemy defences with drone swarms and lobs self-deploying turrets into enemy defences.
 speed: 0.3
 health: 18000
 armor: 10

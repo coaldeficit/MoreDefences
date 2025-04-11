@@ -61,3 +61,4 @@ outputItem: vanadiphor/4
 #    },
 #  ]
 #}
+buildVisibility: hidden
