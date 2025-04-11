@@ -68,14 +68,15 @@ consumes: {
 coolantMultiplier: 0.25
 ammoPerShot: 40
 maxAmmo: 80
-requirements: [
-  copper/1800
-  graphite/900
-  plastanium/800
-  surge-alloy/400
-  vanadiphor/200
-]
+#requirements: [
+#  copper/1800
+#  graphite/900
+#  plastanium/800
+#  surge-alloy/400
+#  vanadiphor/200
+#]
 shootSound: corexplode
 chargeSound: release
-category: turret
-research: fuse
+#category: turret
+#research: fuse
+buildVisibility: hidden
