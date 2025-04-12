@@ -69,10 +69,10 @@ const tundraBomb = extend(BasicBulletType, {
             other.setAir()
             switch (o.size) {
               case 1:
-                other.setNet(icewall.frozenWall, b.owner.team, 0)
+                other.setBlock(icewall.frozenWall, b.owner.team)
                 break;
               case 2:
-                other.setNet(icewall.frozenWallL, b.owner.team, 0)
+                other.setBlock(icewall.frozenWallL, b.owner.team)
                 break;
             }
           }

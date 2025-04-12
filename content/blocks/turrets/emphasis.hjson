@@ -109,14 +109,13 @@ ammoTypes: {
     ammoMultiplier: 1
   },
 }
-#requirements: [
-#  copper/2500
-#  silicon/1100
-#  metaglass/1100
-#  thorium/600
-#  vanadiphor/400
-#]
+requirements: [
+  copper/2500
+  silicon/1100
+  metaglass/1100
+  thorium/600
+  vanadiphor/400
+]
 shootSound: largeCannon
-#category: turret
-#research: spectre
-buildVisibility: hidden
+category: turret
+research: spectre

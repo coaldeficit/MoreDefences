@@ -43,7 +43,7 @@ const sporeFlame = extend(BulletType, {
             clumpToPlace = clumps.clump4
             break
         }
-        block.setNet(clumpToPlace, b.owner.team, 0)
+        block.setBlock(clumpToPlace, b.owner.team)
       }
     }
   }
