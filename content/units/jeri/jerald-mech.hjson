@@ -1,0 +1,78 @@
+name: Jerald
+description: Fires lasers and streams of bullets at enemy targets.
+hitSize: 18
+flying: false
+speed: 1
+rotateSpeed: 2.2
+squareShape: true
+omniMovement: false
+rotateMoveFirst: true
+health: 555
+treadPullOffset: 5
+treadFrames: 30
+treadRects: [
+  {
+    x: -21.5
+    y: -36
+    width: 15
+    height: 71
+  }
+]
+weapons: [{
+  name: jeri-weapon
+  top: true
+  rotate: true
+  y: 4.5
+  x: 7
+  shoot: {
+    type: ShootPattern
+    shots: 8
+    shotDelay: 7
+  }
+  inaccuracy: 2
+  reload: 56
+  shootSound: pew
+  mirror: true
+  rotateSpeed: 7
+  bullet: {	
+    speed: 5
+    damage: 10
+    lifetime: 32
+    width: 8
+    height: 12
+    pierce: true
+    pierceCap: 2
+    pierceBuilding: false
+  }
+},{
+  name: jerald-gun
+  top: true
+  rotate: true
+  y: -4.5
+  x: 7
+  inaccuracy: 0
+  reload: 30
+  shootSound: blaster
+  mirror: true
+  rotateSpeed: 13
+  alternate: false
+  bullet: {
+    type: LaserBoltBulletType
+    speed: 8
+    damage: 20
+    lifetime: 20
+    frontColor: ffffff
+    backColor: 82ffba
+    lightColor: 82ffba
+    height: 10
+    width: 3
+  }
+}]
+itemCapacity: 0
+research: {
+  parent: jeri-mech
+  objectives: [
+    basic-unit-factory
+  ]
+}
+researchCostMultiplier: 0
