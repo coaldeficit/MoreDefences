@@ -2,7 +2,7 @@ name: Jerald
 description: Fires lasers and streams of bullets at enemy targets.
 hitSize: 18
 flying: false
-speed: 1
+speed: 0.93333333333
 rotateSpeed: 2.2
 squareShape: true
 omniMovement: false
