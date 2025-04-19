@@ -1,6 +1,6 @@
 const dmgroups = require("md3/units/damagegroups")
 const mygroups = [
-  'basic','malis','ironclad','walker'
+  'malis','ironclad','walker'
 ]
 const DonT2 = extend(UnitType, "klotzi-mech", {
   setStats() {
