@@ -1,0 +1,46 @@
+name: Klotzi
+description: Fires bullets at enemy targets and crawls over them.
+hitSize: 18
+flying: false
+speed: 0.75
+rotateSpeed: 2
+omniMovement: false
+drawBody: false
+health: 900
+armor: 8
+segments: 3
+segmentScl: 5
+weapons: [{
+  name: klotzi-gun
+  top: true
+  rotate: true
+  y: 0
+  x: 0
+  inaccuracy: 5
+  reload: 10
+  shootSound: pew
+  mirror: false
+  rotateSpeed: 7
+  bullet: {	
+    speed: 5
+    damage: 20
+    lifetime: 18
+    weaveMag: 5
+    weaveScale: 2
+    sprite: circle-bullet
+    height: 6
+    width: 6
+    trailWidth: 3
+    trailLength: 6
+    shrinkY: 0
+    shrinkX: 0
+  }
+}]
+itemCapacity: 0
+research: {
+  parent: donjon-mech
+  objectives: [
+    basic-unit-factory
+  ]
+}
+researchCostMultiplier: 0
