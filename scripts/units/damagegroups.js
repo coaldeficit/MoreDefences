@@ -12,8 +12,8 @@ let groups = {
   ironclad: [], // probably tankier units?
   detonator: [], // probably splash damage heavy units?
   walker: [],
-  gunner: [],
-  ranger: [],
+  meson: [],
+  ganglion: [],
   attractor: [],
 }
 function addToGroup(group, unittype) {
