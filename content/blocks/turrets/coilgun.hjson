@@ -14,7 +14,7 @@ consumes: {
   coolant: {
     amount: 0.6
   },
-  power: 20
+  power: 25
 }
 coolantMultiplier: 1.1666667
 ammoPerShot: 3
@@ -25,6 +25,7 @@ requirements: [
   silicon/1100
   thorium/600
   plastanium/450
+  phase-fabric/600
 ]
 category: turret
 research: {
