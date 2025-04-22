@@ -1,0 +1,10 @@
+name: Bromine
+description: temp
+cost: 0.5
+hardness: 0
+color: a33600
+alwaysUnlocked: true
+research: {
+  parent: core-monoquark
+  planet: md3-fieros
+}
