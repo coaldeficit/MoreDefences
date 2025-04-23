@@ -3,6 +3,8 @@ description: temp
 cost: 0.5
 hardness: 0
 color: a33600
+explosiveness: 0.75
+flammability: 0.75
 alwaysUnlocked: true
 research: {
   parent: core-monoquark

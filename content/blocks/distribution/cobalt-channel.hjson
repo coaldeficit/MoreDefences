@@ -7,7 +7,6 @@ requirements: [
   cobalt/1
 ]
 category: distribution
-envDisabled: 24
 research: {
   parent: core-monoquark
   planet: md3-fieros

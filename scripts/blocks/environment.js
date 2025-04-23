@@ -43,6 +43,12 @@ let lithimentDMMWall = extend(StaticWall, "lithiment-dimethyl-wall", {});
 let cinnabarDMM = extend(Floor, "cinnabar-dimethyl", {});
 let cinnabarDMMWall = extend(StaticWall, "cinnabar-dimethyl-wall", {});
 
+let bromineCluster = extend(TallBlock, "bromine-cluster", {});
+
+let cobaltOre = extend(OreBlock, "ore-cobalt", {});
+let lithiumOre = extend(OreBlock, "ore-lithium", {});
+let bromineOre = extend(OreBlock, "ore-bromine", {});
+
 // misc
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
 let diorite = extend(Floor, "diorite", {});
@@ -105,6 +111,12 @@ module.exports = {
   lithimentDMMWall: lithimentDMMWall,
   cinnabarDMM: cinnabarDMM,
   cinnabarDMMWall: cinnabarDMMWall,
+  
+  bromineCluster: bromineCluster,
+  
+  cobaltOre: cobaltOre,
+  lithiumOre: lithiumOre,
+  bromineOre: bromineOre,
   
   // misc
   dioriteBoulder: dioriteBoulder,

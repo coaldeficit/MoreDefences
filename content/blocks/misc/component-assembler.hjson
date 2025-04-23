@@ -1,18 +1,17 @@
 type: Constructor
-name: Component Assembler
-description: 
-"temp"
+name: Basic Component Assembler
+description: temp
 size: 3
-category: units
+maxBlockSize: 1
+buildSpeed: 1
+filter: []
 requirements: [
   cobalt/25
   bulletum/20
-] 
-buildSpeed: 1
-filter: []
+]
+category: units
 research: {
   parent: basic-unit-factory
   planet: md3-fieros
 }
 researchCostMultiplier: 0.3
-maxBlockSize: 3
