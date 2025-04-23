@@ -13,7 +13,7 @@ Events.on(ClientLoadEvent, () => {
                     Vars.ui.mods.githubImportMod(
                       Vars.mods.locateMod("md3").getRepo(),
                       Vars.mods.locateMod("md3").isJava()
-                    );
+                    )
                     let shown = false;
                     Timer.schedule(() => {
                       if (Vars.mods.requiresReload() && !shown) {
