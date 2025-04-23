@@ -1,13 +1,26 @@
 type: Constructor
 name: Basic Component Assembler
 description: temp
+health: 50
 size: 3
 maxBlockSize: 1
 buildSpeed: 1
-filter: []
+filter: [cobalt-wall]
+hasPower: false
+hasLiquids: true
+liquidCapacity: 12
+consumes: {
+  liquids: [
+    {
+      liquid: mercury
+      amount: 0.2
+    }
+  ]
+}
 requirements: [
-  cobalt/25
-  bulletum/20
+  cobalt/150
+  cinnabar-item/150
+  bulletum/100
 ]
 category: units
 research: {
