@@ -12,7 +12,7 @@ const BellaT1 = extend(UnitType, "bella-ship", {
 });
 BellaT1.constructor = () => extend(UnitEntity, {});
 dmgroups.addToGroups(mygroups,BellaT1)
-
+const shootsound = Vars.tree.loadSound("bella-spear")
 const pileBunker = extend(Weapon, {
   name: "md3-bella-pile",
   top: false,
@@ -21,7 +21,7 @@ const pileBunker = extend(Weapon, {
   x: 5.375,
   inaccuracy: 0,
   reload: 180,
-  shootSound: Sounds.shootAlt,
+  shootSound: shootsound,
   mirror: false,
   rotateSpeed: 0,
   shootCone: 20,
