@@ -19,7 +19,7 @@ itemCapacity: 0
 research: {
   parent: jeri-mech
   objectives: [
-    basic-unit-factory
+    bromine
   ]
 }
 researchCostMultiplier: 0

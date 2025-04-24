@@ -31,6 +31,14 @@ plans: [
       cobalt/10
       bulletum/10
     ]
+  },
+  {
+    unit: bella-ship
+    time: 1200
+    requirements: [
+      bulletum/10
+      bromine/15
+    ]
   }
 ]
 requirements: [
