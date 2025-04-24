@@ -95,6 +95,16 @@ UnitTypes.cyerce.immunities.add(StatusEffects.electrified)
 UnitTypes.aegires.immunities.add(StatusEffects.electrified)
 UnitTypes.navanax.immunities.add(StatusEffects.electrified)
 
+// DEATH TO UMINER
+UnitTypes.pulsar.mineSpeed = 1
+UnitTypes.quasar.mineSpeed = 1.5
+UnitTypes.quasar.mineTier = 2
+UnitTypes.poly.mineSpeed = 2.5
+UnitTypes.mega.mineSpeed = 2
+
+// UNIT BUFFS
+UnitTypes.quasar.abilities.get(0).max = 600
+
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
 
