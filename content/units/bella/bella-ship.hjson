@@ -1,0 +1,25 @@
+name: Bella
+description: Approaches and jabs enemy targets.
+hitSize: 12
+flying: true
+speed: 1.6
+drag: 0.1
+accel: 0.1
+rotateSpeed: 3
+health: 100
+createWreck: false
+engines: [{
+  x: -2.5
+  y: -6
+  radius: 3
+  rotation: -90
+}]
+engineSize: 0
+itemCapacity: 0
+research: {
+  parent: jeri-mech
+  objectives: [
+    basic-unit-factory
+  ]
+}
+researchCostMultiplier: 0

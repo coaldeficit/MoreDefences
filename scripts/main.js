@@ -83,6 +83,9 @@ require("md3/units/ground/jeri/jerald")
 require("md3/units/ground/donjon/donjon")
 require("md3/units/ground/donjon/klotzi")
 
+// bella line
+require("md3/units/air/bella/bella")
+
 // misc
 require("md3/units/air/drones")
 require("md3/units/air/core-units")

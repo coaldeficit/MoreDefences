@@ -226,6 +226,20 @@ const juanSmoke = new Effect(300, e => {
     Fill.circle(e.x + x, e.y + y, e.fout() * 4.5 + 0.65);
   });
 });
+const bellaBlast = new Effect(13, e => {
+  Draw.color(Color.white, Color.valueOf("0000FF"), e.fin());
+  let w = 1 + 20 * e.fout();
+  Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), e.y+(Math.sin(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), w, 48 * e.fin(), e.rotation);
+  Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), e.y+(Math.sin(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), w, 12 * e.fout(), e.rotation + 180);
+});
+bellaBlast.followParent = false
+const bellaCharge = new Effect(30, 32, e => {
+  Draw.color(Color.valueOf("6CFFFF"));
+  Lines.stroke(e.fin() * 2);
+  Lines.circle(e.x, e.y, e.fout() * 16);
+});
+bellaCharge.followParent = true
+bellaCharge.rotWithParent = true
 
 module.exports = {
     lh2status: lh2status,
@@ -251,4 +265,6 @@ module.exports = {
     coilgunHitB: coilgunHitB,
     juanBlast: juanBlast,
     juanSmoke: juanSmoke,
+    bellaBlast: bellaBlast,
+    bellaCharge: bellaCharge,
 };
