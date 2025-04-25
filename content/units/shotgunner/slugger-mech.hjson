@@ -3,7 +3,7 @@ flying: false
 description: Rapidly fires powerful slug shells that pierce enemy units and structures. Suppresses enemy structure repair blocks. Can walk over most terrain.
 speed: 0.5
 health: 1400
-armor: 3
+armor: 11
 hitSize: 17
 rotateSpeed: 3
 faceTarget: false
