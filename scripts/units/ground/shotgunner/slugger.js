@@ -6,7 +6,7 @@ ShotT3.constructor = () => extend(LegsUnit, {});
 let suppress = extend(SuppressionFieldAbility, {
   range: 96,
   update(unit) {
-    if (this.timer + Time.delta >= this.reload) {
+    if (false) {
       vfx.sluggerSuppress.at(unit.x, unit.y)
     }
     this.super$update(unit)
