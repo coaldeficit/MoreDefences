@@ -105,6 +105,8 @@ UnitTypes.mega.mineSpeed = 2
 // UNIT BUFFS
 UnitTypes.quasar.abilities.get(0).max = 600
 UnitTypes.spiroct.speed = 0.8
+UnitTypes.antumbra.weapons.get(2).reload = 6
+UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 1.8
 
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
