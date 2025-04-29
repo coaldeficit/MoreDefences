@@ -1,0 +1,25 @@
+name: Oretseton
+description: Fires short blasts that leave large aftershocks in it's wake.
+flying: false
+speed: 0.65
+health: 150
+armor: 2
+mechSideSway: 0.4
+mechFrontSway: 0.1
+mechStride: 4
+shadowElevation: 0.1
+groundLayer: 74
+  weapons: [
+    {
+      top: false
+      x: 9.25
+      y: 2.75
+      name: oretseton-weapon
+      recoil: 0.4
+      shootCone: 45
+        reload: 72
+        rotate: false
+        mirror: true
+        alternate: true
+    }
+]
