@@ -459,7 +459,19 @@ Events.on(ClientLoadEvent, e => {
   for (let i=0;i<convertToSurv.length;i++) {
     Planets.serpulo.sectors.get(convertToSurv[i]).generateEnemyBase = false
   }
+  
+  // REMOVE PROBLEMATIC HIDDEN SECTORS
+  const removeHidden = [
+    25, // north pole
+    12,82, // misc
+  ]
+  for (let i=0;i<removeHidden.length;i++) {
+    if (Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
+      Planets.serpulo.sectors.get(removeHidden[i]).preset = null
+    }
+  }
   Planets.serpulo.updateBaseCoverage()
+
   
   // FORCE SECTOR DIFFICULY
   forceSectorDifficulty()
