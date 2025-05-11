@@ -463,12 +463,12 @@ Events.on(ClientLoadEvent, e => {
   // REMOVE PROBLEMATIC HIDDEN SECTORS
   const removeHidden = [
     25, // north pole
-    12,82, // misc
+    12, // misc
   ]
   for (let i=0;i<removeHidden.length;i++) {
-    if (Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
-      Planets.serpulo.sectors.get(removeHidden[i]).preset = null
-    }
+    //if (Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
+      //Planets.serpulo.sectors.get(removeHidden[i]).preset = null
+    //}
   }
   Planets.serpulo.updateBaseCoverage()
 
