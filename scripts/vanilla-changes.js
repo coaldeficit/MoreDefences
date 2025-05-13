@@ -400,70 +400,34 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
 // FORCE SECTOR DIFFICULY
 function forceSectorDifficulty() {
   // low
-  Planets.serpulo.sectors.get(45).threat = 0.1 // meme
-  // medium
-  Planets.serpulo.sectors.get(180).threat = 0.38
-  Planets.serpulo.sectors.get(182).threat = 0.25
-  // high
-  Planets.serpulo.sectors.get(36).threat = 0.54
-  Planets.serpulo.sectors.get(60).threat = 0.74
-  Planets.serpulo.sectors.get(65).threat = 0.74
-  Planets.serpulo.sectors.get(114).threat = 0.74
-  Planets.serpulo.sectors.get(115).threat = 0.74
-  Planets.serpulo.sectors.get(141).threat = 0.7499
-  Planets.serpulo.sectors.get(156).threat = 0.54
-  Planets.serpulo.sectors.get(162).threat = 0.7499
-  Planets.serpulo.sectors.get(173).threat = 0.54
-  Planets.serpulo.sectors.get(178).threat = 0.54
-  Planets.serpulo.sectors.get(226).threat = 0.74
-  Planets.serpulo.sectors.get(265).threat = 0.74
-  // extreme
-  Planets.serpulo.sectors.get(7).threat = 0.99
-  Planets.serpulo.sectors.get(24).threat = 0.92
-  Planets.serpulo.sectors.get(84).threat = 0.92
-  Planets.serpulo.sectors.get(127).threat = 0.99
-  Planets.serpulo.sectors.get(140).threat = 0.97
-  Planets.serpulo.sectors.get(163).threat = 0.97
-  Planets.serpulo.sectors.get(235).threat = 0.92
-  // erad
-  Planets.serpulo.sectors.get(199).threat = 1.1
-  Planets.serpulo.sectors.get(225).threat = 1.1
-  Planets.serpulo.sectors.get(228).threat = 1.1
-  Planets.serpulo.sectors.get(229).threat = 1.2
-  Planets.serpulo.sectors.get(257).threat = 1.2
-  Planets.serpulo.sectors.get(263).threat = 1.42
+  //Planets.serpulo.sectors.get(45).threat = 0.1
 }
 
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
-  // LOCK NUMBERED SECTORS EARLY
-  //if (!Items.titanium.unlocked()) Planets.serpulo.allowLaunchToNumbered = false
+  // WIPE ALL NUMBERED BASES
+  for (let i=0;i<272;i++){
+    Planets.serpulo.sectors.get(i).generateEnemyBase = false
+  }
   
   // NUMBERED ENEMY BASES
   const convertToBase = [
-    85,223, // its strictly personal
-    95,178, // plt area
-    29,61,79,118,258,261,262, // south pole
-    66,128,232,235, // north pole
-    41,45,78,156,179, // misc sectors
+    63,124, // g0/deso/32m area
+    10, // ff/tw/tf area
+    19,84,194,198,229, // 199 must be funny
+    25,66,68,126,128,225,232,233,234,235, // north pole
+    28,29,30,53,57,58,60,79,80,117,118,120,139,250,255,257,258,259, // south pole
+    2,11,148,149,157,182, // windswept area
+    32,33,34,36,92,94, // plt area
+    31,38,56,76,132,133, // scourged rivers area
   ]
   for (let i=0;i<convertToBase.length;i++) {
     Planets.serpulo.sectors.get(convertToBase[i]).generateEnemyBase = true
   }
   
-  // WE LOVE NPC AND IMPACT
-  const convertToSurv = [
-    24,129,224,225,226,227, // north pole
-    30,60,114,115,121,259,265, // south pole
-  ]
-  for (let i=0;i<convertToSurv.length;i++) {
-    Planets.serpulo.sectors.get(convertToSurv[i]).generateEnemyBase = false
-  }
-  
   // REMOVE PROBLEMATIC HIDDEN SECTORS
   const removeHidden = [
-    25, // north pole
-    12, // misc
+    
   ]
   for (let i=0;i<removeHidden.length;i++) {
     //if (Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
