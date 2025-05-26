@@ -23,6 +23,20 @@ Events.on(ClientLoadEvent, () => {
         cause += ", Erekir 63 has save file"
       }
     }
+    if (Planets.erekir.sectors.get(41).save instanceof Saves.SaveSlot) {
+      if (cause.length == 0) {
+        cause += "Lake has save file"
+      } else {
+        cause += ", Lake has save file"
+      }
+    }
+    if (SectorPresets.planetaryTerminal.unlocked()) {
+      if (cause.length == 0) {
+        cause += "Planetary Launch Terminal unlocked"
+      } else {
+        cause += ", Planetary Launch Terminal unlocked"
+      }
+    }
     if (cause != "") Vars.ui.showOkText("MoreDefences Progression Alert", "Your campaign save data contains deep campaign progress or sector saves that conflict with new MoreDefences sectors.\n\nContinuing to play the mod like this is perfectly fine, however for the ideal MoreDefences experience we recommend starting over on a new save with MoreDefences.\n\nThis popup will never appear again.\n\n[gray]Cause: "+cause+".[]",()=>{})
     Core.settings.put("md3-internal-campaignwarn", "accepted")
   }
