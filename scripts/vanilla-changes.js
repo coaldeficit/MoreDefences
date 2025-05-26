@@ -340,31 +340,44 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
 let basegen = new BaseGenerator()
 Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
   basegen: basegen,
-  /*generate(tiles,sec,seed) { // yeah this aint happening
-    this.super.super$generate(tiles,sec,seed)
-    const removeTit = [
-      63,170,171,175,180,218,219, // g0 area
-      222,146, // ff area
-      71,188,189,193,241, // craters area
-      141,162, // bsf area
-      176, // misc
-    ]
-    const removeThor = [
-      124,125,180,218, // g0 area
-      71,131,241,127, // craters area
-      162, // bsf area
-    ]
-    let tlen = tiles.width * tiles.height
-    for (let i=0;i<tlen;i++) {
-      let tile = tiles.geti(i)
-      if (removeTit.includes(Vars.state.rules.sector.id) && tile.overlay() == Blocks.oreTitanium) {
-        tile.clearOverlay()
+  allowLanding(sector) {
+    let contains = false
+    for (let i=0;i<sector.near().size;i++) {
+      let sectorCheck = sector.near().get(i)
+      if (sectorCheck.hasBase() && sectorCheck.info.bestCoreType.size >= 5) {
+        contains = true
+        break
       }
-      if (removeThor.includes(Vars.state.rules.sector.id) && tile.overlay() == Blocks.oreThorium) {
-        tile.clearOverlay()
+      if (sectorCheck.hasBase() && sectorCheck.isBeingPlayed() && !contains) {
+        for (let j=0;j<Vars.state.rules.defaultTeam.cores().size;j++) {
+          if (Vars.state.rules.defaultTeam.cores().get(j).block.size >= 5) {
+            contains = true
+            break
+          }
+        }
+        if (contains) {
+          break
+        }
       }
     }
-  },*/
+    return sector.planet.allowLaunchToNumbered && (sector.hasBase() || contains)
+  },
+  getLockedText(hovered, out) {
+    let contains = false
+    for (let i=0;i<hovered.near().size;i++) {
+      if (hovered.near().get(i).hasBase()) {
+        contains = true
+        break
+      }
+    }
+    if ((hovered.preset == null || !hovered.preset.requireUnlock) && contains) {
+      let pissoff = [162,222].includes(hovered.id)
+      let spoil = Blocks.coreNucleus.unlocked() || (Blocks.coreFoundation.unlocked() && Items.thorium.unlocked())
+      out.append("[scarlet]X[] ").append(spoil ? Blocks.coreNucleus.emoji() : "[lightgray]?[] ").append(spoil ? (pissoff?Core.bundle.get("sector.md3-nucleusrequiredPissOffB"):Core.bundle.get("sector.md3-nucleusrequiredB")) : (pissoff?Core.bundle.get("sector.md3-nucleusrequiredPissOffA"):Core.bundle.get("sector.md3-nucleusrequiredA")))
+    } else {
+      this.super$getLockedText(hovered, out)
+    }
+  },
   postGenerate(tiles) {
     let curTile = Vars.spawner.getFirstSpawn()
     let tiles = []
@@ -399,10 +412,88 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
 
 // FORCE SECTOR DIFFICULY
 function forceSectorDifficulty() {
-  // low
-  //Planets.serpulo.sectors.get(45).threat = 0.1
+  for (let i=0;i<Planets.serpulo.sectors.size;i++) {
+    let sect = Planets.serpulo.sectors.get(i)
+    if (sect.preset != null) continue
+    if (Simplex.noise3d(Planets.serpulo.sectorSeed, 2, 0.5, 1, sect.tile.v.x, sect.tile.v.y, sect.tile.v.z)*0.5+Math.abs(sect.tile.v.y) <= 0.325) { // give Coal Deficit sectors no difficulty at all
+      sect.threat = 0.2 // these sectors being medium threat is a waste of time
+      continue
+    }
+    if (sect.threat < 0.38) sect.threat = 0.38 // if you're gonna make low threat sectors extinct atleast make the medium threat sectors in their place actually proper medium threat
+    let dontfuckingbuff = [199]
+    if (!dontfuckingbuff.includes(sect.id) && !sect.generateEnemyBase) {
+      if (Simplex.noise3d(Planets.serpulo.sectorSeed, 2, 0.5, 1, sect.tile.v.x+2, sect.tile.v.y, sect.tile.v.z)*0.5+Math.abs(sect.tile.v.y) > 0.91) { // give thorium sectors extra difficulty
+        sect.threat += 0.09
+      } else {
+        if (sect.id % 2 == 1) sect.threat += 0.09 // make odd numbered sectors a little harder
+      }
+    }
+  }
 }
 
+// REMAP VANILLA SECTORS
+let vanillaSectorRemap = {
+  // SERPULO
+  groundZero: 219,
+  saltFlats: 101,
+  testingGrounds: 3,
+  frozenForest: 86,
+  biomassFacility: 81,
+  taintedWoods: 221,
+  craters: 188,
+  ruinousShores: 213,
+  seaPort: 47,
+  facility32m: 64,
+  windsweptIslands: 103,
+  stainedMountains: 20,
+  extractionOutpost: 165,
+  polarAerodrome: 68,
+  coastline: 108,
+  weatheredChannels: 39,
+  navalFortress: 216,
+  frontier: 50,
+  fungalPass: 21,
+  infestedCanyons: 210,
+  atolls: 1,
+  mycelialBastion: 260,
+  overgrowth: 134,
+  tarFields: 23,
+  impact0078: 227,
+  desolateRift: 123,
+  nuclearComplex: 130,
+  planetaryTerminal: 93,
+  geothermalStronghold: 264,
+  cruxscape: 54,
+  
+  // EREKIR
+  onset: 10,
+  aegis: 88,
+  lake: 41,
+  intersect: 36,
+  atlas: 14,
+  split: 19,
+  basin: 29,
+  marsh: 25,
+  peaks: 30,
+  ravine: 39,
+  "caldera-erekir": 43,
+  stronghold: 18,
+  crevice: 3,
+  siege: 58,
+  crossroads: 37,
+  karst: 5,
+  origin: 12,
+}
+for (let i=0;i<Vars.content.sectors().size;i++) {
+  let sect = Vars.content.sectors().get(i)
+  if (sect.isModded()) break // only care for vanilla sectors
+  if (sect.sector.preset == sect) sect.sector.preset = null
+  let swap = vanillaSectorRemap[sect.name] != null ? vanillaSectorRemap[sect.name] : sect.originalPosition
+  sect.originalPosition = sect.sector.id
+  sect.sector = sect.planet.sectors.get(swap)
+  sect.planet.preset(sect.sector.id,sect)
+}
+Planets.serpulo.startSector = SectorPresets.groundZero.sector.id
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
   // WIPE ALL NUMBERED BASES
@@ -427,12 +518,12 @@ Events.on(ClientLoadEvent, e => {
   
   // REMOVE PROBLEMATIC HIDDEN SECTORS
   const removeHidden = [
-    
+    12
   ]
   for (let i=0;i<removeHidden.length;i++) {
-    //if (Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
-      //Planets.serpulo.sectors.get(removeHidden[i]).preset = null
-    //}
+    if (Planets.serpulo.sectors.get(removeHidden[i]).preset != null && Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
+      Planets.serpulo.sectors.get(removeHidden[i]).preset = null
+    }
   }
   Planets.serpulo.updateBaseCoverage()
 
@@ -445,7 +536,7 @@ Events.on(ClientLoadEvent, e => {
   TechTree.all.find(t => t.content == Blocks.hail).objectives.remove(2) // todo: find way to do this without hardcoded index
   TechTree.all.find(t => t.content == Blocks.hail).objectives.add(new Objectives.OnSector(SectorPresets.craters))
   // restrict early titanium
-  let stainORwind = extend(Objectives.Objective,{
+  /*let stainORwind = extend(Objectives.Objective,{
     complete() {
       return SectorPresets.stainedMountains.sector.hasBase() || SectorPresets.windsweptIslands.sector.hasBase()
     },
@@ -456,9 +547,9 @@ Events.on(ClientLoadEvent, e => {
   TechTree.all.find(t => t.content == Blocks.lancer).objectives.add(stainORwind)
   TechTree.all.find(t => t.content == Blocks.parallax).objectives.add(stainORwind)
   TechTree.all.find(t => t.content == Blocks.salvo).objectives.add(stainORwind)
-  TechTree.all.find(t => t.content == Vars.content.getByName(ContentType.block, "md3-tearer")).objectives.add(stainORwind)
+  TechTree.all.find(t => t.content == Vars.content.getByName(ContentType.block, "md3-tearer")).objectives.add(stainORwind)*/
   // restrict early thorium
-  let tarORover = extend(Objectives.Objective,{
+  /*let tarORover = extend(Objectives.Objective,{
     complete() {
       return SectorPresets.tarFields.sector.hasBase() || SectorPresets.overgrowth.sector.hasBase()
     },
@@ -470,7 +561,7 @@ Events.on(ClientLoadEvent, e => {
   TechTree.all.find(t => t.content == Blocks.tsunami).objectives.add(tarORover)
   TechTree.all.find(t => t.content == Blocks.meltdown).objectives.add(tarORover)
   TechTree.all.find(t => t.content == Blocks.surgeSmelter).objectives.add(tarORover)
-  TechTree.all.find(t => t.content == Blocks.thoriumReactor).objectives.add(tarORover)
+  TechTree.all.find(t => t.content == Blocks.thoriumReactor).objectives.add(tarORover)*/
   // linearize post-thorium
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Blocks.spectre))
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Vars.content.getByName(ContentType.block, "md3-firenado")))
