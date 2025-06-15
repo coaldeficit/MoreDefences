@@ -45,6 +45,7 @@ let cinnabarDMMWall = extend(StaticWall, "cinnabar-dimethyl-wall", {});
 
 let bromineCluster = extend(TallBlock, "bromine-cluster", {});
 let metacinnabarCluster = extend(TallBlock, "metacinnabar-cluster", {});
+let mercuryCrystal = extend(TallBlock, "mercury-crystal", {});
 
 let cobaltOre = extend(OreBlock, "ore-cobalt", {});
 let lithiumOre = extend(OreBlock, "ore-lithium", {});
@@ -115,6 +116,7 @@ module.exports = {
   
   bromineCluster: bromineCluster,
   metacinnabarCluster: metacinnabarCluster,
+  mercuryCrystal: mercuryCrystal,
   
   cobaltOre: cobaltOre,
   lithiumOre: lithiumOre,
