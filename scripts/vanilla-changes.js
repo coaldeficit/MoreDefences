@@ -434,7 +434,7 @@ function forceSectorDifficulty() {
 // REMAP VANILLA SECTORS
 let vanillaSectorRemap = {
   // SERPULO
-  groundZero: 219,
+  groundZero: 220,
   saltFlats: 101,
   testingGrounds: 3,
   frozenForest: 86,
@@ -526,6 +526,7 @@ Events.on(ClientLoadEvent, e => {
     }
   }
   Planets.serpulo.updateBaseCoverage()
+  Planets.serpulo.reloadMeshAsync()
 
   
   // FORCE SECTOR DIFFICULY
