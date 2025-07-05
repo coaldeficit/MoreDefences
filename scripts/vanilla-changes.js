@@ -446,10 +446,10 @@ let vanillaSectorRemap = {
   facility32m: 64,
   windsweptIslands: 103,
   stainedMountains: 20,
-  extractionOutpost: 165,
+  extractionOutpost: 37,
   polarAerodrome: 68,
   coastline: 108,
-  weatheredChannels: 39,
+  weatheredChannels: 217,
   navalFortress: 216,
   frontier: 50,
   fungalPass: 21,
@@ -494,6 +494,15 @@ for (let i=0;i<Vars.content.sectors().size;i++) {
   sect.planet.preset(sect.sector.id,sect)
 }
 Planets.serpulo.startSector = SectorPresets.groundZero.sector.id
+// HIDDEN SECTORS (currently fucked dont use)
+let mdHiddenSectors = [
+  //[199,"199old",65]
+]
+for (let i=0;i<mdHiddenSectors.length;i++) {
+  let sect = new SectorPreset(mdHiddenSectors[i][1], Planets.serpulo, mdHiddenSectors[i][0])
+  sect.requireUnlock = false
+  sect.captureWave = mdHiddenSectors[i][2]
+}
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
   // WIPE ALL NUMBERED BASES

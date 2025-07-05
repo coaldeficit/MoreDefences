@@ -1,6 +1,6 @@
-description: "A formerly thriving network of rivers and creeks not far off from the crater in Reentry, now severely infested with spores.\nMore unknown unit signatures have been spotted in this area, aswell as [accent]unrecognizable signals[] that do not seem to belong to any unit.\nDestroy the enemy forces and investigate the signals."
+description: "A formerly thriving network of rivers and creeks, now severely infested with spores.\nMore unknown unit signatures have been spotted in this area, aswell as [accent]unrecognizable signals[] that do not seem to belong to any unit.\nDestroy the enemy forces and investigate the signals."
 planet: serpulo
-sector: 268
+sector: 112
 difficulty: 9
 captureWave: 36
 research: {

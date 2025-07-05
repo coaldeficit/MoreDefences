@@ -2,18 +2,18 @@ Events.on(ClientLoadEvent, () => {
   if (Core.settings.getString("md3-internal-campaignwarn") != "accepted") {
     let cause = ""
     if (SectorPresets.impact0078.unlocked()) cause += "Impact 0078 unlocked";
-    if (Planets.serpulo.sectors.get(212).save instanceof Saves.SaveSlot) {
+    if (Planets.serpulo.sectors.get(75).save instanceof Saves.SaveSlot) {
       if (cause.length == 0) {
-        cause += "Serpulo 212 has save file"
+        cause += "Serpulo 75 has save file"
       } else {
-        cause += ", Serpulo 212 has save file"
+        cause += ", Serpulo 75 has save file"
       }
     }
-    if (Planets.serpulo.sectors.get(268).save instanceof Saves.SaveSlot) {
+    if (Planets.serpulo.sectors.get(112).save instanceof Saves.SaveSlot) {
       if (cause.length == 0) {
-        cause += "Serpulo 268 has save file"
+        cause += "Serpulo 112 has save file"
       } else {
-        cause += ", Serpulo 268 has save file"
+        cause += ", Serpulo 112 has save file"
       }
     }
     if (Planets.erekir.sectors.get(63).save instanceof Saves.SaveSlot) {
