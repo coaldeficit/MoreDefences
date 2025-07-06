@@ -414,7 +414,10 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
 function forceSectorDifficulty() {
   for (let i=0;i<Planets.serpulo.sectors.size;i++) {
     let sect = Planets.serpulo.sectors.get(i)
-    if (sect.preset != null) continue
+    if (sect.preset != null) {
+      if (sect.preset.requireUnlock != true && sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3') sect.threat = sect.preset.difficulty/10
+      continue
+    }
     if (Simplex.noise3d(Planets.serpulo.sectorSeed, 2, 0.5, 1, sect.tile.v.x, sect.tile.v.y, sect.tile.v.z)*0.5+Math.abs(sect.tile.v.y) <= 0.325) { // give Coal Deficit sectors no difficulty at all
       sect.threat = 0.2 // these sectors being medium threat is a waste of time
       continue
@@ -494,17 +497,25 @@ for (let i=0;i<Vars.content.sectors().size;i++) {
   sect.planet.preset(sect.sector.id,sect)
 }
 Planets.serpulo.startSector = SectorPresets.groundZero.sector.id
-// HIDDEN SECTORS (currently fucked dont use)
+// HIDDEN SECTORS
 let mdHiddenSectors = [
-  //[199,"199old",65]
+  [199,"199old",65,10]
 ]
+let hiddenSectArray = []
 for (let i=0;i<mdHiddenSectors.length;i++) {
   let sect = new SectorPreset(mdHiddenSectors[i][1], Planets.serpulo, mdHiddenSectors[i][0])
   sect.requireUnlock = false
   sect.captureWave = mdHiddenSectors[i][2]
+  sect.difficulty = mdHiddenSectors[i][3]
+  hiddenSectArray.push(sect)
 }
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
+  // FUCK OFF MOUNTAIN ICON
+  for (let i=0;i<hiddenSectArray.length;i++) {
+    hiddenSectArray[i].uiIcon = Core.atlas.find("md3-sector-md3-hidden")
+    hiddenSectArray[i].sector.threat = hiddenSectArray[i].difficulty/10
+  }
   // WIPE ALL NUMBERED BASES
   for (let i=0;i<272;i++){
     Planets.serpulo.sectors.get(i).generateEnemyBase = false
