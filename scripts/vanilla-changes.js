@@ -438,16 +438,16 @@ function forceSectorDifficulty() {
 let vanillaSectorRemap = {
   // SERPULO
   groundZero: 220,
-  saltFlats: 101,
+  saltFlats: 98,
   testingGrounds: 3,
   frozenForest: 86,
   biomassFacility: 81,
   taintedWoods: 221,
-  craters: 188,
+  craters: 241,
   ruinousShores: 213,
   seaPort: 47,
-  facility32m: 64,
-  windsweptIslands: 103,
+  facility32m: 175,
+  windsweptIslands: 242,
   stainedMountains: 20,
   extractionOutpost: 37,
   polarAerodrome: 68,
@@ -458,7 +458,7 @@ let vanillaSectorRemap = {
   fungalPass: 21,
   infestedCanyons: 210,
   atolls: 1,
-  mycelialBastion: 260,
+  mycelialBastion: 261,
   overgrowth: 134,
   tarFields: 23,
   impact0078: 227,
@@ -539,10 +539,28 @@ Events.on(ClientLoadEvent, e => {
   
   // REMOVE PROBLEMATIC HIDDEN SECTORS
   const removeHidden = [
-    12
+    // isolated sectors
+    6,12,76,111,133,230,248,
+    // twin sectors
+    19,197,
+    55,116,
+    67,127,
+    191,192,
+    // 3 sector clusters
+    0,92,94,
+    13,161,162,
+    16,176,180,
+    20,200,204,
+    47,185,207,
+    // north pole
+    24,66,69,225,
+    // south pole
+    30,254,259,263,265,
+    // megabase
+    27,103,138,150,157,237,242,243,244,245,246,247,251,
   ]
   for (let i=0;i<removeHidden.length;i++) {
-    if (Planets.serpulo.sectors.get(removeHidden[i]).preset != null && Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false) { // check for modded non-hidden sectors so we dont fuck up anything
+    if (Planets.serpulo.sectors.get(removeHidden[i]).preset != null && Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for modded non-hidden sectors so we dont fuck up anything
       Planets.serpulo.sectors.get(removeHidden[i]).preset = null
     }
   }
