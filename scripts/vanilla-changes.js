@@ -119,12 +119,12 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
     [UnitTypes.crawler,UnitTypes.atrax,UnitTypes.spiroct,UnitTypes.arkyid,UnitTypes.toxopid],
     [UnitTypes.nova,UnitTypes.pulsar,UnitTypes.quasar,UnitTypes.vela,UnitTypes.corvus]
   ]
-  if (Planets.serpulo.sectors.get(212).info.wasCaptured) groundenemies.push([getMDUnit("shotgunner-mech"),getMDUnit("pounder-mech"),getMDUnit("slugger-mech"),getMDUnit("rocketeer-mech"),getMDUnit("blitz-mech")])
+  if (Planets.serpulo.sectors.get(75).info.wasCaptured) groundenemies.push([getMDUnit("shotgunner-mech"),getMDUnit("pounder-mech"),getMDUnit("slugger-mech"),getMDUnit("rocketeer-mech"),getMDUnit("blitz-mech")])
   let airenemies = [
     [UnitTypes.flare,UnitTypes.horizon,UnitTypes.zenith,UnitTypes.antumbra,UnitTypes.eclipse],
     [UnitTypes.flare,UnitTypes.poly,UnitTypes.mega,UnitTypes.quad,UnitTypes.oct]
   ]
-  if (Planets.serpulo.sectors.get(268).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("bee-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
+  if (Planets.serpulo.sectors.get(112).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("bee-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
   if (enemyBase) {
     airenemies[1][4] = UnitTypes.eclipse
   }
@@ -132,7 +132,7 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
     [UnitTypes.risso,UnitTypes.minke,UnitTypes.bryde,UnitTypes.sei,UnitTypes.omura],
     [UnitTypes.retusa,UnitTypes.oxynoe,UnitTypes.cyerce,UnitTypes.aegires,UnitTypes.navanax]
   ]
-  if (Planets.serpulo.sectors.get(268).info.wasCaptured) navalenemies.push([getMDUnit("mycena-boat"),getMDUnit("panaeolus-boat"),getMDUnit("agaricus-boat"),getMDUnit("macrocybe-boat"),getMDUnit("armillaria-boat")])
+  if (Planets.serpulo.sectors.get(112).info.wasCaptured) navalenemies.push([getMDUnit("mycena-boat"),getMDUnit("panaeolus-boat"),getMDUnit("agaricus-boat"),getMDUnit("macrocybe-boat"),getMDUnit("armillaria-boat")])
       
   // mod compat shenanigans, listed by order of addition to this
     // if you're a mod dev and want compat with this, ping me on discord and i'll try to see what i can do
