@@ -560,7 +560,8 @@ Events.on(ClientLoadEvent, e => {
     27,103,138,150,157,237,242,243,244,245,246,247,251,
   ]
   for (let i=0;i<removeHidden.length;i++) {
-    if (Planets.serpulo.sectors.get(removeHidden[i]).preset != null && Planets.serpulo.sectors.get(removeHidden[i]).preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for modded non-hidden sectors so we dont fuck up anything
+    let sect = Planets.serpulo.sectors.get(removeHidden[i])
+    if (sect.preset != null && sect.preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for modded non-hidden sectors so we dont fuck up anything
       Planets.serpulo.sectors.get(removeHidden[i]).preset = null
     }
   }
