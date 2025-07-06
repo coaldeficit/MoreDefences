@@ -499,7 +499,8 @@ for (let i=0;i<Vars.content.sectors().size;i++) {
 Planets.serpulo.startSector = SectorPresets.groundZero.sector.id
 // HIDDEN SECTORS
 let mdHiddenSectors = [
-  [199,"199old",65,10]
+  [199,"199old",65,10],
+  [157,"157md",0,2],
 ]
 let hiddenSectArray = []
 for (let i=0;i<mdHiddenSectors.length;i++) {
