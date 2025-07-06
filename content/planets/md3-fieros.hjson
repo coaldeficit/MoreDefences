@@ -104,7 +104,7 @@ cloudMesh: [
 	speed: 1
     seed: 53645634
     # Mesh "quality". More divisions = more hexagons.
-    divisions: 7
+    divisions: 6
     color: e6c25740
     radius: 0.075
     octaves: 1
@@ -117,7 +117,7 @@ cloudMesh: [
 	speed: 0.5
     seed: 53645634
     # Mesh "quality". More divisions = more hexagons.
-    divisions: 7
+    divisions: 6
     color: e6c25720
     radius: 0.1
     octaves: 1
