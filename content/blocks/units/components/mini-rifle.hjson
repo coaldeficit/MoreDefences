@@ -1,4 +1,3 @@
-type: Wall
 name: Mini-Rifle
 description: A simple rifle for unit production.
 health: 25

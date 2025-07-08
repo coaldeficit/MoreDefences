@@ -1,4 +1,3 @@
-type: PayloadConveyor
 name: Lithitic Conveyor
 description: Carries payloads to its destination.
 health: 50

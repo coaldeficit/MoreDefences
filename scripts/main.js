@@ -42,6 +42,7 @@ require('md3/blocks/pelt');
 require('md3/blocks/bolt');
 require('md3/blocks/cinnabar-aqueduct');
 require('md3/blocks/fieros-production');
+require('md3/blocks/fieros-payload');
 
 // unit stuff
 // serpulo

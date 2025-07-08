@@ -1,4 +1,3 @@
-type: Constructor
 name: Basic Component Assembler
 description: Creates basic components for the creation of units.
 health: 50
@@ -9,6 +8,7 @@ filter: [armor-plate,mini-rifle]
 hasPower: false
 hasLiquids: true
 liquidCapacity: 12
+payloadSpeed: 4
 consumes: {
   liquids: [
     {

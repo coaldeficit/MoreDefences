@@ -1,4 +1,3 @@
-type: UnitFactory
 name: Basic Unit Factory
 description: Uses resources to construct basic, low tier units.
 details: Uses a turbine coated in cinnabar to convert the flow of Mercury into usable energy.
