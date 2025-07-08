@@ -1,11 +1,7 @@
 let basicUnitFactory = extend(UnitFactory, "basic-unit-factory", {});
 let conveyor = extend(PayloadConveyor, "lithitic-payload-conveyor", {});
 let router = extend(PayloadRouter, "lithitic-payload-router", {});
-let basicComponentAssembler = extend(Constructor, "component-assembler", {
-  canProduce(b) {
-    return this.filter.contains(b)
-  }
-});
+let basicComponentAssembler = extend(Constructor, "component-assembler", {});
 
 let armorPlate = extend(Wall, "armor-plate", {})
 let miniRifle = extend(Wall, "mini-rifle", {})

@@ -2,6 +2,7 @@ name: Mini-Rifle
 description: A simple rifle for unit production.
 health: 25
 size: 1
+placeablePlayer: false
 requirements: [
   bulletum/10
 ]

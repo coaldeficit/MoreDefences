@@ -2,6 +2,7 @@ name: Armor Plate
 description: A simple plate of armor for unit production.
 health: 100
 size: 1
+placeablePlayer: false
 requirements: [
   cobalt/10
   cinnabar-item/10
