@@ -27,6 +27,7 @@ let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
+let pessegiteCrater = extend(Floor, "pessegite-crater", {});
 let pessegiteWall = extend(StaticWall, "pessegite-wall", {});
 let frozenMercury = extend(Floor, "frozen-mercury", {});
 
@@ -99,6 +100,7 @@ module.exports = {
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
+  pessegiteCrater: pessegiteCrater,
   pessegiteWall: pessegiteWall,
   frozenMercury: frozenMercury,
   
