@@ -1,4 +1,3 @@
-type: tether
 name: Troni
 description: Helps with upgrading units. Produced by unit assemblers.
 flying: true
