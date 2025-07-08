@@ -1,0 +1,13 @@
+type: Wall
+name: Mini-Rifle
+description: A simple rifle for unit production.
+health: 100
+size: 1
+requirements: [
+  bulletum/10
+]
+category: units
+research: {
+  parent: component-assembler
+  planet: md3-fieros
+}

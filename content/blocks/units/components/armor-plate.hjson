@@ -1,0 +1,14 @@
+type: Wall
+name: Armor Plate
+description: A simple plate of armor for unit production.
+health: 100
+size: 1
+requirements: [
+  cobalt/10
+  cinnabar-item/10
+]
+category: units
+research: {
+  parent: component-assembler
+  planet: md3-fieros
+}
