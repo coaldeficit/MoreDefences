@@ -2,7 +2,7 @@ name: Donjon Assembler
 description: "Upgrades \"Donjon\" model units."
 health: 120
 size: 5
-droneType: assembly-drone
+droneType: autoassembly-drone
 areaSize: 9
 hasPower: false
 hasLiquids: true
