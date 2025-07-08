@@ -39,4 +39,4 @@ research: {
   parent: jeri-unit-assembler
   planet: md3-fieros
 }
-researchCostMultiplier: 0.3
+researchCostMultiplier: 0.05
