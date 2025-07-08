@@ -11,3 +11,4 @@ research: {
   parent: component-assembler
   planet: md3-fieros
 }
+researchCostMultiplier: 0.3

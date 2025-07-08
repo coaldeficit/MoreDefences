@@ -13,3 +13,4 @@ research: {
   parent: lithitic-payload-conveyor
   planet: md3-fieros
 }
+researchCostMultiplier: 0.1
