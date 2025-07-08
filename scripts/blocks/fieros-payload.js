@@ -1,6 +1,6 @@
 let basicUnitFactory = extend(UnitFactory, "basic-unit-factory", {});
-let conveyor = extend(PayloadConveyor, "lithic-payload-conveyor", {});
-let router = extend(PayloadRouter, "lithic-payload-router", {});
+let conveyor = extend(PayloadConveyor, "lithitic-payload-conveyor", {});
+let router = extend(PayloadRouter, "lithitic-payload-router", {});
 let basicComponentAssembler = extend(Constructor, "component-assembler", {
   canProduce(b) {
     return this.filter.contains(b)
