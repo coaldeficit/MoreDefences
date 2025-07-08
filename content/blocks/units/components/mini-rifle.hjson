@@ -1,7 +1,7 @@
 type: Wall
 name: Mini-Rifle
 description: A simple rifle for unit production.
-health: 100
+health: 25
 size: 1
 requirements: [
   bulletum/10

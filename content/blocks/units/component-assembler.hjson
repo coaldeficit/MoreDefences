@@ -1,11 +1,11 @@
 type: Constructor
 name: Basic Component Assembler
-description: temp
+description: Creates basic components for the creation of units.
 health: 50
 size: 3
 maxBlockSize: 1
 buildSpeed: 1
-filter: [cobalt-wall]
+filter: [armor-plate,mini-rifle]
 hasPower: false
 hasLiquids: true
 liquidCapacity: 12
