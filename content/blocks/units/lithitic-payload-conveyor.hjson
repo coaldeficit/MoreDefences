@@ -1,0 +1,22 @@
+type: PayloadConveyor
+name: Lithitic Conveyor
+description: Carries payloads to its destination.
+health: 50
+size: 3
+requirements: [
+  cinnabar-item/3
+  bulletum/3
+]
+moveTime: 30
+canOverdrive: false
+category: units
+research: {
+  parent: basic-unit-factory
+  planet: md3-fieros
+  objectives: [
+    {
+      type: SectorComplete
+      preset: expansion
+    }
+  ]
+}
