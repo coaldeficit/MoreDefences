@@ -1,12 +1,12 @@
 type: tether
-name: Autoassembly Drone
-description: Drone for assembling units
+name: Troni
+description: Helps with upgrading units. Produced by unit assemblers.
 flying: true
 drag: 0.1
 accel: 0.4
-speed: 1.7
-health: 130
-engineSize: 2
+speed: 1.1
+health: 75
+engineSize: 4
 engineOffset: 6.5
 payloadCapacity: 0
 targetable: false
