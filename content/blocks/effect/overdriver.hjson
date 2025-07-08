@@ -1,6 +1,6 @@
 type: OverdriveProjector
 name: Overdriver
-description: Speeds up the process of nearby buildings within its range. Cheap, but rather inefficient.
+description: Speeds up the process of nearby buildings within its range. Cheap, but inefficient.
 health: 40
 size: 1
 consumes: {
@@ -31,6 +31,10 @@ research: {
     {
       type: SectorComplete
       preset: ruinousShores
+    },
+    {
+      type: SectorComplete
+      preset: biomassFacility
     }
   ]
 }
