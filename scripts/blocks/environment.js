@@ -27,7 +27,6 @@ let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
-let pessegiteCrater = extend(Floor, "pessegite-crater", {});
 let pessegiteWall = extend(StaticWall, "pessegite-wall", {});
 let frozenMercury = extend(Floor, "frozen-mercury", {});
 
@@ -35,6 +34,7 @@ let sulfuricBoulder = extend(Prop, "sulfuric-boulder", {});
 let sulfuricRock = extend(Floor, "sulfuric-rock", {});
 let sulfuricRockDense = extend(Floor, "sulfuric-rock-dense", {});
 let sulfuricVent = extend(SteamVent, "sulfuric-vent", {});
+let sulfuricGeyser = extend(SteamVent, "sulfuric-geyser", {});
 sulfuricVent.attributes.set(Attribute.heat, 0.5);
 let sulfuricWall = extend(StaticWall, "sulfuric-wall", {});
 
@@ -100,7 +100,6 @@ module.exports = {
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
-  pessegiteCrater: pessegiteCrater,
   pessegiteWall: pessegiteWall,
   frozenMercury: frozenMercury,
   
@@ -108,6 +107,7 @@ module.exports = {
   sulfuricRock: sulfuricRock,
   sulfuricRockDense: sulfuricRockDense,
   sulfuricVent: sulfuricVent,
+  sulfuricGeyser: sulfuricGeyser,
   sulfuricWall: sulfuricWall,
   
   dimethyl: dimethyl,
