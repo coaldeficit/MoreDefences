@@ -1,5 +1,6 @@
 const dmgroups = require("md3/units/damagegroups")
 const mditems = require("md3/items")
+const statuses = require("md3/status-effects")
 const mygroups = [
   'unplated','walker','ironclad','attractor'
 ]
@@ -11,7 +12,7 @@ let gauge = extend(ItemTurret, "gauge", {
 });
 let bromineBullet = extend(BasicBulletType, {
   speed: 11,
-  damage: 25,
+  damage: 30,
   lifetime: 11,
   ammoMultiplier: 1,
   width: 5,
@@ -23,8 +24,8 @@ let bromineBullet = extend(BasicBulletType, {
   trailLength: 12,
   trailChance: 0,
   layer: 113,
-  pierce: true,
-  pierceCap: 2,
+  status: statuses.brominatedEffect,
+  statusDuration: 60,
   hitEntity(b, entity, health) {
     let mult = 1
     if (entity instanceof Unit) {
@@ -42,7 +43,6 @@ let bromineBullet = extend(BasicBulletType, {
       b.damage /= mult
       b.data = null
     }
-    b.damage /= 2
   }
 })
 gauge.ammo(

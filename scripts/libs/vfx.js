@@ -240,7 +240,7 @@ const bellaCharge = new Effect(30, 32, e => {
 });
 bellaCharge.followParent = true
 bellaCharge.rotWithParent = true
-const brominatedstatus = new Effect(80, e => {
+const brominatedstatus = new Effect(60, e => {
   Draw.z(111)
   Draw.color(Color.valueOf("#A33600"))
   Fill.tri(e.x+Math.cos(e.id)*e.fout()*3,e.y+Math.sin(e.id)*e.fout()*3,e.x+Math.cos(e.id+(2*Math.PI/3))*e.fout()*3,e.y+Math.sin(e.id+(2*Math.PI/3))*e.fout()*3,e.x+Math.cos(e.id+(4*Math.PI/3))*e.fout()*3,e.y+Math.sin(e.id+(4*Math.PI/3))*e.fout()*3)

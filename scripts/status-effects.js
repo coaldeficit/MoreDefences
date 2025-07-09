@@ -185,9 +185,9 @@ let brominatedEffect = extend(StatusEffect, "brominated-status", {
     isHidden(){
       return false
     },
-    speedMultiplier: 0.9,
+    speedMultiplier: 0.8,
     reloadMultiplier: 0.9,
-    damage: 0.416,
+    damage: 0.2,
     localizedName: 'Brominated',
     effect: vfx.brominatedstatus,
     color: Color.valueOf("#A33600")
