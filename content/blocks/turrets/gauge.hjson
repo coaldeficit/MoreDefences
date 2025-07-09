@@ -1,0 +1,58 @@
+name: Gauge
+description: Fires a spread of high speed incendiary projectiles at targets.
+health: 250
+size: 3
+reload: 30
+range: 121
+inaccuracy: 3
+rotateSpeed: 7
+shoot: {
+  type: ShootSpread
+  shots: 3
+  spread: 5
+}
+maxAmmo: 9
+ammoPerShot: 3
+drawer: {
+  type: DrawTurret
+  basePrefix: md3-fieros-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -l
+      progress: warmup
+      moveY: 1.5
+      moveX: -2
+      moveRot: 30
+    }
+    {
+      type: RegionPart
+      suffix: -r
+      progress: warmup
+      moveY: 1.5
+      moveX: 2
+      moveRot: -30
+    }
+    {
+      type: RegionPart
+      suffix: -cannon
+      progress: recoil
+      moveY: -1.75
+    }
+  ]
+}
+requirements: [
+  cobalt/200
+  cinnabar-item/200
+  bulletum/110
+]
+category: turret
+research: {
+  parent: bolt
+  planet: md3-fieros
+}
+researchCost: [
+  cobalt/500
+  cinnabar-item/500
+  bulletum/250
+]
