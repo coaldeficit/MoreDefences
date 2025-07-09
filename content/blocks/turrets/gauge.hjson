@@ -12,7 +12,7 @@ shoot: {
   spread: 5
 }
 maxAmmo: 9
-ammoPerShot: 3
+ammoPerShot: 2
 drawer: {
   type: DrawTurret
   basePrefix: md3-fieros-
