@@ -35,8 +35,9 @@ let sulfuricBoulder = extend(Prop, "sulfuric-boulder", {});
 let sulfuricRock = extend(Floor, "sulfuric-rock", {});
 let sulfuricRockDense = extend(Floor, "sulfuric-rock-dense", {});
 let sulfuricVent = extend(SteamVent, "sulfuric-vent", {});
-let sulfuricGeyser = extend(SteamVent, "sulfuric-geyser", {});
 sulfuricVent.attributes.set(Attribute.heat, 0.5);
+let sulfuricGeyser = extend(SteamVent, "sulfuric-geyser", {});
+sulfuricGeyser.attributes.set(Attribute.heat, 0.5);
 let sulfuricWall = extend(StaticWall, "sulfuric-wall", {});
 
 let dimethyl = extend(Floor, "dimethyl", {});
