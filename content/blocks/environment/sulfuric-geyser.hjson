@@ -1,5 +1,5 @@
 name: Sulfuric Geyser
-variants: 1
+variants: 2
 blendGroup: sulfuric-rock
 parent: sulfuric-rock
 effect: [ 
