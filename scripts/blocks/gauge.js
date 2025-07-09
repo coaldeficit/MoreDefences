@@ -12,7 +12,7 @@ let gauge = extend(ItemTurret, "gauge", {
 });
 let bromineBullet = extend(BasicBulletType, {
   speed: 11,
-  damage: 30,
+  damage: 40,
   lifetime: 11,
   ammoMultiplier: 1,
   width: 5,
