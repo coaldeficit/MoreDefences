@@ -1,7 +1,7 @@
 name: Sulfuric Geyser
 variants: 2
-blendGroup: sulfuric-rock
-parent: sulfuric-rock
+blendGroup: cinnabar
+parent: cinnabar
 effect: [ 
   {
     type: ParticleEffect
