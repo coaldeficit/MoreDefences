@@ -240,6 +240,11 @@ const bellaCharge = new Effect(30, 32, e => {
 });
 bellaCharge.followParent = true
 bellaCharge.rotWithParent = true
+const brominatedstatus = new Effect(45, e => {
+  Draw.z(110)
+  Draw.color(Color.valueOf("#A33600"))
+  Fill.tri(e.x+Math.cos(e.id)*e.fout()*3,e.y+Math.sin(e.id)*e.fout()*3,e.x+Math.cos(e.id+(2*Math.PI/3))*e.fout()*3,e.y+Math.sin(e.id+(2*Math.PI/3))*e.fout()*3,e.x+Math.cos(e.id+(4*Math.PI/3))*e.fout()*3,e.y+Math.sin(e.id+(4*Math.PI/3))*e.fout()*3)
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -267,4 +272,5 @@ module.exports = {
     juanSmoke: juanSmoke,
     bellaBlast: bellaBlast,
     bellaCharge: bellaCharge,
+    brominatedstatus: brominatedstatus,
 };

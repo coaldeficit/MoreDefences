@@ -181,10 +181,23 @@ let delayedEffect = extend(StatusEffect, "delayed-status", {
     color: Color.valueOf("#00ffff")
 });
 
+let brominatedEffect = extend(StatusEffect, "brominated-status", {
+    isHidden(){
+      return false
+    },
+    speedMultiplier: 0.9,
+    reloadMultiplier: 0.9,
+    damage: 0.416,
+    localizedName: 'Brominated',
+    effect: vfx.brominatedstatus,
+    color: Color.valueOf("#A33600")
+});
+
 module.exports = {
     //liquidHydrogenEffect: liquidHydrogenEffect,
     //radiationEffect: radiationEffect,
     insulatedEffect: insulatedEffect,
     blazedEffect: blazedEffect,
     delayedEffect: delayedEffect,
+    brominatedEffect: brominatedEffect,
 };
