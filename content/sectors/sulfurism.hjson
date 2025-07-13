@@ -1,0 +1,15 @@
+description: "A volcanic passage to the shoreline north. No enemy base is present here, however the enemy now knows of your presence and will send large waves of units to destroy you.\n\nDeposits of [accent]Bromine[] have been detected here. Mine it and discover what it can be used for."
+planet: md3-fieros
+sector: 425
+difficulty: 2
+captureWave: 6
+research: {
+  parent: expansion
+  objectives: [
+    gauge
+    {
+      type: SectorComplete
+      preset: expansion
+    }
+  ]
+}

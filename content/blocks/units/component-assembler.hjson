@@ -26,5 +26,11 @@ category: units
 research: {
   parent: basic-unit-factory
   planet: md3-fieros
+  objectives: [
+    {
+      type: SectorComplete
+      preset: sulfurism
+    }
+  ]
 }
 researchCostMultiplier: 0.3

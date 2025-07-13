@@ -15,6 +15,7 @@ let groups = {
   meson: [],
   ganglion: [],
   attractor: [],
+  laniakea: [],
 }
 function addToGroup(group, unittype) {
   if (groups[group] != null) groups[group].push(unittype)

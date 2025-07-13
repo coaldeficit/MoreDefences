@@ -48,8 +48,14 @@ requirements: [
 ]
 category: turret
 research: {
-  parent: bolt
+  parent: pelt
   planet: md3-fieros
+  objectives: [
+    {
+      type: SectorComplete
+      preset: expansion
+    }
+  ]
 }
 researchCost: [
   cobalt/500
