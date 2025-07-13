@@ -40,7 +40,10 @@ itemCapacity: 0
 research: {
   parent: donjon-mech
   objectives: [
-    basic-unit-factory
+    {
+      type: OnSector
+      preset: sulfurism
+    }
   ]
 }
 researchCostMultiplier: 0
