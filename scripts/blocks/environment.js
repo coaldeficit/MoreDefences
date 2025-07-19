@@ -25,6 +25,10 @@ let hotMetacinnabar = extend(Floor, "metacinnabar-hot", {});
 hotMetacinnabar.attributes.set(Attribute.heat, 0.5);
 let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
+let blackPanel = extend(Floor, "black-panel", {});
+let blackMetalWall = extend(StaticWall, "black-metal-wall", {});
+let fadedBlackPanel = extend(Floor, "faded-black-panel", {});
+
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
 let pessegiteCrater = extend(Floor, "pessegite-crater", {});
@@ -99,6 +103,10 @@ module.exports = {
   metacinnabar: metacinnabar,
   hotMetacinnabar: hotMetacinnabar,
   metacinnabarWall: metacinnabarWall,
+
+  blackPanel: blackPanel,
+  blackMetalWall: blackMetalWall,
+  fadedBlackPanel: fadedBlackPanel,
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
