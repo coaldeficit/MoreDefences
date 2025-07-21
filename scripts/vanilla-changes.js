@@ -94,6 +94,11 @@ UnitTypes.oxynoe.immunities.add(StatusEffects.electrified)
 UnitTypes.cyerce.immunities.add(StatusEffects.electrified)
 UnitTypes.aegires.immunities.add(StatusEffects.electrified)
 UnitTypes.navanax.immunities.add(StatusEffects.electrified)
+UnitTypes.mono.immunities.add(StatusEffects.electrified) // screw it lets also make mono immune for consistency sounds funny
+UnitTypes.poly.immunities.add(StatusEffects.electrified)
+UnitTypes.mega.immunities.add(StatusEffects.electrified)
+UnitTypes.quad.immunities.add(StatusEffects.electrified)
+UnitTypes.oct.immunities.add(StatusEffects.electrified)
 
 // DEATH TO UMINER
 UnitTypes.pulsar.mineSpeed = 1
