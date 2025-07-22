@@ -27,7 +27,9 @@ Events.on(ClientLoadEvent, () => {
             } else {
               Vars.ui.showCustomConfirm("MoreDefences Auto-Update Warning", "An update for MoreDefences is available, however it requires a newer version of the game.\nGo to Github download page for Mindustry?\n\n[gray]Local minimum game version: " + Vars.mods.getMod("md3").meta.minGameVersion + "\nUpdated minimum game version: " + jsonnery.get('minGameVersion') + "[]", "OK", "Ignore",
                 () => {
-                  if (parseInt(jsonnery.get('minGameVersion')) >= 20000) {
+                  let sendToBE = true
+                  Http.get("https://raw.githubusercontent.com/Anuken/Mindustry/refs/tags/v"+jsonnery.get('minGameVersion')+"/build.gradle",(a)=>{sendToBE=false},(a)=>{})
+                  if (parseInt(jsonnery.get('minGameVersion')) >= 20000 || sendToBE) {
                     Core.app.openURI("https://github.com/Anuken/MindustryBuilds/releases")
                   } else {
                     Core.app.openURI("https://github.com/Anuken/Mindustry/releases")
