@@ -84,7 +84,7 @@ UnitTypes.navanax.weapons.get(4).bullet.healPercent = 8 // ...whereas the main g
 UnitTypes.mega.isEnemy = true
 
 // VANILLA UNIT IMMUNITIES
-UnitTypes.nova.immunities.add(StatusEffects.electrified) // suggested by sh1p, thought it was a fun idea since i want to add a turret that applies electrified in the future
+UnitTypes.nova.immunities.add(StatusEffects.electrified) // suggested by sh1p
 UnitTypes.pulsar.immunities.add(StatusEffects.electrified)
 UnitTypes.quasar.immunities.add(StatusEffects.electrified)
 UnitTypes.vela.immunities.add(StatusEffects.electrified)
@@ -573,7 +573,6 @@ Events.on(ClientLoadEvent, e => {
   Planets.serpulo.updateBaseCoverage()
   Planets.serpulo.reloadMeshAsync()
 
-  
   // FORCE SECTOR DIFFICULY
   forceSectorDifficulty()
   
