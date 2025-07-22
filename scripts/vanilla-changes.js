@@ -94,6 +94,11 @@ UnitTypes.oxynoe.immunities.add(StatusEffects.electrified)
 UnitTypes.cyerce.immunities.add(StatusEffects.electrified)
 UnitTypes.aegires.immunities.add(StatusEffects.electrified)
 UnitTypes.navanax.immunities.add(StatusEffects.electrified)
+UnitTypes.mono.immunities.add(StatusEffects.electrified) // screw it lets also make mono immune for consistency sounds funny
+UnitTypes.poly.immunities.add(StatusEffects.electrified)
+UnitTypes.mega.immunities.add(StatusEffects.electrified)
+UnitTypes.quad.immunities.add(StatusEffects.electrified)
+UnitTypes.oct.immunities.add(StatusEffects.electrified)
 
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
@@ -386,68 +391,166 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
 
 // FORCE SECTOR DIFFICULY
 function forceSectorDifficulty() {
-  // low
-  Planets.serpulo.sectors.get(45).threat = 0.1 // meme
-  // medium
-  Planets.serpulo.sectors.get(180).threat = 0.38
-  Planets.serpulo.sectors.get(182).threat = 0.25
-  // high
-  Planets.serpulo.sectors.get(36).threat = 0.54
-  Planets.serpulo.sectors.get(60).threat = 0.74
-  Planets.serpulo.sectors.get(65).threat = 0.74
-  Planets.serpulo.sectors.get(114).threat = 0.74
-  Planets.serpulo.sectors.get(115).threat = 0.74
-  Planets.serpulo.sectors.get(141).threat = 0.7499
-  Planets.serpulo.sectors.get(156).threat = 0.54
-  Planets.serpulo.sectors.get(162).threat = 0.7499
-  Planets.serpulo.sectors.get(173).threat = 0.54
-  Planets.serpulo.sectors.get(178).threat = 0.54
-  Planets.serpulo.sectors.get(226).threat = 0.74
-  Planets.serpulo.sectors.get(265).threat = 0.74
-  // extreme
-  Planets.serpulo.sectors.get(7).threat = 0.99
-  Planets.serpulo.sectors.get(24).threat = 0.92
-  Planets.serpulo.sectors.get(84).threat = 0.92
-  Planets.serpulo.sectors.get(127).threat = 0.99
-  Planets.serpulo.sectors.get(140).threat = 0.97
-  Planets.serpulo.sectors.get(163).threat = 0.97
-  Planets.serpulo.sectors.get(235).threat = 0.92
-  // erad
-  Planets.serpulo.sectors.get(199).threat = 1.1
-  Planets.serpulo.sectors.get(225).threat = 1.1
-  Planets.serpulo.sectors.get(228).threat = 1.1
-  Planets.serpulo.sectors.get(229).threat = 1.2
-  Planets.serpulo.sectors.get(257).threat = 1.2
-  Planets.serpulo.sectors.get(263).threat = 1.42
+  for (let i=0;i<Planets.serpulo.sectors.size;i++) {
+    let sect = Planets.serpulo.sectors.get(i)
+    if (sect.preset != null) {
+      if (sect.preset.requireUnlock != true && sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3') sect.threat = sect.preset.difficulty/10
+      continue
+    }
+    if (Simplex.noise3d(Planets.serpulo.sectorSeed, 2, 0.5, 1, sect.tile.v.x, sect.tile.v.y, sect.tile.v.z)*0.5+Math.abs(sect.tile.v.y) <= 0.325) { // give Coal Deficit sectors no difficulty at all
+      sect.threat = 0.2 // these sectors being medium threat is a waste of time
+      continue
+    }
+    if (sect.threat < 0.38) sect.threat = 0.38 // if you're gonna make low threat sectors extinct atleast make the medium threat sectors in their place actually proper medium threat
+    let dontfuckingbuff = [199]
+    if (!dontfuckingbuff.includes(sect.id) && !sect.generateEnemyBase) {
+      if (Simplex.noise3d(Planets.serpulo.sectorSeed, 2, 0.5, 1, sect.tile.v.x+2, sect.tile.v.y, sect.tile.v.z)*0.5+Math.abs(sect.tile.v.y) > 0.91) { // give thorium sectors extra difficulty
+        sect.threat += 0.09
+      } else {
+        if (sect.id % 2 == 1) sect.threat += 0.09 // make odd numbered sectors a little harder
+      }
+    }
+  }
 }
 
+// REMAP VANILLA SECTORS
+let vanillaSectorRemap = {
+  // SERPULO
+  groundZero: 220,
+  saltFlats: 98,
+  testingGrounds: 3,
+  frozenForest: 86,
+  biomassFacility: 81,
+  taintedWoods: 221,
+  craters: 241,
+  ruinousShores: 213,
+  seaPort: 47,
+  facility32m: 175,
+  windsweptIslands: 242,
+  stainedMountains: 20,
+  extractionOutpost: 37,
+  polarAerodrome: 68,
+  coastline: 108,
+  weatheredChannels: 217,
+  navalFortress: 216,
+  frontier: 50,
+  fungalPass: 21,
+  infestedCanyons: 210,
+  atolls: 1,
+  mycelialBastion: 261,
+  overgrowth: 134,
+  tarFields: 23,
+  impact0078: 227,
+  desolateRift: 123,
+  nuclearComplex: 130,
+  planetaryTerminal: 93,
+  geothermalStronghold: 264,
+  cruxscape: 54,
+  
+  // EREKIR
+  onset: 10,
+  aegis: 88,
+  lake: 41,
+  intersect: 36,
+  atlas: 14,
+  split: 19,
+  basin: 29,
+  marsh: 25,
+  peaks: 30,
+  ravine: 39,
+  "caldera-erekir": 43,
+  stronghold: 18,
+  crevice: 3,
+  siege: 58,
+  crossroads: 37,
+  karst: 5,
+  origin: 12,
+}
+if (Version.build != 149) {
+  for (let i=0;i<Vars.content.sectors().size;i++) {
+    let sect = Vars.content.sectors().get(i)
+    if (sect.isModded()) break // only care for vanilla sectors
+    if (sect.sector.preset == sect) sect.sector.preset = null
+    let swap = vanillaSectorRemap[sect.name] != null ? vanillaSectorRemap[sect.name] : sect.originalPosition
+    sect.originalPosition = sect.sector.id
+    sect.sector = sect.planet.sectors.get(swap)
+    sect.planet.preset(sect.sector.id,sect)
+  }
+}
+Planets.serpulo.startSector = SectorPresets.groundZero.sector.id
+// HIDDEN SECTORS
+let mdHiddenSectors = [
+  //[199,"199old",65,10],
+  //[157,"157md",0,2],
+]
+let hiddenSectArray = []
+for (let i=0;i<mdHiddenSectors.length;i++) {
+  let sect = new SectorPreset(mdHiddenSectors[i][1], Planets.serpulo, mdHiddenSectors[i][0])
+  sect.requireUnlock = false
+  sect.captureWave = mdHiddenSectors[i][2]
+  sect.difficulty = mdHiddenSectors[i][3]
+  hiddenSectArray.push(sect)
+}
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
-  // LOCK NUMBERED SECTORS EARLY
-  //if (!Items.titanium.unlocked()) Planets.serpulo.allowLaunchToNumbered = false
+  // FUCK OFF MOUNTAIN ICON
+  for (let i=0;i<hiddenSectArray.length;i++) {
+    hiddenSectArray[i].uiIcon = Core.atlas.find("md3-sector-md3-hidden")
+    hiddenSectArray[i].sector.threat = hiddenSectArray[i].difficulty/10
+  }
+  // WIPE ALL NUMBERED BASES
+  for (let i=0;i<272;i++){
+    Planets.serpulo.sectors.get(i).generateEnemyBase = false
+  }
   
   // NUMBERED ENEMY BASES
   const convertToBase = [
-    85,223, // its strictly personal
-    95,178, // plt area
-    29,61,79,118,258,261,262, // south pole
-    66,128,232,235, // north pole
-    41,45,78,156,179, // misc sectors
+    63,124, // g0/deso/32m area
+    10, // ff/tw/tf area
+    19,84,194,198,229, // 199 must be funny
+    25,66,68,126,128,225,232,233,234,235, // north pole
+    28,29,30,53,57,58,60,79,80,117,118,120,139,250,255,257,258,259, // south pole
+    2,11,148,149,157,182, // windswept area
+    32,33,34,36,92,94, // plt area
+    31,38,56,132,133, // scourged rivers area
   ]
   for (let i=0;i<convertToBase.length;i++) {
     Planets.serpulo.sectors.get(convertToBase[i]).generateEnemyBase = true
   }
   
-  // WE LOVE NPC AND IMPACT
-  const convertToSurv = [
-    24,129,224,225,226,227, // north pole
-    30,60,114,115,121,259,265, // south pole
+  // REMOVE PROBLEMATIC HIDDEN SECTORS
+  const removeHidden = [
+    // isolated sectors
+    6,12,76,111,133,230,248,
+    // twin sectors
+    19,197,
+    55,116,
+    67,127,
+    191,192,
+    // 3 sector clusters
+    0,92,94,
+    13,161,162,
+    16,176,180,
+    20,200,204,
+    47,185,207,
+    // north pole
+    24,66,69,225,
+    // south pole
+    30,254,259,263,265,
+    // megabase
+    27,103,138,150,157,237,242,243,244,245,246,247,251,
   ]
-  for (let i=0;i<convertToSurv.length;i++) {
-    Planets.serpulo.sectors.get(convertToSurv[i]).generateEnemyBase = false
+  if (Version.build != 149) {
+    for (let i=0;i<removeHidden.length;i++) {
+      let sect = Planets.serpulo.sectors.get(removeHidden[i])
+      if (sect.preset != null && sect.preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for modded non-hidden sectors so we dont fuck up anything
+        Planets.serpulo.sectors.get(removeHidden[i]).preset = null
+      }
+    }
   }
   Planets.serpulo.updateBaseCoverage()
-  
+  if (Version.build != 149) Planets.serpulo.reloadMeshAsync()
+
   // FORCE SECTOR DIFFICULY
   forceSectorDifficulty()
   
