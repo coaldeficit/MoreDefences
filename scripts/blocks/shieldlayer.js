@@ -24,6 +24,7 @@ const siliMine = extend(MissileUnitType, "shieldmine", {
   wobble: false,
   flying: false,
   health: 60,
+  drawCell: true,
 });
 const siliMineField = extend(Weapon, {
   shootCone: 361,
@@ -73,6 +74,7 @@ const phaseMine = extend(MissileUnitType, "shieldmine-big", {
   wobble: false,
   flying: false,
   health: 120,
+  drawCell: true,
 });
 const phaseMineField = extend(Weapon, {
   shootCone: 361,
