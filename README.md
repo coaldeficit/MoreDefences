@@ -20,5 +20,5 @@ This is a list of people who have contributed to developing this mod.
 - [meowkitty](https://github.com/meowkitty9694e): Co-developer
 - [The named BOSS](https://github.com/The-named-BOSS): Playtester and idea guy
 - [Awesomespore](https://github.com/Awesomespore): Playtester
-- [Sh1penfire](https://github.com/Sh1penfire): Scourged Rivers Playtester
+- [Sh1penfire](https://github.com/Sh1penfire): Playtester
 - wpx: Extraction Outpost Mapmaker (made the terrain for the map)
