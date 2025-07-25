@@ -414,6 +414,8 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
     if (Vars.state.rules.sector.threat >= 0.5) Vars.state.rules.airUseSpawns = true
   }
 })
+let serpuloGenBasePos = Reflect.get(SerpuloPlanetGenerator, Planets.serpulo.generator, "basePos");
+serpuloGenBasePos.set(200807, 220712, 250403);
 
 // FORCE SECTOR DIFFICULY
 function forceSectorDifficulty() {
