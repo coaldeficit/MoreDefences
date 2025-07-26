@@ -59,6 +59,11 @@ let lithiumOre = extend(OreBlock, "ore-lithium", {});
 let bromineOre = extend(OreBlock, "ore-bromine", {});
 
 // misc
+
+let darkWire = extend(OverlayFloor, "dark-wire", {});
+let horizonalDarkWire = extend(OverlayFloor, "horizonal-dark-wire", {});
+let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
+
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
 let diorite = extend(Floor, "diorite", {});
 let dioriteWall = extend(StaticWall, "diorite-wall", {});
@@ -136,6 +141,11 @@ module.exports = {
   bromineOre: bromineOre,
   
   // misc
+
+  darkWire: darkWire,
+  horizonalDarkWire: horizonalDarkWire,
+  darkWireNode: darkWireNode,
+  
   dioriteBoulder: dioriteBoulder,
   diorite: diorite,
   dioriteWall: dioriteWall,
