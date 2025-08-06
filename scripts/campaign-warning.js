@@ -23,13 +23,13 @@ Events.on(ClientLoadEvent, () => {
         cause += ", Erekir 63 has save file"
       }
     }
-    if (Planets.erekir.sectors.get(41).save instanceof Saves.SaveSlot) {
-      if (cause.length == 0) {
-        cause += "Lake has save file"
-      } else {
-        cause += ", Lake has save file"
-      }
-    }
+    //if (Planets.erekir.sectors.get(41).save instanceof Saves.SaveSlot) {
+    //  if (cause.length == 0) {
+    //    cause += "Lake has save file"
+    //  } else {
+    //    cause += ", Lake has save file"
+    //  }
+    //}
     if (SectorPresets.planetaryTerminal.unlocked()) {
       if (cause.length == 0) {
         cause += "Planetary Launch Terminal unlocked"
