@@ -14,10 +14,11 @@ Go to the Mods menu, click/tap on Import Mod, click/tap on Import From Github, e
 
 ## Contributors
 This is a list of people who have contributed to developing this mod.
-- [coal deficit](https://github.com/coaldeficit): Developer.
+- [coal deficit](https://github.com/coaldeficit): Developer
 - [IvyX](https://github.com/TheRealIvyX): Former developer, made most of the content in the mod prior to handing over the project to [coal deficit](https://github.com/coaldeficit)
 - [7rodo](https://github.com/7rodo): Co-developer
 - [meowkitty](https://github.com/meowkitty9694e): Co-developer
 - [The named BOSS](https://github.com/The-named-BOSS): Playtester and idea guy
 - [Awesomespore](https://github.com/Awesomespore): Playtester
-- [Sh1penfire](https://github.com/Sh1penfire): Scourged Rivers Playtester
+- [Sh1penfire](https://github.com/Sh1penfire): Playtester
+- wpx: Extraction Outpost Mapmaker (made the terrain for the map)

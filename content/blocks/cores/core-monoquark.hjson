@@ -13,7 +13,6 @@ requirements: [
   cinnabar-item/750
 ]
 category: effect
-envDisabled: 24
 research: {
   root: true
   name: Fieros

@@ -13,7 +13,6 @@ sparkLife: 25
 sparkSpread: 110
 sparkRange: -4
 squareSprite: false
-envDisabled: 24
 requirements: [
   cobalt/25
 ]

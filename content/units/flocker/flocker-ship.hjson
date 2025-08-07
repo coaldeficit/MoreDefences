@@ -35,7 +35,7 @@ weapons: [{
     trailLength: 5
     shrinkY: 0
     shrinkX: 0
-    collidesAir: false
+    collidesAir: true
     keepVelocity: false
     trailColor: ffe873
     backColor: ffe873

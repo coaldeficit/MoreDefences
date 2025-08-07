@@ -1,0 +1,4 @@
+name: Bromine Cluster
+variants: 3
+itemDrop: bromine
+shadowOffset: -1

@@ -1,0 +1,36 @@
+name: Basic Component Assembler
+description: Creates basic components for the creation of units.
+health: 50
+size: 3
+maxBlockSize: 1
+buildSpeed: 1
+filter: [armor-plate,mini-rifle]
+hasPower: false
+hasLiquids: true
+liquidCapacity: 12
+payloadSpeed: 4
+consumes: {
+  liquids: [
+    {
+      liquid: mercury
+      amount: 0.2
+    }
+  ]
+}
+requirements: [
+  cobalt/150
+  cinnabar-item/150
+  bulletum/100
+]
+category: units
+research: {
+  parent: basic-unit-factory
+  planet: md3-fieros
+  objectives: [
+    {
+      type: SectorComplete
+      preset: sulfurism
+    }
+  ]
+}
+researchCostMultiplier: 0.3

@@ -1,0 +1,16 @@
+name: Lithitic Router
+description: Redirects payloads to other destinations. Capable of sorting payloads by type.
+health: 50
+size: 3
+requirements: [
+  cinnabar-item/9
+  bulletum/9
+]
+moveTime: 30
+canOverdrive: false
+category: units
+research: {
+  parent: lithitic-payload-conveyor
+  planet: md3-fieros
+}
+researchCostMultiplier: 0.1

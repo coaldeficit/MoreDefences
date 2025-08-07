@@ -25,8 +25,13 @@ let hotMetacinnabar = extend(Floor, "metacinnabar-hot", {});
 hotMetacinnabar.attributes.set(Attribute.heat, 0.5);
 let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
+let blackPanel = extend(Floor, "black-panel", {});
+let blackMetalWall = extend(StaticWall, "black-metal-wall", {});
+let fadedBlackPanel = extend(Floor, "faded-black-panel", {});
+
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
+let pessegiteCrater = extend(Floor, "pessegite-crater", {});
 let pessegiteWall = extend(StaticWall, "pessegite-wall", {});
 let frozenMercury = extend(Floor, "frozen-mercury", {});
 
@@ -35,6 +40,8 @@ let sulfuricRock = extend(Floor, "sulfuric-rock", {});
 let sulfuricRockDense = extend(Floor, "sulfuric-rock-dense", {});
 let sulfuricVent = extend(SteamVent, "sulfuric-vent", {});
 sulfuricVent.attributes.set(Attribute.heat, 0.5);
+let sulfuricGeyser = extend(SteamVent, "sulfuric-geyser", {});
+sulfuricGeyser.attributes.set(Attribute.heat, 0.5);
 let sulfuricWall = extend(StaticWall, "sulfuric-wall", {});
 
 let dimethyl = extend(Floor, "dimethyl", {});
@@ -43,7 +50,20 @@ let lithimentDMMWall = extend(StaticWall, "lithiment-dimethyl-wall", {});
 let cinnabarDMM = extend(Floor, "cinnabar-dimethyl", {});
 let cinnabarDMMWall = extend(StaticWall, "cinnabar-dimethyl-wall", {});
 
+let bromineCluster = extend(TallBlock, "bromine-cluster", {});
+let metacinnabarCluster = extend(TallBlock, "metacinnabar-cluster", {});
+let mercuryCrystal = extend(TallBlock, "mercury-crystal", {});
+
+let cobaltOre = extend(OreBlock, "ore-cobalt", {});
+let lithiumOre = extend(OreBlock, "ore-lithium", {});
+let bromineOre = extend(OreBlock, "ore-bromine", {});
+
 // misc
+
+let darkWire = extend(OverlayFloor, "dark-wire", {});
+let horizonalDarkWire = extend(OverlayFloor, "horizonal-dark-wire", {});
+let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
+
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
 let diorite = extend(Floor, "diorite", {});
 let dioriteWall = extend(StaticWall, "diorite-wall", {});
@@ -88,9 +108,14 @@ module.exports = {
   metacinnabar: metacinnabar,
   hotMetacinnabar: hotMetacinnabar,
   metacinnabarWall: metacinnabarWall,
+
+  blackPanel: blackPanel,
+  blackMetalWall: blackMetalWall,
+  fadedBlackPanel: fadedBlackPanel,
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
+  pessegiteCrater: pessegiteCrater,
   pessegiteWall: pessegiteWall,
   frozenMercury: frozenMercury,
   
@@ -98,6 +123,7 @@ module.exports = {
   sulfuricRock: sulfuricRock,
   sulfuricRockDense: sulfuricRockDense,
   sulfuricVent: sulfuricVent,
+  sulfuricGeyser: sulfuricGeyser,
   sulfuricWall: sulfuricWall,
   
   dimethyl: dimethyl,
@@ -106,7 +132,20 @@ module.exports = {
   cinnabarDMM: cinnabarDMM,
   cinnabarDMMWall: cinnabarDMMWall,
   
+  bromineCluster: bromineCluster,
+  metacinnabarCluster: metacinnabarCluster,
+  mercuryCrystal: mercuryCrystal,
+  
+  cobaltOre: cobaltOre,
+  lithiumOre: lithiumOre,
+  bromineOre: bromineOre,
+  
   // misc
+
+  darkWire: darkWire,
+  horizonalDarkWire: horizonalDarkWire,
+  darkWireNode: darkWireNode,
+  
   dioriteBoulder: dioriteBoulder,
   diorite: diorite,
   dioriteWall: dioriteWall,

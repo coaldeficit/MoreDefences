@@ -40,8 +40,10 @@ require('md3/blocks/subturrets');
 require('md3/blocks/spore-clumps');
 require('md3/blocks/pelt');
 require('md3/blocks/bolt');
+require('md3/blocks/gauge');
 require('md3/blocks/cinnabar-aqueduct');
 require('md3/blocks/fieros-production');
+require('md3/blocks/fieros-payload');
 
 // unit stuff
 // serpulo
@@ -77,9 +79,14 @@ require("md3/units/bosses/crusher")
 // ground
 // jeri line
 require("md3/units/ground/jeri/jeri")
+require("md3/units/ground/jeri/jerald")
 
 // donjon line
 require("md3/units/ground/donjon/donjon")
+require("md3/units/ground/donjon/klotzi")
+
+// bella line
+require("md3/units/air/bella/bella")
 
 // misc
 require("md3/units/air/drones")

@@ -1,0 +1,15 @@
+type: MemoryBlock
+name: Memory Drive
+description: Stores information for a logic processor. Extremely high capacity.
+health: 1000
+size: 3
+memoryCapacity: 4096
+requirements: [
+  copper/80
+  graphite/200
+  silicon/200
+  phase-fabric/80
+  vanadiphor/30
+]
+category: logic
+research: memory-bank

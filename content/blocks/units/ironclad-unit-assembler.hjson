@@ -1,0 +1,42 @@
+name: Donjon Assembler
+description: "Upgrades \"Donjon\" model units."
+health: 120
+size: 5
+droneType: autoassembly-drone
+areaSize: 9
+hasPower: false
+hasLiquids: true
+liquidCapacity: 24
+payloadSpeed: 4
+regionSuffix: "-fieros"
+consumes: {
+  liquids: [
+    {
+      liquid: mercury
+      amount: 0.4
+    }
+  ]
+}
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: klotzi-mech
+    requirements: [
+      md3-donjon-mech/1
+      md3-mini-rifle/1
+	  md3-armor-plate/4
+    ]
+    time: 1200
+  }
+]
+requirements: [
+  cobalt/250
+  cinnabar-item/250
+  bulletum/150
+]
+category: units
+research: {
+  parent: jeri-unit-assembler
+  planet: md3-fieros
+}
+researchCostMultiplier: 0.05

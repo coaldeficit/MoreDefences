@@ -1,0 +1,29 @@
+name: Troni
+description: Helps with upgrading units. Produced by unit assemblers.
+flying: true
+drag: 0.1
+accel: 0.4
+speed: 1.1
+health: 75
+engineSize: 4
+engineOffset: 6.5
+payloadCapacity: 0
+targetable: false
+bounded: false
+isEnemy: false
+useUnitCap: false
+logicControllable: false
+playerControllable: false
+allowedInPayloads: false
+createWreck: false
+controller: AssemblerAI
+itemCapacity: 0
+hitSize: 11
+research: {
+  parent: bella-ship
+  planet: md3-fieros
+  objectives: [
+    jeri-unit-assembler
+  ]
+}
+researchCostMultiplier: 0

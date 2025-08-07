@@ -1,0 +1,51 @@
+name: Sulfuric Geyser
+variants: 2
+blendGroup: cinnabar
+parent: cinnabar
+effect: [ 
+  {
+    type: ParticleEffect
+    particles: 16
+    baseRotation: 90
+    cone: 22
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 24
+    baseLength: 6
+    colorFrom: be1140
+    colorTo: 860025
+    lifetime: 180
+    useRotation: false
+  }
+  {
+    type: ParticleEffect
+    particles: 18
+    baseRotation: 90
+    cone: 20
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 32
+    baseLength: 8
+    colorFrom: be1140
+    colorTo: 860025
+    lifetime: 180
+    useRotation: false
+    startDelay: 6
+  }
+  {
+    type: ParticleEffect
+    particles: 20
+    baseRotation: 90
+    cone: 18
+    sizeFrom: 1.8
+    sizeTo: 0.2
+    length: 40
+    baseLength: 10
+    colorFrom: be1140
+    colorTo: 860025
+    lifetime: 180
+    useRotation: false
+    startDelay: 8
+  }
+]
+effectColor: be1140

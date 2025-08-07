@@ -1,0 +1,14 @@
+name: Mini-Rifle
+description: A simple rifle for unit production.
+health: 25
+size: 1
+placeablePlayer: false
+requirements: [
+  bulletum/10
+]
+category: units
+research: {
+  parent: component-assembler
+  planet: md3-fieros
+}
+researchCostMultiplier: 0.3
