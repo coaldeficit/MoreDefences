@@ -3,6 +3,7 @@ description: Fires bullets at enemy targets and crawls over them.
 hitSize: 18
 flying: false
 speed: 0.75
+softShadowScl: 1.8
 rotateSpeed: 2
 omniMovement: false
 drawBody: false
