@@ -582,8 +582,14 @@ Events.on(ClientLoadEvent, e => {
   
   // RESEARCH
   // allow hail in craters
-  //TechTree.all.find(t => t.content == Blocks.hail).objectives.remove(2) // todo: find way to do this without hardcoded index
-  //TechTree.all.find(t => t.content == Blocks.hail).objectives.add(new Objectives.OnSector(SectorPresets.craters))
+  for (let i=0,len=TechTree.all.find(t => t.content == Blocks.hail).objectives.size;i<len;i++) {
+    if (TechTree.all.find(t => t.content == Blocks.hail).objectives.get(i) instanceof Objectives.SectorComplete) {
+      TechTree.all.find(t => t.content == Blocks.hail).objectives.remove(i)
+      break
+    }
+  }
+  TechTree.all.find(t => t.content == Blocks.hail).objectives.add(new Objectives.SectorComplete(SectorPresets.frozenForest))
+  TechTree.all.find(t => t.content == SectorPresets.craters).objectives.add(new Objectives.Research(Blocks.hail))
   // restrict early titanium
   /*let stainORwind = extend(Objectives.Objective,{
     complete() {
