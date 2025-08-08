@@ -2,7 +2,7 @@ name: Hornet
 description: A distraction unit that fires missiles armed with decoy beacons that confuse enemy turrets.
 speed: 2
 flying: true
-health: 1000
+health: 750
 armor: 7
 hitSize: 20
 engineOffset: 13.5
