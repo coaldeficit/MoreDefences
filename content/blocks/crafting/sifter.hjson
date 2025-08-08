@@ -5,18 +5,19 @@ size: 1
 health: 40
 hasItems: true
 craftTime: 6
-itemCapacity: 20
+itemCapacity: 52
 updateEffect: smeltsmoke
 consumes: {
   items: {
     items: [
-      sand/7
+      sand/13
     ]
   }
 }
 requirements: [
-  copper/40
-  lead/30
+  copper/150
+  lead/150
+  plastanium/60
 ]
 category: crafting
 research: pulverizer
