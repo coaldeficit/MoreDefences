@@ -13,6 +13,7 @@ let cinnabarWall = extend(StaticWall, "cinnabar-wall", {});
 
 let lithimentBoulder = extend(Prop, "lithiment-boulder", {});
 let lithiment = extend(Floor, "lithiment", {});
+let sandyLithiment = extend(Floor, "sandy-lithiment", {});
 let lithimentWall = extend(StaticWall, "lithiment-wall", {});
 
 let mercuricBoulder = extend(Prop, "mercuric-boulder", {});
@@ -98,6 +99,7 @@ module.exports = {
   
   lithimentBoulder: lithimentBoulder,
   lithiment: lithiment,
+  sandyLithiment: sandyLithiment,
   lithimentWall: lithimentWall,
   
   mercuricBoulder: mercuricBoulder,
