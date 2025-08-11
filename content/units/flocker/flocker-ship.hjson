@@ -1,9 +1,10 @@
 name: Flocker
-description: A tanky swarming unit designed to distract enemy defences. 
+description: An armored distraction unit, armed with a lightning autogun that explodes when destroyed. 
+details: "An experimental unit.\nCapable of dynamically adjusting altitude to avoid collision with other air units.\nUnstable lightning gun design implies expectation that it will be blown up over enemy structures.\n\nOrigins unknown, intricate design and recent creation date indicate non-crux origins."
 speed: 2.2
 flying: true
-health: 180
-armor: 5
+health: 190
+armor: 3
 engineOffset: 6
 drag: 0.01
 accel: 0.09
@@ -13,6 +14,9 @@ targetFlags: [turret, battery, null]
 faceTarget: false
 physics: false
 itemCapacity: 0
+createWreck: false
+autoDropBombs: true
+alwaysShootWhenMoving: true
 weapons: [{
   name: flocker-weapon
   top: true
@@ -20,23 +24,80 @@ weapons: [{
   y: -2
   x: 0
   mirror: false
-  reload: 10
+  reload: 20
   shootSound: spark
   inaccuracy: 13
+  useAttackRange: false
+  shootCone: 30
+  targetInterval: 5
+  targetSwitchInterval: 5
+  controllable: false
+  aiControllable: false
+  autoTarget: true
   bullet: {
     type: LightningBulletType
-    speed: 4
-    damage: 4
+    damage: 7
     lightningLength: 8
-    lightningLengthRand: 7
+    lightningLengthRand: 5
     ammoMultiplier: 1
-    trailWidth: 1
-    trailLength: 2
     collidesAir: true
     keepVelocity: false
-    trailColor: ffe873
+    shieldDamageMultiplier: 0.35
+    rangeOverride: 112
+  }
+},{
+  name: generic-bomber-weapon
+  top: true
+  rotate: false
+  mirror: false
+  y: 0
+  x: 0
+  baseRotation: 180
+  mirror: false
+  reload: 360
+  shootSound: spark
+  inaccuracy: 0
+  shootOnDeath: true
+  shootCone: 361
+  useAttackRange: false
+  controllable: false
+  aiControllable: false
+  showStatSprite: false
+  shootY: 0
+  shoot: {
+    type: ShootSpread
+    shots: 6
+    spread: 60
+  }
+  bullet: {
+    type: MultiBulletType
+    bullets: [{
+      type: LightningBulletType
+      damage: 16
+      lightningLength: 7
+      lightningLengthRand: 3
+      ammoMultiplier: 1
+      collidesAir: true
+      keepVelocity: false
+      shieldDamageMultiplier: 0.35
+    }]
+    fragBullet: {
+      type: LightningBulletType
+      damage: 16
+      lightningLength: 7
+      lightningLengthRand: 3
+      ammoMultiplier: 1
+      collidesAir: true
+      keepVelocity: false
+      shieldDamageMultiplier: 0.35
+    }
+    fragBullets: 6
+    keepVelocity: false
+    damage: 0
+    rangeOverride: 112
   }
 }]
+range: 112
 research: {
   parent: flare
   objectives: [
