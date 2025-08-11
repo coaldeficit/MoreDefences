@@ -21,24 +21,20 @@ weapons: [{
   x: 0
   mirror: false
   reload: 10
-  shootSound: pew
+  shootSound: spark
   inaccuracy: 13
   bullet: {
+    type: LightningBulletType
     speed: 4
-    damage: 5
+    damage: 4
+    lightningLength: 8
+    lightningLengthRand: 7
     ammoMultiplier: 1
-    lifetime: 30
-    sprite: circle-bullet
-    height: 2
-    width: 2
     trailWidth: 1
-    trailLength: 5
-    shrinkY: 0
-    shrinkX: 0
+    trailLength: 2
     collidesAir: true
     keepVelocity: false
     trailColor: ffe873
-    backColor: ffe873
   }
 }]
 research: {
