@@ -112,6 +112,8 @@ UnitTypes.quasar.abilities.get(0).max = 600
 UnitTypes.spiroct.speed = 0.8
 UnitTypes.antumbra.weapons.get(2).reload = 6
 UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 2
+UnitTypes.tecta.abilities.get(0).width = 12
+UnitTypes.tecta.abilities.get(0).radius = 39
 
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
@@ -582,8 +584,14 @@ Events.on(ClientLoadEvent, e => {
   
   // RESEARCH
   // allow hail in craters
-  //TechTree.all.find(t => t.content == Blocks.hail).objectives.remove(2) // todo: find way to do this without hardcoded index
-  //TechTree.all.find(t => t.content == Blocks.hail).objectives.add(new Objectives.OnSector(SectorPresets.craters))
+  for (let i=0,len=TechTree.all.find(t => t.content == Blocks.hail).objectives.size;i<len;i++) {
+    if (TechTree.all.find(t => t.content == Blocks.hail).objectives.get(i) instanceof Objectives.SectorComplete) {
+      TechTree.all.find(t => t.content == Blocks.hail).objectives.remove(i)
+      break
+    }
+  }
+  TechTree.all.find(t => t.content == Blocks.hail).objectives.add(new Objectives.SectorComplete(SectorPresets.frozenForest))
+  TechTree.all.find(t => t.content == SectorPresets.craters).objectives.add(new Objectives.Research(Blocks.hail))
   // restrict early titanium
   /*let stainORwind = extend(Objectives.Objective,{
     complete() {
