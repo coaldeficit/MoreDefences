@@ -112,6 +112,8 @@ UnitTypes.quasar.abilities.get(0).max = 600
 UnitTypes.spiroct.speed = 0.8
 UnitTypes.antumbra.weapons.get(2).reload = 6
 UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 2
+UnitTypes.tecta.abilities.get(0).width = 12
+UnitTypes.tecta.abilities.get(0).radius = 39
 
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
