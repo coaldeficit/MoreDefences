@@ -62,7 +62,7 @@ let bromineOre = extend(OreBlock, "ore-bromine", {});
 // misc
 
 let darkWire = extend(OverlayFloor, "dark-wire", {});
-let horizonalDarkWire = extend(OverlayFloor, "horizonal-dark-wire", {});
+let horizonalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
 let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
 
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
