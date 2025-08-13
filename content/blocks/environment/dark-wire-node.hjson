@@ -1,3 +1,4 @@
 name: Dark Wire Node
 squareSprite: false
 variants: 0
+useColor: true

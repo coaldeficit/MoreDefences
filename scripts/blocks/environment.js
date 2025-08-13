@@ -62,7 +62,7 @@ let bromineOre = extend(OreBlock, "ore-bromine", {});
 // misc
 
 let darkWire = extend(OverlayFloor, "dark-wire", {});
-let horizonalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
+let horizontalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
 let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
 
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
@@ -83,6 +83,12 @@ let tholinWall = extend(StaticWall, "tholin-wall", {});
 let tholinWhiteBoulder = extend(Prop, "tholin-white-boulder", {});
 let tholinWhite = extend(Floor, "tholin-white", {});
 let tholinWhiteWall = extend(StaticWall, "tholin-white-wall", {});
+
+Events.on(ClientLoadEvent, e => {
+  Color.valueOf(darkWire.mapColor,"#52292c")
+  Color.valueOf(horizontalDarkWire.mapColor,"#52292c")
+  Color.valueOf(darkWireNode.mapColor,"#52292c")
+})
 
 module.exports = {
   // fieros
@@ -145,7 +151,7 @@ module.exports = {
   // misc
 
   darkWire: darkWire,
-  horizonalDarkWire: horizonalDarkWire,
+  horizontalDarkWire: horizontalDarkWire,
   darkWireNode: darkWireNode,
   
   dioriteBoulder: dioriteBoulder,

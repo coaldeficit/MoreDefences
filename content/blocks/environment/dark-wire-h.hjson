@@ -1,3 +1,4 @@
-name: Horizonal Dark Wire
+name: Horizontal Dark Wire
 squareSprite: false
 variants: 0
+useColor: true
