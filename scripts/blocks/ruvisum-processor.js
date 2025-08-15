@@ -1,5 +1,5 @@
 let ruvisumProcessor = extend(LogicBlock, "ruvisum-processor", {});
-/*function thefuckingdamagefunction(damage, me) {
+function thefuckingdamagefunction(damage, me) {
   // i cant believe i have to do this shit
   if (me.dead) return
   print(damage)
@@ -24,12 +24,19 @@ let ruvisumProcessor = extend(LogicBlock, "ruvisum-processor", {});
   me.healthChanged();
   
   if (me.health <= 0) {
-    Call.buildDestroyed(me.self());
+    Call.buildDestroyed(me);
   }
 }
 ruvisumProcessor.buildType = () => extend(LogicBlock.LogicBuild, ruvisumProcessor, {
-  damage(bullet, source, damage) {
-    thefuckingdamagefunction(damage, this)
+  damage(a,b,c) { // https://discord.com/channels/391020510269669376/653292618406690847/1405825213920186438 screw you glennfolker yes i can LMFAOOOOOOOOOOOOOOOOOOOOOO get fucked
+    if (a instanceof Bullet) {
+      thefuckingdamagefunction(c, this)
+      Events.fire(this.bulletDamageEvent.set(this, a));
+    } else if (a instanceof Team) {
+      thefuckingdamagefunction(b, this)
+    } else {
+      thefuckingdamagefunction(a, this)
+    }
   },
   collide(bullet) {
     return true
@@ -37,5 +44,5 @@ ruvisumProcessor.buildType = () => extend(LogicBlock.LogicBuild, ruvisumProcesso
   checkForceDark() {
     return false
   }
-});*/
+});
 ruvisumProcessor.buildVisibility = BuildVisibility.worldProcessorOnly
