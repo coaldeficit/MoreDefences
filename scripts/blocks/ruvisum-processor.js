@@ -1,4 +1,8 @@
-let ruvisumProcessor = extend(LogicBlock, "ruvisum-processor", {});
+let ruvisumProcessor = extend(LogicBlock, "ruvisum-processor", {
+  checkForceDark() {
+    return false
+  }
+});
 function thefuckingdamagefunction(damage, me) {
   // i cant believe i have to do this shit
   if (me.dead) return
@@ -40,9 +44,6 @@ ruvisumProcessor.buildType = () => extend(LogicBlock.LogicBuild, ruvisumProcesso
   },
   collide(bullet) {
     return true
-  },
-  checkForceDark() {
-    return false
   }
 });
 ruvisumProcessor.buildVisibility = BuildVisibility.worldProcessorOnly
