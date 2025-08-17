@@ -13,6 +13,7 @@ let cinnabarWall = extend(StaticWall, "cinnabar-wall", {});
 
 let lithimentBoulder = extend(Prop, "lithiment-boulder", {});
 let lithiment = extend(Floor, "lithiment", {});
+let sandyLithiment = extend(Floor, "sandy-lithiment", {});
 let lithimentWall = extend(StaticWall, "lithiment-wall", {});
 
 let mercuricBoulder = extend(Prop, "mercuric-boulder", {});
@@ -61,7 +62,7 @@ let bromineOre = extend(OreBlock, "ore-bromine", {});
 // misc
 
 let darkWire = extend(OverlayFloor, "dark-wire", {});
-let horizonalDarkWire = extend(OverlayFloor, "horizonal-dark-wire", {});
+let horizontalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
 let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
 
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
@@ -83,6 +84,12 @@ let tholinWhiteBoulder = extend(Prop, "tholin-white-boulder", {});
 let tholinWhite = extend(Floor, "tholin-white", {});
 let tholinWhiteWall = extend(StaticWall, "tholin-white-wall", {});
 
+Events.on(ClientLoadEvent, e => {
+  Color.valueOf(darkWire.mapColor,"#52292c")
+  Color.valueOf(horizontalDarkWire.mapColor,"#52292c")
+  Color.valueOf(darkWireNode.mapColor,"#52292c")
+})
+
 module.exports = {
   // fieros
   fierosCoreZone: fierosCoreZone,
@@ -98,6 +105,7 @@ module.exports = {
   
   lithimentBoulder: lithimentBoulder,
   lithiment: lithiment,
+  sandyLithiment: sandyLithiment,
   lithimentWall: lithimentWall,
   
   mercuricBoulder: mercuricBoulder,
@@ -143,7 +151,7 @@ module.exports = {
   // misc
 
   darkWire: darkWire,
-  horizonalDarkWire: horizonalDarkWire,
+  horizontalDarkWire: horizontalDarkWire,
   darkWireNode: darkWireNode,
   
   dioriteBoulder: dioriteBoulder,

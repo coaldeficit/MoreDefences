@@ -1,0 +1,11 @@
+# breakable world processor. design maps accordingly
+name: Ruvisum
+description: placeholder
+health: 5000
+size: 3
+drawTeamOverlay: false
+instructionsPerTick: 1000
+maxInstructionsPerTick: 1000
+range: 55752
+privileged: true
+category: logic

@@ -74,3 +74,4 @@ weapons: [{
     pierceDamageFactor: 0.25
   }
 }]
+hidden: true
