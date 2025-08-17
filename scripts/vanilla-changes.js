@@ -630,22 +630,32 @@ Events.on(ClientLoadEvent, e => {
   MapResizeDialog.minSize = 1 // maps outside of the 50x50 - 600x600 range are unsupported by anuke!!!
   MapResizeDialog.maxSize = 1000
   Vars.maxSchematicSize = 100 // we're making entire popular mods unnecessary with this one
-  
-  // KILL OLD LAUNCH PADS
+})
+
+// KILL LLPs
+let llpVoidType = () => extend(LaunchPad.LaunchPadBuild, Blocks.launchPad, {
+  shouldShowConfigure(player) {
+    return false
+  },
+  updateTile() {
+    this.launchCounter = 0
+    this.items.clear()
+  }
+})
+function killLLP() {
   Planets.serpulo.allowLegacyLaunchPads = false
   Planets.serpulo.campaignRules.legacyLaunchPads = false
   Blocks.launchPad.buildVisibility = BuildVisibility.hidden
   Blocks.advancedLaunchPad.buildVisibility = BuildVisibility.campaignOnly
   Blocks.landingPad.buildVisibility = BuildVisibility.campaignOnly
-  Blocks.launchPad.buildType = () => extend(LaunchPad.LaunchPadBuild, Blocks.launchPad, {
-    shouldShowConfigure(player) {
-      return false
-    },
-    updateTile() {
-      this.launchCounter = 0
-      this.items.clear()
-    }
-  })
+  Blocks.launchPad.buildType = llpVoidType;
+  if (TechTree.all.find(t => t.content == Blocks.launchPad) != null) TechTree.all.find(t => t.content == Blocks.launchPad).remove();
+}
+Events.on(ClientLoadEvent, e => {
+  killLLP()
+})
+Events.on(WorldLoadEvent, e => {
+  killLLP()
 })
 
 // CAPTURE TOAST
