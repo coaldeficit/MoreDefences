@@ -447,7 +447,7 @@ function forceSectorDifficulty() {
 let vanillaSectorRemap = {
   // SERPULO
   groundZero: 220,
-  saltFlats: 98,
+  saltFlats: 165,
   testingGrounds: 3,
   frozenForest: 86,
   biomassFacility: 81,
