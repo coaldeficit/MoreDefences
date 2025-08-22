@@ -1,0 +1,76 @@
+type: ItemTurret
+name: Triops
+description: temp
+health: 250
+size: 1
+reload: 20
+range: 178
+inaccuracy: 0
+rotateSpeed: 9
+shootCone: 15
+shoot: {
+  type: ShootMulti
+  source: ShootPattern
+  shots: 2
+  dest: [{
+    type: ShootHelix
+    shots: 1
+    scl: 4
+    mag: 0.5
+  }]
+}
+hasLiquids: true
+consumes: {
+  coolant: {
+    amount: 0.1
+  }
+}
+coolantMultiplier: 5
+maxAmmo: 36
+ammoPerShot: 1
+ammoTypes: {
+  copper: {
+    speed: 3
+    damage: 6.5
+    lifetime: 60
+    width: 6
+    height: 8
+    ammoMultiplier: 2
+    frontColor: eac1a8
+    backColor: d39169
+    hitColor: d39169
+    trailColor: d39169
+  }
+  graphite: {
+    speed: 3.1
+    damage: 11
+    lifetime: 60
+    width: 7
+    height: 9
+    ammoMultiplier: 3
+    rangeChange: 8
+    frontColor: dae1ee
+    backColor: 7d89d8
+    hitColor: 7d89d8
+    trailColor: 7d89d8
+  }
+  scrap: {
+    speed: 3.2333
+    damage: 5.5
+    lifetime: 60
+    width: 6
+    height: 8
+    reloadMultiplier: 1.333
+    rangeChange: 16
+    ammoMultiplier: 4
+    frontColor: f5e0cc
+    backColor: d8887e
+    hitColor: d8887e
+    trailColor: d8887e
+  }
+}
+requirements: [
+  scrap/45
+]
+category: turret
+research: duo
