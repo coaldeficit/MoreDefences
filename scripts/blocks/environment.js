@@ -65,8 +65,9 @@ let darkWire = extend(OverlayFloor, "dark-wire", {});
 let horizontalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
 let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
 
-let metalTilesMalis = extend(Floor, "metal-tiles-malis", {});
-let metalTiles2Malis = extend(Floor, "metal-tiles-2-malis", {});
+let metalTiles4Malis = extend(Floor, "metal-tiles-4-malis", {});
+let metalTiles6Malis = extend(Floor, "metal-tiles-6-malis", {});
+let metalTiles12Malis = extend(Floor, "metal-tiles-12-malis", {});
 
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
 let diorite = extend(Floor, "diorite", {});
@@ -157,8 +158,9 @@ module.exports = {
   horizontalDarkWire: horizontalDarkWire,
   darkWireNode: darkWireNode,
     
-  metalTilesMalis: metalTilesMalis,
-  metalTiles2Malis: metalTiles2Malis,
+  metalTiles4Malis: metalTiles4Malis,
+  metalTiles6Malis: metalTiles6Malis,
+  metalTiles12Malis: metalTiles12Malis,
   
   dioriteBoulder: dioriteBoulder,
   diorite: diorite,
