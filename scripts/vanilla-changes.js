@@ -378,7 +378,7 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
       }
     }
     if ((hovered.preset == null || !hovered.preset.requireUnlock) && contains) {
-      let pissoff = [162,222].includes(hovered.id)
+      let pissoff = [162,218,222].includes(hovered.id)
       let spoil = Blocks.coreNucleus.unlocked() || (Blocks.coreFoundation.unlocked() && Items.thorium.unlocked())
       out.append("[scarlet]X[] ").append(spoil ? Blocks.coreNucleus.emoji() : "[lightgray]?[] ").append(spoil ? (pissoff?Core.bundle.get("sector.md3-nucleusrequiredPissOffB"):Core.bundle.get("sector.md3-nucleusrequiredB")) : (pissoff?Core.bundle.get("sector.md3-nucleusrequiredPissOffA"):Core.bundle.get("sector.md3-nucleusrequiredA")))
     } else {
