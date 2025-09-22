@@ -6,7 +6,18 @@ size: 2
 itemCapacity: 10
 drawer: {
   type: DrawMulti
-  drawers: [DrawDefault, DrawFlame]
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawFlame
+    }
+    {
+      type: DrawDefault
+    }
+  ]
 }
 attribute: heat
 baseEfficiency: 0
