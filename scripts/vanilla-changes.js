@@ -467,6 +467,7 @@ let vanillaSectorRemap = {
   fungalPass: 21,
   infestedCanyons: 210,
   atolls: 1,
+  sunkenPier: 174,
   mycelialBastion: 261,
   overgrowth: 134,
   tarFields: 23,
@@ -499,8 +500,9 @@ let vanillaSectorRemap = {
 for (let i=0;i<Vars.content.sectors().size;i++) {
   let sect = Vars.content.sectors().get(i)
   if (sect.isModded()) break // only care for vanilla sectors
+  if (vanillaSectorRemap[sect.name] == null) continue // oops theres a new map FUCK
   if (sect.sector.preset == sect) sect.sector.preset = null
-  let swap = vanillaSectorRemap[sect.name] != null ? vanillaSectorRemap[sect.name] : sect.originalPosition
+  let swap = vanillaSectorRemap[sect.name]
   sect.originalPosition = sect.sector.id
   sect.sector = sect.planet.sectors.get(swap)
   sect.planet.preset(sect.sector.id,sect)
