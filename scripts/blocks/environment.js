@@ -27,8 +27,12 @@ hotMetacinnabar.attributes.set(Attribute.heat, 0.5);
 let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
 let blackPanel = extend(Floor, "black-panel", {});
+let blackPanelLight = extend(Floor, "black-panel-light", {});
 let blackMetalWall = extend(StaticWall, "black-metal-wall", {});
+let blackCorrugatedMetalWall = extend(StaticWall, "black-corrugated-metal-wall", {});
 let fadedBlackPanel = extend(Floor, "faded-black-panel", {});
+let blackMetalDebris = extend(Prop, "black-metal-debris", {});
+let blackMetalPlating = extend(Floor, "black-metal-plating", {});
 
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
@@ -46,6 +50,7 @@ sulfuricGeyser.attributes.set(Attribute.heat, 0.5);
 let sulfuricWall = extend(StaticWall, "sulfuric-wall", {});
 
 let dimethyl = extend(Floor, "dimethyl", {});
+let dimethylLight = extend(Floor, "dimethyl-light", {});
 let lithimentDMM = extend(Floor, "lithiment-dimethyl", {});
 let lithimentDMMWall = extend(StaticWall, "lithiment-dimethyl-wall", {});
 let cinnabarDMM = extend(Floor, "cinnabar-dimethyl", {});
@@ -122,8 +127,12 @@ module.exports = {
   metacinnabarWall: metacinnabarWall,
 
   blackPanel: blackPanel,
+  blackPanelLight: blackPanelLight,
   blackMetalWall: blackMetalWall,
+  blackCorrugatedMetalWall: blackCorrugatedMetalWall,
   fadedBlackPanel: fadedBlackPanel,
+  blackMetalDebris: blackMetalDebris,
+  blackMetalPlating: blackMetalPlating,
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
@@ -139,6 +148,7 @@ module.exports = {
   sulfuricWall: sulfuricWall,
   
   dimethyl: dimethyl,
+  dimethylLight: dimethylLight,
   lithimentDMM: lithimentDMM,
   lithimentDMMWall: lithimentDMMWall,
   cinnabarDMM: cinnabarDMM,
@@ -157,7 +167,7 @@ module.exports = {
   darkWire: darkWire,
   horizontalDarkWire: horizontalDarkWire,
   darkWireNode: darkWireNode,
-    
+
   metalTiles4Malis: metalTiles4Malis,
   metalTiles6Malis: metalTiles6Malis,
   metalTiles12Malis: metalTiles12Malis,
