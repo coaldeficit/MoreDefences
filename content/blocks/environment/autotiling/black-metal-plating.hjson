@@ -1,0 +1,8 @@
+name: Black Metal Plating
+autotile: true
+drawEdgeIn: false
+drawEdgeOut: false
+emitLight: true
+lightRadius: 30
+lightColor: fe7e6e30
+

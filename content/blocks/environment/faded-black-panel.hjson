@@ -1,2 +1,4 @@
 name: Faded Black Panel
 variants: 4
+wall: black-metal-wall
+decoration: black-metal-debris
