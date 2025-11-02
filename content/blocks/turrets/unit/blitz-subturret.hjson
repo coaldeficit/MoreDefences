@@ -23,6 +23,27 @@ shoot: {
     firstShotDelay: 8
   }]
 }
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -hammer-l
+      progress: recoil
+      moveY: 2.25
+      moveX: 2.25
+      layerOffset: -0.001
+    },
+    {
+      type: RegionPart
+      suffix: -hammer-r
+      progress: recoil
+      moveY: 2.25
+      moveX: -2.25
+      layerOffset: -0.001
+    }
+  ]
+}
 shootType: {
   type: BasicBulletType
   speed: 5
