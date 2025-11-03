@@ -20,6 +20,18 @@ coolantMultiplier: 1.1666667
 ammoPerShot: 3
 maxAmmo: 15
 shootSound: bigshot
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -extension
+      progress: warmup
+      layerOffset: -0.001
+      moveY: 5.25
+    }
+  ]
+}
 requirements: [
   copper/1400
   silicon/1100
