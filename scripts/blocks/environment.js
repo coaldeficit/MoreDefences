@@ -9,12 +9,16 @@ let niebieskiteWall = extend(StaticWall, "niebieskite-wall", {});
 
 let cinnabarBoulder = extend(Prop, "cinnabar-boulder", {});
 let cinnabar = extend(Floor, "cinnabar", {});
+let crackedCinnabar = extend(Floor, "cracked-cinnabar", {});
 let cinnabarWall = extend(StaticWall, "cinnabar-wall", {});
+let cinnabarNiebieskite = extend(Floor, "cinnabar-niebieskite", {});
 
 let lithimentBoulder = extend(Prop, "lithiment-boulder", {});
 let lithiment = extend(Floor, "lithiment", {});
 let sandyLithiment = extend(Floor, "sandy-lithiment", {});
+let lithilizedNiebieskite = extend(Floor, "lithilized-niebieskite", {});
 let lithimentWall = extend(StaticWall, "lithiment-wall", {});
+
 
 let mercuricBoulder = extend(Prop, "mercuric-boulder", {});
 let mercuricRock = extend(Floor, "mercuric-rock", {});
@@ -50,6 +54,7 @@ sulfuricGeyser.attributes.set(Attribute.heat, 0.5);
 let sulfuricWall = extend(StaticWall, "sulfuric-wall", {});
 
 let dimethyl = extend(Floor, "dimethyl", {});
+let dimethylLight = extend(Floor, "dimethyl-light", {});
 let lithimentDMM = extend(Floor, "lithiment-dimethyl", {});
 let lithimentDMMWall = extend(StaticWall, "lithiment-dimethyl-wall", {});
 let cinnabarDMM = extend(Floor, "cinnabar-dimethyl", {});
@@ -109,11 +114,14 @@ module.exports = {
   
   cinnabarBoulder: cinnabarBoulder,
   cinnabar: cinnabar,
+  crackedCinnabar: crackedCinnabar,
+  cinnabarNiebieskite: cinnabarNiebieskite,
   cinnabarWall: cinnabarWall,
   
   lithimentBoulder: lithimentBoulder,
   lithiment: lithiment,
   sandyLithiment: sandyLithiment,
+  lithilizedNiebieskite: lithilizedNiebieskite,
   lithimentWall: lithimentWall,
   
   mercuricBoulder: mercuricBoulder,
@@ -147,6 +155,7 @@ module.exports = {
   sulfuricWall: sulfuricWall,
   
   dimethyl: dimethyl,
+  dimethylLight: dimethylLight,
   lithimentDMM: lithimentDMM,
   lithimentDMMWall: lithimentDMMWall,
   cinnabarDMM: cinnabarDMM,
