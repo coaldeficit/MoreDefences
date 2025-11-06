@@ -54,7 +54,6 @@ sulfuricGeyser.attributes.set(Attribute.heat, 0.5);
 let sulfuricWall = extend(StaticWall, "sulfuric-wall", {});
 
 let dimethyl = extend(Floor, "dimethyl", {});
-let dimethylLight = extend(Floor, "dimethyl-light", {});
 let lithimentDMM = extend(Floor, "lithiment-dimethyl", {});
 let lithimentDMMWall = extend(StaticWall, "lithiment-dimethyl-wall", {});
 let cinnabarDMM = extend(Floor, "cinnabar-dimethyl", {});
@@ -155,7 +154,6 @@ module.exports = {
   sulfuricWall: sulfuricWall,
   
   dimethyl: dimethyl,
-  dimethylLight: dimethylLight,
   lithimentDMM: lithimentDMM,
   lithimentDMMWall: lithimentDMMWall,
   cinnabarDMM: cinnabarDMM,
