@@ -30,6 +30,9 @@ let hotMetacinnabar = extend(Floor, "metacinnabar-hot", {});
 hotMetacinnabar.attributes.set(Attribute.heat, 0.5);
 let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
+let hypercinnabar = extend(Floor, "hypercinnabar", {});
+let hypercinnabarWall = extend(StaticWall, "hypercinnabar-wall", {});
+
 let blackPanel = extend(Floor, "black-panel", {});
 let blackPanelLight = extend(Floor, "black-panel-light", {});
 let blackMetalWall = extend(StaticWall, "black-metal-wall", {});
@@ -131,6 +134,9 @@ module.exports = {
   metacinnabar: metacinnabar,
   hotMetacinnabar: hotMetacinnabar,
   metacinnabarWall: metacinnabarWall,
+
+  hypercinnabar: hypercinnabar,
+  hypercinnabarWall: hypercinnabarWall,
 
   blackPanel: blackPanel,
   blackPanelLight: blackPanelLight,
