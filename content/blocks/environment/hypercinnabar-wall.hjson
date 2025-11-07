@@ -1,4 +1,3 @@
 name: Hypercinnabar
 variants: 4
-mapColor: CC8B84
-useColor: true
+itemDrop: cinnabar-item
