@@ -106,7 +106,7 @@ const railgun = extend(Weapon, {
   inaccuracy: 0,
   reload: 100,
   mirror: false,
-  shootSound: Sounds.bigshot,
+  shootSound: Vars.tree.loadSound("bigshot"),
   bullet: bulLib.makeBullet({
     type: LaserBoltBulletType,
     speed: 7,

@@ -4,7 +4,7 @@ let juan = extend(ItemTurret, "juan", {});
 let blast = extend(RailBulletType, {
   shootEffect: vfx.juanBlast,
   smokeEffect: vfx.juanSmoke,
-  hitSound: Sounds.bigshot,
+  hitSound: Vars.tree.loadSound("bigshot"),
   damage: 7000,
   length: 160,
   ammoMultiplier: 1,
