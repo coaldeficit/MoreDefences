@@ -75,7 +75,7 @@ requirements: [
   surge-alloy/400
   vanadiphor/200
 ]
-shootSound: corexplode
+shootSound: md3-corexplode
 chargeSound: release
 category: turret
 research: fuse
