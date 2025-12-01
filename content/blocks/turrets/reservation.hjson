@@ -1,0 +1,239 @@
+type: ItemTurret
+name: Reservation
+description: Fires salvos of weak but ammo consumption efficient pellets of advanced materials.
+health: 1000
+size: 3
+reload: 30
+range: 168
+inaccuracy: 1.5
+rotateSpeed: 5
+shootSound: shootDuo
+shootEffect: none
+shoot: {
+  type: ShootMulti
+  source: {
+    type: ShootAlternate
+    spread: 7
+  }
+  shots: 3
+  dest: [ShootPattern]
+}
+maxAmmo: 300
+ammoPerShot: 1
+ammoTypes: {
+  pyratite: {
+    type: MultiBulletType
+    bullets: [
+      {
+        speed: 6
+        damage: 18
+        status: burning
+        statusDuration: 360
+        lifetime: 28
+        width: 8
+        height: 8
+        frontColor: f8ad42
+        hitColor: f8ad42
+        backColor: f68021
+        hitEffect: {
+          type: MultiEffect
+          effects: [hitBulletSmall,fireHit]
+        }
+      }
+      {
+        speed: 5.5
+        damage: 18
+        status: burning
+        statusDuration: 360
+        lifetime: 30
+        width: 8
+        height: 8
+        frontColor: f8ad42
+        hitColor: f8ad42
+        backColor: f68021
+        hitEffect: {
+          type: MultiEffect
+          effects: [hitBulletSmall,fireHit]
+        }
+      }
+      {
+        speed: 5
+        damage: 18
+        status: burning
+        statusDuration: 360
+        lifetime: 34
+        width: 8
+        height: 8
+        frontColor: f8ad42
+        hitColor: f8ad42
+        backColor: f68021
+        hitEffect: {
+          type: MultiEffect
+          effects: [hitBulletSmall,fireHit]
+        }
+      }
+    ]
+    speed: 5.5
+    damage: 12
+    status: burning
+    statusDuration: 360
+    ammoMultiplier: 30
+  }
+  plastanium: {
+    type: MultiBulletType
+    bullets: [
+      {
+        speed: 6
+        damage: 18
+        lifetime: 28
+        fragBullets: 1
+        fragVelocityMin: 1
+        fragBullet: {
+          speed: 7
+          damage: 4
+          lifetime: 7
+          pierceArmor: true
+          width: 6
+          height: 6
+          frontColor: fffac6
+          backColor: d8d97f
+        }
+        width: 8
+        height: 8
+        frontColor: fffac6
+        backColor: d8d97f
+      }
+      {
+        speed: 5.5
+        damage: 18
+        lifetime: 30
+        fragBullets: 1
+        fragVelocityMin: 1
+        fragBullet: {
+          speed: 7
+          damage: 4
+          lifetime: 7
+          pierceArmor: true
+          width: 6
+          height: 6
+          frontColor: fffac6
+          backColor: d8d97f
+        }
+        width: 8
+        height: 8
+        frontColor: fffac6
+        backColor: d8d97f
+      }
+      {
+        speed: 5
+        damage: 18
+        lifetime: 34
+        fragBullets: 1
+        fragVelocityMin: 1
+        fragBullet: {
+          speed: 7
+          damage: 4
+          lifetime: 7
+          pierceArmor: true
+          width: 6
+          height: 6
+          frontColor: fffac6
+          backColor: d8d97f
+        }
+        width: 8
+        height: 8
+        frontColor: fffac6
+        backColor: d8d97f
+      }
+    ]
+    speed: 5.5
+    damage: 18
+    fragBullets: 1
+    fragBullet: {
+      speed: 7
+      damage: 4
+      lifetime: 7
+      pierceArmor: true
+    }
+    ammoMultiplier: 20
+  }
+  blast-compound: {
+    type: MultiBulletType
+    bullets: [
+      {
+        speed: 6
+        damage: 14
+        lifetime: 28
+        splashDamage: 14
+        splashDamageRadius: 37.6
+        status: blasted
+        width: 8
+        height: 8
+        frontColor: eeab89
+        hitColor: eeab89
+        backColor: e9665b
+        despawnEffect: hitBulletColor
+      }
+      {
+        speed: 5.5
+        damage: 14
+        lifetime: 30
+        splashDamage: 14
+        splashDamageRadius: 37.6
+        status: blasted
+        width: 8
+        height: 8
+        frontColor: eeab89
+        hitColor: eeab89
+        backColor: e9665b
+        despawnEffect: hitBulletColor
+      }
+      {
+        speed: 5
+        damage: 14
+        lifetime: 34
+        splashDamage: 14
+        splashDamageRadius: 37.6
+        status: blasted
+        width: 8
+        height: 8
+        frontColor: eeab89
+        hitColor: eeab89
+        backColor: e9665b
+        despawnEffect: hitBulletColor
+      }
+    ]
+    speed: 5.5
+    damage: 14
+    splashDamage: 14
+    splashDamageRadius: 37.6
+    ammoMultiplier: 25
+  }
+}
+recoils: 2
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -gun-l
+      recoilIndex: 0
+      progress: recoil
+      moveY: -2.5
+    }
+    {
+      type: RegionPart
+      suffix: -gun-r
+      recoilIndex: 1
+      progress: recoil
+      moveY: -2.5
+    }
+  ]
+}
+requirements: [
+  scrap/350
+  copper/200
+  titanium/190
+]
+category: turret
+research: triops
