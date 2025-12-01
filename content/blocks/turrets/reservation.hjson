@@ -232,7 +232,8 @@ drawer: {
 }
 requirements: [
   scrap/350
-  copper/200
+  copper/250
+  graphite/200
   titanium/190
 ]
 category: turret
