@@ -1,0 +1,15 @@
+name: Large Holowall
+description: An insanely durable defensive block. Permits allied units to pass through. Spans multiple tiles.
+health: 3600
+size: 2
+doorSound: none
+openfx: none
+closefx: none
+checkInterval: 5
+#drawCracks: false
+requirements: [
+  vanadiphor/32
+  phase-fabric/16
+]
+category: defense
+research: holowall

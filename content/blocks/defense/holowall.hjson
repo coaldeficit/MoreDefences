@@ -1,0 +1,15 @@
+name: Holowall
+description: An insanely durable defensive block. Permits allied units to pass through.
+health: 900
+size: 1
+doorSound: none
+openfx: none
+closefx: none
+checkInterval: 5
+#drawCracks: false
+requirements: [
+  vanadiphor/8
+  phase-fabric/4
+]
+category: defense
+research: door
