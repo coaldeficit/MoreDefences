@@ -112,6 +112,7 @@ UnitTypes.quasar.abilities.get(0).max = 600
 UnitTypes.spiroct.speed = 0.8
 UnitTypes.antumbra.weapons.get(2).reload = 6
 UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 2
+UnitTypes.eclipse.speed = 0.667
 UnitTypes.tecta.abilities.get(0).width = 12
 UnitTypes.tecta.abilities.get(0).radius = 39
 
