@@ -731,8 +731,8 @@ Events.on(WaveEvent, e => {
                 }
                 health += Math.pow(group.type.health/healthDiv,3)
               } else {
-                health += Math.pow(group.type.health/healthDiv,3) * Vars.spawner.spawns.size
-                for (let j=0;j<Vars.spawner.spawns.size*group.getSpawned(i);j++) {
+                health += Math.pow(group.type.health/healthDiv,3) * (group.type.flying?Vars.spawner.countFlyerSpawns():Vars.spawner.countGroundSpawns())
+                for (let j=0;j<(group.type.flying?Vars.spawner.countFlyerSpawns():Vars.spawner.countGroundSpawns())*group.getSpawned(i);j++) {
                   bosses.push(group.type.localizedName)
                 }
               }
