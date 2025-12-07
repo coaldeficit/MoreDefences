@@ -515,6 +515,7 @@ let mdHiddenSectors = [
   [157,"157md",0,2],
   [11,"11md",0,7],
   [2,"2md",0,2],
+  [38,"38md",0,5],
 ]
 let hiddenSectArray = []
 for (let i=0;i<mdHiddenSectors.length;i++) {
