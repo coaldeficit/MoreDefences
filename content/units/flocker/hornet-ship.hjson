@@ -13,7 +13,7 @@ targetAir: false
 targetFlags: [turret, battery, null]
 itemCapacity: 0
 research: {
-  parent: bee-ship
+  parent: apis-ship
   objectives: [
     multiplicative-reconstructor
   ]
