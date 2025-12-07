@@ -1,4 +1,4 @@
-name: Bee
+name: Apis
 description: A stronger swarming unit designed to damage enemy defences. 
 speed: 2.3
 flying: true
@@ -13,7 +13,7 @@ circleTarget: true
 targetFlags: [turret, battery, null]
 itemCapacity: 0
 weapons: [{
-  name: artillery-mount-2
+  name: apis-gun
   top: true
   rotate: false
   y: 2

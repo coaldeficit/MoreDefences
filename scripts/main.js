@@ -60,7 +60,7 @@ require("md3/units/ground/shotgunner/blitz")
 // air
 // swarmer line
 require("md3/units/air/flocker/flocker")
-require("md3/units/air/flocker/bee")
+require("md3/units/air/flocker/apis")
 require("md3/units/air/flocker/hornet")
 require("md3/units/air/flocker/messenger")
 require("md3/units/air/flocker/tundra")

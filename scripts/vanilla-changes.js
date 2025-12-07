@@ -132,7 +132,7 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
     [UnitTypes.flare,UnitTypes.horizon,UnitTypes.zenith,UnitTypes.antumbra,UnitTypes.eclipse],
     [UnitTypes.flare,UnitTypes.poly,UnitTypes.mega,UnitTypes.quad,UnitTypes.oct]
   ]
-  if (Planets.serpulo.sectors.get(112).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("bee-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
+  if (Planets.serpulo.sectors.get(112).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("apis-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
   if (enemyBase) {
     airenemies[1][4] = UnitTypes.eclipse
   }

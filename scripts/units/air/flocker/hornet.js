@@ -118,6 +118,6 @@ const missileLauncher = extend(Weapon, {
 FlockT3.weapons.add(missileLauncher);
 
 Blocks.multiplicativeReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-bee-ship"),
+  Vars.content.getByName(ContentType.unit, "md3-apis-ship"),
   Vars.content.getByName(ContentType.unit, "md3-hornet-ship")
 )
