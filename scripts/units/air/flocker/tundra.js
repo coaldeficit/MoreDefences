@@ -110,7 +110,7 @@ const railgun = extend(Weapon, {
   bullet: bulLib.makeBullet({
     type: LaserBoltBulletType,
     speed: 7,
-    hitSound: Sounds.explosionbig,
+    hitSound: Sounds.reactorExplosion,
     width: 6,
     height: 50,
     damage: 200,
