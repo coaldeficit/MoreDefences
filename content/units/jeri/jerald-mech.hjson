@@ -52,7 +52,7 @@ weapons: [{
   x: 7
   inaccuracy: 0
   reload: 30
-  shootSound: blaster
+  shootSound: lasershoot
   mirror: true
   rotateSpeed: 13
   alternate: false
