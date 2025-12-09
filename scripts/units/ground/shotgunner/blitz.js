@@ -32,7 +32,6 @@ const turretBullet = extend(BasicBulletType, {
     }));
     if (develop && valid >= 9) {
       Vars.world.tile(Math.round(b.x/8), Math.round(b.y/8)).setNet(subturrets.blade, b.owner.team, 0)
-      Sounds.place.at(b.x, b.y, Mathf.random(0.8,1.2))
       try {Sounds.place.at(b.x, b.y, Mathf.random(0.8,1.2))}catch(e){try {Sounds.place3.at(b.x, b.y, Mathf.random(0.8,1.2))}catch(e){}}
     }
   }
