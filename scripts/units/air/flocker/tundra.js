@@ -23,7 +23,7 @@ const tundraBombFrag = extend(ArtilleryBulletType, {
   hitShake: 2,
 });
 const tundraBomb = extend(BasicBulletType, {
-  hitSound: Sounds.plasmaboom,
+  hitSound: Sounds.plasmaBomb,
   hitEffect: Fx.massiveExplosion,
   despawnEffect: Fx.none,
   shootEffect: Fx.none,
