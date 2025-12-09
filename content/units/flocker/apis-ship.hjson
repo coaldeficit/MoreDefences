@@ -1,37 +1,22 @@
 name: Apis
-description: A stronger swarming unit designed to damage enemy defences. 
+description: An armored distraction unit. On death, explodes into fragments outfitted with beacons that confuse enemy turrets.
 speed: 2.3
 flying: true
 health: 550
 armor: 2
-engineOffset: 7.5
+physics: false
+hitSize: 13
+engineOffset: 8.5
+engineSize: 3
 drag: 0.1
 accel: 0.07
 range: 120
 #rotatespeed: 3
 circleTarget: true
+faceTarget: false
 targetFlags: [turret, battery, null]
+createWreck: false
 itemCapacity: 0
-weapons: [{
-  name: apis-gun
-  top: true
-  rotate: false
-  y: 2
-  x: 5
-  reload: 2
-  alternate: true
-  shootSound: pew
-  inaccuracy: 6
-  bullet: {
-    speed: 6
-    damage: 5
-    pierceCap: 2
-    pierceBuilding: true
-    ammoMultiplier: 1
-    lifetime: 20
-    height: 4
-  }
-}]
 research: {
   parent: flocker-ship
   objectives: [
