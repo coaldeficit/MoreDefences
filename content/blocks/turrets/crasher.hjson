@@ -11,7 +11,7 @@ rotateSpeed: 2
 maxAmmo: 6
 ammoPerShot: 3
 inaccuracy: 5
-shootSound: artillery
+shootSound: shootArtillery
 coolantMultiplier: 0.85
 ammoTypes: {
   rage: {

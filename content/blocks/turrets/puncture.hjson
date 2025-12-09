@@ -11,7 +11,7 @@ shoot: {
   shots: 2
   shotDelay: 6
 }
-shootSound: missile
+shootSound: shootMissile
 targetAir: false
 maxAmmo: 20
 unitSort: weakest

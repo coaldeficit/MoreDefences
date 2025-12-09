@@ -19,7 +19,7 @@ weapons: [{
   x: 0
   inaccuracy: 5
   reload: 10
-  shootSound: pew
+  shootSound: shoot
   mirror: false
   rotateSpeed: 7
   bullet: {	

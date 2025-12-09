@@ -25,7 +25,7 @@ const bombExplosionBullet = extend(BasicBulletType, {
   statusDuration: 30,
   update(b) {
     if (b.time < 1) {
-      Sounds.mediumCannon.at(b.x, b.y, Mathf.random(0.8,1.2))
+      Sounds.shootTank.at(b.x, b.y, Mathf.random(0.8,1.2))
       b.time++
     }
   }
@@ -96,7 +96,7 @@ const bombGun = extend(Weapon, {
   x: 0,
   mirror: false,
   reload: 600,
-  shootSound: Sounds.malignShoot,
+  shootSound: Sounds.shootMalign,
   inaccuracy: 0,
   rotateSpeed: 1.5,
   bullet: bomb,

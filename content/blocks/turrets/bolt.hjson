@@ -5,7 +5,7 @@ size: 2
 reload: 60
 range: 144
 rotateSpeed: 3
-shootSound: bolt
+shootSound: shootLocus
 predictTarget: false
 maxAmmo: 36
 ammoPerShot: 6

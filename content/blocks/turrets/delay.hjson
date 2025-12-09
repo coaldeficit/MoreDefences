@@ -4,7 +4,7 @@ health: 3360
 size: 4
 rotateSpeed: 2.5
 range: 240
-loopSound: pulse
+loopSound: loopPulse
 drawer: {
   type: DrawTurret
   basePrefix: reinforced-

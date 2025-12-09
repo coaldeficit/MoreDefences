@@ -23,7 +23,7 @@ const tundraBombFrag = extend(ArtilleryBulletType, {
   hitShake: 2,
 });
 const tundraBomb = extend(BasicBulletType, {
-  hitSound: Sounds.plasmaBomb,
+  hitSound: Sounds.explodePlasma,
   hitEffect: Fx.massiveExplosion,
   despawnEffect: Fx.none,
   shootEffect: Fx.none,
@@ -92,40 +92,13 @@ const bombCannon = extend(Weapon, {
   velocityRnd: 1,
   shootCone: 180,
   inaccuracy: 15,
-  shootSound: Sounds.plasmadrop,
+  shootSound: Sounds.shootQuad,
   bullet: tundraBomb,
   autoTarget: true
-});
-const railgun = extend(Weapon, {
-  name: "md3-railgun-cannon",
-  y: 2,
-  shots: 1,
-  x: 0,
-  top: true,
-  rotate: true,
-  inaccuracy: 0,
-  reload: 100,
-  mirror: false,
-  shootSound: Vars.tree.loadSound("md3-bigshot"),
-  bullet: bulLib.makeBullet({
-    type: LaserBoltBulletType,
-    speed: 7,
-    hitSound: Sounds.reactorExplosion,
-    width: 6,
-    height: 50,
-    damage: 200,
-    splashDamage: 100,
-    splashDamageRadius: 8,
-    status: StatusEffects.disarmed,
-    statusDuration: 60,
-    lifetime: 35,
-    backColor: Color.valueOf("#00aaff"),
-  }),
 });
 
 FlockT5.weapons.add(
   bombCannon,
-  railgun,
 );
 
 Blocks.tetrativeReconstructor.addUpgrade(

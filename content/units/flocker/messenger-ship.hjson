@@ -27,7 +27,7 @@ weapons: [
   reload: 640
   recoil: 2
   shootSound: minigun-hit
-  chargeSound: lasercharge
+  chargeSound: chargeCorvus
   # please replace these with custom chaingun sounds later
   shoot: {
     firstShotDelay: 100
@@ -67,7 +67,7 @@ weapons: [
   x: 16
   reload: 75
   #alternative: true
-  shootSound: artillery
+  shootSound: shootArtillery
   ejectEffect: casing3Double
   inaccuracy: 1
   bullet: {
