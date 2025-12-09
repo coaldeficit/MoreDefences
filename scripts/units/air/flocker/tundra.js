@@ -23,7 +23,6 @@ const tundraBombFrag = extend(ArtilleryBulletType, {
   hitShake: 2,
 });
 const tundraBomb = extend(BasicBulletType, {
-  hitSound: Sounds.plasmaboom,
   hitEffect: Fx.massiveExplosion,
   despawnEffect: Fx.none,
   shootEffect: Fx.none,
@@ -81,6 +80,7 @@ const tundraBomb = extend(BasicBulletType, {
     }));
   }
 });
+try {tundraBomb.hitSound=Sounds.plasmaboom}catch(e){try {tundraBomb.hitSound=Sounds.plasmaBomb}catch(e){}}
 
 const bombCannon = extend(Weapon, {
   name: "md3-generic-bomber-weapon",
@@ -110,7 +110,6 @@ const railgun = extend(Weapon, {
   bullet: bulLib.makeBullet({
     type: LaserBoltBulletType,
     speed: 7,
-    hitSound: Sounds.explosionbig,
     width: 6,
     height: 50,
     damage: 200,
@@ -122,6 +121,7 @@ const railgun = extend(Weapon, {
     backColor: Color.valueOf("#00aaff"),
   }),
 });
+try {railgun.bullet.hitSound=Sounds.explosionbig}catch(e){try {railgun.bullet.hitSound=Sounds.reactorExplosion}catch(e){}}
 
 FlockT5.weapons.add(
   bombCannon,
