@@ -15,7 +15,7 @@ weapons: [{
   y: 7
   x: 9
   reload: 80
-  shootSound: shootBig
+  shootSound: shootSpectre
   inaccuracy: 0
   rotate: true
   controllable: false
@@ -44,7 +44,7 @@ weapons: [{
   y: -5
   x: 15
   reload: 60
-  shootSound: shootBig
+  shootSound: shootSpectre
   inaccuracy: 0
   rotate: true
   shoot: {

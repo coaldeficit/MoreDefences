@@ -85,7 +85,7 @@ const bomb = extend(BasicBulletType, {
     this.super$createFrags(b,x,y)
     Sounds.largeExplosion.at(x, y, Mathf.random(0.8,1.2))
     Sounds.titanExplosion.at(x, y, Mathf.random(0.8,1.2))
-    Sounds.explosionbig.at(x, y, Mathf.random(0.8,1.2))
+    Sounds.dullExplosion.at(x, y, Mathf.random(0.8,1.2))
   }
 })
 const bombGun = extend(Weapon, {
