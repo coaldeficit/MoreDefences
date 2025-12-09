@@ -18,7 +18,7 @@ const apisGun = extend(Weapon, {
     sprite: "circle-bullet",
     speed: 6,
     lifetime: 20,
-    damage: 25,
+    damage: 20,
     lightning: 2,
     lightningLength: 5,
     lightningLengthRand: 2,
