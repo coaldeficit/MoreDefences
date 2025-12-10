@@ -17,6 +17,7 @@ mineTier: 1
 buildSpeed: 0.5
 vulnerableWithPayloads: true
 coreUnitDock: true
+pickupUnits: false
 targetable: false
 hittable: false
 payloadCapacity: 256

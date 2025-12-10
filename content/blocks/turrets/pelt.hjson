@@ -6,6 +6,7 @@ reload: 25
 range: 182
 inaccuracy: 2
 rotateSpeed: 10
+shootSound: shootScatter
 shoot: {
   type: ShootMulti
   source: ShootPattern
