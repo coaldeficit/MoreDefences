@@ -19,7 +19,7 @@ const turretBullet = extend(BasicBulletType, {
   height: 45,
   splashDamage: 300,
   splashDamageRadius: 69,
-  despawnSound: Sounds.dullExplosion,
+  despawnSound: Sounds.explosionDull,
   despawned(b) {
     this.super$despawned(b)
     let develop = true
