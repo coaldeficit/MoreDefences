@@ -10,7 +10,7 @@ engineOffset: 8.5
 engineSize: 3
 drag: 0.1
 accel: 0.07
-range: 120
+range: 86.4
 #rotatespeed: 3
 circleTarget: true
 faceTarget: false
