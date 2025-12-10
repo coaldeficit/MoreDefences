@@ -20,7 +20,7 @@ weapons: [{
   x: 0
   inaccuracy: 15
   reload: 150
-  shootSound: ‎explosionObviate
+  shootSound: explosionObviate
   mirror: false
   rotateSpeed: 5
   shake: 3
