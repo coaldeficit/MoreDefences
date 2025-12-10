@@ -16,8 +16,8 @@ const apisGun = extend(Weapon, {
   bullet: bulLib.makeBullet({
     type: BasicBulletType,
     sprite: "circle-bullet",
-    speed: 6,
-    lifetime: 20,
+    speed: 6.171,
+    lifetime: 14,
     damage: 20,
     lightning: 2,
     lightningLength: 5,
