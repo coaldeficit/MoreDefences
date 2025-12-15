@@ -56,7 +56,7 @@ const mainGun = extend(Weapon, {
   x: 20,
   mirror: true,
   reload: 5,
-  shootSound: Sounds.flame,
+  shootSound: Sounds.shootFlame,
   inaccuracy: 7,
   rotateSpeed: 2,
   shootCone: 45,
