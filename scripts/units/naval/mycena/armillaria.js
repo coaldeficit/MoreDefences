@@ -25,7 +25,7 @@ const bombExplosionBullet = extend(BasicBulletType, {
   statusDuration: 30,
   update(b) {
     if (b.time < 1) {
-      Sounds.mediumCannon.at(b.x, b.y, Mathf.random(0.8,1.2))
+      Sounds.shootTank.at(b.x, b.y, Mathf.random(0.8,1.2))
       b.time++
     }
   }
@@ -83,9 +83,9 @@ const bomb = extend(BasicBulletType, {
   },
   createFrags(b,x,y) {
     this.super$createFrags(b,x,y)
-    Sounds.largeExplosion.at(x, y, Mathf.random(0.8,1.2))
-    Sounds.titanExplosion.at(x, y, Mathf.random(0.8,1.2))
-    Sounds.dullExplosion.at(x, y, Mathf.random(0.8,1.2))
+    Sounds.explosionMissile.at(x, y, Mathf.random(0.8,1.2))
+    Sounds.explosionTitan.at(x, y, Mathf.random(0.8,1.2))
+    Sounds.explosionDull.at(x, y, Mathf.random(0.8,1.2))
   }
 })
 const bombGun = extend(Weapon, {
@@ -96,7 +96,7 @@ const bombGun = extend(Weapon, {
   x: 0,
   mirror: false,
   reload: 600,
-  shootSound: Sounds.malignShoot,
+  shootSound: Sounds.shootMalign,
   inaccuracy: 0,
   rotateSpeed: 1.5,
   bullet: bomb,
