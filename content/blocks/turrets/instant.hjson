@@ -4,7 +4,7 @@ health: 1620
 size: 3
 reload: 45
 range: 200
-shootSound: missileSmall
+shootSound: shootMissileSmall
 inaccuracy: 0
 rotateSpeed: 2.5
 shootCone: 135
