@@ -12,7 +12,7 @@ maxAmmo: 42
 ammoPerShot: 2
 predictTarget: false
 targetAir: false
-shootSound: artillery
+shootSound: shootArtillery
 hasLiquids: true
 consumes: {
   coolant: {
