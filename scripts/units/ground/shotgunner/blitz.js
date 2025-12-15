@@ -19,7 +19,7 @@ const turretBullet = extend(BasicBulletType, {
   height: 45,
   splashDamage: 300,
   splashDamageRadius: 69,
-  despawnSound: Sounds.dullExplosion,
+  despawnSound: Sounds.explosionDull,
   despawned(b) {
     this.super$despawned(b)
     let develop = true
@@ -32,7 +32,7 @@ const turretBullet = extend(BasicBulletType, {
     }));
     if (develop && valid >= 9) {
       Vars.world.tile(Math.round(b.x/8), Math.round(b.y/8)).setNet(subturrets.blade, b.owner.team, 0)
-      try {Sounds.place.at(b.x, b.y, Mathf.random(0.8,1.2))}catch(e){try {Sounds.place3.at(b.x, b.y, Mathf.random(0.8,1.2))}catch(e){}}
+      Sounds.blockPlace3.at(b.x, b.y, Mathf.random(0.8,1.2))
     }
   }
 })
@@ -44,7 +44,7 @@ const turretLauncher = extend(Weapon, {
   mirror: false,
   inaccuracy: 0,
   reload: 360,
-  shootSound: Sounds.artillery,
+  shootSound: Sounds.shootArtillery,
   shootCone: 2,
   bullet: turretBullet,
 });
@@ -57,7 +57,7 @@ const missileLauncher = extend(Weapon, {
   rotateSpeed: 5,
   inaccuracy: 10,
   reload: 160,
-  shootSound: Sounds.artillery,
+  shootSound: Sounds.shootArtillery,
   shootCone: 100,
   velocityRnd: 0.2,
   ejectEffect: Fx.none,
