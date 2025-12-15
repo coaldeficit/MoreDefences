@@ -20,7 +20,6 @@ updateLighting: false
 allowLaunchToNumbered: false
 allowLaunchSchematics: false
 allowLaunchLoadout: false
-allowWaveSimulation: false
 allowSectorInvasion: false
 clearSectorOnLose: true
 enemyBuildSpeedMultiplier: 0.6
