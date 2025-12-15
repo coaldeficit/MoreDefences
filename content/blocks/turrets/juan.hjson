@@ -76,6 +76,6 @@ requirements: [
   vanadiphor/200
 ]
 shootSound: md3-corexplode
-chargeSound: release
+chargeSound: md3-release
 category: turret
 research: fuse
