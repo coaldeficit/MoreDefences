@@ -7,6 +7,7 @@ health: 18000
 armor: 10
 hitSize: 36
 rotateSpeed: 0.9
+stepSound: walkerStep
 
 // legs
 legSpeed: 0.1

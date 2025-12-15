@@ -7,6 +7,7 @@ armor: 11
 hitSize: 17
 rotateSpeed: 3
 faceTarget: false
+stepSound: walkerStepTiny
 #abilities: [
 #  {
 #    type: SuppressionFieldAbility

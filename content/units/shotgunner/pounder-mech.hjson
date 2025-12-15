@@ -5,6 +5,7 @@ speed: 0.4
 health: 500
 hitSize: 9
 targetAir: false
+stepSound: walkerStepTiny
 
 // legs
 legStraightness: .1

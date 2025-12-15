@@ -4,6 +4,7 @@ flying: false
 speed: 0.65
 health: 150
 armor: 2
+stepSound: walkerStepTiny
 
 // legs
 legStraightness: .5
