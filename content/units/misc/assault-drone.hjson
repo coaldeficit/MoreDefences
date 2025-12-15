@@ -29,7 +29,7 @@ weapons: [{
   y: 0
   x: 0
   reload: 30
-  shootSound: lasershoot
+  shootSound: shootLaser
   inaccuracy: 0
   mirror: false
   shootCone: 361
