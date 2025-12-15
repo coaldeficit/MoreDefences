@@ -99,7 +99,7 @@ const missileLauncher = extend(Weapon, {
   top: true,
   inaccuracy: 0,
   reload: 120,
-  shootSound: Sounds.missileLarge,
+  shootSound: Sounds.shootMissileLarge,
   recoil: 6,
   shootCone: 60,
   bullet: bulLib.makeBullet({
