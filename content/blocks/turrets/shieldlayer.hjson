@@ -46,7 +46,7 @@ requirements: [
   silicon/225
   thorium/80
 ]
-shootSound: artillery
+shootSound: shootArtillery
 category: turret
 research: {
   parent: fuse
