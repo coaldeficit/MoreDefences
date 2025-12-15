@@ -20,7 +20,7 @@ weapons: [{
   x: 0
   inaccuracy: 15
   reload: 150
-  shootSound: shockBlast
+  shootSound: explosionObviate
   mirror: false
   rotateSpeed: 5
   shake: 3
@@ -63,7 +63,7 @@ weapons: [{
   x: 11
   inaccuracy: 45
   reload: 300
-  shootSound: missile
+  shootSound: shootMissile
   mirror: true
   rotateSpeed: 2
   shake: 0
