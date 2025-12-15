@@ -23,6 +23,7 @@ const tundraBombFrag = extend(ArtilleryBulletType, {
   hitShake: 2,
 });
 const tundraBomb = extend(BasicBulletType, {
+  hitSound: Sounds.explosionQuad,
   hitEffect: Fx.massiveExplosion,
   despawnEffect: Fx.none,
   shootEffect: Fx.none,
@@ -80,7 +81,6 @@ const tundraBomb = extend(BasicBulletType, {
     }));
   }
 });
-try {tundraBomb.hitSound=Sounds.plasmaboom}catch(e){try {tundraBomb.hitSound=Sounds.plasmaBomb}catch(e){}}
 
 const bombCannon = extend(Weapon, {
   name: "md3-generic-bomber-weapon",
@@ -92,7 +92,7 @@ const bombCannon = extend(Weapon, {
   velocityRnd: 1,
   shootCone: 180,
   inaccuracy: 15,
-  shootSound: Sounds.plasmadrop,
+  shootSound: Sounds.shootQuad,
   bullet: tundraBomb,
   autoTarget: true
 });
