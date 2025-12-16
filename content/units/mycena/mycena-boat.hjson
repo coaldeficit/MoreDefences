@@ -20,7 +20,7 @@ weapons: [{
   x: 0
   inaccuracy: 0
   reload: 45
-  shootSound: artillery
+  shootSound: shootArtillery
   mirror: false
   rotateSpeed: 361
   shake: 0.8

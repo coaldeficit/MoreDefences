@@ -116,6 +116,6 @@ requirements: [
   thorium/600
   vanadiphor/400
 ]
-shootSound: largeCannon
+shootSound: shootConquer
 category: turret
 research: spectre

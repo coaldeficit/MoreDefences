@@ -17,7 +17,7 @@ weapons: [{
   y: 3
   x: 26.7
   reload: 60
-  shootSound: artillery
+  shootSound: shootArtillery
   ejectEffect: casing3Double
   velocityRnd: 0.4
   inaccuracy: 12
@@ -47,7 +47,7 @@ weapons: [{
   y: 2
   x: 13
   reload: 10
-  shootSound: lasershoot
+  shootSound: shootLaser
   inaccuracy: 0
   rotate: true
   bullet: {

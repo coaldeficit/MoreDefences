@@ -40,7 +40,7 @@ weapons: {
       x: 17
       inaccuracy: 45
       reload: 150
-      shootSound: missile
+      shootSound: shootMissile
       mirror: true
       rotateSpeed: 1
       shake: 0

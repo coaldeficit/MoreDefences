@@ -31,7 +31,7 @@ weapons: [{
   }
   inaccuracy: 2
   reload: 60
-  shootSound: pew
+  shootSound: shootDuo
   mirror: true
   rotateSpeed: 7
   bullet: {	

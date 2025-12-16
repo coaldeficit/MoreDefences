@@ -25,7 +25,7 @@ weapons: [{
   x: 0
   mirror: false
   reload: 20
-  shootSound: spark
+  shootSound: shootArc
   inaccuracy: 13
   useAttackRange: false
   shootCone: 30
@@ -55,7 +55,7 @@ weapons: [{
   baseRotation: 180
   mirror: false
   reload: 360
-  shootSound: spark
+  shootSound: shootArc
   inaccuracy: 0
   shootOnDeath: true
   shootCone: 361

@@ -13,7 +13,7 @@ velocityRnd: 0.9
 reload: 120
 inaccuracy: 30
 shootCone: 20
-shootSound: splash
+shootSound: stepWater
 loopSound: none
 shootEffect: shootLiquid
 liquidCapacity: 100

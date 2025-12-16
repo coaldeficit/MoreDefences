@@ -38,7 +38,7 @@ weapons: [{
   x: 0
   inaccuracy: 0
   reload: 135
-  shootSound: artillery
+  shootSound: shootArtillery
   mirror: false
   rotateSpeed: 5
   bullet: {	

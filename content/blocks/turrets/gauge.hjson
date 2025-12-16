@@ -6,6 +6,7 @@ reload: 30
 range: 121
 inaccuracy: 3
 rotateSpeed: 7
+shootSound: shootCyclone
 shoot: {
   type: ShootSpread
   shots: 3
