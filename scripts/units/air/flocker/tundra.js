@@ -170,9 +170,9 @@ const underdriveDeco1 = extend(SuppressionFieldAbility, {
   addStats(t) {
     t.add(Core.bundle.get(this.getBundle() + ".description")).wrap().width(this.descriptionWidth)
     t.row()
-    t.add(Core.bundle.format("bullet.range", 12)); // CHANGING THESE DOES NOT AFFECT THE FUNCTION OF THE ABILITY
+    t.add(this.abilityStat("md3-underdrive-decrease", 33.3)); // CHANGING THESE DOES NOT AFFECT THE FUNCTION OF THE ABILITY
     t.row()
-    t.add(this.abilityStat("md3-underdrive-decrease", 33.3));
+    t.add(Core.bundle.format("bullet.range", 12));
     t.row()
     t.add(this.abilityStat("duration", 0.5));
   }
