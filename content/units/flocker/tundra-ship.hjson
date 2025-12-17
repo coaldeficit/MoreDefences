@@ -4,7 +4,7 @@ description: A heavy cluster bomber ship. Drops destructive bombs that can freez
 speed: 0.75
 drag: 0.01
 accel: 0.1
-hitSize: 80
+hitSize: 70
 flying: true
 health: 19000
 armor: 10
@@ -14,6 +14,7 @@ engineOffset: 11
 engineSize: 6.5
 targetAir: true
 faceTarget: false
+autoDropBombs: true
 targetFlags: [reactor, generator, turret, null]
 range: 245
 itemCapacity: 90
