@@ -1,7 +1,7 @@
 name: Vanadiphor Wall
 description: An insanely durable defensive block.
 type: Wall
-health: 1500
+health: 1200
 size: 1
 requirements: [
   vanadiphor/6
