@@ -3,7 +3,7 @@ displayName: "[cyan]More[blue]Defences[]"
 subtitle: "The Vanadium Update"
 author: "[grey]CD[], [blue]7rodo[] and [magenta]meowkitty[]"
 description: "[]A mod made by CD, meowkitty and 7rodo that features:\n- A new planet.\n- LOTS of new Serpulo content such as units, turrets, sectors, etc.\n- Many changes to existing Serpulo content.\n- Some new erekir content.\n- Cross-mod content with a couple few mods.\n- FULL Multiplayer and Android compatibility.\n- Extra minor additions.\n\nDiscord: https://discord.gg/9YHA3q8HHq[]"
-version: "3.1.7"
+version: "3.1.8"
 minGameVersion: "154"
 contentOrder: [
   md3-fieros

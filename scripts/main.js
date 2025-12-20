@@ -1,8 +1,9 @@
+require("md3/autoupdate")
+
 require("md3/libs/rng")
 require("md3/settings")
 
 require("md3/campaign-warning")
-require("md3/autoupdate")
 require("md3/libs/shaders")
 
 require("md3/planets")
