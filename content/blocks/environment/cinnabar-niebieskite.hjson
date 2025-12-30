@@ -1,6 +1,4 @@
 name: Niebieskite Cinnabar
 variants: 3
-mapColor: E34234
-useColor: true
-wall: cinnabar-wall
+wall: cinnabar-niebieskite-wall
 decoration: cinnabar-boulder

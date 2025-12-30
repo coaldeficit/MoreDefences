@@ -3,15 +3,19 @@ let fierosCoreZone = extend(Floor, "fieros-core-zone", {});
 
 let niebieskiteBoulder = extend(Prop, "niebieskite-boulder", {});
 let niebieskite = extend(Floor, "niebieskite", {});
+let denseNiebieskite = extend(Floor, "dense-niebieskite", {});
 let hotNiebieskite = extend(Floor, "niebieskite-hot", {});
 hotNiebieskite.attributes.set(Attribute.heat, 0.5);
 let niebieskiteWall = extend(StaticWall, "niebieskite-wall", {});
 
 let cinnabarBoulder = extend(Prop, "cinnabar-boulder", {});
 let cinnabar = extend(Floor, "cinnabar", {});
+let denseCinnabar = extend(Floor, "dense-cinnabar", {});
 let crackedCinnabar = extend(Floor, "cracked-cinnabar", {});
 let cinnabarWall = extend(StaticWall, "cinnabar-wall", {});
+let cinnabarNiebieskiteBoulder = extend(Prop, "cinnabar-niebieskite-boulder", {});
 let cinnabarNiebieskite = extend(Floor, "cinnabar-niebieskite", {});
+let cinnabarNiebieskiteWall = extend(StaticWall, "cinnabar-niebieskite-wall", {});
 
 let lithimentBoulder = extend(Prop, "lithiment-boulder", {});
 let lithiment = extend(Floor, "lithiment", {});
@@ -111,13 +115,17 @@ module.exports = {
   
   niebieskiteBoulder: niebieskiteBoulder,
   niebieskite: niebieskite,
+  denseNiebieskite: denseNiebieskite,
   hotNiebieskite: hotNiebieskite,
   niebieskiteWall: niebieskiteWall,
   
   cinnabarBoulder: cinnabarBoulder,
   cinnabar: cinnabar,
+  denseCinnabar: denseCinnabar,
   crackedCinnabar: crackedCinnabar,
+  cinnabarNiebieskiteBoulder: cinnabarNiebieskiteBoulder,
   cinnabarNiebieskite: cinnabarNiebieskite,
+  cinnabarNiebieskiteWall: cinnabarNiebieskiteWall,
   cinnabarWall: cinnabarWall,
   
   lithimentBoulder: lithimentBoulder,
