@@ -1,0 +1,6 @@
+name: Black Metal Tiles
+type: Floor
+autotile: true
+drawEdgeIn: false
+drawEdgeOut: false
+
