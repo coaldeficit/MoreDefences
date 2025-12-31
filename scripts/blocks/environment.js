@@ -44,6 +44,7 @@ let blackCorrugatedMetalWall = extend(StaticWall, "black-corrugated-metal-wall",
 let fadedBlackPanel = extend(Floor, "faded-black-panel", {});
 let blackMetalDebris = extend(Prop, "black-metal-debris", {});
 let blackMetalPlating = extend(Floor, "black-metal-plating", {});
+let blackMetalTile1 = extend(Floor, "black-metal-tile1-1", {});
 
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
@@ -153,6 +154,7 @@ module.exports = {
   fadedBlackPanel: fadedBlackPanel,
   blackMetalDebris: blackMetalDebris,
   blackMetalPlating: blackMetalPlating,
+  blackMetalTile1: blackMetalTile1,
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
