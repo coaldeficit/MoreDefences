@@ -455,7 +455,7 @@ let vanillaSectorRemap = {
   taintedWoods: 221,
   craters: 241,
   ruinousShores: 213,
-  seaPort: 47,
+  seaPort: 47, // kept for backwards cpmpat, todo: remove when next build is out
   perilousHarbor: 47,
   facility32m: 175,
   windsweptIslands: 242,
