@@ -10,7 +10,6 @@ let niebieskiteWall = extend(StaticWall, "niebieskite-wall", {});
 
 let cinnabarBoulder = extend(Prop, "cinnabar-boulder", {});
 let cinnabar = extend(Floor, "cinnabar", {});
-let denseCinnabar = extend(Floor, "dense-cinnabar", {});
 let crackedCinnabar = extend(Floor, "cracked-cinnabar", {});
 let cinnabarWall = extend(StaticWall, "cinnabar-wall", {});
 let cinnabarNiebieskiteBoulder = extend(Prop, "cinnabar-niebieskite-boulder", {});
@@ -122,7 +121,6 @@ module.exports = {
   
   cinnabarBoulder: cinnabarBoulder,
   cinnabar: cinnabar,
-  denseCinnabar: denseCinnabar,
   crackedCinnabar: crackedCinnabar,
   cinnabarNiebieskiteBoulder: cinnabarNiebieskiteBoulder,
   cinnabarNiebieskite: cinnabarNiebieskite,
