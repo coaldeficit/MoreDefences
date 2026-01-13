@@ -456,6 +456,7 @@ let vanillaSectorRemap = {
   craters: 241,
   ruinousShores: 213,
   seaPort: 47,
+  perilousHarbor: 47,
   facility32m: 175,
   windsweptIslands: 242,
   stainedMountains: 20,
