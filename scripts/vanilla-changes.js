@@ -474,6 +474,7 @@ let vanillaSectorRemap = {
   tarFields: 23,
   impact0078: 227,
   desolateRift: 123,
+  fallenVessel: 97,
   nuclearComplex: 130,
   planetaryTerminal: 93,
   geothermalStronghold: 264,
@@ -509,6 +510,9 @@ for (let i=0;i<Vars.content.sectors().size;i++) {
   sect.planet.preset(sect.sector.id,sect)
 }
 Planets.serpulo.startSector = SectorPresets.groundZero.sector.id
+try {
+  SectorPresets.fallenVessel.difficulty = 10 // fallen vessel is not goddamn extreme my guy
+} catch(e) {}
 // HIDDEN SECTORS
 let mdHiddenSectors = [
   [199,"199old",65,10],
