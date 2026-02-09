@@ -67,7 +67,7 @@ weapons: [
   x: 16
   reload: 75
   #alternative: true
-  shootSound: artillery
+  shootSound: shootArtillery
   ejectEffect: casing3Double
   inaccuracy: 1
   bullet: {
