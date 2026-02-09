@@ -12,9 +12,9 @@ maxAmmo: 12
 predictTarget: false
 shoot: {
   type: ShootMulti
- source: {
-  type: ShootPattern
- }
+  source: {
+    type: ShootPattern
+  }
   shots: 6
   dest: [{
     type: ShootSpread
