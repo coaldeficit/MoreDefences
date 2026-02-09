@@ -9,7 +9,9 @@ rotateSpeed: 10
 shootSound: shootScatter
 shoot: {
   type: ShootMulti
-  source: ShootPattern
+ source: {
+  type: ShootPattern
+ }
   shots: 4
   dest: [{
     type: ShootBarrel

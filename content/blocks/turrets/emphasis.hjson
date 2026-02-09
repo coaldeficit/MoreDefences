@@ -11,7 +11,9 @@ hasPower: true
 liquidCapacity: 60
 shoot: {
   type: ShootMulti
-  source: ShootPattern
+ source: {
+  type: ShootPattern
+ }
   shots: 6
   dest: [{
     type: ShootSpread

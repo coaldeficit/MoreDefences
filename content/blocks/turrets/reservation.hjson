@@ -16,7 +16,9 @@ shoot: {
     spread: 7
   }
   shots: 3
-  dest: [ShootPattern]
+  dest: [{
+   type: ShootPattern
+ }]
 }
 maxAmmo: 300
 ammoPerShot: 1
