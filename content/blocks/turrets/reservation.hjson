@@ -17,8 +17,8 @@ shoot: {
   }
   shots: 3
   dest: [{
-   type: ShootPattern
- }]
+    type: ShootPattern
+  }]
 }
 maxAmmo: 300
 ammoPerShot: 1

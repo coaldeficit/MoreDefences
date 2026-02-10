@@ -49,9 +49,9 @@ weapons: [{
   rotate: true
   shoot: {
     type: ShootMulti
-     source: {
+    source: {
       type: ShootPattern
-   }
+    }
     dest: [{
       type: ShootSpread
       shots: 3

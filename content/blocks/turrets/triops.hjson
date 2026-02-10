@@ -10,9 +10,9 @@ rotateSpeed: 9
 shootCone: 15
 shoot: {
   type: ShootMulti
- source: {
-  type: ShootPattern
- }
+  source: {
+    type: ShootPattern
+  }
   shots: 2
   dest: [{
     type: ShootHelix

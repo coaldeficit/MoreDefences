@@ -8,9 +8,9 @@ inaccuracy: 4
 rotateSpeed: 5
 shoot: {
   type: ShootMulti
- source: {
-  type: ShootPattern
- }
+  source: {
+    type: ShootPattern
+  }
   shots: 10
   dest: [{
     type: ShootSpread
