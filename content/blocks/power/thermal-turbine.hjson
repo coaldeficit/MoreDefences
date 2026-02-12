@@ -1,0 +1,40 @@
+name: Thermal Turbine
+description: Generates power when placed in hot locations. Uses a steam-powered turbine for higher efficiency.
+health: 360
+size: 3
+liquidCapacity: 12
+powerProduction: 2.7
+generateEffect: redgeneratespark
+effectChance: 0.033
+drawer: {
+  type: DrawMulti
+  drawers: [{
+    type: DrawRegion
+    suffix: -bottom
+  }, {
+    type: DrawLiquidTile
+    drawLiquid: water
+  }, {
+    type: DrawRegion
+    suffix: -rotator
+    rotateSpeed: -20
+  }, DrawDefault]
+}
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+}
+requirements: [
+  copper/135
+  lead/170
+  metaglass/135
+  silicon/120
+  phase-fabric/35
+  vanadiphor/60
+]
+category: power
+research: {
+  parent: thermal-generator
+}
