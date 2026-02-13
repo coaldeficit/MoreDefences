@@ -31,51 +31,81 @@ Events.on(ClientLoadEvent, () => {
     // BETA BUTTON
     t.row()
     t.button("Reinstall Beta", ()=>{
+      let disobedience = 0
+      let disobedienceText = [
+        "MoreDefences Beta is now installing, please wait and do not close the game or this message yet.",
+        "Uh, i told you not to close this message.",
+        "Powiedziałem aby nie zamykać tej wiadomości.",
+        "...",
+        "Dude.",
+        "Do you not understand what \"Don't close this message\" means?",
+        "How are you even reading this right now? Shouldn't the message saying the game will now close to reload mods already have appeared?",
+        "Or is your device just that bad that you've been able to go through ALL this text and read it in time?",
+        "My condolences if so, lol.",
+        "Genuinely wondering if anyone who ever installs the beta will ever get to see this and read it.",
+        "Or if people actually even install the beta for that matter.",
+        "Do people know this mod has its own settings category?",
+        "By the way, the code for this sequence of text used to be *so* bad.",
+        "I mean just look at this shit.",
+        "https://github.com/coaldeficit/MoreDefences/blob/2028b2f99ae0e4e611230fb5f581336f05d65254/scripts/settings.js",
+        "Atrocious.",
+        "If you can actually read this without looking at the settings.js file you either have a really shit device or a really good reading speed.",
+        "I am impressed either way.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "Haha you probably skipped over this if you're clicking manually.",
+        "Nice autoclicker btw.",
+        "Nice autoclicker btw.",
+        "(And reading everything.)",
+        "Nice autoclicker btw.",
+        "Buffer message.",
+        "Ok you can stop spam clicking now.",
+        "Hot take: Autoclickers aren't even cheating.",
+        "Oh no, i can press a button with a short cooldown ever so slightly faster without breaking my fingers.",
+        "Oh the humanity.",
+        "Its only cheating if the game is poorly designed and lacks clicking cooldowns.",
+        "Like clicker games.",
+        "Or i guess this silly easter egg nobody will find.",
+        "But thats technically not even a game so who cares.",
+        "Check out my other projects btw.",
+        "Like c-gon.",
+        "https://coaldeficit.github.io/c-gon/",
+        "How the hell are you reading this, if at all.",
+        "Snooping through the code, are we?", // Of course you are. Lmao. Read this ingame no balls.
+        "Because i refuse to believe it is possible for a device or network that can run this game to be *this* bad.",
+        "That it takes so long to download 2 - 3 mb of data that you get to read this much text in the meantime.",
+        "Did you know this text will loop eventually btw?",
+        "This message was going to tell you how many times you've looped through this text.", // `You've seen this exact message ${Math.ceil(disobedience/disobedienceText.length)} time${(disobedience/disobedienceText.length > 1 ? "s" : "")}.`
+        "Unfortunately mindustry's text display doesn't support the js feature i was gonna use for that.",
+        "Xd.",
+        "I wonder how many of the people who currently play this mod have played it while it wasn't owned by me.",
+        "Obviously excluding the dev team.",
+        "I have ran out of funny things to say and will now loop through my monologue.",
+        "Or monolog.",
+        "Idk.",
+        "Anyways."
+      ]
+      function getNextDisobedienceText() {
+        Vars.ui.showOkText("MoreDefences Beta Install", disobedienceText[disobedience%disobedienceText.length],()=>{
+          disobedience++
+          getNextDisobedienceText()
+        })
+      }
       function reinstall() {
         if (canReinstall) {
           canReinstall = false
           Reflect.invoke(Vars.ui.mods,"githubImportBranch",["beta",Vars.mods.locateMod("md3").getRepo(),null], java.lang.String,java.lang.String,java.lang.String)
-          Vars.ui.showOkText("MoreDefences Beta Install", "MoreDefences Beta is now installing, please wait and do not close the game or this message yet.",()=>{
-            Vars.ui.showOkText("MoreDefences Beta Install", "Uh, i told you not to close this message.",()=>{
-              Vars.ui.showOkText("MoreDefences Beta Install", "Powiedziałem aby nie zamykać tej wiadomości.",()=>{
-                Vars.ui.showOkText("MoreDefences Beta Install", "...",()=>{
-                  Vars.ui.showOkText("MoreDefences Beta Install", "Dude.",()=>{
-                    Vars.ui.showOkText("MoreDefences Beta Install", "Do you not understand what \"Don't close this message\" means?",()=>{
-                      Vars.ui.showOkText("MoreDefences Beta Install", "How are you even reading this right now? Shouldn't the message saying the game will now close to reload mods already have appeared?",()=>{
-                        Vars.ui.showOkText("MoreDefences Beta Install", "...",()=>{
-                          Vars.ui.showOkText("MoreDefences Beta Install", "Fine.",()=>{
-                            Vars.ui.showOkText("MoreDefences Beta Install", "I give up.",()=>{
-                              Vars.ui.showOkText("MoreDefences Beta Install", "You win.",()=>{
-                                Vars.ui.showOkText("MoreDefences Beta Install", "Gg.",()=>{
-                                  Vars.ui.showOkText("MoreDefences Beta Install", "Good game.",()=>{
-                                    Vars.ui.showOkText("MoreDefences Beta Install", "I take the L.",()=>{
-                                      Vars.ui.showOkText("MoreDefences Beta Install", "The victory is yours.",()=>{
-                                        Vars.ui.showOkText("MoreDefences Beta Install", "I lose.",()=>{
-                                          Vars.ui.showOkText("MoreDefences Beta Install", "...",()=>{
-                                            Vars.ui.showOkText("MoreDefences Beta Install", "......",()=>{
-                                              Vars.ui.showOkText("MoreDefences Beta Install", "Bro.",()=>{
-                                                Vars.ui.showOkText("MoreDefences Beta Install", "How the hell are you even reading this right now?",()=>{
-                                                  // Snooping in the source code are we? lol
-                                                })
-                                              })
-                                            })
-                                          })
-                                        })
-                                      })
-                                    })
-                                  })
-                                })
-                              })
-                            })
-                          })
-                        })
-                      })
-                    })
-                  })
-                })
-              })
-            })
-          })
+          getNextDisobedienceText()
           let shown = false;
           Timer.schedule(() => {
             if (Vars.mods.requiresReload() && !shown) {
