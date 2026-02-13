@@ -165,6 +165,7 @@ ammoTypes: {
       {
         speed: 6
         damage: 14
+        status: blasted
         lifetime: 28
         splashDamage: 14
         splashDamageRadius: 37.6
@@ -179,6 +180,7 @@ ammoTypes: {
       {
         speed: 5.5
         damage: 14
+        status: blasted
         lifetime: 30
         splashDamage: 14
         splashDamageRadius: 37.6
@@ -193,6 +195,7 @@ ammoTypes: {
       {
         speed: 5
         damage: 14
+        status: blasted
         lifetime: 34
         splashDamage: 14
         splashDamageRadius: 37.6
@@ -207,6 +210,7 @@ ammoTypes: {
     ]
     speed: 5.5
     damage: 14
+    status: blasted
     splashDamage: 14
     splashDamageRadius: 37.6
     ammoMultiplier: 25
