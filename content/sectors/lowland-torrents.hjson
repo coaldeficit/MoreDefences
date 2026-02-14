@@ -4,7 +4,7 @@ sector: 205
 difficulty: 5
 captureWave: 36
 research: {
-  parent: ruinousShores
+  parent: reentry
   objectives: [
     {
       type: SectorComplete
