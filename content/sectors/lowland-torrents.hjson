@@ -1,0 +1,16 @@
+description: "Past combat operations on nearby areas during the old wars have turned the weather here into perpetual rainfall, even long past their conclusion the rain persists.\n\nFurther [accent]unknown unit signatures[] have been detected here.\nTake out the growing enemy presence and reverse-engineer the new units."
+planet: serpulo
+sector: 205
+difficulty: 5
+captureWave: 36
+research: {
+  parent: ruinousShores
+  objectives: [
+    {
+      type: SectorComplete
+      preset: reentry
+    },
+    salvo,
+    shotgunner-mech
+  ]
+}

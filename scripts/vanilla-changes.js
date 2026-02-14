@@ -132,9 +132,9 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
     [UnitTypes.flare,UnitTypes.horizon,UnitTypes.zenith,UnitTypes.antumbra,UnitTypes.eclipse],
     [UnitTypes.flare,UnitTypes.poly,UnitTypes.mega,UnitTypes.quad,UnitTypes.oct]
   ]
-  if (Planets.serpulo.sectors.get(112).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("apis-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
+  if (Planets.serpulo.sectors.get(205).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("apis-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
   if (enemyBase) {
-    airenemies[1][4] = UnitTypes.eclipse
+    airenemies[1] = [UnitTypes.flare,UnitTypes.horizon,UnitTypes.zenith,UnitTypes.quad,UnitTypes.eclipse]
   }
   let navalenemies = [
     [UnitTypes.risso,UnitTypes.minke,UnitTypes.bryde,UnitTypes.sei,UnitTypes.omura],
@@ -631,7 +631,7 @@ Events.on(ClientLoadEvent, e => {
   // linearize post-thorium
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Blocks.spectre))
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Vars.content.getByName(ContentType.block, "md3-firenado")))
-  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-reentry")))
+  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-lowland-torrents")))
   // PLT sector requirements
   TechTree.all.find(t => t.content == SectorPresets.planetaryTerminal).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-scourged-rivers")))
   

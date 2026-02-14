@@ -103,7 +103,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: scourged-rivers
+      preset: lowland-torrents
     },
   ]
 }
