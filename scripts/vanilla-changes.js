@@ -530,6 +530,12 @@ for (let i=0;i<mdHiddenSectors.length;i++) {
   sect.difficulty = mdHiddenSectors[i][3]
   hiddenSectArray.push(sect)
 }
+let vanillaWaveChanges = [
+  [SectorPresets.biomassFacility,25]
+]
+for (let i=0;i<vanillaWaveChanges.length;i++) {
+  vanillaWaveChanges[i][0].captureWave = vanillaWaveChanges[i][1]
+}
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
   // FUCK OFF MOUNTAIN ICON
