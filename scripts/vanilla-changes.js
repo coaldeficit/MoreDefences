@@ -626,9 +626,9 @@ Events.on(ClientLoadEvent, e => {
   TechTree.all.find(t => t.content == Blocks.meltdown).objectives.add(tarORover)
   TechTree.all.find(t => t.content == Blocks.surgeSmelter).objectives.add(tarORover)
   TechTree.all.find(t => t.content == Blocks.thoriumReactor).objectives.add(tarORover)*/
-  // linearize post-thorium
+  // converge post-thorium
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Blocks.spectre))
-  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Vars.content.getByName(ContentType.block, "md3-firenado")))
+  //TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Vars.content.getByName(ContentType.block, "md3-firenado")))
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-reentry")))
   // PLT sector requirements
   TechTree.all.find(t => t.content == SectorPresets.planetaryTerminal).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-scourged-rivers")))
