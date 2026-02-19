@@ -1,13 +1,13 @@
 type: Battery
 name: Huge Battery
-description: Stores power in times of surplus energy. Outputs power in times of deficit. Lightly armored and stores tremendous quantities of power. Chain reacts rapidly if destroyed, even when empty.
+description: Stores power in times of surplus energy. Outputs power in times of deficit. Lightly armored and stores tremendous quantities of power. Susceptible to chain reaction on destruction if too closely packed, even when empty.
 health: 1000
 armor: 3
 size: 5
 consumes: {
   powerBuffered: 250000
 }
-baseExplosiveness: 45
+baseExplosiveness: 60
 requirements: [
   graphite/120
   silicon/80
