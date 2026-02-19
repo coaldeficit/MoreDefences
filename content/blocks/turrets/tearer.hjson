@@ -10,6 +10,19 @@ rotateSpeed: 15
 targetInterval: 1
 shootSound: swish
 shootEffect: none
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -guns
+      x: 0
+      y: 0
+      progress: recoil
+      heatColor: c99a00
+    }
+  ]
+}
 shoot: {
   type: ShootAlternate
   shots: 2
