@@ -1,0 +1,18 @@
+type: Battery
+name: Huge Battery
+description: Stores power in times of surplus energy. Outputs power in times of deficit. Lightly armored and stores tremendous quantities of power. Chain reacts rapidly if destroyed, even when empty.
+health: 1000
+armor: 3
+size: 5
+consumes: {
+  powerBuffered: 250000
+}
+baseExplosiveness: 45
+requirements: [
+  graphite/120
+  silicon/80
+  titanium/50
+  vanadiphor/15
+]
+category: power
+research: battery-large
