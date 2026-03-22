@@ -453,6 +453,7 @@ let vanillaSectorRemap = {
   biomassFacility: 81,
   taintedWoods: 221,
   craters: 241,
+  crateredBattleground: 241,
   ruinousShores: 213,
   seaPort: 47,
   perilousHarbor: 47,
@@ -469,6 +470,7 @@ let vanillaSectorRemap = {
   infestedCanyons: 210,
   atolls: 1,
   sunkenPier: 174,
+  littoralShipyard: 181,
   mycelialBastion: 261,
   overgrowth: 134,
   tarFields: 23,
@@ -598,7 +600,15 @@ Events.on(ClientLoadEvent, e => {
     }
   }
   TechTree.all.find(t => t.content == Blocks.hail).objectives.add(new Objectives.SectorComplete(SectorPresets.frozenForest))
-  TechTree.all.find(t => t.content == SectorPresets.craters).objectives.add(new Objectives.Research(Blocks.hail))
+  try {
+    TechTree.all.find(t => t.content == SectorPresets.crateredBattleground).objectives.add(new Objectives.Research(Blocks.hail)) // pointless changes my beloved
+  } catch(e) {
+    try {
+      TechTree.all.find(t => t.content == SectorPresets.craters).objectives.add(new Objectives.Research(Blocks.hail))
+    } catch(e) {
+        print("anuke renamed the craters again, let CD know immediately")
+    }
+  }
   // restrict early titanium
   /*let stainORwind = extend(Objectives.Objective,{
     complete() {
