@@ -566,7 +566,7 @@ Events.on(ClientLoadEvent, e => {
   }
   
   // REMOVE PROBLEMATIC HIDDEN SECTORS
-  const removeHidden = [
+  /*const removeHidden = [
     // isolated sectors
     6,12,76,111,133,230,248,
     // twin sectors
@@ -591,6 +591,12 @@ Events.on(ClientLoadEvent, e => {
     let sect = Planets.serpulo.sectors.get(removeHidden[i])
     if (sect.preset != null && sect.preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for modded non-hidden sectors so we dont fuck up anything
       Planets.serpulo.sectors.get(removeHidden[i]).preset = null
+    }
+  }*/
+  for (let i=0;i<Planets.serpulo.sectors.size;i++) {
+    let sect = Planets.serpulo.sectors.get(i) // honestly fuck all of that above just kill all the vanilla ones i dont care anymore
+    if (sect.preset != null && sect.preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for non-hidden sectors so we dont fuck up anything
+      Planets.serpulo.sectors.get(i).preset = null
     }
   }
   Planets.serpulo.updateBaseCoverage()
@@ -648,6 +654,7 @@ Events.on(ClientLoadEvent, e => {
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Blocks.spectre))
   //TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Vars.content.getByName(ContentType.block, "md3-firenado")))
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-lowland-torrents")))
+  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-mycelium-lake")))
   // PLT sector requirements
   TechTree.all.find(t => t.content == SectorPresets.planetaryTerminal).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-scourged-rivers")))
   

@@ -16,6 +16,10 @@ trailLength: 70
 research: {
   parent: macrocybe-boat
   objectives: [
+    {
+      type: SectorComplete
+      preset: scourged-rivers
+    },
     tetrative-reconstructor
   ]
 }

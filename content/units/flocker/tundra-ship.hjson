@@ -21,6 +21,10 @@ itemCapacity: 90
 research: {
   parent: messenger-ship
   objectives: [
+    {
+      type: SectorComplete
+      preset: scourged-rivers
+    },
     tetrative-reconstructor
   ]
 }

@@ -1,0 +1,16 @@
+description: "A large spore-infested lake, surrounded by enemy fortifications.\n\nFurther [accent]unknown unit signatures[] have been detected here.\nTake out the enemy base and reverse-engineer the new units."
+planet: serpulo
+sector: 74
+difficulty: 5
+research: {
+  parent: reentry
+  objectives: [
+    {
+      type: SectorComplete
+      preset: reentry
+    },
+    naval-factory,
+    shotgunner-mech,
+    risso
+  ]
+}
