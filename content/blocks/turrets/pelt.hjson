@@ -31,7 +31,7 @@ shoot: {
   }]
 }
 targetAir: false
-maxAmmo: 9
+maxAmmo: 36
 ammoPerShot: 3
 drawer: {
   type: DrawTurret

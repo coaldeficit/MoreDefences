@@ -7,7 +7,7 @@ range: 144
 rotateSpeed: 3
 shootSound: shootLocus
 predictTarget: false
-maxAmmo: 36
+maxAmmo: 72
 ammoPerShot: 6
 shootCone: 0.2
 drawer: {

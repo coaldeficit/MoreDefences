@@ -12,7 +12,7 @@ shoot: {
   shots: 3
   spread: 5
 }
-maxAmmo: 18
+maxAmmo: 36
 ammoPerShot: 2
 drawer: {
   type: DrawTurret
