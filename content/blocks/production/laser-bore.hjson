@@ -4,7 +4,7 @@ description: Mines ore walls.
 health: 50
 size: 2
 range: 7
-drillTime: 480
+drillTime: 240
 tier: 1
 sparks: 15
 sparkSize: 5
