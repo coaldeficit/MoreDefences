@@ -7,9 +7,9 @@ let puncture = extend(ItemTurret, "puncture", {
 });
 let titaMissile = extend(MissileBulletType, {
   speed: 10,
-  damage: 14,
-  splashDamage: 11,
-  splashDamageRadius: 16,
+  damage: 16,
+  splashDamage: 14,
+  splashDamageRadius: 18,
   lifetime: 24,
   homingPower: 0.035,
   homingRange: 150,
@@ -47,9 +47,9 @@ let titaMissile = extend(MissileBulletType, {
 })
 let plastMissile = extend(MissileBulletType, {
   speed: 6.667,
-  damage: 28,
-  splashDamage: 16,
-  splashDamageRadius: 32,
+  damage: 34,
+  splashDamage: 20,
+  splashDamageRadius: 36,
   lifetime: 36,
   homingPower: 0.035*(2/3),
   homingRange: 150,
@@ -67,7 +67,7 @@ let plastMissile = extend(MissileBulletType, {
   intervalRandomSpread: 10,
   intervalBullet: extend(BasicBulletType, {
     speed: 2,
-    damage: 3,
+    damage: 3.2,
     pierceArmor: true,
     lifetime: 64,
     frontColor: Color.valueOf("ffffff"),
