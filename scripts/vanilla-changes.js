@@ -452,7 +452,7 @@ let vanillaSectorRemap = {
   frozenForest: 86,
   biomassFacility: 81,
   taintedWoods: 221,
-  craters: 241,
+  //craters: 241,
   crateredBattleground: 241,
   ruinousShores: 213,
   seaPort: 47,
