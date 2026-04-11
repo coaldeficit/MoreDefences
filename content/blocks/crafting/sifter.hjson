@@ -4,7 +4,7 @@ description: Filters out trace amounts of metals found in Sand and outputs them 
 size: 1
 health: 40
 hasItems: true
-craftTime: 6
+craftTime: 15
 itemCapacity: 52
 updateEffect: smeltsmoke
 consumes: {
@@ -17,7 +17,7 @@ consumes: {
 requirements: [
   copper/150
   lead/150
-  plastanium/60
+  plastanium/80
 ]
 category: crafting
 research: pulverizer
