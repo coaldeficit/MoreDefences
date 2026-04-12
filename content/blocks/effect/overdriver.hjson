@@ -8,7 +8,7 @@ consumes: {
 }
 speedBoost: 1.35
 speedBoostPhase: 0
-useTime: 375
+# useTime: 375
 phaseRangeBoost: 0
 range: 8
 requirements: [
