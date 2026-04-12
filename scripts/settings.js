@@ -23,7 +23,7 @@ Events.on(ClientLoadEvent, () => {
     }
     Core.settings.put("md3-internal-settingsver", "3")
   }
-  if (Core.settings.getBool("md3-muteunitloops", true) {
+  if (Core.settings.getBool("md3-muteunitloops", true)) { // integration of another one of CD's mods - coaldeficit/MuteUnitLoops
     for (let i=0;i<Vars.content.units().size;i++) {
       let help = Vars.content.units().get(i)
       if (help instanceof MissileUnitType) continue // not fool-proof but the best i can do in just a few minutes
