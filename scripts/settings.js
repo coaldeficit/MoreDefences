@@ -1,10 +1,12 @@
 let canReinstall = true
 Events.on(ClientLoadEvent, () => {
-  if (Core.settings.getString("md3-internal-settingsver") != "2") {
+  if (Core.settings.getString("md3-internal-settingsver") != "3") {
     switch (Core.settings.getString("md3-internal-settingsver")) {
       case "1":
         Core.settings.put("md3-internal-betawarning", false)
       case "2":
+        Core.settings.put("md3-muteunitloops", false)
+      case "3":
         // update this part of the code when adding a new setting
         // there is a simpler, naive way to do it but it'd reset your md settings anytime we add new ones
         // therefore instead we have a settings version system that only updates new settings
@@ -15,10 +17,20 @@ Events.on(ClientLoadEvent, () => {
         Core.settings.put("md3-loadshaders", !Vars.mobile)
         Core.settings.put("md3-forcecapturetoast", true)
         Core.settings.put("md3-guardianwarn", true)
+        Core.settings.put("md3-muteunitloops", false)
         Core.settings.put("md3-internal-betawarning", false)
         break
     }
-    Core.settings.put("md3-internal-settingsver", "2")
+    Core.settings.put("md3-internal-settingsver", "3")
+  }
+  if (Core.settings.getBool("md3-muteunitloops", true) {
+    for (let i=0;i<Vars.content.units().size;i++) {
+      let help = Vars.content.units().get(i)
+      if (help instanceof MissileUnitType) continue // not fool-proof but the best i can do in just a few minutes
+      help.loopSound = Sounds.none
+      help.moveSound = Sounds.none
+      help.tankMoveSound = Sounds.none
+    }
   }
   Vars.ui.settings.addCategory(Core.bundle.get("setting.md3-config-title"), Icon.turret, cons((t) => {
     // V1
@@ -26,6 +38,7 @@ Events.on(ClientLoadEvent, () => {
     t.checkPref("md3-loadshaders", !Vars.mobile);
     t.checkPref("md3-forcecapturetoast", true);
     t.checkPref("md3-guardianwarn", true);
+    t.checkPref("md3-muteunitloops", false);
     // V2
     // N/A (add new settings here after public release)
     // BETA BUTTON
