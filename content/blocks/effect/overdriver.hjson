@@ -1,27 +1,20 @@
 type: OverdriveProjector
 name: Overdriver
-description: Speeds up the process of nearby buildings within its range. Cheap, but inefficient.
+description: Increases the speed of adjacent buildings.
 health: 40
 size: 1
 consumes: {
-  power: 0.5
-  items: {
-    items:[
-      silicon/1
-    ]
-    booster: true
-    optional: true
-  }
+  power: 2.5
 }
-speedBoost: 1.2
-speedBoostPhase: 0.15
+speedBoost: 1.35
+speedBoostPhase: 0
 useTime: 375
-phaseRangeBoost: 16
-range: 32
+phaseRangeBoost: 0
+range: 8
 requirements: [
   copper/70
   lead/90
-  silicon/40
+  silicon/80
 ]
 category: effect
 research: {
