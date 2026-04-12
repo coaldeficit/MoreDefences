@@ -1,16 +1,17 @@
 name: "md3"
 displayName: "[cyan]More[blue]Defences[]"
 subtitle: "The Vanadium Update"
-author: "[grey[]]CD[[]], [magenta[]]7rodo[[]] and [red[]]meowkitty[[]]"
+author: "[grey[]]CD[[]], [red[]]meowkitty[[]] and [magenta[]]7rodo[[]]"
 description:
   '''
-  []A mod made by CD, meowkitty and 7rodo that overhauls the campaign, significantly modifying Serpulo's campaign and adding a new planet, Fieros.
+  []A mod made by [grey[]]CD[[]], [red[]]meowkitty[[]] and [magenta[]]7rodo[[]] that overhauls the campaign, significantly modifying [#7457ce[]]Serpulo[[]]'s campaign and adding a new planet, [blue[]]Fieros[[]].
+  
   Amidst the features in this mod are:
-  - 17 New Turrets to defend with
-  - 21 New Units to attack with
-  - 15 New Campaign Sectors to play on, including 2 remakes of vanilla sectors
-  - Post-Surge Alloy tier content for Serpulo
-  - 12 New Miscellaneous blocks to mess around with on Serpulo
+  - [accent[]]17[[]] New [accent[]]Turrets[[]] to defend with
+  - [accent[]]21[[]] New [accent[]]Units[[]] to attack with
+  - [accent[]]15[[]] New campaign [accent[]]Sectors[[]] to play on, including [accent[]]2 Remakes[[]] of vanilla sectors
+  - [accent[]]Post-Surge Alloy-tier[[]] content for Serpulo
+  - [accent[]]12[[]] New Miscellaneous blocks to mess around with on Serpulo
   
   [red[]]⚠ This mod moves Serpulo sectors around without moving their saves, backup your game data in [ SETTINGS > GAME DATA ] before enabling/disabling this mod to prevent campaign corruption if you have any campaign saves. ⚠[[]]
   
