@@ -1,0 +1,41 @@
+name: Fusillade
+description: Rapidly fires powerful railgun shots, but overheats easily if shooting for too long. Ignores weak targets to avoid producing unnecessary heat.
+health: 1300
+size: 3
+reload: 20
+range: 240
+inaccuracy: 8
+rotateSpeed: 3.25
+cooldownTime: 200
+shootSound: shootBeamPlasma
+shootEffect: none
+unitSort: strongest
+maxAmmo: 30
+ammoPerShot: 2
+hasLiquids: true
+liquidCapacity: 20
+consumes: {
+  liquid: {
+    liquid: water
+    amount: 0.2
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      moveY: -2.75
+    }
+  ]
+}
+requirements: [
+  copper/500
+  scrap/420
+  silicon/300
+  thorium/350
+]
+category: turret
+research: reservation

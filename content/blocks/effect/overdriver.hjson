@@ -11,6 +11,7 @@ speedBoostPhase: 0
 # useTime: 375
 phaseRangeBoost: 0
 range: 8
+hasItems: false
 requirements: [
   copper/70
   lead/90
