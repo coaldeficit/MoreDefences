@@ -168,7 +168,6 @@ ammoTypes: {
         lifetime: 28
         splashDamage: 14
         splashDamageRadius: 37.6
-        status: blasted
         width: 8
         height: 8
         frontColor: eeab89
@@ -196,7 +195,6 @@ ammoTypes: {
         lifetime: 34
         splashDamage: 14
         splashDamageRadius: 37.6
-        status: blasted
         width: 8
         height: 8
         frontColor: eeab89
@@ -210,6 +208,7 @@ ammoTypes: {
     splashDamage: 14
     splashDamageRadius: 37.6
     ammoMultiplier: 25
+    status: blasted
   }
 }
 recoils: 2
