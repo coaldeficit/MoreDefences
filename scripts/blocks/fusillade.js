@@ -127,7 +127,7 @@ let surge = extend(RailBulletType, {
   pointEffect: vfx.fusilladeTrailSurge,
   despawnEffect: vfx.fusilladeShootSurge,
   pointEffectSpace: 36,
-  damage: 540,
+  damage: 480,
   pierceCap: 4,
   length: 240,
   ammoMultiplier: 1,
