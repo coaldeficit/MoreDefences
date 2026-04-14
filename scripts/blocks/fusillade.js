@@ -1,5 +1,5 @@
 const vfx = require("md3/libs/vfx")
-const overheatCap = 60*60
+const overheatCap = 60*90
 
 let fusillade = extend(ItemTurret, "fusillade", {
   unitFilter: {
@@ -21,7 +21,7 @@ let fusillade = extend(ItemTurret, "fusillade", {
 fusillade.buildType = () => extend(ItemTurret.ItemTurretBuild, fusillade, {
   update(){
     if (this.overheatstate == null) {
-      this.overheatstate = Vars.state.rules.infiniteResources ? 0 : -60*15
+      this.overheatstate = Vars.state.rules.infiniteResources ? 0 : -60*25
     }
     if (this.overheatstate < 0 || this.reloadCounter >= fusillade.reload) {
       this.overheatstate = this.overheatstate - Math.min(Math.abs(this.overheatstate), Time.delta) * Math.sign(this.overheatstate)
