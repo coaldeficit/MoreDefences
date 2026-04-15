@@ -10,7 +10,7 @@ cooldownTime: 200
 shootSound: shootBeamPlasma
 shootEffect: none
 unitSort: strongest
-maxAmmo: 30
+maxAmmo: 32
 ammoPerShot: 2
 hasLiquids: true
 liquidCapacity: 20

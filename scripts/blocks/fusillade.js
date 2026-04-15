@@ -1,5 +1,5 @@
 const vfx = require("md3/libs/vfx")
-const overheatCap = 60*90
+const overheatCap = 60*10
 
 let fusillade = extend(ItemTurret, "fusillade", {
   unitFilter: {
@@ -21,7 +21,7 @@ let fusillade = extend(ItemTurret, "fusillade", {
 fusillade.buildType = () => extend(ItemTurret.ItemTurretBuild, fusillade, {
   update(){
     if (this.overheatstate == null) {
-      this.overheatstate = Vars.state.rules.infiniteResources ? 0 : -60*25
+      this.overheatstate = Vars.state.rules.infiniteResources ? 0 : -overheatCap
     }
     if (this.overheatstate < 0 || this.reloadCounter >= fusillade.reload) {
       this.overheatstate = this.overheatstate - Math.min(Math.abs(this.overheatstate), Time.delta) * Math.sign(this.overheatstate)
@@ -87,7 +87,7 @@ let silicon = extend(RailBulletType, {
   pointEffect: vfx.fusilladeTrailSili,
   despawnEffect: vfx.fusilladeShootSili,
   pointEffectSpace: 28,
-  damage: 200,
+  damage: 350,
   pierceCap: 3,
   length: 240,
   ammoMultiplier: 2,
@@ -100,16 +100,16 @@ let plast = extend(RailBulletType, {
   pointEffect: vfx.fusilladeTrailPlast,
   despawnEffect: vfx.fusilladeShootPlast,
   pointEffectSpace: 28,
-  damage: 220,
-  pierceCap: 5,
+  damage: 440,
+  pierceCap: 3,
   length: 240,
   ammoMultiplier: 4,
-  fragBullets: 6,
+  fragBullets: 7,
   fragOnDespawn: false,
   delayFrags: true,
   fragBullet: extend(BasicBulletType, {
     speed: 4,
-    damage: 15,
+    damage: 12,
     lifetime: 32,
     frontColor: Color.valueOf("ffffff"),
     backColor: Color.valueOf("CBD97F"),
@@ -127,7 +127,7 @@ let surge = extend(RailBulletType, {
   pointEffect: vfx.fusilladeTrailSurge,
   despawnEffect: vfx.fusilladeShootSurge,
   pointEffectSpace: 36,
-  damage: 480,
+  damage: 920,
   pierceCap: 4,
   length: 240,
   ammoMultiplier: 1,
