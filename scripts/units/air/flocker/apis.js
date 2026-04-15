@@ -22,7 +22,7 @@ const apisGun = extend(Weapon, {
     lightning: 2,
     lightningLength: 5,
     lightningLengthRand: 2,
-    lightningDamage: 12,
+    lightningDamage: 6,
     despawnSound: Sounds.shockBullet,
     shrinkX: 0,
     shrinkY: 0,
