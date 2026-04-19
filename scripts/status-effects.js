@@ -108,7 +108,7 @@ insulatedEffect.opposite(StatusEffects.blasted);
 function getBaseLog(x, y) {
   return Math.log(y) / Math.log(x);
 }
-let blazedEffect = extend(StatusEffect, "blazed-status", {
+/*let blazedEffect = extend(StatusEffect, "blazed-status", {
     isHidden(){
       return true
     },
@@ -163,12 +163,12 @@ blazedEffect.affinity(StatusEffects.tarred, ((unit, result, time) => {
     unit.heal(2)
     result.set(blazedEffect, result.time)
 }));
-/*blazedEffect.affinity(liquidHydrogenEffect, ((unit, result, time) => {
+blazedEffect.affinity(liquidHydrogenEffect, ((unit, result, time) => {
     unit.heal(3)
     result.set(blazedEffect, result.time)
-}));*/
+}));
 blazedEffect.opposite(StatusEffects.burning);
-blazedEffect.opposite(StatusEffects.melting);
+blazedEffect.opposite(StatusEffects.melting);*/
 
 let delayedEffect = extend(StatusEffect, "delayed-status", {
     isHidden(){
@@ -197,7 +197,7 @@ module.exports = {
     //liquidHydrogenEffect: liquidHydrogenEffect,
     //radiationEffect: radiationEffect,
     insulatedEffect: insulatedEffect,
-    blazedEffect: blazedEffect,
+    //blazedEffect: blazedEffect,
     delayedEffect: delayedEffect,
     brominatedEffect: brominatedEffect,
 };

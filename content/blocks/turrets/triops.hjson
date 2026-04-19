@@ -1,6 +1,6 @@
 type: ItemTurret
 name: Triops
-description: temp
+description: Shoots twisting pairs of bullets at enemy targets. Potent against unprotected targets, but struggles against armor.
 health: 250
 size: 1
 reload: 20
