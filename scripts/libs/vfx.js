@@ -142,7 +142,7 @@ const phaseForeshadowTrail = new Effect(30, e => {
 });
 const macrocybeSpores = new Effect(64, e => {
   Draw.color(Pal.spore)
-  Draw.z(111)
+  //Draw.z(111)
   Angles.randLenVectors(e.id, 40, e.finpow() * 180, e.rotation, 7, (x, y) => {
     Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
   });
@@ -329,6 +329,13 @@ const fusilladeHitSurge = new Effect(18,200, e => {
     Drawf.tri(e.x, e.y, 20 * e.fout(), 40, e.rotation + 150 * i);
   }
 });
+const scorchSpores = new Effect(34, e => {
+  Draw.color(Pal.spore)
+  //Draw.z(111)
+  Angles.randLenVectors(e.id, 10, e.finpow() * 60, e.rotation, 10, (x, y) => {
+    Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
+  });
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -366,4 +373,5 @@ module.exports = {
     fusilladeTrailSurge: fusilladeTrailSurge,
     fusilladeShootSurge: fusilladeShootSurge,
     fusilladeHitSurge: fusilladeHitSurge,
+    scorchSpores: scorchSpores,
 };

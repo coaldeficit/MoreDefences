@@ -53,11 +53,29 @@ let phaseForeshadow = extend(RailBulletType, {
   hitShake: 8,
   ammoMultiplier: 1,
   status: StatusEffects.overclock,
-  statusDuration: 600,
+  statusDuration: 300,
   rangeChange: -80,
 })
 Blocks.foreshadow.ammoTypes.put(
   Items.phaseFabric, phaseForeshadow
+);
+let sporeScorch = extend(BulletType, {
+  speed: 3.35,
+  damage: 17,
+  pierce: true,
+  collidesAir: false,
+  lifetime: 18,
+  hitSize: 7,
+  ammoMultiplier: 10,
+  status: StatusEffects.sporeSlowed,
+  statusDuration: 300,
+  shootEffect: vfx.scorchSpores,
+  hitEffect: Fx.hitFlameSmall,
+  despawnEffect: Fx.none,
+  hittable: false,
+})
+Blocks.scorch.ammoTypes.put(
+  Items.sporePod, sporeScorch
 );
 
 // ITS STRICTLY PERSONAL
