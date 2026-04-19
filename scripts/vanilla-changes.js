@@ -61,7 +61,7 @@ Blocks.foreshadow.ammoTypes.put(
 );
 let sporeScorch = extend(BulletType, {
   speed: 3.35,
-  damage: 17,
+  damage: 13.5,
   pierce: true,
   collidesAir: false,
   lifetime: 18,
@@ -133,6 +133,30 @@ UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 2
 UnitTypes.eclipse.speed = 0.667
 UnitTypes.tecta.abilities.get(0).width = 12
 UnitTypes.tecta.abilities.get(0).radius = 39
+
+// STATUS AFFINITIES
+StatusEffects.burning.affinity(StatusEffects.sporeSlowed, ((unit, result, time) => {
+  unit.damage(StatusEffects.burning.transitionDamage)
+  Fx.burning.at(unit.x + Mathf.range(unit.bounds() / 2), unit.y + Mathf.range(unit.bounds() / 2))
+  result.set(StatusEffects.burning, Math.min(time + result.time, 150))
+}));
+StatusEffects.melting.affinity(StatusEffects.sporeSlowed, ((unit, result, time) => {
+  unit.damage(8)
+  Fx.burning.at(unit.x + Mathf.range(unit.bounds() / 2), unit.y + Mathf.range(unit.bounds() / 2))
+  result.set(StatusEffects.melting, Math.min(time + result.time, 100))
+}));
+StatusEffects.wet.affinity(StatusEffects.electrified, ((unit, result, time) => {
+  unit.damagePierce(StatusEffects.wet.transitionDamage)
+  if (unit.team == Vars.state.rules.waveTeam) {
+    Events.fire(Trigger.shock)
+  }
+}));
+
+// SHOW STATUSES IN CORE DATABASE
+StatusEffects.slow.show = true
+StatusEffects.muddy.show = true
+StatusEffects.shielded.show = true
+StatusEffects.disarmed.show = true
 
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
