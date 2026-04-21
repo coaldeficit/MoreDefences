@@ -1,11 +1,12 @@
 type: GenericCrafter
 name: Sifter
-description: Filters out trace amounts of metals found in Sand and outputs them as Scrap.
+description: Filters out trace amounts of metals found in Sand, and melts them together into Scrap.
+details: "Rediscovered technology, found in a stealth base hidden inside a defunct tech junkyard.\n\nCan be used to extract scrap anywhere there is sand, allowing for more convenient usage of scrap-based technology."
 size: 1
 health: 40
 hasItems: true
-craftTime: 15
-itemCapacity: 52
+craftTime: 30
+itemCapacity: 60
 updateEffect: smeltsmoke
 consumes: {
   items: {
@@ -17,8 +18,16 @@ consumes: {
 requirements: [
   copper/150
   lead/150
-  plastanium/80
+  plastanium/100
 ]
 category: crafting
-research: pulverizer
+research: {
+  parent: pulverizer
+  objectives: [
+    {
+      type: SectorComplete
+      preset: junkyard-barrens
+    },
+  ]
+}
 outputItem: scrap/2
