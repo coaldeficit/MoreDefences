@@ -13,7 +13,7 @@ research: {
       type: SectorComplete
       preset: reentry
     },
-    exponentialReconstructor,
+    exponential-reconstructor,
     scepter,
     mica,
     fusillade,
