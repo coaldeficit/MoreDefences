@@ -1,10 +1,11 @@
-name: Pounder
+name: Mortar
 description: Fires medium-range explosive shells at ground enemy targets.
 flying: false
 speed: 0.4
 health: 500
 hitSize: 9
 targetAir: false
+faceTarget: false
 stepSound: walkerStepTiny
 
 // legs
@@ -31,7 +32,7 @@ shadowElevation: 0.15
 groundLayer: 75
 
 weapons: [{
-  name: pounder-weapon
+  name: mortar-weapon
   top: true
   rotate: true
   y: 0

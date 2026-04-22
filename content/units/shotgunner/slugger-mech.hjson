@@ -71,7 +71,7 @@ weapons: [{
 }]
 itemCapacity: 40
 research: {
-  parent: pounder-mech
+  parent: mortar-mech
   objectives: [
     multiplicative-reconstructor
   ]
