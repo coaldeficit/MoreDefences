@@ -26,10 +26,9 @@ rippleScale: 0.4
 legMoveSpace: 1
 allowLegStep: true
 hovering: true
-legPhysicsLayer: false
 
 shadowElevation: 0.15
-groundLayer: 74
+groundLayer: 75
 
 weapons: [{
   name: pounder-weapon

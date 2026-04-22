@@ -24,6 +24,9 @@ hovering: true
 legSplashDamage: 32
 legSplashRange: 30
 
+shadowElevation: 0.5
+groundLayer: 75
+
 itemCapacity: 60
 research: {
   parent: slugger-mech

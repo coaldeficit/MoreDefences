@@ -29,6 +29,7 @@ legPhysicsLayer: false
 
 shadowElevation: 0.1
 groundLayer: 74
+
 weapons: [{
   name: shotgunner-weapon
   top: true

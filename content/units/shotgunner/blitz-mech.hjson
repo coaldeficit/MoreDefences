@@ -31,6 +31,9 @@ hovering: true
 legSplashDamage: 32
 legSplashRange: 30
 
+shadowElevation: 0.4
+groundLayer: 75
+
 weapons: {
   add: [
     {
