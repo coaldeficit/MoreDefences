@@ -158,6 +158,14 @@ StatusEffects.muddy.show = true
 StatusEffects.shielded.show = true
 StatusEffects.disarmed.show = true
 
+// DATABASE TAGS
+UnitTypes.alpha.databaseTag = "unit-core"
+UnitTypes.beta.databaseTag = "unit-core"
+UnitTypes.gamma.databaseTag = "unit-core"
+UnitTypes.evoke.databaseTag = "unit-core"
+UnitTypes.incite.databaseTag = "unit-core"
+UnitTypes.emanate.databaseTag = "unit-core"
+
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
 

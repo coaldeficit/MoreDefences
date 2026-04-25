@@ -45,6 +45,7 @@ abilities: {
 }
 itemCapacity: 25
 range: 80
+databaseTag: unit-core
 research: {
   parent: core-monoquark
   planet: md3-fieros
