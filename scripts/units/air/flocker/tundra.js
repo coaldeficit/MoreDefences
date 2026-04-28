@@ -76,9 +76,7 @@ const tundraBomb = extend(BasicBulletType, {
   hittable: false,
   fragBullets: 7,
   fragBullet: tundraBombFrag,
-  range(){ // note to anyone reading: always override the range function for any bomb-type projectiles so that the unit ai actually uses them
-    return 150
-  },
+  maxRange: 150, // please dont make me have to change this again
   despawned(b){
     this.super$despawned(b)
     vfx.freezeBombExplosion.at(b.x, b.y);
@@ -114,12 +112,11 @@ const bombCannon = extend(Weapon, {
   x: 0,
   shootY: 0,
   reload: 200,
-  velocityRnd: 1,
-  shootCone: 180,
+  shootCone: 361,
   inaccuracy: 15,
+  ignoreRotation: true,
   shootSound: Sounds.shootQuad,
   bullet: tundraBomb,
-  autoTarget: true
 });
 
 const underdriveWeapon = extend(Weapon, { // CHANGING THIS DOES NOT AFFECT THE DISPLAYED STATS
@@ -146,7 +143,7 @@ const underdriveWeapon = extend(Weapon, { // CHANGING THIS DOES NOT AFFECT THE D
     absorbable: false,
     damage: 0,
     despawned(b) {
-      blockcheck.iterateSquareCenter(Math.round(b.owner.x/8),Math.round(b.owner.y/8),24,24,(other => {
+      blockcheck.iterateSquareCenter(Math.round(b.owner.x/8),Math.round(b.owner.y/8),30,30,(other => {
         if (other.build != null && other.build.team != b.owner.team) {
           other.build.applySlowdown(0.667, 30)
         }
@@ -172,7 +169,7 @@ const underdriveDeco1 = extend(SuppressionFieldAbility, {
     t.row()
     t.add(this.abilityStat("md3-underdrive-decrease", 33.3)); // CHANGING THESE DOES NOT AFFECT THE FUNCTION OF THE ABILITY
     t.row()
-    t.add(Core.bundle.format("bullet.range", 12));
+    t.add(Core.bundle.format("bullet.range", 15));
     t.row()
     t.add(this.abilityStat("duration", 0.5));
   }
