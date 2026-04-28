@@ -11,9 +11,9 @@ let heal = extend(RegenAbility, {
 SporeT4.abilities.add(heal);
 
 const sporeFlame = extend(BulletType, {
-  speed: 7,
+  speed: 8,
   damage: 48,
-  lifetime: 24,
+  lifetime: 25,
   collidesAir: true,
   status: StatusEffects.sporeSlowed,
   statusDuration: 180,

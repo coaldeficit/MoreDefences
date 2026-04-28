@@ -143,7 +143,7 @@ const phaseForeshadowTrail = new Effect(30, e => {
 const macrocybeSpores = new Effect(64, e => {
   Draw.color(Pal.spore)
   //Draw.z(111)
-  Angles.randLenVectors(e.id, 40, e.finpow() * 180, e.rotation, 7, (x, y) => {
+  Angles.randLenVectors(e.id, 40, e.finpow() * 200, e.rotation, 7, (x, y) => {
     Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
   });
 });
