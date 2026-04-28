@@ -145,12 +145,12 @@ StatusEffects.melting.affinity(StatusEffects.sporeSlowed, ((unit, result, time) 
   Fx.burning.at(unit.x + Mathf.range(unit.bounds() / 2), unit.y + Mathf.range(unit.bounds() / 2))
   result.set(StatusEffects.melting, Math.min(time + result.time, 100))
 }));
-StatusEffects.wet.affinity(StatusEffects.electrified, ((unit, result, time) => {
+/*StatusEffects.wet.affinity(StatusEffects.electrified, ((unit, result, time) => {
   unit.damagePierce(StatusEffects.wet.transitionDamage)
   if (unit.team == Vars.state.rules.waveTeam) {
     Events.fire(Trigger.shock)
   }
-}));
+}));*/
 
 // SHOW STATUSES IN CORE DATABASE
 StatusEffects.slow.show = true
