@@ -3,8 +3,7 @@ description: Transports liquids forward.
 health: 25
 size: 1
 leaks: true
-junctionReplacement: cobalt-channel
-bridgeReplacement: cobalt-channel
+bridgeReplacement: cinnabar-aqueduct-bridge
 underBullets: true
 botColor: ffffff
 category: liquid

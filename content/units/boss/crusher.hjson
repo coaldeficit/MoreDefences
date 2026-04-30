@@ -15,7 +15,7 @@ weapons: [{
   y: 7
   x: 9
   reload: 80
-  #shootSound: shootSpectre
+  shootSound: shootSpectre
   inaccuracy: 0
   rotate: true
   controllable: false
@@ -44,14 +44,14 @@ weapons: [{
   y: -5
   x: 15
   reload: 60
-  #shootSound: shootSpectre
+  shootSound: shootSpectre
   inaccuracy: 0
   rotate: true
   shoot: {
     type: ShootMulti
-     source: {
+    source: {
       type: ShootPattern
-   }
+    }
     dest: [{
       type: ShootSpread
       shots: 3

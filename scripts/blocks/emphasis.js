@@ -5,7 +5,7 @@ let emphasis = extend(ItemTurret, "emphasis", {
     this.super$setBars();
     this.addBar("penalty", func(e =>
       new Bar(
-        prov(() => Core.bundle.format("stat.md3-emphasis-penalty") + ": " + Math.ceil(e.getReloadPenalty()*1000)/10 + "%"),
+        prov(() => Core.bundle.format("bar.md3-emphasis-penalty") + ": " + Math.ceil(e.getReloadPenalty()*1000)/10 + "%"),
         prov(() => Pal.redderDust),
         floatp(() => e.getReloadPenalty()*(1/0.9))
       ))

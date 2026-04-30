@@ -22,3 +22,4 @@ This is a list of people who have contributed to developing this mod.
 - [Awesomespore](https://github.com/Awesomespore): Playtester
 - [Sh1penfire](https://github.com/Sh1penfire): Playtester
 - wpx: Extraction Outpost Mapmaker (made the terrain for the map)
+- sire: Fortification Playtester

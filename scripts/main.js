@@ -1,9 +1,7 @@
-require("md3/autoupdate")
-
 require("md3/libs/rng")
 require("md3/settings")
 
-require("md3/campaign-warning")
+require("md3/autoupdate")
 require("md3/libs/shaders")
 
 require("md3/planets")
@@ -35,11 +33,15 @@ require('md3/blocks/shieldlayer');
 require('md3/blocks/coilgun');
 require('md3/blocks/emphasis');
 require('md3/blocks/juan');
+require('md3/blocks/mica');
+require('md3/blocks/fusillade');
 require('md3/blocks/instant');
 require('md3/blocks/delay');
 require('md3/blocks/subturrets');
 require('md3/blocks/spore-clumps');
 require('md3/blocks/ruvisum-processor');
+require('md3/blocks/holowall');
+require('md3/blocks/thermal-turbine');
 require('md3/blocks/pelt');
 require('md3/blocks/bolt');
 require('md3/blocks/gauge');
@@ -52,7 +54,7 @@ require('md3/blocks/fieros-payload');
 // ground
 // shotgunner line
 require("md3/units/ground/shotgunner/shotgunner")
-require("md3/units/ground/shotgunner/pounder")
+require("md3/units/ground/shotgunner/mortar")
 require("md3/units/ground/shotgunner/slugger")
 require("md3/units/ground/shotgunner/rocketeer")
 require("md3/units/ground/shotgunner/blitz")
@@ -60,7 +62,7 @@ require("md3/units/ground/shotgunner/blitz")
 // air
 // swarmer line
 require("md3/units/air/flocker/flocker")
-require("md3/units/air/flocker/bee")
+require("md3/units/air/flocker/apis")
 require("md3/units/air/flocker/hornet")
 require("md3/units/air/flocker/messenger")
 require("md3/units/air/flocker/tundra")

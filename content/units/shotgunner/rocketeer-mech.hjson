@@ -6,6 +6,8 @@ health: 5300
 armor: 5
 hitSize: 26
 rotateSpeed: 2
+stepSound: walkerStep
+targetAir: false
 
 // legs
 legSpeed: 0.1
@@ -22,6 +24,9 @@ allowLegStep: true
 hovering: true
 legSplashDamage: 32
 legSplashRange: 30
+
+shadowElevation: 0.5
+groundLayer: 75
 
 itemCapacity: 60
 research: {

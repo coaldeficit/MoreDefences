@@ -7,6 +7,7 @@ armor: 11
 hitSize: 17
 rotateSpeed: 3
 faceTarget: false
+stepSound: walkerStepTiny
 #abilities: [
 #  {
 #    type: SuppressionFieldAbility
@@ -39,7 +40,9 @@ rippleScale: 0.4
 legMoveSpace: 1
 allowLegStep: true
 hovering: true
-legPhysicsLayer: false
+
+shadowElevation: 0.15
+groundLayer: 75
 
 weapons: [{
   name: slugger-weapon
@@ -68,7 +71,7 @@ weapons: [{
 }]
 itemCapacity: 40
 research: {
-  parent: pounder-mech
+  parent: mortar-mech
   objectives: [
     multiplicative-reconstructor
   ]

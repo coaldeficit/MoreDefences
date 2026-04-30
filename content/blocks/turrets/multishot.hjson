@@ -19,7 +19,7 @@ consumes: {
     amount: 0.1
   }
 }
-coolantMultiplier: 5
+coolantMultiplier: 10
 ammoTypes: {
   lead: {
     speed: 3

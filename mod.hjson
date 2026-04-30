@@ -1,13 +1,30 @@
 name: "md3"
-displayName: "[cyan]More[blue]Defences[]"
-subtitle: "The Vanadium Update"
-author: "[grey]CD[], [blue]7rodo[] and [magenta]meowkitty[]"
-description: "[]A mod made by CD, meowkitty and 7rodo that features:\n- A new planet.\n- LOTS of new Serpulo content such as units, turrets, sectors, etc.\n- Many changes to existing Serpulo content.\n- Some new erekir content.\n- Cross-mod content with a couple few mods.\n- FULL Multiplayer and Android compatibility.\n- Extra minor additions.\n\nDiscord: https://discord.gg/9YHA3q8HHq[]"
-version: "3.1.15"
-minGameVersion: "157"
+displayName: "[#c7feff[]]More[#c7d0ff[]]Defences[[]]"
+subtitle: "Doohickey Cruxporation"
+author: "[grey[]]CD[[]], [#FC8E6C[]]meowkitty[[]] and [#ff0059[]]7rodo[[]]"
+description:
+  '''
+  []A mod made by [grey[]]CD[[]], [#FC8E6C[]]meowkitty[[]] and [#ff0059[]]7rodo[[]] that overhauls the campaign, significantly modifying [#7457ce[]]Serpulo[[]]'s campaign and adding a new planet, [blue[]]Fieros[[]].
+  
+  Amidst the features in this mod are:
+  [grey[]]-[[]] [accent[]]18[[]] New [accent[]]Turrets[[]] to defend with
+  [grey[]]-[[]] [accent[]]21[[]] New [accent[]]Units[[]] to attack with
+  [grey[]]-[[]] [accent[]]16[[]] New campaign [accent[]]Sectors[[]] to play on, including [accent[]]2 Remakes[[]] of vanilla sectors
+  [grey[]]-[[]] [accent[]]Post-Surge Alloy-tier[[]] content for Serpulo
+  [grey[]]-[[]] [accent[]]12[[]] New Miscellaneous blocks to mess around with on Serpulo
+  
+  [#e38a88[]]⚠ This mod moves Serpulo sectors around without moving their saves, backup your game data in [ SETTINGS > GAME DATA ] before enabling/disabling this mod to prevent campaign corruption if you have any campaign saves. ⚠[[]]
+  
+  [grey[]]Discord: https://discord.gg/9YHA3q8HHq[[]]
+  '''
+version: "3.2.0"
+minGameVersion: "157.4"
 contentOrder: [
   md3-fieros
   reentry
+  lowland-torrents
+  mycelium-lake
+  junkyard-barrens
   scourged-rivers
   fortification
   inception

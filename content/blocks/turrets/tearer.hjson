@@ -3,8 +3,8 @@ name: Tearer
 description: Fires a torrent of weak bullets that shred weak aerial enemy targets.
 health: 200
 size: 1
-reload: 2
-range: 170
+reload: 5
+range: 150
 inaccuracy: 3
 rotateSpeed: 15
 targetInterval: 1
@@ -12,7 +12,7 @@ shootSound: swish
 shootEffect: none
 shoot: {
   type: ShootAlternate
-  shots: 3
+  shots: 2
   shotDelay: 1
 }
 targetGround: false

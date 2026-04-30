@@ -1,0 +1,156 @@
+name: Mica
+description: Fires a fluid-filled grapeshot at enemies. Water-filled grapeshot is automatically aimed at and can extinguish fires. Can be unloaded from with unloaders.
+size: 2
+health: 1000
+range: 144
+maxAmmo: 90
+velocityRnd: 0.1
+reload: 60
+inaccuracy: 6
+shootCone: 20
+shootSound: shootDiffuse
+loopSound: none
+shootEffect: shootLiquid
+hasItems: true
+consumes: {
+  items: [
+    scrap/2
+  ]
+}
+itemCapacity: 10
+liquidCapacity: 40
+ammoPerShot: 20
+ammoTypes: {
+  water: {
+    type: BasicBulletType
+    speed: 2.1
+    damage: 16
+    lifetime: 68
+    pierce: true
+    pierceCap: 6
+    knockback: 0.7
+    ammoMultiplier: 0.05
+    displayAmmoMultiplier: false
+    width: 10.6
+    height: 10.6
+    shrinkX: 0
+    shrinkY: 0
+    frontColor: ffffff
+    hitColor: E0B28D
+    backColor: ffffff
+    layer: 111
+    sprite: md3-mica-grapeshot
+    intervalBullets: 2
+    bulletInterval: 5
+    intervalRandomSpread: 5
+    intervalSpread: 140
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: water
+      drag: 0.01
+      knockback: 0.55
+      layer: 98
+      status: wet
+    }
+  },
+  slag: {
+    type: BasicBulletType
+    speed: 2.1
+    damage: 16
+    lifetime: 68
+    pierce: true
+    pierceCap: 6
+    knockback: 0.7
+    ammoMultiplier: 0.05
+    displayAmmoMultiplier: false
+    width: 10.6
+    height: 10.6
+    shrinkX: 0
+    shrinkY: 0
+    frontColor: ffffff
+    hitColor: E0B28D
+    backColor: ffffff
+    layer: 111
+    sprite: md3-mica-grapeshot
+    intervalBullets: 2
+    bulletInterval: 5
+    intervalRandomSpread: 5
+    intervalSpread: 140
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: slag
+      damage: 4
+      drag: 0.01
+      status: melting
+    }
+  },
+  cryofluid: {
+    type: BasicBulletType
+    speed: 2.1
+    damage: 16
+    lifetime: 68
+    pierce: true
+    pierceCap: 6
+    knockback: 0.7
+    ammoMultiplier: 0.05
+    displayAmmoMultiplier: false
+    width: 10.6
+    height: 10.6
+    shrinkX: 0
+    shrinkY: 0
+    frontColor: ffffff
+    hitColor: E0B28D
+    backColor: ffffff
+    layer: 111
+    sprite: md3-mica-grapeshot
+    intervalBullets: 2
+    bulletInterval: 5
+    intervalRandomSpread: 5
+    intervalSpread: 140
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: cryofluid
+      drag: 0.01
+      status: freezing
+    }
+  },
+  oil: {
+    type: BasicBulletType
+    speed: 2.1
+    damage: 16
+    lifetime: 68
+    pierce: true
+    pierceCap: 6
+    knockback: 0.7
+    ammoMultiplier: 0.05
+    displayAmmoMultiplier: false
+    width: 10.6
+    height: 10.6
+    shrinkX: 0
+    shrinkY: 0
+    frontColor: ffffff
+    hitColor: E0B28D
+    backColor: ffffff
+    layer: 111
+    sprite: md3-mica-grapeshot
+    intervalBullets: 2
+    bulletInterval: 5
+    intervalRandomSpread: 5
+    intervalSpread: 140
+    intervalBullet: {
+      type: LiquidBulletType
+      liquid: oil
+      drag: 0.01
+      layer: 98
+      status: tarred
+    }
+  }
+}
+requirements: [
+  copper/35
+  lead/35
+  scrap/75
+  metaglass/45
+]
+category: turret
+research: wave

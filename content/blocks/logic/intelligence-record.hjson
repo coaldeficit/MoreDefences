@@ -1,0 +1,13 @@
+type: MessageBlock
+name: Intelligence Record
+description: Stores a message for communication between allies.
+details: Do what comes natural.
+health: 5
+requirements: [
+  cinnabar-item/10
+]
+category: logic
+research: {
+  parent: overflow-channel
+  planet: md3-fieros
+}

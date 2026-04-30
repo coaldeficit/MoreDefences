@@ -53,11 +53,29 @@ let phaseForeshadow = extend(RailBulletType, {
   hitShake: 8,
   ammoMultiplier: 1,
   status: StatusEffects.overclock,
-  statusDuration: 600,
+  statusDuration: 300,
   rangeChange: -80,
 })
 Blocks.foreshadow.ammoTypes.put(
   Items.phaseFabric, phaseForeshadow
+);
+let sporeScorch = extend(BulletType, {
+  speed: 3.35,
+  damage: 13.5,
+  pierce: true,
+  collidesAir: false,
+  lifetime: 18,
+  hitSize: 7,
+  ammoMultiplier: 10,
+  status: StatusEffects.sporeSlowed,
+  statusDuration: 300,
+  shootEffect: vfx.scorchSpores,
+  hitEffect: Fx.hitFlameSmall,
+  despawnEffect: Fx.none,
+  hittable: false,
+})
+Blocks.scorch.ammoTypes.put(
+  Items.sporePod, sporeScorch
 );
 
 // ITS STRICTLY PERSONAL
@@ -112,8 +130,41 @@ UnitTypes.quasar.abilities.get(0).max = 600
 UnitTypes.spiroct.speed = 0.8
 UnitTypes.antumbra.weapons.get(2).reload = 6
 UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 2
+UnitTypes.eclipse.speed = 0.667
 UnitTypes.tecta.abilities.get(0).width = 12
 UnitTypes.tecta.abilities.get(0).radius = 39
+
+// STATUS AFFINITIES
+StatusEffects.burning.affinity(StatusEffects.sporeSlowed, ((unit, result, time) => {
+  unit.damage(StatusEffects.burning.transitionDamage)
+  Fx.burning.at(unit.x + Mathf.range(unit.bounds() / 2), unit.y + Mathf.range(unit.bounds() / 2))
+  result.set(StatusEffects.burning, Math.min(time + result.time, 150))
+}));
+StatusEffects.melting.affinity(StatusEffects.sporeSlowed, ((unit, result, time) => {
+  unit.damage(8)
+  Fx.burning.at(unit.x + Mathf.range(unit.bounds() / 2), unit.y + Mathf.range(unit.bounds() / 2))
+  result.set(StatusEffects.melting, Math.min(time + result.time, 100))
+}));
+/*StatusEffects.wet.affinity(StatusEffects.electrified, ((unit, result, time) => {
+  unit.damagePierce(StatusEffects.wet.transitionDamage)
+  if (unit.team == Vars.state.rules.waveTeam) {
+    Events.fire(Trigger.shock)
+  }
+}));*/
+
+// SHOW STATUSES IN CORE DATABASE
+StatusEffects.slow.show = true
+StatusEffects.muddy.show = true
+StatusEffects.shielded.show = true
+StatusEffects.disarmed.show = true
+
+// DATABASE TAGS
+UnitTypes.alpha.databaseTag = "unit-core"
+UnitTypes.beta.databaseTag = "unit-core"
+UnitTypes.gamma.databaseTag = "unit-core"
+UnitTypes.evoke.databaseTag = "unit-core"
+UnitTypes.incite.databaseTag = "unit-core"
+UnitTypes.emanate.databaseTag = "unit-core"
 
 function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
 function getModUnit(mod, unit) {return Vars.content.getByName(ContentType.unit, mod + "-" + unit)}
@@ -126,20 +177,20 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
     [UnitTypes.crawler,UnitTypes.atrax,UnitTypes.spiroct,UnitTypes.arkyid,UnitTypes.toxopid],
     [UnitTypes.nova,UnitTypes.pulsar,UnitTypes.quasar,UnitTypes.vela,UnitTypes.corvus]
   ]
-  if (Planets.serpulo.sectors.get(75).info.wasCaptured) groundenemies.push([getMDUnit("shotgunner-mech"),getMDUnit("pounder-mech"),getMDUnit("slugger-mech"),getMDUnit("rocketeer-mech"),getMDUnit("blitz-mech")])
+  if (Planets.serpulo.sectors.get(75).info.wasCaptured) groundenemies.push([getMDUnit("shotgunner-mech"),getMDUnit("mortar-mech"),getMDUnit("slugger-mech"),getMDUnit("rocketeer-mech"),getMDUnit("blitz-mech")])
   let airenemies = [
     [UnitTypes.flare,UnitTypes.horizon,UnitTypes.zenith,UnitTypes.antumbra,UnitTypes.eclipse],
     [UnitTypes.flare,UnitTypes.poly,UnitTypes.mega,UnitTypes.quad,UnitTypes.oct]
   ]
-  if (Planets.serpulo.sectors.get(112).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("bee-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
+  if (Planets.serpulo.sectors.get(205).info.wasCaptured) airenemies.push([getMDUnit("flocker-ship"),getMDUnit("apis-ship"),getMDUnit("hornet-ship"),getMDUnit("messenger-ship"),getMDUnit("tundra-ship")])
   if (enemyBase) {
-    airenemies[1][4] = UnitTypes.eclipse
+    airenemies[1] = [UnitTypes.flare,UnitTypes.horizon,UnitTypes.zenith,UnitTypes.quad,UnitTypes.eclipse]
   }
   let navalenemies = [
     [UnitTypes.risso,UnitTypes.minke,UnitTypes.bryde,UnitTypes.sei,UnitTypes.omura],
     [UnitTypes.retusa,UnitTypes.oxynoe,UnitTypes.cyerce,UnitTypes.aegires,UnitTypes.navanax]
   ]
-  if (Planets.serpulo.sectors.get(112).info.wasCaptured) navalenemies.push([getMDUnit("mycena-boat"),getMDUnit("panaeolus-boat"),getMDUnit("agaricus-boat"),getMDUnit("macrocybe-boat"),getMDUnit("armillaria-boat")])
+  if (Planets.serpulo.sectors.get(74).info.wasCaptured) navalenemies.push([getMDUnit("mycena-boat"),getMDUnit("panaeolus-boat"),getMDUnit("agaricus-boat"),getMDUnit("macrocybe-boat"),getMDUnit("armillaria-boat")])
       
   // mod compat shenanigans, listed by order of addition to this
     // if you're a mod dev and want compat with this, ping me on discord and i'll try to see what i can do
@@ -378,7 +429,7 @@ Planets.serpulo.generator = extend(SerpuloPlanetGenerator, {
       }
     }
     if ((hovered.preset == null || !hovered.preset.requireUnlock) && contains) {
-      let pissoff = [162,222].includes(hovered.id)
+      let pissoff = [162,218,222].includes(hovered.id)
       let spoil = Blocks.coreNucleus.unlocked() || (Blocks.coreFoundation.unlocked() && Items.thorium.unlocked())
       out.append("[scarlet]X[] ").append(spoil ? Blocks.coreNucleus.emoji() : "[lightgray]?[] ").append(spoil ? (pissoff?Core.bundle.get("sector.md3-nucleusrequiredPissOffB"):Core.bundle.get("sector.md3-nucleusrequiredB")) : (pissoff?Core.bundle.get("sector.md3-nucleusrequiredPissOffA"):Core.bundle.get("sector.md3-nucleusrequiredA")))
     } else {
@@ -452,10 +503,10 @@ let vanillaSectorRemap = {
   frozenForest: 86,
   biomassFacility: 81,
   taintedWoods: 221,
-  //craters: 241,
-  crateredBattleground: 241,
+  craters: 241,
+  crateredBattleground: 241, // why was this necessary AT ALL
   ruinousShores: 213,
-  seaPort: 47,
+  seaPort: 47, // kept for backwards compat, todo: remove when next build is out
   perilousHarbor: 47,
   facility32m: 175,
   windsweptIslands: 242,
@@ -521,6 +572,7 @@ let mdHiddenSectors = [
   [157,"157md",0,2],
   [11,"11md",0,7],
   [2,"2md",0,2],
+  [38,"38md",0,5],
 ]
 let hiddenSectArray = []
 for (let i=0;i<mdHiddenSectors.length;i++) {
@@ -529,6 +581,12 @@ for (let i=0;i<mdHiddenSectors.length;i++) {
   sect.captureWave = mdHiddenSectors[i][2]
   sect.difficulty = mdHiddenSectors[i][3]
   hiddenSectArray.push(sect)
+}
+let vanillaWaveChanges = [
+  [SectorPresets.biomassFacility,25]
+]
+for (let i=0;i<vanillaWaveChanges.length;i++) {
+  vanillaWaveChanges[i][0].captureWave = vanillaWaveChanges[i][1]
 }
 // ON CLIENT LOAD
 Events.on(ClientLoadEvent, e => {
@@ -558,7 +616,7 @@ Events.on(ClientLoadEvent, e => {
   }
   
   // REMOVE PROBLEMATIC HIDDEN SECTORS
-  const removeHidden = [
+  /*const removeHidden = [
     // isolated sectors
     6,12,76,111,133,230,248,
     // twin sectors
@@ -583,6 +641,12 @@ Events.on(ClientLoadEvent, e => {
     let sect = Planets.serpulo.sectors.get(removeHidden[i])
     if (sect.preset != null && sect.preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for modded non-hidden sectors so we dont fuck up anything
       Planets.serpulo.sectors.get(removeHidden[i]).preset = null
+    }
+  }*/
+  for (let i=0;i<Planets.serpulo.sectors.size;i++) {
+    let sect = Planets.serpulo.sectors.get(i) // honestly fuck all of that above just kill all the vanilla ones i dont care anymore
+    if (sect.preset != null && sect.preset.requireUnlock == false && !(sect.preset.isModded() && sect.preset.minfo.mod.name == 'md3')) { // check for non-hidden sectors so we dont fuck up anything
+      Planets.serpulo.sectors.get(i).preset = null
     }
   }
   Planets.serpulo.updateBaseCoverage()
@@ -639,7 +703,8 @@ Events.on(ClientLoadEvent, e => {
   // converge post-thorium
   TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Blocks.spectre))
   //TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.Research(Vars.content.getByName(ContentType.block, "md3-firenado")))
-  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-reentry")))
+  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-lowland-torrents")))
+  TechTree.all.find(t => t.content == SectorPresets.impact0078).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-mycelium-lake")))
   // PLT sector requirements
   TechTree.all.find(t => t.content == SectorPresets.planetaryTerminal).objectives.add(new Objectives.SectorComplete(Vars.content.getByName(ContentType.sector, "md3-scourged-rivers")))
   
@@ -744,8 +809,8 @@ Events.on(WaveEvent, e => {
                 }
                 health += Math.pow(group.type.health/healthDiv,3)
               } else {
-                health += Math.pow(group.type.health/healthDiv,3) * Vars.spawner.spawns.size
-                for (let j=0;j<Vars.spawner.spawns.size*group.getSpawned(i);j++) {
+                health += Math.pow(group.type.health/healthDiv,3) * (group.type.flying?Vars.spawner.countFlyerSpawns():Vars.spawner.countGroundSpawns())
+                for (let j=0;j<(group.type.flying?Vars.spawner.countFlyerSpawns():Vars.spawner.countGroundSpawns())*group.getSpawned(i);j++) {
                   bosses.push(group.type.localizedName)
                 }
               }

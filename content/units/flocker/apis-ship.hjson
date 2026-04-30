@@ -1,0 +1,25 @@
+name: Apis
+description: An armored distraction unit. On death, explodes into fragments outfitted with beacons that confuse enemy turrets.
+speed: 2.3
+flying: true
+health: 550
+armor: 2
+physics: false
+hitSize: 13
+engineOffset: 8.5
+engineSize: 3
+drag: 0.1
+accel: 0.07
+range: 86.4
+#rotatespeed: 3
+circleTarget: true
+faceTarget: false
+targetFlags: [turret, battery, null]
+createWreck: false
+itemCapacity: 0
+research: {
+  parent: flocker-ship
+  objectives: [
+    additive-reconstructor
+  ]
+}

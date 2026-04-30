@@ -53,7 +53,7 @@ research: {
   objectives: [
     {
       type: SectorComplete
-      preset: scourged-rivers
+      preset: mycelium-lake
     },
   ]
 }

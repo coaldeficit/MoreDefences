@@ -1,25 +1,30 @@
 name: Tundra
 flying: true
-description: A heavy cluster bomber ship. Drops destructive bombs that can freeze structures.
-speed: 0.75
+description: Drops bombs that freeze damaged structures, destroying them even with health remaining. Outfitted with an Underdrive Dome that slows down nearby enemy structures, and overpowers the effects of overdrive projectors.
+speed: 0.8
 drag: 0.01
 accel: 0.1
-hitSize: 80
+hitSize: 70
 flying: true
-health: 19000
+health: 20000
 armor: 10
 rotateSpeed: 0.75
 circleTarget: true
 engineOffset: 11
 engineSize: 6.5
-targetAir: true
+targetAir: false
 faceTarget: false
-targetFlags: [reactor, generator, turret, null]
-range: 245
+autoDropBombs: true
+targetFlags: [turret, battery, null]
 itemCapacity: 90
+range: 140
 research: {
   parent: messenger-ship
   objectives: [
+    {
+      type: SectorComplete
+      preset: scourged-rivers
+    },
     tetrative-reconstructor
   ]
 }

@@ -1,0 +1,21 @@
+description: "[gray][optional objective][]\nAn ancient junkyard, hiding an enemy base constructed during the old wars.\n\n[accent]Scrap synthesizing technology[] data has been detected here. Take out the enemy base and claim the technology for yourself."
+planet: serpulo
+sector: 186
+difficulty: 8
+research: {
+  parent: overgrowth
+  objectives: [
+    {
+      type: SectorComplete
+      preset: overgrowth
+    },
+    {
+      type: SectorComplete
+      preset: reentry
+    },
+    exponential-reconstructor,
+    scepter,
+    mica,
+    fusillade,
+  ]
+}

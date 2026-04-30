@@ -3,18 +3,25 @@ let fierosCoreZone = extend(Floor, "fieros-core-zone", {});
 
 let niebieskiteBoulder = extend(Prop, "niebieskite-boulder", {});
 let niebieskite = extend(Floor, "niebieskite", {});
+let denseNiebieskite = extend(Floor, "dense-niebieskite", {});
 let hotNiebieskite = extend(Floor, "niebieskite-hot", {});
 hotNiebieskite.attributes.set(Attribute.heat, 0.5);
 let niebieskiteWall = extend(StaticWall, "niebieskite-wall", {});
 
 let cinnabarBoulder = extend(Prop, "cinnabar-boulder", {});
 let cinnabar = extend(Floor, "cinnabar", {});
+let crackedCinnabar = extend(Floor, "cracked-cinnabar", {});
 let cinnabarWall = extend(StaticWall, "cinnabar-wall", {});
+let cinnabarNiebieskiteBoulder = extend(Prop, "cinnabar-niebieskite-boulder", {});
+let cinnabarNiebieskite = extend(Floor, "cinnabar-niebieskite", {});
+let cinnabarNiebieskiteWall = extend(StaticWall, "cinnabar-niebieskite-wall", {});
 
 let lithimentBoulder = extend(Prop, "lithiment-boulder", {});
 let lithiment = extend(Floor, "lithiment", {});
 let sandyLithiment = extend(Floor, "sandy-lithiment", {});
+let lithilizedNiebieskite = extend(Floor, "lithilized-niebieskite", {});
 let lithimentWall = extend(StaticWall, "lithiment-wall", {});
+
 
 let mercuricBoulder = extend(Prop, "mercuric-boulder", {});
 let mercuricRock = extend(Floor, "mercuric-rock", {});
@@ -26,9 +33,21 @@ let hotMetacinnabar = extend(Floor, "metacinnabar-hot", {});
 hotMetacinnabar.attributes.set(Attribute.heat, 0.5);
 let metacinnabarWall = extend(StaticWall, "metacinnabar-wall", {});
 
+let hypercinnabar = extend(Floor, "hypercinnabar", {});
+let hypercinnabarWall = extend(StaticWall, "hypercinnabar-wall", {});
+
 let blackPanel = extend(Floor, "black-panel", {});
+let blackPanelLight = extend(Floor, "black-panel-light", {});
 let blackMetalWall = extend(StaticWall, "black-metal-wall", {});
+let blackCorrugatedMetalWall = extend(StaticWall, "black-corrugated-metal-wall", {});
 let fadedBlackPanel = extend(Floor, "faded-black-panel", {});
+let blackMetalDebris = extend(Prop, "black-metal-debris", {});
+let blackMetalPlating = extend(Floor, "black-metal-plating", {});
+let blackMetalTile1 = extend(Floor, "black-metal-tile1-1", {});
+
+let abandonedMetalWall = extend(StaticWall, "abandoned-metal-wall", {});
+let abandonedMetalVent = extend(StaticWall, "abandoned-metal-vent", {});
+let damagedAbandonedMetalVent = extend(StaticWall, "damaged-abandoned-metal-vent", {});
 
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
@@ -65,6 +84,10 @@ let darkWire = extend(OverlayFloor, "dark-wire", {});
 let horizontalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
 let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
 
+let metalTiles4Malis = extend(Floor, "metal-tiles-4-malis", {});
+let metalTiles6Malis = extend(Floor, "metal-tiles-6-malis", {});
+let metalTiles12Malis = extend(Floor, "metal-tiles-12-malis", {});
+
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
 let diorite = extend(Floor, "diorite", {});
 let dioriteWall = extend(StaticWall, "diorite-wall", {});
@@ -96,16 +119,22 @@ module.exports = {
   
   niebieskiteBoulder: niebieskiteBoulder,
   niebieskite: niebieskite,
+  denseNiebieskite: denseNiebieskite,
   hotNiebieskite: hotNiebieskite,
   niebieskiteWall: niebieskiteWall,
   
   cinnabarBoulder: cinnabarBoulder,
   cinnabar: cinnabar,
+  crackedCinnabar: crackedCinnabar,
+  cinnabarNiebieskiteBoulder: cinnabarNiebieskiteBoulder,
+  cinnabarNiebieskite: cinnabarNiebieskite,
+  cinnabarNiebieskiteWall: cinnabarNiebieskiteWall,
   cinnabarWall: cinnabarWall,
   
   lithimentBoulder: lithimentBoulder,
   lithiment: lithiment,
   sandyLithiment: sandyLithiment,
+  lithilizedNiebieskite: lithilizedNiebieskite,
   lithimentWall: lithimentWall,
   
   mercuricBoulder: mercuricBoulder,
@@ -117,9 +146,21 @@ module.exports = {
   hotMetacinnabar: hotMetacinnabar,
   metacinnabarWall: metacinnabarWall,
 
+  hypercinnabar: hypercinnabar,
+  hypercinnabarWall: hypercinnabarWall,
+
   blackPanel: blackPanel,
+  blackPanelLight: blackPanelLight,
   blackMetalWall: blackMetalWall,
+  blackCorrugatedMetalWall: blackCorrugatedMetalWall,
   fadedBlackPanel: fadedBlackPanel,
+  blackMetalDebris: blackMetalDebris,
+  blackMetalPlating: blackMetalPlating,
+  blackMetalTile1: blackMetalTile1,
+
+  abandonedMetalWall: abandonedMetalWall,
+  abandonedMetalVent: abandonedMetalVent,
+  damagedAbandonedMetalVent: damagedAbandonedMetalVent,
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
@@ -153,6 +194,10 @@ module.exports = {
   darkWire: darkWire,
   horizontalDarkWire: horizontalDarkWire,
   darkWireNode: darkWireNode,
+
+  metalTiles4Malis: metalTiles4Malis,
+  metalTiles6Malis: metalTiles6Malis,
+  metalTiles12Malis: metalTiles12Malis,
   
   dioriteBoulder: dioriteBoulder,
   diorite: diorite,

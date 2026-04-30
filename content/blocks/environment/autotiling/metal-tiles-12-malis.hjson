@@ -1,0 +1,9 @@
+name: Metal Tiles 12 Malis
+autotile: true
+drawEdgeIn: false
+drawEdgeOut: false
+autotileVariants: 4
+emitLight: true
+lightRadius: 30
+lightColor: d38fea30
+

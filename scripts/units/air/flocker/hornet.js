@@ -9,7 +9,7 @@ const minimissile = extend(MissileUnitType, "hornet-ship-missile-payload", {
   lifetime: 27,
   homingDelay: 2,
   rotateSpeed: 5,
-  outlineColor: Pal.darkOutline,
+  outlineColor: Color.valueOf("#565666"),
   engineColor: Color.valueOf("#bf92f9"),
   trailColor: Color.valueOf("#bf92f9"),
   trailLength: 5,
@@ -45,7 +45,7 @@ const missile = extend(MissileUnitType, "hornet-ship-missile", {
   speed: 2,
   lifetime: 54,
   rotateSpeed: 2,
-  outlineColor: Pal.darkOutline,
+  outlineColor: Color.valueOf("#565666"),
   engineColor: Color.valueOf("#bf92f9"),
   trailColor: Color.valueOf("#bf92f9"),
   trailLength: 14,
@@ -118,6 +118,6 @@ const missileLauncher = extend(Weapon, {
 FlockT3.weapons.add(missileLauncher);
 
 Blocks.multiplicativeReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-bee-ship"),
+  Vars.content.getByName(ContentType.unit, "md3-apis-ship"),
   Vars.content.getByName(ContentType.unit, "md3-hornet-ship")
 )

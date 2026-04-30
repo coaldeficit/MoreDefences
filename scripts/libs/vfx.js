@@ -142,8 +142,8 @@ const phaseForeshadowTrail = new Effect(30, e => {
 });
 const macrocybeSpores = new Effect(64, e => {
   Draw.color(Pal.spore)
-  Draw.z(111)
-  Angles.randLenVectors(e.id, 40, e.finpow() * 180, e.rotation, 7, (x, y) => {
+  //Draw.z(111)
+  Angles.randLenVectors(e.id, 40, e.finpow() * 200, e.rotation, 7, (x, y) => {
     Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
   });
 });
@@ -245,6 +245,97 @@ const brominatedstatus = new Effect(60, e => {
   Draw.color(Color.valueOf("#A33600"))
   Fill.tri(e.x+Math.cos(e.id)*e.fout()*3,e.y+Math.sin(e.id)*e.fout()*3,e.x+Math.cos(e.id+(2*Math.PI/3))*e.fout()*3,e.y+Math.sin(e.id+(2*Math.PI/3))*e.fout()*3,e.x+Math.cos(e.id+(4*Math.PI/3))*e.fout()*3,e.y+Math.sin(e.id+(4*Math.PI/3))*e.fout()*3)
 });
+const fusilladeTrailSili = new Effect(30, e => {
+  for(let i = 0; i < 2; i++){
+    Draw.color(i == 0 ? Pal.siliconAmmoBack : Pal.siliconAmmoFront);
+    let m = i == 0 ? 1 : 0.5;
+    let rot = e.rotation + 180;
+    let w = 15 * e.fout() * m;
+    Drawf.tri(e.x, e.y, w, 15 * m, rot);
+    Drawf.tri(e.x, e.y, w, 15 * m, rot + 180);
+  }
+  Drawf.light(e.x, e.y, 30, Color.white, 0.6 * e.fout());
+});
+const fusilladeShootSili = new Effect(24, e => {
+  Draw.color(Pal.siliconAmmoFront);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 10 * e.fout(), 30, 180+e.rotation + 140 * i);
+  }
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 7 * e.fout(), 20, 180+e.rotation + 100 * i);
+  }
+});
+const fusilladeHitSili = new Effect(18,200, e => {
+  Draw.color(Pal.siliconAmmoFront);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 10 * e.fout(), 30, e.rotation + 140 * i);
+  }
+});
+const fusilladeTrailPlast = new Effect(30, e => {
+  for(let i = 0; i < 2; i++){
+    Draw.color(i == 0 ? Pal.plastaniumBack : Pal.plastaniumFront);
+    let m = i == 0 ? 1 : 0.5;
+    let rot = e.rotation + 180;
+    let w = 15 * e.fout() * m;
+    Drawf.tri(e.x, e.y, w, 15 * m, rot);
+    Drawf.tri(e.x, e.y, w, 15 * m, rot + 180);
+  }
+  Drawf.light(e.x, e.y, 30, Color.white, 0.6 * e.fout());
+});
+const fusilladeShootPlast = new Effect(24, e => {
+  Draw.color(Pal.plastaniumFront);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 10 * e.fout(), 30, 180+e.rotation + 140 * i);
+  }
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 7 * e.fout(), 20, 180+e.rotation + 100 * i);
+  }
+});
+const fusilladeHitPlast = new Effect(18,200, e => {
+  Draw.color(Pal.plastaniumFront);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 10 * e.fout(), 30, e.rotation + 140 * i);
+  }
+});
+const fusilladeTrailSurge = new Effect(30, e => {
+  for(let i = 0; i < 2; i++){
+    Draw.color(i == 0 ? Pal.surgeAmmoBack : Pal.surgeAmmoFront);
+    let m = i == 0 ? 1 : 0.5;
+    let rot = e.rotation + 180;
+    let w = 20 * e.fout() * m;
+    Drawf.tri(e.x, e.y, w, 20 * m, rot);
+    Drawf.tri(e.x, e.y, w, 20 * m, rot + 180);
+  }
+  Drawf.light(e.x, e.y, 30, Color.white, 0.6 * e.fout());
+});
+const fusilladeShootSurge = new Effect(24, e => {
+  Draw.color(Pal.surgeAmmoFront);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 15 * e.fout(), 50, 180+e.rotation + 140 * i);
+  }
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 12 * e.fout(), 35, 180+e.rotation + 100 * i);
+  }
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 10 * e.fout(), 20, 180+e.rotation + 70 * i);
+  }
+});
+const fusilladeHitSurge = new Effect(18,200, e => {
+  Draw.color(Pal.surgeAmmoFront);
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 15 * e.fout(), 30, e.rotation + 110 * i);
+  }
+  for(let i=-1;i<=1;i+=2){
+    Drawf.tri(e.x, e.y, 20 * e.fout(), 40, e.rotation + 150 * i);
+  }
+});
+const scorchSpores = new Effect(34, e => {
+  Draw.color(Pal.spore)
+  //Draw.z(111)
+  Angles.randLenVectors(e.id, 10, e.finpow() * 60, e.rotation, 10, (x, y) => {
+    Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
+  });
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -273,4 +364,14 @@ module.exports = {
     bellaBlast: bellaBlast,
     bellaCharge: bellaCharge,
     brominatedstatus: brominatedstatus,
+    fusilladeTrailSili: fusilladeTrailSili,
+    fusilladeShootSili: fusilladeShootSili,
+    fusilladeHitSili: fusilladeHitSili,
+    fusilladeTrailPlast: fusilladeTrailPlast,
+    fusilladeShootPlast: fusilladeShootPlast,
+    fusilladeHitPlast: fusilladeHitPlast,
+    fusilladeTrailSurge: fusilladeTrailSurge,
+    fusilladeShootSurge: fusilladeShootSurge,
+    fusilladeHitSurge: fusilladeHitSurge,
+    scorchSpores: scorchSpores,
 };
