@@ -1,6 +1,6 @@
 name: "md3"
 displayName: "[#c7feff[]]More[#c7d0ff[]]Defences[[]]"
-subtitle: "The Vanadium Update"
+subtitle: "Doohickey Cruxporation"
 author: "[grey[]]CD[[]], [#FC8E6C[]]meowkitty[[]] and [#ff0059[]]7rodo[[]]"
 description:
   '''
@@ -17,7 +17,7 @@ description:
   
   [grey[]]Discord: https://discord.gg/9YHA3q8HHq[[]]
   '''
-version: "B3.2.0"
+version: "3.2.0"
 minGameVersion: "157.4"
 contentOrder: [
   md3-fieros
