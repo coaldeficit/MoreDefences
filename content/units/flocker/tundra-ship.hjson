@@ -16,7 +16,7 @@ targetAir: false
 faceTarget: false
 autoDropBombs: true
 targetFlags: [turret, battery, null]
-itemCapacity: 90
+itemCapacity: 0
 range: 140
 research: {
   parent: messenger-ship

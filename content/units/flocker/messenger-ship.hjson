@@ -13,7 +13,7 @@ engineOffset: 0
 #shootCone: 45
 lowAltitude: true
 targetFlags: [turret, battery, null]
-itemCapacity: 30
+itemCapacity: 20
 weapons: [
   {
   name: messenger-minigun
