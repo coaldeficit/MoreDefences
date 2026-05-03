@@ -48,6 +48,7 @@ let blackMetalTile1 = extend(Floor, "black-metal-tile1-1", {});
 let abandonedMetalWall = extend(StaticWall, "abandoned-metal-wall", {});
 let abandonedMetalVent = extend(StaticWall, "abandoned-metal-vent", {});
 let damagedAbandonedMetalVent = extend(StaticWall, "damaged-abandoned-metal-vent", {});
+let metalPlate = extend(Floor, "metal-plate", {});
 
 let pessegiteBoulder = extend(Prop, "pessegite-boulder", {});
 let pessegite = extend(Floor, "pessegite", {});
@@ -161,6 +162,7 @@ module.exports = {
   abandonedMetalWall: abandonedMetalWall,
   abandonedMetalVent: abandonedMetalVent,
   damagedAbandonedMetalVent: damagedAbandonedMetalVent,
+  metalPlate: metalPlate,
   
   pessegiteBoulder: pessegiteBoulder,
   pessegite: pessegite,
