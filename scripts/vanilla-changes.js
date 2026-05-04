@@ -80,18 +80,20 @@ Blocks.scorch.ammoTypes.put(
 
 Events.on(ClientLoadEvent, e => {
   // ITS STRICTLY PERSONAL
-  UnitTypes.flare.itemCapacity = 6
+  UnitTypes.flare.itemCapacity = 0
   UnitTypes.horizon.itemCapacity = 0 // already 0 in vanilla but just in case it gets increased
   UnitTypes.zenith.itemCapacity = 0
   UnitTypes.antumbra.itemCapacity = 0
   UnitTypes.eclipse.itemCapacity = 0
-  UnitTypes.poly.itemCapacity = 10
-  UnitTypes.mega.itemCapacity = 20
+  UnitTypes.poly.itemCapacity = 6
+  UnitTypes.mega.itemCapacity = 15
   UnitTypes.quad.itemCapacity = 0
-  UnitTypes.oct.itemCapacity = 100
-  UnitTypes.poly.crashDamageMultiplier = 0
-  UnitTypes.mega.crashDamageMultiplier *= 1/3
-  UnitTypes.oct.crashDamageMultiplier *= 1/4
+  UnitTypes.oct.itemCapacity = 60
+  for (let i=0;i<Vars.content.units().size;i++) {
+    if (Vars.content.units().get(i).shownPlanets.get(Planets.serpulo) != null || Vars.content.units().get(i).shownPlanets.get(Planets.erekir) != null) {
+      Vars.content.units().get(i).crashDamageMultiplier = 0
+    }
+  }
   
   // DEATH TO UMINER
   UnitTypes.pulsar.mineSpeed = 1
