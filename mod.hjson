@@ -17,7 +17,7 @@ description:
   
   [grey[]]Discord: https://discord.gg/9YHA3q8HHq[[]]
   '''
-version: "3.2.0"
+version: "B3.3.0"
 minGameVersion: "157.4"
 contentOrder: [
   md3-fieros
