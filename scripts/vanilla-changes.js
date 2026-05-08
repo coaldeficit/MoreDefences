@@ -94,6 +94,10 @@ Events.on(ClientLoadEvent, e => {
       Vars.content.units().get(i).crashDamageMultiplier = 0
     }
   }
+  UnitTypes.flare.createWreck = false
+  UnitTypes.mono.createWreck = false
+  UnitTypes.poly.createWreck = false
+  UnitTypes.mega.createWreck = false
   
   // DEATH TO UMINER
   UnitTypes.pulsar.mineSpeed = 1
