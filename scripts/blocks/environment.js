@@ -101,6 +101,12 @@ let limestoneBoulder = extend(Prop, "limestone-boulder", {});
 let limestone = extend(Floor, "limestone", {});
 let limestoneWall = extend(StaticWall, "limestone-wall", {});
 
+let scarletDuneWall = extend(StaticWall, "scarlet-dune-wall", {});
+let scarletPlating = extend(Floor, "scarlet-plating", {});
+let scarletRock = extend(Floor, "scarlet-rock", {});
+let scarletSand = extend(Floor, "scarlet-sand", {});
+
+
 let tholinBoulder = extend(Prop, "tholin-boulder", {});
 let tholin = extend(Floor, "tholin", {});
 let tholinWall = extend(StaticWall, "tholin-wall", {});
@@ -212,6 +218,11 @@ module.exports = {
   limestoneBoulder: limestoneBoulder,
   limestone: limestone,
   limestoneWall: limestoneWall,
+
+  scarletSand: scarletSand,
+  scarletRock: scarletRock,
+  scarletPlating: scarletPlating,
+  scarletDuneWall: scarletDuneWall,
   
   tholinBoulder: tholinBoulder,
   tholin: tholin,

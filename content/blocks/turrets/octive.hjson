@@ -1,0 +1,102 @@
+type: ItemTurret
+name: Octive
+description: Fires long range shots at ground enemies. temp
+
+// todo for you cd: add the specific damage group stuff, more general effects to
+// the projectiles maybe, and overall just cleaning up the implementation of this.
+// also i was thinking of having mercomide ammo for this and it having slightly 
+// different properties too idk.
+
+health: 250
+size: 3
+reload: 16
+range: 250
+inaccuracy: 5
+rotateSpeed: 2
+shootCone: 15
+shootSound: shootCyclone
+shoot: {
+  type: ShootMulti
+  source: {
+    type: ShootAlternate
+    spread: 11
+  }
+  shots: 1
+  dest: [{
+    type: ShootPattern
+  }]
+}
+maxAmmo: 6
+ammoPerShot: 1
+ammoTypes: {
+  cobalt: {
+    type: MultiBulletType
+    bullets: [
+      {
+        speed: 5
+        lifetime: 45
+        damage: 18
+        width: 10
+        height: 10
+        frontColor: fffac6
+        backColor: d8d97f
+        trailColor: b2b2ff
+        trailWidth: 1.5
+        trailLength: 6
+      }
+    ]
+  }
+}
+recoils: 2
+drawer: {
+  type: DrawTurret
+  basePrefix: md3-fieros-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -gun-l
+      recoilIndex: 1
+      y: 7
+      x: 5.25
+      progress: recoil
+      moveY: -1.75
+      layer: 54
+    }
+    {
+      type: RegionPart
+      suffix: -gun-r
+      recoilIndex: 0
+      y: 7
+      x: -5.25
+      progress: recoil
+      moveY: -1.75
+      layer: 54
+    }
+    {
+      type: RegionPart
+      suffix: -main
+      layer: 54
+    }
+  ]
+}
+requirements: [
+  cobalt/200
+  cinnabar-item/200
+  bulletum/110
+]
+category: turret
+research: {
+  parent: pelt
+  planet: md3-fieros
+  objectives: [
+    {
+      type: SectorComplete
+      preset: expansion
+    }
+  ]
+}
+researchCost: [
+  cobalt/500
+  cinnabar-item/500
+  bulletum/250
+]

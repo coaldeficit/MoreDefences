@@ -1,0 +1,4 @@
+name: Scarlet Sand
+variants: 3
+itemDrop: sand
+playerUnmineable: true
