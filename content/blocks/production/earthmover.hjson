@@ -1,0 +1,27 @@
+type: Drill
+name: Earthmover
+description: A specialized mining block that can only excavate Sand and Scrap, but does it very efficiently.
+health: 430
+size: 3
+tier: 0
+itemCapacity: 25
+updateEffect: pulverizeMedium
+drillEffect: mineBig
+drillTime: 139
+consumes: {
+  power: 1.6
+  liquid: {
+    liquid: water
+    amount: 0.14
+    optional: true
+    booster: true
+  }
+}
+requirements: [
+  scrap/45
+  copper/90
+  silicon/80
+  titanium/35
+]
+category: production
+research: laser-drill
