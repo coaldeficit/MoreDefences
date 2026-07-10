@@ -6,8 +6,10 @@ size: 3
 tier: 0
 itemCapacity: 25
 updateEffect: pulverizeMedium
+updateEffectChance: 0.05
 drillEffect: mineBig
 drillTime: 139
+rotateSpeed: 6
 consumes: {
   power: 1.6
   liquid: {
