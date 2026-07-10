@@ -17,6 +17,7 @@ itemCapacity: 0
 createWreck: false
 autoDropBombs: true
 alwaysShootWhenMoving: true
+hitSize: 8
 weapons: [{
   name: flocker-weapon
   top: true

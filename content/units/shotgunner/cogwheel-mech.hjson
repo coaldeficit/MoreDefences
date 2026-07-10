@@ -13,6 +13,7 @@ stances: [pursuetarget]
 playerControllable: false
 logicControllable: false
 useUnitCap: false
+hitSize: 12
 weapons: [{
   name: cogwheel-weapon
   top: true

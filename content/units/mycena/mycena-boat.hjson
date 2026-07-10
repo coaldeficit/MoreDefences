@@ -6,7 +6,7 @@ speed: 1.25
 drag: 0.12
 accel: 0.45
 health: 220
-hitSize: 10
+hitSize: 12
 rotateSpeed: 8
 faceTarget: false
 waveTrailX: 3

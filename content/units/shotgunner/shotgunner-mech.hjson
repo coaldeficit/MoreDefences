@@ -3,6 +3,7 @@ description: Fires a burst of bullets at enemy targets.
 flying: false
 speed: 0.65
 health: 150
+hitSize: 9
 armor: 2
 stepSound: walkerStepTiny
 

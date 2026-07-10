@@ -3,7 +3,7 @@ description: Fires medium-range explosive shells at ground enemy targets.
 flying: false
 speed: 0.4
 health: 500
-hitSize: 9
+hitSize: 12
 targetAir: false
 faceTarget: false
 stepSound: walkerStepTiny
