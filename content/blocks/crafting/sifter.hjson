@@ -11,7 +11,7 @@ updateEffect: smeltsmoke
 consumes: {
   items: {
     items: [
-      sand/15
+      sand/17
     ]
   }
 }
