@@ -18,7 +18,7 @@ description:
   [grey[]]Discord: https://discord.gg/9YHA3q8HHq[[]]
   '''
 version: "B3.3.0"
-minGameVersion: "157.4"
+minGameVersion: "159.3"
 contentOrder: [
   md3-fieros
   reentry
