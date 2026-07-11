@@ -3,7 +3,7 @@ description: "temp"
 flying: false
 health: 12000
 armor: 2
-hitSize: 30
+hitSize: 20
 range: 380
 rotateSpeed: 4
 targetAir: true
@@ -11,7 +11,7 @@ speed: 1.2
 outlineColor: 1c1b22
 mechLegColor: 1c1b22
 details: "temp."
-//hidden: true
+hidden: true
 
 // legs
 legSpeed: 0.1
