@@ -336,6 +336,29 @@ const scorchSpores = new Effect(34, e => {
     Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
   });
 });
+const redExplosion = new Effect(25, e => {
+  Draw.color(Color.valueOf("#FF8E6C"));
+
+  e.scaled(6, i=> {
+    Lines.stroke(3 * i.fout());
+    Lines.circle(e.x, e.y, 3 + i.fin() * 80);
+  });
+
+  Draw.color(Color.gray);
+
+  Angles.randLenVectors(e.id, 9, 2 + 70 * e.finpow(), (x, y) => {
+    Fill.circle(e.x + x, e.y + y, e.fout() * 4 + 0.5);
+  });
+
+  Draw.color(Color.valueOf("#C34954"));
+  Lines.stroke(e.fout());
+
+  Angles.randLenVectors(e.id + 1, 8, 1 + 60 * e.finpow(), (x, y) => {
+    Lines.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), 1 + e.fout() * 3);
+  });
+
+  Drawf.light(e.x, e.y, 90, Color.valueOf("#C34954"), 0.8 * e.fout());
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -374,4 +397,5 @@ module.exports = {
     fusilladeShootSurge: fusilladeShootSurge,
     fusilladeHitSurge: fusilladeHitSurge,
     scorchSpores: scorchSpores,
+    redExplosion: redExplosion,
 };

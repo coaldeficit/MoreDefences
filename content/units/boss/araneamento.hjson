@@ -1,0 +1,33 @@
+name: Araneamento
+description: "temp"
+flying: false
+health: 12000
+armor: 2
+hitSize: 30
+range: 380
+rotateSpeed: 4
+targetAir: true
+speed: 1.2
+outlineColor: 1c1b22
+mechLegColor: 1c1b22
+details: "temp."
+//hidden: true
+
+// legs
+legSpeed: 0.1
+stepShake: 0.3
+legCount: 7
+legLength: 40
+legExtension: -5
+legBaseOffset: 9
+legLengthScl: 0.9
+legPairOffset: 3
+rippleScale: 2
+legMoveSpace: 0.7
+allowLegStep: true
+hovering: true
+legSplashDamage: 32
+legSplashRange: 30
+
+shadowElevation: 1
+groundLayer: 75
