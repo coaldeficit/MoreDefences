@@ -72,11 +72,6 @@ drawer: {
       moveY: -1.75
       layer: 54
     }
-    {
-      type: RegionPart
-      suffix: -main
-      layer: 54
-    }
   ]
 }
 requirements: [
