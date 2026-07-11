@@ -12,7 +12,8 @@ Events.on(ClientLoadEvent, () => {
                   if (true == true) {
                     Vars.ui.mods.githubImportMod(
                       Vars.mods.locateMod("md3").getRepo(),
-                      Vars.mods.locateMod("md3").isJava()
+                      Vars.mods.locateMod("md3").isJava(),
+                      true
                     )
                     let shown = false;
                     Timer.schedule(() => {
