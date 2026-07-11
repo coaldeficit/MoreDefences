@@ -208,7 +208,7 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
   // mod compat shenanigans, listed by order of addition to this
     // if you're a mod dev and want compat with this, ping me on discord and i'll try to see what i can do
   // uaw
-  if (Vars.mods.getMod("uaw") != null) {
+  /*if (Vars.mods.getMod("uaw") != null) {
     groundenemies.push([UnitTypes.dagger,UnitTypes.mace,getModUnit("uaw","cavalier"),getModUnit("uaw","centurion"),getModUnit("uaw","caernarvon")])
     airenemies = airenemies.concat([
       [UnitTypes.flare,UnitTypes.horizon,getModUnit("uaw","aglovale"),getModUnit("uaw","bedivere"),getModUnit("uaw","calogrenant")],
@@ -218,14 +218,30 @@ function numberedWaves(sector,enemyBase,airOnly,navalWaves) {
       [UnitTypes.risso,UnitTypes.minke,getModUnit("uaw","arquebus"),getModUnit("uaw","carronade"),getModUnit("uaw","falconet")],
       [UnitTypes.risso,UnitTypes.minke,getModUnit("uaw","megaera"),getModUnit("uaw","alecto"),UnitTypes.omura],
     ])
-  }
+  }*/
   // project restoration
-  if (Vars.mods.getMod("restored-mind") != null) {
+  /*if (Vars.mods.getMod("restored-mind") != null) {
     groundenemies = groundenemies.concat([
       [getModUnit("restored-mind","dagger"),getModUnit("restored-mind","titan"),getModUnit("restored-mind","fortress"),getModUnit("restored-mind","chaos-array"),getModUnit("restored-mind","eradicator")],
       [getModUnit("restored-mind","crawler"),getModUnit("restored-mind","eruptor"),getModUnit("restored-mind","fortress"),getModUnit("restored-mind","chaos-array"),getModUnit("restored-mind","eradicator")],
     ])
     airenemies.push([getModUnit("restored-mind","wraith"),getModUnit("restored-mind","ghoul"),getModUnit("restored-mind","revenant"),getModUnit("restored-mind","lich"),getModUnit("restored-mind","reaper")])
+  }*/
+  // esocatalyst
+  if (Vars.mods.getMod("esocatalyst") != null && Vars.mods.getMod("esocatalyst").enabled()) {
+    navalenemies.push([getModUnit("esocatalyst","hexanchus"),getModUnit("esocatalyst","alopias"),getModUnit("esocatalyst","sphyrna"),getModUnit("esocatalyst","carcharodon"),getModUnit("esocatalyst","somniosus")])
+  }
+  // sapphirium
+  if (Vars.mods.getMod("sapphirium") != null && Vars.mods.getMod("sapphirium").enabled()) {
+    groundenemies = groundenemies.concat([
+      [getModUnit("sapphirium","degree"),getModUnit("sapphirium","zero"),getModUnit("sapphirium","snowblock"),getModUnit("sapphirium","snowstorm"),getModUnit("sapphirium","cold-blood")],
+      [getModUnit("sapphirium","hole"),getModUnit("sapphirium","emptiness"),getModUnit("sapphirium","shadow"),getModUnit("sapphirium","void"),getModUnit("sapphirium","nihil")],
+    ])
+    airenemies = airenemies.concat([
+      [getModUnit("sapphirium","beam"),getModUnit("sapphirium","glare"),getModUnit("sapphirium","luminary"),getModUnit("sapphirium","star"),getModUnit("sapphirium","prophecy")],
+      [getModUnit("sapphirium","sound"),getModUnit("sapphirium","tune"),getModUnit("sapphirium","vibration"),getModUnit("sapphirium","whisper"),getModUnit("sapphirium","shriek")],
+    ])
+    navalenemies.push([getModUnit("sapphirium","course"),getModUnit("sapphirium","parity"),getModUnit("sapphirium","edge"),getModUnit("sapphirium","whirlpool"),getModUnit("sapphirium","tornado")])
   }
   
   let picks = []
