@@ -69,7 +69,9 @@ SporeT4.weapons.add(
   mainGun
 );
 
-Blocks.exponentialReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-agaricus-boat"),
-  Vars.content.getByName(ContentType.unit, "md3-macrocybe-boat")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.exponentialReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-agaricus-boat"),
+    Vars.content.getByName(ContentType.unit, "md3-macrocybe-boat")
+  )
+})

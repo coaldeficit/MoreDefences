@@ -99,8 +99,9 @@ ShotT4.weapons.add(
   missileLauncher
 );
 
-Blocks.exponentialReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-slugger-mech"),
-  Vars.content.getByName(ContentType.unit, "md3-rocketeer-mech")
-)
-
+Events.on(ClientLoadEvent, e => {
+  Blocks.exponentialReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-slugger-mech"),
+    Vars.content.getByName(ContentType.unit, "md3-rocketeer-mech")
+  )
+})

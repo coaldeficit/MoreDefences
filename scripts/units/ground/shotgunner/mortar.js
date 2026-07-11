@@ -36,7 +36,9 @@ Events.on(WorldLoadEvent, e => {
   }
 })
 
-Blocks.additiveReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-shotgunner-mech"),
-  Vars.content.getByName(ContentType.unit, "md3-mortar-mech")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.additiveReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-shotgunner-mech"),
+    Vars.content.getByName(ContentType.unit, "md3-mortar-mech")
+  )
+})

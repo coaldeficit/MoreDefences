@@ -253,7 +253,9 @@ FlockT5.weapons.add(
   underdriveWeapon
 );
 
-Blocks.tetrativeReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-messenger-ship"),
-  Vars.content.getByName(ContentType.unit, "md3-tundra-ship")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.tetrativeReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-messenger-ship"),
+    Vars.content.getByName(ContentType.unit, "md3-tundra-ship")
+  )
+})

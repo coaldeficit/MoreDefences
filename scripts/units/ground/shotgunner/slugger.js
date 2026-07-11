@@ -16,7 +16,9 @@ let suppress = extend(SuppressionFieldAbility, {
 })
 ShotT3.abilities.add(suppress)
 
-Blocks.multiplicativeReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-mortar-mech"),
-  Vars.content.getByName(ContentType.unit, "md3-slugger-mech")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.multiplicativeReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-mortar-mech"),
+    Vars.content.getByName(ContentType.unit, "md3-slugger-mech")
+  )
+})
