@@ -153,7 +153,9 @@ SporeT5.weapons.add(
   bladeGunB,
 );
 
-Blocks.tetrativeReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-macrocybe-boat"),
-  Vars.content.getByName(ContentType.unit, "md3-armillaria-boat")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.tetrativeReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-macrocybe-boat"),
+    Vars.content.getByName(ContentType.unit, "md3-armillaria-boat")
+  )
+})

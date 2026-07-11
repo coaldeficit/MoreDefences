@@ -90,7 +90,9 @@ ShotT5.weapons.add(
   missileLauncher,
 );
 
-Blocks.tetrativeReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-rocketeer-mech"),
-  Vars.content.getByName(ContentType.unit, "md3-blitz-mech")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.tetrativeReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-rocketeer-mech"),
+    Vars.content.getByName(ContentType.unit, "md3-blitz-mech")
+  )
+})

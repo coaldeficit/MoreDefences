@@ -128,7 +128,9 @@ SporeT2.weapons.add(
   clumpLauncher
 );
 
-Blocks.additiveReconstructor.addUpgrade(
-  Vars.content.getByName(ContentType.unit, "md3-mycena-boat"),
-  Vars.content.getByName(ContentType.unit, "md3-panaeolus-boat")
-)
+Events.on(ClientLoadEvent, e => {
+  Blocks.additiveReconstructor.addUpgrade(
+    Vars.content.getByName(ContentType.unit, "md3-mycena-boat"),
+    Vars.content.getByName(ContentType.unit, "md3-panaeolus-boat")
+  )
+})
