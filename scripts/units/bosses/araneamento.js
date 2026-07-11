@@ -24,14 +24,13 @@ const laserGun = extend(Weapon, {
   })),
   bullet: bulLib.makeBullet({
     type: LaserBulletType,
-    damage: 35,
+    damage: 55,
     recoil: 0,
     sideAngle: 30,
     sideWidth: 1,
     sideLength: 45,
 	length: 120,
     pierceBuilding: true,
-    pierceCap: 4,
 	lifetime: 64,
 	colors: [Color.valueOf("#C3495466"),Color.valueOf("#C34954"),Color.white]
   }),
