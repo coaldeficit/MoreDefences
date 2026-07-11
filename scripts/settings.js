@@ -117,7 +117,8 @@ Events.on(ClientLoadEvent, () => {
       function reinstall() {
         if (canReinstall) {
           canReinstall = false
-          Reflect.invoke(Vars.ui.mods,"githubImportBranch",["beta",Vars.mods.locateMod("md3").getRepo(),null], java.lang.String,java.lang.String,java.lang.String)
+          Vars.ui.mods.githubImportBranch('beta',Vars.mods.locateMod("md3").getRepo(),null,true)
+          //Reflect.invoke(Vars.ui.mods,"githubImportBranch",["beta",Vars.mods.locateMod("md3").getRepo(),null], java.lang.String,java.lang.String,java.lang.String)
           getNextDisobedienceText()
           let shown = false;
           Timer.schedule(() => {
