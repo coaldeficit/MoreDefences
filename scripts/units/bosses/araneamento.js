@@ -59,8 +59,8 @@ const mortar = extend(Weapon, {
   bullet: bulLib.makeBullet({
     type: ArtilleryBulletType,
     speed: 2,
-    splashDamage: 360,
-    splashDamageRadius: 48,
+    splashDamage: 1800,
+    splashDamageRadius: 56,
     hittable: false,
     lifetime: 145,
 	drag: 0.02,
@@ -75,8 +75,8 @@ const mortar = extend(Weapon, {
     fragBullet: bulLib.makeBullet({
       type: ArtilleryBulletType,
       speed: 2,
-      splashDamage: 80,
-      splashDamageRadius: 38,
+      splashDamage: 400,
+      splashDamageRadius: 46,
       hittable: false,
       width: 19,
       lifetime: 70,
