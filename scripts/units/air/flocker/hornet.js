@@ -122,4 +122,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-apis-ship"),
     Vars.content.getByName(ContentType.unit, "md3-hornet-ship")
   )
+  Blocks.multiplicativeReconstructor.initCapacities()
 })

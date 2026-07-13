@@ -74,4 +74,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-agaricus-boat"),
     Vars.content.getByName(ContentType.unit, "md3-macrocybe-boat")
   )
+  Blocks.exponentialReconstructor.initCapacities()
 })

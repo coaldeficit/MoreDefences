@@ -133,4 +133,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-mycena-boat"),
     Vars.content.getByName(ContentType.unit, "md3-panaeolus-boat")
   )
+  Blocks.additiveReconstructor.initCapacities()
 })

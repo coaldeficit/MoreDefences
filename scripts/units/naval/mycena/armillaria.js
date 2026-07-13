@@ -158,4 +158,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-macrocybe-boat"),
     Vars.content.getByName(ContentType.unit, "md3-armillaria-boat")
   )
+  Blocks.tetrativeReconstructor.initCapacities()
 })

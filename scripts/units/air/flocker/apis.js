@@ -120,4 +120,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-flocker-ship"),
     Vars.content.getByName(ContentType.unit, "md3-apis-ship")
   )
+  Blocks.additiveReconstructor.initCapacities()
 })

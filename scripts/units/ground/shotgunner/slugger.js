@@ -21,4 +21,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-mortar-mech"),
     Vars.content.getByName(ContentType.unit, "md3-slugger-mech")
   )
+  Blocks.multiplicativeReconstructor.initCapacities()
 })

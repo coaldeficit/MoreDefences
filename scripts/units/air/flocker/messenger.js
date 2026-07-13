@@ -6,4 +6,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-hornet-ship"),
     Vars.content.getByName(ContentType.unit, "md3-messenger-ship")
   )
+  Blocks.exponentialReconstructor.initCapacities()
 })

@@ -258,4 +258,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-messenger-ship"),
     Vars.content.getByName(ContentType.unit, "md3-tundra-ship")
   )
+  Blocks.tetrativeReconstructor.initCapacities()
 })
