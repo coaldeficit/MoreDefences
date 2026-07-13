@@ -16,11 +16,19 @@ body:
     validations:
       required: true
   - type: input
+    id: modversion
+    attributes:
+      label: Mod Version
+      description: The mod version as listed above the mod description in the mod list. NOT THE GAME VERSION.
+      placeholder: LATEST IS NOT A VERSION, I NEED THE EXACT VERSION NUMBER OF THE MOD.
+    validations:
+      required: true
+  - type: input
     id: build
     attributes:
-      label: Version
-      description: The mod version as listed above the mod description in the mod menu.
-      placeholder: LATEST IS NOT A VERSION, I NEED THE EXACT VERSION NUMBER OF THE MOD.
+      label: Game Version
+      description: "The game version as listed at the top of the title screen below the \"MINDUSTRY\" text. NOT THE MOD VERSION."
+      placeholder: LATEST IS NOT A VERSION, I NEED THE EXACT VERSION NUMBER OF THE GAME.
     validations:
       required: true
   - type: textarea
