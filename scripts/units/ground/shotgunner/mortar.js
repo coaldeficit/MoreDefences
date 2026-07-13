@@ -41,4 +41,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-shotgunner-mech"),
     Vars.content.getByName(ContentType.unit, "md3-mortar-mech")
   )
+  Blocks.additiveReconstructor.initCapacities()
 })

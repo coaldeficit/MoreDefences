@@ -10,4 +10,5 @@ SporeT1.abilities.add(heal);
 
 Events.on(ClientLoadEvent, e => {
   Blocks.navalFactory.plans.add(new UnitFactory.UnitPlan(SporeT1, 60 * 50, ItemStack.with(Items.silicon, 30, Items.sporePod, 20, Items.graphite, 25)));
+  Blocks.navalFactory.initCapacities()
 })

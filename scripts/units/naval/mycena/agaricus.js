@@ -13,4 +13,5 @@ Events.on(ClientLoadEvent, e => {
     Vars.content.getByName(ContentType.unit, "md3-panaeolus-boat"),
     Vars.content.getByName(ContentType.unit, "md3-agaricus-boat")
   )
+  Blocks.multiplicativeReconstructor.initCapacities()
 })
