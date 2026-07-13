@@ -105,6 +105,7 @@ let scarletDuneWall = extend(StaticWall, "scarlet-dune-wall", {});
 let scarletPlating = extend(Floor, "scarlet-plating", {});
 let scarletRock = extend(Floor, "scarlet-rock", {});
 let scarletSand = extend(Floor, "scarlet-sand", {});
+let scarletSandWater = extend(Floor, "scarlet-sand-water", {});
 
 
 let tholinBoulder = extend(Prop, "tholin-boulder", {});
@@ -220,6 +221,7 @@ module.exports = {
   limestoneWall: limestoneWall,
 
   scarletSand: scarletSand,
+  scarletSandWater: scarletSandWater,
   scarletRock: scarletRock,
   scarletPlating: scarletPlating,
   scarletDuneWall: scarletDuneWall,
