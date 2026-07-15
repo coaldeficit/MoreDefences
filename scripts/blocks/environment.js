@@ -107,6 +107,8 @@ let scarletRock = extend(Floor, "scarlet-rock", {});
 let scarletSand = extend(Floor, "scarlet-sand", {});
 let scarletSandWater = extend(Floor, "scarlet-sand-water", {});
 
+let pearlSand = extend(Floor, "pearl-sand", {});
+let pearlSandWall = extend(Floor, "pearl-sand-wall", {});
 
 let tholinBoulder = extend(Prop, "tholin-boulder", {});
 let tholin = extend(Floor, "tholin", {});
@@ -225,6 +227,9 @@ module.exports = {
   scarletRock: scarletRock,
   scarletPlating: scarletPlating,
   scarletDuneWall: scarletDuneWall,
+
+  pearlSand: pearlSand,
+  pearlSandWall: pearlSandWall,
   
   tholinBoulder: tholinBoulder,
   tholin: tholin,
