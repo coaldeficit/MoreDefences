@@ -1,2 +1,4 @@
 name: Scarlet Rock
 variants: 3
+wall: scarlet-sand-wall
+decoration: scarlet-sand-boulder
