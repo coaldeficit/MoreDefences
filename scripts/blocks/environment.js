@@ -22,7 +22,6 @@ let sandyLithiment = extend(Floor, "sandy-lithiment", {});
 let lithilizedNiebieskite = extend(Floor, "lithilized-niebieskite", {});
 let lithimentWall = extend(StaticWall, "lithiment-wall", {});
 
-
 let mercuricBoulder = extend(Prop, "mercuric-boulder", {});
 let mercuricRock = extend(Floor, "mercuric-rock", {});
 let mercuricWall = extend(StaticWall, "mercuric-wall", {});
@@ -79,15 +78,7 @@ let cobaltOre = extend(OreBlock, "ore-cobalt", {});
 let lithiumOre = extend(OreBlock, "ore-lithium", {});
 let bromineOre = extend(OreBlock, "ore-bromine", {});
 
-// misc
-
-let darkWire = extend(OverlayFloor, "dark-wire", {});
-let horizontalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
-let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
-
-let metalTiles4Malis = extend(Floor, "metal-tiles-4-malis", {});
-let metalTiles6Malis = extend(Floor, "metal-tiles-6-malis", {});
-let metalTiles12Malis = extend(Floor, "metal-tiles-12-malis", {});
+// serpulo
 
 let dioriteBoulder = extend(Prop, "diorite-boulder", {});
 let diorite = extend(Floor, "diorite", {});
@@ -109,6 +100,16 @@ let scarletDuneWall = extend(StaticWall, "scarlet-dune-wall", {});
 
 let pearlSand = extend(Floor, "pearl-sand", {});
 let pearlSandWall = extend(StaticWall, "pearl-sand-wall", {});
+
+// misc
+
+let darkWire = extend(OverlayFloor, "dark-wire", {});
+let horizontalDarkWire = extend(OverlayFloor, "dark-wire-h", {});
+let darkWireNode = extend(OverlayFloor, "dark-wire-node", {});
+
+let metalTiles4Malis = extend(Floor, "metal-tiles-4-malis", {});
+let metalTiles6Malis = extend(Floor, "metal-tiles-6-malis", {});
+let metalTiles12Malis = extend(Floor, "metal-tiles-12-malis", {});
 
 let tholinBoulder = extend(Prop, "tholin-boulder", {});
 let tholin = extend(Floor, "tholin", {});
@@ -200,15 +201,7 @@ module.exports = {
   lithiumOre: lithiumOre,
   bromineOre: bromineOre,
   
-  // misc
-
-  darkWire: darkWire,
-  horizontalDarkWire: horizontalDarkWire,
-  darkWireNode: darkWireNode,
-
-  metalTiles4Malis: metalTiles4Malis,
-  metalTiles6Malis: metalTiles6Malis,
-  metalTiles12Malis: metalTiles12Malis,
+  // serpulo
   
   dioriteBoulder: dioriteBoulder,
   diorite: diorite,
@@ -230,6 +223,16 @@ module.exports = {
 
   pearlSand: pearlSand,
   pearlSandWall: pearlSandWall,
+  
+  // misc
+
+  darkWire: darkWire,
+  horizontalDarkWire: horizontalDarkWire,
+  darkWireNode: darkWireNode,
+
+  metalTiles4Malis: metalTiles4Malis,
+  metalTiles6Malis: metalTiles6Malis,
+  metalTiles12Malis: metalTiles12Malis,
   
   tholinBoulder: tholinBoulder,
   tholin: tholin,
