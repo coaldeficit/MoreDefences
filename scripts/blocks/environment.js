@@ -119,6 +119,13 @@ let tholinWhite = extend(Floor, "tholin-white", {});
 let tholinWhiteWall = extend(StaticWall, "tholin-white-wall", {});
 
 Events.on(ClientLoadEvent, e => {
+  // serpulo
+  
+  Color.valueOf(scarletPlating.mapColor,"#a85031")
+  Color.valueOf(pearlSand.mapColor,"#A1B2B7")
+  
+  // misc
+  
   Color.valueOf(darkWire.mapColor,"#52292c")
   Color.valueOf(horizontalDarkWire.mapColor,"#52292c")
   Color.valueOf(darkWireNode.mapColor,"#52292c")
