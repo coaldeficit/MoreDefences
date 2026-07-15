@@ -92,13 +92,24 @@ let limestoneBoulder = extend(Prop, "limestone-boulder", {});
 let limestone = extend(Floor, "limestone", {});
 let limestoneWall = extend(StaticWall, "limestone-wall", {});
 
+let scarletSandBoulder = extend(Prop, "scarlet-sand-boulder", {});
 let scarletSand = extend(Floor, "scarlet-sand", {});
+scarletSand.attributes.set(Attribute.oil, 1.2);
+scarletSand.attributes.set(Attribute.water, -0.25);
 let scarletSandWater = extend(Floor, "scarlet-sand-water", {});
 let scarletRock = extend(Floor, "scarlet-rock", {});
+scarletRock.attributes.set(Attribute.water, -0.3);
 let scarletPlating = extend(Floor, "scarlet-plating", {});
-let scarletDuneWall = extend(StaticWall, "scarlet-dune-wall", {});
+scarletPlating.attributes.set(Attribute.oil, 1.75);
+scarletPlating.attributes.set(Attribute.water, -0.5);
+let scarletSandWall = extend(StaticWall, "scarlet-sand-wall", {});
 
+let pearlSandBoulder = extend(Prop, "pearl-sand-boulder", {});
 let pearlSand = extend(Floor, "pearl-sand", {});
+pearlSand.attributes.set(Attribute.oil, 0.5);
+let pearlSandWater = extend(Floor, "pearl-sand-water", {});
+let pearlSandTaintedWater = extend(Floor, "pearl-sand-tainted-water", {});
+pearlSandTaintedWater.attributes.set(Attribute.spores, 0.15);
 let pearlSandWall = extend(StaticWall, "pearl-sand-wall", {});
 
 // misc
@@ -222,13 +233,17 @@ module.exports = {
   limestone: limestone,
   limestoneWall: limestoneWall,
 
+  scarletSandBoulder: scarletSandBoulder,
   scarletSand: scarletSand,
   scarletSandWater: scarletSandWater,
   scarletRock: scarletRock,
   scarletPlating: scarletPlating,
-  scarletDuneWall: scarletDuneWall,
+  scarletSandWall: scarletSandWall,
 
+  pearlSandBoulder: pearlSandBoulder,
   pearlSand: pearlSand,
+  pearlSandWater: pearlSandWater,
+  pearlSandTaintedWater: pearlSandTaintedWater,
   pearlSandWall: pearlSandWall,
   
   // misc

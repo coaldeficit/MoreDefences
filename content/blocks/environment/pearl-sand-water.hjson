@@ -1,4 +1,4 @@
-name: Scarlet Sand Water
+name: Pearl Sand Water
 cacheLayer: water
 variants: 3
 albedo: 0.9
@@ -8,4 +8,4 @@ supportsOverlay: true
 isLiquid: true
 liquidDrop: water
 speedMultiplier: 0.5
-wall: scarlet-sand-wall
+wall: pearl-sand-wall

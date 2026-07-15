@@ -2,3 +2,5 @@ name: Pearl Sand
 variants: 3
 playerUnmineable: true
 itemDrop: sand
+wall: pearl-sand-wall
+decoration: pearl-sand-boulder

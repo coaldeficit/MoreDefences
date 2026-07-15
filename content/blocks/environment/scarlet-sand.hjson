@@ -2,3 +2,5 @@ name: Scarlet Sand
 variants: 3
 itemDrop: sand
 playerUnmineable: true
+wall: scarlet-sand-wall
+decoration: scarlet-sand-boulder
