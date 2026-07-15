@@ -101,14 +101,14 @@ let limestoneBoulder = extend(Prop, "limestone-boulder", {});
 let limestone = extend(Floor, "limestone", {});
 let limestoneWall = extend(StaticWall, "limestone-wall", {});
 
-let scarletDuneWall = extend(StaticWall, "scarlet-dune-wall", {});
 let scarletPlating = extend(Floor, "scarlet-plating", {});
 let scarletRock = extend(Floor, "scarlet-rock", {});
 let scarletSand = extend(Floor, "scarlet-sand", {});
 let scarletSandWater = extend(Floor, "scarlet-sand-water", {});
+let scarletDuneWall = extend(StaticWall, "scarlet-dune-wall", {});
 
 let pearlSand = extend(Floor, "pearl-sand", {});
-let pearlSandWall = extend(Floor, "pearl-sand-wall", {});
+let pearlSandWall = extend(StaticWall, "pearl-sand-wall", {});
 
 let tholinBoulder = extend(Prop, "tholin-boulder", {});
 let tholin = extend(Floor, "tholin", {});
