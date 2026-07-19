@@ -2,6 +2,7 @@ description: "A large enemy defensive structure has been detected in this sector
 planet: erekir
 sector: 63
 difficulty: 8
+outline: false
 research: {
   parent: ravine
   objectives: [

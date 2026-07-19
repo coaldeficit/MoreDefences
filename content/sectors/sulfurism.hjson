@@ -3,6 +3,7 @@ planet: md3-fieros
 sector: 425
 difficulty: 2
 captureWave: 6
+outline: false
 research: {
   parent: expansion
   objectives: [

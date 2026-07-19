@@ -609,6 +609,7 @@ for (let i=0;i<mdHiddenSectors.length;i++) {
   sect.requireUnlock = false
   sect.captureWave = mdHiddenSectors[i][2]
   sect.difficulty = mdHiddenSectors[i][3]
+  sect.outline = false
   hiddenSectArray.push(sect)
 }
 let vanillaWaveChanges = [

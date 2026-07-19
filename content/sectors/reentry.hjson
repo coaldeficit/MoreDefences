@@ -3,6 +3,7 @@ planet: serpulo
 sector: 75
 difficulty: 5
 captureWave: 40
+outline: false
 research: {
   parent: ruinousShores
   objectives: [

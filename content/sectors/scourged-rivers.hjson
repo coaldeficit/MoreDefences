@@ -3,6 +3,7 @@ planet: serpulo
 sector: 112
 difficulty: 9
 captureWave: 36
+outline: false
 research: {
   parent: impact0078
   objectives: [
