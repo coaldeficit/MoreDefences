@@ -2,6 +2,7 @@ description: "A small, isolated valley in the middle of an island with low enemy
 planet: md3-fieros
 sector: 27
 difficulty: 1
+outline: false
 research: {
   parent: core-monoquark
 }

@@ -2,6 +2,7 @@ description: "A large spore-infested lake, surrounded by enemy fortifications.\n
 planet: serpulo
 sector: 74
 difficulty: 5
+outline: false
 research: {
   parent: reentry
   objectives: [

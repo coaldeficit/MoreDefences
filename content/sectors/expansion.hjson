@@ -2,6 +2,7 @@ description: "This sector contains deposits of [accent]Lithium[].\nDestroy the e
 planet: md3-fieros
 sector: 424
 difficulty: 1
+outline: false
 research: {
   parent: inception
   objectives: [

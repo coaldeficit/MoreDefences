@@ -2,6 +2,7 @@ description: "[gray][optional objective][]\nAn ancient junkyard, hiding an enemy
 planet: serpulo
 sector: 186
 difficulty: 8
+outline: false
 research: {
   parent: overgrowth
   objectives: [
