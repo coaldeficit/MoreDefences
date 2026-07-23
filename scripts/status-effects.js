@@ -92,6 +92,7 @@ let insulatedEffect = extend(StatusEffect, "insulated-status", {
     color: Pal.gray, // #454545
     permanent: true,
     description: 'Protects units affected by it from electricity and low temperature embrittlement.',
+    outline: false,
     update(unit,time){
       this.super$update(unit,time);
       let electricEffects = [StatusEffects.shocked, StatusEffects.electrified, StatusEffects.blasted]
@@ -178,7 +179,8 @@ let delayedEffect = extend(StatusEffect, "delayed-status", {
     healthMultiplier: 0.9,
     localizedName: 'Delayed',
     effect: vfx.delayedstatus,
-    color: Color.valueOf("#00ffff")
+    color: Color.valueOf("#00ffff"),
+    outline: false
 });
 
 let brominatedEffect = extend(StatusEffect, "brominated-status", {
@@ -190,7 +192,8 @@ let brominatedEffect = extend(StatusEffect, "brominated-status", {
     damage: 0.2,
     localizedName: 'Brominated',
     effect: vfx.brominatedstatus,
-    color: Color.valueOf("#A33600")
+    color: Color.valueOf("#A33600"),
+    outline: false
 });
 
 module.exports = {
