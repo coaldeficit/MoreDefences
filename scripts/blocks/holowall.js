@@ -4,18 +4,21 @@ const small = extend(AutoDoor, "holowall", {
     this.holoRegion = Core.atlas.find(this.name + "-hologram");
     this.previewRegion = Core.atlas.find(this.name + "-preview");
   },
-  
   icons(){
     return [
       this.previewRegion
     ];
   },
-  
   drawPlanRegion(plan, list){
     Draw.color(Vars.player.team().color)
     Draw.rect(this.holoRegion, plan.drawx(), plan.drawy());
     Draw.color(Color.valueOf("#FFFFFF"))
     Draw.rect(this.region, plan.drawx(), plan.drawy());
+  },
+  init(){
+    this.super$init()
+    this.drawDynamic = true
+    this.drawCached = false
   }
 });
 small.buildType = () => extend(AutoDoor.AutoDoorBuild, small, {
@@ -37,18 +40,21 @@ const large = extend(AutoDoor, "holowall-large", {
     this.holoRegion = Core.atlas.find(this.name + "-hologram");
     this.previewRegion = Core.atlas.find(this.name + "-preview");
   },
-  
   icons(){
     return [
       this.previewRegion
     ];
   },
-  
   drawPlanRegion(plan, list){
     Draw.color(Vars.player.team().color)
     Draw.rect(this.holoRegion, plan.drawx(), plan.drawy());
     Draw.color(Color.valueOf("#FFFFFF"))
     Draw.rect(this.region, plan.drawx(), plan.drawy());
+  },
+  init(){
+    this.super$init()
+    this.drawDynamic = true
+    this.drawCached = false
   }
 });
 large.buildType = () => extend(AutoDoor.AutoDoorBuild, large, {
