@@ -1,0 +1,18 @@
+name: "Core: Atom"
+description: Core of the base. Superbly armored. Stores enormous amounts of resources.
+details: "The fourth iteration, researched and created by SPOILERS.\nUses highly advanced resources to achieve a design surpassing the formerly final third iteration.\n\nFurther improvement unlikely, requires materials not present on Serpulo."
+size: 6
+unitType: gamma
+health: 12500
+itemCapacity: 16000
+unitCapModifier: 32
+requirements: [
+  copper/12000
+  lead/12000
+  thorium/9000
+  surge-alloy/5000
+  phase-fabric/5000
+  vanadiphor/6000
+]
+category: effect
+research: core-nucleus
