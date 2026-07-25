@@ -3,12 +3,13 @@ description: Shoots very powerful barrages of homing projectiles at enemies. Fir
 health: 20000
 size: 5
 reload: 120
-range: 182
+range: 272
 inaccuracy: 0
 rotateSpeed: 1.5
 hasLiquids: true
 hasPower: true
-liquidCapacity: 60
+liquidCapacity: 120
+absorbLasers: true
 shoot: {
   type: ShootMulti
   source: {
@@ -18,11 +19,11 @@ shoot: {
   dest: [{
     type: ShootSpread
     shots: 2
-    spread: 70
+    spread: 60
   }, {
     type: ShootSpread
     shots: 2
-    spread: 50
+    spread: 45
     firstShotDelay: 20
   }, {
     type: ShootBarrel
@@ -72,13 +73,13 @@ consumes: {
 }
 coolantMultiplier: 0.5
 consumeAmmoOnce: false
-ammoPerShot: 2
-maxAmmo: 18
+ammoPerShot: 4
+maxAmmo: 24
 ammoTypes: {
   phase-fabric: {
     speed: 3.5
     damage: 440
-    lifetime: 52
+    lifetime: 78
     pierce: true
     width: 12
     height: 12
@@ -91,13 +92,14 @@ ammoTypes: {
     shrinkX: 0
     sprite: circle-bullet
     ammoMultiplier: 2
+    buildingDamageMultiplier: 0.3
   },
   vanadiphor: {
     speed: 3.5
     damage: 700
     pierce: true
-    pierceCap: 2
-    lifetime: 52
+    pierceCap: 3
+    lifetime: 78
     width: 12
     height: 12
     weaveMag: 3
@@ -109,6 +111,7 @@ ammoTypes: {
     shrinkX: 0
     sprite: circle-bullet
     ammoMultiplier: 1
+    buildingDamageMultiplier: 0.25
   },
 }
 requirements: [

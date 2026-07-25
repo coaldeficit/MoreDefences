@@ -2,7 +2,7 @@ name: Rocketeer
 flying: false
 description: Slowly fires long-range homing missiles and lobs groups of Cogwheels past enemy defences.
 speed: 0.3
-health: 5300
+health: 7800
 armor: 5
 hitSize: 26
 rotateSpeed: 2

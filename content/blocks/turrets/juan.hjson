@@ -3,7 +3,7 @@ description: Detonates a huge amount of explosives and funnels the resulting exp
 health: 4000
 size: 5
 reload: 900
-range: 160
+range: 240
 inaccuracy: 0
 rotateSpeed: 1.5
 hasLiquids: true
@@ -66,8 +66,8 @@ consumes: {
   }
 }
 coolantMultiplier: 0.25
-ammoPerShot: 40
-maxAmmo: 80
+ammoPerShot: 45
+maxAmmo: 90
 requirements: [
   copper/1800
   graphite/900
