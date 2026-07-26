@@ -2,7 +2,7 @@ name: "Core: Atom"
 description: Core of the base. Superbly armored. Stores enormous amounts of resources.
 details: "The fourth iteration, researched and created by SPOILERS.\nUses highly advanced resources to achieve a design surpassing the formerly final third iteration.\n\nFurther improvement unlikely, requires materials not present on Serpulo."
 size: 6
-unitType: gamma
+unitType: delta-ship
 health: 12500
 itemCapacity: 16000
 unitCapModifier: 32

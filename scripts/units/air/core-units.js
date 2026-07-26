@@ -1,17 +1,10 @@
+const sepuloT4 = extend(UnitType, "delta-ship", {});
+sepuloT4.constructor = () => extend(UnitEntity, {});
+sepuloT4.controller = (u) => u.team.isAI() ? new BuilderAI(true,400) : new CommandAI();
+
 const fierosT1 = extend(UnitType, "protium-ship", {});
 fierosT1.constructor = () => extend(PayloadUnit, {});
-fierosT1.defaultController = () => extend(BuilderAI, {});
-/*
-let fierosT1deco = extend(DrawPart, {
-  draw(params) {
-	let rotate = params.rotation * Math.PI / 180
-    Draw.z(110)
-    Draw.color(unit.team.color) // fuck you
-    Fill.circle(params.x-(Math.cos(Math.PI+rotate)*-6.5), params.y-(Math.sin(Math.PI+rotate)*-6.5), 2.5+(Math.sin(Time.globalTime/15)/2));
-  }
-})
-fierosT1.parts.add(fierosT1deco)
-*/
+fierosT1.controller = (u) => new BuilderAI(true,400);
 let fierosT1deco = extend(SuppressionFieldAbility, { // why must i do this shit
   display: false,
   draw(unit) {

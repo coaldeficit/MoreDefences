@@ -1,0 +1,136 @@
+name: Delta
+description: Defends the Atom core from enemies. Builds structures.
+speed: 3.75
+flying: true
+health: 320
+engineOffset: 9
+engineSize: 3
+drag: 0.07
+accel: 0.12
+hitSize: 14
+useUnitCap: false
+isEnemy: false
+mineSpeed: 8.5
+mineTier: 2
+buildSpeed: 1.25
+targetBuildingsMobile: false
+rotateSpeed: 21
+itemCapacity: 90
+databaseTag: unit-core
+strafePenalty: 0.9
+weapons: [{
+  name: md-small-mount-weapon
+  top: false
+  rotate: false
+  y: 2
+  x: 1
+  mirror: true
+  reload: 15
+  shootSound: shootAlpha
+  inaccuracy: 4
+  velocityRnd: 0.1
+  shoot: {
+    type: ShootSpread
+    shots: 4
+    spread: 0.5
+    shotDelay: 1
+  }
+  bullet: {
+    type: LaserBoltBulletType
+    speed: 3.5
+    damage: 10
+    scaleKeepVelocity: true
+    width: 1.5
+    height: 5
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
+    trailWidth: 1.2
+    trailLength: 3.8
+    shootEffect: shootSmallColor
+    smokeEffect: hitLaserColor
+    frontColor: ffffff
+    backColor: ffd27e
+    trailColor: ffd27e
+    lightColor: ffd27e
+    hitColor: ffd27e
+    lifetime: 74
+    buildingDamageMultiplier: 0.01
+    homingPower: 0.08
+    homingRange: 100
+    homingDelay: 30
+  }
+},{
+  name: delta-ship-gun
+  top: false
+  rotate: true
+  y: 7
+  x: 6.75
+  mirror: true
+  reload: 23
+  shootSound: shootArc
+  inaccuracy: 0
+  shootCone: 361
+  rotateSpeed: 0
+  baseRotation: -15
+  bullet: {
+    type: LightningBulletType
+    damage: 11
+    lightningLength: 24
+    lightningLengthRand: 2
+    collidesAir: true
+    keepVelocity: false
+    shieldDamageMultiplier: 0
+    buildingDamageMultiplier: 0
+    lightningType: {
+      type: BulletType
+      speed: 0.0001
+      damage: 11
+      lifetime: 10
+      hitEffect: hitLancer
+      despawnEffect: none
+      status: shocked
+      hittable: false
+      lightColor: ffffff
+      collidesAir: true
+      shieldDamageMultiplier: 0
+      buildingDamageMultiplier: 0
+    }
+  }
+},{
+  name: delta-ship-gun
+  top: false
+  rotate: true
+  y: -1
+  x: 9
+  mirror: true
+  reload: 37
+  shootSound: shootArc
+  inaccuracy: 0
+  shootCone: 361
+  rotateSpeed: 0
+  baseRotation: -25
+  bullet: {
+    type: LightningBulletType
+    damage: 17
+    lightningLength: 24
+    lightningLengthRand: 2
+    collidesAir: true
+    keepVelocity: false
+    shieldDamageMultiplier: 0
+    buildingDamageMultiplier: 0
+    lightningType: {
+      type: BulletType
+      speed: 0.0001
+      damage: 11
+      lifetime: 10
+      hitEffect: hitLancer
+      despawnEffect: none
+      status: shocked
+      hittable: false
+      lightColor: ffffff
+      collidesAir: true
+      shieldDamageMultiplier: 0
+      buildingDamageMultiplier: 0
+    }
+  }
+}]
