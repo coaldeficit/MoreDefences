@@ -3,7 +3,7 @@ description: Core of the base. Superbly armored. Stores enormous amounts of reso
 details: "The fourth iteration, researched and created by SPOILERS.\nUses highly advanced resources to achieve a design surpassing the formerly final third iteration.\n\nFurther improvement unlikely, requires materials not present on Serpulo."
 size: 6
 unitType: delta-ship
-health: 12500
+health: 8000
 itemCapacity: 16000
 unitCapModifier: 32
 requirements: [

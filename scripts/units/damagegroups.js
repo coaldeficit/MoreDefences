@@ -1,4 +1,5 @@
-function getMDUnit(unit) {return Vars.content.getByName(ContentType.unit, "md3-" + unit)}
+const statsmd = require("md3/libs/stats")
+
 let groups = {
   basic: [], // t1s
   malis: [], // units introduced on sectors with malis
@@ -34,7 +35,6 @@ function addToGroups(groupList, unittype) {
     if (groups[groupList[i]] != null) groups[groupList[i]].push(unittype)
   }
 }
-let groupStatUnit = new Stat("md3-damgroupunit")
 function generateGroupStatUnit(groupList) {
   let string = "[accent]"
   for (let i = 0; i < groupList.length; i++) {
@@ -64,7 +64,7 @@ module.exports = {
   getGroup: getGroup,
   getAllGroups: getAllGroups,
   addToGroups: addToGroups,
-  groupStatUnit: groupStatUnit,
+  groupStatUnit: statsmd.damageGroupStat,
   generateGroupStatUnit: generateGroupStatUnit,
   generateGroupStatTurret: generateGroupStatTurret,
 };
