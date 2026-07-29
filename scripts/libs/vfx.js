@@ -216,14 +216,14 @@ const coilgunHitB = new Effect(18,200, e => {
 const juanBlast = new Effect(13, e => {
   Draw.color(Pal.lightOrange, Color.valueOf("FF795E"), e.fin());
   let w = 1 + 60 * e.fout();
-  Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*30*e.fout()), e.y+(Math.sin(e.rotation*(Math.PI/180))*30*e.fout()), w, 160 * e.fin(), e.rotation);
+  Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*30*e.fout()), e.y+(Math.sin(e.rotation*(Math.PI/180))*30*e.fout()), w, 240 * e.fin(), e.rotation);
   Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*30*e.fout()), e.y+(Math.sin(e.rotation*(Math.PI/180))*30*e.fout()), w, 40 * e.fout(), e.rotation + 180);
 });
 const juanSmoke = new Effect(300, e => {
-  Angles.randLenVectors(e.id, 40, e.finpow() * 320, e.rotation, 5, (x, y) => {
+  Angles.randLenVectors(e.id, 40, e.finpow() * 480, e.rotation, 5, (x, y) => {
     Draw.color(Color.gray);
     Draw.alpha((0.5 - Math.abs(e.fin() - 0.5)) * 2);
-    Fill.circle(e.x + x, e.y + y, e.fout() * 4.5 + 0.65);
+    Fill.circle(e.x + x, e.y + y, e.fout() * 5 + 0.65);
   });
 });
 const bellaBlast = new Effect(13, e => {

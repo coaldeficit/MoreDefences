@@ -3,7 +3,7 @@ description: Rapidly fires powerful railgun shots, but overheats easily if shoot
 health: 1300
 size: 3
 reload: 20
-range: 240
+range: 266
 inaccuracy: 8
 rotateSpeed: 3.25
 cooldownTime: 200

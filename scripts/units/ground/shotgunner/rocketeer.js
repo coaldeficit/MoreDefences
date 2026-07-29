@@ -11,7 +11,7 @@ minion.constructor = () => extend(MechUnit, {});
 
 const unitBullet = extend(BasicBulletType, {
   speed: 4,
-  lifetime: 60,
+  lifetime: 34,
   damage: 190,
   shootEffect: Fx.shootBig,
   smokeEffect: Fx.shootBigSmoke2,
@@ -33,26 +33,26 @@ const unitLauncher = extend(Weapon, {
   y: 0,
   x: 0,
   top: true,
-  inaccuracy: 2,
+  inaccuracy: 3,
   reload: 180,
   shootSound: Sounds.shootArtillery,
   shootCone: 180,
-  shoot: new ShootSpread(2, 6),
+  shoot: new ShootSpread(2, 12),
   velocityRnd: 0.2,
   bullet: unitBullet,
 });
 
 const missile = extend(MissileUnitType, "rocketeer-mech-missile", {
   targetAir: false,
-  speed: 7.3,
+  speed: 5,
   maxRange: 6,
-  lifetime: 60 * 0.8,
+  lifetime: 60 * 0.78,
   outlineColor: Pal.darkOutline,
   engineColor: Color.valueOf("#FFA665"),
   trailColor: Color.valueOf("#FFA665"),
   trailLength: 7,
   engineLayer: Layer.effect,
-  health: 190,
+  health: 160,
   loopSoundVolume: 0.1
 });
 missile.constructor = () => extend(TimedKillUnit, {});
@@ -63,8 +63,8 @@ const missileExplosion = extend(Weapon, {
   shootOnDeath: true,
   bullet: bulLib.makeBullet({
     type: ExplosionBulletType,
-    splashDamage: 110,
-    splashDamageRadius: 25,
+    splashDamage: 222,
+    splashDamageRadius: 26,
     shootEffect: Fx.massiveExplosion,
     collidesAir: false,
   }),

@@ -1,8 +1,8 @@
 name: Cogwheel
 description: A lightweight unit designed to be thrown over enemy defences, where it'll damage vital infrastructure and eventually detonate.
 flying: false
-speed: 0.65
-health: 520
+speed: 0.46
+health: 380
 mechSideSway: 0.4
 mechFrontSway: 0.1
 mechStride: 4
@@ -13,6 +13,7 @@ stances: [pursuetarget]
 playerControllable: false
 logicControllable: false
 useUnitCap: false
+hitSize: 12
 weapons: [{
   name: cogwheel-weapon
   top: true
@@ -26,18 +27,19 @@ weapons: [{
   rotationLimit: 0
   predictTarget: false
   shootCone: 361
+  shootSound: shootStell
   bullet: {	
-    speed: 8
-    damage: 27
-    lifetime: 13
-    width: 6
-    height: 7
+    speed: 4
+    damage: 20
+    lifetime: 12
+    width: 8
+    height: 10
   }
 }
 {
   name: cogwheel-weapon
   top: true
-  rotate: false
+  rotate: true
   y: -3
   x: -4.8
   baseRotation: 180
@@ -48,12 +50,13 @@ weapons: [{
   rotationLimit: 0
   predictTarget: false
   shootCone: 361
+  shootSound: shootStell
   bullet: {	
-    speed: 8
-    damage: 34
-    lifetime: 13
-    width: 6
-    height: 7
+    speed: 4
+    damage: 27
+    lifetime: 12
+    width: 8
+    height: 10
   }
 }
 {
@@ -74,7 +77,7 @@ weapons: [{
   display: false
   alwaysShooting: true
   shoot: {
-    firstShotDelay: 360
+    firstShotDelay: 254
   }
   bullet: {	
     speed: 0
@@ -84,8 +87,8 @@ weapons: [{
     height: 7
     killShooter: true
     instantDisappear: true
-    splashDamage: 45
-    splashDamageRadius: 32
+    splashDamage: 25
+    splashDamageRadius: 16
   }
 }]
 research: {

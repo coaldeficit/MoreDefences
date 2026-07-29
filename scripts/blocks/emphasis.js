@@ -1,4 +1,5 @@
 const blockcheck = require("md3/libs/blockcheck")
+const statsmd = require("md3/libs/stats")
 
 let emphasis = extend(ItemTurret, "emphasis", {
   setBars(){
@@ -15,7 +16,12 @@ let emphasis = extend(ItemTurret, "emphasis", {
     this.super$drawPlace(x,y,rotation,valid)
     Drawf.dashSquare(Pal.redderDust, x*8, y*8, 8*5)
     Drawf.dashSquare(Pal.redderDust, x*8, y*8, 8*11)
-  }
+  },
+  setStats() {
+	this.super$setStats()
+	this.stats.add(statsmd.healEffectiveness, StatValues.percentModifier(this.md3healEffectiveness))
+  },
+  md3healEffectiveness: 0.25
 });
 emphasis.buildType = () => extend(ItemTurret.ItemTurretBuild, emphasis, {
   update(){
@@ -39,5 +45,14 @@ emphasis.buildType = () => extend(ItemTurret.ItemTurretBuild, emphasis, {
     this.super$drawSelect()
     Drawf.dashSquare(Pal.redderDust, this.x, this.y, 8*5)
     Drawf.dashSquare(Pal.redderDust, this.x, this.y, 8*11)
+  },
+  heal(amount) {
+    if (amount == null) {
+      this.super$heal()
+    } else if (typeof amount == 'number') {
+      this.super$heal(amount*emphasis.md3healEffectiveness)
+    } else {
+      print("wtf are you doing? - emphasis heal("+amount+"), thats meant to be a number dummy")
+    }
   }
 });

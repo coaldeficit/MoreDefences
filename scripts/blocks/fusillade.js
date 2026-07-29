@@ -7,6 +7,11 @@ let fusillade = extend(ItemTurret, "fusillade", {
       return u.maxHealth >= 200-u.armor
     }
   },
+  buildingFilter: {
+    get(u) {
+      return u.maxHealth >= 200-u.armor
+    }
+  },
   setBars(){
     this.super$setBars();
     this.addBar("overheat", func(e =>
@@ -89,8 +94,9 @@ let silicon = extend(RailBulletType, {
   pointEffectSpace: 28,
   damage: 350,
   pierceCap: 3,
-  length: 240,
+  length: 266,
   ammoMultiplier: 2,
+  buildingDamageMultiplier: 0.3,
 })
 let plast = extend(RailBulletType, {
   shootEffect: Fx.none,
@@ -102,7 +108,7 @@ let plast = extend(RailBulletType, {
   pointEffectSpace: 28,
   damage: 440,
   pierceCap: 3,
-  length: 240,
+  length: 266,
   ammoMultiplier: 4,
   fragBullets: 7,
   fragOnDespawn: false,
@@ -118,6 +124,7 @@ let plast = extend(RailBulletType, {
     pierce: true,
     pierceCap: 3,
   }),
+  buildingDamageMultiplier: 0.3,
 })
 let surge = extend(RailBulletType, {
   shootEffect: Fx.none,
@@ -129,10 +136,11 @@ let surge = extend(RailBulletType, {
   pointEffectSpace: 36,
   damage: 920,
   pierceCap: 4,
-  length: 240,
+  length: 266,
   ammoMultiplier: 1,
   status: StatusEffects.shocked,
   reloadMultiplier: 0.5,
+  buildingDamageMultiplier: 0.22,
 })
 fusillade.ammo(
   Items.silicon, silicon,
