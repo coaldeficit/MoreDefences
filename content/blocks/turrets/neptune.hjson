@@ -27,6 +27,7 @@ ammoTypes: {
     pierce: true
     status: wet
     damage: 96
+    armorMultiplier: 2
     statusDuration: 1200
     ammoMultiplier: 0.0119047619
     width: 30
@@ -37,12 +38,17 @@ ammoTypes: {
     lifetime: 96
     largeHit: true
     colors: [596ab866,596ab8,ffffff]
+    puddles: 6
+    puddleRange: 12
+    puddleAmount: 24
+    puddleLiquid: water
   }
   slag: {
     type: LaserBulletType
     pierce: true
     status: melting
     damage: 140
+    armorMultiplier: 2
     statusDuration: 1200
     ammoMultiplier: 0.0119047619
     width: 30
@@ -53,12 +59,17 @@ ammoTypes: {
     lifetime: 96
     largeHit: true
     colors: [ffa16666,ffa166,ffffff]
+    puddles: 6
+    puddleRange: 12
+    puddleAmount: 24
+    puddleLiquid: slag
   }
   cryofluid: {
     type: LaserBulletType
     pierce: true
     status: freezing
     damage: 96
+    armorMultiplier: 2
     statusDuration: 1200
     ammoMultiplier: 0.0119047619
     width: 30
@@ -69,13 +80,17 @@ ammoTypes: {
     lifetime: 96
     largeHit: true
     colors: [6ecdec66,6ecdec,ffffff]
+    puddles: 6
+    puddleRange: 12
+    puddleAmount: 24
+    puddleLiquid: cryofluid
   }
   oil: {
     type: LaserBulletType
     pierce: true
     status: tarred
     damage: 96
-    armorMultiplier: 4
+    armorMultiplier: 2
     statusDuration: 1200
     ammoMultiplier: 0.0119047619
     width: 30
@@ -87,6 +102,10 @@ ammoTypes: {
     largeHit: true
     colors: [31313166,313131,ffffff]
     layer: 111
+    puddles: 6
+    puddleRange: 12
+    puddleAmount: 24
+    puddleLiquid: oil
   }
 }
 consumes: {
