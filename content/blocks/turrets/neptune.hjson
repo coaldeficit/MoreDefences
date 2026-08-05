@@ -1,6 +1,6 @@
 type: LiquidTurret
 name: Neptune
-description: Fires concentrated piercing beams of fluid into enemy crowds to apply status effects to enemies deep inside.
+description: Fires concentrated piercing beams of fluid into enemy crowds to apply status effects to enemies deep inside. Does not extinguish fires.
 size: 5
 health: 4200
 range: 320
