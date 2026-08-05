@@ -1,0 +1,103 @@
+type: LiquidTurret
+name: Neptune
+description: Fires concentrated piercing beams of fluid into enemy crowds to apply status effects to enemies deep inside.
+size: 5
+health: 4200
+range: 320
+maxAmmo: 252
+recoil: 5
+shoot: {
+  firstShotDelay: 40
+}
+reload: 140
+shootSound: shootEclipse
+loopSound: none
+shootEffect: shootLiquid
+rotateSpeed: 3
+hasPower: true
+extinguish: false
+liquidCapacity: 252
+ammoPerShot: 84
+moveWhileCharging: false
+shootCone: 2
+chargeSound: chargeVela
+ammoTypes: {
+  water: {
+    type: LaserBulletType
+    pierce: true
+    status: wet
+    damage: 96
+    statusDuration: 1200
+    ammoMultiplier: 0.0119047619
+    width: 30
+    length: 320
+    knockback: 16
+    displayAmmoMultiplier: false
+    hitSize: 8
+    lifetime: 96
+    largeHit: true
+    colors: [596ab866,596ab8,ffffff]
+  }
+  slag: {
+    type: LaserBulletType
+    pierce: true
+    status: melting
+    damage: 140
+    statusDuration: 1200
+    ammoMultiplier: 0.0119047619
+    width: 30
+    length: 320
+    knockback: 12
+    displayAmmoMultiplier: false
+    hitSize: 8
+    lifetime: 96
+    largeHit: true
+    colors: [ffa16666,ffa166,ffffff]
+  }
+  cryofluid: {
+    type: LaserBulletType
+    pierce: true
+    status: freezing
+    damage: 96
+    statusDuration: 1200
+    ammoMultiplier: 0.0119047619
+    width: 30
+    length: 320
+    knockback: 12
+    displayAmmoMultiplier: false
+    hitSize: 8
+    lifetime: 96
+    largeHit: true
+    colors: [6ecdec66,6ecdec,ffffff]
+  }
+  oil: {
+    type: LaserBulletType
+    pierce: true
+    status: tarred
+    damage: 96
+    armorMultiplier: 4
+    statusDuration: 1200
+    ammoMultiplier: 0.0119047619
+    width: 30
+    length: 320
+    knockback: 16
+    displayAmmoMultiplier: false
+    hitSize: 8
+    lifetime: 96
+    largeHit: true
+    colors: [31313166,313131,ffffff]
+    layer: 111
+  }
+}
+consumes: {
+  power: 4
+}
+requirements: [
+  lead/1400
+  metaglass/900
+  graphite/700
+  phase-fabric/350
+  vanadiphor/600
+]
+category: turret
+research: tsunami
