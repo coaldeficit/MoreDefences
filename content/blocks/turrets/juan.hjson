@@ -60,7 +60,7 @@ drawer: {
   ]
 }
 consumes: {
-  power: 3
+  power: 9
   coolant: {
     amount: 2
   }
