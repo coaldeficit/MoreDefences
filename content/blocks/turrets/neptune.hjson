@@ -116,7 +116,7 @@ requirements: [
   metaglass/900
   graphite/700
   phase-fabric/350
-  vanadiphor/600
+  vanadiphor/300
 ]
 category: turret
 research: tsunami
