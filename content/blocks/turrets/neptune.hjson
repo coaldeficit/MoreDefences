@@ -109,7 +109,7 @@ ammoTypes: {
   }
 }
 consumes: {
-  power: 4
+  power: 12
 }
 requirements: [
   lead/1400
