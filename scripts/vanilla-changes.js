@@ -109,6 +109,42 @@ Events.on(ClientLoadEvent, e => {
 
 // UNIT BLOCK HEALING REBALANCE
 try {
+  for (let i=0;i<Vars.content.units().size;i++) {
+    if (Vars.content.units().get(i).isModded() || Vars.content.units().get(i) == UnitTypes.stell) break // dont affect erekir or modded units
+    for (let j=0;j<Vars.content.units().get(i).weapons.size;j++) {
+      Vars.content.units().get(i).weapons.get(j).bullet.healPercent = 0 // remove all heal percent
+      let k = Vars.content.units().get(i).weapons.get(j).bullet.fragBullet
+      let checked = []
+      while (k != null && !checked.includes(k)) { // do it to every frag bullet aswell if there is any, dont affect bullets more than once
+        k.healPercent = 0
+        checked.push(k)
+        k = k.fragBullet
+      }
+    }
+  }
+  // nova
+  UnitTypes.nova.weapons.get(0).bullet.healAmount = 27
+  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = 10
+  UnitTypes.quasar.weapons.get(0).bullet.healAmount = 222
+  UnitTypes.vela.weapons.get(0).bullet.healAmount = 48 // multiply by 32 to get total heal from singular laser
+  UnitTypes.corvus.weapons.get(0).bullet.healAmount = 1500
+  // mono
+  UnitTypes.poly.weapons.get(0).bullet.healAmount = 37
+  UnitTypes.mega.weapons.get(0).bullet.healAmount = 60
+  UnitTypes.mega.weapons.get(1).bullet.healAmount = 30
+  UnitTypes.quad.weapons.get(0).bullet.healAmount = 176
+  // retusa
+  UnitTypes.retusa.weapons.get(1).bullet.healAmount = 23
+  UnitTypes.retusa.weapons.get(2).bullet.healAmount = 20
+  UnitTypes.oxynoe.weapons.get(0).bullet.healAmount = 19
+  UnitTypes.cyerce.weapons.get(1).bullet.fragBullet.healAmount = 18
+  UnitTypes.aegires.abilities.get(0).healPercent = 1 // heal amount does not exist for the energy field unfortunately
+  UnitTypes.navanax.weapons.get(0).bullet.healAmount = 200
+  for (let i=1;i<=4;i++) { 
+    UnitTypes.navanax.weapons.get(i).bullet.healAmount = 20
+  }
+  
+  /* // from before flat healing, kept here for reference until this is done
   UnitTypes.vela.weapons.get(0).bullet.healPercent = 3.5 // vela is a sad and worthless healer in vanilla. 5.40845070423% heal per second per block bruh...
   UnitTypes.corvus.weapons.get(0).bullet.healPercent = 33.3334 // corvus is a burst healer for when you desperately need health and lots of it Right Fucking Now, this should make it more viable as such
   UnitTypes.quad.weapons.get(0).bullet.healPercent = 6 // on the opposite end of the spectrum quad is just fucking overpowered for this
@@ -116,6 +152,7 @@ try {
     UnitTypes.navanax.weapons.get(i).bullet.healPercent = 1.6 // navanax is a weird case since the lasers are just as pathetic as vela (and also like never actually attempt to heal at all)...
   }
   UnitTypes.navanax.weapons.get(0).bullet.healPercent = 8 // ...whereas the main gun's bullet is literally just a direct upgrade to quad healing
+  */
 } catch(e) {}
 
 // i dont get this
