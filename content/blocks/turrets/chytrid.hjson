@@ -35,7 +35,7 @@ ammoTypes: {
     lifetime: 33
     status: spore-slowed
     statusDuration: 180
-    ammoMultiplier: 4
+    ammoMultiplier: 3
     armorMultiplier: 1.8
     hitSize: 9
     shrinkY: 0
@@ -84,7 +84,7 @@ ammoTypes: {
     lifetime: 33
     status: burning
     statusDuration: 720
-    ammoMultiplier: 10
+    ammoMultiplier: 5
     armorMultiplier: 1.8
     hitSize: 9
     shrinkY: 0
@@ -129,7 +129,7 @@ ammoTypes: {
     speed: 5
     damage: 43
     lifetime: 40
-    ammoMultiplier: 10
+    ammoMultiplier: 5
     armorMultiplier: 1.7
     homingPower: 0.01
     reloadMultiplier: 1.5
@@ -177,7 +177,7 @@ ammoTypes: {
     speed: 5
     damage: 140
     lifetime: 39
-    ammoMultiplier: 4
+    ammoMultiplier: 1
     armorMultiplier: 1.8
     reloadMultiplier: 0.5
     hitSize: 12
