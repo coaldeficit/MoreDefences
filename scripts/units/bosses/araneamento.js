@@ -69,6 +69,7 @@ const mortar = extend(Weapon, {
     width: 19,
     height: 27,
 	shrinkInterp: Interp.linear,
+    rangeOverride: 120,
     fragBullets: 7,
     fragLifeMin: 0.5,
     fragBullet: bulLib.makeBullet({

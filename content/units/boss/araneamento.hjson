@@ -1,7 +1,7 @@
 name: Araneamento
 description: "temp"
 flying: false
-health: 7000
+health: 11000
 armor: 2
 hitSize: 20
 range: 380
