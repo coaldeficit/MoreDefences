@@ -37,6 +37,7 @@ require('md3/blocks/emphasis');
 require('md3/blocks/juan');
 require('md3/blocks/mica');
 require('md3/blocks/fusillade');
+require('md3/blocks/chytrid');
 require('md3/blocks/instant');
 require('md3/blocks/delay');
 require('md3/blocks/subturrets');

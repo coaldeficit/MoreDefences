@@ -1,0 +1,274 @@
+name: Chytrid
+description: Fires 2 inaccurate shots that fragment into piercing biological shrapnel. Uses bio-tech to cultivate spores to slightly slow down enemies, and take spores from the environment to fire faster when placed on appropriate tiles.
+health: 1200
+size: 3
+reload: 36
+range: 200
+inaccuracy: 5
+rotateSpeed: 5
+shootSound: shootCleroi
+shootEffect: none
+shoot: {
+  type: ShootBarrel
+  shots: 2
+  shotDelay: 8
+  barrels: [
+    -3,-3,0,
+    3,-3,0
+  ]
+}
+maxAmmo: 60
+ammoPerShot: 1
+hasLiquids: true
+liquidCapacity: 20
+shake: 1
+consumes: {
+  coolant: {
+    amount: 0.3
+  }
+}
+coolantMultiplier: 1.66666666666
+ammoTypes: {
+  spore-pod: {
+    speed: 6
+    damage: 66
+    lifetime: 33
+    status: spore-slowed
+    statusDuration: 180
+    ammoMultiplier: 4
+    armorMultiplier: 1.8
+    hitSize: 9
+    shrinkY: 0
+    shrinkX: 0
+    width: 13
+    height: 12
+    frontColor: bf92f9
+    backColor: 6d56bf
+    hitColor: 6d56bf
+    fragBullets: 3
+    fragRandomSpread: 40
+    fragSpread: 120
+    fragAngle: 180
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragLifeMin: 0.8
+    fragOffsetMax: 1
+    fragOnDespawn: false
+    despawnEffect: hitSquaresColor
+    hitEffect: hitSquaresColor
+    fragBullet: {
+      sprite: md3-triangle-bullet
+      speed: 0.8
+      drag: 0.04
+      lifetime: 200
+      damage: 8
+      pierce: true
+      width: 4
+      height: 5
+      shrinkY: 0.6
+      shrinkX: 0.8
+      status: sapped
+      statusDuration: 4
+      frontColor: 6d56bf
+      backColor: 343382
+      hitColor: 343382
+      despawnEffect: none
+      hitEffect: hitBulletColor
+    }
+  }
+  pyratite: {
+    speed: 6
+    damage: 74
+    splashDamage: 23
+    splashDamageRadius: 28
+    lifetime: 33
+    status: burning
+    statusDuration: 720
+    ammoMultiplier: 10
+    armorMultiplier: 1.8
+    hitSize: 9
+    shrinkY: 0
+    shrinkX: 0
+    width: 13
+    height: 12
+    frontColor: f8ad42
+    backColor: f68021
+    hitColor: f68021
+    fragBullets: 3
+    fragRandomSpread: 40
+    fragSpread: 120
+    fragAngle: 180
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragLifeMin: 0.8
+    fragOffsetMax: 1
+    fragOnDespawn: false
+    despawnEffect: hitSquaresColor
+    hitEffect: hitSquaresColor
+    fragBullet: {
+      sprite: md3-triangle-bullet
+      speed: 0.8
+      drag: 0.04
+      lifetime: 200
+      damage: 13
+      pierce: true
+      width: 5
+      height: 6
+      shrinkY: 0.6
+      shrinkX: 0.8
+      status: burning
+      statusDuration: 120
+      frontColor: f8ad42
+      backColor: f68021
+      hitColor: f68021
+      despawnEffect: none
+      hitEffect: hitBulletColor
+    }
+  }
+  silicon: {
+    speed: 5
+    damage: 43
+    lifetime: 40
+    ammoMultiplier: 10
+    armorMultiplier: 1.7
+    homingPower: 0.01
+    reloadMultiplier: 1.5
+    hitSize: 7
+    shrinkY: 0
+    shrinkX: 0
+    width: 12
+    height: 11
+    frontColor: 999ba0
+    backColor: 707594
+    hitColor: 707594
+    fragBullets: 4
+    fragRandomSpread: 40
+    fragSpread: 90
+    fragAngle: 0
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragLifeMin: 0.8
+    fragOffsetMax: 1
+    fragOnDespawn: false
+    despawnEffect: hitSquaresColor
+    hitEffect: hitSquaresColor
+    fragBullet: {
+      sprite: md3-triangle-bullet
+      speed: 0.9
+      drag: 0.04
+      lifetime: 200
+      damage: 6
+      pierce: true
+      homingPower: 0.1
+      width: 3
+      height: 4
+      shrinkY: 0.6
+      shrinkX: 0.8
+      status: spore-slowed
+      statusDuration: 12
+      frontColor: 999ba0
+      backColor: 707594
+      hitColor: 707594
+      despawnEffect: none
+      hitEffect: hitBulletColor
+    }
+  }
+  graphite: {
+    speed: 5
+    damage: 140
+    lifetime: 39
+    ammoMultiplier: 4
+    armorMultiplier: 1.8
+    reloadMultiplier: 0.5
+    hitSize: 12
+    shrinkY: 0
+    shrinkX: 0
+    width: 16
+    height: 14
+    frontColor: dae1ee
+    backColor: 7d89d8
+    hitColor: 7d89d8
+    fragBullets: 5
+    fragRandomSpread: 25
+    fragSpread: 72
+    fragAngle: 180
+    fragVelocityMin: 0.9
+    fragVelocityMax: 1.1
+    fragLifeMin: 0.8
+    fragOffsetMax: 1
+    fragOnDespawn: false
+    despawnEffect: hitSquaresColor
+    hitEffect: hitSquaresColor
+    fragBullet: {
+      sprite: md3-triangle-bullet
+      speed: 0.8
+      drag: 0.04
+      lifetime: 200
+      damage: 16
+      pierce: true
+      width: 4
+      height: 5
+      shrinkY: 0.6
+      shrinkX: 0.8
+      status: spore-slowed
+      statusDuration: 24
+      frontColor: dae1ee
+      backColor: 7d89d8
+      hitColor: 7d89d8
+      despawnEffect: none
+      hitEffect: hitBulletColor
+    }
+  }
+}
+recoils: 2
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel-l
+      x: -3.125
+      y: -0.125
+      recoilIndex: 0
+      progress: recoil
+      moveY: -3
+      layerOffset: 0.02
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-r
+      x: 3.125
+      y: -0.125
+      recoilIndex: 1
+      progress: recoil
+      moveY: -3
+      layerOffset: 0.02
+    }
+    {
+      type: RegionPart
+      suffix: -cylinder-l
+      x: -5.25
+      y: 0
+      progress: reload
+      moveRot: 90
+      layerOffset: 0.01
+    }
+    {
+      type: RegionPart
+      suffix: -cylinder-r
+      x: 5.25
+      y: 0
+      progress: reload
+      moveRot: -90
+      layerOffset: 0.01
+    }
+  ]
+}
+requirements: [
+  lead/250
+  graphite/170
+  silicon/170
+  thorium/120
+]
+category: turret
+research: salvo

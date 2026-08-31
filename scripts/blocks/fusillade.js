@@ -16,7 +16,7 @@ let fusillade = extend(ItemTurret, "fusillade", {
     this.super$setBars();
     this.addBar("overheat", func(e =>
       new Bar(
-        prov(() => (e.getOverheatState() < 0 ? Core.bundle.format("bar.md3-fusillade-overheat") : Core.bundle.format("bar.md3-fusillade-cool")) + ": " + Math.floor(Math.abs(e.getOverheatState()/6))/10 + "s"),
+        prov(() => (e.getOverheatState() < 0 ? Core.bundle.format("bar.md3-fusillade-overheat", Math.floor(Math.abs(e.getOverheatState()/6))/10) : Core.bundle.format("bar.md3-fusillade-cool", Math.floor(Math.abs(e.getOverheatState()/6))/10))),
         prov(() => (e.getOverheatState() < 0 ? Pal.health : Pal.lightOrange)),
         floatp(() => Math.min(Math.abs(e.getOverheatState())/overheatCap,1))
       ))

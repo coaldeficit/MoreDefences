@@ -13,10 +13,10 @@ SporeT2.abilities.add(heal);
 
 const shootsound = Vars.tree.loadSound("panaeolus-bullet")
 const oilBullet = extend(BasicBulletType, {
-  speed: 4,
+  speed: 4.2,
   damage: 3,
   ammoMultiplier: 1,
-  lifetime: 40,
+  lifetime: 46,
   layer: 111,
   frontColor: Color.valueOf("242424"),
   backColor: Color.valueOf("000000"),
@@ -52,7 +52,7 @@ const clump = extend(MissileUnitType, "panaeolus-boat-clump", {
   targetAir: false,
   speed: 1.5,
   maxRange: 6,
-  lifetime: 60 * 2.2,
+  lifetime: 50,
   outlineColor: Pal.darkOutline,
   engineColor: Color.valueOf("#FFA665"),
   trailColor: Color.valueOf("#FFA665"),
@@ -117,6 +117,7 @@ const clumpLauncher = extend(Weapon, {
     smokeEffect: Fx.none,
     shake: 0,
     speed: 0,
+    damage: 0,
     keepVelocity: false,
     collidesAir: false,
     spawnUnit: clump
