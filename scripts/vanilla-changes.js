@@ -47,14 +47,14 @@ let phaseForeshadow = extend(RailBulletType, {
   pointEffectSpace: 20,
   damage: 2650,
   buildingDamageMultiplier: 0.1,
-  maxDamageFraction: 0.4,
+  //maxDamageFraction: 0.4,
   pierceDamageFactor: 1,
-  length: Blocks.foreshadow.range-80,
+  length: Blocks.foreshadow.range/*-80*/,
   hitShake: 8,
   ammoMultiplier: 1,
   status: StatusEffects.overclock,
   statusDuration: 300,
-  rangeChange: -80,
+  //rangeChange: -80,
 })
 Blocks.foreshadow.ammoTypes.put(
   Items.phaseFabric, phaseForeshadow
