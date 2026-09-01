@@ -37,7 +37,7 @@ shootType: {
   type: BasicBulletType
   speed: 6
   lifetime: 24
-  damage: 14
+  damage: 3
   status: spore-slowed
   statusDuration: 180
   frontColor: 7457CE

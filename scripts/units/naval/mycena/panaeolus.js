@@ -13,8 +13,8 @@ SporeT2.abilities.add(heal);
 
 const shootsound = Vars.tree.loadSound("panaeolus-bullet")
 const oilBullet = extend(BasicBulletType, {
-  speed: 4,
-  damage: 3,
+  speed: 4.2,
+  damage: 9,
   ammoMultiplier: 1,
   lifetime: 40,
   layer: 111,
@@ -26,7 +26,7 @@ const oilBullet = extend(BasicBulletType, {
   shrinkX: 0,
   collidesAir: true,
   status: StatusEffects.tarred,
-  statusDuration: 60,
+  statusDuration: 80,
   puddles: 1,
   puddleRange: 0,
   puddleAmount: 8,
@@ -59,7 +59,7 @@ const clump = extend(MissileUnitType, "panaeolus-boat-clump", {
   trailLength: 0,
   engineSize: 0,
   engineLayer: Layer.effect,
-  health: 100,
+  health: 230,
   loopSoundVolume: 0,
   rotateSpeed: 0,
   drawCell: false,
@@ -75,6 +75,7 @@ const clumpExplosion = extend(Weapon, {
   bullet: extend(ExplosionBulletType, {
     splashDamage: -1,
     splashDamageRadius: -1,
+    damage: 0,
     rangeOverride: 6,
     killShooter: false,
     shootEffect: Fx.none,
@@ -84,7 +85,7 @@ const clumpExplosion = extend(Weapon, {
     despawned(b) {
       let develop = false
       blockcheck.iterateSquare(Math.round(b.owner.x/8)-1,Math.round(b.owner.y/8)-1,3,3,(other => {
-        if (other.floor().liquidDrop == null || other.block() != Blocks.air) {
+        if (other.floor().liquidDrop == null || b.owner.time >= b.owner.lifetime-1 || other.block() != Blocks.air) {
           develop = true
         }
       }));
@@ -115,6 +116,7 @@ const clumpLauncher = extend(Weapon, {
     type: BulletType,
     shootEffect: Fx.none,
     smokeEffect: Fx.none,
+    rangeOverride: 219,
     shake: 0,
     speed: 0,
     keepVelocity: false,
