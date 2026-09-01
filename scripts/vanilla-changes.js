@@ -90,13 +90,15 @@ UnitTypes.quad.itemCapacity = 80
 UnitTypes.oct.itemCapacity = 140
 
 // UNIT BLOCK HEALING REBALANCE
-UnitTypes.vela.weapons.get(0).bullet.healPercent = 3.5 // vela is a sad and worthless healer in vanilla. 5.40845070423% heal per second per block bruh...
-UnitTypes.corvus.weapons.get(0).bullet.healPercent = 33.3334 // corvus is a burst healer for when you desperately need health and lots of it Right Fucking Now, this should make it more viable as such
-UnitTypes.quad.weapons.get(0).bullet.healPercent = 6 // on the opposite end of the spectrum quad is just fucking overpowered for this
-for (let i=0;i<4;i++) { 
-  UnitTypes.navanax.weapons.get(i).bullet.healPercent = 1.6 // navanax is a weird case since the lasers are just as pathetic as vela (and also like never actually attempt to heal at all)...
-}
-UnitTypes.navanax.weapons.get(4).bullet.healPercent = 8 // ...whereas the main gun's bullet is literally just a direct upgrade to quad healing
+try {
+  UnitTypes.vela.weapons.get(0).bullet.healPercent = 3.5 // vela is a sad and worthless healer in vanilla. 5.40845070423% heal per second per block bruh...
+  UnitTypes.corvus.weapons.get(0).bullet.healPercent = 33.3334 // corvus is a burst healer for when you desperately need health and lots of it Right Fucking Now, this should make it more viable as such
+  UnitTypes.quad.weapons.get(0).bullet.healPercent = 6 // on the opposite end of the spectrum quad is just fucking overpowered for this
+  for (let i=1;i<=4;i++) { 
+    UnitTypes.navanax.weapons.get(i).bullet.healPercent = 1.6 // navanax is a weird case since the lasers are just as pathetic as vela (and also like never actually attempt to heal at all)...
+  }
+  UnitTypes.navanax.weapons.get(0).bullet.healPercent = 8 // ...whereas the main gun's bullet is literally just a direct upgrade to quad healing
+} catch(e) {}
 
 // i dont get this
 UnitTypes.mega.isEnemy = true
@@ -128,6 +130,7 @@ UnitTypes.mega.mineSpeed = 2
 // UNIT BUFFS
 UnitTypes.quasar.abilities.get(0).max = 600
 UnitTypes.spiroct.speed = 0.8
+UnitTypes.spiroct.armor = 6
 UnitTypes.antumbra.weapons.get(2).reload = 6
 UnitTypes.antumbra.weapons.get(2).bullet.shieldDamageMultiplier = 2
 UnitTypes.eclipse.speed = 0.667
