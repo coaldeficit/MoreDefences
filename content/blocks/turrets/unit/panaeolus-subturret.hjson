@@ -3,7 +3,7 @@ description: Fires Spores and self-destructs after 6 seconds.
 health: 100
 size: 1
 reload: 40
-range: 120
+range: 144
 inaccuracy: 4
 rotateSpeed: 5
 shoot: {
@@ -36,8 +36,8 @@ shoot: {
 shootType: {
   type: BasicBulletType
   speed: 6
-  lifetime: 20
-  damage: 14
+  lifetime: 24
+  damage: 3
   status: spore-slowed
   statusDuration: 180
   frontColor: 7457CE
