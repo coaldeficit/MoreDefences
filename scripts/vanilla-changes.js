@@ -113,18 +113,26 @@ try {
     if (Vars.content.units().get(i).isModded() || Vars.content.units().get(i) == UnitTypes.stell) break // dont affect erekir or modded units
     for (let j=0;j<Vars.content.units().get(i).weapons.size;j++) {
       Vars.content.units().get(i).weapons.get(j).bullet.healPercent = 0 // remove all heal percent
-      let k = Vars.content.units().get(i).weapons.get(j).bullet.fragBullet
-      let checked = []
-      while (k != null && !checked.includes(k)) { // do it to every frag bullet aswell if there is any, dont affect bullets more than once
-        k.healPercent = 0
-        checked.push(k)
-        k = k.fragBullet
+      { // yes, you CAN just do this
+        let k = Vars.content.units().get(i).weapons.get(j).bullet.fragBullet
+        let checked = []
+        while (k != null && !checked.includes(k)) { // do it to every frag bullet aswell if there is any, dont affect bullets more than once
+          k.healPercent = 0
+          checked.push(k)
+          k = k.fragBullet
+        }
+      }
+      {
+	    let k = Vars.content.units().get(i).weapons.get(j).bullet.lightningType
+	    if (k != null) {
+		  k.healPercent = 0
+	    }
       }
     }
   }
   // nova
   UnitTypes.nova.weapons.get(0).bullet.healAmount = 27
-  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = 4
+  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = UnitTypes.pulsar.weapons.get(0).bullet.lightningType.healAmount = 13
   UnitTypes.quasar.weapons.get(0).bullet.healAmount = 222
   UnitTypes.vela.weapons.get(0).bullet.healAmount = 48 // multiply by 32 to get total heal from singular laser
   UnitTypes.corvus.weapons.get(0).bullet.healAmount = 1500
@@ -132,14 +140,14 @@ try {
   UnitTypes.poly.weapons.get(0).bullet.healAmount = 37
   UnitTypes.mega.weapons.get(0).bullet.healAmount = 60
   UnitTypes.mega.weapons.get(1).bullet.healAmount = 30
-  UnitTypes.quad.weapons.get(0).bullet.healAmount = 176
+  UnitTypes.quad.weapons.get(0).bullet.healAmount = 40
   // retusa
   UnitTypes.retusa.weapons.get(1).bullet.healAmount = 23
-  UnitTypes.retusa.weapons.get(2).bullet.healAmount = 20
-  UnitTypes.oxynoe.weapons.get(0).bullet.healAmount = 19
-  UnitTypes.cyerce.weapons.get(1).bullet.fragBullet.healAmount = 18
+  UnitTypes.retusa.weapons.get(2).bullet.healAmount = 4
+  UnitTypes.oxynoe.weapons.get(0).bullet.healAmount = 22
+  UnitTypes.cyerce.weapons.get(1).bullet.fragBullet.healAmount = 13
   UnitTypes.aegires.abilities.get(0).healPercent = 1 // heal amount does not exist for the energy field unfortunately
-  UnitTypes.navanax.weapons.get(0).bullet.healAmount = 200
+  UnitTypes.navanax.weapons.get(0).bullet.healAmount = 45
   for (let i=1;i<=4;i++) { 
     UnitTypes.navanax.weapons.get(i).bullet.healAmount = 20
   }
