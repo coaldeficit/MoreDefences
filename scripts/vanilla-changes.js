@@ -124,7 +124,7 @@ try {
   }
   // nova
   UnitTypes.nova.weapons.get(0).bullet.healAmount = 27
-  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = 10
+  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = 4
   UnitTypes.quasar.weapons.get(0).bullet.healAmount = 222
   UnitTypes.vela.weapons.get(0).bullet.healAmount = 48 // multiply by 32 to get total heal from singular laser
   UnitTypes.corvus.weapons.get(0).bullet.healAmount = 1500
