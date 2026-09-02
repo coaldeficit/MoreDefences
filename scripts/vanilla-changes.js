@@ -133,23 +133,23 @@ try {
   // nova
   UnitTypes.nova.weapons.get(0).bullet.healAmount = 27
   UnitTypes.pulsar.weapons.get(0).bullet.healAmount = UnitTypes.pulsar.weapons.get(0).bullet.lightningType.healAmount = 13
-  UnitTypes.quasar.weapons.get(0).bullet.healAmount = 222
+  UnitTypes.quasar.weapons.get(0).bullet.healAmount = 140
   UnitTypes.vela.weapons.get(0).bullet.healAmount = 48 // multiply by 32 to get total heal from singular laser
   UnitTypes.corvus.weapons.get(0).bullet.healAmount = 1500
   // mono
   UnitTypes.poly.weapons.get(0).bullet.healAmount = 37
-  UnitTypes.mega.weapons.get(0).bullet.healAmount = 60
-  UnitTypes.mega.weapons.get(1).bullet.healAmount = 30
+  UnitTypes.mega.weapons.get(0).bullet.healAmount = 100
+  UnitTypes.mega.weapons.get(1).bullet.healAmount = 50
   UnitTypes.quad.weapons.get(0).bullet.healAmount = 40
   // retusa
   UnitTypes.retusa.weapons.get(1).bullet.healAmount = 23
   UnitTypes.retusa.weapons.get(2).bullet.healAmount = 4
-  UnitTypes.oxynoe.weapons.get(0).bullet.healAmount = 22
+  UnitTypes.oxynoe.weapons.get(0).bullet.healAmount = 30
   UnitTypes.cyerce.weapons.get(1).bullet.fragBullet.healAmount = 13
   UnitTypes.aegires.abilities.get(0).healPercent = 1 // heal amount does not exist for the energy field unfortunately
   UnitTypes.navanax.weapons.get(0).bullet.healAmount = 45
   for (let i=1;i<=4;i++) { 
-    UnitTypes.navanax.weapons.get(i).bullet.healAmount = 20
+    UnitTypes.navanax.weapons.get(i).bullet.healAmount = 24
   }
   
   /* // from before flat healing, kept here for reference until this is done
