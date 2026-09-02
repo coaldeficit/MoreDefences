@@ -132,20 +132,20 @@ try {
   }
   // nova
   UnitTypes.nova.weapons.get(0).bullet.healAmount = 27
-  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = UnitTypes.pulsar.weapons.get(0).bullet.lightningType.healAmount = 13
+  UnitTypes.pulsar.weapons.get(0).bullet.healAmount = UnitTypes.pulsar.weapons.get(0).bullet.lightningType.healAmount = 14
   UnitTypes.quasar.weapons.get(0).bullet.healAmount = 140
   UnitTypes.vela.weapons.get(0).bullet.healAmount = 48 // multiply by 32 to get total heal from singular laser
   UnitTypes.corvus.weapons.get(0).bullet.healAmount = 1500
   // mono
   UnitTypes.poly.weapons.get(0).bullet.healAmount = 37
-  UnitTypes.mega.weapons.get(0).bullet.healAmount = 70
-  UnitTypes.mega.weapons.get(1).bullet.healAmount = 35
+  UnitTypes.mega.weapons.get(0).bullet.healAmount = 60
+  UnitTypes.mega.weapons.get(1).bullet.healAmount = 30
   UnitTypes.quad.weapons.get(0).bullet.healAmount = 140
   // retusa
   UnitTypes.retusa.weapons.get(1).bullet.healAmount = 23
-  UnitTypes.retusa.weapons.get(2).bullet.healAmount = 9
+  UnitTypes.retusa.weapons.get(2).bullet.healAmount = 12
   UnitTypes.oxynoe.weapons.get(0).bullet.healAmount = 23
-  UnitTypes.cyerce.weapons.get(1).bullet.fragBullet.healAmount = 13
+  UnitTypes.cyerce.weapons.get(1).bullet.fragBullet.healAmount = 16
   UnitTypes.aegires.abilities.get(0).healPercent = 1 // heal amount does not exist for the energy field unfortunately
   UnitTypes.navanax.weapons.get(0).bullet.healAmount = 166
   for (let i=1;i<=4;i++) { 
