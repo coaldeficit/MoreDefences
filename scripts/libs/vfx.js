@@ -359,6 +359,20 @@ const redExplosion = new Effect(25, e => {
 
   Drawf.light(e.x, e.y, 90, Color.valueOf("#C34954"), 0.8 * e.fout());
 });
+const burgessiaBlast = new Effect(13, e => {
+  Draw.color(Color.white, Color.valueOf("0000FF"), e.fin());
+  let w = 1 + 26 * e.fout();
+  Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), e.y+(Math.sin(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), w, 60 * e.fin(), e.rotation);
+  Drawf.tri(e.x+(Math.cos(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), e.y+(Math.sin(e.rotation*(Math.PI/180))*(10+(12*e.fout()))), w, 12 * e.fout(), e.rotation + 180);
+});
+burgessiaBlast.followParent = false
+const burgessiaFlame = new Effect(48, e => {
+  Draw.color(Color.white, Color.valueOf("0000FF"), e.fin());
+  
+  Angles.randLenVectors(e.id, 12, e.finpow() * 80, e.rotation, 10, (x, y) => {
+    Fill.circle(e.x + x, e.y + y, e.fout() * 1.5 + 0.65);
+  });
+});
 
 module.exports = {
     lh2status: lh2status,
@@ -398,4 +412,6 @@ module.exports = {
     fusilladeHitSurge: fusilladeHitSurge,
     scorchSpores: scorchSpores,
     redExplosion: redExplosion,
+    burgessiaBlast: burgessiaBlast,
+    burgessiaFlame: burgessiaFlame,
 };

@@ -1,0 +1,29 @@
+name: Burgessia
+description: Approaches and jabs enemy targets while burning them with a flamethrower.
+hitSize: 16
+flying: true
+speed: 1.4
+drag: 0.1
+accel: 0.1
+rotateSpeed: 3
+health: 450
+createWreck: false
+lowAltitude: true
+engines: [{
+  x: -1
+  y: -8
+  radius: 3.5
+  rotation: -90
+}]
+engineSize: 0
+itemCapacity: 0
+research: {
+  parent: bella-ship
+  objectives: [
+    {
+      type: SectorComplete
+      preset: sulfurism
+    }
+  ]
+}
+researchCostMultiplier: 0

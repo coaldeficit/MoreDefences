@@ -95,6 +95,7 @@ require("md3/units/ground/donjon/klotzi")
 
 // bella line
 require("md3/units/air/bella/bella")
+require("md3/units/air/bella/burgessia")
 
 // misc
 require("md3/units/air/drones")
