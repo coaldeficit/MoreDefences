@@ -4,6 +4,7 @@ health: 70
 craftTime: 60
 size: 2
 itemCapacity: 10
+hasItems: true
 drawer: {
   type: DrawMulti
   drawers: [

@@ -28,6 +28,7 @@ minEfficiency: 0.3
 boostScale: 0.0625
 maxBoost: 2
 liquidCapacity: 120
+hasItems: true
 hasLiquids: true
 hasPower: true
 consumes: {

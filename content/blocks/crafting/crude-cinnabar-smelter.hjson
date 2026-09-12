@@ -5,6 +5,8 @@ craftTime: 60
 size: 2
 itemCapacity: 10
 liquidCapacity: 72
+hasItems: true
+hasLiquids: true
 drawer: {
   type: DrawMulti
   drawers: [DrawDefault, DrawFlame]
