@@ -37,6 +37,7 @@ ammoTypes: {
     hitSize: 8
     lifetime: 96
     largeHit: true
+    absorbable: false
     colors: [596ab866,596ab8,ffffff]
     puddles: 6
     puddleRange: 12
@@ -58,6 +59,7 @@ ammoTypes: {
     hitSize: 8
     lifetime: 96
     largeHit: true
+    absorbable: false
     colors: [ffa16666,ffa166,ffffff]
     puddles: 6
     puddleRange: 12
@@ -79,6 +81,7 @@ ammoTypes: {
     hitSize: 8
     lifetime: 96
     largeHit: true
+    absorbable: false
     colors: [6ecdec66,6ecdec,ffffff]
     puddles: 6
     puddleRange: 12
@@ -100,6 +103,7 @@ ammoTypes: {
     hitSize: 8
     lifetime: 96
     largeHit: true
+    absorbable: falsr
     colors: [31313166,313131,ffffff]
     layer: 111
     puddles: 6
